@@ -18,6 +18,17 @@ import project1 from "@/../public/images/project1.png";
 import project2 from "@/../public/images/project2.png";
 import project3 from "@/../public/images/project3.png";
 import project4 from "@/../public/images/project4.png";
+import project5 from "@/../public/images/project5.png";
+import project6 from "@/../public/images/project6.png";
+import project7 from "@/../public/images/project7.png";
+import project8 from "@/../public/images/project8.png";
+import project9 from "@/../public/images/project9.png";
+import project10 from "@/../public/images/project10.png";
+import project11 from "@/../public/images/project11.png";
+import project12 from "@/../public/images/project12.png";
+import project13 from "@/../public/images/project13.png";
+import project14 from "@/../public/images/project14.png";
+import project15 from "@/../public/images/project15.png";
 
 import buyer1 from "@/../public/images/buyer1.png";
 import buyer2 from "@/../public/images/buyer2.png";
@@ -104,10 +115,10 @@ export const featureds = [
     id: 2,
     category: "AI/ML",
     tag1: "AI/ML",
-    tag2: "CoreML",
-    tag3: "Model Conversion",
-    title: "PyTorch → ONNX → CoreML Conversion (Wav2Lip)",
-    img: project1,
+    tag2: "BAMM",
+    tag3: "CUDA",
+    title: "Text-To-Motion Model Deployment",
+    img: project2,
   },
   {
     id: 3,
@@ -116,7 +127,7 @@ export const featureds = [
     tag2: "Medical Imaging",
     tag3: "CNN",
     title: "ResNet CNN Fine-Tuned on CheXpert for Chest X-ray Classification",
-    img: project1,
+    img: project4,
   },
   {
     id: 4,
@@ -125,16 +136,16 @@ export const featureds = [
     tag2: "Security",
     tag3: "OpenAI API",
     title: "GitScan: AI-Driven GitHub Repo Security Analyzer",
-    img: project1,
+    img: project3,
   },
   {
     id: 5,
     category: "AI/ML",
     tag1: "AI/ML",
-    tag2: "Motion AI",
-    tag3: "SMPL-X",
-    title: "Text/Music-to-Motion Generation Using BAMM & SMPLX",
-    img: project1,
+    tag2: "IOS",
+    tag3: "AI4Health",
+    title: "VitalHealth: AI-Powered Health Monitoring System",
+    img: project15,
   },
 
   // === Hackathons ===
@@ -145,7 +156,7 @@ export const featureds = [
     tag2: "NASA",
     tag3: "Sonification",
     title: "1st Place – 2023 NASA Hackathon: Solar/Moon Data Sonification",
-    img: project1,
+    img: project6,
   },
   {
     id: 7,
@@ -154,7 +165,7 @@ export const featureds = [
     tag2: "FinTech",
     tag3: "AWS",
     title: "1st Place – 2024 Truist Immersive FinTech Experience",
-    img: project1,
+    img: project8,
   },
   {
     id: 8,
@@ -172,7 +183,7 @@ export const featureds = [
     tag2: "iOS",
     tag3: "Face Privacy",
     title: "Unity Vision iOS App – NC State Hackathon",
-    img: project1,
+    img: project7,
   },
   {
     id: 10,
@@ -181,7 +192,7 @@ export const featureds = [
     tag2: "Family Team",
     tag3: "Web Dev",
     title: "1st Place – HackNC 2024 at UNC Chapel Hill",
-    img: project1,
+    img: project9,
   },
 
   // === AI Infrastructure ===
@@ -203,7 +214,7 @@ export const featureds = [
     tag2: "AWS Amplify",
     tag3: "Notes App",
     title: "Cross-Platform Notes App with SwiftUI & AWS Amplify",
-    img: project1,
+    img: project5,
   },
   {
     id: 13,
@@ -212,7 +223,7 @@ export const featureds = [
     tag2: "PWA",
     tag3: "Student Platform",
     title: "DevLink: UNCC Collaboration Platform (Django + PWA)",
-    img: project1,
+    img: project14,
   },
   {
     id: 14,
@@ -221,7 +232,7 @@ export const featureds = [
     tag2: "MongoDB",
     tag3: "E-Commerce",
     title: "TechnoLab Market: Node.js + Atlas Web App",
-    img: project1,
+    img: project13,
   },
   {
     id: 15,
@@ -230,7 +241,7 @@ export const featureds = [
     tag2: "Healthcare",
     tag3: "Map",
     title: "Hospital Infection Map Visualization",
-    img: project1,
+    img: project11,
   },
   {
     id: 16,
@@ -239,7 +250,7 @@ export const featureds = [
     tag2: "Restoration",
     tag3: "Apple",
     title: "Vintage Apple Device Restoration",
-    img: project1,
+    img: project12,
   },
 ];
 

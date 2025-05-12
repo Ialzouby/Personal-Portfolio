@@ -1,6 +1,6 @@
 import Image from "next/image";
 import resumeIcon from "@/../public/images/resume-icon.png";
-import user from "@/../public/images/user.jpg";
+import user from "@/../public/images/user.png";
 import { PiArrowRight } from "react-icons/pi";
 import Link from "next/link";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";

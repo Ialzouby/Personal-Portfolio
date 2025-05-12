@@ -18,7 +18,7 @@ import {
 export const sidebarsData = [
   {
     id: 1,
-    name: "About Us",
+    name: "About",
     url: "/",
     icon: <PiUser />,
   },
@@ -74,12 +74,12 @@ export const bottomNavData = [
     icon: <PiCodeBlockFill />,
     numbers: 16,
   },
-  {
-    id: 3,
-    name: "Pricing",
-    url: "/price",
-    icon: <PiBriefcaseFill />,
-  },
+  //{
+    //id: 3,
+    //name: "Pricing",
+    //url: "/price",
+    //icon: <PiBriefcaseFill />,
+  //},
   {
     id: 4,
     name: "Resume",

@@ -13,7 +13,7 @@ const Price = () => {
           <div className="pb-60 br-bottom-n3">
             <div className="page-heading">
               <h3 className="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center">
-                Services & Pricing
+                My Experiences
               </h3>
               <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
                 I have 10+ years of development experience building software for
