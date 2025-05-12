@@ -1,0 +1,39 @@
+{
+  "name": "porfolify-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@headlessui/react": "^2.1.2",
+    "@types/react-modal-video": "^1.2.3",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.3.2",
+    "next": "^15.3.0",
+    "next-themes": "^0.3.0",
+    "react": "^18.3.0",
+    "react-animate-height": "^3.2.3",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.0",
+    "react-icons": "^5.2.1",
+    "react-modal-video": "^2.0.2",
+    "sass": "^1.77.6",
+    "sharp": "^0.33.4",
+    "sweetalert2": "^11.12.2",
+    "sweetalert2-react-content": "^5.0.7",
+    "swiper": "^11.1.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "^15.3.0",
+    "typescript": "^5"
+  }
+}
