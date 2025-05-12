@@ -1,3 +1,5 @@
+"use client";
+
 import { PiSealCheckFill } from "react-icons/pi";
 import ProductCard from "@/components/Pages/Product/ProductCard";
 import { productsData } from "../../../../public/data/AllData";
