@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <title>Portfolify-Personal Portfolio Template</title>
+        <title>Issam's Portfolio</title>
       </head>
       <body className={jost.className}   cz-shortcut-listen="true">
         <Provider>
