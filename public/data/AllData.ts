@@ -21,29 +21,41 @@ import project4 from "@/../public/images/project4.png";
 import project5 from "@/../public/images/project5.png";
 import project6 from "@/../public/images/project6.png";
 import project7 from "@/../public/images/project7.png";
-import project8 from "@/../public/images/project8.png";
-import project9 from "@/../public/images/project9.png";
-import project10 from "@/../public/images/project10.png";
+import project8 from "@/../public/images/project8.jpeg";
+import project9 from "@/../public/images/project9.jpg";
+import project10 from "@/../public/images/project10.jpeg";
 import project11 from "@/../public/images/project11.png";
 import project12 from "@/../public/images/project12.png";
 import project13 from "@/../public/images/project13.png";
 import project14 from "@/../public/images/project14.png";
 import project15 from "@/../public/images/project15.png";
+import project16 from "@/../public/images/project16.png";
 
 import buyer1 from "@/../public/images/buyer1.png";
 import buyer2 from "@/../public/images/buyer2.png";
 import buyer3 from "@/../public/images/buyer3.png";
 import buyer4 from "@/../public/images/buyer4.png";
 
-import blog1 from "@/../public/images/blog1.png";
-import blog2 from "@/../public/images/blog2.png";
-import blog3 from "@/../public/images/blog3.png";
-import blog4 from "@/../public/images/blog4.png";
-import blog5 from "@/../public/images/blog5.png";
-import blog6 from "@/../public/images/blog6.png";
-import blog7 from "@/../public/images/blog7.png";
+import blog1 from "@/../public/images/blog1.gif";
+import blog2 from "@/../public/images/blog2.jpg";
+import blog3 from "@/../public/images/blog3.webp";
+import blog4 from "@/../public/images/blog4.jpeg";
+import blog5 from "@/../public/images/blog4.png";
+import blog6 from "@/../public/images/blog6.webp";
+import blog7 from "@/../public/images/blog7.jpg";
 import blog8 from "@/../public/images/blog8.png";
-import blog9 from "@/../public/images/blog9.png";
+import blog9 from "@/../public/images/blog9.jpg";
+import blog10 from "@/../public/images/blog10.webp";
+import blog11 from "@/../public/images/blog11.jpeg";
+import blog12 from "@/../public/images/blog12.jpeg";
+import blog13 from "@/../public/images/blog13.jpeg";
+import blog14 from "@/../public/images/blog14.png";
+import blog15 from "@/../public/images/blog15.jpg";
+import blog16 from "@/../public/images/blog16.png";
+import blog17 from "@/../public/images/blog17.jpg";
+import blog18 from "@/../public/images/blog18.png";
+import blog19 from "@/../public/images/blog19.png";
+
 
 import product1 from "@/../public/images/react-dashboard.png";
 import product2 from "@/../public/images/ui-kit.png";
@@ -174,7 +186,7 @@ export const featureds = [
     tag2: "Healthcare AI",
     tag3: "Organ Donation",
     title: "DCD Organ Donation Algorithm – Duke & UNC Research",
-    img: project1,
+    img: project16,
   },
   {
     id: 9,
@@ -183,7 +195,7 @@ export const featureds = [
     tag2: "iOS",
     tag3: "Face Privacy",
     title: "Unity Vision iOS App – NC State Hackathon",
-    img: project7,
+    img: project9,
   },
   {
     id: 10,
@@ -192,7 +204,7 @@ export const featureds = [
     tag2: "Family Team",
     tag3: "Web Dev",
     title: "1st Place – HackNC 2024 at UNC Chapel Hill",
-    img: project9,
+    img: project10,
   },
 
   // === AI Infrastructure ===
@@ -297,68 +309,158 @@ export const testimonials = [
 export const blogs = [
   {
     id: 1,
-    img: blog1,
-    date: "April 18, 2024",
-    tag: "Articles",
-    title: "7 Great Web Development Languages to Learn this Year",
+    img: blog1, // Replace with actual import
+    date: "Feb 15, 2025",
+    tag: "Research",
+    title: "GenHMR: A Breakthrough in 3D Human Pose and Shape Estimation – Accepted at AAAI 2025",
+    author: "Issam Alzouby",
   },
   {
     id: 2,
     img: blog2,
-    date: "March 22, 2024",
-    tag: "Tutorials",
-    title: "How to Optimize your Website for Better Performance",
+    date: "Jan 15, 2025",
+    tag: "Infrastructure",
+    title: "From Server Hunting to VM Mastery: My Proxmox Power Play",
+    author: "Issam Alzouby",
   },
   {
     id: 3,
     img: blog3,
-    date: "May 08, 2024",
-    tag: "Articles",
-    title: "8 Tips to Improve your Web Development Skills in 2024",
+    date: "Jan 6, 2025",
+    tag: "Security",
+    title: "GitScan: Securing GitHub Repositories with AI-Driven Insights 🚀",
+    author: "Issam Alzouby",
   },
   {
     id: 4,
     img: blog4,
-    date: "April 18, 2024",
-    tag: "Articles",
-    title: "5 Great Web Development Frameworks to Learn in 2022",
+    date: "Dec 30, 2024",
+    tag: "Lifestyle",
+    title: "Rediscovering Balance: A Week Without Screens in the Tennessee Mountains",
+    author: "Issam Alzouby",
   },
   {
     id: 5,
     img: blog5,
-    date: "March 22, 2024",
-    tag: "Tutorials",
-    title: "Top 3 JavaScript Frameworks",
+    date: "Dec 25, 2024",
+    tag: "Linux",
+    title: "Why I Moved from Ubuntu to Fedora — and Fell in Love",
+    author: "Issam Alzouby",
   },
   {
     id: 6,
     img: blog6,
-    date: "May 08, 2024",
-    tag: "Articles",
-    title: "A Guide to Becoming a Full-Stack Developer",
+    date: "Dec 16, 2024",
+    tag: "DIY",
+    title: "How I 3D-Printed My GitHub Contribution Skyline for 2024",
+    author: "Issam Alzouby",
   },
   {
     id: 7,
     img: blog7,
-    date: "April 18, 2024",
-    tag: "Articles",
-    title: "High Performance JavaScript",
+    date: "Dec 8, 2024",
+    tag: "Dev Project",
+    title: "Building DevLink: A Collaborative Software Engineering Journey at UNC Charlotte",
+    author: "Issam Alzouby",
   },
   {
     id: 8,
     img: blog8,
-    date: "March 22, 2024",
-    tag: "Tutorials",
-    title: "Learn React in 24 Hours",
+    date: "Oct 16, 2024",
+    tag: "Tutorial",
+    title: "How to Fix the iOS Update 'Unable to Verify' Error on iPad",
+    author: "Issam Alzouby",
   },
   {
     id: 9,
     img: blog9,
-    date: "May 08, 2024",
-    tag: "Articles",
-    title: "How to Build Desktop Apps with HTML, CSS and JavaScript",
+    date: "Sep 1, 2024",
+    tag: "Cybersecurity",
+    title: "The Haliburton Attack: A Stark Reminder of Evolving Cybersecurity Threats",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 10,
+    img: blog10,
+    date: "Aug 21, 2024",
+    tag: "Cybersecurity",
+    title: "The Impact of the Recent Social Security Leak: A Cybersecurity Perspective",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 11,
+    img: blog11,
+    date: "Aug 16, 2024",
+    tag: "Marketing",
+    title: "The Pitfalls of Using Static Lists in HubSpot Workflows",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 12,
+    img: blog12,
+    date: "Aug 10, 2024",
+    tag: "CS Basics",
+    title: "Understanding Big O Notation: A Beginner's Guide",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 13,
+    img: blog13,
+    date: "Aug 6, 2024",
+    tag: "Forensics",
+    title: "Understanding the CrowdStrike Falcon Sensor BSOD Crash",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 14,
+    img: blog14,
+    date: "Jul 27, 2024",
+    tag: "Incident Analysis",
+    title: "CrowdStrike Update Causes Global Microsoft Outage",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 15,
+    img: blog15,
+    date: "Jul 25, 2024",
+    tag: "Hackathons",
+    title: "How to Succeed at Hackathons: A Guide to Making the Most of Your Experience",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 16,
+    img: blog16,
+    date: "Jul 13, 2024",
+    tag: "Healthcare",
+    title: "iReferral, Bringing Tech to Organ Donations",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 17,
+    img: blog17,
+    date: "Jul 12, 2024",
+    tag: "Cybersecurity",
+    title: "The Largest Cybersecurity Community in North America",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 18,
+    img: blog18,
+    date: "Jul 12, 2024",
+    tag: "Healthcare",
+    title: "Afflo Donor Referral Software; Revolutionizing HealthCare",
+    author: "Issam Alzouby",
+  },
+  {
+    id: 19,
+    img: blog19,
+    date: "Jul 11, 2024",
+    tag: "AI in Education",
+    title: "Harnessing AI for Academic Success: A Student's Perspective",
+    author: "Issam Alzouby",
   },
 ];
+
 
 export const packagesPrice = [
   {
