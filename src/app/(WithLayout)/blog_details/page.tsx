@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import blog9 from "@/../public/images/blog9.png";
-import blog7 from "@/../public/images/blog7.png";
+import blog9 from "@/../public/images/blog9.jpg";
+import blog7 from "@/../public/images/blog7.jpg";
 import blog3 from "@/../public/images/blog3.png";
-import blog2 from "@/../public/images/blog2.png";
-import blog1 from "@/../public/images/blog1.png";
+import blog2 from "@/../public/images/blog2.jpg";
+import blog1 from "@/../public/images/blog1.gif";
 import {
   PiCaretDoubleLeft,
   PiCaretDoubleRight,
