@@ -82,7 +82,7 @@ const Resume = () => {
                   />
                 </div>
                 <p className="n42-color fs-seven">
-                  I'm a Medical AI Engineer focused on building real-time digital twin systems through advanced motion modeling, GPU-accelerated pipelines, and AI optimization. My research bridges applied machine learning, biomedical systems, and human movement simulation. I’ve led award-winning work at Duke, UNC Chapel Hill, and Stanford AI4ALL, while mentoring students and deploying scalable models using PyTorch, FastAPI, and CoreML.
+                  I'm a Medical AI Engineer focused on building real-time digital twin systems through advanced motion modeling, GPU-accelerated pipelines, and AI optimization. My research bridges applied machine learning, biomedical systems, and human movement simulation. I’ve led award-winning work at Duke, UNC Chapel Hill, while mentoring students and deploying scalable models using PyTorch, FastAPI, and CoreML.
                 </p>
               </div>
 
@@ -115,7 +115,41 @@ const Resume = () => {
                       <span className="n5-color fs-six fw-medium">
                         Medical AI Research Collaborator
                       </span>
-                      <span className="n4-color fs-eight">Duke Heart Center | 2022 – Present</span>
+                      <span className="n4-color fs-eight">Duke Heart Center | 2024 – Present</span>
+                    </div>
+                    <p className="n42-color fs-seven my-2 my-md-5">
+                      Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
+                    </p>
+                    <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li className="n42-color fs-seven">First place – Eastern Cardiothoracic Surgical Conference, 2024</li>
+                      <li className="n42-color fs-seven">Designed AI scoring systems for ECMO-SVC triage with ChatGPT</li>
+                      <li className="n42-color fs-seven">Collaborated with surgeons on digital health AI workflows</li>
+                    </ul>
+                  </div>
+
+                  <div className="mb-4 mb-md-6">
+                    <div className="d-flex justify-content-between align-items-center">
+                      <span className="n5-color fs-six fw-medium">
+                        IT Manager
+                      </span>
+                      <span className="n4-color fs-eight">Data Connectors CyberSecurity | Jan 2024 – Jan 2025</span>
+                    </div>
+                    <p className="n42-color fs-seven my-2 my-md-5">
+                      Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
+                    </p>
+                    <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li className="n42-color fs-seven">First place – Eastern Cardiothoracic Surgical Conference, 2024</li>
+                      <li className="n42-color fs-seven">Designed AI scoring systems for ECMO-SVC triage with ChatGPT</li>
+                      <li className="n42-color fs-seven">Collaborated with surgeons on digital health AI workflows</li>
+                    </ul>
+                  </div>
+
+                  <div className="mb-4 mb-md-6">
+                    <div className="d-flex justify-content-between align-items-center">
+                      <span className="n5-color fs-six fw-medium">
+                        GPU Infrastructure Support Engineer
+                      </span>
+                      <span className="n4-color fs-eight">iRepairCLT | 2020 – 2023</span>
                     </div>
                     <p className="n42-color fs-seven my-2 my-md-5">
                       Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
@@ -165,7 +199,7 @@ const Resume = () => {
                       </div>
                       <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
                         <li className="n4-color fs-seven">Motion Modeling (SMPL, MoMask, BAMM)</li>
-                        <li className="n4-color fs-seven">GPU Infrastructure (CUDA, A6000 Cluster)</li>
+                        <li className="n4-color fs-seven">GPU Infrastructure (CUDA, RTX6000 Cluster)</li>
                         <li className="n4-color fs-seven">CoreML, ONNX, PyTorch, FastAPI</li>
                         <li className="n4-color fs-seven">Three.js, React, Tailwind, Next.js</li>
                         <li className="n4-color fs-seven">OpenAI APIs (ChatGPT, Whisper, DALL·E)</li>
@@ -187,7 +221,19 @@ const Resume = () => {
                           </span>
                           <span className="n4-color fs-eleven">Expected 2025</span>
                         </div>
+
                       </div>
+                      <div className="d-flex gap-2 mb-3 mb-md-5">
+                        <i className="fs-six p1-color">
+                          <PiGraduationCap />
+                        </i>
+                      <div>
+                          <span className="n4-color fs-seven">
+                            M.S. Artificial Intelligence – UNC Charlotte (R1)
+                          </span>
+                          <span className="n4-color fs-eleven">Expected 2026</span>
+                        </div>
+                    </div>
                     </div>
 
                     <div className="mb-8 mb-md-15">
@@ -212,7 +258,40 @@ const Resume = () => {
                         </i>
                         <div>
                           <span className="n4-color fs-seven">
-                            Stanford AI4ALL Mentor Recognition Award
+                            Truist Immersive Team Leader
+                          </span>
+                          <span className="n4-color fs-eleven">2023</span>
+                        </div>
+                      </div>
+                      <div className="d-flex gap-2">
+                        <i className=" fs-six p1-color">
+                          <PiTrophy />
+                        </i>
+                        <div>
+                          <span className="n4-color fs-seven">
+                            AI Research Travel Grant
+                          </span>
+                          <span className="n4-color fs-eleven">2023</span>
+                        </div>
+                      </div>
+                      <div className="d-flex gap-2">
+                        <i className=" fs-six p1-color">
+                          <PiTrophy />
+                        </i>
+                        <div>
+                          <span className="n4-color fs-seven">
+                            UNC-Charlotte Career Panelist
+                          </span>
+                          <span className="n4-color fs-eleven">2023</span>
+                        </div>
+                      </div>
+                      <div className="d-flex gap-2">
+                        <i className=" fs-six p1-color">
+                          <PiTrophy />
+                        </i>
+                        <div>
+                          <span className="n4-color fs-seven">
+                            UNC-Charlotte Chancellor's List
                           </span>
                           <span className="n4-color fs-eleven">2023</span>
                         </div>
@@ -239,7 +318,7 @@ const Resume = () => {
                         <li className="n4-color fs-seven">AI for Healthcare Equity</li>
                         <li className="n4-color fs-seven">Motion Simulation</li>
                         <li className="n4-color fs-seven">Mentoring & Community Outreach</li>
-                        <li className="n4-color fs-seven">Tinkering with Hardware (NAS, Proxmox)</li>
+                        <li className="n4-color fs-seven">Tinkering with Hardware</li>
                       </ul>
                     </div>
                   </div>

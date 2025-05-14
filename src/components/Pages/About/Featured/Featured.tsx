@@ -18,9 +18,7 @@ const Featured = () => {
                 </h2>
               </div>
               <p className="fs-seven n4-color mt-2 mt-md-4">
-                My step-by-step guide ensures a smooth project journey, from the
-                initial consultation to the final delivery. I take care of every
-                detail, allowing you to focus on what you do best.
+View more projects!
               </p>
             </div>
             <Link

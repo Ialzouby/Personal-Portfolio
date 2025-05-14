@@ -54,21 +54,20 @@ const ProductCard = ({
           </span>
 
           <div className="d-flex gap-3 align-items-center">
-            <button
-              type="button"
-              className="p-btn bg1-color px-3 py-2 rounded n11-color"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Read More
-            </button>
-            <Link
-              href="/products_details"
-              className="project-link d-flex align-items-center justify-content-center flex-shrink-0"
-            >
-              <PiArrowUpRightBold className="fs-five n5-color" />
-            </Link>
-          </div>
+  <Link
+    href="#"
+    className="p-btn bg1-color px-3 py-2 rounded n11-color text-decoration-none"
+  >
+    Read More
+  </Link>
+  <Link
+    href="/products_details"
+    className="project-link d-flex align-items-center justify-content-center flex-shrink-0"
+  >
+    <PiArrowUpRightBold className="fs-five n5-color" />
+  </Link>
+</div>
+
         </div>
       </div>
     </div>

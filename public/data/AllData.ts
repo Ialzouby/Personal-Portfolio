@@ -567,6 +567,7 @@ export const commentsData = [
 export const productsData = [
   {
     id: 1,
+    category: "Duke & UNC",
     img: product1,
     title: "FDA-Authorized AI Devices: Clinical Validation Analysis",
     des: "First-author study analyzing validation methods and clinical applications of all FDA-authorized medical AI tools. Submission to Nature Medicine in progress.",
@@ -574,6 +575,7 @@ export const productsData = [
   },
   {
     id: 2,
+    category: "Duke & UNC",
     img: product2,
     title: "Is AI Saving Lives? Meta-Analysis of Clinical Impact",
     des: "First-author and corresponding author. Meta-analysis of real-world clinical outcomes across AI-enabled interventions. Submission to NEJM AI in progress.",
@@ -581,6 +583,7 @@ export const productsData = [
   },
   {
     id: 3,
+    category: "Duke & UNC",
     img: product3,
     title: "Optimizing Organ Donation After DCD",
     des: "Co-authored study presenting algorithms to enhance organ donation outcomes after circulatory death. Submission to Nature Medicine in progress.",
@@ -588,6 +591,7 @@ export const productsData = [
   },
   {
     id: 4,
+    category: "Duke & UNC",
     img: blog4,
     title: "AI Tool for ECMO Timing in SVC Syndrome",
     des: "Case study on using AI to optimize ECMO timing for SVC syndrome relief post tumor resection. Submission to Nature Medicine in progress.",

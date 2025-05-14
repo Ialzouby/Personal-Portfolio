@@ -59,71 +59,75 @@ const Product = () => {
                   "fs-seven  fw-medium n3-color"
                 )}
               >
-                Assets
+                --
               </button>
             )}
           </Tab>
         </TabList>
         <TabPanels className="mt-5 mt-md-10">
-          <TabPanel>
-            <div className="row g-5 g-md-10">
-              {productsData.map(({ id, img, title, des, price }) => (
-                <ProductCard
-                  key={id}
-                  img={img}
-                  title={title}
-                  des={des}
-                  price={price}
-                />
-              ))}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="row g-5 g-md-10">
-              {productsData
-                .slice(2, 6)
-                .map(({ id, img, title, des, price }) => (
-                  <ProductCard
-                    key={id}
-                    img={img}
-                    title={title}
-                    des={des}
-                    price={price}
-                  />
-                ))}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="row g-5 g-md-10">
-              {productsData
-                .slice(1, 5)
-                .map(({ id, img, title, des, price }) => (
-                  <ProductCard
-                    key={id}
-                    img={img}
-                    title={title}
-                    des={des}
-                    price={price}
-                  />
-                ))}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="row g-5 g-md-10">
-              {productsData
-                .slice(3, 6)
-                .map(({ id, img, title, des, price }) => (
-                  <ProductCard
-                    key={id}
-                    img={img}
-                    title={title}
-                    des={des}
-                    price={price}
-                  />
-                ))}
-            </div>
-          </TabPanel>
-        </TabPanels>
+  <TabPanel>
+    <div className="row g-5 g-md-10">
+      {productsData.map(({ id, img, title, des, price }) => (
+        <ProductCard
+          key={id}
+          img={img}
+          title={title}
+          des={des}
+          price={price}
+        />
+      ))}
+    </div>
+  </TabPanel>
+
+  <TabPanel>
+    <div className="row g-5 g-md-10">
+      {productsData
+        .filter((item) => item.category === "Duke & UNC")
+        .map(({ id, img, title, des, price }) => (
+          <ProductCard
+            key={id}
+            img={img}
+            title={title}
+            des={des}
+            price={price}
+          />
+        ))}
+    </div>
+  </TabPanel>
+
+  <TabPanel>
+    <div className="row g-5 g-md-10">
+      {productsData
+        .filter((item) => item.category === "UNCC")
+        .map(({ id, img, title, des, price }) => (
+          <ProductCard
+            key={id}
+            img={img}
+            title={title}
+            des={des}
+            price={price}
+          />
+        ))}
+    </div>
+  </TabPanel>
+
+  <TabPanel>
+    <div className="row g-5 g-md-10">
+      {productsData
+        .filter((item) => item.category === "Assets")
+        .map(({ id, img, title, des, price }) => (
+          <ProductCard
+            key={id}
+            img={img}
+            title={title}
+            des={des}
+            price={price}
+          />
+        ))}
+    </div>
+  </TabPanel>
+</TabPanels>
+
       </TabGroup>
 
       {/* Modal start  */}

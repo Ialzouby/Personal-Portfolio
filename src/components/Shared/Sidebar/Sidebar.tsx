@@ -8,6 +8,7 @@ import {
   PiFacebookLogo,
   PiInstagramLogo,
   PiLinkedinLogo,
+  PiGithubLogo,
   PiPaperPlaneTilt,
   PiShoppingCart,
   PiX,
@@ -62,26 +63,18 @@ const Sidebar = () => {
                  AI Researcher
                 </span>
                 <div className="d-flex justify-content-center gap-2 align-items-center mt-4">
-                  <Link href="#" className="social-icon">
-                    <i className="p1-color">
-                      <PiFacebookLogo />
-                    </i>
-                  </Link>
-                  <Link href="#" className="social-icon">
-                    <i className="p1-color">
-                      <PiInstagramLogo />
-                    </i>
-                  </Link>
-                  <Link href="#" className="social-icon">
-                    <i className="p1-color">
-                      <PiX />
-                    </i>
-                  </Link>
-                  <Link href="#" className="social-icon">
+                <Link href="https://www.linkedin.com/in/alzouby/" className="social-icon">
                     <i className="p1-color">
                       <PiLinkedinLogo />
                     </i>
                   </Link>
+                  <Link href="https://github.com/Ialzouby" className="social-icon">
+                    <i className="p1-color">
+                      <PiGithubLogo />
+                    </i>
+                  </Link>
+
+
                 </div>
               </div>
               <div className="line-divider my-4 my-md-8"></div>
