@@ -22,13 +22,13 @@ const Contact = () => {
                 Contact
               </h3>
               <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
-                Interested in hiring me for your project or just want to say hi?
-                You can fill in the contact form below or send me an email to
+              Building something interesting? Have feedback or just want to chat?
+              I’m always open to new ideas and conversations.
                 <Link href="#" className="p1-color">
                   {" "}
-                  evans@yourwebsite.com
+                  
                 </Link>{" "}
-                . Want to get connected? Follow me on the social channels below.
+                
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-2 align-items-center mt-4">
                 <Link href="#" className="social-icon">
