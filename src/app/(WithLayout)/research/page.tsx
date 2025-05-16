@@ -1,9 +1,9 @@
-import Product from "@/components/Pages/Product/Product";
+import Product from "@/components/Pages/Research";
 import Footer from "@/components/Shared/Footer/Footer";
 import Link from "next/link";
 import { PiPaperPlaneTilt } from "react-icons/pi";
 
-const Products = () => {
+const Research = () => {
   return (
     <div>
       <section className="pt-120 pb-120 mt-10 mt-lg-0">
@@ -33,4 +33,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Research;

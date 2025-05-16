@@ -3,10 +3,10 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Fragment } from "react";
 import clsx from "clsx";
 import { productsData } from "../../../../public/data/AllData";
-import ProductCard from "./ProductCard";
+import ProductCard from "../Product/ProductCard";
 import CartModal from "@/components/Shared/Modal/CartModal";
 
-const Product = () => {
+  const Research = () => {
   return (
     <div className="container mt-8 mt-md-15">
       <TabGroup>
@@ -136,4 +136,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Research;
