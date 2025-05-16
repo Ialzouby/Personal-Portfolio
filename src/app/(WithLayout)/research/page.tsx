@@ -10,13 +10,10 @@ const Research = () => {
         <div className="pb-60 br-bottom-n3">
           <div data-aos="zoom-in" className="page-heading">
             <h3 className="page-title n5-color fs-onefw-semibold n5-color mb-2 mb-md-3 text-center">
-              Check Out What I&apos;ve Created for You
+              Check Out My Research
             </h3>
             <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
-              Explore a collection of projects where creativity meets code. From
-              sleek, responsive designs to intuitive user experiences, each
-              project represents a unique solution tailored to meet client
-              needs. Dive in to see how ideas transform into digital realities.
+              Explore a collection of my research papers and projects.
             </p>
             <Link
               href="/contact"
