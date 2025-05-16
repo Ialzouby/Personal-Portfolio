@@ -44,7 +44,7 @@ export const sidebarsData = [
   {
     id: 5,
     name: "Research",
-    url: "/products",
+    url: "/research",
     icon: <PiShoppingBag />,
   },
   {
@@ -88,8 +88,8 @@ export const bottomNavData = [
   },
   {
     id: 5,
-    name: "Products",
-    url: "/products",
+    name: "Research",
+    url: "/research",
     icon: <PiShoppingBagFill />,
   },
   {

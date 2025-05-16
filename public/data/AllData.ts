@@ -58,8 +58,9 @@ import blog19 from "@/../public/images/blog19.png";
 
 
 import product1 from "@/../public/images/react-dashboard.png";
-import product2 from "@/../public/images/ui-kit.png";
-import product3 from "@/../public/images/angular-dashboard.png";
+import product2 from "@/../public/images/ISAISL.png";
+import product3 from "@/../public/images/organ.png";
+import product4 from "@/../public/images/ecmo.png";
 
 export const services = [
   {
@@ -568,7 +569,7 @@ export const productsData = [
   {
     id: 1,
     category: "Duke & UNC",
-    img: product1,
+    img: blog4,
     title: "FDA-Authorized AI Devices: Clinical Validation Analysis",
     des: "First-author study analyzing validation methods and clinical applications of all FDA-authorized medical AI tools. Submission to Nature Medicine in progress.",
     price: "Will submit to Nature Medicine upon completion of manuscript",
@@ -592,7 +593,7 @@ export const productsData = [
   {
     id: 4,
     category: "Duke & UNC",
-    img: blog4,
+    img: product4,
     title: "AI Tool for ECMO Timing in SVC Syndrome",
     des: "Case study on using AI to optimize ECMO timing for SVC syndrome relief post tumor resection. Submission to Nature Medicine in progress.",
     price: "Submission to Nature Medicine In Progress",
