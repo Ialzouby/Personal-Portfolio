@@ -22,7 +22,7 @@
   
   .gallery-card:hover {
     transform: scale(1.04);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 28px rgba(90, 198, 245, 0.99);
     cursor: grabbing;
   }
   
