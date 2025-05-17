@@ -6,6 +6,7 @@ import NextProject from "@/components/Pages/About/NextProject";
 import Testimonials from "@/components/Pages/About/Testimonials";
 import WhatDo from "@/components/Pages/About/WhatDo";
 import Footer from "@/components/Shared/Footer/Footer";
+import Gallery from "@/components/Pages/About/Gallery";
 
 const About = () => {
   return (
@@ -16,6 +17,7 @@ const About = () => {
           <Counter />
         </div>
       </section>
+      <Gallery />
       <WhatDo />
       <NextProject />
       <Featured />
