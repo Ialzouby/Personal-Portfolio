@@ -17,7 +17,10 @@ const About = () => {
           <Counter />
         </div>
       </section>
+      <section className="pt-0 pb-0 mt-0 br-bottom-n3">
       <Gallery />
+
+      </section>
       <WhatDo />
       <NextProject />
       <Featured />

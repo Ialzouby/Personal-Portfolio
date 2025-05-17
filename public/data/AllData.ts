@@ -278,7 +278,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    country: "Stanford AI4ALL",
+    country: "UNC Charlotte AI Center",
     name: "Program Director",
     des: "Issam inspired our students with cutting-edge AI projects and mentored them with clarity, empathy, and vision.",
     img: buyer2,
