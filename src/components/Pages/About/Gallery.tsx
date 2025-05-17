@@ -13,7 +13,7 @@ import img4 from "@/../public/images/project4.png";
 import img5 from "@/../public/images/project5.png";
 import img6 from "@/../public/images/project6.png";
 import img7 from "@/../public/images/project7.png";
-import img8 from "@/../public/images/g8.png";
+import img8 from "@/../public/images/project8.png";
 import img9 from "@/../public/images/g9.png";
 import img10 from "@/../public/images/project10.png";
 import img11 from "@/../public/images/project11.png";
