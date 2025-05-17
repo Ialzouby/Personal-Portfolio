@@ -272,7 +272,7 @@ export const testimonials = [
   {
     id: 1,
     country: "UNC Charlotte AI Center",
-    name: "Dr. Wang",
+    name: "Advisor",
     des: "Issam’s contributions to our motion generation pipeline were essential. His speed, depth, and clarity made him a leader on the team.",
     img: buyer1,
   },
