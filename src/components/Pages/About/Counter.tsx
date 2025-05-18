@@ -36,7 +36,7 @@ const Counter = () => {
           
         </h2>
         <div className="line"></div>
-        <span className="n5-color"> Research Papers </span>
+        <span className="n5-color"> Publications </span>
       </div>
       <div className="d-flex align-items-center gap-2 gap-xl-4">
         <h2 className="display-two fw-semibold p1-color d-flex gap-1">
@@ -46,7 +46,7 @@ const Counter = () => {
           
         </h2>
         <div className="line"></div>
-        <span className="n5-color"> Lifetime Github Contributions </span>
+        <span className="n5-color"> Github Contributions </span>
       </div>
     </div>
   );
