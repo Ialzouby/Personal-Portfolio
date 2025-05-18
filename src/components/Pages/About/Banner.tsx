@@ -10,7 +10,7 @@ const Banner = () => {
   return (
     <div className="d-flex flex-wrap gap-9 gap-md-12 align-items-center justify-content-between">
       <div className="banner-content">
-        <span className="n5-color fs-five">HI, I&apos;M An AI RESEARCHER</span>
+        <span className="n5-color fs-five">HI, I&apos;M An AI Engineer</span>
         <h2 className="typing-text display-one p1-color mt-2 mb-3">
           <TypingEffect texts={texts} speed={200} pause={2000} />
         </h2>
