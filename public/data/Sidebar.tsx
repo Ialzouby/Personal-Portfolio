@@ -29,12 +29,12 @@ export const sidebarsData = [
     icon: <PiCodeBlock />,
     numbers: 16,
   },
-  //{
-    //id: 3,
-    //name: "Services & Pricing",
-    //url: "/price",
-    //icon: <PiBriefcase />,
-  //},
+  {
+    id: 3,
+    name: "Speaking",
+    url: "/speaking",
+    icon: <PiBriefcase />,
+  },
   {
     id: 4,
     name: "Resume",

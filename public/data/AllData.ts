@@ -62,6 +62,9 @@ import product2 from "@/../public/images/ISAISL.png";
 import product3 from "@/../public/images/organ.png";
 import product4 from "@/../public/images/ecmo.png";
 
+import speaking1 from "@/../public/images/speaking.JPG";
+import speaking2 from "@/../public/images/speaking2.jpeg";
+
 export const services = [
   {
     id: 1,
@@ -110,6 +113,27 @@ export const services = [
     title: "AI Education & Mentorship",
     des: "Mentoring students through Stanford AI4ALL and UNCC; focused on inclusive, impactful AI learning.",
     imgs: [python, react],
+  },
+];
+
+export const featureds2 = [
+  {
+    id: 1,
+    category: "Public Speaking",
+    tag1: "Public Speaking",
+    tag2: "AI",
+    tag3: "Ethics & Policy",
+    title: "AI & Bot Technology Ethics, policies, and Etiquete",
+    img: speaking1,
+  },
+  {
+    id: 2,
+    category: "Teaching",
+    tag1: "Teaching",
+    tag2: "AI",
+    tag3: "Instructional",
+    title: "AI-Powered Development",
+    img: speaking2,
   },
 ];
 

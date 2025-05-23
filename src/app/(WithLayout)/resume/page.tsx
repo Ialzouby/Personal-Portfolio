@@ -96,17 +96,16 @@ const Resume = () => {
                   <div className="mb-4 mb-md-6">
                     <div className="d-flex justify-content-between align-items-center">
                       <span className="n5-color fs-six fw-medium">
-                        Researcher – Digital Motion Twins
+                        AI Research Assistant
                       </span>
                       <span className="n4-color fs-eight">UNC Charlotte | 2023 – Present</span>
                     </div>
                     <p className="n42-color fs-seven my-2 my-md-5">
-                      Led research on SMPL/SMPL-X human modeling, transformer-based motion generation (BAMM, MoMask), and real-time mesh retargeting using Three.js. Developed a web-based inference API and motion visualization platform integrating PyTorch, FastAPI, and Next.js.
                     </p>
                     <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
-                      <li className="n42-color fs-seven">Optimized motion transformer pipelines with 8× A6000 GPUs.</li>
-                      <li className="n42-color fs-seven">Built interactive motion editor using BVH and GLB formats.</li>
-                      <li className="n42-color fs-seven">Mentored students on SMPL kinematics and AI deployment.</li>
+                      <li className="n42-color fs-seven">Led model deployment, optimizing pipelines to achieve a 70%+ reduction in processing and inference time</li>
+                      <li className="n42-color fs-seven">Built a scalable CUDA-based pipeline deploying BAMM and TADA on an A6000 GPU cluster for rapid motion generation</li>
+                      <li className="n42-color fs-seven">Trained transformer-based text-to-motion models for generating realistic human movement from language</li>
                     </ul>
                   </div>
 
@@ -118,12 +117,11 @@ const Resume = () => {
                       <span className="n4-color fs-eight">Duke Heart Center | 2024 – Present</span>
                     </div>
                     <p className="n42-color fs-seven my-2 my-md-5">
-                      Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
                     </p>
                     <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
-                      <li className="n42-color fs-seven">First place – Eastern Cardiothoracic Surgical Conference, 2024</li>
-                      <li className="n42-color fs-seven">Designed AI scoring systems for ECMO-SVC triage with ChatGPT</li>
-                      <li className="n42-color fs-seven">Collaborated with surgeons on digital health AI workflows</li>
+                      <li className="n42-color fs-seven">Awarded ‘Best Oral Presentation in Cardiac Surgery’ at the 62nd Eastern Cardiothoracic Surgical Society conference</li>
+                      <li className="n42-color fs-seven">Designed an algorithm that improved projected organ donation success by 94% and reduced ICU staff workload</li>
+                      <li className="n42-color fs-seven">Co-authored 4 medical AI papers on clinical decision making, currently in final review for submission to Nature Medicine</li>
                     </ul>
                   </div>
 
@@ -135,12 +133,12 @@ const Resume = () => {
                       <span className="n4-color fs-eight">Data Connectors CyberSecurity | Jan 2024 – Jan 2025</span>
                     </div>
                     <p className="n42-color fs-seven my-2 my-md-5">
-                      Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
                     </p>
                     <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
-                      <li className="n42-color fs-seven">First place – Eastern Cardiothoracic Surgical Conference, 2024</li>
-                      <li className="n42-color fs-seven">Designed AI scoring systems for ECMO-SVC triage with ChatGPT</li>
-                      <li className="n42-color fs-seven">Collaborated with surgeons on digital health AI workflows</li>
+                      <li className="n42-color fs-seven">Administered and secured the Office 365 suite, including IAM and Defender, mitigating risks and ensuring compliance</li>
+                      <li className="n42-color fs-seven">Traveled across the US and Canada to manage conferences and engaged with industry leaders, fostering collaboration</li>
+                      <li className="n42-color fs-seven">Trained cross-departmental teams on system tools and processes, driving efficiency and consistent workflow adoption</li>
+                      <li className="n42-color fs-seven">Refined HubSpot pipelines for over 900,000 leads, applying Power Query, Power BI & OSINT to boost data fidelity</li>
                     </ul>
                   </div>
 
@@ -152,12 +150,10 @@ const Resume = () => {
                       <span className="n4-color fs-eight">iRepairCLT | 2020 – 2023</span>
                     </div>
                     <p className="n42-color fs-seven my-2 my-md-5">
-                      Co-developed a transplant optimization algorithm improving organ match success rates by 95%. Led multi-modal AI validation and contributed to 4 research papers (in submission to Nature Medicine).
                     </p>
                     <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
-                      <li className="n42-color fs-seven">First place – Eastern Cardiothoracic Surgical Conference, 2024</li>
-                      <li className="n42-color fs-seven">Designed AI scoring systems for ECMO-SVC triage with ChatGPT</li>
-                      <li className="n42-color fs-seven">Collaborated with surgeons on digital health AI workflows</li>
+                      <li className="n42-color fs-seven">Reverse Engineered proprietary ASIC hashing boards and Nvidia Graphics Cards (Primarily RTX 30/40 Series)</li>
+                      <li className="n42-color fs-seven">Maintained GPU clusters across high humidity and high heat mining farms, implementing solutions to maximize uptime </li>
                     </ul>
                   </div>
 
@@ -169,23 +165,30 @@ const Resume = () => {
                   <div className="mb-4 mb-md-6">
                     <div className="d-flex justify-content-between align-items-center mb-2 mb-md-4">
                       <span className="n5-color fs-six fw-medium">
-                        UnityConnect – AI-Powered Refugee Support Platform
+                      T2M & A2M Multi-modal Motion Generation
                       </span>
-                      <span className="n42-color fs-eight">iOS App / Firebase / OpenAI</span>
+                      <span className="n42-color fs-eight">OpenSource AI / FastAPI / Motion Generation</span>
                     </div>
-                    <p className="n42-color fs-seven">
-                      Created an in-app translated chat, map-based support directory, mentor chat system, and emergency aid info — powered by GPT-4, Firebase, and Swift.
-                    </p>
+                    <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
+
+                    <li className="n42-color fs-seven">Led a team of 5 master’s students under faculty supervision to deploy BAMM and SMPL-X models on a university GPU cluster</li>
+                      <li className="n42-color fs-seven">Reduced T2M inference time from 90s to 7s and audio preprocessing from 4min to 30s using CUDA optimization</li>
+                      <li className="n42-color fs-seven">Built custom FastAPI endpoints and a responsive Next.js frontend for real-time motion generation from text and audio</li>
+                      <li className="n42-color fs-seven">Implemented motion retargeting to TADA avatars, enabling expressive in-browser 3D animation</li>
+                    </ul>
                   </div>
 
                   <div className="mb-4 mb-md-6">
                     <div className="d-flex justify-content-between align-items-center mb-2 mb-md-4">
-                      <span className="n5-color fs-six fw-medium">GitScan – Repository Risk Scanner</span>
-                      <span className="n42-color fs-eight">Node.js / OpenAI API</span>
+                      <span className="n5-color fs-six fw-medium">6 Time Hackathon Winner </span>
+                      <span className="n42-color fs-eight">Node.js / OpenAI API / Innovation</span>
                     </div>
-                    <p className="n42-color fs-seven">
-                      Built an automated scanning tool to identify risky functions and security flaws in large GitHub repositories using GPT-4.
-                    </p>
+                    <ul className="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li className="n42-color fs-seven">NC NASA Hackathon, UNC Chapel Hill’s HackNC, NC State Hackathon, and the Truist Immersive Experience</li>
+                      <li className="n42-color fs-seven">Secured 1st place in the 2024 NC State Competitive Programming Competition demonstrating problem solving skills</li>
+                      <li className="n42-color fs-seven">Developed AI-powered voice translation and bias-reducing applications, securing 1st place in 4 major hackathons</li>
+                      <li className="n42-color fs-seven">Leveraged CoreML, PyTorch, OpenAI API, AWS Amplify, and Firebase, demonstrating practical impact and innovation</li>
+                    </ul>
                   </div>
                 </div>
 

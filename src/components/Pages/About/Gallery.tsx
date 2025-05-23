@@ -9,7 +9,7 @@ import "swiper/css/autoplay";
 import img1 from "@/../public/images/g1.png";
 import img2 from "@/../public/images/g2.png";
 import img3 from "@/../public/images/g3.png";
-import img4 from "@/../public/images/project4.png";
+import img4 from "@/../public/images/speaking.JPG";
 import img5 from "@/../public/images/project5.png";
 import img6 from "@/../public/images/project6.png";
 import img7 from "@/../public/images/project7.png";
