@@ -26,7 +26,8 @@
     "sharp": "^0.33.4",
     "sweetalert2": "^11.12.2",
     "sweetalert2-react-content": "^5.0.7",
-    "swiper": "^11.2.6"
+    "swiper": "^11.2.6",
+    "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
     "@types/node": "^20",
