@@ -30,12 +30,6 @@ export const sidebarsData = [
     numbers: 16,
   },
   {
-    id: 3,
-    name: "Speaking",
-    url: "/speaking",
-    icon: <PiBriefcase />,
-  },
-  {
     id: 4,
     name: "Resume",
     url: "/resume",
@@ -48,11 +42,23 @@ export const sidebarsData = [
     icon: <PiShoppingBag />,
   },
   {
-    id: 6,
-    name: "Blog",
-    url: "/blog",
-    icon: <PiNewspaperClipping />,
+    id: 3,
+    name: "Speaking",
+    url: "/speaking",
+    icon: <PiBriefcase />,
   },
+  {
+    id: 6,
+    name: "Leadership",
+    url: "/leadership",
+    icon: <PiBriefcase />,
+  },
+//  {
+    //id: 6,
+    //name: "Blog",
+    //url: "/blog",
+    //icon: <PiNewspaperClipping />,
+  //},
   {
     id: 7,
     name: "Contact",
