@@ -7,20 +7,22 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import img1 from "@/../public/images/g1.png";
-import img2 from "@/../public/images/g2.png";
+import img2 from "@/../public/images/gallery2.jpg";
 import img3 from "@/../public/images/g3.png";
 import img4 from "@/../public/images/g12.png";
-import img5 from "@/../public/images/project5.png";
+import img5 from "@/../public/images/p13.JPG";
 import img6 from "@/../public/images/project6.png";
 import img7 from "@/../public/images/project7.png";
 import img8 from "@/../public/images/project8.jpeg";
-import img9 from "@/../public/images/project9.png";
-import img10 from "@/../public/images/project10.png";
-import img11 from "@/../public/images/project11.png";
+import img9 from "@/../public/images/gallery5.jpg";
+import img10 from "@/../public/images/gallery10.jpg";
+import img11 from "@/../public/images/gallery11.png";
 import img12 from "@/../public/images/g12.png";
+import img13 from "@/../public/images/p13.JPG";
+import img14 from "@/../public/images/gallery12.png";
 
 const images = [
-  img1, img2, img3, img4, img5, img7, img8, img9, img10, img11, img12,
+  img1, img2, img3, img4, img5, img7, img8, img9, img10, img11, img12, img13, img14
 ];
 
 // Custom layout pattern to control order explicitly
