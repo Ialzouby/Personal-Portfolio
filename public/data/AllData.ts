@@ -69,7 +69,7 @@ export const services = [
   {
     id: 1,
     title: "Medical AI Engineer",
-    des: "Designing AI tools for clinical workflows — including organ donation prediction, scoring systems, and outcome modeling.",
+    des: "Designing AI tools for clinical workflows, including organ donation prediction, scoring systems, and outcome modeling.",
     imgs: [python, react],
   },
   //{
