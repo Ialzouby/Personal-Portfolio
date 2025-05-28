@@ -1,41 +1,158 @@
-/* globals.css or style.scss */
-
-  /* global.css or style.scss */
+/* Hover effect for reuse */
 .hover-effect:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Professional Gallery: 2-row layout */
+.professional-gallery {
+  display: grid;
+  grid-template-rows: repeat(2, 240px); /* Only 2 rows */
+  grid-auto-flow: column dense;
+  grid-auto-columns: minmax(180px, auto);
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0 40px 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+}
+
+/* Base Item */
+.gallery-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hover */
+.gallery-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Layout variations */
+.gallery-item--tall {
+  grid-row: span 2;
+  grid-column: span 2;
+  aspect-ratio: 3 / 4;
+}
+
+.gallery-item--wide {
+  grid-row: span 1;
+  grid-column: span 2;
+  aspect-ratio: 3 / 2;
+}
+.gallery-item--large {
+  grid-row: span 2;
+  grid-column: span 2;
+  aspect-ratio: 4 / 3;
+}
+.gallery-item--standard {
+  grid-row: span 1;
+  aspect-ratio: 1 / 1;
+}
+
+/* Image container */
+.gallery-item__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Image styling */
+.gallery-item__image {
+  transition: transform 0.6s ease;
+  border-radius: 8px;
+}
+.gallery-item:hover .gallery-item__image {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.gallery-item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+}
+.gallery-item:hover .gallery-item__overlay {
+  opacity: 1;
+}
+
+/* Overlay Icon */
+.gallery-item__icon {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+.gallery-item:hover .gallery-item__icon {
+  transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .professional-gallery {
+    grid-template-rows: repeat(2, 200px);
   }
-  .gallery-card {
-    background: rgb(0, 162, 255);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgb(138, 197, 253);
-    border-radius: 16px;
-    padding: 3px;
-    transition: all 0.3s ease;
-    cursor: grab;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .gallery-item__icon {
+    width: 40px;
+    height: 40px;
   }
-  
-  .gallery-card:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 28px rgba(90, 198, 245, 0.99);
-    cursor: grabbing;
+}
+@media (max-width: 480px) {
+  .professional-gallery {
+    grid-template-rows: repeat(2, 160px);
   }
-  
-  .gallery-img {
-    border-radius: 12px;
-    object-fit: cover;
-    width: 100%;
-    height: 170px;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Optional: Pulse animation effect */
-  .gallery-card:hover .gallery-img {
-    transform: scale(1.015);
-  }
-  
+}
+
+/* Scrollbar (optional) */
+.professional-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+.professional-gallery::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+.professional-gallery::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
+  border-radius: 3px;
+}
+.professional-gallery::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
+}
