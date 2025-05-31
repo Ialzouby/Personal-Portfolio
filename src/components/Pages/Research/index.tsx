@@ -66,8 +66,8 @@ import CartModal from "@/components/Shared/Modal/CartModal";
         </TabList>
         <TabPanels className="mt-5 mt-md-10">
   <TabPanel>
-    <div className="row g-5 g-md-10">
-      {productsData.map(({ id, img, title, des, price }) => (
+  <div className="row g-2 g-md-6">
+  {productsData.map(({ id, img, title, des, price }) => (
         <ProductCard
           key={id}
           img={img}
