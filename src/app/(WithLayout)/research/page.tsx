@@ -17,11 +17,11 @@ export const metadata = {
     title: "Research | Issam Alzouby - AI for Healthcare & Human Modeling",
     description:
       "Discover cutting-edge AI research by Issam Alzouby in medical AI, clinical workflows, motion modeling, and infrastructure.",
-    url: "https://yourdomain.com/research",
+    url: "https://issamalzouby.com/research",
     type: "article",
     images: [
       {
-        url: "https://yourdomain.com/og-research.jpg", // replace with your image
+        url: "https://issamalzouby.com/p13.jpg", // replace with your image
         width: 1200,
         height: 630,
         alt: "Issam Alzouby AI Research Projects",
@@ -34,7 +34,7 @@ export const metadata = {
     description:
       "Explore Issam’s AI research portfolio including digital twins, organ donation prediction, and medical AI pipelines.",
     creator: "@issamalzouby", // replace with your actual Twitter handle
-    images: ["https://yourdomain.com/og-research.jpg"], // match OG image
+    images: ["https://issamalzouby.com/p13.jpg"], // match OG image
   },
 };
 
