@@ -1,32 +1,42 @@
 "use client";
 
 import Image from "next/image";
-import Thumb from "@/../public/images/gallery5.jpg";
+import Leadership1 from "@/../public/images/leadership1.jpg";
+import Leadership2 from "@/../public/images/leadership3.png";
+import Leadership3 from "@/../public/images/leadership2.png";
+
+
 
 const leadership = [
   {
     title: "Community Pantry Organizer",
-    desc: "Weekly drives feeding 200+ families.",
+    desc: "Led and Organized Bi-Weekly drives feeding 50+ families each time.",
+    img: Leadership1,
   },
   {
     title: "Tech Mentor",
-    desc: "Guided high-schoolers in AI and coding.",
+    desc: "Mentored and Guided Students through projects including FPV Drones and Coding",
+    img: Leadership2,
   },
   {
     title: "Police Dept Outreach",
-    desc: "Built a youth-tech event with local police.",
+    desc: "Led and Organized quarterly outreach initiatives to Charlotte's PD and FD.",
+    img: Leadership3,
   },
   {
-    title: "Clinic Tech Lead",
-    desc: "Managed systems for a refugee clinic.",
+    title: "Free HealthCare Clinic",
+    desc: "Managed and developed website and scheduling system for a free health care clinic.",
+    img: Leadership2,
   },
   {
     title: "UNICEF Translator",
-    desc: "Arabic ↔ English for UNICEF health campaigns.",
+    desc: "Traveled to refugee camps in Jordan to translate and assist with campaigns.",
+    img: Leadership2,
   },
   {
     title: "Tech Conference Volunteer",
-    desc: "Coordinated logistics for national events.",
+    desc: "Volunteered at tech conferences across the south-east, one of which led to a full time position.",
+    img: Leadership2,
   },
 ];
 
@@ -36,16 +46,12 @@ export default function LeadershipGrid() {
 <h2 className="text-center mb-10">Leadership & Outreach</h2>
 
       <div className="row g-4">
-        {leadership.map(({ title, desc }, index) => (
+        {leadership.map(({ title, desc, img }, index) => (
           <div className="col-12 col-md-6" key={index}>
   <div className="modern-card cosmic-glass hover-effect position-relative">
     <div className="ratio ratio-16x9 rounded-top overflow-hidden">
-      <Image
-        src={Thumb}
-        alt={title}
-        fill
-        className="object-fit-cover"
-      />
+    <Image src={img} alt={title} fill className="object-fit-cover" />
+
     </div>
     <div className="p-4 position-relative z-1">
       <h5 className="fw-semibold text-white mb-2">{title}</h5>
