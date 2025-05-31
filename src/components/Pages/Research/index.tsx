@@ -1,3 +1,5 @@
+"use client";
+
 export const metadata = {
   title: "Research | Issam Alzouby - AI for Healthcare & Human Modeling",
   description:
@@ -37,9 +39,6 @@ export const metadata = {
     images: ["https://issamalzouby.com/p13.jpg"], // match OG image
   },
 };
-
-
-"use client";
 
 
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
