@@ -1,3 +1,43 @@
+export const metadata = {
+  title: "Research | Issam Alzouby - AI for Healthcare & Human Modeling",
+  description:
+    "Explore research papers and projects by Issam Alzouby, focused on medical AI, real-time motion modeling, organ donation prediction, and digital twin systems.",
+  keywords: [
+    "Issam Alzouby Research",
+    "Medical AI",
+    "AI Research",
+    "Digital Twin",
+    "Organ Donation AI",
+    "AI for Health",
+    "Human Modeling",
+    "Clinical AI",
+    "AI Publications",
+  ],
+  openGraph: {
+    title: "Research | Issam Alzouby - AI for Healthcare & Human Modeling",
+    description:
+      "Discover cutting-edge AI research by Issam Alzouby in medical AI, clinical workflows, motion modeling, and infrastructure.",
+    url: "https://yourdomain.com/research",
+    type: "article",
+    images: [
+      {
+        url: "https://yourdomain.com/og-research.jpg", // replace with your image
+        width: 1200,
+        height: 630,
+        alt: "Issam Alzouby AI Research Projects",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Research | Issam Alzouby - AI for Health & Modeling",
+    description:
+      "Explore Issam’s AI research portfolio including digital twins, organ donation prediction, and medical AI pipelines.",
+    creator: "@issamalzouby", // replace with your actual Twitter handle
+    images: ["https://yourdomain.com/og-research.jpg"], // match OG image
+  },
+};
+
 import Product from "@/components/Pages/Research";
 import Footer from "@/components/Shared/Footer/Footer";
 import Link from "next/link";
