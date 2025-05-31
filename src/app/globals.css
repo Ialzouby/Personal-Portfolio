@@ -251,8 +251,8 @@
     background: linear-gradient(
       145deg,
       rgba(30, 30, 40, 0.75) 0%,
-      rgba(80, 70, 110, 0.65) 45%,
-      rgba(160, 120, 255, 0.35) 100%
+      rgba(166, 156, 196, 0.65) 45%,
+      rgba(161, 152, 204, 0.35) 100%
     );
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
