@@ -4,6 +4,7 @@ import Image from "next/image";
 import Leadership1 from "@/../public/images/leadership1.jpg";
 import Leadership2 from "@/../public/images/leadership3.png";
 import Leadership3 from "@/../public/images/leadership2.png";
+import Leadership6 from "@/../public/images/leadership6.jpg";
 
 
 
@@ -30,8 +31,8 @@ const leadership = [
   },
   {
     title: "UNICEF Translator",
-    desc: "Traveled to refugee camps in Jordan to translate and assist with campaigns.",
-    img: Leadership2,
+    desc: "Traveled to refugee camps in Jordan to provide translations and assist with applications.",
+    img: Leadership6,
   },
   {
     title: "Tech Conference Volunteer",
