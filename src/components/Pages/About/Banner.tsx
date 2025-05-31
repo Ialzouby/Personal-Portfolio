@@ -8,6 +8,9 @@ import TypingEffect from "@/components/TypingEffect/TypingEffect";
 const Banner = () => {
   const texts = ["Engineer", "Researcher", "Innovator"];
   return (
+<div className="banner-wrapper position-relative overflow-hidden rounded">
+<div className="floating-dots"></div>
+
     <div className="d-flex flex-wrap gap-9 gap-md-12 align-items-center justify-content-between">
       <div className="banner-content">
         <span className="n5-color fs-five">HI, I&apos;M An AI Engineer</span>
@@ -57,7 +60,8 @@ const Banner = () => {
           <Image src={user} alt="user" width={200} height={200} className="user-img" />
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 

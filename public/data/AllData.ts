@@ -331,6 +331,20 @@ export const testimonials = [
 ];
 
 
+export const testimonials2 = [
+  {
+    id: 1,
+    country: "UNC Charlotte AI Center",
+    name: "Advisor",  
+    des: "Issam’s contributions to our motion generation pipeline were essential. His speed, depth, and clarity made him a leader on the team.",
+    img: buyer1,
+  },
+];
+
+
+
+
+
 export const blogs = [
   {
     id: 1,

@@ -54,7 +54,7 @@ const Sidebar = () => {
                   <div className="profile-img1 d-flex justify-content-center overflow-hidden mx-auto">
                     <Image src={profile} alt="user" width={200} height={200} className="" />
                   </div>
-                  <span className="thumb">👋</span>
+                  <span className="thumb">🦾</span>
                 </div>
                 <h4 className="n5-color fw-semibold fs-five mt-2 text-center">
                 Issam Alzouby

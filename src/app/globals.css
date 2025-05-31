@@ -158,3 +158,134 @@
 }
 
 
+/* See-through card glass background */
+.bg-glass {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect for cards */
+.hover-effect:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Base card layout */
+.modern-card {
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+/* Transparent space-gradient background */
+.space-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(25, 25, 35, 0.6) 0%,
+    rgba(80, 40, 120, 0.4) 45%,
+    rgba(140, 100, 180, 0.2) 100%
+  );
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover with depth */
+.clean-gradient {
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    rgba(30, 30, 40, 0.75) 0%,
+    rgba(80, 70, 110, 0.65) 45%,
+    rgba(160, 120, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+}
+
+/* Hover animation */
+.hover-effect:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+/* Make sure text contrasts well */
+.modern-card h5,
+.modern-card p {
+  color: #f0f0f0;
+}
+
+/* Optional: subtle glow border on hover */
+.hover-effect:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+}
+
+
+/* Shared glass card base */
+.modern-card {
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Dark mode gradient glass */
+@media (prefers-color-scheme: dark) {
+  .modern-card {
+    background: linear-gradient(
+      145deg,
+      rgba(30, 30, 40, 0.75) 0%,
+      rgba(80, 70, 110, 0.65) 45%,
+      rgba(160, 120, 255, 0.35) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+  }
+
+  .modern-card h5,
+  .modern-card p {
+    color: #f8f8f8;
+  }
+}
+
+/* Light mode frosted white */
+@media (prefers-color-scheme: light) {
+  .modern-card {
+    background: linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.85),
+      rgba(245, 245, 255, 0.9)
+    );
+    border-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+
+  .modern-card h5,
+  .modern-card p {
+    color: #1f1f1f;
+  }
+}
+
+/* Hover depth effect */
+.hover-effect:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.25);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
