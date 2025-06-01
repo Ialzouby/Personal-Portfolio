@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
 <head>
-  <title>Issam Alzouby | AI Researcher | Software Engineer | Public Speaker</title>
+  <title>Issam Alzouby - AI Researcher - Software Engineer</title>
   <meta name="description" content="AI researcher building digital twins, motion models, and medical AI tools." />
 
   {/* Open Graph Meta (for LinkedIn, Facebook, etc.) */}
