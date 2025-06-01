@@ -38,7 +38,28 @@ const PortfolioTes = () => {
             des: string;
           }) => (
             <SwiperSlide key={id}>
-              <div className="px-3 px-md-6 py-5 py-md-10 bgn2-color box-shadow1 br-left-p1">
+              <div
+  className="p-4 p-md-5 rounded-4"
+  style={{
+    background: "rgb(245, 245, 255)",
+    border: "1px solid rgba(0, 0, 0, 0.05)",
+    boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
+    transition: "all 0.3s ease",
+  }}
+
+  onMouseEnter={(e) => {
+    const el = e.currentTarget as HTMLDivElement;
+    el.style.boxShadow = "0 12px 36px rgba(0, 0, 0, 0.2)";
+    el.style.background = "rgb(250, 250, 255)";
+  }}
+  onMouseLeave={(e) => {
+    const el = e.currentTarget as HTMLDivElement;
+    el.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.08)";
+    el.style.background = "rgb(245, 245, 255)";
+  }}
+  
+>
+
                 <div className="d-flex gap-1 mb-2 mb-md-3">
                   <i className="ph-fill ph-star y1-color fs-six"></i>
                   <i className="ph-fill ph-star y1-color fs-six"></i>

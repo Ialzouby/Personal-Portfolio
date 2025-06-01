@@ -36,12 +36,7 @@ const Portfolio = () => {
           experience working on projects across multiple industries and
           technologies. Let me show you my best creations.
         </p>
-        <Link
-          href="/contact"
-          className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto w-max"
-        >
-          <PiPaperPlaneTilt /> Hire Me
-        </Link>
+
       </div>
     </div>
   </div>

@@ -18,7 +18,7 @@ const Portfolio = () => {
       <section className="pt-10 pb-10 mt-10 mt-lg-0">
 
 
-        <div className="container mt-8 mt-md-15">
+        <div className="container mt-8 mt-md-5">
           <FadeDown>
             <TabGroup>
               <TabList className="d-flex flex-wrap gap-4 gap-sm-5 gap-md-7 align-items-center justify-content-center">
@@ -41,10 +41,10 @@ const Portfolio = () => {
                 )}
               </TabList>
 
-              <TabPanels className="mt-5 mt-md-10">
+              <TabPanels className="mt-2">
                 {/* All Projects */}
                 <TabPanel>
-                  <div className="row g-5 g-md-10 mt-8 mt-md-15">
+<div className="row g-4 mt-10">
                     {featureds2.map(({ id, img, tag1, tag2, tag3, title }) => (
                       <FeaturedCard
                         key={id}

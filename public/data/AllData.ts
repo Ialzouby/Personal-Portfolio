@@ -64,6 +64,7 @@ import product4 from "@/../public/images/ecmo.png";
 
 import speaking1 from "@/../public/images/speaking.JPG";
 import speaking2 from "@/../public/images/speaking2.jpeg";
+import speaking3 from "@/../public/images/speaking3.png";
 
 export const services = [
   {
@@ -135,6 +136,25 @@ export const featureds2 = [
     title: "AI-Powered Development",
     img: speaking2,
   },
+  {
+    id: 3,
+    category: "Public Speaking",
+    tag1: "Pitching",
+    tag2: "AI",
+    tag3: "Public Speaking",
+    title: "Pitching AI-Powered Voice Translation Tool",
+    img: speaking3,
+  },
+  { 
+    id: 4,
+    category: "Public Speaking",
+    tag1: "Pitching",
+    tag2: "AI",
+    tag3: "Public Speaking",
+    title: "Interview with Issam Alzouby, Founder of iRepairCLT - Perky Collar Radio Show",
+    img: speaking3,
+  },
+
 ];
 
 export const featureds = [

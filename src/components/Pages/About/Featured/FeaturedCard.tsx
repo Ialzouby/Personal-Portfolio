@@ -1,3 +1,5 @@
+"use client";
+
 import FadeDown from "@/components/motionEffect/FadeDown";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
@@ -17,58 +19,67 @@ const FeaturedCard = ({
   title: string;
 }) => {
   return (
-    <div className="col-xl-6">
+    <div className="col-12 col-md-6 mb-4">
       <FadeDown>
-        <div className="project-card">
-          <Link href="/portfolio_details" className="thumb d-block">
-            <div className="post-thumb">
-              <div className="post-thumb-inner">
-                <Image src={img} alt="..." className="w-100 p-2" />
-              </div>
-            </div>
-            <div className="post-thumb">
-              <div className="post-thumb-inner">
-                <Image src={img} alt="..." className="w-100 p-2" />
-              </div>
+        <div
+          className="rounded shadow-sm p-3 h-100 d-flex flex-column justify-content-between featured-card"
+          style={{
+            background: "rgb(245, 245, 255)",
+            transition: "transform 0.3s ease, box-shadow 0.3s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.15)";
+            e.currentTarget.style.transform = "translateY(-5px)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow =
+              "0 .125rem .25rem rgba(0,0,0,.075)";
+            e.currentTarget.style.transform = "translateY(0)";
+          }}
+        >
+          <Link href="/portfolio_details" className="d-block mb-3">
+            <div
+              className="w-100 rounded overflow-hidden"
+              style={{
+                maxHeight: "400px",
+              }}
+            >
+              <Image
+                src={img}
+                alt={title}
+                className="w-100 h-auto d-block"
+                style={{
+                  borderRadius: "10px",
+                  objectFit: "contain",
+                }}
+              />
             </div>
           </Link>
 
-          <div className="d-flex justify-content-between gap-2 align-items-center pt-4 pt-md-8 px-3 px-md-6">
-            <div>
-              <div className="d-flex flex-wrap gap-1 gap-sm-2 align-items-center">
-                <Link
-                  href="#"
-                  className="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium"
-                >
-                  {tag1}
-                </Link>
-                <Link
-                  href="#"
-                  className="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium"
-                >
-                  {tag2}
-                </Link>
-                <Link
-                  href="#"
-                  className="n5-color fs-nine px-2 px-md-4 py-1 py-md-2 brn3 rounded-pill fw-medium"
-                >
-                  {tag3}
-                </Link>
-              </div>
-              <Link
-                href="/portfolio_details"
-                className="project-title fs-five fw-semibold n5-color mt-3 mt-md-5 d-block"
+          <div className="mb-2">
+            {[tag1, tag2, tag3].map((tag, i) => (
+              <span
+                key={i}
+                className="badge bg-light text-dark me-2 mb-1"
               >
-                {title}
-              </Link>
-            </div>
+                {tag}
+              </span>
+            ))}
+          </div>
+
+          <div className="d-flex justify-content-between align-items-start">
             <Link
               href="/portfolio_details"
-              className="project-link d-flex align-items-center justify-content-center flex-shrink-0"
+              className="fw-semibold text-dark text-decoration-none"
             >
-              <i className="n5-color">
-                <PiArrowUpRightBold />
-              </i>
+              {title}
+            </Link>
+            <Link
+              href="/portfolio_details"
+              className="text-dark"
+              aria-label="Open"
+            >
+              <PiArrowUpRightBold size={20} />
             </Link>
           </div>
         </div>

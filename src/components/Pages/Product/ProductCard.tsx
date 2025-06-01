@@ -23,25 +23,26 @@ const ProductCard = ({
         <div
           className="d-flex flex-column flex-md-row align-items-start gap-4 p-3 rounded-4 transition-all"
           style={{
-            background: "rgba(255, 255, 255, 0.05)",
-            backdropFilter: "blur(6px)",
-            border: "1px solid rgba(255, 255, 255, 0.1)",
-            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.1)",
+            background: "rgb(245, 245, 255)",
+            border: "1px solid rgba(0, 0, 0, 0.05)",
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.08)",
             transition: "all 0.3s ease, transform 0.2s ease",
             cursor: "pointer",
           }}
+          
           onMouseEnter={(e) => {
             const el = e.currentTarget as HTMLDivElement;
             el.style.boxShadow = "0 12px 36px rgba(0, 0, 0, 0.2)";
-            el.style.background = "rgba(255, 255, 255, 0.08)";
+            el.style.background = "rgb(250, 250, 255)";
             el.style.transform = "translateY(-2px)";
           }}
           onMouseLeave={(e) => {
             const el = e.currentTarget as HTMLDivElement;
-            el.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.1)";
-            el.style.background = "rgba(255, 255, 255, 0.05)";
+            el.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.08)";
+            el.style.background = "rgb(245, 245, 255)";
             el.style.transform = "translateY(0)";
           }}
+          
         >
           {/* Left: Image */}
           <div
