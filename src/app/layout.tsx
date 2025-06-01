@@ -18,13 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
 <head>
-  <title>Issam Alzouby - AI Researcher</title>
+  <title>Issam Alzouby | AI Researcher | Software Engineer | Public Speaker</title>
   <meta name="description" content="AI researcher building digital twins, motion models, and medical AI tools." />
 
   {/* Open Graph Meta (for LinkedIn, Facebook, etc.) */}
   <meta property="og:title" content="Issam Alzouby - AI Researcher" />
   <meta property="og:description" content="AI researcher building digital twins, motion models, and medical AI tools." />
-  <meta property="og:image" content="https://issam.up.railway.app/images/social.jpg" />
+  <meta property="og:image" content="https://issam.up.railway.app/images/p13.jpg" />
   <meta property="og:url" content="https://issam.up.railway.app" />
   <meta property="og:type" content="website" />
 
@@ -32,7 +32,7 @@ export default function RootLayout({
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Issam Alzouby - AI Researcher" />
   <meta name="twitter:description" content="AI researcher building digital twins, motion models, and medical AI tools." />
-  <meta name="twitter:image" content="https://issam.up.railway.app/images/social.jpg" />
+  <meta name="twitter:image" content="https://issam.up.railway.app/images/p13.jpg" />
 
   {/* Favicon (optional) */}
   <link rel="icon" href="/favicon.ico" />
