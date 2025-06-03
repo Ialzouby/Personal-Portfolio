@@ -17,16 +17,7 @@ const Price = () => {
               </h3>
               <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
                 I have 10+ years of development experience building software for
-                the web and mobile devices. You can take a look at my{" "}
-                <Link href="/resume" className="p1-color">
-                  online resume
-                </Link>{" "}
-                and
-                <Link href="/portfolio" className="p1-color">
-                  {" "}
-                  project portfolio{" "}
-                </Link>
-                to find out more about my skills and experiences.
+                the web and mobile devices. 
               </p>
 
             </div>

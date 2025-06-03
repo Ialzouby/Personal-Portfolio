@@ -85,6 +85,7 @@ const Portfolio = () => {
                     {featureds.map(({ id, img, tag1, tag2, tag3, title }) => (
                       <FeaturedCard
                         key={id}
+                        id={id}
                         img={img}
                         tag1={tag1}
                         tag2={tag2}
@@ -101,6 +102,7 @@ const Portfolio = () => {
                     {getByCategory("AI/ML").map(({ id, img, tag1, tag2, tag3, title }) => (
                       <FeaturedCard
                         key={id}
+                        id={id}
                         img={img}
                         tag1={tag1}
                         tag2={tag2}
@@ -117,6 +119,7 @@ const Portfolio = () => {
                     {getByCategory("Hackathons").map(({ id, img, tag1, tag2, tag3, title }) => (
                       <FeaturedCard
                         key={id}
+                        id={id}
                         img={img}
                         tag1={tag1}
                         tag2={tag2}
@@ -133,6 +136,7 @@ const Portfolio = () => {
                     {getByCategory("AI Infrastructure").map(({ id, img, tag1, tag2, tag3, title }) => (
                       <FeaturedCard
                         key={id}
+                        id={id}
                         img={img}
                         tag1={tag1}
                         tag2={tag2}
@@ -150,6 +154,7 @@ const Portfolio = () => {
                       ({ id, img, tag1, tag2, tag3, title }) => (
                         <FeaturedCard
                           key={id}
+                          id={id}
                           img={img}
                           tag1={tag1}
                           tag2={tag2}

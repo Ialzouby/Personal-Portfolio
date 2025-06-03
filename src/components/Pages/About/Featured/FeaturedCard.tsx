@@ -6,12 +6,14 @@ import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
 
 const FeaturedCard = ({
+  id,
   img,
   tag1,
   tag2,
   tag3,
   title,
 }: {
+  id: number;
   img: StaticImageData;
   tag1: string;
   tag2: string;
@@ -37,7 +39,7 @@ const FeaturedCard = ({
             e.currentTarget.style.transform = "translateY(0)";
           }}
         >
-          <Link href="/portfolio_details" className="d-block mb-3">
+          <Link href={`/portfolio_details/${id}`} className="d-block mb-3">
             <div
               className="w-100 rounded overflow-hidden"
               style={{
@@ -69,13 +71,13 @@ const FeaturedCard = ({
 
           <div className="d-flex justify-content-between align-items-start">
             <Link
-              href="/portfolio_details"
+              href={`/portfolio_details/${id}`}
               className="fw-semibold text-dark text-decoration-none"
             >
               {title}
             </Link>
             <Link
-              href="/portfolio_details"
+              href={`/portfolio_details/${id}`}
               className="text-dark"
               aria-label="Open"
             >

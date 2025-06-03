@@ -30,16 +30,7 @@ const WhatDo = () => {
                 <h2 className="display-four n5-color fw-semibold">What I do</h2>
               </div>
               <p className="fs-seven n4-color mt-2 mt-md-4">
-              I engineer AI systems that simulate human health — combining motion modeling, clinical data, and infrastructure. These eight areas together power my work in real-time digital twins and medical AI.
-
-                <Link href="/resume" className="p1-color">
-                  online resume
-                </Link>{" "}
-                and
-                <Link href="/portfolio" className="p1-color">
-                  project portfolio
-                </Link>
-                .
+              I engineer AI systems that simulate human health — combining motion modeling, clinical data, and infrastructure. These areas together power my work in real-time digital twins and medical AI.
               </p>
             </div>
             <Link
