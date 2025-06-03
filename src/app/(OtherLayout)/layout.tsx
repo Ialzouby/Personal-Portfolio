@@ -1,5 +1,4 @@
 import ThemeButton from "@/components/DarkMode/ThemeButton/ThemeButton";
-import BottomNav from "@/components/Shared/BottomNav/BottomNav";
 import Link from "next/link";
 import { PiShoppingCart } from "react-icons/pi";
 
@@ -85,7 +84,6 @@ export default function OtherLayout({
         </div>
       </div>
       {children}
-      <BottomNav />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import { PiSealCheckFill } from "react-icons/pi";
 import ProductCard from "@/components/Pages/Product/ProductCard";
 import { productsData } from "../../../../public/data/AllData";
 import CartModal from "@/components/Shared/Modal/CartModal";
-import ProductDetailsBanner from "@/components/Pages/ProductDetails/ProductDetailsBanner";
-import ProductDetailsDescriptiion from "@/components/Pages/ProductDetails/ProductDetailsDescriptiion";
+import ProductDetailsBanner from "@/components/Pages/ProductDetails/[id]/ProductDetailsBanner";
+import ProductDetailsDescriptiion from "@/components/Pages/ProductDetails/[id]/ProductDetailsDescription";
 import Footer from "@/components/Shared/Footer/Footer";
 
 const cardsData = [
