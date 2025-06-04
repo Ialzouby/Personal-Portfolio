@@ -112,6 +112,7 @@ import CartModal from "@/components/Shared/Modal/CartModal";
   {productsData.map(({ id, img, title, des, price }) => (
         <ProductCard
           key={id}
+          id={id}
           img={img}
           title={title}
           des={des}
@@ -128,6 +129,7 @@ import CartModal from "@/components/Shared/Modal/CartModal";
         .map(({ id, img, title, des, price }) => (
           <ProductCard
             key={id}
+            id={id}
             img={img}
             title={title}
             des={des}
@@ -144,6 +146,7 @@ import CartModal from "@/components/Shared/Modal/CartModal";
         .map(({ id, img, title, des, price }) => (
           <ProductCard
             key={id}
+            id={id}
             img={img}
             title={title}
             des={des}
@@ -160,6 +163,7 @@ import CartModal from "@/components/Shared/Modal/CartModal";
         .map(({ id, img, title, des, price }) => (
           <ProductCard
             key={id}
+            id={id}
             img={img}
             title={title}
             des={des}

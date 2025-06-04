@@ -66,6 +66,9 @@ import product4 from "@/../public/images/ecmo.png";
 import speaking1 from "@/../public/images/speaking.JPG";
 import speaking2 from "@/../public/images/speaking2.jpeg";
 import speaking3 from "@/../public/images/speaking3.png";
+import speaking4 from "@/../public/images/speaking4.png"; 
+import speaking5 from "@/../public/images/speaking5.png";
+import speaking6 from "@/../public/images/speaking6.png";
 
 export const services = [
   {
@@ -146,16 +149,43 @@ export const featureds2 = [
     title: "Pitching AI-Powered Voice Translation Tool",
     img: speaking3,
   },
-  { 
+  {
     id: 4,
+    category: "Public Speaking",
+    tag1: "Research",
+    tag2: "AI",
+    tag3: "Public Speaking",
+    title: "ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
+    img: speaking6,
+  },
+  {
+    id: 5,
+    category: "Public Speaking",
+    tag1: "Panelist",
+    tag2: "AI",
+    tag3: "Public Speaking",
+    title: "UNC-Charlotte - Career Panelist",
+    img: speaking5,
+  },
+
+  {
+    id: 6,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
     tag3: "Public Speaking",
+    title: "Ardrey Kell High School - Sponsor & Guest Speaker",
+    img: speaking4,
+  },
+  { 
+    id: 7,
+    category: "Public Speaking",
+    tag1: "Podcast",
+    tag2: "Entrepreneurship",
+    tag3: "Public Speaking",
     title: "Interview with Issam Alzouby, Founder of iRepairCLT - Perky Collar Radio Show",
     img: speaking3,
   },
-
 ];
 
 export const featureds = [

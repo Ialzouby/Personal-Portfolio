@@ -1,13 +1,17 @@
+"use client";
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
 
 const ProductCard = ({
+  id,
   img,
   title,
   des,
   price,
 }: {
+  id: number;
   img: StaticImageData;
   title: string;
   des: string;
@@ -16,7 +20,7 @@ const ProductCard = ({
   return (
     <div className="w-100 mb-1">
       <Link
-        href="/products_details"
+        href={`/products_details/${id}`}
         className="text-decoration-none"
         style={{ color: "inherit" }}
       >
