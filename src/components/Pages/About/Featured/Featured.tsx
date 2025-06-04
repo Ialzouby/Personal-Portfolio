@@ -32,7 +32,7 @@ View more projects!
         </FadeDown>
 
         <div className="row g-6 g-md-10 ">
-          {featureds.slice(0, 4).map(({ id, img, tag1, tag2, tag3, title }) => (
+          {featureds.slice(0, 4).map(({ id, img, tag1, tag2, tag3, title, award }) => (
             <FeaturedCard
               key={id}
               img={img}
@@ -40,6 +40,7 @@ View more projects!
               tag2={tag2}
               tag3={tag3}
               title={title}
+              award={award}
             />
           ))}
         </div>

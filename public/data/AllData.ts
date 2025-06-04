@@ -162,6 +162,7 @@ export const featureds = [
   {
     id: 1,
     category: "Hackathons",
+    award: "2nd",
     tag1: "Hackathon",
     tag2: "NASA",
     tag3: "Sonification",
@@ -185,6 +186,8 @@ export const featureds = [
   {
     id: 7,
     category: "Hackathons",
+    award: "1st",
+
     tag1: "Hackathon",
     tag2: "FinTech",
     tag3: "AWS",
@@ -208,6 +211,8 @@ export const featureds = [
   {
     id: 2,
     category: "Hackathons",
+    award: "1st",
+
     tag1: "Hackathon",
     tag2: "iOS",
     tag3: "Face Privacy",
@@ -231,6 +236,8 @@ export const featureds = [
   {
     id: 10,
     category: "Hackathons",
+    award: "1st",
+
     tag1: "Hackathon",
     tag2: "Family Team",
     tag3: "Web Dev",
@@ -254,6 +261,8 @@ export const featureds = [
   {
     id: 8,
     category: "AI/ML",
+    award: "1st",
+
     tag1: "Hackathon",
     tag2: "Healthcare AI",
     tag3: "Organ Donation",
