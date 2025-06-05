@@ -63,12 +63,13 @@ import product2 from "@/../public/images/ISAISL.png";
 import product3 from "@/../public/images/organ.png";
 import product4 from "@/../public/images/ecmo.png";
 
-import speaking1 from "@/../public/images/speaking.JPG";
+import speaking1 from "@/../public/images/speaking.jpg";
 import speaking2 from "@/../public/images/speaking2.jpeg";
 import speaking3 from "@/../public/images/speaking3.png";
 import speaking4 from "@/../public/images/speaking4.png"; 
 import speaking5 from "@/../public/images/speaking5.png";
 import speaking6 from "@/../public/images/speaking6.png";
+import speaking11 from "@/../public/images/speaker7.png";
 
 export const services = [
   {
@@ -125,6 +126,15 @@ export const featureds2 = [
   {
     id: 1,
     category: "Public Speaking",
+    tag1: "Research",
+    tag2: "AI",
+    tag3: "Medicine",
+    title: "ESS-AI Tool Poster Presentation | UNC School of Medicine",
+    img: speaking11,
+  },
+  {
+    id: 2 ,
+    category: "Public Speaking",
     tag1: "Public Speaking",
     tag2: "AI",
     tag3: "Ethics & Policy",
@@ -132,7 +142,7 @@ export const featureds2 = [
     img: speaking1,
   },
   {
-    id: 2,
+    id: 3,
     category: "Teaching",
     tag1: "Teaching",
     tag2: "AI",
@@ -141,7 +151,7 @@ export const featureds2 = [
     img: speaking2,
   },
   {
-    id: 3,
+    id: 4,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -150,7 +160,7 @@ export const featureds2 = [
     img: speaking3,
   },
   {
-    id: 4,
+    id: 5,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
@@ -159,7 +169,7 @@ export const featureds2 = [
     img: speaking6,
   },
   {
-    id: 5,
+    id: 6,
     category: "Public Speaking",
     tag1: "Panelist",
     tag2: "AI",
@@ -169,7 +179,7 @@ export const featureds2 = [
   },
 
   {
-    id: 6,
+    id: 7,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -178,7 +188,7 @@ export const featureds2 = [
     img: speaking4,
   },
   { 
-    id: 7,
+    id: 8,
     category: "Public Speaking",
     tag1: "Podcast",
     tag2: "Entrepreneurship",

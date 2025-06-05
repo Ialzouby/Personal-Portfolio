@@ -52,9 +52,9 @@ const Gallery = () => {
   };
 
   return (
-    <section className="pt-20 pb-20">
+    <section className="pt-8 pb-20">
       <div className="container">
-        <div className="section-heading mb-10">
+        <div className="section-heading mb-2">
           <div className="d-flex align-items-center gap-2">
             <div className="title-line"></div>
             <h2 className="display-four n5-color fw-semibold">Gallery</h2>
