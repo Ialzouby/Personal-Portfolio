@@ -63,7 +63,7 @@ import product2 from "@/../public/images/ISAISL.png";
 import product3 from "@/../public/images/organ.png";
 import product4 from "@/../public/images/ecmo.png";
 
-import speaking1 from "@/../public/images/speaking.jpg";
+import speaking1 from "@/../public/images/speaking.JPG";
 import speaking2 from "@/../public/images/speaking2.jpeg";
 import speaking3 from "@/../public/images/speaking3.png";
 import speaking4 from "@/../public/images/speaking4.png"; 
@@ -639,11 +639,41 @@ export const testimonials2 = [
 export const blogs = [
   {
     id: 1,
-    img: blog1, // Replace with actual import
+    slug: "genhmr-3d-pose-estimation-aaai-2025",
+    img: blog1,
     date: "Feb 15, 2025",
     tag: "Research",
     title: "GenHMR: A Breakthrough in 3D Human Pose and Shape Estimation – Accepted at AAAI 2025",
     author: "Issam Alzouby",
+    content: "GenHMR sets a new benchmark in 3D human pose estimation by leveraging generative modeling to capture uncertainty and diversity in predictions.",
+    sections: [
+      {
+        heading: "Background",
+        text: "3D human pose and shape estimation is critical in animation, healthcare, and sports. Traditional models rely on deterministic predictions that fail in occlusion-heavy settings.",
+        image: blog2,
+      },
+      {
+        heading: "Methods",
+        text: "GenHMR uses a diffusion-based decoder conditioned on 2D keypoints and silhouettes. It leverages the SMPL model for realistic human shapes.",
+        bullets: [
+          "Conditioned on OpenPose 2D keypoints.",
+          "Trained with a large synthetic dataset.",
+          "Incorporates a VAE encoder for latent diversity.",
+        ],
+      },
+      {
+        quote: {
+          text: "This changes the game for real-time, reliable human modeling in the wild.",
+          author: "Lead Author, AAAI 2025",
+        },
+      },
+      {
+        heading: "Results and Impact",
+        text: "The model outperforms previous baselines on 3DPW and Human3.6M datasets. It also shows promising transfer performance on real-world sports video data.",
+        videoImage: blog3,
+        videoId: "dQw4w9WgXcQ" // Replace with real ID
+      }
+    ]
   },
   {
     id: 2,
