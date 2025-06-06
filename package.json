@@ -12,10 +12,13 @@
     "@emailjs/browser": "^4.4.1",
     "@headlessui/react": "^2.1.2",
     "@types/react-modal-video": "^1.2.3",
+    "axios": "^1.9.0",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.5.0",
     "framer-motion": "^11.3.2",
     "next": "^15.3.0",
     "next-themes": "^0.3.0",
+    "openai": "^5.1.1",
     "react": "^18.3.0",
     "react-animate-height": "^3.2.3",
     "react-countup": "^6.5.3",
@@ -30,6 +33,7 @@
     "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
+    "@types/axios": "^0.9.36",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

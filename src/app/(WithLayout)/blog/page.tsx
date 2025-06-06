@@ -41,13 +41,19 @@ const Blog = () => {
         {/* <!-- blog card  --> */}
         <div className="container">
           <div className="row g-5 g-md-10 mt-5">
-            {blogs.map(({ id, img, date, tag, title }) => (
+          {[...blogs]
+            .sort((a, b) => b.id - a.id)
+            .map(({ id, img, date, tag, title, slug }) => (
+
+
+
               <BlogCard
                 key={id}
                 img={img}
                 date={date}
                 tag={tag}
                 title={title}
+                slug={slug}
               />
             ))}
           </div>

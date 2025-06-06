@@ -1,12 +1,13 @@
-import { OpenAI } from 'openai';
-import fs from 'fs';
-import path from 'path';
-import axios from 'axios';
+require('dotenv').config();
+const { OpenAI } = require('openai');
+const fs = require('fs');
+const path = require('path');
+
 
 // === CONFIG ===
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const allDataPath = path.join(__dirname, '../public/data/BlogData.ts');
-const blogImageDir = path.join(__dirname, '../public/blog');
+const blogImageDir = path.join(__dirname, '../public/images');
 const blogImageVarPrefix = 'aiImage';
 const author = 'Issam Alzouby';
 
@@ -45,47 +46,58 @@ Return it in JSON format:
   const res = await openai.chat.completions.create({
     model: 'gpt-4o',
     messages: [{ role: 'user', content: prompt }],
-    response_format: 'json',
-  });
+});
 
-  const blog = JSON.parse(res.choices[0].message.content || '{}');
+  const raw = res.choices[0].message.content || '{}';
+  const jsonString = raw.replace(/```json|```/g, '').trim();
+  const blog = JSON.parse(jsonString);
   blog.date = today;
-  blog.slug = `how-ai-works-week-${weekNum}`;
+  const id = blog.id;
+
   blog.author = author;
 
   return blog;
 }
 
 // === STEP 2: Generate image from DALL·E and save locally ===
-async function generateImage(prompt: string, slug: string): Promise<{ filename: string; importVar: string }> {
-  const imageRes = await openai.images.generate({
-    prompt,
-    n: 1,
-    size: '1024x1024',
-  });
-
-  const imageUrl = imageRes.data[0].url!;
-  const filename = `${slug}.png`;
-  const filepath = path.join(blogImageDir, filename);
-  const importVar = `${blogImageVarPrefix}_${slug.replace(/-/g, '_')}`;
-
-  const imageData = await axios.get(imageUrl, { responseType: 'arraybuffer' });
-  fs.writeFileSync(filepath, imageData.data);
-  return { filename, importVar };
-}
+async function generateImage(prompt: string, slug: string, id: number) {
+    const imageRes = await openai.images.generate({
+      prompt,
+      model: "dall-e-3",
+      n: 1,
+      size: '1792x1024',
+    });
+  
+    if (!imageRes.data || !imageRes.data[0]?.url) {
+      throw new Error('Image generation failed or no URL returned');
+    }
+  
+    const imageUrl = imageRes.data[0].url;
+    const filename = `${slug}.png`;
+    const filepath = path.join(blogImageDir, filename);
+    const importVar = `${blogImageVarPrefix}_${id}`;
+  
+    const axios = require('axios');
+    const imageData = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+    fs.writeFileSync(filepath, imageData.data);
+  
+    return { filename, importVar };
+  }
+  
 
 // === STEP 3: Inject blog object into AllData.ts ===
-function injectIntoAllData(blog: any, importVar: string, imageFilename: string) {
+function injectIntoAllData(blog: any, importVar: string, imageFilename: string, id: number) {
   let file = fs.readFileSync(allDataPath, 'utf-8');
 
   // 1. Add image import
-  const imageImport = `import ${importVar} from "@/../public/blog/${imageFilename}";\n`;
+  const imageImport = `import ${importVar} from "@/../public/images/${imageFilename}";\n`;
   if (!file.includes(importVar)) {
     file = imageImport + file;
   }
 
   // 2. Prepare the blog object
-  const id = Math.floor(Math.random() * 100000);
+// Extract the highest existing ID from the file
+
   const blogObj = {
     id,
     slug: blog.slug,
@@ -111,10 +123,11 @@ function injectIntoAllData(blog: any, importVar: string, imageFilename: string) 
     blogObj.sections.push({ quote: blog.quote });
   }
 
-  // 3. Insert into blogs array
-  const blogString = JSON.stringify(blogObj, null, 2)
-    .replace(/"([^"]+)":/g, '$1:') // remove quotes from keys
-    .replace(/"([^"]+)"/g, `"$1"`); // ensure strings remain quoted
+// Custom serializer to leave img unquoted
+const blogString = JSON.stringify(blogObj, null, 2)
+  .replace(/"img": "(aiImage_\d+)"/, 'img: $1') // ✅ this removes quotes around the img import
+  .replace(/"([^"]+)":/g, '$1:') // keeps keys unquoted
+
     
   file = file.replace(/(const blogs = \[)([\s\S]*?)(\];)/, `$1$2,\n${blogString}$3`);
   fs.writeFileSync(allDataPath, file);
@@ -122,15 +135,25 @@ function injectIntoAllData(blog: any, importVar: string, imageFilename: string) 
 
 // === MAIN ===
 (async () => {
-  try {
-    if (!fs.existsSync(blogImageDir)) fs.mkdirSync(blogImageDir);
+    try {
+      if (!fs.existsSync(blogImageDir)) fs.mkdirSync(blogImageDir);
+  
+      const blog = await generateBlogPost();
+  
+      // === Generate ID ===
+      const file = fs.readFileSync(allDataPath, 'utf-8');
+      const idMatch = file.match(/id:\s*(\d+),/g);
+      const existingIds = idMatch ? idMatch.map((m: string) => parseInt(m.match(/\d+/)![0])) : [];
+      const id = existingIds.length ? Math.max(...existingIds) + 1 : 20;
+      blog.id = id; // ✅ Set the ID here
+      blog.slug = `how-ai-works-id-${id}`;
 
-    const blog = await generateBlogPost();
-    const { filename, importVar } = await generateImage(blog.dalle_prompt, blog.slug);
-    injectIntoAllData(blog, importVar, filename);
-
-    console.log("✅ Weekly AI blog post generated successfully.");
-  } catch (err) {
-    console.error("❌ Error generating blog post:", err);
-  }
-})();
+      const { filename, importVar } = await generateImage(blog.dalle_prompt, blog.slug, id);
+      injectIntoAllData(blog, importVar, filename, id);
+  
+      console.log("✅ Weekly AI blog post generated successfully.");
+    } catch (err) {
+      console.error("❌ Error generating blog post:", err);
+    }
+  })();
+  
