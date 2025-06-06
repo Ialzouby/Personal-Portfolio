@@ -7,16 +7,18 @@ const BlogCard = ({
   date,
   tag,
   title,
+  slug,
 }: {
   img: StaticImageData;
   date: string;
   tag: string;
   title: string;
+  slug: string;
 }) => {
   return (
     <div className="col-sm-6 col-xxl-4">
       <FadeDown>
-        <Link href="/blog_details" className="blog-card">
+        <Link href={`/blog_details/${slug}`} className="blog-card">
           <div className="blog-img rounded-3 overflow-hidden">
             <Image src={img} alt="blog" className="rounded-3 w-100" />
           </div>

@@ -19,7 +19,7 @@ const LatestBlog = () => {
                 </h2>
               </div>
               <p className="fs-seven n4-color mt-2 mt-md-4">
-                Litsen to me yap:
+                Listen to me yap:
               </p>
             </div>
             <Link
@@ -31,8 +31,8 @@ const LatestBlog = () => {
           </div>
         </FadeDown>
         <div className="row g-5 g-md-10 ">
-          {blogs.slice(0, 3).map(({ id, img, date, tag, title }) => (
-            <BlogCard key={id} img={img} date={date} tag={tag} title={title} />
+          {blogs.slice(0, 3).map(({ id, img, date, tag, title, slug }) => (
+            <BlogCard key={id} img={img} date={date} tag={tag} title={title} slug={slug || ""} />
           ))}
         </div>
       </div>
