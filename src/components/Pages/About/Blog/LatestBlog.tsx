@@ -1,6 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { blogs } from "../../../../../public/data/AllData";
+import { blogs } from "../../../../../public/data/BlogData";
 import Link from "next/link";
 import BlogCard from "./BlogCard";
 import FadeDown from "@/components/motionEffect/FadeDown";

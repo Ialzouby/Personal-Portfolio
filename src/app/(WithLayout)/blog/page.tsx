@@ -1,4 +1,4 @@
-import { blogs } from "../../../../public/data/AllData";
+import { blogs } from "../../../../public/data/BlogData";
 import BlogCard from "@/components/Pages/About/Blog/BlogCard";
 import {
   PiCaretLeftBold,

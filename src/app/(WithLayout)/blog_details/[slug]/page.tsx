@@ -6,7 +6,7 @@ import { useParams } from "next/navigation";
 import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 
-import { blogs } from "@/../public/data/AllData";
+import { blogs } from "@/../public/data/BlogData";
 import Comments from "@/components/Pages/BlogDetails/Comments";
 import LeaveReply from "@/components/Pages/BlogDetails/LeaveReply";
 import FadeDown from "@/components/motionEffect/FadeDown";
