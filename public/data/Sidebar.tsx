@@ -29,12 +29,12 @@ export const sidebarsData = [
     icon: <PiCodeBlock />,
     numbers: 16,
   },
-  {
-    id: 4,
-    name: "Resume",
-    url: "/resume",
-    icon: <PiNotebook />,
-  },
+  //{
+    //id: 4,
+    //name: "Resume",
+    //url: "/resume",
+    //icon: <PiNotebook />,
+  //},
   {
     id: 5,
     name: "Research",
@@ -53,18 +53,24 @@ export const sidebarsData = [
     url: "/leadership",
     icon: <PiBriefcase />,
   },
+  {
+    id: 7,
+    name: "Blog",
+    url: "/blog",
+    icon: <PiNewspaperClipping />,
+  },
 //  {
     //id: 6,
     //name: "Blog",
     //url: "/blog",
     //icon: <PiNewspaperClipping />,
   //},
-  {
-    id: 7,
-    name: "Contact",
-    url: "/contact",
-    icon: <PiEnvelope />,
-  },
+  //{
+    //id: 7,
+    //name: "Contact",
+    //url: "/contact",
+    //icon: <PiEnvelope />,
+  //},
 ];
 export const bottomNavData = [
   {

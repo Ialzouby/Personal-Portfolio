@@ -1,3 +1,5 @@
+import aiImage_26 from "@/../public/images/how-ai-works-id-26.png";
+import aiImage_25 from "@/../public/images/how-ai-works-id-25.png";
 import aiImage_24 from "@/../public/images/how-ai-works-id-24.png";
 import aiImage_23 from "@/../public/images/how-ai-works-id-23.png";
 import aiImage_22 from "@/../public/images/how-ai-works-id-22.png";
@@ -230,7 +232,7 @@ export const blogs = [
   id: 20,
   slug: "how-ai-works-id-20",
   img: aiImage_20,
-  date: "2025-06-06",
+  date: "March 15, 2025",
   tag: "AI Education, Neural Networks",
   title: "Diving into Dropout: Enhancing Neural Networks",
   author: "Issam Alzouby",
@@ -280,7 +282,7 @@ export const blogs = [
   id: 21,
   slug: "how-ai-works-id-21",
   img: aiImage_21,
-  date: "2025-06-06",
+  date: "April 15, 2025",
   tag: "AI Education, Transformers",
   title: "Diving Deep into Self-Attention Mechanisms",
   author: "Issam Alzouby",
@@ -330,7 +332,7 @@ export const blogs = [
   id: 22,
   slug: "how-ai-works-id-22",
   img: aiImage_22,
-  date: "2025-06-07",
+  date: "May 15, 2025",
   tag: "AI Education, Transformers",
   title: "Understanding Attention Mechanism in Neural Networks",
   author: "Issam Alzouby",
@@ -376,118 +378,54 @@ export const blogs = [
     }
   ]
 },
+
 {
-  id: 23,
-  slug: "how-ai-works-id-23",
-  img: aiImage_23,
-  date: "2025-06-07",
+  id: 26,
+  slug: "how-ai-works-id-26",
+  img: aiImage_26,
+  date: "June 15, 2025",
   tag: "AI Education, Transformers",
-  title: "Understanding Attention Mechanisms in AI: The Secret Sauce Behind Transformers",
+  title: "The Magic of Attention: Powering AI Advances",
   author: "Issam Alzouby",
-  content: "This week, we delve into the captivating world of attention mechanisms in AI—a crucial component that has revolutionized how machines process information. By drawing analogies with everyday concepts, this post will help you grasp why attention is pivotal, especially in the realm of Transformers.",
+  content: "Welcome to another exciting week in our series 'How AI Works – From Basics to Transformers.' This week, we're diving into the world of 'attention mechanisms,' a breakthrough concept that has revolutionized how AI models process information. We'll explore what attention means for AI, how it helps models focus on relevant data, and why it plays a critical role in technologies like neural networks and transformers. Get ready for a captivating journey!",
   sections: [
     {
-      heading: "What is Attention in AI?",
-      text: "Imagine you are at a noisy party, but you focus on one conversation amidst the chaos. Similarly, attention mechanisms allow AI to focus on specific parts of input data that are most relevant to a given task.",
+      heading: "What Is an Attention Mechanism?",
+      text: "Imagine trying to listen to a conversation in a noisy room. Your brain naturally tunes out the background noise, focusing only on the relevant dialogue. Attention mechanisms in AI work similarly—they help models prioritize important parts of input data, filtering out the rest.",
       bullets: [
-        "Attention is like tuning into one conversation at a crowded party.",
-        "Helps AI focus on important parts of the data."
+        "Mimics human ability to concentrate on specific details.",
+        "Enhances efficiency by focusing computational resources."
       ]
     },
     {
-      heading: "Why Attention Matters",
-      text: "Without attention, AI models can drown in a sea of information. Attention mechanisms help them zero in on the important parts and ignore the rest, enhancing their performance in tasks like translation and summarization.",
+      heading: "Why Is Attention Important?",
+      text: "Before attention mechanisms, AI struggled to handle large contexts because of limited computational power. By identifying and focusing on the most critical elements, attention allows models to better understand and generate language.",
       bullets: [
-        "Enables better data processing.",
-        "Improves AI's decision-making capabilities."
+        "Improves AI's ability to understand complex data.",
+        "Enables more accurate predictions and outputs.",
+        "Supports advanced models like transformers."
       ]
     },
     {
-      heading: "Attention in Transformers",
-      text: "Transformers revolutionized AI by making attention a core component. They use multiple attention heads to process input data from multiple perspectives, much like how humans weigh different aspects of a problem before making a decision.",
+      heading: "Attention in Transformers: A Game-Changer",
+      text: "Transformers have changed the AI landscape, largely due to their use of self-attention. This technique allows each part of the input to weigh its importance dynamically, making transformers highly adaptable and efficient.",
       bullets: [
-        "Transformers use multiple attention heads.",
-        "Allows simultaneous consideration of different data aspects."
+        "Facilitates parallel processing, increasing speed.",
+        "Boosts performance even on lengthy sequences of data."
       ]
     },
     {
-      heading: "Visualize Attention with a Heatmap",
-      text: "Think of a heatmap where brighter areas indicate parts the AI model 'pays more attention' to. This visualization aids in understanding how attention is distributed across the input data.",
+      heading: "Visualizing Attention",
+      text: "Attention can be visualized through heat maps, which highlight areas the model focuses on. This visualization offers insight into model decisions and opens the door for further advancements in explainable AI.",
       bullets: [
-        "Brighter areas in a heatmap show where attention is focused.",
-        "Provides insight into the model's thought process."
-      ]
-    },
-    {
-      heading: "Practical Applications of Attention",
-      text: "From improving language translation to enhancing image recognition, attention mechanisms are the backbone of many modern AI applications. They enable machines to 'understand' and respond more like humans.",
-      bullets: [
-        "Boosts performance in various AI tasks.",
-        "Integral to advanced AI applications."
+        "Enables better debugging and optimization.",
+        "Aids in building trust by understanding model choices."
       ]
     },
     {
       quote: {
-        text: "The attention mechanism allows a model to weigh the importance of different pieces of input data more precisely.",
-        author: "AI Thought Leader"
-      }
-    }
-  ]
-},
-{
-  id: 24,
-  slug: "how-ai-works-id-24",
-  img: aiImage_24,
-  date: "2025-06-07",
-  tag: "AI Education, Reinforcement Learning",
-  title: "Week 23: Navigating the AI Maze - The Power of Reinforcement Learning",
-  author: "Issam Alzouby",
-  content: "In this week's blog post, we dive into the fascinating world of Reinforcement Learning - a type of learning that mimics the way we learn from our environment. Picture a robot learning to navigate a maze or a game-playing AI mastering the strategy of chess through trial and error. Reinforcement Learning is all about agents taking actions to maximize rewards, and today, we break it down into beginner-friendly bites!",
-  sections: [
-    {
-      heading: "What is Reinforcement Learning?",
-      text: "Reinforcement Learning (RL) is like teaching a dog new tricks where rewards and corrections guide behavior. In AI, it's a type of machine learning that focuses on how agents should take actions in an environment to maximize some notion of cumulative reward.",
-      bullets: [
-        "Agent: The learner or decision maker (like our pup!).",
-        "Environment: Everything the agent interacts with (e.g., maze).",
-        "Actions: Possible moves or decisions (e.g., left, right, jump).",
-        "Rewards: Feedback from the environment (e.g., treat for correct move)."
-      ]
-    },
-    {
-      heading: "Understanding the Components",
-      text: "To understand how RL works, it's essential to know its key components and how they interact.",
-      bullets: [
-        "State: A specific situation in the environment.",
-        "Action: Any step the agent can take from that state.",
-        "Reward: Feedback received after an action."
-      ]
-    },
-    {
-      heading: "The Learning Process",
-      text: "Just like learning from mistakes, RL involves exploration (trying new things) and exploitation (using known strategies). Imagine you're in a new city: do you explore new restaurants or stick to ones you know and love?",
-      bullets: [
-        "Exploration: Trying unknown paths to discover and learn more.",
-        "Exploitation: Utilizing known information to make the most favorable decision."
-      ]
-    },
-    {
-      heading: "Applications of Reinforcement Learning",
-      text: "From game-playing AIs like AlphaGo that beat world champions to autonomous driving systems, RL is a powerful tool for making complex decisions smoothly.",
-      bullets: [
-        "Gaming: Teaching AIs strategies to win games.",
-        "Robotics: Developing robots that learn to walk.",
-        "Finance: Decision making in stock trading."
-      ]
-    },
-    {
-      heading: "Challenges and Future Directions",
-      text: "Despite its promise, RL is not without challenges. It requires a balance between exploration and exploitation, a robust computational foundation, and it faces difficulties in dynamic or highly complex environments."
-    },
-    {
-      quote: {
-        text: "The simplest way to understand the difference between algorithms is by imagining three kids in a classroom: one who knows all the answers, one who copies answers, and one who learns by experience, the last being reinforcement learning.",
-        author: "Amber K. Dugger"
+        text: "Attention is all you need.",
+        author: "Ashish Vaswani"
       }
     }
   ]

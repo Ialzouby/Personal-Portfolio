@@ -12,9 +12,8 @@ const blogImageVarPrefix = 'aiImage';
 const author = 'Issam Alzouby';
 
 // === STEP 1: Generate AI blog post with DALL·E prompt ===
-async function generateBlogPost() {
+async function generateBlogPost(weekNum: number) {
   const today = new Date().toISOString().split('T')[0];
-  const weekNum = Math.floor((Date.now() - new Date('2025-01-01').getTime()) / (7 * 24 * 60 * 60 * 1000)) + 1;
 
   const prompt = `
 You are writing a weekly blog series called "How AI Works – From Basics to Transformers."
@@ -26,7 +25,7 @@ Include:
 - tag (like: AI Education, Transformers)
 - a short summary paragraph as "content"
 - sections: 3–5, each with heading, text, optional bullets
-- one quote: { text, author }
+- one REAL quote from a tech leader, DO NOT MAKE UP QUOTES, THEY MUST BE 100% TRUE AND STATED BY THE AUTHOR: { text, author }
 - a DALL·E prompt as: dalle_prompt
 
 Return it in JSON format:
@@ -137,15 +136,17 @@ const blogString = JSON.stringify(blogObj, null, 2)
 (async () => {
     try {
       if (!fs.existsSync(blogImageDir)) fs.mkdirSync(blogImageDir);
-  
-      const blog = await generateBlogPost();
+
   
       // === Generate ID ===
       const file = fs.readFileSync(allDataPath, 'utf-8');
       const idMatch = file.match(/id:\s*(\d+),/g);
       const existingIds = idMatch ? idMatch.map((m: string) => parseInt(m.match(/\d+/)![0])) : [];
       const id = existingIds.length ? Math.max(...existingIds) + 1 : 20;
+
+      const blog = await generateBlogPost(id); // ✅ pass ID as weekNum
       blog.id = id; // ✅ Set the ID here
+
       blog.slug = `how-ai-works-id-${id}`;
 
       const { filename, importVar } = await generateImage(blog.dalle_prompt, blog.slug, id);
