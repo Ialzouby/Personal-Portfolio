@@ -29,10 +29,11 @@ jobs:
       - name: Generate blog
         run: npx ts-node scripts/generate_blog.ts
 
-      - name: Commit and push blog
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add .
           git commit -m "🤖 Auto-generate weekly AI blog"
-          git push
+          git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+
