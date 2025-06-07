@@ -1,3 +1,4 @@
+import aiImage_25 from "@/../public/images/how-ai-works-id-25.png";
 import aiImage_24 from "@/../public/images/how-ai-works-id-24.png";
 import aiImage_23 from "@/../public/images/how-ai-works-id-23.png";
 import aiImage_22 from "@/../public/images/how-ai-works-id-22.png";
@@ -488,6 +489,64 @@ export const blogs = [
       quote: {
         text: "The simplest way to understand the difference between algorithms is by imagining three kids in a classroom: one who knows all the answers, one who copies answers, and one who learns by experience, the last being reinforcement learning.",
         author: "Amber K. Dugger"
+      }
+    }
+  ]
+},
+{
+  id: 25,
+  slug: "how-ai-works-id-25",
+  img: aiImage_25,
+  date: "2025-06-07",
+  tag: "AI Education, Transformers",
+  title: "Week 23: The Magic of Memory: Introducing Attention Mechanisms",
+  author: "Issam Alzouby",
+  content: "Welcome to Week 23 of our 'How AI Works' blog series! As we continue our journey through AI, today we unravel the concept of attention mechanisms. Just as humans focus their attention on important stimuli, AI models use attention mechanisms to prioritize certain data. This post will break down how attention works, its importance in AI, and why it's crucial in advanced models like transformers.",
+  sections: [
+    {
+      heading: "What Is Attention in AI?",
+      text: "Attention in AI is like a spotlight that allows models to focus on the most pertinent parts of the input data. Instead of processing every piece of information equally (like reading an entire book from cover to cover to find specific facts), attention helps AI models 'skip ahead' and allocate more computational power to relevant data.",
+      bullets: [
+        "Works like a spotlight focusing on key data",
+        "Helps prioritize important pieces of information"
+      ]
+    },
+    {
+      heading: "Why Is Attention Important?",
+      text: "Attention mechanisms help AI models manage information more efficiently and improve outcomes in tasks like language translation, image recognition, and much more. By enabling models to 'pay more attention' to relevant data, they can achieve a better understanding and generate more accurate results.",
+      bullets: [
+        "Improves efficiency and accuracy",
+        "Essential in processing complex inputs"
+      ]
+    },
+    {
+      heading: "Global vs. Local Attention",
+      text: "Attention mechanisms are used in different forms, such as global and local attention. Global attention considers all parts of the input data equally, while local attention restricts focus to a nearby region. Think of global attention like hearing every instrument in an orchestra, whereas local attention is like focusing just on the string section.",
+      bullets: [
+        "Global attention sees the full picture",
+        "Local attention hones in on specific parts"
+      ]
+    },
+    {
+      heading: "Attention Mechanisms in Transformers",
+      text: "Transformers are advanced AI models that heavily employ attention mechanisms. They revolutionized how AI handles language by enabling models to draw dependencies between words, regardless of their distance in a sentence. This powerful capability is why transformers excel in language processing and creativity.",
+      bullets: [
+        "Enables understanding of long-range dependencies",
+        "Vital for natural language processing"
+      ]
+    },
+    {
+      heading: "Visualizing Attention",
+      text: "Imagine trying to understand a large, complex painting. Attention allows models to examine specific parts one at a time, synthesizing these smaller observations into an understanding of the full artwork. This is akin to seeing how each brushstroke contributes to the entire scene.",
+      bullets: [
+        "Attention focuses on details within data",
+        "Builds comprehensive understanding from parts"
+      ]
+    },
+    {
+      quote: {
+        text: "Attention is the rarest and purest form of generosity.",
+        author: "Simone Weil"
       }
     }
   ]
