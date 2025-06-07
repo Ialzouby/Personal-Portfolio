@@ -31,7 +31,7 @@ const LatestBlog = () => {
           </div>
         </FadeDown>
         <div className="row g-5 g-md-10 ">
-          {blogs.slice(0, 3).map(({ id, img, date, tag, title, slug }) => (
+        {blogs.slice(-3).map(({ id, img, date, tag, title, slug }) => (
             <BlogCard key={id} img={img} date={date} tag={tag} title={title} slug={slug || ""} />
           ))}
         </div>
