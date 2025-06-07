@@ -19,7 +19,7 @@ async function generateBlogPost() {
   const prompt = `
 You are writing a weekly blog series called "How AI Works – From Basics to Transformers."
 Today is Week ${weekNum}. This post should teach a specific AI concept building on previous weeks.
-Use beginner-friendly language, analogies, and accurate technical content.
+Use beginner-friendly language, analogies, and accurate technical content. It should also include figures and charts and be easy/fun to read.
 Include:
 
 - title
