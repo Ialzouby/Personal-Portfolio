@@ -3,8 +3,8 @@ import CountUp from "react-countup";
 
 const Counter = () => {
   return (
-    <div className="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-10 mt-md-17">
-      <div className="d-flex align-items-center gap-2 gap-xl-4">
+<div className="banner-counter d-flex flex-wrap flex-xl-nowrap align-items-center gap-3 gap-md-6 mt-5 mt-md-5 mb-2">
+<div className="d-flex align-items-center gap-2 gap-xl-4">
         <h2 className="display-two fw-semibold p1-color">
           <CountUp start={0} end={5} duration={3} enableScrollSpy scrollSpyOnce>
             {({ countUpRef }) => <span ref={countUpRef} />}

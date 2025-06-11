@@ -7,7 +7,7 @@ import Testimonials from "@/components/Pages/About/Testimonials";
 import WhatDo from "@/components/Pages/About/WhatDo";
 import Footer from "@/components/Shared/Footer/Footer";
 import Gallery from "@/components/Pages/About/Gallery";
-
+import Websites from "@/components/Pages/About/Websites";
 
 export const metadata = {
   title: "Issam Alzouby | AI Engineer & Medical AI Researcher",
@@ -54,7 +54,7 @@ export const metadata = {
 const About = () => {
   return (
     <div className="overflow-hidden">
-      <section className="pt-60 pb-120 br-bottom-n3  mt-0 mt-lg-0">
+      <section className="pt-60 pb-110 br-bottom-n3  mt-0 mt-lg-0">
         <div className="container">
           <Banner />
           <div className="d-none d-sm-block">
@@ -65,6 +65,7 @@ const About = () => {
       </section>
       <section className="pt-0 pb-0 mt-0 br-bottom-n3">
       <Gallery />
+      <Websites />
 
       </section>
       <WhatDo />
