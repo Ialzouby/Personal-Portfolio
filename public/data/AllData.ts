@@ -51,7 +51,7 @@ import speaking4 from "@/../public/images/speaking/speaking4.png";
 import speaking5 from "@/../public/images/speaking/speaking5.png";
 import speaking6 from "@/../public/images/speaking/speaking6.png";
 import speaking11 from "@/../public/images/speaking/speaker7.png";
-import speaking12 from "@/../public/images/speaking/speaker8.jpg";
+import speaking12 from "@/../public/images/speaking/speaker8.JPG";
 
 export const services = [
   {
