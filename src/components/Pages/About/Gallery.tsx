@@ -6,20 +6,20 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-import img1 from "@/../public/images/g1.png";
-import img2 from "@/../public/images/gallery2.jpg";
-import img3 from "@/../public/images/g3.png";
-import img4 from "@/../public/images/g12.png";
-import img5 from "@/../public/images/p13.JPG";
-import img6 from "@/../public/images/project6.png";
-import img7 from "@/../public/images/project7.png";
-import img8 from "@/../public/images/project8.jpeg";
-import img9 from "@/../public/images/gallery5.jpg";
-import img10 from "@/../public/images/gallery10.jpg";
-import img11 from "@/../public/images/gallery11.png";
-import img12 from "@/../public/images/g12.png";
-import img13 from "@/../public/images/p13.JPG";
-import img14 from "@/../public/images/gallery12.png";
+import img1 from "@/../public/images/gallery/g1.png";
+import img2 from "@/../public/images/gallery/gallery2.jpg";
+import img3 from "@/../public/images/gallery/g3.png";
+import img4 from "@/../public/images/gallery/g12.png";
+import img5 from "@/../public/images/gallery/p13.JPG";
+import img6 from "@/../public/images/gallery/project6.png";
+import img7 from "@/../public/images/gallery/project7.png";
+import img8 from "@/../public/images/gallery/project8.jpeg";
+import img9 from "@/../public/images/gallery/gallery5.jpg";
+import img10 from "@/../public/images/gallery/gallery10.jpg";
+import img11 from "@/../public/images/gallery/gallery11.png";
+import img12 from "@/../public/images/gallery/g12.png";
+import img13 from "@/../public/images/gallery/p13.JPG";
+import img14 from "@/../public/images/gallery/gallery12.png";
 
 const images = [
   img1, img2, img3, img4, img5, img7, img8, img9, img10, img11, img12, img13, img14

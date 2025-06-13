@@ -6,14 +6,14 @@ import Lightbox from "yet-another-react-lightbox";
 import "@/app/globals.css";
 
 // Replace with your actual website images
-import site1 from "@/../public/images/project1.png";
-import site2 from "@/../public/images/project2.png";
-import site3 from "@/../public/images/project3.png";
-import site4 from "@/../public/images/project4.png";
-import site5 from "@/../public/images/project5.png";
-import site6 from "@/../public/images/project6.png";
-import site7 from "@/../public/images/project7.png";
-import site9 from "@/../public/images/project9.png";
+import site1 from "@/../public/images/projects/project1.png";
+import site2 from "@/../public/images/projects/project2.png";
+import site3 from "@/../public/images/projects/project3.png";
+import site4 from "@/../public/images/projects/project4.png";
+import site5 from "@/../public/images/projects/project5.png";
+import site6 from "@/../public/images/projects/project6.png";
+import site7 from "@/../public/images/projects/project7.png";
+import site9 from "@/../public/images/projects/project9.png";
 
 
 const websiteImages = [site1, site2, site3, site4, site5, site6, site7, site9];

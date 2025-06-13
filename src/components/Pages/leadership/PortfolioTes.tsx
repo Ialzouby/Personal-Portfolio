@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// ⬇  replace these with real thumbnails (one‑per‑card) when ready
+// Replace these with real thumbnails when ready
 import Thumb1 from "@/../public/images/gallery5.jpg";
 import Thumb2 from "@/../public/images/gallery5.jpg";
 import Thumb3 from "@/../public/images/gallery5.jpg";
@@ -24,8 +24,7 @@ const leadership: Item[] = [
     id: 1,
     img: Thumb1,
     title: "Community Pantry Organizer",
-    description:
-      "Weekly drives feeding 200+ families; coordinated volunteers & inventory.",
+    description: "Weekly drives feeding 200+ families; coordinated volunteers & inventory.",
   },
   {
     id: 2,
@@ -59,52 +58,34 @@ const leadership: Item[] = [
   },
 ];
 
-// ————————————————————————————————————————————————————————————
-// Component – modern, minimalist, two‑column card grid
-// ————————————————————————————————————————————————————————————
 export default function LeadershipSection() {
   return (
-    <section className="mx-auto max-w-5xl px-4 py-20">
-      <h2 className="mb-12 text-center text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-        Leadership & Outreach
-      </h2>
+    <section className="container py-5">
+      <h2 className="text-center mb-5 display-5 fw-bold text-dark"> & Outreach</h2>
 
-      {/* Two‑column grid (1 column on very small screens) */}
-      <ul className="grid gap-8 sm:grid-cols-2">
+      <div className="row gy-4">
         {leadership.map(({ id, img, title, description, href }) => (
-          <li
-            key={id}
-            className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg"
-          >
-            {/* THUMBNAIL */}
-            <Link href={href ?? "#"} className="block overflow-hidden rounded-t-xl bg-gray-100">
-              {/* Aspect ratio wrapper keeps every image the same height */}
-              <div className="relative w-full aspect-[4/3]">
-                <Image
-                  src={img}
-                  alt={title}
-                  fill
-                  sizes="(max-width:640px) 100vw, 50vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  priority={id === 1}
-                />
-              </div>
-            </Link>
-
-            {/* COPY */}
-            <div className="flex flex-1 flex-col p-6">
-              <Link href={href ?? "#"} className="flex-1">
-                <h3 className="text-lg font-medium text-gray-900 group-hover:underline">
-                  {title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                  {description}
-                </p>
+          <div className="col-sm-12 col-md-6" key={id}>
+            <div className="card h-100 shadow-sm border-0" style={{ backgroundColor: "#fdfbff" }}>
+              <Link href={href ?? "#"} className="text-decoration-none">
+                <div className="position-relative" style={{ aspectRatio: "4 / 3" }}>
+                  <Image
+                    src={img}
+                    alt={title}
+                    fill
+                    className="card-img-top object-fit-cover rounded-top"
+                    style={{ transition: "transform 0.3s ease" }}
+                  />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title text-dark fw-semibold">{title}</h5>
+                  <p className="card-text text-secondary">{description}</p>
+                </div>
               </Link>
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }

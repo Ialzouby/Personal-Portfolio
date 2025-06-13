@@ -14,24 +14,24 @@ import sass from "@/../public/images/sass.png";
 import less from "@/../public/images/less.png";
 
 // features img
-import project1 from "@/../public/images/project1.png";
-import project2 from "@/../public/images/project2.png";
-import project3 from "@/../public/images/project3.png";
-import project4 from "@/../public/images/project4.png";
-import project5 from "@/../public/images/project5.png";
-import project6 from "@/../public/images/project6.png";
-import project7 from "@/../public/images/project7.png";
-import project8 from "@/../public/images/project8.jpeg";
-import project9 from "@/../public/images/project9.jpg";
-import project10 from "@/../public/images/project10.jpeg";
-import project11 from "@/../public/images/project11.png";
-import project12 from "@/../public/images/project12.png";
-import project13 from "@/../public/images/project13.png";
-import project14 from "@/../public/images/project14.png";
-import project15 from "@/../public/images/project15.png";
-import project16 from "@/../public/images/project16.png";
-import project17 from "@/../public/images/project17.png";
-import project18 from "@/../public/images/blog4.jpeg";
+import project1 from "@/../public/images/projects/project1.png";
+import project2 from "@/../public/images/projects/project2.png";
+import project3 from "@/../public/images/projects/project3.png";
+import project4 from "@/../public/images/projects/project4.png";
+import project5 from "@/../public/images/projects/project5.png";
+import project6 from "@/../public/images/projects/project6.png";
+import project7 from "@/../public/images/projects/project7.png";
+import project8 from "@/../public/images/projects/project8.jpeg";
+import project9 from "@/../public/images/projects/project9.jpg";
+import project10 from "@/../public/images/projects/project10.jpeg";
+import project11 from "@/../public/images/projects/project11.png";
+import project12 from "@/../public/images/projects/project12.png";
+import project13 from "@/../public/images/projects/project13.png";
+import project14 from "@/../public/images/projects/project14.png";
+import project15 from "@/../public/images/projects/project15.png";
+import project16 from "@/../public/images/projects/project16.png";
+import project17 from "@/../public/images/projects/project17.png";
+import project18 from "@/../public/images/blog/blog4.jpeg";
 
 import buyer1 from "@/../public/images/buyer1.png";
 import buyer2 from "@/../public/images/buyer2.png";
@@ -44,13 +44,14 @@ import product2 from "@/../public/images/ISAISL.png";
 import product3 from "@/../public/images/organ.png";
 import product4 from "@/../public/images/ecmo.png";
 
-import speaking1 from "@/../public/images/speaking.JPG";
-import speaking2 from "@/../public/images/speaking2.jpeg";
-import speaking3 from "@/../public/images/speaking3.png";
-import speaking4 from "@/../public/images/speaking4.png"; 
-import speaking5 from "@/../public/images/speaking5.png";
-import speaking6 from "@/../public/images/speaking6.png";
-import speaking11 from "@/../public/images/speaker7.png";
+import speaking1 from "@/../public/images/speaking/speaking.jpg";
+import speaking2 from "@/../public/images/speaking/speaking2.jpeg";
+import speaking3 from "@/../public/images/speaking/speaking3.png";
+import speaking4 from "@/../public/images/speaking/speaking4.png"; 
+import speaking5 from "@/../public/images/speaking/speaking5.png";
+import speaking6 from "@/../public/images/speaking/speaking6.png";
+import speaking11 from "@/../public/images/speaking/speaker7.png";
+import speaking12 from "@/../public/images/speaking/speaker8.jpg";
 
 export const services = [
   {
@@ -105,7 +106,17 @@ export const services = [
 
 export const featureds2 = [
   {
-    id: 1,
+    id:1,
+    category: "Public Speaking",
+    tag1: "Research",
+    tag2: "AI",
+    tag3: "Medicine",
+    title: "AI Trends - Co-Talk with Mark Reynoso (Previous CEO of Belkin) | Open Carolinas",
+    img: speaking12,
+  },
+
+  {
+    id: 2,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
@@ -114,7 +125,7 @@ export const featureds2 = [
     img: speaking11,
   },
   {
-    id: 2 ,
+    id: 3 ,
     category: "Public Speaking",
     tag1: "Public Speaking",
     tag2: "AI",
@@ -123,7 +134,7 @@ export const featureds2 = [
     img: speaking1,
   },
   {
-    id: 3,
+      id: 4,
     category: "Teaching",
     tag1: "Teaching",
     tag2: "AI",
@@ -132,7 +143,7 @@ export const featureds2 = [
     img: speaking2,
   },
   {
-    id: 4,
+    id: 5,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -141,7 +152,7 @@ export const featureds2 = [
     img: speaking3,
   },
   {
-    id: 5,
+    id: 6,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
@@ -150,7 +161,7 @@ export const featureds2 = [
     img: speaking6,
   },
   {
-    id: 6,
+    id: 7,
     category: "Public Speaking",
     tag1: "Panelist",
     tag2: "AI",
@@ -160,7 +171,7 @@ export const featureds2 = [
   },
 
   {
-    id: 7,
+    id: 8,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -169,7 +180,7 @@ export const featureds2 = [
     img: speaking4,
   },
   { 
-    id: 8,
+    id: 9,
     category: "Public Speaking",
     tag1: "Podcast",
     tag2: "Entrepreneurship",
