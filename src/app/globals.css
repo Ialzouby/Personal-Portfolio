@@ -217,13 +217,6 @@
 }
 
 
-
-/* Make sure text contrasts well */
-.modern-card h5,
-.modern-card p {
-  color: #f0f0f0;
-}
-
 /* Optional: subtle glow border on hover */
 .hover-effect:hover::before {
   content: "";
