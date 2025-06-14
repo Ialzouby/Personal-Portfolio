@@ -44,7 +44,7 @@ import product2 from "@/../public/images/ISAISL.png";
 import product3 from "@/../public/images/organ.png";
 import product4 from "@/../public/images/ecmo.png";
 
-import speaking1 from "@/../public/images/speaking/speaking.jpg";
+import speaking1 from "@/../public/images/speaking/speaking.JPG";
 import speaking2 from "@/../public/images/speaking/speaking2.jpeg";
 import speaking3 from "@/../public/images/speaking/speaking3.png";
 import speaking4 from "@/../public/images/speaking/speaking4.png"; 
