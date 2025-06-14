@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import light from "@/../public/images/light.png";
+import light from "@/../public/images/python.png";
 import { PiArrowRight, PiMinusBold, PiPlusBold } from "react-icons/pi";
 import AnimateHeight from "react-animate-height";
 import { frequentlyData } from "../../../../public/data/AllData";
