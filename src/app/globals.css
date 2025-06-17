@@ -141,23 +141,6 @@
   }
 }
 
-/* Scrollbar (optional) */
-.professional-gallery::-webkit-scrollbar {
-  height: 6px;
-}
-.professional-gallery::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-}
-.professional-gallery::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.5));
-  border-radius: 3px;
-}
-.professional-gallery::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.7));
-}
-
-
 /* See-through card glass background */
 .bg-glass {
   background-color: rgba(255, 255, 255, 0.65) !important;
@@ -293,4 +276,102 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: rotateX(15deg) rotateY(-15deg);
 }
+.professional-gallery {
 
+  scroll-behavior: smooth;
+
+  /* Firefox Scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+
+.professional-gallery {
+
+  scroll-behavior: smooth;
+
+  /* Firefox support */
+  scrollbar-width: thin;
+  scrollbar-color: #c694ff transparent;
+}
+
+.professional-gallery::-webkit-scrollbar {
+  height: 10px; /* ⬅️ Ensure it's big enough to hit */
+}
+
+.professional-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.professional-gallery::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #eed3ed, #eed3ed);
+  border-radius: 10px;
+  transition: background 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+  height: 6px;
+}
+
+/* ✅ Hover now changes background, glow, and height */
+.professional-gallery::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #c7bfff, #a18cd1);
+  height: 10px; /* ✅ grow instead of transform */
+  box-shadow: 0 0 6px #c084fc;
+  cursor: pointer;
+}
+
+/* ✅ Click & drag glow */
+.professional-gallery::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(135deg, #b794f4, #7c3aed);
+  height: 12px;
+  box-shadow: 0 0 8px #a855f7;
+}
+.gallery-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-scrollbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+  pointer-events: none;
+}
+
+.custom-thumb {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  background: linear-gradient(135deg, #c7bfff, #a18cd1);
+  border-radius: 8px;
+  box-shadow: 0 0 8px #a18cd1;
+  transition: background 0.3s ease;
+  left: var(--thumb-left, 0);
+  pointer-events: auto;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.thumb-ripple {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: rgba(161, 140, 209, 0.4);
+  border-radius: 50%;
+  animation: ripple-grow 0.6s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes ripple-grow {
+  0% {
+    transform: translateY(-50%) scale(0.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%) scale(2.5);
+    opacity: 0;
+  }
+}

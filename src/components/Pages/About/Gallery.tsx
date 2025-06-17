@@ -1,10 +1,23 @@
 // === File: components/Gallery.tsx ===
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useRef, useEffect } from "react";
+
+
+
+import { useMemo } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import "yet-another-react-lightbox/plugins/captions.css";
+
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+
 
 import img1 from "@/../public/images/gallery/g1.png";
 import img2 from "@/../public/images/gallery/gallery2.jpg";
@@ -44,6 +57,39 @@ const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
+
+
+
+  const galleryRef = useRef(null);
+  const [rippleVisible, setRippleVisible] = useState(false);
+  const [rippleX, setRippleX] = useState(0);
+  const [thumbLeft, setThumbLeft] = useState(0);
+  
+  const handleScroll = () => {
+    const el = galleryRef.current;
+    if (!el) return;
+  
+    const scrollRatio = el.scrollLeft / (el.scrollWidth - el.clientWidth);
+    const maxThumbMove = el.clientWidth - 40; // assuming thumb width is 40px
+    setThumbLeft(scrollRatio * maxThumbMove);
+  };
+  
+  const handleThumbClick = (e: React.MouseEvent) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+  
+    setRippleX(clickX);
+    setRippleVisible(true);
+    setTimeout(() => setRippleVisible(false), 600);
+  };
+  
+  useEffect(() => {
+    handleScroll(); // set initial position
+  }, []);
+
+
+
+  
   const imageLayouts = layoutTypes;
 
   const openLightbox = (index: number) => {
@@ -64,7 +110,8 @@ const Gallery = () => {
           </p>
         </div>
 
-        <div className="professional-gallery">
+        <div className="gallery-scroll-wrapper">
+  <div className="professional-gallery" ref={galleryRef} onScroll={handleScroll}>
           {images.map((img, index) => (
             <div
               key={index}
@@ -93,14 +140,59 @@ const Gallery = () => {
         </div>
 
         <Lightbox
-          open={lightboxOpen}
-          close={() => setLightboxOpen(false)}
-          slides={images.map((img, index) => ({ src: typeof img === 'string' ? img : img.src }))}
-          index={selectedImageIndex}
-          carousel={{ padding: '20px', spacing: '20px', imageFit: 'contain' }}
-          render={{ buttonPrev: () => null, buttonNext: () => null }}
-        />
+  open={lightboxOpen}
+  close={() => setLightboxOpen(false)}
+  index={selectedImageIndex}
+  slides={images.map((img, index) => ({
+    src: typeof img === "string" ? img : img.src,
+    description: `Gallery image ${index + 1}`,
+  }))}
+  plugins={[Thumbnails, Captions, Fullscreen]}
+  carousel={{ padding: 20, spacing: 20, imageFit: "contain" }}
+  thumbnails={{
+    position: "bottom",        // or "top"
+    width: 90,                 // thumbnail width
+    height: 60,                // thumbnail height
+    border: 2,
+    borderRadius: 8,
+    padding: 4,
+    gap: 12,
+    vignette: true,            // fade edges
+    showToggle: false,         // hide toggle button
+  }}
+  styles={{
+    thumbnailsContainer: {
+      backgroundColor: "#111",           // background strip color
+      padding: "10px 0",
+    },
+    thumbnail: {
+      filter: "brightness(0.7)",
+      transition: "all 0.3s ease",
+    },
+    thumbnailActive: {
+      borderColor: "#facc15",           // Tailwind amber-400
+      filter: "brightness(1)",
+      transform: "scale(1.05)",
+    },
+    thumbnailContainer: {
+      borderRadius: "8px",
+      overflow: "hidden",
+    },
+  }}
+/>
+
       </div>
+  <div className="custom-scrollbar">
+<div
+  className="custom-thumb"
+  onClick={handleThumbClick}
+  style={{ left: `${thumbLeft}px` }}
+>
+      {rippleVisible && <span className="thumb-ripple" style={{ left: rippleX + "px" }} />}
+    </div>
+  </div>
+</div>
+
     </section>
   );
 };

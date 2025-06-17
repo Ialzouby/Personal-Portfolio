@@ -1,4 +1,4 @@
-import { featureds } from "@/../public/data/AllData";
+import { featureds } from "@/../public/data/ProjectData";
 import { PiArrowRight } from "react-icons/pi";
 import Footer from "@/components/Shared/Footer/Footer";
 import Image from "next/image";

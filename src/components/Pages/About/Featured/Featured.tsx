@@ -1,5 +1,5 @@
 import { PiArrowRight } from "react-icons/pi";
-import { featureds } from "../../../../../public/data/AllData";
+import { featureds } from "../../../../../public/data/ProjectData";
 import FeaturedCard from "./FeaturedCard";
 import Link from "next/link";
 import FadeDown from "@/components/motionEffect/FadeDown";

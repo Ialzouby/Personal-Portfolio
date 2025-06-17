@@ -3,7 +3,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { Fragment } from "react";
 import clsx from "clsx";
 import { PiPaperPlaneTilt } from "react-icons/pi";
-import { featureds } from "../../../../public/data/AllData";
+import { featureds } from "../../../../public/data/ProjectData";
 import FeaturedCard from "@/components/Pages/About/Featured/FeaturedCard";
 import Footer from "@/components/Shared/Footer/Footer";
 import Link from "next/link";
