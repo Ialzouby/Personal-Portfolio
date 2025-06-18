@@ -132,7 +132,7 @@ const Sidebar = () => {
     <i className="ph ph-paper-plane-tilt">
       <PiPaperPlaneTilt />
     </i>
-    Lets Chat
+    Learn AI
   </Link>
 
   <div className="side-icon bg1-color d-flex align-items-center justify-content-center">

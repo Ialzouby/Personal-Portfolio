@@ -71,7 +71,6 @@ const About = () => {
       <WhatDo />
       <NextProject />
       <Featured />
-      <Testimonials />
       <LatestBlog />
       <Footer />
     </div>

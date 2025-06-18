@@ -9,13 +9,33 @@ import "@/app/globals.css";
 import site1 from "@/../public/images/websites/website1.png";
 import site2 from "@/../public/images/websites/website2.png";
 import site3 from "@/../public/images/websites/website3.png";
-import site4 from "@/../public/images/websites/website4.png";
-import site5 from "@/../public/images/projects/project5.png";
-import site6 from "@/../public/images/projects/project6.png";
-import site7 from "@/../public/images/projects/project7.png";
-import site9 from "@/../public/images/projects/project9.png";
+import site4 from "@/../public/images/websites/website15.png";
+import site5 from "@/../public/images/websites/website5.png";
+import site6 from "@/../public/images/websites/website6.png";
+import site9 from "@/../public/images/websites/website9.png";
+import site10 from "@/../public/images/websites/website10.png";
+import site11 from "@/../public/images/websites/website11.png";
+import site12 from "@/../public/images/websites/website12.png";
+import site13 from "@/../public/images/websites/website13.png";
+import site14 from "@/../public/images/websites/website14.png";
+import site15 from "@/../public/images/websites/website4.png";
 
-const websiteImages = [site1, site2, site3, site4, site5, site6, site7, site9];
+
+
+const websiteImages = [
+  {image:site1, link:"https://ecmo.up.railway.app/"}, 
+{image:site2, link:"https://bamm.up.railway.app/dashboard"}, 
+{image:site3, link:"https://omar-auto.up.railway.app/"}, 
+{image:site4, link:"https://ai-demo.up.railway.app/"}, 
+{image:site5, link:"https://buzzprints.up.railway.app/"}, 
+{image:site6, link:"https://unityvision.up.railway.app/"}, 
+{image:site9, link:"https://unityyconnect.up.railway.app/"}, 
+{image:site10, link:"https://www.campusdev.link/"}, 
+{image:site11, link:"https://sonicsounds.up.railway.app/Home.html"}, 
+{image:site12, link:"https://ai4health-production.up.railway.app/"}, 
+{image:site13, link:"https://technolab.up.railway.app/"}, 
+{image:site14, link:"https://gitscan.up.railway.app/"}, 
+{image:site15, link:"https://swiftsign.up.railway.app/"} ];
 
 const WebsiteGallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -73,24 +93,27 @@ const WebsiteGallery = () => {
             ref={sliderRef}
             onScroll={handleScroll}
           >
-            {websiteImages.map((img, index) => (
-              <div
-                key={index}
-                className="gallery-item"
-                style={{ minWidth: "320px", height: "180px", cursor: "pointer" }}
-                onClick={() => openLightbox(index)}
-              >
-                <div className="gallery-item__wrapper">
-                  <Image
-                    src={img}
-                    alt={`Website ${index + 1}`}
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="gallery-item__image"
-                  />
-                </div>
-              </div>
-            ))}
+{websiteImages.map(({ image, link }, index) => (
+  <a
+    key={index}
+    href={link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="gallery-item"
+    style={{ minWidth: "320px", height: "180px" }}
+  >
+    <div className="gallery-item__wrapper">
+      <Image
+        src={image}
+        alt={`Website ${index + 1}`}
+        fill
+        style={{ objectFit: "cover" }}
+        className="gallery-item__image"
+      />
+    </div>
+  </a>
+))}
+
           </div>
 
           {/* === Custom Scrollbar === */}

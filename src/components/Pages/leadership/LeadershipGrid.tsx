@@ -5,8 +5,19 @@ import Leadership1 from "@/../public/images/leadership/leadership1.jpg";
 import Leadership2 from "@/../public/images/leadership/leadership3.png";
 import Leadership3 from "@/../public/images/leadership/leadership2.png";
 import Leadership6 from "@/../public/images/leadership/leadership6.png";
-
+import Leadership7 from "@/../public/images/leadership/leadership7.png";
+import Leadership8 from "@/../public/images/leadership/leadership8.png";
 const leadership = [
+  {
+    title: "Stanford HAI AI4ALL - Graduate AI Mentor",
+    desc: "Mentored students through the medical AI track.",
+    img: Leadership7,
+  },
+  {
+    title: "UNC Charlotte - AEOP - Graduate AI Mentor",
+    desc: "Mentored students through UNC-Charlotte's STEM internship program.",
+    img: Leadership8,
+  },
   {
     title: "Community Pantry Organizer",
     desc: "Led and organized bi-weekly drives feeding 50+ families each time.",
