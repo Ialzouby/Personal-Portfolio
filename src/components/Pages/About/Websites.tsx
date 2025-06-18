@@ -6,10 +6,10 @@ import Lightbox from "yet-another-react-lightbox";
 import "@/app/globals.css";
 
 // Images
-import site1 from "@/../public/images/projects/project1.png";
-import site2 from "@/../public/images/projects/project2.png";
-import site3 from "@/../public/images/projects/project3.png";
-import site4 from "@/../public/images/projects/project4.png";
+import site1 from "@/../public/images/websites/website1.png";
+import site2 from "@/../public/images/websites/website2.png";
+import site3 from "@/../public/images/websites/website3.png";
+import site4 from "@/../public/images/websites/website4.png";
 import site5 from "@/../public/images/projects/project5.png";
 import site6 from "@/../public/images/projects/project6.png";
 import site7 from "@/../public/images/projects/project7.png";
