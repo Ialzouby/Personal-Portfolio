@@ -103,9 +103,9 @@ export const featureds = [
       award: "1st",
   
       tag1: "Hackathon",
-      tag2: "iOS",
-      tag3: "Face Privacy",
-      title: "Unity Vision iOS App – NC State Hackathon",
+      tag2: "C++ & Python",
+      tag3: "Leet Code",
+      title: "1st Place – NC State Competitive Programming Hackathon",
       img: project9,
       client: "Client 9",
       services: "Full-Stack Development",
@@ -122,6 +122,31 @@ export const featureds = [
         { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
       ]
     },
+    {
+        id: 3,
+        category: "Hackathons",
+        award: "1st",
+    
+        tag1: "Hackathon",
+        tag2: "iOS",
+        tag3: "Face Privacy",
+        title: "2nd Place – NC State Hackathon: Unity Vision iOS App",
+        img: project9,
+        client: "Client 9",
+        services: "Full-Stack Development",
+        technologies: "Swift, Python, TensorFlow",
+        website: "https://example.com",
+        intro: "This project involved building the unity vision ios app – nc state hackathon.",
+        overview: "We started with the goal of creating a usable and reliable system.",
+        challenge: "The main challenge was balancing performance with deployment constraints.",
+        solution: "We used a modular design and optimized data flow to solve the problems.",
+        gallery: [project1, project2, project3],
+        results: [
+          { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
+          { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
+          { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
+        ]
+      },
     {
       id: 10,
       category: "Hackathons",

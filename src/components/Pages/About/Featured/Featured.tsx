@@ -4,6 +4,9 @@ import FeaturedCard from "./FeaturedCard";
 import Link from "next/link";
 import FadeDown from "@/components/motionEffect/FadeDown";
 
+const idsToShow = [1, 2];
+
+
 const Featured = () => {
   return (
     <section className="pt-120 pb-120 br-bottom-n3">
@@ -31,19 +34,23 @@ View more projects!
           </div>
         </FadeDown>
 
-        <div className="row g-6 g-md-10 ">
-          {featureds.slice(0, 4).map(({ id, img, tag1, tag2, tag3, title, award }) => (
-            <FeaturedCard
-              key={id}
-              img={img}
-              tag1={tag1}
-              tag2={tag2}
-              tag3={tag3}
-              title={title}
-              award={award}
-            />
-          ))}
-        </div>
+
+<div className="row g-6 g-md-10">
+  {featureds
+    .filter(({ id }) => idsToShow.includes(id))
+    .map(({ id, img, tag1, tag2, tag3, title, award }) => (
+      <FeaturedCard
+        key={id}
+        img={img}
+        tag1={tag1}
+        tag2={tag2}
+        tag3={tag3}
+        title={title}
+        award={award}
+      />
+    ))}
+</div>
+
       </div>
     </section>
   );
