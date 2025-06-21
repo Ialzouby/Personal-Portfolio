@@ -1,3 +1,4 @@
+import aiImage_28 from "@/../public/images/how-ai-works-id-28.png";
 import aiImage_27 from "@/../public/images/how-ai-works-id-27.png";
 import aiImage_26 from "@/../public/images/blog/how-ai-works-id-26.png";
 import aiImage_25 from "@/../public/images/blog/how-ai-works-id-25.png";
@@ -481,6 +482,56 @@ export const blogs = [
       quote: {
         text: "The attention mechanism allows models to look directly at the relevant bits of input. It has fundamentally transformed the way we design neural networks.",
         author: "Yoshua Bengio"
+      }
+    }
+  ]
+},
+{
+  id: 28,
+  slug: "how-ai-works-id-28",
+  img: aiImage_28,
+  date: "2025-06-21",
+  tag: "AI Education, Transformers",
+  title: "The Magic of Attention in Transformers",
+  author: "Issam Alzouby",
+  content: "Welcome back to our 'How AI Works' series! This week, we're diving into one of the pivotal concepts that makes transformers so powerful: attention mechanisms. Understanding attention will unravel how transformers can efficiently process complex language tasks. Let's explore this fascinating topic in a way that's both engaging and easy to grasp!",
+  sections: [
+    {
+      heading: "What is Attention?",
+      text: "Attention is like having a spotlight on the most important parts of a sentence. In transformers, this mechanism helps the model focus on specific words when making predictions or understanding context.",
+      bullets: [
+        "Helps identify the relevant parts of input data.",
+        "Improves efficiency in processing large datasets."
+      ]
+    },
+    {
+      heading: "Why Do Transformers Use Attention?",
+      text: "Transformers use attention because it allows them to handle longer sentences and more complex queries. This capability is what enables them to process language with unprecedented efficiency compared to previous models.",
+      bullets: [
+        "Allows processing entire sequences simultaneously.",
+        "Enables capturing dependencies between words regardless of their distance in a sentence."
+      ]
+    },
+    {
+      heading: "How Does Attention Work in Practice?",
+      text: "In practice, attention assigns different 'weights' to each word based on its importance in the given context. Think of it as assigning a different brightness to each spotlight on stage depending on the scene.",
+      bullets: [
+        "Contextual information is used to assign attention weights.",
+        "These weights affect how strongly each word influences the model's predictions."
+      ]
+    },
+    {
+      heading: "Visualizing Transformer Attention",
+      text: "Visualizing attention can help demystify its functionality. Often, heatmaps are used to show how different parts of a sentence are weighted by the attention mechanism—a fascinating peek into the model's thought process!",
+      bullets: [
+        "Heatmaps represent attention distributions.",
+        "Help to intuitively understand what the model is focusing on."
+      ]
+    },
+    {
+      quote: {
+        text: "Attention is all you need.",
+        author: "Ashish Vaswani et al. (from the paper introducing transformers)"
       }
     }
   ]
