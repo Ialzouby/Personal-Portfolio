@@ -1282,6 +1282,7 @@ input:-webkit-autofill:active {
   backdrop-filter: blur(12px);
   border-radius: 16px;
   transition: all 0.3s ease-in-out;
+  padding: 2rem 0;
 }
 
 .text-footer {
@@ -1558,4 +1559,18 @@ input:-webkit-autofill:active {
   background-repeat: repeat;
   border-radius: 20px;
   padding: 40px 24px;
+}
+
+/* New Footer Styles */
+.footer-brand h5 {
+  color: rgba(var(--d1), 1);
+}
+
+.footer-section-content {
+  height: 100%;
+}
+
+/* Dark mode adjustments for new footer elements */
+.dark .footer-brand h5 {
+  color: rgba(var(--n11), 1);
 }
