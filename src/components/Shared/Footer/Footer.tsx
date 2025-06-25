@@ -24,13 +24,13 @@ const Footer = () => {
   ];
 
   const affiliations = [
-    "Stanford",
+    "stanford",
     "stanford-hai",
-    "Duke",
-    "UNC-SOM",
-    "UNCC",
-    "DC",
-    "Charlotte",
+    "duke",
+    "unc-som",
+    "uncc",
+    "dc",
+    "charlotte",
   ];
 
   return (
