@@ -10,6 +10,9 @@ import {
   PiFilePdf,
 } from "react-icons/pi";
 
+import profile from "@/../public/images/profile.png";
+
+
 const Footer = () => {
   const links = [
     { label: "About", href: "/about" },
@@ -62,7 +65,7 @@ const Footer = () => {
           {affiliations.map((name, i) => (
             <Image
   key={i}
-  src={`/logos/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
+  src={`/images/logos/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
   alt={name}
   width={100}
   height={100}
