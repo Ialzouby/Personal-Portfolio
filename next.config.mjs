@@ -15,7 +15,15 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-
+  // Image configuration
+  images: {
+    unoptimized: true,
+    remotePatterns: [],
+  },
+  // Ensure static assets are properly served
+  experimental: {
+    optimizePackageImports: ['react-icons'],
+  },
 };
 
 export default nextConfig;

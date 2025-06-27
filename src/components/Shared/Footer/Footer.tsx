@@ -65,7 +65,7 @@ const Footer = () => {
           {affiliations.map((name, i) => (
             <Image
   key={i}
-  src={`/images/logos/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
+  src={`/images/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
   alt={name}
   width={100}
   height={100}
