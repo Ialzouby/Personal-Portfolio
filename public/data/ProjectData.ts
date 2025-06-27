@@ -28,7 +28,7 @@ export const featureds = [
         id: 19,
         category: "AI/ML",
         tag1: "Motion Modeling",
-        tag2: "HumanML3D DataSet",
+        tag2: "HumanML3D",
         tag3: "AI Training",
         title: "MoMask Model Training & Evaluation",
         img: project19,
