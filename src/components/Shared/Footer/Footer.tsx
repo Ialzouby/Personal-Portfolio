@@ -24,6 +24,7 @@ const Footer = () => {
   ];
 
   const affiliations = [
+    "irepair",
     "stanford",
     "stanford-hai",
     "duke",
