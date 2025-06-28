@@ -1,3 +1,4 @@
+import aiImage_30 from "@/../public/images/how-ai-works-id-30.png";
 import aiImage_29 from "@/../public/images/how-ai-works-id-29.png";
 import aiImage_28 from "@/../public/images/how-ai-works-id-28.png";
 import aiImage_27 from "@/../public/images/how-ai-works-id-27.png";
@@ -574,6 +575,48 @@ export const blogs = [
       quote: {
         text: "I am particularly excited about Reinforcement Learning because it's something that can enable computer scientists to work on the world's most challenging optimization problems.",
         author: "Sundar Pichai"
+      }
+    }
+  ]
+},
+{
+  id: 30,
+  slug: "how-ai-works-id-30",
+  img: aiImage_30,
+  date: "2025-06-28",
+  tag: "AI Education, Transformers",
+  title: "Week 30: Unraveling the Magic of Attention Mechanisms",
+  author: "Issam Alzouby",
+  content: "Welcome to Week 30 of our 'How AI Works – From Basics to Transformers' series! This week, we're diving into the fascinating world of attention mechanisms, a key component that powers the effectiveness of modern AI models, especially transformers. If you've ever wondered how AI dynamically focuses on specific parts of its input, this post has you covered. Let's explore attention with simple analogies and visuals to help you grasp this powerful concept.",
+  sections: [
+    {
+      heading: "What is Attention in AI?",
+      text: "Imagine you're at a lively party. Dozens of conversations are happening at once, but you want to focus on just one. Attention mechanisms in AI help models concentrate on important parts of the input data while ignoring the rest, similar to how you focus on a single conversation despite the noise around you.",
+      bullets: [
+        "Helps prioritize relevant information",
+        "Improves model efficiency and accuracy"
+      ]
+    },
+    {
+      heading: "How Does it Work?",
+      text: "In technical terms, attention calculates a set of weights to determine the importance of each part of the input sequence. These weights guide the model to 'attend' to specific parts more than others, facilitating better overall comprehension.",
+      bullets: [
+        "Calculates weight matrices to focus on different input segments",
+        "Enables models to dynamically adjust focus based on context"
+      ]
+    },
+    {
+      heading: "Visualizing Attention with Examples",
+      text: "Consider an AI translating sentences. Attention mechanisms allow the model to align words in the source language with their equivalents in the target language, much like connecting dots.",
+      bullets: [
+        "Enables better translation and language understanding",
+        "Helps models to interpret complex input sequences"
+      ]
+    },
+    {
+      quote: {
+        text: "The attention mechanism allows for more nuanced parsing of human language, differentiating between ambiguities.",
+        author: "Fei-Fei Li"
       }
     }
   ]
