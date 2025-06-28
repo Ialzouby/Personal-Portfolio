@@ -4,6 +4,112 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* Custom Scrollbar for Gallery and Website Grids */
+.gallery-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.custom-scrollbar {
+  position: relative;
+  height: 4px;
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 2px;
+  margin-top: 20px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.custom-scrollbar:hover {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.custom-thumb {
+  position: absolute;
+  top: -6px;
+  min-width: 20px;
+  height: 16px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  border-radius: 8px;
+  cursor: grab;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+  border: none;
+  z-index: 10;
+  /* Natural fade that transitions to match the horizontal line exactly */
+  mask: 
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 10%, black 25%, black 75%, rgba(0,0,0,0.3) 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.2) 20%, black 40%, black 60%, rgba(0,0,0,0.2) 80%, transparent 100%);
+  -webkit-mask: 
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 10%, black 25%, black 75%, rgba(0,0,0,0.3) 90%, transparent 100%),
+    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.2) 20%, black 40%, black 60%, rgba(0,0,0,0.2) 80%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+
+.custom-thumb:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+.custom-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+}
+
+.thumb-ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: rgba(59, 130, 246, 0.8);
+  border-radius: 50%;
+  animation: ripple 0.6s ease-out;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+/* Responsive improvements for the custom scrollbar */
+@media (max-width: 768px) {
+  .custom-scrollbar {
+    height: 6px;
+    margin-top: 15px;
+  }
+  
+  .custom-thumb {
+    height: 18px;
+    top: -6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-scrollbar {
+    height: 8px;
+    margin-top: 12px;
+  }
+  
+  .custom-thumb {
+    height: 20px;
+    top: -6px;
+  }
+}
+
 /* Professional Gallery: 2-row layout */
 .professional-gallery {
   display: grid;
@@ -14,9 +120,15 @@
   overflow-x: auto;
   overflow-y: hidden;
   padding: 20px 0 40px 0;
-  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide default scrollbar for webkit browsers */
+.professional-gallery::-webkit-scrollbar {
+  display: none;
 }
 
 /* Base Item */

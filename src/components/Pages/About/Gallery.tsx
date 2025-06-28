@@ -1,7 +1,7 @@
 // === File: components/Gallery.tsx ===
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 
 
@@ -23,7 +23,7 @@ import img1 from "@/../public/images/gallery/g1.png";
 import img2 from "@/../public/images/gallery/gallery2.jpg";
 import img3 from "@/../public/images/gallery/g3.png";
 import img4 from "@/../public/images/gallery/g12.png";
-import img5 from "@/../public/images/gallery/p13.JPG";
+import img5 from "@/../public/images/gallery/project6.png";
 import img6 from "@/../public/images/gallery/project6.png";
 import img7 from "@/../public/images/gallery/project7.png";
 import img8 from "@/../public/images/gallery/project8.jpeg";
@@ -31,7 +31,7 @@ import img9 from "@/../public/images/gallery/gallery5.jpg";
 import img10 from "@/../public/images/gallery/gallery10.jpg";
 import img11 from "@/../public/images/gallery/gallery11.png";
 import img12 from "@/../public/images/gallery/g12.png";
-import img13 from "@/../public/images/gallery/p13.JPG";
+import img13 from "@/../public/images/gallery/project6.png";
 import img14 from "@/../public/images/gallery/gallery12.png";
 
 const images = [
@@ -60,34 +60,143 @@ const Gallery = () => {
 
 
 
-  const galleryRef = useRef(null);
+  const galleryRef = useRef<HTMLDivElement>(null);
   const [rippleVisible, setRippleVisible] = useState(false);
   const [rippleX, setRippleX] = useState(0);
   const [thumbLeft, setThumbLeft] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const dragRef = useRef({ startX: 0, startLeft: 0 });
+  const scrollAnimationRef = useRef<number | null>(null);
+  const [thumbWidth, setThumbWidth] = useState(20);
   
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const el = galleryRef.current;
     if (!el) return;
   
     const scrollRatio = el.scrollLeft / (el.scrollWidth - el.clientWidth);
-    const maxThumbMove = el.clientWidth - 40; // assuming thumb width is 40px
+    const maxThumbMove = el.clientWidth - thumbWidth;
     setThumbLeft(scrollRatio * maxThumbMove);
-  };
-  
+  }, [thumbWidth]);
+
+  const updateThumbSize = useCallback(() => {
+    const el = galleryRef.current;
+    if (!el) return;
+    
+    const containerWidth = el.clientWidth;
+    const contentWidth = el.scrollWidth;
+    const scrollableWidth = contentWidth - containerWidth;
+    
+    if (scrollableWidth <= 0) {
+      setThumbWidth(containerWidth); // Full width if no scrolling needed
+    } else {
+      // Calculate thumb width based on visible content ratio
+      const visibleRatio = containerWidth / contentWidth;
+      const minThumbWidth = 20;
+      const maxThumbWidth = containerWidth * 0.8; // Max 80% of container
+      const calculatedWidth = Math.max(minThumbWidth, Math.min(maxThumbWidth, containerWidth * visibleRatio));
+      setThumbWidth(calculatedWidth);
+    }
+  }, []);
+
   const handleThumbClick = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
-  
+
     setRippleX(clickX);
     setRippleVisible(true);
     setTimeout(() => setRippleVisible(false), 600);
   };
-  
-  useEffect(() => {
-    handleScroll(); // set initial position
+
+  const handleThumbMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(true);
+    
+    // Store the initial mouse position and thumb position
+    const rect = e.currentTarget.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    dragRef.current.startX = e.clientX;
+    dragRef.current.startLeft = thumbLeft;
+  }, [thumbLeft]);
+
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    if (!isDragging) return;
+    
+    const el = galleryRef.current;
+    if (!el) return;
+    
+    // Calculate the delta from the start position
+    const deltaX = e.clientX - dragRef.current.startX;
+    const newThumbLeft = Math.max(0, Math.min(dragRef.current.startLeft + deltaX, el.clientWidth - thumbWidth));
+    
+    // Update thumb position immediately
+    setThumbLeft(newThumbLeft);
+    
+    // Calculate and update scroll position based on thumb position
+    const scrollbarWidth = el.clientWidth - thumbWidth;
+    const scrollRatio = newThumbLeft / scrollbarWidth;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    const targetScrollLeft = scrollRatio * maxScroll;
+    
+    // Update scroll position immediately
+    el.scrollLeft = targetScrollLeft;
+  }, [isDragging, thumbWidth]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
   }, []);
 
+  const handleScrollbarClick = useCallback((e: React.MouseEvent) => {
+    if (isDragging) return;
+    
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const scrollbarWidth = rect.width;
+    
+    // Calculate new thumb position
+    const newThumbLeft = Math.max(0, Math.min(clickX - thumbWidth / 2, scrollbarWidth - thumbWidth));
+    
+    // Update scroll position first
+    const el = galleryRef.current;
+    if (el) {
+      const availableScrollbarWidth = el.clientWidth - thumbWidth;
+      const scrollRatio = newThumbLeft / availableScrollbarWidth;
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      const targetScrollLeft = scrollRatio * maxScroll;
+      
+      el.scrollLeft = targetScrollLeft;
+      
+      // Update thumb position to match the actual scroll position
+      const actualScrollRatio = el.scrollLeft / maxScroll;
+      const actualThumbLeft = actualScrollRatio * availableScrollbarWidth;
+      setThumbLeft(actualThumbLeft);
+    }
+  }, [isDragging, thumbWidth]);
+  
+  useEffect(() => {
+    updateThumbSize();
+    handleScroll(); // set initial position
+    
+    if (isDragging) {
+      document.addEventListener('mousemove', handleMouseMove, { passive: false });
+      document.addEventListener('mouseup', handleMouseUp, { passive: false });
+      
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, handleMouseMove, handleMouseUp, handleScroll, updateThumbSize]);
 
+  // Update thumb size on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      updateThumbSize();
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [updateThumbSize]);
 
   
   const imageLayouts = layoutTypes;
@@ -160,33 +269,14 @@ const Gallery = () => {
     vignette: true,            // fade edges
     showToggle: false,         // hide toggle button
   }}
-  styles={{
-    thumbnailsContainer: {
-      backgroundColor: "#111",           // background strip color
-      padding: "10px 0",
-    },
-    thumbnail: {
-      filter: "brightness(0.7)",
-      transition: "all 0.3s ease",
-    },
-    thumbnailActive: {
-      borderColor: "#facc15",           // Tailwind amber-400
-      filter: "brightness(1)",
-      transform: "scale(1.05)",
-    },
-    thumbnailContainer: {
-      borderRadius: "8px",
-      overflow: "hidden",
-    },
-  }}
 />
 
       </div>
-  <div className="custom-scrollbar">
+  <div className="custom-scrollbar" onClick={handleScrollbarClick}>
 <div
   className="custom-thumb"
-  onClick={handleThumbClick}
-  style={{ left: `${thumbLeft}px` }}
+  onMouseDown={handleThumbMouseDown}
+  style={{ left: `${thumbLeft}px`, width: `${thumbWidth}px` }}
 >
       {rippleVisible && <span className="thumb-ripple" style={{ left: rippleX + "px" }} />}
     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "@/app/globals.css";
@@ -42,18 +42,42 @@ const WebsiteGallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   // Slider logic
-  const sliderRef = useRef<HTMLDivElement | null>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
   const [rippleVisible, setRippleVisible] = useState(false);
   const [rippleX, setRippleX] = useState(0);
   const [thumbLeft, setThumbLeft] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const dragRef = useRef({ startX: 0, startLeft: 0 });
+  const scrollAnimationRef = useRef<number | null>(null);
+  const [thumbWidth, setThumbWidth] = useState(20);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const el = sliderRef.current;
     if (!el) return;
     const scrollRatio = el.scrollLeft / (el.scrollWidth - el.clientWidth);
-    const maxThumbMove = el.clientWidth - 40; // thumb is 40px
+    const maxThumbMove = el.clientWidth - thumbWidth;
     setThumbLeft(scrollRatio * maxThumbMove);
-  };
+  }, [thumbWidth]);
+
+  const updateThumbSize = useCallback(() => {
+    const el = sliderRef.current;
+    if (!el) return;
+    
+    const containerWidth = el.clientWidth;
+    const contentWidth = el.scrollWidth;
+    const scrollableWidth = contentWidth - containerWidth;
+    
+    if (scrollableWidth <= 0) {
+      setThumbWidth(containerWidth); // Full width if no scrolling needed
+    } else {
+      // Calculate thumb width based on visible content ratio
+      const visibleRatio = containerWidth / contentWidth;
+      const minThumbWidth = 20;
+      const maxThumbWidth = containerWidth * 0.8; // Max 80% of container
+      const calculatedWidth = Math.max(minThumbWidth, Math.min(maxThumbWidth, containerWidth * visibleRatio));
+      setThumbWidth(calculatedWidth);
+    }
+  }, []);
 
   const handleThumbClick = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -64,9 +88,96 @@ const WebsiteGallery = () => {
     setTimeout(() => setRippleVisible(false), 600);
   };
 
-  useEffect(() => {
-    handleScroll();
+  const handleThumbMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsDragging(true);
+    
+    // Store the initial mouse position and thumb position
+    const rect = e.currentTarget.getBoundingClientRect();
+    const offsetX = e.clientX - rect.left;
+    dragRef.current.startX = e.clientX;
+    dragRef.current.startLeft = thumbLeft;
+  }, [thumbLeft]);
+
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    if (!isDragging) return;
+    
+    const el = sliderRef.current;
+    if (!el) return;
+    
+    // Calculate the delta from the start position
+    const deltaX = e.clientX - dragRef.current.startX;
+    const newThumbLeft = Math.max(0, Math.min(dragRef.current.startLeft + deltaX, el.clientWidth - thumbWidth));
+    
+    // Update thumb position immediately
+    setThumbLeft(newThumbLeft);
+    
+    // Calculate and update scroll position based on thumb position
+    const scrollbarWidth = el.clientWidth - thumbWidth;
+    const scrollRatio = newThumbLeft / scrollbarWidth;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    const targetScrollLeft = scrollRatio * maxScroll;
+    
+    // Update scroll position immediately
+    el.scrollLeft = targetScrollLeft;
+  }, [isDragging, thumbWidth]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsDragging(false);
   }, []);
+
+  const handleScrollbarClick = useCallback((e: React.MouseEvent) => {
+    if (isDragging) return;
+    
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const scrollbarWidth = rect.width;
+    
+    // Calculate new thumb position
+    const newThumbLeft = Math.max(0, Math.min(clickX - thumbWidth / 2, scrollbarWidth - thumbWidth));
+    
+    // Update scroll position first
+    const el = sliderRef.current;
+    if (el) {
+      const availableScrollbarWidth = el.clientWidth - thumbWidth;
+      const scrollRatio = newThumbLeft / availableScrollbarWidth;
+      const maxScroll = el.scrollWidth - el.clientWidth;
+      const targetScrollLeft = scrollRatio * maxScroll;
+      
+      el.scrollLeft = targetScrollLeft;
+      
+      // Update thumb position to match the actual scroll position
+      const actualScrollRatio = el.scrollLeft / maxScroll;
+      const actualThumbLeft = actualScrollRatio * availableScrollbarWidth;
+      setThumbLeft(actualThumbLeft);
+    }
+  }, [isDragging, thumbWidth]);
+
+  useEffect(() => {
+    updateThumbSize();
+    handleScroll();
+    
+    if (isDragging) {
+      document.addEventListener('mousemove', handleMouseMove, { passive: false });
+      document.addEventListener('mouseup', handleMouseUp, { passive: false });
+      
+      return () => {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, handleMouseMove, handleMouseUp, handleScroll, updateThumbSize]);
+
+  // Update thumb size on window resize
+  useEffect(() => {
+    const handleResize = () => {
+      updateThumbSize();
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [updateThumbSize]);
 
   const openLightbox = (index: number) => {
     setSelectedImageIndex(index);
@@ -117,11 +228,11 @@ const WebsiteGallery = () => {
           </div>
 
           {/* === Custom Scrollbar === */}
-          <div className="custom-scrollbar">
+          <div className="custom-scrollbar" onClick={handleScrollbarClick}>
             <div
               className="custom-thumb"
-              onClick={handleThumbClick}
-              style={{ left: `${thumbLeft}px` }}
+              onMouseDown={handleThumbMouseDown}
+              style={{ left: `${thumbLeft}px`, width: `${thumbWidth}px` }}
             >
               {rippleVisible && (
                 <span
@@ -137,8 +248,8 @@ const WebsiteGallery = () => {
         <Lightbox
           open={lightboxOpen}
           close={() => setLightboxOpen(false)}
-          slides={websiteImages.map((img) => ({
-            src: typeof img === "string" ? img : img.src,
+          slides={websiteImages.map((item) => ({
+            src: typeof item.image === "string" ? item.image : item.image.src,
           }))}
           index={selectedImageIndex}
         />

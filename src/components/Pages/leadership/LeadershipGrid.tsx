@@ -7,6 +7,8 @@ import Leadership3 from "@/../public/images/leadership/leadership2.png";
 import Leadership6 from "@/../public/images/leadership/leadership6.png";
 import Leadership7 from "@/../public/images/leadership/leadership7.png";
 import Leadership8 from "@/../public/images/leadership/leadership8.png";
+import Leadership9 from "@/../public/images/leadership/leadership9.png";
+import Leadership10 from "@/../public/images/leadership/leadership10.png";
 const leadership = [
   {
     title: "Stanford HAI AI4ALL - Graduate AI Mentor",
@@ -32,21 +34,20 @@ const leadership = [
     title: "Police Dept Outreach",
     desc: "Organized quarterly outreach initiatives to Charlotte’s PD and FD.",
     img: Leadership3,
-  },
-  {
-    title: "Free Healthcare Clinic",
-    desc: "Developed website and scheduling system for a refugee-focused free clinic.",
-    img: Leadership2,
+  },  {
+    title: "Tech Conference Volunteer",
+    desc: "Volunteered at major Southeast tech conferences — led to a full-time role.",
+    img: Leadership9,
   },
   {
     title: "UNICEF Translator",
     desc: "Assisted with translations and documentation in Jordanian refugee camps.",
     img: Leadership6,
   },
-  {
-    title: "Tech Conference Volunteer",
-    desc: "Volunteered at major Southeast tech conferences — led to a full-time role.",
-    img: Leadership2,
+{
+    title: "Free Healthcare Clinic",
+    desc: "Developed website and scheduling system for a refugee-focused free clinic.",
+    img: Leadership10,
   },
 ];
 
