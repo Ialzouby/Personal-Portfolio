@@ -126,7 +126,7 @@ const Sidebar = () => {
             <div className="d-flex justify-content-center gap-3">
   <Link
     //href="/contact"
-    href="#"
+    href="https://the-ai-bridge.vercel.app/"
     className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
   >
     <i className="ph ph-paper-plane-tilt">
