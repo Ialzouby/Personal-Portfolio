@@ -1,3 +1,4 @@
+import aiImage_32 from "@/../public/images/how-ai-works-id-32.png";
 import aiImage_31 from "@/../public/images/how-ai-works-id-31.png";
 import aiImage_30 from "@/../public/images/how-ai-works-id-30.png";
 import aiImage_29 from "@/../public/images/how-ai-works-id-29.png";
@@ -662,6 +663,56 @@ export const blogs = [
       bullets: [
         "Attention maps provide insight into the model's focus.",
         "Tools like heatmaps offer a visual representation."
+      ]
+    },
+    {
+      quote: {
+        text: "Attention is all you need.",
+        author: "Ashish Vaswani"
+      }
+    }
+  ]
+},
+{
+  id: 32,
+  slug: "how-ai-works-id-32",
+  img: aiImage_32,
+  date: "2025-07-12",
+  tag: "AI Education, Transformers",
+  title: "Attention Mechanisms – The Key to Understanding Transformers",
+  author: "Issam Alzouby",
+  content: "Welcome to Week 32 of our journey through the fascinating world of AI! Today, we dive into the concept of attention mechanisms, a crucial innovation behind the performance of modern transformers. With easy-to-understand analogies and fun visuals, you'll learn how attention allows transformers to focus on important information just like humans do. Let's unlock this piece of the AI puzzle together!",
+  sections: [
+    {
+      heading: "What is Attention in AI?",
+      text: "Imagine you're at a party, and you're trying to listen to your friend's story amid the chatter of other conversations. Your ability to focus on your friend's voice while ignoring others is similar to what attention mechanisms do in AI—they help the model to focus on important parts of the input while ignoring less relevant information.",
+      bullets: [
+        "Attention helps models to emphasize important data.",
+        "Enables dynamic focus shifting during processing."
+      ]
+    },
+    {
+      heading: "The Role of Attention in Transformers",
+      text: "In transformers, attention mechanisms are the engines that drive their impressive performance. Unlike older models that processed all information equally, transformers use attention to weigh the importance of different data points, leading to more nuanced understanding and generation of language.",
+      bullets: [
+        "Attention determines what data to prioritize.",
+        "Transforms and weights data dynamically."
+      ]
+    },
+    {
+      heading: "Types of Attention Mechanisms",
+      text: "There are several types of attention mechanisms used in transformer models. Let’s explore a couple of them:",
+      bullets: [
+        "Self-attention: Allows the model to consider different positions of a sentence at once, crucial for capturing word context.",
+        "Multi-head attention: Uses multiple sets of self-attention layers to capture different types of relationships within data."
+      ]
+    },
+    {
+      heading: "Visualizing Attention",
+      text: "Visual aids can help us understand how attention looks inside a transformer. Imagine arrows mapping dependencies between words in a sentence. By visualizing these connections, we can see which words the model considered significant when producing output.",
+      bullets: [
+        "Attention maps show word importance.",
+        "Helps in debugging and understanding model decisions."
       ]
     },
     {
