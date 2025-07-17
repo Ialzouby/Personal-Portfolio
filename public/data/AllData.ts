@@ -51,6 +51,7 @@ import speaking5 from "@/../public/images/speaking/speaking5.png";
 import speaking6 from "@/../public/images/speaking/speaking6.png";
 import speaking11 from "@/../public/images/speaking/speaker7.png";
 import speaking12 from "@/../public/images/speaking/speaker8.JPG";
+import speaking13 from "@/../public/images/speaking/speaker12.PNG";
 
 export const services = [
   {
@@ -168,9 +169,18 @@ export const featureds2 = [
     title: "UNC-Charlotte - Career Panelist",
     img: speaking5,
   },
-
   {
     id: 8,
+    category: "Teaching",
+    tag1: "Teaching",
+    tag2: "AI",
+    tag3: "Instructional",
+    title: "Azure AI Solutions | AI Chat",
+    img: speaking13,
+  },
+
+  {
+    id: 9,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -179,7 +189,7 @@ export const featureds2 = [
     img: speaking4,
   },
   { 
-    id: 9,
+    id: 10,
     category: "Public Speaking",
     tag1: "Podcast",
     tag2: "Entrepreneurship",

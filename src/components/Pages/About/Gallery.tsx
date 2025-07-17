@@ -21,21 +21,28 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
 import img1 from "@/../public/images/gallery/g1.png";
 import img2 from "@/../public/images/gallery/gallery2.jpg";
-import img3 from "@/../public/images/gallery/g3.png";
-import img4 from "@/../public/images/gallery/g12.png";
-import img5 from "@/../public/images/gallery/project6.png";
+import img3 from "@/../public/images/gallery/g17.JPG";
+import img4 from "@/../public/images/gallery/g15.JPG";
+import img5 from "@/../public/images/gallery/g13.jpg";
 import img6 from "@/../public/images/gallery/project6.png";
 import img7 from "@/../public/images/gallery/project7.png";
 import img8 from "@/../public/images/gallery/project8.jpeg";
 import img9 from "@/../public/images/gallery/gallery5.jpg";
 import img10 from "@/../public/images/gallery/gallery10.jpg";
 import img11 from "@/../public/images/gallery/gallery11.png";
-import img12 from "@/../public/images/gallery/g12.png";
+import img12 from "@/../public/images/gallery/p13.JPG";
 import img13 from "@/../public/images/gallery/project6.png";
 import img14 from "@/../public/images/gallery/gallery12.png";
+import img15 from "@/../public/images/gallery/g3.png";
+import img16 from "@/../public/images/gallery/g14.jpg";
+import img17 from "@/../public/images/gallery/p13.JPG";
+import img18 from "@/../public/images/gallery/g16.png";
+import img20 from "@/../public/images/gallery/g18.JPG";
+import img21 from "@/../public/images/gallery/g19.png";
+import img22 from "@/../public/images/gallery/g20.JPG";
 
 const images = [
-  img1, img2, img3, img4, img5, img7, img8, img9, img10, img11, img12, img13, img14
+  img1, img2, img3, img4, img5, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img20, img21, img22
 ];
 
 // Custom layout pattern to control order explicitly
@@ -50,7 +57,17 @@ const layoutTypes = [
   "standard",  // img9
   "wide",      // img10
   "standard",  // img11
-  "large"       // img12
+  "large",       // img12
+  "standard",  // img13
+  "standard",  // img14
+  "wide",  // img15
+  "wide",  // img16
+  "standard",  // img17
+  "tall",  // img18
+  "standard",  // img19
+  "wide",  // img20
+  "standard",  // img21
+  "standard",  // img22
 ];
 
 const Gallery = () => {
