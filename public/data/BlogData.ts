@@ -1,3 +1,4 @@
+import aiImage_33 from "@/../public/images/how-ai-works-id-33.png";
 import aiImage_32 from "@/../public/images/how-ai-works-id-32.png";
 import aiImage_31 from "@/../public/images/how-ai-works-id-31.png";
 import aiImage_30 from "@/../public/images/how-ai-works-id-30.png";
@@ -719,6 +720,48 @@ export const blogs = [
       quote: {
         text: "Attention is all you need.",
         author: "Ashish Vaswani"
+      }
+    }
+  ]
+},
+{
+  id: 33,
+  slug: "how-ai-works-id-33",
+  img: aiImage_33,
+  date: "2025-07-19",
+  tag: "AI Education, Transformers",
+  title: "Decoding Attention: The Pacemaker of Transformers",
+  author: "Issam Alzouby",
+  content: "In Week 33 of our AI journey, we dive into the core mechanism that revolutionized the way machines understand and process language: the attention mechanism. Much like how we focus on the most critical parts of a conversation, attention allows AI to pay more respect to crucial aspects of input data, paving the way for the powerful models we call Transformers.",
+  sections: [
+    {
+      heading: "What is Attention in AI?",
+      text: "Imagine trying to follow a book while reading at a busy cafe. You naturally prioritize reading words over eavesdropping on nearby conversations. Attention in AI works similarly, allowing models to focus on relevant parts of input data while disregarding irrelevant noise.",
+      bullets: [
+        "Attention differs from old-style linear reading of data.",
+        "It enables models to weigh the importance of different input parts dynamically."
+      ]
+    },
+    {
+      heading: "Self-Attention: A Powerhouse of Insight",
+      text: "Self-attention, a variant of attention mechanisms, analyses the relationships between different parts of the same text input. By doing this, it can build internal connections that are crucial for understanding sentence structures and context.",
+      bullets: [
+        "Self-attention evaluates 'who talks about whom' within a sentence.",
+        "It enables a network to learn dependencies, enhancing comprehension and prediction."
+      ]
+    },
+    {
+      heading: "Attention is All You Need: The Birth of Transformers",
+      text: "The groundbreaking research paper 'Attention is All You Need' unleashed the potential of attention mechanisms. It revealed how self-attention can replace recurrent and convolutional elements in neural networks, leading to the advent of Transformers, which now power large language models.",
+      bullets: [
+        "Holds the secret behind the exceptional performance of today's AI models.",
+        "Allows parallel processing of data, improving efficiency."
+      ]
+    },
+    {
+      quote: {
+        text: "AI is a tool. The choice about how it gets deployed is ours.",
+        author: "Oren Etzioni"
       }
     }
   ]
