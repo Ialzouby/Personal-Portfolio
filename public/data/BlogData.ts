@@ -1,3 +1,4 @@
+import aiImage_34 from "@/../public/images/how-ai-works-id-34.png";
 import aiImage_33 from "@/../public/images/how-ai-works-id-33.png";
 import aiImage_32 from "@/../public/images/how-ai-works-id-32.png";
 import aiImage_31 from "@/../public/images/how-ai-works-id-31.png";
@@ -762,6 +763,48 @@ export const blogs = [
       quote: {
         text: "AI is a tool. The choice about how it gets deployed is ours.",
         author: "Oren Etzioni"
+      }
+    }
+  ]
+},
+{
+  id: 34,
+  slug: "how-ai-works-id-34",
+  img: aiImage_34,
+  date: "2025-07-26",
+  tag: "AI Education, Transformers",
+  title: "Week 34: The Journey into Self-Attention and Transformers",
+  author: "Issam Alzouby",
+  content: "This week, we delve into a critical innovation in natural language processing and more: Transformers and the mechanism of self-attention. We'll explore how this revolutionary approach allows AI models to understand context like never before, leading to advancements in machine translation, text generation, and beyond.",
+  sections: [
+    {
+      heading: "Understanding Self-Attention: The Key to Context",
+      text: "Self-attention, at its core, enables a model to weigh the importance of different words in a sentence, based on the context provided by others. Imagine you're assembling a puzzle. Self-attention is akin to understanding how each piece interacts with others, enhancing the coherence of the whole picture.",
+      bullets: [
+        "Focuses on parts of input data based on relevance.",
+        "Enhances understanding by providing context recognition."
+      ]
+    },
+    {
+      heading: "Transformers: Going Beyond Sequential Processing",
+      text: "Previously, AI models, like RNNs, analyzed data in sequences. Transformers revolutionize this by processing all data simultaneously. This shift is akin to reading a whole book in one glance rather than line by line, making understanding and generation much faster and more effective.",
+      bullets: [
+        "Handles entire inputs at once.",
+        "Excels in tasks needing global context understanding."
+      ]
+    },
+    {
+      heading: "Applications That Transformatively Rely on Transformers",
+      text: "With transformers, AI's proficiency has expanded in areas like language translation, content creation, and even computer vision. The model's ability to capture context enhances its output's accuracy, creativity, and relevance.",
+      bullets: [
+        "Enhanced language translation capabilities.",
+        "Improved contextual content generation."
+      ]
+    },
+    {
+      quote: {
+        text: "In the world of AI, data is the new electricity.",
+        author: "Andrew Ng"
       }
     }
   ]
