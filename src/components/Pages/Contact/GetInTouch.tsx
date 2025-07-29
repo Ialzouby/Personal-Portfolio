@@ -1,124 +1,161 @@
 "use client";
-import { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import FadeDown from "@/components/motionEffect/FadeDown";
 
 const MySwal = withReactContent(Swal);
 
 const GetInTouch = () => {
   const form = useRef<HTMLFormElement | null>(null);
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     "your service id",
-    //     "your template id ",
-    //     //@ts-ignore
-    //     form.current,
-    //     "Your public key"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       MySwal.fire("Message Send Successfully!");
-    //     },
-    //     (error) => {
-    //       MySwal.fire("Message Not Send!");
-    //     }
-    //   );
-  };
-  return (
-    <section className="pb-120">
-      <div className="container">
-        <FadeDown>
-          <div className="section-heading">
-            <div className="d-flex align-items-center gap-2">
-              <div className="title-line"></div>
-              <h2 className="display-four n5-color fw-semibold">
-                Get In Touch
-              </h2>
-            </div>
-            <p className="fs-seven n4-color mt-2 mt-md-4">
-              Always happy to chat!
-            </p>
-          </div>
-        </FadeDown>
-        <FadeDown>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="mt-8 mt-md-15 p-3 p-sm-5 p-md-10 rounded-5 brn4"
-          >
-            <div className="d-flex flex-wrap flex-md-nowrap gap-3 gap-md-6 mb-3 mb-md-6">
-              <div className="d-flex align-items-center gap-2  py-2 py-md-4 rounded-2 brn4 w-100">
-                <i className="ph ph-octagon p1-color fs-six mb-1"></i>
-                <input
-                  className="n5-color border-0"
-                  placeholder="Your Name*"
-                  type="text"
-                  id="name"
-                  required
-                />
-              </div>
-              <div className="d-flex align-items-center gap-2  py-2 py-md-4 rounded-2 brn4 w-100">
-                <i className="ph ph-envelope p1-color fs-six mb-1"></i>
-                <input
-                  className="n5-color border-0"
-                  placeholder="Email address*"
-                  type="email"
-                  id="email"
-                  required
-                />
-              </div>
-            </div>
-            <div className="d-flex flex-wrap flex-md-nowrap gap-3 gap-md-6">
-              <div className="d-flex align-items-center gap-2 py-2 py-md-4 rounded-2 brn4 w-100">
-                <i className="ph ph-device-mobile-camera p1-color fs-six mb-1"></i>
-                <input
-                  className="n5-color border-0"
-                  placeholder="Phone*"
-                  type="number"
-                  id="phone"
-                  required
-                />
-              </div>
-              <div className="d-flex align-items-center gap-2 py-2 py-md-4 rounded-2 brn4 w-100">
-                <i className="ph ph-map-pin p1-color fs-six mb-1"></i>
-                <input
-                  className="n5-color border-0"
-                  placeholder="Location*"
-                  type="text"
-                  id="location"
-                  required
-                />
-              </div>
-            </div>
-            <div className="mt-3 mt-md-6">
-              <textarea
-                className="n5-color px-2 px-md-3 py-2 py-md-4 rounded-2 brn4 w-100 h-120"
-                placeholder="Your Message:"
-                id="message"
-              ></textarea>
-            </div>
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-            <div className="d-flex gap-2 align-items-center mt-3 mt-md-5">
-              <input id="check" type="checkbox" className="cursor-pointer" />
-              <label
-                htmlFor="check"
-                className="n4-color fs-nine cursor-pointer"
-              >
-                Save my name, email, and website in this browser for the next
-                time.
-              </label>
-            </div>
-            <button className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill mt-5 mt-md-10">
-              Send Message
-            </button>
-          </form>
-        </FadeDown>
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(form.current!);
+      const data = {
+        name: formData.get('name') as string,
+        email: formData.get('email') as string,
+        phone: formData.get('phone') as string,
+        location: formData.get('location') as string,
+        message: formData.get('message') as string,
+      };
+
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        MySwal.fire({
+          title: "Success!",
+          text: "Message sent successfully!",
+          icon: "success",
+          confirmButtonText: "OK"
+        });
+        // Reset form
+        form.current?.reset();
+      } else {
+        throw new Error(result.error || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      MySwal.fire({
+        title: "Error!",
+        text: "Failed to send message. Please try again.",
+        icon: "error",
+        confirmButtonText: "OK"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  return (
+    <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Send Message</h2>
+        <p className="text-gray-600">I'll get back to you as soon as possible.</p>
       </div>
-    </section>
+
+      <form ref={form} onSubmit={sendEmail} className="space-y-6">
+        {/* Name and Email Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+              Name *
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+              Email *
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+              placeholder="your@email.com"
+            />
+          </div>
+        </div>
+
+        {/* Phone and Location Row */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+              Phone
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+              placeholder="+1 (555) 123-4567"
+            />
+          </div>
+          <div>
+            <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+              Location
+            </label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white"
+              placeholder="City, State"
+            />
+          </div>
+        </div>
+
+        {/* Message */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+            Message *
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows={4}
+            className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 bg-gray-50 focus:bg-white resize-none"
+            placeholder="Tell me about your project or just say hello..."
+          ></textarea>
+        </div>
+
+        {/* Submit Button */}
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium py-3 px-6 rounded-lg hover:from-purple-600 hover:to-blue-600 focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-[1.02]"
+        >
+          {isSubmitting ? (
+            <div className="flex items-center justify-center gap-2">
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              Sending...
+            </div>
+          ) : (
+            'Send Message'
+          )}
+        </button>
+      </form>
+    </div>
   );
 };
 
