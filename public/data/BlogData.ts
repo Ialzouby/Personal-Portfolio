@@ -1,3 +1,4 @@
+import aiImage_35 from "@/../public/images/how-ai-works-id-35.png";
 import aiImage_34 from "@/../public/images/how-ai-works-id-34.png";
 import aiImage_33 from "@/../public/images/how-ai-works-id-33.png";
 import aiImage_32 from "@/../public/images/how-ai-works-id-32.png";
@@ -805,6 +806,59 @@ export const blogs = [
       quote: {
         text: "In the world of AI, data is the new electricity.",
         author: "Andrew Ng"
+      }
+    }
+  ]
+},
+{
+  id: 35,
+  slug: "how-ai-works-id-35",
+  img: aiImage_35,
+  date: "2025-08-02",
+  tag: "AI Education, Fairness",
+  title: "Bias in AI: Understanding and Mitigating Unintended Prejudice",
+  author: "Issam Alzouby",
+  content: "Welcome to Week 35 of our deep dive into the world of AI! This week, let's delve into one of the most important issues surrounding AI today: bias. Just as we humans carry subconscious biases, so too can our artificial creations. When AI systems learn from biased data, they often become biased themselves. Understanding how it happens and finding ways to tackle this problem is crucial for creating fair and equitable AI solutions.",
+  sections: [
+    {
+      heading: "What is AI Bias?",
+      text: "AI bias occurs when an algorithm produces results that are systematically prejudiced due to erroneous assumptions in the machine learning process. Imagine teaching a child only about green apples; they'll grow up thinking all apples are green. Similarly, if an AI system is only trained on biased data, it might make inaccurate or unfair predictions.",
+      bullets: [
+        "Bias can manifest in data collection, data processing, and interpretation.",
+        "It often reflects or amplifies societal prejudices."
+      ]
+    },
+    {
+      heading: "Where Does Bias Come From?",
+      text: "Bias can sneak into AI systems from various angles, much like weeds in a garden. These biases often originate from:",
+      bullets: [
+        "Historical data: If past data is biased, AI trained on it will also be biased.",
+        "Data selection: If a dataset isn't representative, it can lead to skewed results.",
+        "Algorithm design: Certain algorithmic assumptions might unintentionally favor one group over another."
+      ]
+    },
+    {
+      heading: "Real-World Implications of AI Bias",
+      text: "AI bias is not just a theoretical issue; it can have serious real-world consequences. For instance, biased AI systems can lead to unfair treatment in hiring processes, law enforcement, and even healthcare decisions. Imagine if a credit scoring system discriminates against applicants from certain regions, or a facial recognition system misidentifies individuals from particular ethnic groups.",
+      bullets: [
+        "Unfair hiring processes.",
+        "Biased law enforcement applications.",
+        "Discrimination in healthcare treatments."
+      ]
+    },
+    {
+      heading: "Combating AI Bias",
+      text: "Thankfully, researchers and engineers are actively working to combat AI bias. Solutions include:",
+      bullets: [
+        "Diverse and inclusive data collection to better represent various groups.",
+        "Bias detection and correction tools to identify and adjust for biases in the data.",
+        "Transparency in AI systems to ensure accountability and trust."
+      ]
+    },
+    {
+      quote: {
+        text: "The data itself may be complete or representative of the world at the time, but human societies change over time, so systems built on older data suddenly become biased because they're no longer accurate.",
+        author: "Fei-Fei Li"
       }
     }
   ]
