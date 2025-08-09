@@ -3,7 +3,7 @@ import crypto from "crypto";
 import { z } from "zod";
 import sanitizeHtml from "sanitize-html";
 import MarkdownIt from "markdown-it";
-import { prisma } from "@/src/lib/prisma";
+import { prisma } from '@/lib/prisma';
 
 const md = new MarkdownIt({ linkify: true, breaks: true });
 const SALT = process.env.SALT_IP_HASH || "";

@@ -1,18 +1,16 @@
-// Prisma schema for comments + rate limiting
-
-generator client {
-  provider = "prisma-client-js"
-}
-
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
+generator client {
+  provider = "prisma-client-js"
+}
+
 model Comment {
   id          String   @id @default(cuid())
-  postSlug    String   @index
-  parentId    String?  @index
+  postSlug    String
+  parentId    String?
   authorName  String
   authorEmail String?
   emailHash   String?
@@ -23,12 +21,21 @@ model Comment {
   ipHash      String
   userAgent   String?
   createdAt   DateTime @default(now())
+
+  @@index([postSlug])
+  @@index([parentId])
+  @@index([ipHash])
+  @@index([postSlug, createdAt]) // fast listing per post
 }
 
 model RateEvent {
   id        String   @id @default(cuid())
-  ipHash    String   @index
-  postSlug  String   @index
-  createdAt DateTime @default(now()) @index
-}
+  ipHash    String
+  postSlug  String
+  createdAt DateTime @default(now())
 
+  @@index([ipHash])
+  @@index([postSlug])
+  @@index([createdAt])
+  @@index([ipHash, postSlug, createdAt]) // for rate-limit lookups
+}
