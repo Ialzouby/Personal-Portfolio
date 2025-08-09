@@ -68,7 +68,8 @@ export async function POST(req: NextRequest) {
   // Same-origin enforcement
   const origin = req.headers.get("origin") || "";
   const referer = req.headers.get("referer") || "";
-  if (!origin || !referer || !referer.startsWith(origin)) {
+  const site = process.env.NEXT_PUBLIC_SITE_URL || origin;
+  if (!site || !referer || !referer.startsWith(site)) {
     return NextResponse.json({ error: "Invalid origin" }, { status: 400 });
   }
 
