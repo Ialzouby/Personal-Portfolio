@@ -21,9 +21,35 @@ import product3 from "@/../public/images/organ.png";
 import project19_1 from "@/../public/images/projects/project19.1.png";
 import project19_2 from "@/../public/images/projects/project19.2.png";
 import project19 from "@/../public/images/projects/project19.png";
+import project20 from "@/../public/images/projects/project20.jpg";
+import project21 from "@/../public/images/projects/MotionAE.png";
 
 
 export const featureds = [
+  {
+    id: 20,
+    category: "AI/ML",
+    tag1: "Motion Autoencoder",
+    tag2: "HumanML3D Dataset",
+    tag3: "Model Training",
+    title: "Motion Autoencoder Training & Evaluation",
+    img: project21, // main image for the project
+    client: "Internal Research",
+    services: "AI Development",
+    technologies: "Python, PyTorch, NumPy, Matplotlib",
+    website: "https://example.com",
+    intro: "Developed a Motion Autoencoder to compress and reconstruct human motion data.",
+    overview: "The MotionAE project aimed to learn compact latent representations of HumanML3D motion sequences, enabling efficient storage and high-quality reconstructions.",
+    challenge: "Capturing fine-grained joint movement details while keeping the model lightweight for faster inference.",
+    solution: "Designed and trained a custom PyTorch autoencoder, applied normalization strategies, and implemented a smooth visualization pipeline to compare original and reconstructed motions side-by-side.",
+    gallery: [project20], // additional screenshots or visuals
+    results: [
+        { title: "Reconstruction Accuracy", value: "92%", trend: "up", desc: "High fidelity compared to original motion data." },
+        { title: "Compression Ratio", value: "8x", trend: "up", desc: "Reduced storage requirements without major quality loss." },
+        { title: "Training Time", value: "4h", trend: "down", desc: "Efficient convergence using GPU acceleration." }
+    ]
+},
+
     {
         id: 19,
         category: "AI/ML",
@@ -105,7 +131,7 @@ export const featureds = [
       tag2: "C++ & Python",
       tag3: "Leet Code",
       title: "1st Place – NC State Competitive Programming Hackathon",
-      img: project9,
+      img: project20,
       client: "Client 9",
       services: "Full-Stack Development",
       technologies: "Swift, Python, TensorFlow",
