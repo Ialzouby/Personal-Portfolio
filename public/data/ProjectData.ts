@@ -37,7 +37,7 @@ export const featureds = [
     client: "Internal Research",
     services: "AI Development",
     technologies: "Python, PyTorch, NumPy, Matplotlib",
-    website: "https://example.com",
+    website: "https://ialzouby.github.io/Motion-AutoEncoder/#bibtex",
     intro: "Developed a Motion Autoencoder to compress and reconstruct human motion data.",
     overview: "The MotionAE project aimed to learn compact latent representations of HumanML3D motion sequences, enabling efficient storage and high-quality reconstructions.",
     challenge: "Capturing fine-grained joint movement details while keeping the model lightweight for faster inference.",
