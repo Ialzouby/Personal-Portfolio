@@ -68,7 +68,7 @@ const About = () => {
       <Websites />
 
       </section>
-      <WhatDo />
+     {/* <WhatDo /> */}
       <NextProject />
       <Featured />
       <LatestBlog />

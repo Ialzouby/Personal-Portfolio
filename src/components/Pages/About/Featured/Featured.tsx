@@ -37,10 +37,12 @@ View more projects!
 
 <div className="row g-6 g-md-10">
   {featureds
+    .filter(Boolean)
     .filter(({ id }) => idsToShow.includes(id))
     .map(({ id, img, tag1, tag2, tag3, title, award }) => (
       <FeaturedCard
         key={id}
+        id={id}
         img={img}
         tag1={tag1}
         tag2={tag2}

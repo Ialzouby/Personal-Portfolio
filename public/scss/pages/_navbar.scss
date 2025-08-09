@@ -120,18 +120,20 @@
 
 @media (max-width: 991px) {
   .side-menu {
+    left: auto;
+    right: 0;
+    width: 100vw;
     visibility: hidden;
     opacity: 0;
-    margin-left: -100%;
+    margin-right: -100%;
   }
   .side-menu.active {
     visibility: visible;
     opacity: 1;
-    margin-left: 0;
+    margin-right: 0;
   }
   .main-content {
     margin-left: 0;
-    // transform: translateX(0px);
   }
 }
 

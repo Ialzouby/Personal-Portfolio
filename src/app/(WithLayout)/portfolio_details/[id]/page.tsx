@@ -11,7 +11,9 @@ type Props = {
 };
 
 const PortfolioDetails = ({ params }: Props) => {
-  const project = featureds.find((item) => item.id === parseInt(params.id));
+  const project = featureds
+    .filter(Boolean)
+    .find((item) => item && item.id === parseInt(params.id));
 
   if (!project) {
     return (

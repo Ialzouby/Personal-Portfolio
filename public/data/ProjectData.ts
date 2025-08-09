@@ -45,9 +45,8 @@ export const featureds = [
           { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
           { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
           { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-        ]
+      ]
       },
-    ,
     {
       id: 1,
       category: "Hackathons",
