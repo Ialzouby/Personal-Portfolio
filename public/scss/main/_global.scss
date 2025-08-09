@@ -1152,6 +1152,11 @@ span {
   transform: translate(0, -50%);
 }
 
+// Hide color switcher button (keep palette styles intact)
+.color-switcher .switcher-btn {
+  display: none !important;
+}
+
 // checkbox style
 input[type="checkbox"] {
   width: 16px;

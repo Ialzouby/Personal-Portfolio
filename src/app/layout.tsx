@@ -6,7 +6,7 @@ import Bootstrap from "@/components/Bootstrap/Bootstrap";
 import Provider from "@/components/DarkMode/Provider/Provider";
 import { Suspense } from "react";
 import Loading from "./loading";
-import ColorSwitcher from "@/components/Shared/ColorPalettes/ColorSwitcher";
+// import ColorSwitcher from "@/components/Shared/ColorPalettes/ColorSwitcher";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -43,7 +43,6 @@ export default function RootLayout({
           <Bootstrap>
             <Suspense fallback={<Loading />}>
               <div>{children}</div>
-              <ColorSwitcher />
             </Suspense>
           </Bootstrap>
         </Provider>
