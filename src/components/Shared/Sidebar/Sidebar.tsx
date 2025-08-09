@@ -30,6 +30,12 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
 
   const [mounted, setMounted] = useState(false);
 
+  const closeOnMobile = () => {
+    if (typeof window !== "undefined" && window.innerWidth <= 991) {
+      setSidebarOpen && setSidebarOpen(false);
+    }
+  };
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -127,6 +133,7 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
                       <li key={id} className="rounded-3">
                         <Link
                           href={url}
+                          onClick={closeOnMobile}
                           className={`d-flex justify-content-between align-items-center rounded-3 ${
                             path === url && "active"
                           }`}
@@ -157,6 +164,7 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
     href="/contact"
     //href="https://the-ai-bridge.vercel.app/"
     className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
+    onClick={closeOnMobile}
   >
     <i className="ph ph-paper-plane-tilt">
       <PiPaperPlaneTilt />
