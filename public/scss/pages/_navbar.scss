@@ -135,6 +135,16 @@
   }
 }
 
+// Desktop collapse behavior
+.desktop-collapsed {
+  .side-menu {
+    margin-left: -300px;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
 // react sidebar style
 .sidebar-transition-visible {
   transform: translateX(0);

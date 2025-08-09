@@ -12,12 +12,19 @@ import {
   PiPaperPlaneTilt,
   PiShoppingCart,
   PiX,
+  PiCaretLeft,
+  PiCaretRight,
 } from "react-icons/pi";
 import ThemeButton from "@/components/DarkMode/ThemeButton/ThemeButton";
 import { sidebarsData } from "../../../../public/data/Sidebar";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
-const Sidebar = () => {
+type SidebarProps = {
+  sidebarOpen?: boolean;
+  setSidebarOpen?: Dispatch<SetStateAction<boolean>>;
+};
+
+const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
   const { resolvedTheme } = useTheme();
   const path = usePathname();
 
@@ -32,9 +39,32 @@ const Sidebar = () => {
   }
 
   return (
-    <div className={`side-menu`}>
+    <div className={`side-menu ${sidebarOpen ? "active" : ""}`}>
+      {/* Desktop right-edge center toggle anchored to sidebar */}
+      <button
+        aria-label={sidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
+        onClick={() => setSidebarOpen && setSidebarOpen(!sidebarOpen)}
+        className="position-absolute d-none d-lg-flex align-items-center justify-content-center"
+        style={{
+          top: 12,
+          right: -14,
+          transform: "none",
+          width: 28,
+          height: 72,
+          borderRadius: 9999,
+          border: "none",
+          zIndex: 1100,
+          background: "rgba(var(--p1), 1)",
+          color: "#fff",
+          boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
+          cursor: "pointer",
+        }}
+      >
+        {sidebarOpen ? <PiCaretLeft size={16} /> : <PiCaretRight size={16} />}
+      </button>
+      {/* Close button only on mobile; desktop uses right-edge toggle */}
       <div
-        // onClick={() => setSidebarOpen(!sidebarOpen)}
+        onClick={() => setSidebarOpen && setSidebarOpen(false)}
         className={`sidebar-btn close-btn cursor-pointer d-block d-lg-none`}
       >
         <i className="fs-two p1-color">
@@ -97,7 +127,6 @@ const Sidebar = () => {
                       <li key={id} className="rounded-3">
                         <Link
                           href={url}
-                          // onClick={() => setSidebarOpen(!sidebarOpen)}
                           className={`d-flex justify-content-between align-items-center rounded-3 ${
                             path === url && "active"
                           }`}
