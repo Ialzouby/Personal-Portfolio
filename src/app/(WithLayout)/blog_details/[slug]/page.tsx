@@ -7,8 +7,7 @@ import ModalVideo from "react-modal-video";
 import "react-modal-video/scss/modal-video.scss";
 
 import { blogs } from "@/../public/data/BlogData";
-import Comments from "@/components/Pages/BlogDetails/Comments";
-import LeaveReply from "@/components/Pages/BlogDetails/LeaveReply";
+import CommentsClient from "@/components/Pages/BlogDetails/CommentsClient";
 import FadeDown from "@/components/motionEffect/FadeDown";
 import Footer from "@/components/Shared/Footer/Footer";
 import {
@@ -142,8 +141,7 @@ const BlogDetails = () => {
           </FadeDown>
 
           <div className="mx-auto mt-10" style={{ maxWidth: "850px" }}>
-            <Comments />
-            <LeaveReply />
+            <CommentsClient slug={String(slug)} />
           </div>
         </div>
       </section>

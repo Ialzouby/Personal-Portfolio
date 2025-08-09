@@ -1,0 +1,34 @@
+// Prisma schema for comments + rate limiting
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Comment {
+  id          String   @id @default(cuid())
+  postSlug    String   @index
+  parentId    String?  @index
+  authorName  String
+  authorEmail String?
+  emailHash   String?
+  contentMd   String
+  contentHtml String
+  isApproved  Boolean  @default(false)
+  isSpam      Boolean  @default(false)
+  ipHash      String
+  userAgent   String?
+  createdAt   DateTime @default(now())
+}
+
+model RateEvent {
+  id        String   @id @default(cuid())
+  ipHash    String   @index
+  postSlug  String   @index
+  createdAt DateTime @default(now()) @index
+}
+
