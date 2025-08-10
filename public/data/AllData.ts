@@ -364,7 +364,7 @@ export const productsData = [
     img: project18,
     title: "FDA-Authorized AI Devices: Clinical Validation Analysis",
     des: "First-author study analyzing validation methods and clinical applications of all FDA-authorized medical AI tools. Submission to Nature Medicine in progress.",
-    price: "Will submit to Nature Medicine upon completion of manuscript",
+    price: "In submission to Nature",
   },
   {
     id: 2,
@@ -372,7 +372,7 @@ export const productsData = [
     img: product2,
     title: "Is AI Saving Lives? Meta-Analysis of Clinical Impact",
     des: "First-author and corresponding author. Meta-analysis of real-world clinical outcomes across AI-enabled interventions. Submission to NEJM AI in progress.",
-    price: "Submission to NEJM AI In Progress",
+    price: "Under Peer Review at Nature Communications",
   },
   {
     id: 3,
@@ -380,7 +380,7 @@ export const productsData = [
     img: product3,
     title: "Optimizing Organ Donation After DCD",
     des: "Co-authored study presenting algorithms to enhance organ donation outcomes after circulatory death. Submission to Nature Medicine in progress.",
-    price: "Submission to Nature Medicine In Progress",
+    price: "In Progress",
   },
   {
     id: 4,
@@ -388,7 +388,7 @@ export const productsData = [
     img: product4,
     title: "AI Tool for ECMO Timing in SVC Syndrome",
     des: "Case study on using AI to optimize ECMO timing for SVC syndrome relief post tumor resection. Submission to Nature Medicine in progress.",
-    price: "Submission to Nature Medicine In Progress",
+    price: "In Progress",
   },
 
 ];
