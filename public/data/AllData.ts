@@ -364,14 +364,14 @@ export const productsData = [
     img: project18,
     title: "FDA-Authorized AI Devices: Clinical Validation Analysis",
     des: "First-author study analyzing validation methods and clinical applications of all FDA-authorized medical AI tools. Submission to Nature Medicine in progress.",
-    price: "In submission to Nature",
+    price: "Submission to Nature Medicine in Progress",
   },
   {
     id: 2,
     category: "Duke & UNC",
     img: product2,
     title: "Is AI Saving Lives? Meta-Analysis of Clinical Impact",
-    des: "First-author and corresponding author. Meta-analysis of real-world clinical outcomes across AI-enabled interventions. Submission to NEJM AI in progress.",
+    des: "Meta-analysis of real-world clinical outcomes across AI-enabled interventions. Under Peer Review at Nature Communications.",
     price: "Under Peer Review at Nature Communications",
   },
   {
