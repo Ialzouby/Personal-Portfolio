@@ -520,7 +520,6 @@ Today is Week ${weekNum}.
 Avoid repeating previous topics or angles. Here are recently covered titles/tags:
 ${recentTitles.map(t => `- ${t}`).join('\n')}
 
-Discuss RAGing and use Raptor, GraphRag, E2GraphRag, compare traditional approaches to raptor and how they work.
 Do NOT repeat the previous post's topic(s) or angle:
 PREVIOUS_TITLE: "${last.title}"
 PREVIOUS_TAG: "${last.tag}"
@@ -529,7 +528,8 @@ FORBIDDEN_TOPICS (must avoid): ${lastForbidden}
 
 ${extraAvoidNote}
 
-Pick a timely AI topic that fits the TARGET_CATEGORY. Stay within the category.
+Pick a timely AI topic that fits RAGing and mentions Raptor, GraphRag, E2GraphRag, compare traditional approaches to raptor and how they work.
+if its already been mentioned then the TARGET_CATEGORY. Stay within the category.
 
 JSON format:
 {
