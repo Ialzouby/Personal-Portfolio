@@ -9,6 +9,17 @@ const ax = require('axios');
 const { XMLParser } = require('fast-xml-parser');
 
 /* =========================
+   DESIRED TOPIC OVERRIDE
+   Set to null for automatic topic selection,
+   or specify a string to force a specific topic
+========================= */
+const DESIRED_TOPIC: string | null = Raptor rag framework; // Change this line to override topic
+// Examples:
+// const DESIRED_TOPIC: string | null = "GraphRAG and knowledge retrieval systems";
+// const DESIRED_TOPIC: string | null = "Multimodal AI for healthcare diagnostics";
+// const DESIRED_TOPIC: string | null = null; // Use automatic selection
+
+/* =========================
    Types (TS-only)
 ========================= */
 type Section = {
@@ -236,6 +247,25 @@ function getNextBucket(): string {
   return choice;
 }
 
+// Determine appropriate bucket for desired topic
+function getBucketForDesiredTopic(topic: string): string {
+  const t = topic.toLowerCase();
+  
+  if (t.includes('healthcare') || t.includes('medical') || t.includes('health')) return 'AI in Healthcare';
+  if (t.includes('robot') || t.includes('automation') || t.includes('manufacturing')) return 'Robotics';
+  if (t.includes('ethics') || t.includes('policy') || t.includes('bias') || t.includes('fairness')) return 'AI Ethics & Policy';
+  if (t.includes('creative') || t.includes('art') || t.includes('music') || t.includes('design')) return 'Creative AI';
+  if (t.includes('rag') || t.includes('retrieval') || t.includes('data engineering') || t.includes('graphrag')) return 'Data Engineering & Retrieval (RAG)';
+  if (t.includes('edge') || t.includes('hardware') || t.includes('chip') || t.includes('embedded')) return 'Edge AI & Hardware';
+  if (t.includes('education') || t.includes('learning') || t.includes('student') || t.includes('teaching')) return 'AI for Education';
+  if (t.includes('climate') || t.includes('science') || t.includes('environment') || t.includes('research')) return 'AI for Climate & Science';
+  if (t.includes('business') || t.includes('productivity') || t.includes('enterprise') || t.includes('workflow')) return 'Business & Productivity';
+  if (t.includes('open-source') || t.includes('research') || t.includes('academic') || t.includes('paper')) return 'Open-Source & Research';
+  
+  // Default to a general category if no specific match
+  return 'Open-Source & Research';
+}
+
 // News feed (one item)
 async function getLatestTopicFromFeeds(): Promise<{ title: string; url: string; summary?: string } | null> {
   const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' });
@@ -294,7 +324,7 @@ function looksLikeAI(photo: UnsplashPhoto): boolean {
   return AI_BLACKLIST.some(b => hay.includes(b));
 }
 
-// Gentle negatives to keep it clean, plus topic positives we’ll add per-query
+// Gentle negatives to keep it clean, plus topic positives we'll add per-query
 function buildUnsplashQuery(base: string, positives: string[] = []): string {
   const negatives = [
     '-robot','-face','-portrait','-humanoid',
@@ -475,13 +505,10 @@ async function selectBestUnsplashPhoto(
   return bestPhoto;
 }
 
-
-
-
 /* =========================
    Content Generation
 ========================= */
-async function generateBlogPost(weekNum: number, targetBucket: string): Promise<BlogPost> {
+async function generateBlogPost(weekNum: number, targetBucket: string, desiredTopic?: string): Promise<BlogPost> {
   const today = new Date().toISOString().split('T')[0];
 
   const last = getLastBlogMetaFromDataTs();
@@ -492,6 +519,8 @@ async function generateBlogPost(weekNum: number, targetBucket: string): Promise<
   const recentTitles = getRecentTitlesForPrompt(8);
 
   const newsSeed = await getLatestTopicFromFeeds(); // may be null
+
+  // Build the news context section
   const newsNote = newsSeed
     ? `Use this as optional context ONLY; do not paraphrase or copy:
 SOURCE_TITLE: "${newsSeed.title}"
@@ -500,15 +529,27 @@ SOURCE_SUMMARY (may be incomplete): "${(newsSeed.summary || '').slice(0, 400)}"
 
 Requirements:
 - Your post MUST primarily fit the TARGET_CATEGORY below.
-- If the news item doesn’t match the category, you may cite it in "Citations" but choose a better example within the category.
+- If the news item doesn't match the category, you may cite it in "Citations" but choose a better example within the category.
 - Structure and phrasing must be original. Do NOT copy sentences.
 `
     : `No external seed available — still adhere to the TARGET_CATEGORY below.`;
+
+  // Build the topic selection section
+  const topicSelectionNote = desiredTopic
+    ? `DESIRED TOPIC (PRIORITY): "${desiredTopic}"
+Write specifically about this topic. The TARGET_CATEGORY should align with this topic, but the DESIRED TOPIC takes priority.
+Ensure your title, content, and sections all focus on this specific topic.
+`
+    : `No specific topic requested — choose an interesting, timely AI topic that fits the TARGET_CATEGORY below.
+Pick a timely AI topic that fits within the category. Consider topics like RAG, GraphRAG, E2GraphRAG, agents, quantization, multimodal systems, etc.
+`;
 
   const basePrompt = (extraAvoidNote = '') => `
 You will output STRICT JSON only. No code fences.
 
 TARGET_CATEGORY: ${targetBucket}
+
+${topicSelectionNote}
 
 ${newsNote}
 
@@ -527,9 +568,6 @@ PREVIOUS_SUMMARY: "${(last.content || '').slice(0, 600)}"
 FORBIDDEN_TOPICS (must avoid): ${lastForbidden}
 
 ${extraAvoidNote}
-
-Pick a timely AI topic that fits RAGing and mentions Raptor, GraphRag, E2GraphRag, compare traditional approaches to raptor and how they work.
-if its already been mentioned then the TARGET_CATEGORY. Stay within the category.
 
 JSON format:
 {
@@ -555,7 +593,7 @@ Rules:
 - Cut filler. Every sentence should teach or clarify something.
 - No code blocks; diagrams must be plain strings (no backticks).
 - Do not invent facts or quotes; if unsure, omit.
-- Stay within TARGET_CATEGORY.
+- Stay within TARGET_CATEGORY${desiredTopic ? ' and focus on the DESIRED TOPIC' : ''}.
 
 Output only the JSON object.
 `;
@@ -575,10 +613,10 @@ Output only the JSON object.
   let raw = res.choices?.[0]?.message?.content || '{}';
   let blog = safeParseJson(raw) as BlogPost;
 
-  // If topic still too similar, retry once with stronger instruction
+  // If topic still too similar (and we're not using a desired topic), retry once with stronger instruction
   const candidateTopic = [blog.title, blog.tag].filter(Boolean).join(' ');
   const usedTopicsAll = getUsedTopics();
-  if (isTopicTooSimilar(candidateTopic, usedTopicsAll)) {
+  if (!desiredTopic && isTopicTooSimilar(candidateTopic, usedTopicsAll)) {
     const avoidNote = `Your previous attempt overlapped with existing topics. You MUST choose a different theme within TARGET_CATEGORY that does not substantially overlap with: ${usedTopicsAll.slice(-15).join('; ')}. Avoid overused keywords like GPT-5, GPT-4, RAG, 'AI agents' unless absolutely necessary.`;
     res = await openai.chat.completions.create({
       model: 'gpt-4o',
@@ -723,19 +761,33 @@ function injectIntoAllData(
     const file = fs.readFileSync(allDataPath, 'utf-8');
     const id = getNextId(file);
 
-    // Choose next category bucket to enforce variety
-    const bucket = getNextBucket();
+    // Determine bucket and topic strategy
+    let bucket: string;
+    let desiredTopic: string | undefined;
+
+    if (DESIRED_TOPIC) {
+      // Override mode: use desired topic and determine appropriate bucket
+      desiredTopic = DESIRED_TOPIC;
+      bucket = getBucketForDesiredTopic(DESIRED_TOPIC);
+      console.log(`🎯 Using desired topic: "${DESIRED_TOPIC}" in category: ${bucket}`);
+    } else {
+      // Automatic mode: choose next category bucket to enforce variety
+      bucket = getNextBucket();
+      console.log(`🔄 Using automatic topic selection for category: ${bucket}`);
+    }
 
     // Generate post (news-seeded + bucket-locked + anti-repeat across history)
-    const blog = await generateBlogPost(id, bucket);
+    const blog = await generateBlogPost(id, bucket, desiredTopic);
     blog.id = id;
     blog.slug = `how-ai-works-id-${id}`;
 
-    // Warn if still similar
-    const usedTopics = getUsedTopics();
-    const candidateTopic = [blog.title, blog.tag].filter(Boolean).join(' ');
-    if (isTopicTooSimilar(candidateTopic, usedTopics)) {
-      console.warn('⚠️ Topic still looks similar to a previous one. Consider re-running or editing manually.');
+    // Warn if still similar (only in automatic mode)
+    if (!DESIRED_TOPIC) {
+      const usedTopics = getUsedTopics();
+      const candidateTopic = [blog.title, blog.tag].filter(Boolean).join(' ');
+      if (isTopicTooSimilar(candidateTopic, usedTopics)) {
+        console.warn('⚠️ Topic still looks similar to a previous one. Consider re-running or editing manually.');
+      }
     }
 
     // Topic-aware Unsplash image (ranked + never reuse + non-AI vibe)
@@ -745,11 +797,14 @@ function injectIntoAllData(
     // Inject into BlogData.ts
     injectIntoAllData(blog, importVar, filename, id);
 
-    // Record topics so we avoid them later
-    saveUsedTopic(blog.title);
-    saveUsedTopic(blog.tag);
+    // Record topics so we avoid them later (only in automatic mode)
+    if (!DESIRED_TOPIC) {
+      saveUsedTopic(blog.title);
+      saveUsedTopic(blog.tag);
+    }
 
-    console.log(`✅ Generated: [${bucket}] ${blog.title}`);
+    const modeText = DESIRED_TOPIC ? `[CUSTOM: ${DESIRED_TOPIC}]` : `[${bucket}]`;
+    console.log(`✅ Generated: ${modeText} ${blog.title}`);
   } catch (err) {
     console.error('❌ Error generating blog post:', err);
     process.exitCode = 1;
