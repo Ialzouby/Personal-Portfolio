@@ -13,7 +13,7 @@ const { XMLParser } = require('fast-xml-parser');
    Set to null for automatic topic selection,
    or specify a string to force a specific topic
 ========================= */
-const DESIRED_TOPIC: string | null = Raptor rag framework; // Change this line to override topic
+const DESIRED_TOPIC: string | null = "Raptor RAG framework"; // Change this line to override topic
 // Examples:
 // const DESIRED_TOPIC: string | null = "GraphRAG and knowledge retrieval systems";
 // const DESIRED_TOPIC: string | null = "Multimodal AI for healthcare diagnostics";
