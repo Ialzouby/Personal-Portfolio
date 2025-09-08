@@ -6,3 +6,15 @@ node_modules/
 
 .next/
 .DS_Store
+
+.venv/
+
+.DS_Store
+
+.env.local
+
+.env.development.local
+
+.env.test.local
+
+.env.production.local
