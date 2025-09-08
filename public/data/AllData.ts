@@ -52,6 +52,7 @@ import speaking6 from "@/../public/images/speaking/speaking6.png";
 import speaking11 from "@/../public/images/speaking/speaker7.png";
 import speaking12 from "@/../public/images/speaking/speaker8.JPG";
 import speaking13 from "@/../public/images/speaking/speaker12.PNG";
+import speaking14 from "@/../public/images/speaking/speaker13.png";
 
 export const services = [
   {
@@ -106,17 +107,26 @@ export const services = [
 
 export const featureds2 = [
   {
-    id:1,
+    id: 10,
+    category: "Public Speaking",
+    tag1: "Panelist",
+    tag2: "Medical AI",
+    tag3: "Public Speaking",
+    title: "Medical AI Panelist @ HabibiTech 2025 NYC",
+    img: speaking14,
+  },
+  {
+    id: 7,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
-    tag3: "Medicine",
-    title: "AI Trends - Co-Talk with Mark Reynoso (Previous CEO of Belkin) | Open Carolinas",
-    img: speaking12,
+    tag3: "Public Speaking",
+    title: "ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
+    img: speaking6,
   },
 
   {
-    id: 2,
+    id: 3,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
@@ -125,7 +135,7 @@ export const featureds2 = [
     img: speaking11,
   },
   {
-    id: 3 ,
+    id: 4,
     category: "Public Speaking",
     tag1: "Public Speaking",
     tag2: "AI",
@@ -134,16 +144,7 @@ export const featureds2 = [
     img: speaking1,
   },
   {
-      id: 4,
-    category: "Teaching",
-    tag1: "Teaching",
-    tag2: "AI",
-    tag3: "Instructional",
-    title: "AI-Powered Development",
-    img: speaking2,
-  },
-  {
-    id: 5,
+    id: 6,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -152,16 +153,25 @@ export const featureds2 = [
     img: speaking3,
   },
   {
-    id: 6,
+    id: 5,
+  category: "Teaching",
+  tag1: "Teaching",
+  tag2: "AI",
+  tag3: "Instructional",
+  title: "AI-Powered Development",
+  img: speaking2,
+},
+  {
+    id:2,
     category: "Public Speaking",
     tag1: "Research",
     tag2: "AI",
-    tag3: "Public Speaking",
-    title: "ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
-    img: speaking6,
+    tag3: "Medicine",
+    title: "AI Trends - Co-Talk with Mark Reynoso (Previous CEO of Belkin) | Open Carolinas",
+    img: speaking12,
   },
   {
-    id: 7,
+    id: 8,
     category: "Public Speaking",
     tag1: "Panelist",
     tag2: "AI",
@@ -170,7 +180,7 @@ export const featureds2 = [
     img: speaking5,
   },
   {
-    id: 8,
+    id: 9,
     category: "Teaching",
     tag1: "Teaching",
     tag2: "AI",
@@ -180,7 +190,7 @@ export const featureds2 = [
   },
 
   {
-    id: 9,
+    id: 10,
     category: "Public Speaking",
     tag1: "Pitching",
     tag2: "AI",
@@ -189,7 +199,7 @@ export const featureds2 = [
     img: speaking4,
   },
   { 
-    id: 10,
+    id: 11,
     category: "Public Speaking",
     tag1: "Podcast",
     tag2: "Entrepreneurship",
@@ -197,6 +207,7 @@ export const featureds2 = [
     title: "Interview with Issam Alzouby, Founder of iRepairCLT - Perky Collar Radio Show",
     img: speaking3,
   },
+
 ];
 
 
