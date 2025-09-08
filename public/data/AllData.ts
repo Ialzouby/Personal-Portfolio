@@ -52,7 +52,7 @@ import speaking6 from "@/../public/images/speaking/speaking6.png";
 import speaking11 from "@/../public/images/speaking/speaker7.png";
 import speaking12 from "@/../public/images/speaking/speaker8.JPG";
 import speaking13 from "@/../public/images/speaking/speaker12.PNG";
-import speaking14 from "@/../public/images/speaking/speaker13.png";
+import speaking14 from "@/../public/images/speaking/speaker13.JPG";
 
 export const services = [
   {
