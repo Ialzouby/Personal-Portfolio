@@ -43,7 +43,7 @@ const Banner = () => {
             View Portfolio
           </Link>
           <Link
-            href="/resume"
+            href="/"
             className="p-btn n11-color bgn51-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
           >
             <Image src={resumeIcon} width={20} height={20} alt="icon" />
