@@ -1,12 +1,55 @@
-import Image from "next/image";
+"use client";
+
+import { useState } from "react";
+import Image, { StaticImageData } from "next/image";
 import resumeIcon from "@/../public/images/resume-icon.png";
-import user from "@/../public/images/user.png";
-import { PiArrowRight } from "react-icons/pi";
+import { PiArrowRight, PiStarFill } from "react-icons/pi";
 import Link from "next/link";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
+import project21 from "@/../public/images/projects/robot.png";
+import product3 from "@/../public/images/projects/avatar.png";
+import FeaturedProjectModal from "./FeaturedProjectModal";
+
+interface ProjectData {
+  title: string;
+  description: string;
+  image: StaticImageData;
+  category: string[];
+  portfolioLink: string;
+}
 
 const Banner = () => {
   const texts = ["Engineer", "Researcher", "Innovator"];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+
+  const projects: ProjectData[] = [
+    {
+      title: "Humanoid Robot",
+      description: "Advanced humanoid robotics system integrating AI-powered motion control, computer vision, and real-time sensor fusion. Features autonomous navigation, human interaction capabilities, and adaptive learning algorithms for dynamic environments.",
+      image: project21,
+      category: ["AI/ML", "Robotics"],
+      portfolioLink: "/portfolio-details/20",
+    },
+    {
+      title: "Motion Generation",
+      description: "Cutting-edge motion generation framework using deep learning to synthesize realistic human movements. Leverages transformer architectures and motion capture data to create fluid, natural animations for virtual characters and digital twins.",
+      image: product3,
+      category: ["Motion Generation", "AI/ML"],
+      portfolioLink: "/portfolio-details/8",
+    },
+  ];
+
+  const handleProjectClick = (project: ProjectData) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300);
+  };
+
   return (
 <div className="banner-wrapper position-relative overflow-hidden rounded">
 <div className="floating-dots"></div>
@@ -52,12 +95,64 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="position-relative profile-img">
-        <div className="user-bg"></div>
-        <div className="bg-white">
-          <Image src={user} alt="user" width={200} height={200} className="user-img" />
+      <div className="featured-projects-banner">
+        <div className="d-flex align-items-center gap-2 mb-4">
+          <PiStarFill className="p1-color" size={18} />
+          <h3 className="fs-six fw-semibold mb-0" style={{ color: '#1a1a1a' }}>Featured Work</h3>
+        </div>
+        <div className="d-flex gap-4">
+          <div 
+            className="featured-project-card" 
+            onClick={() => handleProjectClick(projects[0])}
+            style={{ cursor: 'pointer' }}
+          >
+            <div className="featured-project-img">
+              <Image 
+                src={projects[0].image} 
+                alt={projects[0].title} 
+                width={210} 
+                height={290}
+                className="rounded"
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              />
+            </div>
+            <div className="featured-project-info mt-3">
+              {projects[0].category.map((cat, idx) => (
+                <span key={idx}>{cat}</span>
+              ))}
+              <h4 className="fs-seven fw-medium mt-2">{projects[0].title}</h4>
+            </div>
+          </div>
+          <div 
+            className="featured-project-card"
+            onClick={() => handleProjectClick(projects[1])}
+            style={{ cursor: 'pointer' }}
+          >
+            <div className="featured-project-img">
+              <Image 
+                src={projects[1].image} 
+                alt={projects[1].title} 
+                width={210} 
+                height={290}
+                className="rounded"
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              />
+            </div>
+            <div className="featured-project-info mt-3">
+              {projects[1].category.map((cat, idx) => (
+                <span key={idx}>{cat}</span>
+              ))}
+              <h4 className="fs-seven fw-medium mt-2">{projects[1].title}</h4>
+            </div>
+          </div>
         </div>
       </div>
+
+      <FeaturedProjectModal 
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        project={selectedProject}
+      />
       </div>
       </div>
   );

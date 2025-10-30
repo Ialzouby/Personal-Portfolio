@@ -96,7 +96,7 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
                 Issam Alzouby
                 </h4>
                 <span className="n5-color fs-nine d-block text-center">
-                 AI Researcher
+                 PhD Student
                 </span>
                 <div className="d-flex justify-content-center gap-2 align-items-center mt-4">
                 <Link href="https://www.linkedin.com/in/alzouby/" className="social-icon">
