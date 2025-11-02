@@ -255,7 +255,6 @@ function getBucketForDesiredTopic(topic: string): string {
   if (t.includes('robot') || t.includes('automation') || t.includes('manufacturing')) return 'Robotics';
   if (t.includes('ethics') || t.includes('policy') || t.includes('bias') || t.includes('fairness')) return 'AI Ethics & Policy';
   if (t.includes('creative') || t.includes('art') || t.includes('music') || t.includes('design')) return 'Creative AI';
-  if (t.includes('rag') || t.includes('retrieval') || t.includes('data engineering') || t.includes('graphrag')) return 'Data Engineering & Retrieval (RAG)';
   if (t.includes('edge') || t.includes('hardware') || t.includes('chip') || t.includes('embedded')) return 'Edge AI & Hardware';
   if (t.includes('education') || t.includes('learning') || t.includes('student') || t.includes('teaching')) return 'AI for Education';
   if (t.includes('climate') || t.includes('science') || t.includes('environment') || t.includes('research')) return 'AI for Climate & Science';
