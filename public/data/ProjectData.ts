@@ -23,9 +23,34 @@ import project19_2 from "@/../public/images/projects/project19.2.png";
 import project19 from "@/../public/images/projects/project19.png";
 import project20 from "@/../public/images/projects/project20.jpg";
 import project21 from "@/../public/images/projects/MotionAE.png";
+import mmm272 from "@/../public/images/projects/mmm272.png"; // MMM-272 diagram
 
 
 export const featureds = [
+  {
+    id: 21,
+    category: "AI/ML",
+    tag1: "Text-to-Motion",
+    tag2: "VQVAE",
+    tag3: "Transformer",
+    title: "MMM-272: Enhanced Text-to-Motion Generation",
+    img: mmm272,
+    client: "Research Project",
+    services: "AI Research & Development",
+    technologies: "PyTorch, CLIP, FastAPI, SMPL, HumanML3D",
+    website: "https://github.com/yourusername/mmm-272",
+    intro: "Extended the Masked Motion Model (MMM) to support 272-dimensional motion representation, achieving state-of-the-art text-to-motion generation with improved BVH conversion quality.",
+    overview: "The MMM-272 project represents a significant advancement in text-to-motion generation technology. By upgrading from 263-dimensional to 272-dimensional motion representation, the model achieves superior motion quality and eliminates the need for Inverse Kinematics during BVH conversion. The system includes direct SMPL joint rotations in 6D format, preserving subtle motion details and producing animation-ready output for game engines and professional animation software.",
+    challenge: "Traditional text-to-motion models suffered from IK artifacts during BVH conversion and struggled to preserve fine-grained motion details like finger movements and joint twists. The existing 263-dimensional representation limited the model's ability to capture the full complexity of human motion, particularly for athletic and expressive movements.",
+    solution: "Implemented a comprehensive solution involving: (1) Upgraded VQVAE encoder/decoder architecture to handle 272-dimensional latent space with 512 codebook size and 2× temporal downsampling, (2) Trained a transformer with 9 layers, 1024 embedding dimensions, and 16 attention heads on 300K iterations, (3) Integrated direct SMPL rotation recovery in 6D format eliminating IK artifacts, (4) Developed a production-ready FastAPI server with pre-loaded models for real-time inference (~2-3 seconds), and (5) Built automatic BVH conversion pipeline for seamless integration with Unity, Unreal Engine, and Blender.",
+    gallery: [mmm272, project21, project19],
+    results: [
+      { title: "FID Score", value: "0.093", trend: "down", desc: "State-of-the-art motion realism on HumanML3D dataset (lower is better)" },
+      { title: "Conversion Quality", value: "60%", trend: "up", desc: "Reduction in BVH conversion errors vs position-based methods" },
+      { title: "Inference Speed", value: "2-3s", trend: "down", desc: "Real-time generation with model pre-loading optimization" },
+      { title: "R-Precision", value: "11.4%", trend: "up", desc: "Top-3 text-motion matching accuracy" }
+    ]
+  },
   {
     id: 20,
     category: "AI/ML",

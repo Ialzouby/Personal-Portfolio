@@ -8,6 +8,7 @@ import Link from "next/link";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import project21 from "@/../public/images/projects/robot.png";
 import product3 from "@/../public/images/projects/avatar.png";
+import mmm272 from "@/../public/images/projects/avatar.png";
 import FeaturedProjectModal from "./FeaturedProjectModal";
 
 interface ProjectData {
@@ -25,18 +26,18 @@ const Banner = () => {
 
   const projects: ProjectData[] = [
     {
+      title: "MMM-272: Text-to-Motion",
+      description: "State-of-the-art text-to-motion generation with 272-dimensional representation achieving FID 0.093. Features direct SMPL rotation recovery, eliminating IK artifacts for production-ready BVH output in Unity, Unreal, and Blender.",
+      image: mmm272,
+      category: ["Text-to-Motion", "AI/ML"],
+      portfolioLink: "/portfolio-details/21",
+    },
+    {
       title: "Humanoid Robot",
       description: "Advanced humanoid robotics system integrating AI-powered motion control, computer vision, and real-time sensor fusion. Features autonomous navigation, human interaction capabilities, and adaptive learning algorithms for dynamic environments.",
       image: project21,
       category: ["AI/ML", "Robotics"],
       portfolioLink: "/portfolio-details/20",
-    },
-    {
-      title: "Motion Generation",
-      description: "Cutting-edge motion generation framework using deep learning to synthesize realistic human movements. Leverages transformer architectures and motion capture data to create fluid, natural animations for virtual characters and digital twins.",
-      image: product3,
-      category: ["Motion Generation", "AI/ML"],
-      portfolioLink: "/portfolio-details/8",
     },
   ];
 
