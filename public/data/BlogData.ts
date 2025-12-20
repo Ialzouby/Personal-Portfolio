@@ -1,3 +1,4 @@
+import aiImage_65 from "@/../public/images/how-ai-works-id-65.jpg";
 import aiImage_64 from "@/../public/images/how-ai-works-id-64.jpg";
 import aiImage_63 from "@/../public/images/how-ai-works-id-63.jpg";
 import aiImage_62 from "@/../public/images/how-ai-works-id-62.jpg";
@@ -1948,6 +1949,70 @@ export const blogs = [
     authorUrl: "https://unsplash.com/@linusbelanger",
     source: "Unsplash",
     photoUrl: "https://unsplash.com/photos/wire-and-object-create-a-spooky-spider-w-OuqIjnWaU"
+  }
+}
+,
+{
+  id: 65,
+  slug: "how-ai-works-id-65",
+  img: aiImage_65,
+  date: "2025-12-20",
+  tag: "AI Education | Edge AI & Hardware",
+  title: "Quantization in Edge AI: Boosting Efficiency Without Breaking the Bank",
+  author: "Issam Alzouby",
+  content: "Imagine trying to fit a giant jigsaw puzzle into a shoebox. That's what deploying AI models on edge devices can feel like. Enter quantization—a clever technique that shrinks AI models without losing their smarts. As edge AI hardware becomes more prevalent, quantization is the secret sauce that makes running complex models on tiny devices possible. But how does it work, and why should you care?",
+  sections: [
+    {
+      heading: "What is Quantization?",
+      text: "Quantization is the process of reducing the precision of a model's weights and activations, typically from 32-bit floating point to 8-bit integers. Historically, AI models demanded hefty computational resources, but recent advances in quantization allow these models to run efficiently on edge devices without significant performance loss."
+    },
+    {
+      heading: "How It Works",
+      text: "Think of quantization like compressing a high-resolution image into a smaller file size. It reduces the number of bits needed to represent data, making models lighter and faster. For example, a smart thermostat using quantized models can quickly process temperature data and adjust settings without needing a cloud connection."
+    },
+    {
+      heading: "Real-World Applications",
+      text: "Quantization is a game-changer in industries like healthcare, where portable devices can analyze patient data on the spot. In automotive, it powers real-time object detection in autonomous vehicles. Consumer electronics also benefit, with smart home devices offering faster responses and lower energy consumption."
+    },
+    {
+      heading: "Benefits & Limitations",
+      text: "Quantization offers reduced latency and lower power consumption, making it ideal for edge AI hardware. However, it may introduce accuracy trade-offs, especially in models requiring high precision. It's not the best choice for applications where precision is paramount, like financial forecasting."
+    },
+    {
+      heading: "Latest Research & Trends",
+      text: "Recent papers highlight techniques like post-training quantization and quantization-aware training, which improve model accuracy. Companies like Google and NVIDIA are leading the charge with new tools and frameworks that simplify quantization for developers."
+    },
+    {
+      heading: "Visual",
+      text: "mermaid\nflowchart TD\nA[High-Precision Model]-->B[Quantization]\nB-->C[Low-Precision Model]\nC-->D[Edge Device]"
+    },
+    {
+      heading: "Glossary",
+      bullets: [
+        "Quantization: Reducing the precision of model weights and activations.",
+        "Edge AI: AI computations performed on local devices rather than centralized servers.",
+        "Post-Training Quantization: Applying quantization after a model is trained.",
+        "Quantization-Aware Training: Training a model with quantization effects considered.",
+        "Latency: The delay before a transfer of data begins following an instruction.",
+        "Floating Point: A method of representing real numbers in computing.",
+        "Integer: A whole number used in quantization to reduce model size."
+      ]
+    },
+    {
+      heading: "Citations",
+      bullets: [
+        "https://arxiv.org/abs/1806.08342",
+        "https://developer.nvidia.com/blog/introduction-to-quantization-on-gpus/",
+        "https://www.tensorflow.org/model_optimization/guide/quantization",
+        "https://openai.com/index/evaluating-chain-of-thought-monitorability"
+      ]
+    }
+  ],
+  imageCredit: {
+    authorName: "Kevin Masson",
+    authorUrl: "https://unsplash.com/@oktomus",
+    source: "Unsplash",
+    photoUrl: "https://unsplash.com/photos/blue-circuit-board-BfnPYI99j-w"
   }
 }
 ];
