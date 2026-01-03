@@ -1,5 +1,4 @@
 [
-  "Robotics",
   "AI Ethics & Policy",
   "Creative AI",
   "Data Engineering & Retrieval (RAG)",
@@ -10,5 +9,6 @@
   "Creative AI",
   "Data Engineering & Retrieval (RAG)",
   "Edge AI & Hardware",
-  "AI in Healthcare"
+  "AI in Healthcare",
+  "Robotics"
 ]
