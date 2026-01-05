@@ -1,4 +1,6 @@
 // scripts/agents/editor.ts
+export {};
+
 const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
 
 async function chooseWeeklyWinner(opts: { brief: any; recentBuckets: string[] }) {

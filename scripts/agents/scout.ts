@@ -1,4 +1,6 @@
 // scripts/agents/scout.ts
+export {};
+
 const { openai, safeParseJson, normalize, DEFAULT_MODEL } = require("./openai_client");
 const { AI_NEWS_DOMAINS } = require("./domains");
 

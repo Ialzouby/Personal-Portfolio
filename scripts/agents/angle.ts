@@ -1,4 +1,6 @@
 // scripts/agents/angle.ts
+export {};
+
 const { openai, safeParseJson, DEFAULT_MODEL, normalize } = require("./openai_client");
 
 async function buildSeoAngle(opts: {
