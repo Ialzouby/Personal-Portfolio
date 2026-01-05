@@ -2,11 +2,16 @@ name: Generate Weekly AI Blog
 
 on:
   schedule:
-    - cron: '0 0 * * 6' # Every Saturday at 00:00 UTC → Friday 8:00 PM ET (during EDT)
+    # Saturday 00:00 UTC = Friday 7 PM ET (EST) / 8 PM ET (EDT)
+    - cron: "0 0 * * 6"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: weekly-blog
+  cancel-in-progress: false
 
 jobs:
   generate-blog:
@@ -15,12 +20,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -29,6 +36,7 @@ jobs:
         run: |
           echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> $GITHUB_ENV
           echo "UNSPLASH_ACCESS_KEY=${{ secrets.UNSPLASH_ACCESS_KEY }}" >> $GITHUB_ENV
+          echo "OPENAI_MODEL=gpt-5" >> $GITHUB_ENV
 
       - name: Generate blog
         run: npx ts-node scripts/generate_blog.ts
@@ -38,5 +46,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "actions@users.noreply.github.com"
           git add -A
-          git commit -m "🤖 Auto-generate weekly AI blog" || echo "Nothing to commit"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "🤖 Auto-generate weekly AI blog"
           git push
