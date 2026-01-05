@@ -1,17 +1,12 @@
 // scripts/agents/angle.ts
-import { openai, safeParseJson, normalize, DEFAULT_MODEL } from "./openai_client";
-import type { ScoutEvent, AnglePlan } from "./types";
+const { openai, safeParseJson, DEFAULT_MODEL, normalize } = require("./openai_client");
 
-function slugify(s: string): string {
-  return normalize(s).replace(/\s+/g, "-").slice(0, 70);
-}
-
-export async function buildSeoAngle(opts: {
-  event: ScoutEvent;
+async function buildSeoAngle(opts: {
+  event: any;
   avoidQueries: string[];
   avoidTitles: string[];
   avoidSlugs: string[];
-}): Promise<AnglePlan> {
+}) {
   const prompt = `
 You are an SEO strategist for an AI explainer blog.
 
@@ -22,13 +17,13 @@ ${JSON.stringify(opts.event, null, 2)}
 
 Avoid cannibalization:
 AVOID_PRIMARY_QUERIES:
-${opts.avoidQueries.slice(-120).join(" | ")}
+${(opts.avoidQueries || []).slice(-120).join(" | ")}
 
 AVOID_TITLES:
-${opts.avoidTitles.slice(-120).join(" | ")}
+${(opts.avoidTitles || []).slice(-120).join(" | ")}
 
 AVOID_SLUGS:
-${opts.avoidSlugs.slice(-120).join(" | ")}
+${(opts.avoidSlugs || []).slice(-120).join(" | ")}
 
 Return STRICT JSON:
 {
@@ -51,7 +46,13 @@ Rules:
     input: prompt,
   });
 
-  const plan = safeParseJson(resp.output_text) as AnglePlan;
-  if (!plan.recommended_slug) plan.recommended_slug = slugify(plan.recommended_title || plan.primary_query);
+  const plan = safeParseJson(resp.output_text);
+
+  if (!plan.recommended_slug) {
+    plan.recommended_slug = normalize(plan.recommended_title || plan.primary_query).replace(/\s+/g, "-").slice(0, 70);
+  }
+
   return plan;
 }
+
+module.exports = { buildSeoAngle };

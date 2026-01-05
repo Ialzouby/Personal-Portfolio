@@ -1,11 +1,7 @@
 // scripts/agents/editor.ts
-import { openai, safeParseJson, DEFAULT_MODEL } from "./openai_client";
-import type { ScoutBrief, EditorDecision } from "./types";
+const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
 
-export async function chooseWeeklyWinner(opts: {
-  brief: ScoutBrief;
-  recentBuckets: string[]; // last N buckets used (strings)
-}): Promise<EditorDecision> {
+async function chooseWeeklyWinner(opts: { brief: any; recentBuckets: string[] }) {
   const prompt = `
 You are an AI editor. Pick ONE weekly story.
 
@@ -15,7 +11,7 @@ B) SEO Potential (0–20): evergreen query value, explainer depth, authority gap
 C) Diversity Penalty (0–6): penalize if category repeats recent buckets
 
 Recent buckets used (most recent last):
-${opts.recentBuckets.slice(-8).join(" | ") || "none"}
+${(opts.recentBuckets || []).slice(-8).join(" | ") || "none"}
 
 Diversity penalty guideline:
 - same bucket as last post: 2
@@ -54,9 +50,8 @@ Rules:
     input: prompt,
   });
 
-  const decision = safeParseJson(resp.output_text) as EditorDecision;
+  const decision = safeParseJson(resp.output_text);
 
-  // Safety: if model forgot final_score, compute it
   for (const s of decision.scored || []) {
     if (typeof s.final_score !== "number") {
       s.final_score = (s.news_impact || 0) + (s.seo_potential || 0) - (s.diversity_penalty || 0);
@@ -65,3 +60,5 @@ Rules:
 
   return decision;
 }
+
+module.exports = { chooseWeeklyWinner };

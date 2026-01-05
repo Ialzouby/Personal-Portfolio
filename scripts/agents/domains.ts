@@ -1,6 +1,5 @@
 // scripts/agents/domains.ts
-export const AI_NEWS_DOMAINS: string[] = [
-    // Primary labs / first-party
+const AI_NEWS_DOMAINS: string[] = [
     "openai.com",
     "deepmind.google",
     "anthropic.com",
@@ -10,7 +9,6 @@ export const AI_NEWS_DOMAINS: string[] = [
     "huggingface.co",
     "pytorch.org",
   
-    // Research + reviews
     "arxiv.org",
     "paperswithcode.com",
     "openreview.net",
@@ -21,7 +19,6 @@ export const AI_NEWS_DOMAINS: string[] = [
     "nejm.org",
     "jamanetwork.com",
   
-    // Credible tech press
     "technologyreview.com",
     "spectrum.ieee.org",
     "theverge.com",
@@ -31,10 +28,11 @@ export const AI_NEWS_DOMAINS: string[] = [
     "ft.com",
     "economist.com",
   
-    // Standards / policy (optional but useful)
     "nist.gov",
     "oecd.org",
     "europa.eu",
     "whitehouse.gov",
   ];
+  
+  module.exports = { AI_NEWS_DOMAINS };
   

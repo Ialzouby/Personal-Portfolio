@@ -1,16 +1,15 @@
 // scripts/seo/meta.ts
-import { openai, safeParseJson, DEFAULT_MODEL } from "../agents/openai_client";
-import type { MetaPack } from "../agents/types";
+const { openai, safeParseJson, DEFAULT_MODEL } = require("../agents/openai_client");
 
-export async function generateMetaPack(opts: {
+async function generateMetaPack(opts: {
   slug: string;
   bucket: string;
   blogTitle: string;
   primaryQuery: string;
   previewContent: string;
   author: string;
-  dateISO: string; // YYYY-MM-DD
-}): Promise<MetaPack> {
+  dateISO: string;
+}) {
   const canonicalPath = `/blog/${opts.slug}`;
 
   const prompt = `
@@ -52,17 +51,20 @@ Return STRICT JSON:
     input: prompt,
   });
 
-  const meta = safeParseJson(resp.output_text) as MetaPack;
+  const meta = safeParseJson(resp.output_text);
 
-  // Fill required defaults if missing
   meta.canonicalPath = meta.canonicalPath || canonicalPath;
-  meta.jsonLd = meta.jsonLd || {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: meta.metaTitle || opts.blogTitle,
-    datePublished: opts.dateISO,
-    author: { "@type": "Person", name: opts.author },
-  };
+  meta.jsonLd =
+    meta.jsonLd ||
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: meta.metaTitle || opts.blogTitle,
+      datePublished: opts.dateISO,
+      author: { "@type": "Person", name: opts.author },
+    };
 
   return meta;
 }
+
+module.exports = { generateMetaPack };

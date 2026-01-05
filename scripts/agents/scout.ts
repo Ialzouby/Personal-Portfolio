@@ -1,17 +1,16 @@
 // scripts/agents/scout.ts
-import { openai, safeParseJson, normalize, DEFAULT_MODEL } from "./openai_client";
-import { AI_NEWS_DOMAINS } from "./domains";
-import type { ScoutBrief } from "./types";
+const { openai, safeParseJson, normalize, DEFAULT_MODEL } = require("./openai_client");
+const { AI_NEWS_DOMAINS } = require("./domains");
 
 function isoDate(d = new Date()): string {
   return d.toISOString().slice(0, 10);
 }
 
-export async function scoutWeeklyNews(opts: {
+async function scoutWeeklyNews(opts: {
   usedTopics: string[];
-  weekDate?: string;     // YYYY-MM-DD
-  maxEvents?: number;    // default 12
-}): Promise<ScoutBrief> {
+  weekDate?: string;
+  maxEvents?: number;
+}) {
   const week = opts.weekDate ?? isoDate();
   const maxEvents = opts.maxEvents ?? 12;
 
@@ -61,13 +60,13 @@ Rules:
     input: prompt,
   });
 
-  const brief = safeParseJson(resp.output_text) as ScoutBrief;
+  const brief = safeParseJson(resp.output_text);
 
   // Clean up: remove empties + dedupe near-identical event strings
   const seen = new Set<string>();
   brief.events = (brief.events || [])
-    .filter(e => e?.event && e?.sources?.length >= 2)
-    .filter(e => {
+    .filter((e: any) => e?.event && e?.sources?.length >= 2)
+    .filter((e: any) => {
       const key = normalize(e.event);
       if (seen.has(key)) return false;
       seen.add(key);
@@ -76,3 +75,5 @@ Rules:
 
   return brief;
 }
+
+module.exports = { scoutWeeklyNews };

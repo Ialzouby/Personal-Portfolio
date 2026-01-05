@@ -1,7 +1,7 @@
 // scripts/agents/writer.ts
-import { openai, safeParseJson, DEFAULT_MODEL } from "./openai_client";
+const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
 
-export async function writeWeeklyPostJson(opts: {
+async function writeWeeklyPostJson(opts: {
   weekNum: number;
   bucket: string;
   author: string;
@@ -10,7 +10,7 @@ export async function writeWeeklyPostJson(opts: {
   secondaryQueries: string[];
   outlineH2s: string[];
   sources: { url: string; title?: string; date?: string }[];
-}): Promise<any> {
+}) {
   const prompt = `
 You will output STRICT JSON only (no code fences).
 
@@ -22,16 +22,16 @@ WEEK: ${opts.weekNum}
 
 SEO focus:
 PRIMARY_QUERY: ${opts.primaryQuery}
-SECONDARY_QUERIES: ${opts.secondaryQueries.join(" | ")}
+SECONDARY_QUERIES: ${(opts.secondaryQueries || []).join(" | ")}
 
 Use ONLY these sources for factual claims and include them in "Citations" (full URLs):
-${opts.sources.map(s => `- ${s.url}`).join("\n")}
+${(opts.sources || []).map((s) => `- ${s.url}`).join("\n")}
 
 Use this title (do not change it):
 TITLE: ${opts.title}
 
 Suggested H2 outline (use as headings, you may slightly refine):
-${opts.outlineH2s.map(h => `- ${h}`).join("\n")}
+${(opts.outlineH2s || []).map((h) => `- ${h}`).join("\n")}
 
 Return STRICT JSON in this exact format:
 {
@@ -66,3 +66,5 @@ Rules:
   blog.author = opts.author;
   return blog;
 }
+
+module.exports = { writeWeeklyPostJson };
