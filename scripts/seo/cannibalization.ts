@@ -1,6 +1,4 @@
 // scripts/seo/cannibalization.ts
-export {};
-
 const { normalize, tokens, jaccard } = require("../agents/openai_client");
 
 function containsAll(a: Set<string>, b: Set<string>): boolean {
@@ -54,3 +52,5 @@ function cannibalizationGuard(opts: {
 }
 
 module.exports = { cannibalizationGuard };
+
+export {};

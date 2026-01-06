@@ -39,7 +39,7 @@ jobs:
           echo "OPENAI_MODEL=gpt-5" >> $GITHUB_ENV
 
       - name: Generate blog
-        run: npx ts-node scripts/generate_blog.ts
+        run: npx ts-node --project scripts/tsconfig.json scripts/generate_blog.ts
 
       - name: Commit and push changes
         run: |

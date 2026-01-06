@@ -1,6 +1,4 @@
 // scripts/agents/openai_client.ts
-export {};
-
 require("dotenv").config();
 
 const { OpenAI } = require("openai");
@@ -50,3 +48,5 @@ module.exports = {
   tokens,
   jaccard,
 };
+
+export {};

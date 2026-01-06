@@ -4,14 +4,14 @@ const path = require("path");
 
 const SEO_HISTORY_PATH = path.join(__dirname, "../seo_history.json");
 
-export type SeoHistory = {
+type SeoHistory = {
   primary_queries: string[];
   titles: string[];
   slugs: string[];
   buckets: string[];
 };
 
-export function readSeoHistory(): SeoHistory {
+function readSeoHistory(): SeoHistory {
   try {
     if (!fs.existsSync(SEO_HISTORY_PATH)) {
       return { primary_queries: [], titles: [], slugs: [], buckets: [] };
@@ -29,11 +29,11 @@ export function readSeoHistory(): SeoHistory {
   }
 }
 
-export function writeSeoHistory(next: SeoHistory) {
+function writeSeoHistory(next: SeoHistory) {
   fs.writeFileSync(SEO_HISTORY_PATH, JSON.stringify(next, null, 2));
 }
 
-export function appendSeoHistory(item: { primary_query: string; title: string; slug: string; bucket: string }) {
+function appendSeoHistory(item: { primary_query: string; title: string; slug: string; bucket: string }) {
   const h = readSeoHistory();
   h.primary_queries.push(item.primary_query);
   h.titles.push(item.title);
@@ -48,3 +48,7 @@ export function appendSeoHistory(item: { primary_query: string; title: string; s
 
   writeSeoHistory(h);
 }
+
+module.exports = { readSeoHistory, writeSeoHistory, appendSeoHistory };
+
+export {};

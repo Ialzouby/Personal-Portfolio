@@ -1,6 +1,4 @@
 // scripts/seo/meta.ts
-export {};
-
 const { openai, safeParseJson, DEFAULT_MODEL } = require("../agents/openai_client");
 
 async function generateMetaPack(opts: {
@@ -70,3 +68,5 @@ Return STRICT JSON:
 }
 
 module.exports = { generateMetaPack };
+
+export {};

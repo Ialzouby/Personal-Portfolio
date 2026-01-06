@@ -1,6 +1,4 @@
 // scripts/agents/domains.ts
-export {};
-
 const AI_NEWS_DOMAINS: string[] = [
     "openai.com",
     "deepmind.google",
@@ -36,5 +34,6 @@ const AI_NEWS_DOMAINS: string[] = [
     "whitehouse.gov",
   ];
   
-  module.exports = { AI_NEWS_DOMAINS };
-  
+module.exports = { AI_NEWS_DOMAINS };
+
+export {};

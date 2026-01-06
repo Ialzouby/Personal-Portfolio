@@ -1,6 +1,4 @@
 // scripts/agents/scout.ts
-export {};
-
 const { openai, safeParseJson, normalize, DEFAULT_MODEL } = require("./openai_client");
 const { AI_NEWS_DOMAINS } = require("./domains");
 
@@ -55,7 +53,7 @@ Rules:
     tools: [
       {
         type: "web_search",
-        filters: { domains: AI_NEWS_DOMAINS },
+        filters: { allowed_domains: AI_NEWS_DOMAINS },
       },
     ],
     include: ["web_search_call.action.sources"],
@@ -79,3 +77,5 @@ Rules:
 }
 
 module.exports = { scoutWeeklyNews };
+
+export {};

@@ -1,6 +1,4 @@
 // scripts/agents/writer.ts
-export {};
-
 const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
 
 async function writeWeeklyPostJson(opts: {
@@ -70,3 +68,5 @@ Rules:
 }
 
 module.exports = { writeWeeklyPostJson };
+
+export {};

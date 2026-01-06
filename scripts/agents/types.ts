@@ -1,6 +1,7 @@
 // scripts/agents/types.ts
+// Type definitions for the blog generation pipeline
 
-export type Bucket =
+type Bucket =
   | "Models"
   | "Robotics"
   | "AI in Healthcare"
@@ -9,19 +10,19 @@ export type Bucket =
   | "Data/Infra"
   | "Creative AI";
 
-export type ScoutEvent = {
+type ScoutEvent = {
   event: string; // concise factual description
   category: Bucket;
   why_it_matters: string; // 1–2 sentences, concrete
   sources: { url: string; title?: string; date?: string }[]; // 2–4
 };
 
-export type ScoutBrief = {
+type ScoutBrief = {
   week: string; // YYYY-MM-DD
   events: ScoutEvent[]; // 10–15 recommended
 };
 
-export type EditorScore = {
+type EditorScore = {
   index: number;
   bucket: Bucket;
   news_impact: number;     // 0–25
@@ -31,13 +32,13 @@ export type EditorScore = {
   notes: string;
 };
 
-export type EditorDecision = {
+type EditorDecision = {
   winner_index: number;
   winner_reason: string;
   scored: EditorScore[];
 };
 
-export type AnglePlan = {
+type AnglePlan = {
   primary_query: string; // focus keyword
   secondary_queries: string[];
   search_intent: "Informational" | "Comparative" | "Transactional";
@@ -46,7 +47,7 @@ export type AnglePlan = {
   outline_h2s: string[];
 };
 
-export type MetaPack = {
+type MetaPack = {
   metaTitle: string;
   metaDescription: string;
   ogTitle: string;
@@ -54,3 +55,6 @@ export type MetaPack = {
   canonicalPath: string;
   jsonLd: any;
 };
+
+// Export for CommonJS compatibility
+module.exports = {};
