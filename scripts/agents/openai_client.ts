@@ -4,7 +4,7 @@ require("dotenv").config();
 const { OpenAI } = require("openai");
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5";
+const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5-pros";
 
 function safeParseJson(s: string): any {
   try {
