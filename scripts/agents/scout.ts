@@ -1,5 +1,5 @@
 // scripts/agents/scout.ts
-const { openai, safeParseJson, normalize, DEFAULT_MODEL } = require("./openai_client");
+const { openai, safeParseJson, normalize, DEFAULT_MODEL, withTimeout } = require("./openai_client");
 const { AI_NEWS_DOMAINS } = require("./domains");
 
 // Scout uses web_search - allow longer timeout and retries
@@ -44,11 +44,9 @@ Rules: 2-3 sources per event. Factual only. No hype.`;
         await delay(2000 * attempt); // Exponential backoff: 2s, 4s
       }
 
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), SCOUT_TIMEOUT_MS);
-
-      try {
-        const resp = await openai.responses.create({
+      // Use withTimeout wrapper - NO signal parameter in the API call
+      const resp = await withTimeout(
+        openai.responses.create({
           model: DEFAULT_MODEL,
           tools: [
             {
@@ -57,18 +55,16 @@ Rules: 2-3 sources per event. Factual only. No hype.`;
             },
           ],
           input: prompt,
-          signal: controller.signal,
-        });
+        }),
+        SCOUT_TIMEOUT_MS,
+        "Scout web_search"
+      );
 
-        clearTimeout(timeoutId);
-        const brief = safeParseJson(resp.output_text);
-        return processScoutResults(brief, normalize);
-      } finally {
-        clearTimeout(timeoutId);
-      }
+      const brief = safeParseJson(resp.output_text);
+      return processScoutResults(brief, normalize);
     } catch (err: any) {
       lastError = err;
-      if (err.name === 'AbortError' || err.message?.includes('aborted')) {
+      if (err.message?.includes('timed out')) {
         console.log(`⚠️ Scout attempt ${attempt + 1} timed out after ${SCOUT_TIMEOUT_MS / 1000}s`);
       } else {
         console.log(`⚠️ Scout attempt ${attempt + 1} failed: ${err.message}`);
@@ -80,7 +76,6 @@ Rules: 2-3 sources per event. Factual only. No hype.`;
 }
 
 function processScoutResults(brief: any, normalize: (s: string) => string) {
-
   // Clean up: remove empties + dedupe near-identical event strings
   const seen = new Set<string>();
   brief.events = (brief.events || [])
