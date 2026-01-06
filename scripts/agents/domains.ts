@@ -1,39 +1,29 @@
 // scripts/agents/domains.ts
+// Reduced to top 12 domains for faster web_search
 const AI_NEWS_DOMAINS: string[] = [
-    "openai.com",
-    "deepmind.google",
-    "anthropic.com",
-    "ai.meta.com",
-    "blogs.nvidia.com",
-    "developer.nvidia.com",
-    "huggingface.co",
-    "pytorch.org",
+  // Primary AI labs
+  "openai.com",
+  "anthropic.com",
+  "deepmind.google",
+  "huggingface.co",
   
-    "arxiv.org",
-    "paperswithcode.com",
-    "openreview.net",
-    "aclanthology.org",
-    "nature.com",
-    "science.org",
-    "cell.com",
-    "nejm.org",
-    "jamanetwork.com",
+  // Research
+  "arxiv.org",
   
-    "technologyreview.com",
-    "spectrum.ieee.org",
-    "theverge.com",
-    "techcrunch.com",
-    "reuters.com",
-    "bloomberg.com",
-    "ft.com",
-    "economist.com",
+  // Top tech news (most reliable + fast)
+  "techcrunch.com",
+  "theverge.com",
+  "technologyreview.com",
+  "wired.com",
   
-    "nist.gov",
-    "oecd.org",
-    "europa.eu",
-    "whitehouse.gov",
-  ];
+  // Business/general
+  "reuters.com",
+  "bloomberg.com",
   
+  // NVIDIA (key for hardware news)
+  "blogs.nvidia.com",
+];
+
 module.exports = { AI_NEWS_DOMAINS };
 
 export {};
