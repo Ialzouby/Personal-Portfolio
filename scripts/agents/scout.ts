@@ -1,6 +1,9 @@
 // scripts/agents/scout.ts
-const { openai, safeParseJson, normalize, DEFAULT_MODEL } = require("./openai_client");
+const { openai, safeParseJson, normalize, DEFAULT_MODEL, withTimeout } = require("./openai_client");
 const { AI_NEWS_DOMAINS } = require("./domains");
+
+// Scout uses web_search, so allow longer timeout (90s)
+const SCOUT_TIMEOUT_MS = 90_000;
 
 function isoDate(d = new Date()): string {
   return d.toISOString().slice(0, 10);
@@ -48,17 +51,21 @@ Rules:
 - No hype. No opinions. No invented facts.
 `;
 
-  const resp = await openai.responses.create({
-    model: DEFAULT_MODEL,
-    tools: [
-      {
-        type: "web_search",
-        filters: { allowed_domains: AI_NEWS_DOMAINS },
-      },
-    ],
-    include: ["web_search_call.action.sources"],
-    input: prompt,
-  });
+  const resp = await withTimeout(
+    openai.responses.create({
+      model: DEFAULT_MODEL,
+      tools: [
+        {
+          type: "web_search",
+          filters: { allowed_domains: AI_NEWS_DOMAINS },
+        },
+      ],
+      include: ["web_search_call.action.sources"],
+      input: prompt,
+    }),
+    SCOUT_TIMEOUT_MS,
+    "Scout web_search"
+  );
 
   const brief = safeParseJson(resp.output_text);
 

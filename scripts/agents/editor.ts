@@ -1,5 +1,5 @@
 // scripts/agents/editor.ts
-const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
+const { openai, safeParseJson, DEFAULT_MODEL, withTimeout, OPENAI_TIMEOUT_MS } = require("./openai_client");
 
 async function chooseWeeklyWinner(opts: { brief: any; recentBuckets: string[] }) {
   const prompt = `
@@ -45,10 +45,14 @@ Rules:
 - Be conservative: don't inflate scores.
 `;
 
-  const resp = await openai.responses.create({
-    model: DEFAULT_MODEL,
-    input: prompt,
-  });
+  const resp = await withTimeout(
+    openai.responses.create({
+      model: DEFAULT_MODEL,
+      input: prompt,
+    }),
+    OPENAI_TIMEOUT_MS,
+    "Editor"
+  );
 
   const decision = safeParseJson(resp.output_text);
 

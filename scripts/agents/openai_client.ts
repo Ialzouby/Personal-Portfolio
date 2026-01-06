@@ -4,7 +4,23 @@ require("dotenv").config();
 const { OpenAI } = require("openai");
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5-pros";
+const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5-pro";
+
+// Default timeout for OpenAI calls (60 seconds)
+const OPENAI_TIMEOUT_MS = 60_000;
+
+// Helper to wrap OpenAI calls with timeout
+async function withTimeout<T>(promise: Promise<T>, timeoutMs: number = OPENAI_TIMEOUT_MS, label: string = "OpenAI call"): Promise<T> {
+  let timeoutId: NodeJS.Timeout;
+  const timeoutPromise = new Promise<never>((_, reject) => {
+    timeoutId = setTimeout(() => reject(new Error(`${label} timed out after ${timeoutMs / 1000}s`)), timeoutMs);
+  });
+  try {
+    return await Promise.race([promise, timeoutPromise]);
+  } finally {
+    clearTimeout(timeoutId!);
+  }
+}
 
 function safeParseJson(s: string): any {
   try {
@@ -43,6 +59,8 @@ function jaccard(a: Set<string>, b: Set<string>): number {
 module.exports = {
   openai,
   DEFAULT_MODEL,
+  OPENAI_TIMEOUT_MS,
+  withTimeout,
   safeParseJson,
   normalize,
   tokens,

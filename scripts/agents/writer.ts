@@ -1,5 +1,8 @@
 // scripts/agents/writer.ts
-const { openai, safeParseJson, DEFAULT_MODEL } = require("./openai_client");
+const { openai, safeParseJson, DEFAULT_MODEL, withTimeout } = require("./openai_client");
+
+// Writer generates full blog content, allow longer timeout (90s)
+const WRITER_TIMEOUT_MS = 90_000;
 
 async function writeWeeklyPostJson(opts: {
   weekNum: number;
@@ -57,10 +60,14 @@ Rules:
 - Write like a smart human. Short paragraphs. Concrete examples.
 `;
 
-  const resp = await openai.responses.create({
-    model: DEFAULT_MODEL,
-    input: prompt,
-  });
+  const resp = await withTimeout(
+    openai.responses.create({
+      model: DEFAULT_MODEL,
+      input: prompt,
+    }),
+    WRITER_TIMEOUT_MS,
+    "Writer"
+  );
 
   const blog = safeParseJson(resp.output_text);
   blog.author = opts.author;

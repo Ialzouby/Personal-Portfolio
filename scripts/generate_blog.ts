@@ -574,9 +574,18 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
 }
 
 /* =========================
+   Timing helper
+========================= */
+const timer = (label: string) => {
+  const start = Date.now();
+  return () => console.log(`⏱️ ${label}: ${((Date.now() - start) / 1000).toFixed(1)}s`);
+};
+
+/* =========================
    MAIN
 ========================= */
 (async () => {
+  const totalTimer = timer("Total pipeline");
   try {
     if (!fs.existsSync(blogImageDir)) fs.mkdirSync(blogImageDir, { recursive: true });
 
@@ -592,26 +601,31 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
     const seoHist = readSeoHistory();
 
     // 1) SCOUT: discover important AI events this week (real web search inside agent)
+    const doneScout = timer("Scout (web_search)");
     const brief = await scoutWeeklyNews({
       usedTopics,
-      maxEvents: 12,
+      maxEvents: 8, // Reduced from 12 to speed up pipeline
       weekDate: today,
     });
+    doneScout();
     saveWeeklyJson(`${brief.week}_scout.json`, brief);
 
     // 2) EDITOR: choose the single best story (biggest news + SEO potential - diversity penalty)
+    const doneEditor = timer("Editor");
     const decision = await chooseWeeklyWinner({
       brief,
       recentBuckets: seoHist.buckets,
     });
+    doneEditor();
     saveWeeklyJson(`${brief.week}_editor.json`, decision);
 
     const winner = brief.events[decision.winner_index];
 
-    // If you override manually, keep the winner’s bucket but steer angle/writing topic
+    // If you override manually, keep the winner's bucket but steer angle/writing topic
     const chosenBucket: string = winner.category;
 
     // 3) ANGLE: event → evergreen query/title/slug (with cannibalization retries)
+    const doneAngle = timer("Angle");
     let angle;
     if (DESIRED_TOPIC) {
       // Forced angle mode: still use the week's sources, but steer the query/title.
@@ -642,6 +656,7 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
         });
 
         if (guard.ok) break;
+        console.log(`⚠️ Angle retry ${attempt + 1}/3: ${guard.reason}`);
 
         angle = await buildSeoAngle({
           event: winner,
@@ -651,10 +666,12 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
         });
       }
     }
+    doneAngle();
 
     saveWeeklyJson(`${brief.week}_angle.json`, angle);
 
     // 4) WRITER: generate blog JSON (your schema), grounded in the selected sources
+    const doneWriter = timer("Writer");
     const blog = (await writeWeeklyPostJson({
       weekNum: id,
       bucket: chosenBucket,
@@ -665,6 +682,7 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
       outlineH2s: angle.outline_h2s || [],
       sources: winner.sources,
     })) as BlogPost;
+    doneWriter();
 
     blog.id = id;
     blog.slug = angle.recommended_slug || `how-ai-works-id-${id}`;
@@ -680,6 +698,7 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
     }
 
     // 5) META: generate SEO meta pack + JSON-LD
+    const doneMeta = timer("Meta");
     const meta = await generateMetaPack({
       slug: blog.slug,
       bucket: chosenBucket,
@@ -689,10 +708,13 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
       author,
       dateISO: blog.date,
     });
+    doneMeta();
     blog.meta = meta;
 
     // 6) IMAGE: topic-aware Unsplash image (ranked + never reuse + non-AI vibe)
+    const doneImage = timer("Unsplash image");
     const { filename, importVar, credit } = await fetchUnsplashImage(blog, chosenBucket, blog.slug, id);
+    doneImage();
     blog.imageCredit = credit;
 
     // 7) INJECT into BlogData.ts
@@ -714,8 +736,10 @@ function ensureSlugUnique(baseSlug: string, used: string[]): string {
     console.log(`✅ Generated [${chosenBucket}] ${blog.title}`);
     console.log(`   slug: ${blog.slug}`);
     console.log(`   primary_query: ${angle.primary_query}`);
+    totalTimer();
   } catch (err) {
     console.error("❌ Error generating blog post:", err);
+    totalTimer();
     process.exitCode = 1;
   }
 })();

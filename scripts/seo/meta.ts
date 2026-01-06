@@ -1,5 +1,5 @@
 // scripts/seo/meta.ts
-const { openai, safeParseJson, DEFAULT_MODEL } = require("../agents/openai_client");
+const { openai, safeParseJson, DEFAULT_MODEL, withTimeout, OPENAI_TIMEOUT_MS } = require("../agents/openai_client");
 
 async function generateMetaPack(opts: {
   slug: string;
@@ -46,10 +46,14 @@ Return STRICT JSON:
 }
 `;
 
-  const resp = await openai.responses.create({
-    model: DEFAULT_MODEL,
-    input: prompt,
-  });
+  const resp = await withTimeout(
+    openai.responses.create({
+      model: DEFAULT_MODEL,
+      input: prompt,
+    }),
+    OPENAI_TIMEOUT_MS,
+    "Meta"
+  );
 
   const meta = safeParseJson(resp.output_text);
 

@@ -1,5 +1,5 @@
 // scripts/agents/angle.ts
-const { openai, safeParseJson, DEFAULT_MODEL, normalize } = require("./openai_client");
+const { openai, safeParseJson, DEFAULT_MODEL, normalize, withTimeout, OPENAI_TIMEOUT_MS } = require("./openai_client");
 
 async function buildSeoAngle(opts: {
   event: any;
@@ -41,10 +41,14 @@ Rules:
 - Prefer queries with stable long-tail search value.
 `;
 
-  const resp = await openai.responses.create({
-    model: DEFAULT_MODEL,
-    input: prompt,
-  });
+  const resp = await withTimeout(
+    openai.responses.create({
+      model: DEFAULT_MODEL,
+      input: prompt,
+    }),
+    OPENAI_TIMEOUT_MS,
+    "Angle"
+  );
 
   const plan = safeParseJson(resp.output_text);
 
