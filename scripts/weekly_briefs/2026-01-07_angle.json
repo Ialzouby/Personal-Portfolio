@@ -1,28 +1,28 @@
 {
-  "primary_query": "Nvidia Nemotron Gr00t Cosmos explained",
+  "primary_query": "robot foundation models explained",
   "secondary_queries": [
-    "what is Nvidia Nemotron",
-    "Nvidia Gr00t robotics model overview",
-    "Nvidia Cosmos world model explained",
-    "Nvidia open source AI models for agents",
-    "how to use Nemotron for AI agents",
-    "Nvidia AI model families for robotics",
-    "open models vs proprietary AI stacks",
-    "building agents on Nvidia Nemotron"
+    "what are robot foundation models",
+    "generalist robotics platforms overview",
+    "simulation tools for robotics ai",
+    "edge computing for industrial robots",
+    "nvidia robotics stack vs ros",
+    "hugging face robotics models guide",
+    "multi purpose robots in manufacturing",
+    "how to build generalist robots"
   ],
   "search_intent": "Informational",
-  "recommended_title": "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
-  "recommended_slug": "nvidia-nemotron-gr00t-cosmos-explained",
+  "recommended_title": "Robot Foundation Models Explained for Generalist Robotics",
+  "recommended_slug": "robot-foundation-models-generalist-robotics",
   "outline_h2s": [
-    "Nvidia’s AI model families at a glance",
-    "What is Nemotron and how is it used for AI agents?",
-    "What is Gr00t and how does it power robotics?",
-    "What is Cosmos and why world models matter",
-    "How “open” are Nvidia’s AI models in practice?",
-    "Nemotron, Gr00t and Cosmos vs fully proprietary stacks",
-    "Use cases: agents, robots and physical AI on Nvidia models",
-    "Ecosystem lock‑in: why Nvidia wants to be the AI substrate",
-    "How developers can get started with Nemotron, Gr00t and Cosmos",
-    "Future outlook for open model families in AI development"
+    "What Are Robot Foundation Models?",
+    "From Single‑Task Bots to Generalist Robotics",
+    "Core Building Blocks of a Robot Foundation Stack",
+    "Role of Simulation in Training and Testing Robots",
+    "Why Edge Computing Matters for General‑Purpose Robots",
+    "Open Robot Models on Platforms Like Hugging Face",
+    "How Generalist Robotics Impacts Manufacturing and Logistics",
+    "Key Challenges: Safety, Reliability and Standardization",
+    "How Developers Can Start Building on Robot Foundation Models",
+    "Future Outlook for Generalist Robotics Platforms"
   ]
 }
