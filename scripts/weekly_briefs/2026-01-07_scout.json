@@ -2,26 +2,26 @@
   "week": "2026-01-07",
   "events": [
     {
-      "event": "AMD unveils new MI455/MI440X data center AI chips and Ryzen AI 400 PC processors at CES 2026",
-      "category": "Models",
-      "why_it_matters": "The MI455 and MI440X expand AMD’s data center AI portfolio used by hyperscalers and model providers, while the new Ryzen AI 400 and AI Max+ processors push more inference onto PCs. This strengthens competition with Nvidia in training and inference hardware and accelerates a shift toward local and hybrid AI workloads.",
+      "event": "Nvidia launches Vera Rubin, a next‑generation AI computing platform, at CES 2026",
+      "category": "Data/Infra",
+      "why_it_matters": "Vera Rubin is positioned as Nvidia’s successor to Blackwell for large‑scale AI training and inference. Nvidia claims the Rubin GPU delivers around 5x the AI training performance of Blackwell and that the full Vera Rubin architecture can train large mixture‑of‑experts models with roughly one‑quarter the GPUs and about one‑seventh the token cost. This reflects an ongoing shift toward more efficient, rack‑scale AI infrastructure and confidential computing at the data‑center level, likely shaping the economics and feasibility of future frontier and specialized models.",
       "sources": [
         {
-          "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
-          "title": "AMD shows off new higher performing AI chip at CES event",
-          "date": "2026-01-06"
+          "url": "https://www.theverge.com/tech/855412/nvidia-launches-vera-rubin-ai-computing-platform-at-ces-2026",
+          "title": "Nvidia launches Vera Rubin AI computing platform at CES 2026",
+          "date": "2026-01-05"
         },
         {
-          "url": "https://www.bloomberg.com",
-          "title": "AMD outlines next-gen AI chip roadmap at CES 2026",
+          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
+          "title": "The biggest Nvidia announcements at CES 2026",
           "date": "2026-01-06"
         }
       ]
     },
     {
-      "event": "Nvidia launches full-stack platform and open robot foundation models to target generalist robotics",
+      "event": "Nvidia unveils a full‑stack platform of robot foundation models, simulation tools, and edge hardware for “generalist” robotics",
       "category": "Robotics",
-      "why_it_matters": "By releasing robot foundation models, simulation tools, and edge hardware as a coherent stack, Nvidia is positioning itself as the default platform for ‘physical AI’. Making these models available openly (e.g., via Hugging Face) could accelerate development of general-purpose robots that can be adapted across industries rather than built for single, narrow tasks.",
+      "why_it_matters": "Nvidia is extending its AI stack from cloud training into physical robots, offering open robot foundation models, simulation environments, and edge compute as a unified platform. The goal is to let robots reason, plan, and adapt across many tasks rather than being locked into single‑purpose behaviors, with models accessible on Hugging Face. This could standardize the software and hardware base for a wide range of robotics companies in a way analogous to Android’s role in smartphones, affecting how quickly general‑purpose and warehouse/industrial robots can be developed and deployed.",
       "sources": [
         {
           "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
@@ -36,43 +36,9 @@
       ]
     },
     {
-      "event": "Hyundai plans to deploy Boston Dynamics humanoid robots in its U.S. factory starting 2028",
+      "event": "Mobileye moves into humanoid robotics with $900M acquisition of Mentee Robotics",
       "category": "Robotics",
-      "why_it_matters": "Hyundai’s commitment to phase humanoid robots into a Georgia auto plant from 2028, scaling to tens of thousands of units annually, is one of the clearer industrial roadmaps for ‘physical AI’ in heavy manufacturing. It tests how far autonomous, human-shaped robots can safely take over repetitive and high‑risk plant tasks at scale.",
-      "sources": [
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Boston Dynamics partners with Google DeepMind to build a robot foundation model for its next-gen Atlas humanoid",
-      "category": "Robotics",
-      "why_it_matters": "The partnership uses DeepMind’s large AI models to control Boston Dynamics’ new Atlas, aiming for more human-like behavior and general-purpose capability instead of scripted motions. If successful, it could set a template for combining large multimodal models with advanced hardware to produce robots that better understand context and interact more naturally with people.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://deepmind.google/discover/blog/",
-          "title": "Google DeepMind CES 2026 robotics and foundation models update",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Mobileye to acquire humanoid robotics startup Mentee Robotics for about $900 million",
-      "category": "Robotics",
-      "why_it_matters": "The deal moves Mobileye beyond vehicle autonomy into humanoid robots, reusing its perception and planning stack in non-automotive ‘physical AI’. It signals that established automotive ADAS players see humanoid robots as a significant adjacent market and are willing to deploy substantial capital and compute infrastructure to enter it.",
+      "why_it_matters": "Mobileye, best known for automotive vision and ADAS chips, is buying humanoid‑robotics startup Mentee Robotics for about $900 million in cash and stock. Mentee uses single human demonstrations to generate large virtual datasets for training embodied agents and is targeting commercial deployment around 2028. The deal indicates that established automotive autonomy vendors see humanoid robots as a natural extension of their perception and planning stacks, and it adds another major player to the humanoid‑robotics race alongside Tesla, Figure, and others.",
       "sources": [
         {
           "url": "https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/",
@@ -80,60 +46,79 @@
           "date": "2026-01-06"
         },
         {
-          "url": "https://techcrunch.com/snippet/3080525/mobileye-is-in-the-humanoid-robots-business-now/",
-          "title": "Mobileye is in the humanoid robots business now",
+          "url": "https://www.reuters.com/world/asia-pacific/mobileye-acquire-humanoid-robotics-startup-mentee-900-million-2026-01-06/",
+          "title": "Mobileye to acquire humanoid robotics startup Mentee for $900 million",
           "date": "2026-01-06"
         }
       ]
     },
     {
-      "event": "Nvidia details new Vera Rubin multi-GPU platform aimed at large-scale AI training and inference",
-      "category": "Data/Infra",
-      "why_it_matters": "The Vera Rubin platform, built around six coordinated chips, is designed for very large AI workloads. It illustrates how GPU vendors are pushing beyond single accelerators to tightly coupled multi‑GPU systems, which affects how data centers plan power, networking, and training infrastructure for the next generation of large models.",
+      "event": "Hyundai plans large‑scale deployment of Boston Dynamics humanoid robots at a U.S. factory starting in 2028",
+      "category": "Robotics",
+      "why_it_matters": "Hyundai Motor Group outlined a concrete roadmap to deploy Boston Dynamics’ Atlas humanoid robots at its Georgia manufacturing plant, starting with parts sequencing in 2028 and moving toward more complex assembly tasks by 2030. The company is building capacity for about 30,000 robots per year by 2028 and frames humanoids as part of a broader \"physical AI\" strategy for high‑risk and repetitive factory work. This is one of the clearer industrial‑scale deployment plans for humanoid robots, signaling intent to integrate them into mainstream automotive production rather than limiting them to R&D or pilots.",
       "sources": [
         {
-          "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
-          "title": "AMD shows off new higher performing AI chip at CES event",
-          "date": "2026-01-06"
-        },
-        {
-          "url": "https://blogs.nvidia.com",
-          "title": "NVIDIA CES 2026 keynote: AI, robotics and the Vera Rubin platform",
-          "date": "2026-01-06"
+          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
+          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
+          "date": "2026-01-05"
         }
       ]
     },
     {
-      "event": "AI-powered companion robots and robot pets emerge as a distinct category at CES 2026",
+      "event": "Boston Dynamics and Google DeepMind partner to build an AI foundation model for next‑generation Atlas humanoid robots",
+      "category": "Robotics",
+      "why_it_matters": "Boston Dynamics is collaborating with Google DeepMind to apply large AI foundation models to its new Atlas humanoid platform. The companies aim to develop a robot foundation model that makes Atlas behave more naturally and safely around people, with better understanding of context and human intent. This illustrates the convergence of cutting‑edge language/vision modeling with physically embodied systems, and it may influence how quickly general‑purpose humanoids can learn and adapt to varied environments.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "AI‑powered companion robots and robot pets emerge as a visible trend at CES 2026",
       "category": "Creative AI",
-      "why_it_matters": "A wave of companion robots and robot pets aimed at emotional engagement—rather than purely functional automation—shows AI moving into everyday social and entertainment roles. These systems rely on conversational and generative models to express personality, adapt to users, and provide companionship, broadening where and how people interact with AI.",
+      "why_it_matters": "At CES 2026, multiple companies showed AI‑driven home companions and robot pets that emphasize emotional engagement as much as task automation. Products such as Loona’s DeskMate and Zeroth’s M1, which leverages Google’s Gemini AI, target companionship for children and older adults, while others like LilMilo robot pets use recognition and adaptive behaviors to simulate personality. This signals AI moving into consumer‑facing, character‑like embodiments where interaction design, safety, and long‑term engagement become as important as raw technical capability.",
       "sources": [
         {
           "url": "https://www.theverge.com/news/856207/ces-2026-trend-ai-companion-robot-pet",
           "title": "AI moves into the real world as companion robots and pets",
-          "date": "2026-01-07"
-        },
-        {
-          "url": "https://wired.com",
-          "title": "At CES, AI companion bots try to win a place in your home",
           "date": "2026-01-06"
         }
       ]
     },
     {
-      "event": "Edge and on-device AI highlighted by new AI PC and robotics hardware at CES 2026",
-      "category": "Edge AI",
-      "why_it_matters": "Announcements such as AMD’s Ryzen AI 400 series for PCs and Nvidia’s new edge hardware for robots indicate a continued shift from purely cloud-based inference toward local processing. This can reduce latency and connectivity dependence and may mitigate some privacy concerns by keeping more data on-device, while enabling richer AI behavior in vehicles, robots, and consumer devices.",
+      "event": "OpenAI updates its Data Processing Addendum effective January 1, 2026, clarifying data‑handling terms for customers",
+      "category": "AI Ethics",
+      "why_it_matters": "OpenAI’s revised Data Processing Addendum, effective January 1, 2026, updates contractual terms governing how customer data is processed under the OpenAI Services Agreement, including for customers in the EU and Switzerland via OpenAI Ireland. While largely legal in nature, such documents define default rules for data use, processing, and responsibilities between AI providers and customers. They are a key part of operational AI governance and compliance, especially for enterprises and public‑sector users managing privacy and regulatory risk.",
       "sources": [
         {
-          "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
-          "title": "AMD shows off new higher performing AI chip at CES event",
-          "date": "2026-01-06"
+          "url": "https://openai.com/el-GR/policies/data-processing-addendum/",
+          "title": "OpenAI Data Processing Addendum (Greek version, effective January 1, 2026)",
+          "date": "2026-01-01"
         },
         {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
-          "date": "2026-01-05"
+          "url": "https://openai.com/mr-IN/policies/data-processing-addendum/",
+          "title": "OpenAI Data Processing Addendum (Marathi version, effective January 1, 2026)",
+          "date": "2026-01-01"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI announces Stargate UAE, a 1 GW AI data‑center cluster in Abu Dhabi plus UAE investment in U.S. Stargate infrastructure",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI detailed a new partnership to build a 1 GW Stargate UAE cluster in Abu Dhabi, with 200 MW expected online in 2026, alongside UAE investment into U.S. Stargate infrastructure. This expands the previously announced Stargate program to build very large AI data‑center capacity, supporting several million accelerator chips and multi‑gigawatt power usage. It highlights how frontier‑scale AI increasingly depends on sovereign‑level infrastructure investments and cross‑border agreements, with implications for access to compute, industrial policy, and where advanced AI workloads can practically run.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-stargate-uae/",
+          "title": "Introducing Stargate UAE",
+          "date": "2026-01-02"
+        },
+        {
+          "url": "https://openai.com/index/stargate-advances-with-partnership-with-oracle/",
+          "title": "Stargate advances with 4.5 GW partnership with Oracle",
+          "date": "2025-07-22"
         }
       ]
     }

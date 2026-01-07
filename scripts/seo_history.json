@@ -2,21 +2,25 @@
   "primary_queries": [
     "robot operating system platforms",
     "humanoid robots vs self driving cars",
-    "AMD MI455 vs MI440X"
+    "AMD MI455 vs MI440X",
+    "Nvidia Vera Rubin vs Blackwell"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
     "Humanoid Robots vs Self Driving Cars: How Physical AI Converges",
-    "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide"
+    "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
+    "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained"
   ],
   "slugs": [
     "robot-operating-system-platforms",
     "humanoid-robots-vs-self-driving-cars",
-    "amd-mi455-vs-mi440x-ryzen-ai-400"
+    "amd-mi455-vs-mi440x-ryzen-ai-400",
+    "nvidia-vera-rubin-vs-blackwell"
   ],
   "buckets": [
     "Robotics",
     "Robotics",
-    "Models"
+    "Models",
+    "Data/Infra"
   ]
 }

@@ -1,26 +1,27 @@
 {
-  "primary_query": "AMD MI455 vs MI440X",
+  "primary_query": "Nvidia Vera Rubin vs Blackwell",
   "secondary_queries": [
-    "AMD MI455 specs and performance",
-    "AMD MI440X vs Nvidia H100",
-    "Ryzen AI 400 vs Ryzen AI 300",
-    "best GPUs for AI inference on PC",
-    "AMD data center AI GPU lineup explained",
-    "how Ryzen AI NPUs work for local AI",
-    "hybrid AI workloads cloud vs local",
-    "AMD AI chips for training vs inference"
+    "what is Nvidia Vera Rubin platform",
+    "Vera Rubin GPU architecture explained",
+    "Nvidia Vera Rubin performance vs Blackwell",
+    "mixture of experts training infrastructure",
+    "rack scale AI systems for large models",
+    "confidential computing for AI workloads",
+    "optimize GPU count and token cost for LLMs",
+    "data center design for next gen AI GPUs"
   ],
   "search_intent": "Comparative",
-  "recommended_title": "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
-  "recommended_slug": "amd-mi455-vs-mi440x-ryzen-ai-400",
+  "recommended_title": "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
+  "recommended_slug": "nvidia-vera-rubin-vs-blackwell",
   "outline_h2s": [
-    "Overview of AMD’s AI chip lineup for cloud and PCs",
-    "AMD MI455 vs MI440X: architecture, specs and use cases",
-    "How AMD MI455 and MI440X compare to Nvidia data center GPUs",
-    "Ryzen AI 400 and AI Max+: what’s new for on‑device AI",
-    "Training vs inference: which AMD AI chips fit each workload",
-    "Designing hybrid AI workloads across data center and PCs",
-    "Choosing between cloud GPUs and Ryzen AI laptops for AI work",
-    "Future trends in local, edge and data center AI hardware"
+    "What Is Nvidia Vera Rubin and Why It Matters",
+    "How Vera Rubin Compares to Nvidia Blackwell",
+    "Inside the Vera Rubin GPU and System Architecture",
+    "Mixture‑of‑Experts Training on Vera Rubin",
+    "Rack‑Scale AI Infrastructure and Data Center Design",
+    "Confidential Computing and Security in Vera Rubin",
+    "Cost, Efficiency, and ROI for Large‑Scale AI Training",
+    "How to Choose Between Vera Rubin, Blackwell, and Other AI Platforms",
+    "Future AI Workloads Vera Rubin Is Designed to Run"
   ]
 }
