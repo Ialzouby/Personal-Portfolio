@@ -2145,6 +2145,4 @@ export const blogs = [
     photoUrl: "https://unsplash.com/photos/gray-skull-figurine-on-book-Dke45Q-POtM"
   }
 }
-,
-
 ];
