@@ -1,28 +1,26 @@
 {
-  "primary_query": "edge ai pc vs cloud inference",
+  "primary_query": "automotive ai assistants and autonomy",
   "secondary_queries": [
-    "what is edge ai inference",
-    "local ai processing vs cloud",
-    "ai accelerators for data centers",
-    "on device ai laptops explained",
-    "benefits of edge ai in pcs",
-    "latency of cloud vs local ai",
-    "ai hardware for inference vs training",
-    "how edge ai changes data center demand"
+    "how car ai assistants work",
+    "edge ai in autonomous vehicles",
+    "nvidia automotive ai platform explained",
+    "software defined vehicles vs traditional cars",
+    "driver monitoring and in cabin ai",
+    "ota updates for self driving features",
+    "robotaxis vs personal autonomous cars",
+    "future of ai and data in car design"
   ],
   "search_intent": "Informational",
-  "recommended_title": "Edge AI PC vs Cloud Inference: How Local AI Changes Compute",
-  "recommended_slug": "edge-ai-pc-vs-cloud-inference",
+  "recommended_title": "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars",
+  "recommended_slug": "automotive-ai-assistants-and-autonomy",
   "outline_h2s": [
-    "What Edge AI Inference Actually Means",
-    "Cloud AI vs Edge AI on PCs: Key Differences",
-    "How Data Center AI Accelerators Power Cloud Inference",
-    "How Modern AI PCs Run Models Locally",
-    "Latency, Cost, and Privacy: Trade‑offs of Local vs Cloud AI",
-    "When to Run AI in the Cloud and When to Use Edge Devices",
-    "How Edge AI Adoption Impacts Data Center Workloads",
-    "Choosing Hardware for AI Inference: Cloud GPUs vs Edge Accelerators",
-    "Future Trends in Edge AI for Laptops and Workstations",
-    "Practical Examples of Apps Moving from Cloud AI to Edge"
+    "From Hardware to Software: Why Automotive Is Shifting to AI",
+    "What Automotive AI Assistants Actually Do in Modern Cars",
+    "Edge AI in Vehicles: On‑Board Compute, Sensors, and Models",
+    "Autonomy Levels, Robotaxis, and Advanced Driver Assistance",
+    "Inside the Stack: Nvidia and Other Platforms Powering Automotive AI",
+    "Software‑Defined Vehicles: Over‑the‑Air Updates and Continuous Learning",
+    "Data, Safety, and Regulation in AI‑Driven Automotive Systems",
+    "How Automotive AI Will Change the Driving Experience Over the Next Decade"
   ]
 }
