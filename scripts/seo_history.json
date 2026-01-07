@@ -1,18 +1,22 @@
 {
   "primary_queries": [
     "robot operating system platforms",
-    "humanoid robots vs self driving cars"
+    "humanoid robots vs self driving cars",
+    "AMD MI455 vs MI440X"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
-    "Humanoid Robots vs Self Driving Cars: How Physical AI Converges"
+    "Humanoid Robots vs Self Driving Cars: How Physical AI Converges",
+    "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide"
   ],
   "slugs": [
     "robot-operating-system-platforms",
-    "humanoid-robots-vs-self-driving-cars"
+    "humanoid-robots-vs-self-driving-cars",
+    "amd-mi455-vs-mi440x-ryzen-ai-400"
   ],
   "buckets": [
     "Robotics",
-    "Robotics"
+    "Robotics",
+    "Models"
   ]
 }

@@ -1,27 +1,26 @@
 {
-  "primary_query": "humanoid robots vs self driving cars",
+  "primary_query": "AMD MI455 vs MI440X",
   "secondary_queries": [
-    "how self driving car tech powers humanoid robots",
-    "physical ai in robotics explained",
-    "humanoid robots for warehouse automation",
-    "autonomous driving software stack for robots",
-    "perception and planning in humanoid robots",
-    "general purpose humanoid robots for industry",
-    "future of physical ai and embodied robots"
+    "AMD MI455 specs and performance",
+    "AMD MI440X vs Nvidia H100",
+    "Ryzen AI 400 vs Ryzen AI 300",
+    "best GPUs for AI inference on PC",
+    "AMD data center AI GPU lineup explained",
+    "how Ryzen AI NPUs work for local AI",
+    "hybrid AI workloads cloud vs local",
+    "AMD AI chips for training vs inference"
   ],
-  "search_intent": "Informational",
-  "recommended_title": "Humanoid Robots vs Self Driving Cars: How Physical AI Converges",
-  "recommended_slug": "humanoid-robots-vs-self-driving-cars",
+  "search_intent": "Comparative",
+  "recommended_title": "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
+  "recommended_slug": "amd-mi455-vs-mi440x-ryzen-ai-400",
   "outline_h2s": [
-    "What Physical AI Means in Robotics",
-    "From Self Driving Cars to Humanoid Robots",
-    "Shared Tech Stack: Perception, Planning and Control",
-    "Why Industrial Players Care About Humanoid Robots",
-    "Humanoid Robots in Warehouses and Factories",
-    "Key Technical Challenges Beyond Autonomous Driving",
-    "How Physical AI Changes Robotics Business Models",
-    "Risks, Safety and Regulatory Considerations",
-    "What This Convergence Means for the Future of Work",
-    "How to Keep Learning About Physical AI and Embodied Robotics"
+    "Overview of AMD’s AI chip lineup for cloud and PCs",
+    "AMD MI455 vs MI440X: architecture, specs and use cases",
+    "How AMD MI455 and MI440X compare to Nvidia data center GPUs",
+    "Ryzen AI 400 and AI Max+: what’s new for on‑device AI",
+    "Training vs inference: which AMD AI chips fit each workload",
+    "Designing hybrid AI workloads across data center and PCs",
+    "Choosing between cloud GPUs and Ryzen AI laptops for AI work",
+    "Future trends in local, edge and data center AI hardware"
   ]
 }
