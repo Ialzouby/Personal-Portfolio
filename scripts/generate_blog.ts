@@ -543,8 +543,10 @@ function injectIntoAllData(blog: BlogPost, importVar: string, imageFilename: str
 
   // Serialize (leave img unquoted; keys unquoted)
   const blogString = JSON.stringify(blogObj, null, 2)
-    .replace(/"img": "(aiImage_\d+)"/, "img: $1")
-    .replace(/"([^"]+)":/g, "$1:");
+  // keep img as a variable reference (unquoted)
+  .replace(/"img": "(aiImage_\d+)"/, "img: $1")
+  // unquote most keys (TS style) BUT don't touch keys that start with "@"
+  .replace(/"([^"@][^"]*)":/g, "$1:");
 
   // Append to end of `export const blogs = [ ... ];`
   const regex = /(export\s+const\s+blogs\s*=\s*\[)([\s\S]*)(\]\s*;)/;
