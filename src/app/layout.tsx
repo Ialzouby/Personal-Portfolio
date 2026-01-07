@@ -34,8 +34,10 @@ export default function RootLayout({
   <meta name="twitter:description" content="AI researcher building digital twins, motion models, and medical AI tools." />
   <meta name="twitter:image" content="https://issam.up.railway.app/images/p13.png" />
 
-  {/* Favicon (optional) */}
-  <link rel="icon" href="/favicon.ico" />
+  {/* Favicon - Explicit declarations required by Google (mandatory) */}
+  <link rel="icon" href="/favicon.ico" sizes="256x256" />
+  <link rel="icon" href="/favicon-192x192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
 
       <body className={jost.className}   cz-shortcut-listen="true">
