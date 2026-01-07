@@ -1,78 +1,78 @@
 {
   "winner_index": 0,
-  "winner_reason": "Nvidia’s Vera Rubin platform is the clearest frontier-step change in AI infrastructure announced this week, with strong, credible coverage, direct impact on the economics of large-scale training, and high long-tail SEO value for explainers on next-gen GPUs and rack-scale AI. It also avoids the recent Robotics/Models streak, incurring no diversity penalty and edging out Stargate UAE on evergreen search potential and concreteness.",
+  "winner_reason": "AMD’s new MI455/MI440X data-center accelerators and Ryzen AI PC chips are a major, well-sourced CES launch that affects cloud and client AI hardware roadmaps, has strong ongoing search interest around \"AI PCs\" and Nvidia competition, and avoids the recent Robotics/Data/Infra buckets, giving it the highest combined impact and SEO score with minimal diversity penalty.",
   "scored": [
     {
       "index": 0,
-      "bucket": "Data/Infra",
-      "news_impact": 22,
-      "seo_potential": 17,
-      "diversity_penalty": 0,
-      "final_score": 39,
-      "notes": "Major next-gen platform from the dominant AI hardware vendor; specific performance and cost claims (5x training, 1/4 GPUs, 1/7 token cost) give strong hooks for technical explainers and cost-analysis pieces. Strong CES timing and high media visibility. Distinct from recent Robotics/Models coverage, so no diversity penalty."
-    },
-    {
-      "index": 1,
-      "bucket": "Robotics",
-      "news_impact": 21,
-      "seo_potential": 16,
-      "diversity_penalty": 6,
-      "final_score": 31,
-      "notes": "High strategic significance in robotics (\"Android of robotics\" angle), but Robotics has been used heavily in recent weeks, so maximum diversity penalty. Good SEO around 'robot foundation models' and 'generalist robotics platform', but still behind Vera Rubin after penalties."
-    },
-    {
-      "index": 2,
-      "bucket": "Robotics",
-      "news_impact": 19,
-      "seo_potential": 14,
-      "diversity_penalty": 6,
-      "final_score": 27,
-      "notes": "Large acquisition and notable signal that automotive autonomy players are moving into humanoids. Strong business/strategy story, but less technical depth and evergreen explainer potential than Nvidia’s stack stories; heavily penalized for Robotics repetition."
-    },
-    {
-      "index": 3,
-      "bucket": "Robotics",
-      "news_impact": 18,
-      "seo_potential": 14,
-      "diversity_penalty": 6,
-      "final_score": 26,
-      "notes": "Important deployment roadmap and scale signal (30,000 robots/year, 2028+), but still prospective and tied to a specific factory/program; good for trend pieces but weaker evergreen search than infra/platform stories. Robotics repetition hurts score."
-    },
-    {
-      "index": 4,
-      "bucket": "Robotics",
-      "news_impact": 18,
-      "seo_potential": 15,
-      "diversity_penalty": 6,
-      "final_score": 27,
-      "notes": "Interesting convergence of DeepMind-scale models with Atlas humanoids. Solid SEO around 'robot foundation model' and 'Atlas AI', but still narrower and more speculative than a flagship GPU platform; diversity penalty keeps it below the winner."
-    },
-    {
-      "index": 5,
-      "bucket": "Creative AI",
-      "news_impact": 16,
-      "seo_potential": 15,
-      "diversity_penalty": 0,
-      "final_score": 31,
-      "notes": "Clear CES trend and good consumer-interest angle (companion robots, robot pets). Good SEO for product roundups and 'AI companion robot' queries, but more faddish and product-specific than deep infra topics, so lower news impact than Vera Rubin."
-    },
-    {
-      "index": 6,
-      "bucket": "AI Ethics & Policy",
-      "news_impact": 13,
-      "seo_potential": 13,
-      "diversity_penalty": 0,
-      "final_score": 26,
-      "notes": "Incremental policy/legal update, important for enterprise users but niche and relatively dry. Moderate evergreen value for compliance/search, but lower mass interest and momentum versus hardware/infrastructure stories."
-    },
-    {
-      "index": 7,
-      "bucket": "Data/Infra",
+      "bucket": "Edge AI & Hardware",
       "news_impact": 21,
       "seo_potential": 16,
       "diversity_penalty": 0,
       "final_score": 37,
-      "notes": "Stargate UAE underscores sovereign-scale AI infra and geopolitics of compute. Strong impact and good SEO around 'AI data center', 'multi-GW clusters', and cross-border AI infrastructure. Slightly less technical/spec-specific than Vera Rubin, so slightly weaker evergreen depth for detailed explainer content."
+      "notes": "Large chip vendor, major trade show, clear competitive angle vs. Nvidia, and strong ongoing interest in AI PCs and accelerators. Good for explainers on AI hardware trends and local AI on devices."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 22,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 33,
+      "notes": "Platform play for generalist robotics with foundation models and Hugging Face distribution; strong impact but Robotics has appeared multiple times recently, so higher diversity penalty (capped at 2 if impact were higher than 22, which it is not)."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 31,
+      "notes": "High-profile brands (Boston Dynamics, DeepMind, Hyundai) and factory deployment story; strong interest in humanoid robots but somewhat niche SEO vs. broader AI hardware and hit by Robotics repetition."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "Strategic acquisition showing auto-to-robotics convergence; interesting for industry watchers, but narrower impact and SEO and again penalized for Robotics repetition."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "CES trend piece with human interest angle around companion robots; decent explainer/evergreen potential, but impact is more consumer-gadget focused and category is saturated recently."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Concrete roadmap and numbers for humanoid deployment at scale in a factory; strong edge/industrial AI interest and good SEO for \"humanoid factory robots\" and \"physical AI\" explainers, but less general than AMD’s AI PC + data-center angle."
+    },
+    {
+      "index": 6,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Policy-document change highlights politically sensitive AI behavior debates; good for explainers on neutrality and alignment. Impact is meaningful but less broad than major hardware/platform moves."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 15,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Good evergreen SEO around \"AI music tools\" and creator workflows; impact is more incremental and spread over multiple past developments rather than a single breaking news event."
     }
   ]
 }

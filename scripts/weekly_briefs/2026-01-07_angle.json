@@ -1,27 +1,26 @@
 {
-  "primary_query": "Nvidia Vera Rubin vs Blackwell",
+  "primary_query": "AMD AI chips explained",
   "secondary_queries": [
-    "what is Nvidia Vera Rubin platform",
-    "Vera Rubin GPU architecture explained",
-    "Nvidia Vera Rubin performance vs Blackwell",
-    "mixture of experts training infrastructure",
-    "rack scale AI systems for large models",
-    "confidential computing for AI workloads",
-    "optimize GPU count and token cost for LLMs",
-    "data center design for next gen AI GPUs"
+    "what is an AI accelerator chip",
+    "AMD MI series vs Nvidia AI GPUs",
+    "Ryzen AI vs traditional CPU",
+    "how AI PCs use Ryzen AI processors",
+    "AMD data center AI architecture basics",
+    "local AI inference on laptops",
+    "choosing hardware for AI training and inference",
+    "AI accelerator vs GPU vs CPU"
   ],
-  "search_intent": "Comparative",
-  "recommended_title": "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
-  "recommended_slug": "nvidia-vera-rubin-vs-blackwell",
+  "search_intent": "Informational",
+  "recommended_title": "AMD AI Chips Explained: Accelerators and Ryzen AI PCs",
+  "recommended_slug": "amd-ai-chips-explained",
   "outline_h2s": [
-    "What Is Nvidia Vera Rubin and Why It Matters",
-    "How Vera Rubin Compares to Nvidia Blackwell",
-    "Inside the Vera Rubin GPU and System Architecture",
-    "Mixture‑of‑Experts Training on Vera Rubin",
-    "Rack‑Scale AI Infrastructure and Data Center Design",
-    "Confidential Computing and Security in Vera Rubin",
-    "Cost, Efficiency, and ROI for Large‑Scale AI Training",
-    "How to Choose Between Vera Rubin, Blackwell, and Other AI Platforms",
-    "Future AI Workloads Vera Rubin Is Designed to Run"
+    "What Are AI Accelerator Chips and Why They Matter",
+    "How AMD AI Chips Fit Into the Training and Inference Stack",
+    "Inside AMD Data Center AI Accelerators (MI Series Basics)",
+    "Ryzen AI Processors and the Rise of the AI PC",
+    "AI Workloads: When to Use CPU, GPU, NPU and AI Accelerators",
+    "AMD vs Competing AI Hardware Ecosystems at a High Level",
+    "Choosing AI Hardware for Local vs Cloud Inference",
+    "Future Trends in Client‑Side and Data Center AI Hardware"
   ]
 }
