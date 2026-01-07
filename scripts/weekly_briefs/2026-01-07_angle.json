@@ -1,0 +1,28 @@
+{
+  "primary_query": "robot operating system platforms",
+  "secondary_queries": [
+    "what is a robot operating system platform",
+    "full stack robotics platforms explained",
+    "robot foundation models for robotics",
+    "edge computing for industrial robots",
+    "general purpose robotics software stack",
+    "how to choose a robotics development platform",
+    "simulation tools for training robots",
+    "standardizing robotics hardware and software"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Robot Operating System Platforms: Full-Stack Robotics Explained",
+  "recommended_slug": "robot-operating-system-platforms",
+  "outline_h2s": [
+    "What Is a Robot Operating System Platform?",
+    "Key Building Blocks of a Full-Stack Robotics Platform",
+    "Robot Foundation Models and Why They Matter",
+    "Role of Simulation in Training and Testing Robots",
+    "Edge Hardware and Compute for Robotics Workloads",
+    "Generalist vs Single-Purpose Robotics Platforms",
+    "Benefits of Standardizing on a Robotics Platform",
+    "How to Evaluate Robot Operating System Platforms",
+    "Common Use Cases in Logistics, Manufacturing, and Services",
+    "Future Trends in Full-Stack Robotics Platforms"
+  ]
+}

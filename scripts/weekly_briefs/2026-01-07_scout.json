@@ -1,0 +1,116 @@
+{
+  "week": "2026-01-07",
+  "events": [
+    {
+      "event": "Nvidia unveils full-stack platform with robot foundation models and edge hardware, aiming to be the default OS for generalist robotics",
+      "category": "Robotics",
+      "why_it_matters": "Nvidia is trying to play for robotics what Android did for smartphones: provide a common stack of models, simulation, and edge compute that many robot makers can standardize on. If successful, this could reduce fragmentation, lower development costs, and accelerate deployment of general-purpose robots across logistics, manufacturing, and services.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
+          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Hyundai plans deployment of Boston Dynamics’ Atlas humanoid robots in its Georgia factory starting in 2028",
+      "category": "Robotics",
+      "why_it_matters": "A major automaker has put concrete dates and production plans behind humanoid robots on factory floors. This signals that general-purpose industrial robots are moving from demos to scheduled operational use, with implications for labor models, safety standards, and how physical AI is integrated into large-scale manufacturing.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
+          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Boston Dynamics and Google DeepMind partner to use foundation models in the next-generation Atlas humanoid robot",
+      "category": "Robotics",
+      "why_it_matters": "The collaboration combines a leading robotics platform with large AI foundation models from DeepMind. This could improve robots’ ability to perceive, plan, and interact more naturally with people, and is an example of frontier model capabilities being embedded directly into physical systems rather than remaining cloud-only.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
+          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Mobileye to acquire humanoid robotics startup Mentee Robotics for about $900 million",
+      "category": "Robotics",
+      "why_it_matters": "Mobileye is extending its autonomous driving stack into humanoid robots, using its perception and decision-making tech beyond vehicles. The size of the deal and the plan to commercially deploy humanoids around 2028 indicate growing capital commitment to embodied AI and competition with players like Tesla and Figure AI.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/world/asia-pacific/mobileye-acquire-humanoid-robotics-startup-mentee-900-million-2026-01-06/",
+          "title": "Mobileye to acquire humanoid robotics startup Mentee for $900 million",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Mammotion debuts Spino S1 Pro, a robot pool cleaner that can autonomously lift itself out of the water to charge",
+      "category": "Robotics",
+      "why_it_matters": "While narrow in application, Spino S1 Pro shows how consumer robots are adding more autonomy and complex mechanics, such as self-extraction from challenging environments. These capabilities can generalize to other service robots that must navigate and maintain themselves without human intervention.",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/854835/mammotion-spino-s1-pro-robot-pool-cleaner-ces-2026",
+          "title": "This robot pool cleaner can lift itself out of the water to charge",
+          "date": "2026-01-07"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia expands edge hardware offerings for physical AI as part of its generalist robotics push",
+      "category": "Edge AI",
+      "why_it_matters": "By pairing robot foundation models with specialized edge hardware, Nvidia is trying to move more intelligence onto devices instead of relying solely on the cloud. This can reduce latency, improve reliability, and enable more capable robots and machines to operate in factories, warehouses, and other environments with limited connectivity.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "Nvidia official blog (edge and robotics announcements around CES 2026)",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Rivian prepares rollout of an in-vehicle AI assistant powered by a hybrid stack including external LLMs and custom models",
+      "category": "Edge AI",
+      "why_it_matters": "Although announced earlier, Rivian’s early‑2026 deployment highlights a trend of embedding conversational and agentic AI directly into vehicles. Running AI locally and orchestrating it with cloud models enables more natural control of car functions, integration with external apps, and more context-aware assistance while maintaining some on-device responsiveness.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI details GPT‑5.2, an upgraded work-focused model with a more recent knowledge cutoff and improved reliability",
+      "category": "Models",
+      "why_it_matters": "GPT‑5.2 illustrates the incremental but frequent upgrade pattern for large models, improving general capabilities and updating the knowledge cutoff to August 2025. For organizations, this means fewer knowledge gaps and more stable performance on complex workflows, while signaling that frontier models will continue to evolve on a regular cadence.",
+      "sources": [
+        {
+          "url": "https://academy.openai.com/en/home/resources/latest-model",
+          "title": "Introducing GPT-5.2",
+          "date": "2025-12-11"
+        }
+      ]
+    }
+  ]
+}

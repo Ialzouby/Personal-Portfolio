@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Nvidia’s bid to become the default full-stack platform for generalist robotics has the broadest ecosystem impact, strong novelty, and deep explainer/SEO potential around ‘Android of robotics’ and ‘robot foundation models,’ edging out other robotics and edge AI stories.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Robotics",
+      "news_impact": 23,
+      "seo_potential": 18,
+      "diversity_penalty": 0,
+      "final_score": 41,
+      "notes": "Platform, not single deployment: affects many robot makers; strong narrative (Android-of-robots), ongoing CES and Nvidia news momentum, plus rich angles on ecosystems, standards, and full‑stack robotics."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 21,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Concrete 2028 deployment date by Hyundai gives credibility and labor implications; strong but narrower than a cross‑industry platform play."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "DeepMind + Boston Dynamics is a high‑signal pairing; good for explainers on foundation models in humanoids, but impact is more forward‑looking and tied to one product line."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Large acquisition validates humanoid robotics market; strong business/strategy angle, but less immediate technical or ecosystem breadth than Nvidia’s platform move."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 10,
+      "seo_potential": 11,
+      "diversity_penalty": 0,
+      "final_score": 21,
+      "notes": "Fun consumer robotics story with some autonomy innovation; niche use case and limited long‑tail search interest beyond product‑specific queries."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Important part of the same Nvidia push, but more incremental: edge hardware expansion and physical AI stack; strong for explainers on on‑device vs cloud robotics workloads."
+    },
+    {
+      "index": 6,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Shows trend of in‑vehicle assistants and hybrid stacks; decent automotive/consumer SEO value, but not as novel as frontier robotics platform news."
+    },
+    {
+      "index": 7,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Incremental GPT upgrade with recency value and strong branded search, but pattern is becoming routine; less unique narrative than a new robotics OS‑like platform."
+    }
+  ]
+}
