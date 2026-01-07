@@ -1,78 +1,78 @@
 {
   "winner_index": 0,
-  "winner_reason": "Nvidia’s bid to become the default full-stack platform for generalist robotics has the broadest ecosystem impact, strong novelty, and deep explainer/SEO potential around ‘Android of robotics’ and ‘robot foundation models,’ edging out other robotics and edge AI stories.",
+  "winner_reason": "The Mobileye–Mentee acquisition is a high‑credibility, near‑term commercial bet on humanoid 'physical AI' from a major public company, with a large deal size, strong news momentum, and clear strategic implications for both robotics and autonomous driving. It edges out Hyundai’s factory deployment news on impact and has stronger explainer/evergreen SEO potential around convergence of self‑driving stacks and humanoid robots.",
   "scored": [
     {
       "index": 0,
       "bucket": "Robotics",
-      "news_impact": 23,
-      "seo_potential": 18,
-      "diversity_penalty": 0,
-      "final_score": 41,
-      "notes": "Platform, not single deployment: affects many robot makers; strong narrative (Android-of-robots), ongoing CES and Nvidia news momentum, plus rich angles on ecosystems, standards, and full‑stack robotics."
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Major $900M acquisition by a leading ADAS/AV player; credible Reuters sourcing and strong signal that humanoid robots are moving from research to commercial strategy. SEO upside for explainers on convergence of autonomous driving and humanoid robotics, Mobileye’s strategy, and industrial humanoids. Robotics was used in the last post, so diversity penalty applies but is capped at 2 by the override rule since news_impact ≥ 22."
     },
     {
       "index": 1,
       "bucket": "Robotics",
       "news_impact": 21,
-      "seo_potential": 14,
-      "diversity_penalty": 0,
-      "final_score": 35,
-      "notes": "Concrete 2028 deployment date by Hyundai gives credibility and labor implications; strong but narrower than a cross‑industry platform play."
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 34,
+      "notes": "Hyundai committing to deploy Boston Dynamics’ Atlas at scale with a production timeline is a strong industrial signal, but it’s more of a roadmap than a concrete transaction. Good SEO for factory automation and labor impact of humanoids. Robotics repeat incurs a 2‑point penalty (not capped by override, as impact < 22). Slightly less impactful and less broadly explainer‑rich than the Mobileye deal."
     },
     {
       "index": 2,
       "bucket": "Robotics",
-      "news_impact": 20,
-      "seo_potential": 15,
-      "diversity_penalty": 0,
-      "final_score": 35,
-      "notes": "DeepMind + Boston Dynamics is a high‑signal pairing; good for explainers on foundation models in humanoids, but impact is more forward‑looking and tied to one product line."
+      "news_impact": 13,
+      "seo_potential": 12,
+      "diversity_penalty": 2,
+      "final_score": 23,
+      "notes": "Interesting consumer robotics product with CES buzz, but niche use case and modest strategic impact. Some SEO around robot pool cleaners and home robotics, though competition is high and not very evergreen. Robotics repeat yields a 2‑point penalty; overall weaker than industrial humanoid stories."
     },
     {
       "index": 3,
-      "bucket": "Robotics",
-      "news_impact": 19,
-      "seo_potential": 14,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 14,
+      "seo_potential": 15,
       "diversity_penalty": 0,
-      "final_score": 33,
-      "notes": "Large acquisition validates humanoid robotics market; strong business/strategy angle, but less immediate technical or ecosystem breadth than Nvidia’s platform move."
+      "final_score": 29,
+      "notes": "Synthesis piece on Edge AI trend from Bloomberg Intelligence; important but somewhat generic and sponsored. Good SEO potential for evergreen Edge AI explainers and edge inference vs cloud. No diversity penalty since it’s a different bucket from last week."
     },
     {
       "index": 4,
-      "bucket": "Robotics",
-      "news_impact": 10,
-      "seo_potential": 11,
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 17,
       "diversity_penalty": 0,
-      "final_score": 21,
-      "notes": "Fun consumer robotics story with some autonomy innovation; niche use case and limited long‑tail search interest beyond product‑specific queries."
+      "final_score": 33,
+      "notes": "Runway’s world model and Gen‑4.5 video with audio advance creative tooling and world‑model research themes. Solid SEO around world models, generative video, and creative workflows, but the underlying announcement is a few weeks old and more niche than OpenAI‑scale launches."
     },
     {
       "index": 5,
-      "bucket": "Edge AI & Hardware",
-      "news_impact": 18,
-      "seo_potential": 16,
+      "bucket": "Models",
+      "news_impact": 15,
+      "seo_potential": 14,
       "diversity_penalty": 0,
-      "final_score": 34,
-      "notes": "Important part of the same Nvidia push, but more incremental: edge hardware expansion and physical AI stack; strong for explainers on on‑device vs cloud robotics workloads."
+      "final_score": 29,
+      "notes": "Incremental but meaningful updates on safety‑aligned deployment and continuous iteration for powerful coding/agentic models. Good explainer SEO on release‑notes culture and model governance, but not a headline‑grabbing single event."
     },
     {
       "index": 6,
-      "bucket": "Edge AI & Hardware",
-      "news_impact": 15,
-      "seo_potential": 15,
-      "diversity_penalty": 0,
-      "final_score": 30,
-      "notes": "Shows trend of in‑vehicle assistants and hybrid stacks; decent automotive/consumer SEO value, but not as novel as frontier robotics platform news."
-    },
-    {
-      "index": 7,
-      "bucket": "Models",
+      "bucket": "Creative AI",
       "news_impact": 19,
       "seo_potential": 17,
       "diversity_penalty": 0,
       "final_score": 36,
-      "notes": "Incremental GPT upgrade with recency value and strong branded search, but pattern is becoming routine; less unique narrative than a new robotics OS‑like platform."
+      "notes": "OpenAI’s Image 1.5 rollout has strong user impact in design and marketing workflows and competitive implications in multimodal. High SEO potential around prompts, comparisons, and toolchain choices. Ties Mobileye on final score, but is slightly less structurally important and less novel than a $900M humanoid acquisition, so it loses the tiebreak."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 14,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Reinforces the Edge AI/industrial inspection trend, focused on infra and MLOps. Solid evergreen SEO for edge MLOps and OT integration, but the underlying source overlaps with the other Bloomberg Edge AI item and is more incremental than the top contenders."
     }
   ]
 }

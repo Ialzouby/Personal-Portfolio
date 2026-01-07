@@ -1,28 +1,27 @@
 {
-  "primary_query": "robot operating system platforms",
+  "primary_query": "humanoid robots vs self driving cars",
   "secondary_queries": [
-    "what is a robot operating system platform",
-    "full stack robotics platforms explained",
-    "robot foundation models for robotics",
-    "edge computing for industrial robots",
-    "general purpose robotics software stack",
-    "how to choose a robotics development platform",
-    "simulation tools for training robots",
-    "standardizing robotics hardware and software"
+    "how self driving car tech powers humanoid robots",
+    "physical ai in robotics explained",
+    "humanoid robots for warehouse automation",
+    "autonomous driving software stack for robots",
+    "perception and planning in humanoid robots",
+    "general purpose humanoid robots for industry",
+    "future of physical ai and embodied robots"
   ],
   "search_intent": "Informational",
-  "recommended_title": "Robot Operating System Platforms: Full-Stack Robotics Explained",
-  "recommended_slug": "robot-operating-system-platforms",
+  "recommended_title": "Humanoid Robots vs Self Driving Cars: How Physical AI Converges",
+  "recommended_slug": "humanoid-robots-vs-self-driving-cars",
   "outline_h2s": [
-    "What Is a Robot Operating System Platform?",
-    "Key Building Blocks of a Full-Stack Robotics Platform",
-    "Robot Foundation Models and Why They Matter",
-    "Role of Simulation in Training and Testing Robots",
-    "Edge Hardware and Compute for Robotics Workloads",
-    "Generalist vs Single-Purpose Robotics Platforms",
-    "Benefits of Standardizing on a Robotics Platform",
-    "How to Evaluate Robot Operating System Platforms",
-    "Common Use Cases in Logistics, Manufacturing, and Services",
-    "Future Trends in Full-Stack Robotics Platforms"
+    "What Physical AI Means in Robotics",
+    "From Self Driving Cars to Humanoid Robots",
+    "Shared Tech Stack: Perception, Planning and Control",
+    "Why Industrial Players Care About Humanoid Robots",
+    "Humanoid Robots in Warehouses and Factories",
+    "Key Technical Challenges Beyond Autonomous Driving",
+    "How Physical AI Changes Robotics Business Models",
+    "Risks, Safety and Regulatory Considerations",
+    "What This Convergence Means for the Future of Work",
+    "How to Keep Learning About Physical AI and Embodied Robotics"
   ]
 }

@@ -2,55 +2,9 @@
   "week": "2026-01-07",
   "events": [
     {
-      "event": "Nvidia unveils full-stack platform with robot foundation models and edge hardware, aiming to be the default OS for generalist robotics",
+      "event": "Mobileye to acquire humanoid robotics startup Mentee Robotics for about $900 million to expand into humanoid 'physical AI' systems",
       "category": "Robotics",
-      "why_it_matters": "Nvidia is trying to play for robotics what Android did for smartphones: provide a common stack of models, simulation, and edge compute that many robot makers can standardize on. If successful, this could reduce fragmentation, lower development costs, and accelerate deployment of general-purpose robots across logistics, manufacturing, and services.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
-          "title": "Nvidia wants to be the default platform for generalist robotics",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Hyundai plans deployment of Boston Dynamics’ Atlas humanoid robots in its Georgia factory starting in 2028",
-      "category": "Robotics",
-      "why_it_matters": "A major automaker has put concrete dates and production plans behind humanoid robots on factory floors. This signals that general-purpose industrial robots are moving from demos to scheduled operational use, with implications for labor models, safety standards, and how physical AI is integrated into large-scale manufacturing.",
-      "sources": [
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Boston Dynamics and Google DeepMind partner to use foundation models in the next-generation Atlas humanoid robot",
-      "category": "Robotics",
-      "why_it_matters": "The collaboration combines a leading robotics platform with large AI foundation models from DeepMind. This could improve robots’ ability to perceive, plan, and interact more naturally with people, and is an example of frontier model capabilities being embedded directly into physical systems rather than remaining cloud-only.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Mobileye to acquire humanoid robotics startup Mentee Robotics for about $900 million",
-      "category": "Robotics",
-      "why_it_matters": "Mobileye is extending its autonomous driving stack into humanoid robots, using its perception and decision-making tech beyond vehicles. The size of the deal and the plan to commercially deploy humanoids around 2028 indicate growing capital commitment to embodied AI and competition with players like Tesla and Figure AI.",
+      "why_it_matters": "A major autonomous driving company is buying a humanoid robotics startup to reuse its perception and decision‑making stack in embodied robots, signaling deeper convergence between self‑driving tech and general‑purpose factory/warehouse automation. The valuation and strategic fit suggest large industrial players now see humanoid robots as a near‑term commercial product, not a research project.",
       "sources": [
         {
           "url": "https://www.reuters.com/world/asia-pacific/mobileye-acquire-humanoid-robotics-startup-mentee-900-million-2026-01-06/",
@@ -60,55 +14,86 @@
       ]
     },
     {
-      "event": "Mammotion debuts Spino S1 Pro, a robot pool cleaner that can autonomously lift itself out of the water to charge",
+      "event": "Hyundai Motor Group announces plan to deploy Boston Dynamics’ Atlas humanoid robots at its U.S. factory from 2028",
       "category": "Robotics",
-      "why_it_matters": "While narrow in application, Spino S1 Pro shows how consumer robots are adding more autonomy and complex mechanics, such as self-extraction from challenging environments. These capabilities can generalize to other service robots that must navigate and maintain themselves without human intervention.",
+      "why_it_matters": "Hyundai is committing to production deployment of humanoid robots on a defined timeline and building capacity to manufacture around 30,000 units per year. Using robots for hazardous and repetitive tasks in an automotive plant will be an important real‑world test of humanoids’ reliability, economics, and impact on labor, and shows big manufacturers treating general‑purpose robots as part of their future workforce planning.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
+          "title": "Hyundai Motor Group plans to deploy humanoid robots at U.S. factory from 2028",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Mammotion debuts Spino S1 Pro robot pool cleaner at CES 2026 with autonomous self‑lifting and docking",
+      "category": "Robotics",
+      "why_it_matters": "The device applies advanced consumer robotics—onboard vision, multi‑sensor navigation, and an articulated docking arm—to a routine home maintenance task. It illustrates how more capable, semi‑autonomous robots are moving into everyday environments, with designs that handle complex 3D spaces (steps, corners, walls) and manage their own power and charging.",
       "sources": [
         {
           "url": "https://www.theverge.com/tech/854835/mammotion-spino-s1-pro-robot-pool-cleaner-ces-2026",
-          "title": "This robot pool cleaner can lift itself out of the water to charge",
+          "title": "This robot pool cleaner lifts itself out of the water to charge",
           "date": "2026-01-07"
         }
       ]
     },
     {
-      "event": "Nvidia expands edge hardware offerings for physical AI as part of its generalist robotics push",
+      "event": "Bloomberg Intelligence highlights accelerating adoption of Edge AI for low‑latency, privacy‑sensitive applications at the network edge",
       "category": "Edge AI",
-      "why_it_matters": "By pairing robot foundation models with specialized edge hardware, Nvidia is trying to move more intelligence onto devices instead of relying solely on the cloud. This can reduce latency, improve reliability, and enable more capable robots and machines to operate in factories, warehouses, and other environments with limited connectivity.",
+      "why_it_matters": "Vendors and enterprises are increasingly moving model inference from centralized clouds to on‑device and edge infrastructure to reduce latency and bandwidth while keeping sensitive data local. The trend is reshaping system design in sectors like automotive, manufacturing, and clinical monitoring, and it drives demand for specialized edge‑class hardware and optimized models.",
       "sources": [
         {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://blogs.nvidia.com",
-          "title": "Nvidia official blog (edge and robotics announcements around CES 2026)",
-          "date": "2026-01-05"
+          "url": "https://sponsored.bloomberg.com/article/business-reporter/the-impact-of-edge-ai",
+          "title": "The Impact of Edge AI",
+          "date": "2026-01-02"
         }
       ]
     },
     {
-      "event": "Rivian prepares rollout of an in-vehicle AI assistant powered by a hybrid stack including external LLMs and custom models",
-      "category": "Edge AI",
-      "why_it_matters": "Although announced earlier, Rivian’s early‑2026 deployment highlights a trend of embedding conversational and agentic AI directly into vehicles. Running AI locally and orchestrating it with cloud models enables more natural control of car functions, integration with external apps, and more context-aware assistance while maintaining some on-device responsiveness.",
+      "event": "Runway details its GWM‑1 world model and latest Gen‑4.5 video model with native audio generation",
+      "category": "Creative AI",
+      "why_it_matters": "GWM‑1 reflects a push toward world models that learn physical dynamics and temporal consistency, which can improve planning and long‑form video synthesis. Combined with native audio in Gen‑4.5, this advances end‑to‑end generative tools for video production and interactive media, reducing manual post‑production work and raising new questions about provenance and creative labor.",
       "sources": [
         {
-          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
-          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "url": "https://techcrunch.com/2025/12/11/runway-releases-its-first-world-model-adds-native-audio-to-latest-video-model/",
+          "title": "Runway releases its first world model, adds native audio to latest video model",
           "date": "2025-12-11"
         }
       ]
     },
     {
-      "event": "OpenAI details GPT‑5.2, an upgraded work-focused model with a more recent knowledge cutoff and improved reliability",
+      "event": "OpenAI model release notes updated, reflecting continued iteration on safety‑aligned deployment of GPT‑5.1‑Codex‑Max and related models",
       "category": "Models",
-      "why_it_matters": "GPT‑5.2 illustrates the incremental but frequent upgrade pattern for large models, improving general capabilities and updating the knowledge cutoff to August 2025. For organizations, this means fewer knowledge gaps and more stable performance on complex workflows, while signaling that frontier models will continue to evolve on a regular cadence.",
+      "why_it_matters": "The notes show ongoing adjustments to model behavior and policies aimed at earlier intervention on high‑risk content and clearer communication of limitations. This exemplifies a shift from static model releases toward continuous, policy‑driven refinement, especially for highly capable coding and agentic models used in long‑running workflows.",
       "sources": [
         {
-          "url": "https://academy.openai.com/en/home/resources/latest-model",
-          "title": "Introducing GPT-5.2",
-          "date": "2025-12-11"
+          "url": "https://help.openai.com/ja-jp/articles/9624314-model-release-notes",
+          "title": "Model Release Notes",
+          "date": "2026-01-04"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI’s GPT Image 1.5 model rolls out with faster, more controllable image generation inside ChatGPT and via API",
+      "category": "Creative AI",
+      "why_it_matters": "Improved instruction following, finer‑grained edits, and significantly faster generation times lower friction for professional design, marketing, and prototyping workflows that rely on iterative visual output. It also intensifies competition among leading multimodal models, influencing which toolchains creatives and developers standardize on.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/",
+          "title": "OpenAI continues on its 'code red' warpath with new image generation model",
+          "date": "2025-12-16"
+        }
+      ]
+    },
+    {
+      "event": "Bloomberg analysis underscores growing enterprise investment in Edge AI for real‑time industrial inspection and safety monitoring",
+      "category": "Data/Infra",
+      "why_it_matters": "By running vision and analytics models directly on factory‑floor and field devices, firms can detect defects and safety issues in milliseconds without shipping raw data to the cloud. This pushes AI workloads deeper into operational technology environments, requiring new data‑pipeline designs, device management, and MLOps approaches tailored to distributed, resource‑constrained hardware.",
+      "sources": [
+        {
+          "url": "https://sponsored.bloomberg.com/article/business-reporter/the-impact-of-edge-ai",
+          "title": "The Impact of Edge AI",
+          "date": "2026-01-02"
         }
       ]
     }

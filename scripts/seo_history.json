@@ -1,14 +1,18 @@
 {
   "primary_queries": [
-    "robot operating system platforms"
+    "robot operating system platforms",
+    "humanoid robots vs self driving cars"
   ],
   "titles": [
-    "Robot Operating System Platforms: Full-Stack Robotics Explained"
+    "Robot Operating System Platforms: Full-Stack Robotics Explained",
+    "Humanoid Robots vs Self Driving Cars: How Physical AI Converges"
   ],
   "slugs": [
-    "robot-operating-system-platforms"
+    "robot-operating-system-platforms",
+    "humanoid-robots-vs-self-driving-cars"
   ],
   "buckets": [
+    "Robotics",
     "Robotics"
   ]
 }
