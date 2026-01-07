@@ -1,78 +1,78 @@
 {
   "winner_index": 0,
-  "winner_reason": "AMD’s new MI455/MI440X data center chips and Ryzen AI 400 PC processors are a major, well‑sourced CES launch that directly affects hyperscalers, AI model providers, and the emerging AI PC category. It has high news impact, strong ongoing SEO value around AI chips and AI PCs, and avoids the recent Robotics bucket, giving it the top final score.",
+  "winner_reason": "Nvidia’s Vera Rubin platform is the clearest frontier-step change in AI infrastructure announced this week, with strong, credible coverage, direct impact on the economics of large-scale training, and high long-tail SEO value for explainers on next-gen GPUs and rack-scale AI. It also avoids the recent Robotics/Models streak, incurring no diversity penalty and edging out Stargate UAE on evergreen search potential and concreteness.",
   "scored": [
     {
       "index": 0,
-      "bucket": "Models",
-      "news_impact": 21,
-      "seo_potential": 16,
+      "bucket": "Data/Infra",
+      "news_impact": 22,
+      "seo_potential": 17,
       "diversity_penalty": 0,
-      "final_score": 37,
-      "notes": "Major CES 2026 announcement from a top GPU competitor; shapes AI training/inference market and AI PC trend. Strong, continuing search interest around AMD vs Nvidia, AI accelerators, and AI PCs. Different bucket from recent Robotics posts, so no penalty."
+      "final_score": 39,
+      "notes": "Major next-gen platform from the dominant AI hardware vendor; specific performance and cost claims (5x training, 1/4 GPUs, 1/7 token cost) give strong hooks for technical explainers and cost-analysis pieces. Strong CES timing and high media visibility. Distinct from recent Robotics/Models coverage, so no diversity penalty."
     },
     {
       "index": 1,
       "bucket": "Robotics",
-      "news_impact": 20,
-      "seo_potential": 15,
-      "diversity_penalty": 4,
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
       "final_score": 31,
-      "notes": "Nvidia staking out generalist robotics with open foundation models and a full stack is strategically important and timely. Good SEO for ‘robot foundation models’ and ‘Nvidia robotics platform’, but Robotics has appeared 2+ times recently, so a 4‑point diversity penalty."
+      "notes": "High strategic significance in robotics (\"Android of robotics\" angle), but Robotics has been used heavily in recent weeks, so maximum diversity penalty. Good SEO around 'robot foundation models' and 'generalist robotics platform', but still behind Vera Rubin after penalties."
     },
     {
       "index": 2,
       "bucket": "Robotics",
-      "news_impact": 18,
+      "news_impact": 19,
       "seo_potential": 14,
-      "diversity_penalty": 4,
-      "final_score": 28,
-      "notes": "Hyundai’s plan for large‑scale humanoid deployment in a US factory is significant but farther out (2028), lowering immediate impact. Solid SEO around ‘factory humanoid robots’ and ‘Hyundai Boston Dynamics’, but same Robotics bucket penalty applies."
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Large acquisition and notable signal that automotive autonomy players are moving into humanoids. Strong business/strategy story, but less technical depth and evergreen explainer potential than Nvidia’s stack stories; heavily penalized for Robotics repetition."
     },
     {
       "index": 3,
       "bucket": "Robotics",
-      "news_impact": 19,
-      "seo_potential": 15,
-      "diversity_penalty": 4,
-      "final_score": 30,
-      "notes": "DeepMind–Boston Dynamics partnership is a notable step toward general‑purpose humanoids and multimodal control. Good explainer potential on robot foundation models. Still Robotics, so diversity penalty reduces its competitiveness."
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Important deployment roadmap and scale signal (30,000 robots/year, 2028+), but still prospective and tied to a specific factory/program; good for trend pieces but weaker evergreen search than infra/platform stories. Robotics repetition hurts score."
     },
     {
       "index": 4,
       "bucket": "Robotics",
-      "news_impact": 16,
-      "seo_potential": 13,
-      "diversity_penalty": 4,
-      "final_score": 25,
-      "notes": "Mobileye’s $900M move into humanoid robotics is meaningful for the ‘physical AI’ M&A landscape and adjacent markets, but narrower audience than Nvidia/AMD system‑level moves. SEO around the acquisition is more news‑spiky than evergreen; Robotics penalty applies."
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Interesting convergence of DeepMind-scale models with Atlas humanoids. Solid SEO around 'robot foundation model' and 'Atlas AI', but still narrower and more speculative than a flagship GPU platform; diversity penalty keeps it below the winner."
     },
     {
       "index": 5,
-      "bucket": "Data/Infra",
-      "news_impact": 19,
-      "seo_potential": 17,
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 15,
       "diversity_penalty": 0,
-      "final_score": 36,
-      "notes": "Nvidia’s Vera Rubin multi‑GPU platform is a high‑impact infra story for large‑scale training/inference and data center planning. Strong ongoing SEO for ‘multi‑GPU systems’, ‘AI training infrastructure’, and ‘Nvidia Vera Rubin’. Different bucket from recent posts; narrowly misses the top score but is a close second."
+      "final_score": 31,
+      "notes": "Clear CES trend and good consumer-interest angle (companion robots, robot pets). Good SEO for product roundups and 'AI companion robot' queries, but more faddish and product-specific than deep infra topics, so lower news impact than Vera Rubin."
     },
     {
       "index": 6,
-      "bucket": "Creative AI",
-      "news_impact": 14,
-      "seo_potential": 15,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 13,
+      "seo_potential": 13,
       "diversity_penalty": 0,
-      "final_score": 29,
-      "notes": "Companion robots and robot pets as a CES trend are culturally interesting with lifestyle/consumer SEO value (e.g., ‘best AI companion robot’). Impact is more consumer‑gadget and less core AI stack, so overall score is moderate despite no diversity penalty."
+      "final_score": 26,
+      "notes": "Incremental policy/legal update, important for enterprise users but niche and relatively dry. Moderate evergreen value for compliance/search, but lower mass interest and momentum versus hardware/infrastructure stories."
     },
     {
       "index": 7,
-      "bucket": "Edge AI & Hardware",
-      "news_impact": 18,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
       "seo_potential": 16,
       "diversity_penalty": 0,
-      "final_score": 34,
-      "notes": "A useful synthesis trend piece on on‑device AI across PCs and robotics hardware. Good for evergreen explainers on ‘edge vs cloud AI inference’. Broad but somewhat derivative of the underlying AMD/Nvidia news, so slightly lower impact than the primary chip announcements."
+      "final_score": 37,
+      "notes": "Stargate UAE underscores sovereign-scale AI infra and geopolitics of compute. Strong impact and good SEO around 'AI data center', 'multi-GW clusters', and cross-border AI infrastructure. Slightly less technical/spec-specific than Vera Rubin, so slightly weaker evergreen depth for detailed explainer content."
     }
   ]
 }
