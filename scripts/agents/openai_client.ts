@@ -4,7 +4,7 @@ require("dotenv").config();
 const { OpenAI } = require("openai");
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5-pro";
+const DEFAULT_MODEL = process.env.OPENAI_MODEL || "gpt-5.1";
 
 // Default timeout for OpenAI calls (60 seconds)
 const OPENAI_TIMEOUT_MS = 60_000;
