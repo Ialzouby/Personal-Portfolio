@@ -6,7 +6,8 @@
     "Nvidia Vera Rubin vs Blackwell",
     "AMD AI chips explained",
     "edge ai pc vs cloud inference",
-    "automotive ai assistants and autonomy"
+    "automotive ai assistants and autonomy",
+    "Nvidia Rubin architecture explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -15,7 +16,8 @@
     "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
     "AMD AI Chips Explained: Accelerators and Ryzen AI PCs",
     "Edge AI PC vs Cloud Inference: How Local AI Changes Compute",
-    "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars"
+    "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars",
+    "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -24,7 +26,8 @@
     "nvidia-vera-rubin-vs-blackwell",
     "amd-ai-chips-explained",
     "edge-ai-pc-vs-cloud-inference",
-    "automotive-ai-assistants-and-autonomy"
+    "automotive-ai-assistants-and-autonomy",
+    "nvidia-rubin-architecture-explained"
   ],
   "buckets": [
     "Robotics",
@@ -33,6 +36,7 @@
     "Data/Infra",
     "Models",
     "Edge AI",
-    "Edge AI"
+    "Edge AI",
+    "Data/Infra"
   ]
 }

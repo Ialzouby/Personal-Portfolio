@@ -1,24 +1,24 @@
 {
-  "winner_index": 4,
-  "winner_reason": "The CES 2026 automotive AI pivot has broad industry impact across autos, autonomy, assistants, and Nvidia’s ecosystem, with strong ongoing search interest around in-car AI, robotaxis, and edge compute. It fits a different bucket from recent posts (avoiding the robotics repetition) and offers high explainer/analysis potential on how AI is reshaping the car industry’s priorities.",
+  "winner_index": 0,
+  "winner_reason": "Nvidia’s Rubin architecture is a major, credible inflection point in AI infrastructure with multi-year impact on model training and inference economics. It has strong evergreen SEO potential around next-gen GPUs and AI compute, and its Data/Infra bucket helps diversify away from our recent focus on Robotics and Edge AI while still landing the top final score.",
   "scored": [
     {
       "index": 0,
-      "bucket": "Robotics",
-      "news_impact": 22,
+      "bucket": "Data/Infra",
+      "news_impact": 23,
       "seo_potential": 17,
-      "diversity_penalty": 6,
-      "final_score": 33,
-      "notes": "Potentially defining move in generalist robotics; Nvidia trying to become default stack is highly consequential and well-sourced. Strong SEO for explainer on 'robot foundation models' and 'Android of robotics'. However, robotics has been heavily covered recently (appears 3+ times in last 6), so maximum diversity penalty applies; override rule does not reduce it because impact is at threshold (22) but not clearly above."
+      "diversity_penalty": 0,
+      "final_score": 40,
+      "notes": "Next-gen platform replacing Blackwell with large reported gains in training, inference, and efficiency; shapes frontier AI compute roadmap. High authority coverage and strong long-tail interest for explainers on Rubin vs. Blackwell, data center planning, and cost/performance. Data/Infra hasn’t appeared in the last 7 posts, so no diversity penalty."
     },
     {
       "index": 1,
-      "bucket": "Robotics",
-      "news_impact": 20,
-      "seo_potential": 15,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 19,
+      "seo_potential": 16,
       "diversity_penalty": 6,
       "final_score": 29,
-      "notes": "High-profile partnership (Boston Dynamics + DeepMind) with strong narrative appeal, but more forward-looking and less concrete than Nvidia’s platform move. Good SEO around 'humanoid robots + foundation models'. Suffers full robotics diversity penalty."
+      "notes": "Important for competitive landscape vs. Nvidia and for AI PC/edge trends, but incremental vs. a brand-new architecture. Good SEO around MI455/MI440X, MI500 roadmap, and Ryzen AI 400 local inference. Edge AI appears twice in the last 7 (and in 2 of the last 4), so maximum diversity penalty."
     },
     {
       "index": 2,
@@ -27,52 +27,52 @@
       "seo_potential": 16,
       "diversity_penalty": 6,
       "final_score": 31,
-      "notes": "Clear industrial deployment timeline for humanoids is important and concrete, with strong labor/automation angle. Solid SEO for 'humanoid robots in factories' and 'Hyundai robots 2028'. Still in the overused robotics bucket, so max penalty."
+      "notes": "Potentially foundational platform for generalist robotics with open models on Hugging Face. Strong interest in ‘Android of robotics’ narrative and stack explainers. However, Robotics has been the dominant recent theme (3 of last 7, 2 of last 4), so maximum penalty."
     },
     {
       "index": 3,
-      "bucket": "Creative AI",
-      "news_impact": 17,
+      "bucket": "Robotics",
+      "news_impact": 20,
       "seo_potential": 15,
-      "diversity_penalty": 0,
-      "final_score": 32,
-      "notes": "Companion and pet robots are a visible CES trend with cultural resonance, but less structurally important than platform/industry shifts. Good SEO around 'AI companion robots' and 'robot pets', and a fresh bucket vs recent posts (no penalty). Narrowly behind the winner on combined impact + SEO."
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "High-profile partnership (Boston Dynamics + DeepMind) and clear step toward general-purpose humanoids. Good SEO around Atlas + Gemini, but somewhat narrower and more speculative than an infra/platform story. Robotics repetition triggers max penalty."
     },
     {
       "index": 4,
-      "bucket": "Edge AI & Hardware",
-      "news_impact": 21,
-      "seo_potential": 18,
-      "diversity_penalty": 2,
-      "final_score": 37,
-      "notes": "Industry-wide pivot from EV hardware to AI/software is a major strategic reorientation in autos, touching autonomy, assistants, robotaxis, and Nvidia’s edge stack. Strong ongoing SEO around 'AI in cars', 'Nvidia automotive AI', 'robotaxis CES'. Edge AI was used recently, but only once in last six, so minimal diversity penalty. Best balance of impact, search value, and topical diversity."
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Notable for concrete deployment roadmap (2028+), but medium-term and single-manufacturer focus lowers near-term impact. SEO decent around ‘humanoid robots in factories’ but less evergreen than core platform or chip stories. Robotics bucket heavily overused."
     },
     {
       "index": 5,
-      "bucket": "Models",
-      "news_impact": 18,
-      "seo_potential": 16,
-      "diversity_penalty": 2,
-      "final_score": 32,
-      "notes": "GPT-5.2 is an important underlying model, but it’s a December release rather than fresh news, and improvements appear incremental. Evergreen SEO for 'GPT-5.2' explainers and migration guides, yet 'Models' has appeared multiple times recently, warranting a modest penalty."
+      "bucket": "Robotics",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Signals capital flowing into humanoid robotics and the entry of another large player, but still more market-structure than technology inflection. Good for M&A, strategy, and ‘Mobileye 3.0’ explainers. Robotics penalty applies."
     },
     {
       "index": 6,
-      "bucket": "AI Ethics & Policy",
-      "news_impact": 19,
+      "bucket": "Creative AI",
+      "news_impact": 16,
       "seo_potential": 15,
       "diversity_penalty": 0,
-      "final_score": 34,
-      "notes": "Valuable synthesis of ethical questions around humanoids and companions, with strong think-piece potential. SEO is decent for 'AI ethics of robots/companions', but it’s more reflective and derivative of the other CES stories than a standalone news driver. No diversity penalty as ethics/policy hasn’t been used recently."
+      "final_score": 31,
+      "notes": "Captures a broad CES trend of embodied consumer AI. Lots of potential for listicles, comparisons, and trend pieces (‘companion robots’, ‘AI pets’), but more diffuse and gadget-focused, with less structural impact than Rubin. Creative AI not used recently, so no penalty."
     },
     {
       "index": 7,
-      "bucket": "Data/Infra",
-      "news_impact": 20,
-      "seo_potential": 17,
-      "diversity_penalty": 4,
-      "final_score": 33,
-      "notes": "Important evolution of AI infra into embodied/robotic deployments, closely tied to Nvidia’s stack and prior Cosmos work. Good technical SEO for 'robotics foundation models infra', but 'Data/Infra' appears in the recent list, triggering a mid-level diversity penalty."
+      "bucket": "AI in Healthcare",
+      "news_impact": 13,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 27,
+      "notes": "Niche but interesting example of social/companion robots in elder care. Good ethical and policy angle, but single-product, early-stage, and not a clinical breakthrough, which limits impact. Healthcare AI bucket unused recently, so no penalty."
     }
   ]
 }

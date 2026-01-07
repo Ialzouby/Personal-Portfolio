@@ -2,9 +2,43 @@
   "week": "2026-01-07",
   "events": [
     {
-      "event": "Nvidia unveils a full-stack platform and open robot foundation models to become the 'Android of generalist robotics' at CES 2026.",
+      "event": "Nvidia launches Vera Rubin AI computing architecture, successor to Blackwell",
+      "category": "Data/Infra",
+      "why_it_matters": "Rubin is Nvidia’s next-generation AI computing platform, now in full production and set to replace Blackwell later this year. Nvidia reports ~3.5x faster training and ~5x faster inference than Blackwell, plus up to 8x more inference compute per watt. This materially increases available compute for large-scale model training and deployment, and locks in Nvidia’s lead as the primary infrastructure provider for frontier AI over the next several years.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-launches-powerful-new-rubin-chip-architecture",
+          "title": "Nvidia launches powerful new Rubin chip architecture",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
+          "title": "The biggest Nvidia announcements at CES 2026",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "AMD unveils new MI455/MI440X data center AI chips and Ryzen AI 400 PC processors at CES",
+      "category": "Edge AI",
+      "why_it_matters": "AMD expanded its AI lineup with MI455 and MI440X accelerators for servers and enterprise data centers and previewed the MI500 series, while also showing Ryzen AI 400 and Ryzen AI Max+ chips for AI PCs aimed at running local inference. This strengthens competition with Nvidia in the cloud and accelerates the shift toward client devices capable of running more capable on-device models, which could reduce reliance on cloud inference for many applications.",
+      "sources": [
+        {
+          "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
+          "title": "AMD shows off new higher performing AI chip at CES event",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
+          "title": "The biggest Nvidia announcements at CES 2026",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia launches full-stack robotics platform with open robot foundation models",
       "category": "Robotics",
-      "why_it_matters": "Nvidia is trying to standardize the software, models, and edge hardware stack for physical AI, much like Android did for smartphones. By releasing open robot foundation models and simulation tools (hosted on platforms like Hugging Face) and tying them to its own chips, Nvidia is positioning itself as the default platform for general-purpose robots that can plan and adapt across many tasks and environments. If widely adopted, this could accelerate interoperability and reduce fragmentation in the robotics ecosystem, but also concentrate power and dependency on Nvidia’s stack.",
+      "why_it_matters": "Nvidia introduced a stack of robot foundation models, simulation tools, and edge hardware aimed at becoming a default platform for generalist robotics, analogous to Android for smartphones. The open models, hosted on Hugging Face, are designed to let robots reason and adapt across many tasks and environments. If widely adopted, this could standardize core AI capabilities across diverse robot hardware and accelerate development of more general-purpose “physical AI” systems.",
       "sources": [
         {
           "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
@@ -19,26 +53,26 @@
       ]
     },
     {
-      "event": "Boston Dynamics and Google DeepMind partner to build an Atlas humanoid powered by large AI foundation models.",
+      "event": "Boston Dynamics and Google DeepMind partner on next-gen Atlas humanoid robot using foundation models",
       "category": "Robotics",
-      "why_it_matters": "The partnership aims to integrate Google DeepMind’s foundation models into Boston Dynamics’ next-generation Atlas humanoid to improve its ability to act more naturally and safely around people. Using large, general-purpose models for perception, planning, and interaction could move humanoids from scripted demos toward more flexible, human-centric behavior. It also exemplifies a broader pattern of combining advanced cloud-scale AI with embodied robots, raising both capabilities and questions about reliability, controllability, and deployment in human workplaces.",
+      "why_it_matters": "Boston Dynamics is partnering with Google DeepMind to integrate large multimodal foundation models (including Gemini Robotics) into the next generation of its Atlas humanoid robots. The goal is to develop a robot foundation model that can generalize behaviors across tasks and hardware and make Atlas more capable and natural around people. This represents a significant step toward combining state-of-the-art general AI with industrial-grade humanoid platforms.",
       "sources": [
         {
           "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "title": "Boston Dynamics' next-gen humanoid robot will have Google DeepMind DNA",
           "date": "2026-01-05"
         },
         {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
+          "url": "https://deepmind.google/discover/blog/gemini-robotics/",
+          "title": "Gemini Robotics: advancing general-purpose robots with Gemini",
+          "date": "2025-03-19"
         }
       ]
     },
     {
-      "event": "Hyundai announces plan to deploy Boston Dynamics’ Atlas humanoid robots in a U.S. factory starting in 2028.",
+      "event": "Hyundai to deploy Boston Dynamics Atlas humanoid robots in U.S. factory from 2028",
       "category": "Robotics",
-      "why_it_matters": "Hyundai plans to introduce production-ready humanoid robots into an automotive plant in Georgia beginning in 2028, initially for tasks like parts sequencing and later for more complex assembly. This is one of the clearest signals yet that general-purpose humanoids are moving from R&D and pilots toward scheduled industrial deployment at scale, with Hyundai targeting capacity to produce tens of thousands of units annually. The rollout will test whether humanoids can deliver economic value and operate safely and reliably alongside human workers over long periods.",
+      "why_it_matters": "Hyundai announced plans to introduce production-ready Atlas humanoid robots at its Georgia manufacturing plant starting in 2028, scaling to more complex tasks by 2030 and building a factory capable of producing around 30,000 robots annually. This is one of the more concrete roadmaps for large-scale industrial deployment of humanoid robots and signals a medium-term shift in how high-risk and repetitive manufacturing tasks may be automated.",
       "sources": [
         {
           "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
@@ -46,89 +80,60 @@
           "date": "2026-01-05"
         },
         {
-          "url": "https://www.theverge.com/tech/856503/ces-2026-robotaxi-ai-ev-car-concepts",
-          "title": "At CES, EVs take a backseat to robotaxis and AI",
-          "date": "2026-01-07"
+          "url": "https://www.theverge.com/tech/855329/rosey-robot-roomba-ces-2026",
+          "title": "CES promises the robot butler, but delivers better Roombas instead",
+          "date": "2026-01-06"
         }
       ]
     },
     {
-      "event": "CES 2026 showcases a surge of AI-powered companion robots and robot pets aimed at homes and personal use.",
+      "event": "Mobileye moves into humanoid robots with planned $900M acquisition of Mentee Robotics",
+      "category": "Robotics",
+      "why_it_matters": "Mobileye, best known for automotive driver-assistance chips, is planning to acquire humanoid robot startup Mentee Robotics for around $900 million as part of a new \"Mobileye 3.0\" strategy. The move indicates that established automotive perception and AI companies see humanoid robots as a logical extension of their technology stack, and it adds another large, well-capitalized player to the emerging humanoid robotics market.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/snippet/3080525/mobileye-is-in-the-humanoid-robots-business-now/",
+          "title": "Mobileye is in the humanoid robots business now",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://www.reuters.com/technology/mobileye-to-buy-humanoid-robotics-startup-mentee-2026-01-06/",
+          "title": "Mobileye to buy humanoid robotics startup Mentee Robotics - sources",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "AI-powered home and companion robots proliferate at CES 2026",
       "category": "Creative AI",
-      "why_it_matters": "Multiple companies at CES 2026 introduced AI companion robots and pet-like devices focused on emotional engagement rather than pure utility, often using large conversational models and expressive interfaces. These products illustrate how generative and embodied AI are being packaged as social and entertainment companions, particularly for children and older adults. The trend could normalize persistent AI presence in the home and shape expectations about machines as quasi-social actors, raising questions about attachment, transparency, and long-term user impact.",
+      "why_it_matters": "CES 2026 showcased a wave of AI-enabled home robots and companions, from advanced robot vacuums and specialized home robots to emotionally oriented companion and pet-like devices. Examples include legged robot vacuums capable of handling complex home layouts and multiple AI companion robots and pets aimed at entertainment and emotional support. While many remain single-purpose or early-stage, the breadth of products demonstrates that AI is moving from screens into embodied, consumer-facing devices.",
       "sources": [
+        {
+          "url": "https://www.theverge.com/tech/855329/rosey-robot-roomba-ces-2026",
+          "title": "CES promises the robot butler, but delivers better Roombas instead",
+          "date": "2026-01-06"
+        },
         {
           "url": "https://www.theverge.com/news/856207/ces-2026-trend-ai-companion-robot-pet",
           "title": "AI moves into the real world as companion robots and pets",
           "date": "2026-01-07"
-        },
-        {
-          "url": "https://www.theverge.com/tech/856503/ces-2026-robotaxi-ai-ev-car-concepts",
-          "title": "At CES, EVs take a backseat to robotaxis and AI",
-          "date": "2026-01-07"
         }
       ]
     },
     {
-      "event": "Automakers at CES 2026 shift emphasis from EVs to AI assistants, autonomy, and robotaxis, with Nvidia-powered systems playing a central role.",
-      "category": "Edge AI",
-      "why_it_matters": "Coverage from CES 2026 indicates carmakers are de-emphasizing new EV hardware in favor of in-vehicle AI assistants, advanced driver-assist features, and robotaxis, many built on Nvidia’s compute and model stack. This reflects a strategic pivot from hardware differentiation toward software- and AI-driven experiences, including more capable on-device reasoning and perception at the edge. The shift suggests future competition in automotive will center more on AI capabilities, data, and updateable software than on drivetrain technology alone.",
+      "event": "AI-powered panda companion robot targets elder-care and institutional settings",
+      "category": "Healthcare AI",
+      "why_it_matters": "Mind with Heart Robotics introduced An’An, an AI panda companion robot with more than ten sensors for touch and interaction, marketed for elderly care and with a separate B2B version for health institutions. It learns user behavioral patterns, including voice. While early-stage and not a clinical tool, it reflects a growing trend of AI-driven social robots being positioned for use in elder-care contexts, which raises practical and ethical questions about their role in care environments.",
       "sources": [
         {
-          "url": "https://www.theverge.com/tech/856503/ces-2026-robotaxi-ai-ev-car-concepts",
-          "title": "At CES, EVs take a backseat to robotaxis and AI",
-          "date": "2026-01-07"
-        },
-        {
-          "url": "https://blogs.nvidia.com",
-          "title": "Nvidia corporate blog (general CES 2026 AI and automotive coverage)",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Recent OpenAI release of GPT-5.2 improves general-purpose work and learning capabilities with a more current knowledge base.",
-      "category": "Models",
-      "why_it_matters": "GPT-5.2, released in December 2025, is the latest upgrade in OpenAI’s GPT-5 series, with an updated August 2025 knowledge cutoff and improvements in reliability and task performance for work and learning. While not launched in the last seven days, it remains a key current model as of early January 2026 and underpins many applications. Its incremental but broad improvements exemplify a pattern of frequent model refreshes that subtly but continuously change the baseline capabilities available to users and developers.",
-      "sources": [
-        {
-          "url": "https://academy.openai.com/en/home/resources/latest-model",
-          "title": "Introducing GPT-5.2",
-          "date": "2025-12-11"
-        }
-      ]
-    },
-    {
-      "event": "Open AI-driven humanoid and companion robots highlight emerging questions about human–robot interaction and the social role of AI.",
-      "category": "AI Ethics",
-      "why_it_matters": "The same CES announcements that advanced robotics also underline ethical and societal issues: humanoid robots entering factories may affect labor dynamics, while AI companions and pets blur lines between tool, toy, and social actor. Reports emphasize concerns around how companies frame these products, how transparent they are about capabilities and limitations, and the risk of over-reliance or emotional attachment to systems optimized for engagement rather than user well-being. These developments reinforce the need for practical guidelines on deployment, consent, and long-term impacts in everyday environments.",
-      "sources": [
-        {
-          "url": "https://www.theverge.com/news/856207/ces-2026-trend-ai-companion-robot-pet",
-          "title": "AI moves into the real world as companion robots and pets",
-          "date": "2026-01-07"
-        },
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "Nvidia’s CES 2026 robotics announcements underscore growing integration of cloud-scale AI models with edge and embodied systems.",
-      "category": "Data/Infra",
-      "why_it_matters": "By pairing robot foundation models and simulation environments with edge hardware that can run them efficiently, Nvidia is tightening the connection between large-scale data/model training and deployment in real-world robots. The availability of open models on platforms like Hugging Face, combined with Nvidia’s inference-optimized hardware, could lower barriers for robotics developers while increasing dependence on a single vendor’s end‑to‑end stack. This marks an evolution of AI infrastructure from serving primarily web and mobile apps to directly powering fleets of physical machines.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
+          "url": "https://techcrunch.com/snippet/3079661/step-aside-moflin-theres-an-ai-panda-in-town/",
+          "title": "Step aside, Moflin, there’s an AI panda in town",
           "date": "2026-01-05"
         },
         {
-          "url": "https://techcrunch.com/2025/08/11/nvidia-unveils-new-cosmos-world-models-other-infra-for-physical-applications-of-ai/",
-          "title": "Nvidia unveils new Cosmos world models, infra for robotics and physical uses",
-          "date": "2025-08-11"
+          "url": "https://techcrunch.com/snippet/3079661/step-aside-moflin-theres-an-ai-panda-in-town/",
+          "title": "Step aside Moflin, there is an AI panda in the town",
+          "date": "2026-01-05"
         }
       ]
     }

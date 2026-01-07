@@ -1,26 +1,28 @@
 {
-  "primary_query": "automotive ai assistants and autonomy",
+  "primary_query": "Nvidia Rubin architecture explained",
   "secondary_queries": [
-    "how car ai assistants work",
-    "edge ai in autonomous vehicles",
-    "nvidia automotive ai platform explained",
-    "software defined vehicles vs traditional cars",
-    "driver monitoring and in cabin ai",
-    "ota updates for self driving features",
-    "robotaxis vs personal autonomous cars",
-    "future of ai and data in car design"
+    "what is nvidia rubin architecture",
+    "nvidia rubin ai platform overview",
+    "nvidia rubin vs previous generations",
+    "how nvidia rubin improves ai training and inference",
+    "nvidia rubin gpu architecture for large language models",
+    "nvidia rubin data center requirements",
+    "ai developers guide to nvidia rubin",
+    "nvidia rubin performance per watt for inference"
   ],
   "search_intent": "Informational",
-  "recommended_title": "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars",
-  "recommended_slug": "automotive-ai-assistants-and-autonomy",
+  "recommended_title": "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute",
+  "recommended_slug": "nvidia-rubin-architecture-explained",
   "outline_h2s": [
-    "From Hardware to Software: Why Automotive Is Shifting to AI",
-    "What Automotive AI Assistants Actually Do in Modern Cars",
-    "Edge AI in Vehicles: On‑Board Compute, Sensors, and Models",
-    "Autonomy Levels, Robotaxis, and Advanced Driver Assistance",
-    "Inside the Stack: Nvidia and Other Platforms Powering Automotive AI",
-    "Software‑Defined Vehicles: Over‑the‑Air Updates and Continuous Learning",
-    "Data, Safety, and Regulation in AI‑Driven Automotive Systems",
-    "How Automotive AI Will Change the Driving Experience Over the Next Decade"
+    "What Is Nvidia Rubin Architecture?",
+    "How Rubin Fits Into Nvidia’s AI Compute Roadmap",
+    "Key Architectural Changes in Rubin for AI Workloads",
+    "Training Performance: Scaling Large Models on Rubin",
+    "Inference Performance and Efficiency Gains with Rubin",
+    "Rubin in the Data Center: Hardware, Networking, and Cooling",
+    "Impact of Rubin on LLMs, Multimodal Models, and Agents",
+    "How Developers Should Think About Targeting Rubin",
+    "Choosing Between GPU Generations for New AI Projects",
+    "Future AI Infrastructure Trends Beyond Rubin"
   ]
 }
