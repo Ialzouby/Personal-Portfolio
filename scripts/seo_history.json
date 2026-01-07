@@ -4,27 +4,31 @@
     "humanoid robots vs self driving cars",
     "AMD MI455 vs MI440X",
     "Nvidia Vera Rubin vs Blackwell",
-    "AMD AI chips explained"
+    "AMD AI chips explained",
+    "edge ai pc vs cloud inference"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
     "Humanoid Robots vs Self Driving Cars: How Physical AI Converges",
     "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
     "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
-    "AMD AI Chips Explained: Accelerators and Ryzen AI PCs"
+    "AMD AI Chips Explained: Accelerators and Ryzen AI PCs",
+    "Edge AI PC vs Cloud Inference: How Local AI Changes Compute"
   ],
   "slugs": [
     "robot-operating-system-platforms",
     "humanoid-robots-vs-self-driving-cars",
     "amd-mi455-vs-mi440x-ryzen-ai-400",
     "nvidia-vera-rubin-vs-blackwell",
-    "amd-ai-chips-explained"
+    "amd-ai-chips-explained",
+    "edge-ai-pc-vs-cloud-inference"
   ],
   "buckets": [
     "Robotics",
     "Robotics",
     "Models",
     "Data/Infra",
-    "Models"
+    "Models",
+    "Edge AI"
   ]
 }

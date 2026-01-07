@@ -1,78 +1,78 @@
 {
   "winner_index": 0,
-  "winner_reason": "AMD’s new MI455/MI440X data-center accelerators and Ryzen AI PC chips are a major, well-sourced CES launch that affects cloud and client AI hardware roadmaps, has strong ongoing search interest around \"AI PCs\" and Nvidia competition, and avoids the recent Robotics/Data/Infra buckets, giving it the highest combined impact and SEO score with minimal diversity penalty.",
+  "winner_reason": "AMD’s CES 2026 AI chip launches have broad market relevance (cloud + PCs), credible coverage, strong ongoing interest in Nvidia/AMD competition, and fall into a bucket that avoids the recent Robotics/Models/Data repetition, giving it the highest balanced score after the diversity penalty.",
   "scored": [
     {
       "index": 0,
       "bucket": "Edge AI & Hardware",
       "news_impact": 21,
-      "seo_potential": 16,
+      "seo_potential": 17,
       "diversity_penalty": 0,
-      "final_score": 37,
-      "notes": "Large chip vendor, major trade show, clear competitive angle vs. Nvidia, and strong ongoing interest in AI PCs and accelerators. Good for explainers on AI hardware trends and local AI on devices."
+      "final_score": 38,
+      "notes": "Major vendor (AMD), big stage (CES), and direct Nvidia competition in both data center and AI PC segments. Strong explainer potential around MI455/MI440X vs Nvidia, and Ryzen AI for on-device inference. Edge AI & hardware has not appeared in the last 5 posts, so no diversity penalty."
     },
     {
       "index": 1,
       "bucket": "Robotics",
-      "news_impact": 22,
-      "seo_potential": 15,
-      "diversity_penalty": 4,
-      "final_score": 33,
-      "notes": "Platform play for generalist robotics with foundation models and Hugging Face distribution; strong impact but Robotics has appeared multiple times recently, so higher diversity penalty (capped at 2 if impact were higher than 22, which it is not)."
+      "news_impact": 20,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Important for generalist robotics platforms and Nvidia’s stack, but Robotics is heavily used: appears 3+ times in last 6 posts, so max diversity penalty. Good SEO for ‘generalist robots’, ‘robot foundation models’, and simulation/edge stack explainers."
     },
     {
       "index": 2,
       "bucket": "Robotics",
-      "news_impact": 20,
-      "seo_potential": 15,
-      "diversity_penalty": 4,
-      "final_score": 31,
-      "notes": "High-profile brands (Boston Dynamics, DeepMind, Hyundai) and factory deployment story; strong interest in humanoid robots but somewhat niche SEO vs. broader AI hardware and hit by Robotics repetition."
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Clear industrial roadmap for humanoids at scale is notable, but still forward-looking (2028). Strong interest in ‘factory humanoid robots’ and Boston Dynamics, yet hit hard by Robotics repetition penalty."
     },
     {
       "index": 3,
-      "bucket": "Robotics",
-      "news_impact": 16,
-      "seo_potential": 13,
-      "diversity_penalty": 4,
-      "final_score": 25,
-      "notes": "Strategic acquisition showing auto-to-robotics convergence; interesting for industry watchers, but narrower impact and SEO and again penalized for Robotics repetition."
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "DeepMind + Boston Dynamics is high-interest and architecturally important (foundation models for control). However, Models has appeared multiple times recently, invoking the max diversity penalty. Good SEO for ‘foundation models for robotics’ explainers."
     },
     {
       "index": 4,
-      "bucket": "Robotics",
-      "news_impact": 15,
-      "seo_potential": 14,
-      "diversity_penalty": 4,
-      "final_score": 25,
-      "notes": "CES trend piece with human interest angle around companion robots; decent explainer/evergreen potential, but impact is more consumer-gadget focused and category is saturated recently."
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Visible CES trend with broad consumer appeal, but fragmented across many small products and less technically deep. Solid SEO around ‘AI companion robots’, elder/child-focused devices, and ethics of emotional AI, with no bucket repetition penalty."
     },
     {
       "index": 5,
       "bucket": "Edge AI & Hardware",
-      "news_impact": 18,
+      "news_impact": 17,
       "seo_potential": 15,
       "diversity_penalty": 0,
-      "final_score": 33,
-      "notes": "Concrete roadmap and numbers for humanoid deployment at scale in a factory; strong edge/industrial AI interest and good SEO for \"humanoid factory robots\" and \"physical AI\" explainers, but less general than AMD’s AI PC + data-center angle."
+      "final_score": 32,
+      "notes": "Rivian’s in-vehicle AI assistant and hybrid edge/cloud architecture are meaningful but more niche than AMD’s broad-market chips. Good SEO for ‘AI in cars’, ‘vehicle assistants’, and edge inference, with no diversity penalty."
     },
     {
       "index": 6,
-      "bucket": "AI Ethics & Policy",
-      "news_impact": 17,
-      "seo_potential": 14,
-      "diversity_penalty": 0,
-      "final_score": 31,
-      "notes": "Policy-document change highlights politically sensitive AI behavior debates; good for explainers on neutrality and alignment. Impact is meaningful but less broad than major hardware/platform moves."
+      "bucket": "Data/Infra",
+      "news_impact": 14,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 26,
+      "notes": "Ongoing relevance for self-hosted reasoning models and open-weight ecosystem, but this is more of a slow-burn infra story than a fresh event. Data/Infra appeared in the last 5 posts, so medium diversity penalty."
     },
     {
       "index": 7,
-      "bucket": "Creative AI",
+      "bucket": "AI Ethics & Policy",
       "news_impact": 15,
-      "seo_potential": 16,
+      "seo_potential": 17,
       "diversity_penalty": 0,
-      "final_score": 31,
-      "notes": "Good evergreen SEO around \"AI music tools\" and creator workflows; impact is more incremental and spread over multiple past developments rather than a single breaking news event."
+      "final_score": 32,
+      "notes": "Claude 3.7 Sonnet as a design pattern (real-time + deep reasoning) is important and has strong evergreen explainer value on latency/cost/governance tradeoffs. However, it is slightly older and more conceptual versus new CES hardware announcements; no recent Ethics bucket, so no penalty."
     }
   ]
 }

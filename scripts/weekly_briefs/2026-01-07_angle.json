@@ -1,26 +1,28 @@
 {
-  "primary_query": "AMD AI chips explained",
+  "primary_query": "edge ai pc vs cloud inference",
   "secondary_queries": [
-    "what is an AI accelerator chip",
-    "AMD MI series vs Nvidia AI GPUs",
-    "Ryzen AI vs traditional CPU",
-    "how AI PCs use Ryzen AI processors",
-    "AMD data center AI architecture basics",
-    "local AI inference on laptops",
-    "choosing hardware for AI training and inference",
-    "AI accelerator vs GPU vs CPU"
+    "what is edge ai inference",
+    "local ai processing vs cloud",
+    "ai accelerators for data centers",
+    "on device ai laptops explained",
+    "benefits of edge ai in pcs",
+    "latency of cloud vs local ai",
+    "ai hardware for inference vs training",
+    "how edge ai changes data center demand"
   ],
   "search_intent": "Informational",
-  "recommended_title": "AMD AI Chips Explained: Accelerators and Ryzen AI PCs",
-  "recommended_slug": "amd-ai-chips-explained",
+  "recommended_title": "Edge AI PC vs Cloud Inference: How Local AI Changes Compute",
+  "recommended_slug": "edge-ai-pc-vs-cloud-inference",
   "outline_h2s": [
-    "What Are AI Accelerator Chips and Why They Matter",
-    "How AMD AI Chips Fit Into the Training and Inference Stack",
-    "Inside AMD Data Center AI Accelerators (MI Series Basics)",
-    "Ryzen AI Processors and the Rise of the AI PC",
-    "AI Workloads: When to Use CPU, GPU, NPU and AI Accelerators",
-    "AMD vs Competing AI Hardware Ecosystems at a High Level",
-    "Choosing AI Hardware for Local vs Cloud Inference",
-    "Future Trends in Client‑Side and Data Center AI Hardware"
+    "What Edge AI Inference Actually Means",
+    "Cloud AI vs Edge AI on PCs: Key Differences",
+    "How Data Center AI Accelerators Power Cloud Inference",
+    "How Modern AI PCs Run Models Locally",
+    "Latency, Cost, and Privacy: Trade‑offs of Local vs Cloud AI",
+    "When to Run AI in the Cloud and When to Use Edge Devices",
+    "How Edge AI Adoption Impacts Data Center Workloads",
+    "Choosing Hardware for AI Inference: Cloud GPUs vs Edge Accelerators",
+    "Future Trends in Edge AI for Laptops and Workstations",
+    "Practical Examples of Apps Moving from Cloud AI to Edge"
   ]
 }

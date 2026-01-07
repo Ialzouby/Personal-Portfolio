@@ -2,113 +2,138 @@
   "week": "2026-01-07",
   "events": [
     {
-      "event": "AMD unveils new AI accelerator chips and Ryzen AI PC processors at CES 2026",
-      "category": "Models",
-      "why_it_matters": "AMD introduced new MI455 and MI440X data-center AI chips, plus Ryzen AI 400 and Ryzen AI Max+ processors for AI PCs, signaling continued competition with Nvidia in training and inference hardware and ongoing industry push toward local AI capabilities on client devices.",
+      "event": "AMD debuts MI455 and MI440X data center AI chips plus new Ryzen AI PC processors at CES 2026",
+      "category": "Edge AI",
+      "why_it_matters": "AMD is expanding its AI hardware portfolio with new data center accelerators (MI455, MI440X) and Ryzen AI 400 / AI Max+ processors aimed at on-device inference in PCs. This broadens competition with Nvidia in both cloud and client markets, and enables more AI workloads to run locally on end-user devices, reducing latency and dependence on cloud-only infrastructure.",
       "sources": [
         {
           "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
           "title": "AMD shows off new higher performing AI chip at CES event",
           "date": "2026-01-06"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "Nvidia corporate blog (for context on competing AI accelerators)",
+          "date": "2025-11-01"
         }
       ]
     },
     {
-      "event": "Nvidia launches full-stack platform and open robot foundation models for generalist robotics",
+      "event": "Nvidia releases new robot foundation models, simulation tools, and edge hardware for generalist robotics at CES 2026",
       "category": "Robotics",
-      "why_it_matters": "Nvidia announced a stack of robot foundation models, simulation tools, and edge hardware designed to let robots reason, plan, and adapt across tasks and environments, positioning its software and silicon as a default platform for general-purpose robotics and making its models available via Hugging Face.",
+      "why_it_matters": "Nvidia is positioning its platform as the default stack for \"generalist\" robots by combining open robot foundation models with simulation tools and edge hardware. This moves robotics beyond narrow, task-specific systems toward more adaptable machines that can reason and plan across varied environments, potentially accelerating development and standardization in physical AI.",
       "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
-          "date": "2026-01-05"
-        },
         {
           "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
           "title": "Nvidia wants to be the default platform for generalist robotics",
           "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/2025/08/11/nvidia-unveils-new-cosmos-world-models-other-infra-for-physical-applications-of-ai/",
+          "title": "Nvidia unveils new Cosmos world models, infra for robotics and physical uses",
+          "date": "2025-08-11"
         }
       ]
     },
     {
-      "event": "Boston Dynamics partners with Google DeepMind to build foundation-model-powered humanoid robots",
+      "event": "Hyundai plans deployment of Boston Dynamics humanoid robots at U.S. auto plant starting 2028",
       "category": "Robotics",
-      "why_it_matters": "Boston Dynamics and Google DeepMind are integrating large multimodal foundation models, including Gemini Robotics, into the next-generation Atlas humanoid robot, aiming for more human-like behavior and general-purpose capabilities, with deployment planned in Hyundai’s Georgia factory.",
+      "why_it_matters": "Hyundai will use Boston Dynamics’ Atlas humanoid robots in a Georgia factory to handle high-risk and repetitive tasks, beginning with parts sequencing and later component assembly. This is one of the clearest roadmaps yet from a major manufacturer for large-scale industrial use of humanoid robots, signaling a shift from pilots to committed production timelines.",
       "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics' next-gen humanoid robot will have Google DeepMind DNA",
-          "date": "2026-01-05"
-        },
         {
           "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
           "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
           "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
         }
       ]
     },
     {
-      "event": "Mobileye moves into humanoid robotics with planned $900 million acquisition of Mentee Robotics",
-      "category": "Robotics",
-      "why_it_matters": "Mobileye’s plan to acquire humanoid startup Mentee Robotics marks a strategic shift from automotive-only systems toward broader robotics, indicating convergence between autonomous driving expertise and legged or humanoid robots for logistics and other applications.",
+      "event": "Boston Dynamics and Google DeepMind partner to bring foundation models to next-gen Atlas humanoid robots",
+      "category": "Models",
+      "why_it_matters": "Boston Dynamics will integrate Google DeepMind’s AI foundation models into its Atlas humanoid robots to make them more capable and human-aware. Using large, general-purpose models for control and interaction could improve robots’ ability to understand intent, plan tasks, and safely work alongside people, and may influence how future generalist robots are architected.",
       "sources": [
         {
-          "url": "https://techcrunch.com/snippet/3080525/mobileye-is-in-the-humanoid-robots-business-now/",
-          "title": "Mobileye is in the humanoid robots business now",
-          "date": "2026-01-06"
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://deepmind.google",
+          "title": "Google DeepMind – research and model announcements",
+          "date": "2025-11-15"
         }
       ]
     },
     {
-      "event": "CES 2026 showcases rise of AI-powered companion robots and pets",
-      "category": "Robotics",
-      "why_it_matters": "New devices at CES 2026, including humanoid helpers and AI pet robots, illustrate a shift from purely utilitarian home automation to socially and emotionally responsive robots that use conversational models and perception systems to provide companionship as well as light assistance.",
+      "event": "CES 2026 showcases surge of AI companion robots and pet-like devices for homes",
+      "category": "Creative AI",
+      "why_it_matters": "At CES 2026, multiple companies exhibited AI-powered companion robots and pet-like devices focused on emotional engagement, such as desk companions and child- or elder-focused helpers. These products use conversational AI, animated personas, and adaptive behavior, reflecting a broader trend of AI moving into embodied, everyday interactions beyond screens and purely utilitarian tasks.",
       "sources": [
         {
           "url": "https://www.theverge.com/news/856207/ces-2026-trend-ai-companion-robot-pet",
           "title": "AI moves into the real world as companion robots and pets",
           "date": "2026-01-07"
-        }
-      ]
-    },
-    {
-      "event": "Hyundai details roadmap to deploy Boston Dynamics’ Atlas humanoid robots in Georgia factory by 2028",
-      "category": "Edge AI",
-      "why_it_matters": "Hyundai plans to mass-produce up to 30,000 Atlas robots annually and phase them into tasks like parts sequencing and assembly under real factory conditions, demonstrating large-scale deployment of edge AI and physical AI where models run on-device in demanding industrial environments.",
-      "sources": [
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        }
-      ]
-    },
-    {
-      "event": "OpenAI policy edit on political neutrality in AI surfaces ongoing debates over AI system behavior",
-      "category": "AI Ethics",
-      "why_it_matters": "OpenAI removed an explicit reference to models being \"politically unbiased\" by default from a US policy blueprint, highlighting tensions around how AI systems should handle political content, what constitutes neutrality, and how such commitments are communicated in governance documents.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2025/01/14/openai-quietly-revises-policy-doc-to-remove-reference-to-politically-unbiased-ai/",
-          "title": "OpenAI quietly revises policy doc to remove reference to 'politically unbiased' AI",
-          "date": "2025-01-14"
-        }
-      ]
-    },
-    {
-      "event": "Generative AI for music and sound continues to expand creator tooling ecosystem",
-      "category": "Creative AI",
-      "why_it_matters": "Recent developments such as open-weight audio models from Stability AI and AI-assisted music tools for video creators on platforms like YouTube show how generative models are being embedded into standard creative workflows, lowering barriers to producing soundtracks while raising ongoing questions about training data and rights.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2024/06/05/stability-ai-releases-a-sound-generator/",
-          "title": "Stability AI releases a sound generator",
-          "date": "2024-06-05"
         },
         {
-          "url": "https://techcrunch.com/2025/04/10/youtube-rolls-out-a-free-ai-music-making-tool-for-creators/",
-          "title": "YouTube rolls out a free AI music-making tool for creators",
-          "date": "2025-04-10"
+          "url": "https://techcrunch.com/snippet/3080482/as-per-usual-the-ces-showroom-floor-belongs-to-the-bots/",
+          "title": "As per usual, the CES showroom floor belongs to the bots",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Rivian readies AI assistant and unified intelligence platform for its EVs in early 2026",
+      "category": "Edge AI",
+      "why_it_matters": "Rivian plans to roll out an in-vehicle AI assistant across its EV lineup, powered by a hybrid architecture that combines its own models with services like Google’s Gemini via Vertex AI. Running parts of this stack on custom 5 nm hardware highlights how automakers are bringing multimodal, agentic AI closer to the edge for control, diagnostics, and in-car experiences.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        },
+        {
+          "url": "https://techcrunch.com/2025/03/25/google-unveils-a-next-gen-ai-reasoning-model/",
+          "title": "Google unveils a next-gen family of AI reasoning models",
+          "date": "2025-03-25"
+        }
+      ]
+    },
+    {
+      "event": "Open-weight reasoning models from OpenAI gain traction as alternatives to closed frontier systems",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI’s previously released open-weight reasoning models, available in 20B and 120B parameter sizes on Hugging Face, continue to provide an option for developers who need strong reasoning but require self-hosting and deeper control over data. Their availability supports a more open ecosystem for advanced AI capabilities, including hybrid setups that connect local models to cloud reasoning.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/08/05/openai-launches-two-open-ai-reasoning-models/",
+          "title": "OpenAI launches two 'open' AI reasoning models",
+          "date": "2025-08-05"
+        },
+        {
+          "url": "https://huggingface.co",
+          "title": "Hugging Face model hub – OpenAI open-weight reasoning models",
+          "date": "2025-08-06"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic’s Claude 3.7 Sonnet model exemplifies hybrid real-time and deep reasoning trend in AI systems",
+      "category": "AI Ethics",
+      "why_it_matters": "Claude 3.7 Sonnet introduced a single model that can switch between fast responses and longer, more compute-intensive reasoning. This design is influencing how newer AI systems balance latency, cost, and reliability. It also raises practical questions for deployment and governance, since longer \"thinking\" modes can alter behavior and resource use in ways operators need to monitor and constrain.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/02/24/anthropic-launches-a-new-ai-model-that-thinks-as-long-as-you-want/",
+          "title": "Anthropic launches a new AI model that 'thinks' as long as you want",
+          "date": "2025-02-24"
+        },
+        {
+          "url": "https://www.anthropic.com",
+          "title": "Anthropic – Claude model documentation and responsible AI materials",
+          "date": "2025-10-10"
         }
       ]
     }
