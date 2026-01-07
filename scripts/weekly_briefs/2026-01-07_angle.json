@@ -1,28 +1,28 @@
 {
-  "primary_query": "Nvidia Rubin architecture explained",
+  "primary_query": "Nvidia Nemotron Gr00t Cosmos explained",
   "secondary_queries": [
-    "what is nvidia rubin architecture",
-    "nvidia rubin ai platform overview",
-    "nvidia rubin vs previous generations",
-    "how nvidia rubin improves ai training and inference",
-    "nvidia rubin gpu architecture for large language models",
-    "nvidia rubin data center requirements",
-    "ai developers guide to nvidia rubin",
-    "nvidia rubin performance per watt for inference"
+    "what is Nvidia Nemotron",
+    "Nvidia Gr00t robotics model overview",
+    "Nvidia Cosmos world model explained",
+    "Nvidia open source AI models for agents",
+    "how to use Nemotron for AI agents",
+    "Nvidia AI model families for robotics",
+    "open models vs proprietary AI stacks",
+    "building agents on Nvidia Nemotron"
   ],
   "search_intent": "Informational",
-  "recommended_title": "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute",
-  "recommended_slug": "nvidia-rubin-architecture-explained",
+  "recommended_title": "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
+  "recommended_slug": "nvidia-nemotron-gr00t-cosmos-explained",
   "outline_h2s": [
-    "What Is Nvidia Rubin Architecture?",
-    "How Rubin Fits Into Nvidia’s AI Compute Roadmap",
-    "Key Architectural Changes in Rubin for AI Workloads",
-    "Training Performance: Scaling Large Models on Rubin",
-    "Inference Performance and Efficiency Gains with Rubin",
-    "Rubin in the Data Center: Hardware, Networking, and Cooling",
-    "Impact of Rubin on LLMs, Multimodal Models, and Agents",
-    "How Developers Should Think About Targeting Rubin",
-    "Choosing Between GPU Generations for New AI Projects",
-    "Future AI Infrastructure Trends Beyond Rubin"
+    "Nvidia’s AI model families at a glance",
+    "What is Nemotron and how is it used for AI agents?",
+    "What is Gr00t and how does it power robotics?",
+    "What is Cosmos and why world models matter",
+    "How “open” are Nvidia’s AI models in practice?",
+    "Nemotron, Gr00t and Cosmos vs fully proprietary stacks",
+    "Use cases: agents, robots and physical AI on Nvidia models",
+    "Ecosystem lock‑in: why Nvidia wants to be the AI substrate",
+    "How developers can get started with Nemotron, Gr00t and Cosmos",
+    "Future outlook for open model families in AI development"
   ]
 }

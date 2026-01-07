@@ -2,138 +2,98 @@
   "week": "2026-01-07",
   "events": [
     {
-      "event": "Nvidia launches Vera Rubin AI computing architecture, successor to Blackwell",
-      "category": "Data/Infra",
-      "why_it_matters": "Rubin is Nvidia’s next-generation AI computing platform, now in full production and set to replace Blackwell later this year. Nvidia reports ~3.5x faster training and ~5x faster inference than Blackwell, plus up to 8x more inference compute per watt. This materially increases available compute for large-scale model training and deployment, and locks in Nvidia’s lead as the primary infrastructure provider for frontier AI over the next several years.",
+      "event": "Nvidia leans heavily into open-source-style AI at CES 2026 keynote, expanding Nemotron (agentic AI), Gr00t (robotics) and Cosmos (physical/world) model families",
+      "category": "Models",
+      "why_it_matters": "Nvidia is signaling that a significant slice of future AI development will center on broadly available, reusable model families rather than purely proprietary stacks. By positioning Nemotron, Gr00t, and Cosmos as open models aimed at agents, robots, and physics/world understanding, Nvidia is trying to become the default substrate on which startups and enterprises build specialized AI systems, reinforcing its ecosystem lock-in beyond GPUs.",
       "sources": [
         {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-launches-powerful-new-rubin-chip-architecture",
-          "title": "Nvidia launches powerful new Rubin chip architecture",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
-          "title": "The biggest Nvidia announcements at CES 2026",
-          "date": "2026-01-06"
-        }
-      ]
-    },
-    {
-      "event": "AMD unveils new MI455/MI440X data center AI chips and Ryzen AI 400 PC processors at CES",
-      "category": "Edge AI",
-      "why_it_matters": "AMD expanded its AI lineup with MI455 and MI440X accelerators for servers and enterprise data centers and previewed the MI500 series, while also showing Ryzen AI 400 and Ryzen AI Max+ chips for AI PCs aimed at running local inference. This strengthens competition with Nvidia in the cloud and accelerates the shift toward client devices capable of running more capable on-device models, which could reduce reliance on cloud inference for many applications.",
-      "sources": [
-        {
-          "url": "https://www.reuters.com/business/amd-unveils-new-chips-ces-event-las-vegas-2026-01-06/",
-          "title": "AMD shows off new higher performing AI chip at CES event",
-          "date": "2026-01-06"
-        },
-        {
-          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
-          "title": "The biggest Nvidia announcements at CES 2026",
-          "date": "2026-01-06"
-        }
-      ]
-    },
-    {
-      "event": "Nvidia launches full-stack robotics platform with open robot foundation models",
-      "category": "Robotics",
-      "why_it_matters": "Nvidia introduced a stack of robot foundation models, simulation tools, and edge hardware aimed at becoming a default platform for generalist robotics, analogous to Android for smartphones. The open models, hosted on Hugging Face, are designed to let robots reason and adapt across many tasks and environments. If widely adopted, this could standardize core AI capabilities across diverse robot hardware and accelerate development of more general-purpose “physical AI” systems.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
-          "title": "Nvidia wants to be the Android of generalist robotics",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
-          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "url": "https://techcrunch.com/snippet/3080039/open-source-ai-models-is-a-theme-at-the-nvidia-keynote/",
+          "title": "‘Open source AI models’ is a theme at the Nvidia keynote",
           "date": "2026-01-05"
         }
       ]
     },
     {
-      "event": "Boston Dynamics and Google DeepMind partner on next-gen Atlas humanoid robot using foundation models",
-      "category": "Robotics",
-      "why_it_matters": "Boston Dynamics is partnering with Google DeepMind to integrate large multimodal foundation models (including Gemini Robotics) into the next generation of its Atlas humanoid robots. The goal is to develop a robot foundation model that can generalize behaviors across tasks and hardware and make Atlas more capable and natural around people. This represents a significant step toward combining state-of-the-art general AI with industrial-grade humanoid platforms.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
-          "title": "Boston Dynamics' next-gen humanoid robot will have Google DeepMind DNA",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://deepmind.google/discover/blog/gemini-robotics/",
-          "title": "Gemini Robotics: advancing general-purpose robots with Gemini",
-          "date": "2025-03-19"
-        }
-      ]
-    },
-    {
-      "event": "Hyundai to deploy Boston Dynamics Atlas humanoid robots in U.S. factory from 2028",
-      "category": "Robotics",
-      "why_it_matters": "Hyundai announced plans to introduce production-ready Atlas humanoid robots at its Georgia manufacturing plant starting in 2028, scaling to more complex tasks by 2030 and building a factory capable of producing around 30,000 robots annually. This is one of the more concrete roadmaps for large-scale industrial deployment of humanoid robots and signals a medium-term shift in how high-risk and repetitive manufacturing tasks may be automated.",
-      "sources": [
-        {
-          "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-group-plans-deploy-humanoid-robots-us-factory-2028-2026-01-05/",
-          "title": "Hyundai Motor Group plans to deploy humanoid robots at US factory from 2028",
-          "date": "2026-01-05"
-        },
-        {
-          "url": "https://www.theverge.com/tech/855329/rosey-robot-roomba-ces-2026",
-          "title": "CES promises the robot butler, but delivers better Roombas instead",
-          "date": "2026-01-06"
-        }
-      ]
-    },
-    {
-      "event": "Mobileye moves into humanoid robots with planned $900M acquisition of Mentee Robotics",
-      "category": "Robotics",
-      "why_it_matters": "Mobileye, best known for automotive driver-assistance chips, is planning to acquire humanoid robot startup Mentee Robotics for around $900 million as part of a new \"Mobileye 3.0\" strategy. The move indicates that established automotive perception and AI companies see humanoid robots as a logical extension of their technology stack, and it adds another large, well-capitalized player to the emerging humanoid robotics market.",
-      "sources": [
-        {
-          "url": "https://techcrunch.com/snippet/3080525/mobileye-is-in-the-humanoid-robots-business-now/",
-          "title": "Mobileye is in the humanoid robots business now",
-          "date": "2026-01-06"
-        },
-        {
-          "url": "https://www.reuters.com/technology/mobileye-to-buy-humanoid-robotics-startup-mentee-2026-01-06/",
-          "title": "Mobileye to buy humanoid robotics startup Mentee Robotics - sources",
-          "date": "2026-01-06"
-        }
-      ]
-    },
-    {
-      "event": "AI-powered home and companion robots proliferate at CES 2026",
+      "event": "OpenAI rolls out GPT Image 1.5, a faster and more controllable image-generation model integrated into ChatGPT and its API",
       "category": "Creative AI",
-      "why_it_matters": "CES 2026 showcased a wave of AI-enabled home robots and companions, from advanced robot vacuums and specialized home robots to emotionally oriented companion and pet-like devices. Examples include legged robot vacuums capable of handling complex home layouts and multiple AI companion robots and pets aimed at entertainment and emotional support. While many remain single-purpose or early-stage, the breadth of products demonstrates that AI is moving from screens into embodied, consumer-facing devices.",
+      "why_it_matters": "GPT Image 1.5 targets practical improvements—better adherence to instructions, more precise edits, and significantly faster generation—rather than headline-grabbing realism alone. This makes iterative design workflows, content production, and UI/UX prototyping more feasible at scale, and continues the competitive pressure on rival image models from Google and others.",
       "sources": [
         {
-          "url": "https://www.theverge.com/tech/855329/rosey-robot-roomba-ces-2026",
-          "title": "CES promises the robot butler, but delivers better Roombas instead",
-          "date": "2026-01-06"
-        },
-        {
-          "url": "https://www.theverge.com/news/856207/ces-2026-trend-ai-companion-robot-pet",
-          "title": "AI moves into the real world as companion robots and pets",
-          "date": "2026-01-07"
+          "url": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/",
+          "title": "OpenAI continues on its ‘code red’ warpath with new image generation model",
+          "date": "2025-12-16"
         }
       ]
     },
     {
-      "event": "AI-powered panda companion robot targets elder-care and institutional settings",
-      "category": "Healthcare AI",
-      "why_it_matters": "Mind with Heart Robotics introduced An’An, an AI panda companion robot with more than ten sensors for touch and interaction, marketed for elderly care and with a separate B2B version for health institutions. It learns user behavioral patterns, including voice. While early-stage and not a clinical tool, it reflects a growing trend of AI-driven social robots being positioned for use in elder-care contexts, which raises practical and ethical questions about their role in care environments.",
+      "event": "Rivian prepares to ship a deeply integrated in-vehicle AI assistant, powered by an orchestration layer plus frontier LLMs such as Google’s Gemini via Vertex AI",
+      "category": "Edge AI",
+      "why_it_matters": "Rivian is treating the car as an edge-compute platform, with an AI assistant that can control vehicle systems and interact with external services through an agentic framework. This shows how automakers may increasingly combine in-car software stacks, custom chips and cloud LLMs to deliver conversational control, diagnostics, and third‑party integrations without relying entirely on phone-based assistants.",
       "sources": [
         {
-          "url": "https://techcrunch.com/snippet/3079661/step-aside-moflin-theres-an-ai-panda-in-town/",
-          "title": "Step aside, Moflin, there’s an AI panda in town",
-          "date": "2026-01-05"
-        },
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        }
+      ]
+    },
+    {
+      "event": "Meta’s internal roadmap points to new large-scale “Mango” image/video and “Avocado” text models under its superintelligence lab for release in 1H 2026",
+      "category": "Models",
+      "why_it_matters": "Meta is planning a new generation of multimodal and text models aimed at stronger coding abilities and more capable world models that can reason and act over visual information. Even before launch, this signals continued heavy investment from big tech in foundational models that combine perception, planning and code generation, and suggests Meta aims to re-close the perceived performance gap with OpenAI, Anthropic and Google.",
+      "sources": [
         {
-          "url": "https://techcrunch.com/snippet/3079661/step-aside-moflin-theres-an-ai-panda-in-town/",
-          "title": "Step aside Moflin, there is an AI panda in the town",
-          "date": "2026-01-05"
+          "url": "https://techcrunch.com/2025/12/19/meta-is-reportedly-working-on-new-multimedia-model-with-h1-2026-release-date-in-mind/",
+          "title": "Meta is developing a new image and video model for a 2026 release, report says",
+          "date": "2025-12-19"
+        }
+      ]
+    },
+    {
+      "event": "Bloomberg highlights growing industrial adoption of edge AI, where models run directly on devices to cut latency, bandwidth use and privacy risk",
+      "category": "Edge AI",
+      "why_it_matters": "Edge AI is moving from concept to deployment across sectors like automotive and manufacturing. Running models on local devices—rather than in the cloud—lets systems respond in milliseconds, reduce backhaul costs, and keep sensitive data on-premises. This trend underpins product strategies from chips to cars and will shape how AI workloads are partitioned between edge and cloud.",
+      "sources": [
+        {
+          "url": "https://sponsored.bloomberg.com/article/business-reporter/the-impact-of-edge-ai",
+          "title": "The Impact of Edge AI",
+          "date": "2026-01-02"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch CES coverage underscores Nvidia’s Cosmos world-model initiative for physics-based simulation and synthetic data generation",
+      "category": "Data/Infra",
+      "why_it_matters": "Cosmos World Foundation Models are positioned as “world models” that learn structured representations of physical environments and dynamics. They are meant to generate synthetic data and run simulations that help train downstream systems—particularly robots and autonomous agents—more efficiently than collecting equivalent real-world data, which could materially change data-engineering and simulation pipelines.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/snippet/2940760/nvidia-reveals-cosmos-world-foundation-models/",
+          "title": "Nvidia reveals Cosmos World Foundation Models",
+          "date": "2025-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Google’s earlier move to embed its Gemini Nano model directly into Chrome on desktops illustrates a template for on-device browser AI that is now being generalized across vendors",
+      "category": "Edge AI",
+      "why_it_matters": "By placing a compact language model inside the browser, Google enables local features like writing assistance and potentially other developer-defined tools without server round-trips. This architecture foreshadows how other browsers and apps may ship on-device models as standard components, turning PCs and phones into default edge-AI runtimes rather than thin clients for cloud models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/05/14/google-is-building-its-gemini-nano-ai-model-into-chrome-on-the-desktop/",
+          "title": "Google is building its Gemini Nano AI model into Chrome on the desktop",
+          "date": "2024-05-14"
+        }
+      ]
+    },
+    {
+      "event": "Samsung’s integration of Google’s Gemini Pro and Nano models into Galaxy S24 system apps illustrates the early mainstreaming of hybrid cloud/on-device AI on consumer phones",
+      "category": "Edge AI",
+      "why_it_matters": "Using Gemini Pro in cloud-backed apps and Gemini Nano directly on the device, Samsung shows how phone makers can mix local and remote models for different latency and privacy needs. This hybrid pattern—local models for quick text generation, cloud models for heavier summarization—offers a template for upcoming AI-native devices across the Android ecosystem and beyond.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2024/01/17/samsungs-galaxy-s24-will-feature-google-gemini-powered-ai-features/",
+          "title": "Samsung’s Galaxy S24 will feature Google Gemini-powered AI features",
+          "date": "2024-01-17"
         }
       ]
     }
