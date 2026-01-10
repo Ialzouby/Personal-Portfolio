@@ -1,0 +1,116 @@
+{
+  "week": "2026-01-10",
+  "events": [
+    {
+      "event": "Nvidia launches Vera Rubin AI computing architecture at CES 2026",
+      "category": "Data/Infra",
+      "why_it_matters": "Vera Rubin is Nvidia's next-generation data center AI platform, succeeding Blackwell with significantly higher training and inference performance and better energy efficiency. It is already committed for use by major cloud providers and supercomputing projects, so it will shape the cost, speed, and scale of training and serving large AI models over the next several years.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-launches-powerful-new-rubin-chip-architecture/",
+          "title": "Nvidia launches powerful new Rubin chip architecture",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://www.theverge.com/tech/856439/nvidia-ces-2026-announcements-roundup",
+          "title": "The biggest Nvidia announcements at CES 2026",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "TII and Hugging Face release Falcon-H1-Arabic hybrid architecture language models",
+      "category": "Models",
+      "why_it_matters": "Falcon-H1-Arabic is a new family of large language models specifically optimized for Arabic, using a hybrid architecture and updated training corpus. It advances support for high-quality Arabic NLP, which is important for localizing AI capabilities and reducing language and regional bias in model performance.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/tiiuae/falcon-h1-arabic",
+          "title": "Introducing Falcon-H1-Arabic: Pushing the Boundaries of Arabic Language AI with Hybrid Architecture",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia introduces Cosmos Reason 2, a reasoning-centric vision-language model for physical AI",
+      "category": "Robotics",
+      "why_it_matters": "Cosmos Reason 2 is an open vision-language model designed to improve common-sense and multi-step reasoning for robots and physical AI agents, topping specialized benchmarks for physical reasoning. Better scene understanding and planning in open models lowers the barrier for robotics developers and could accelerate deployment of more capable general-purpose robots.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+          "title": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia outlines full-stack \"physical AI\" and generalist robotics platform at CES",
+      "category": "Robotics",
+      "why_it_matters": "Nvidia announced a stack of robot foundation models, simulation tools, and edge hardware aimed at becoming a default platform for general-purpose robots, including world models for simulation, a reasoning VLM, and a vision-language-action model for humanoids. Consolidating these components into a single ecosystem could standardize how developers build, simulate, and deploy generalist robots across industries.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://huggingface.co/blog/nvidia/nvidia-cosmos-reason-2-brings-advanced-reasoning",
+          "title": "NVIDIA Cosmos Reason 2 Brings Advanced Reasoning To Physical AI",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia and Siemens partner to run electronic design automation (EDA) tools on GPUs",
+      "category": "Data/Infra",
+      "why_it_matters": "By accelerating Siemens’ chip-design software on Nvidia GPUs, the two companies aim to significantly speed up and scale semiconductor design workflows and enable detailed digital twins of chips and systems. This kind of AI-accelerated EDA could shorten hardware development cycles and improve reliability, indirectly affecting how fast new AI and edge chips reach the market.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/06/nvidia-to-accelerate-siemens-chip-design-tools-using-its-gpus/",
+          "title": "Nvidia to accelerate Siemens EDA tools using its GPUs",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia Nemotron Speech ASR introduces cache-aware streaming for more efficient real-time voice agents",
+      "category": "Edge AI",
+      "why_it_matters": "Nemotron Speech ASR is an open model for real-time speech recognition that uses cache-aware streaming to avoid reprocessing past audio, reportedly improving efficiency by up to 3x compared with typical buffered ASR. More efficient, low-latency speech pipelines make it easier to deploy high-concurrency voice agents on constrained or edge infrastructure.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-speech-asr-scaling-voice-agents",
+          "title": "Scaling Real-Time Voice Agents with Cache-Aware Streaming ASR",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Universal Music Group signs AI partnership with Nvidia around \"Music Flamingo\" model",
+      "category": "Creative AI",
+      "why_it_matters": "UMG is partnering with Nvidia to apply the Music Flamingo model, which is designed to understand music structure and emotion, across one of the largest commercial music catalogs. The deal illustrates how major rights holders are starting to integrate AI for catalog analysis, discovery, and artist tools while emphasizing copyright controls and \"responsible AI\" practices.",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/news/856849/universal-music-nvidia-ai-deal",
+          "title": "Universal Music signs a new AI deal with Nvidia",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI and Netomi describe blueprint for scaling agentic systems with GPT‑4.1 and GPT‑5.2 in enterprises",
+      "category": "AI Ethics",
+      "why_it_matters": "Netomi’s deployment of OpenAI models for large enterprises emphasizes governed execution layers, policy compliance, and transparency in multi-step AI agents. The case study highlights practical patterns for making agentic systems predictable, auditable, and policy-aware in production, which is central to emerging norms for responsible AI deployment in customer-facing and operational workflows.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/netomi/",
+          "title": "Netomi’s lessons for scaling agentic systems into the enterprise",
+          "date": "2026-01-08"
+        }
+      ]
+    }
+  ]
+}

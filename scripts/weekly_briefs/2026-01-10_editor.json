@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Nvidia’s Vera Rubin architecture is a major next-generation data center AI platform with large, multi‑year impact on model training and inference economics. It has strong news momentum (CES launch, broad cloud/supercomputing uptake) and very good SEO potential for deep explainers on AI hardware roadmaps and cost/performance tradeoffs. Despite a small diversity penalty for repeating the Data/Infra bucket, its final score remains the highest.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Data/Infra",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 4,
+      "final_score": 36,
+      "notes": "Flagship next-gen Nvidia data center platform succeeding Blackwell, announced at CES with immediate adoption by major clouds and supercomputers. High impact on cost, speed, and scale of LLM training/inference for years. Strong explainer/analysis SEO around Rubin vs Blackwell, performance per watt, and AI infra roadmaps. Diversity: Data/Infra appears twice in last 6 and once in last 4 (penalty 4)."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Regionally important: high-quality Arabic LLMs, hybrid architecture, reduced language bias. Strong for niche SEO (Arabic NLP, localization, benchmarks), but global news impact narrower than Nvidia infra or robotics moves. Models bucket is heavily used in recent history (3+ in last 6), so full penalty 6."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Open vision-language model focused on physical reasoning for robots; strong for robotics/embodied AI developers and benchmarks. Good SEO for physical reasoning VLMs and open robotics stacks, but narrower than full platform announcements. Robotics used multiple times very recently (3+ in last 6), so max penalty 6."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Full-stack \"physical AI\"/generalist robotics platform (models, sim, edge hardware) is strategically big: potential to standardize robotics development like Android did for phones. Strong newsworthiness at CES and long‑tail SEO for explainer content on generalist robots and Nvidia’s stack. Base diversity penalty for Robotics would be 6, but override rule caps it at 2 because news_impact ≥ 22."
+    },
+    {
+      "index": 4,
+      "bucket": "Data/Infra",
+      "news_impact": 15,
+      "seo_potential": 13,
+      "diversity_penalty": 4,
+      "final_score": 24,
+      "notes": "GPU-accelerated EDA with Siemens is meaningful for chip design cycle times and digital twins, but more indirect/industry‑specific than Rubin. Some SEO value around GPU EDA and chip-design workflows, but niche. Data/Infra repetition triggers 4‑point diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 14,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 22,
+      "notes": "Nemotron Speech ASR’s cache-aware streaming is a solid incremental improvement for real-time voice agents and concurrency on constrained infra. Good technical SEO for ASR optimization, streaming models, and latency. However, Edge AI bucket was used very heavily in recent posts, so full penalty 6."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Major label (UMG) + Nvidia AI partnership around Music Flamingo is significant for music industry AI adoption and copyright debates. Strong public interest and SEO around AI music, rights management, and catalog tools. Creative AI hasn’t appeared in the recent bucket list, so no diversity penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "OpenAI–Netomi blueprint for governed, auditable enterprise agents aligns with hot topic: safe, policy-bound agentic systems. Good long‑tail SEO around responsible AI, governance, and enterprise agent patterns. AI Ethics/Policy is a fresh bucket in this sequence, so no penalty."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "primary_query": "data center gpus for ai training",
+  "secondary_queries": [
+    "how to choose gpus for ai data centers",
+    "best gpu architecture for large language models",
+    "gpu requirements for training foundation models",
+    "ai inference vs training hardware needs",
+    "data center gpu roadmap for ai workloads",
+    "cloud vs on prem gpu clusters for ai",
+    "energy efficient gpus for ai data centers",
+    "ai accelerator options beyond nvidia gpus"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Data Center GPUs for AI Training: Architectures and Tradeoffs",
+  "recommended_slug": "data-center-gpus-for-ai-training",
+  "outline_h2s": [
+    "Why AI Training Puts Unique Demands on Data Center GPUs",
+    "Key GPU Specs That Matter for Large‑Scale AI Workloads",
+    "Training vs Inference: Different Hardware Bottlenecks",
+    "How Modern GPU Architectures Evolve Across Generations",
+    "Designing GPU Clusters for Large Language Models and Foundation Models",
+    "Energy Efficiency, Cooling and Total Cost of Ownership",
+    "Cloud GPU Instances vs Building Your Own AI Data Center",
+    "Alternatives to GPUs: Specialized AI Accelerators and DPUs",
+    "Planning a Hardware Roadmap for Fast‑Moving AI Models",
+    "Practical Recommendations for Teams Selecting AI Data Center GPUs"
+  ]
+}
