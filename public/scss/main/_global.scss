@@ -1370,6 +1370,20 @@ input:-webkit-autofill:active {
   position: relative;
   z-index: 0;
   background-color: transparent !important; /* ✅ LET IT BE SEE-THROUGH */
+
+  .d-flex.flex-wrap {
+    align-items: flex-start; // don't stretch children vertically
+  }
+}
+
+.banner-layout {
+  flex-wrap: nowrap;     // stay side-by-side by default
+  gap: 3rem;
+
+  // only stack at the breakpoint you actually want
+  @media (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 }
 
 

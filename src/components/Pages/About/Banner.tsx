@@ -55,7 +55,7 @@ const Banner = () => {
 <div className="banner-wrapper position-relative overflow-hidden rounded">
 <div className="floating-dots"></div>
 
-    <div className="d-flex flex-wrap gap-9 gap-md-12 align-items-center justify-content-between">
+    <div className="banner-layout d-flex gap-9 gap-md-12 align-items-start justify-content-between">
       <div className="banner-content">
         <span className="n5-color fs-five">HI, I&apos;M An AI Engineer</span>
         <h2 className="typing-text display-one p1-color mt-2 mb-3">
@@ -101,7 +101,7 @@ const Banner = () => {
           <PiStarFill className="p1-color" size={18} />
           <h3 className="fs-six fw-semibold mb-0" style={{ color: '#1a1a1a' }}>Featured Work</h3>
         </div>
-        <div className="d-flex gap-4">
+        <div className="featured-projects-grid">
           <div 
             className="featured-project-card" 
             onClick={() => handleProjectClick(projects[0])}
