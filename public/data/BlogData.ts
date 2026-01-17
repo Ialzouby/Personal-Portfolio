@@ -1578,204 +1578,13 @@ export const blogs = [
   }
 }
 
-,
-{
-  id: 59,
-  slug: "how-ai-works-id-59",
-  img: aiImage_59,
-  date: "2025-11-08",
-  tag: "AI Education | Edge AI & Hardware",
-  title: "Quantization in Edge AI: Boosting Efficiency Without Sacrificing Accuracy",
-  author: "Issam Alzouby",
-  content: "Imagine your smartphone running complex AI models without draining the battery in minutes. Sounds like magic, right? Enter quantization, a technique that's revolutionizing edge AI hardware by making models leaner and meaner. But how does it manage to keep performance up while cutting down on power and memory usage? Let's dive into the world of quantization and see how it's changing the game for edge AI applications.",
-  sections: [
-    {
-      heading: "What is Quantization?",
-      text: "Quantization is the process of reducing the precision of the numbers used in AI models, typically from 32-bit floating-point to 8-bit integers. This technique isn't new, but recent advancements have made it more effective and widely applicable in edge AI. With the growing demand for AI on devices like smartphones and IoT gadgets, quantization has become crucial for efficient computation."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of quantization like packing a suitcase. You can fit more clothes if you roll them up tightly. Similarly, quantization compresses model weights, allowing them to fit into smaller, faster hardware. For example, Google's TensorFlow Lite uses quantization to run models on mobile devices, reducing latency and power consumption while maintaining accuracy."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "Quantization is making waves in industries like healthcare, where portable devices need to analyze data quickly. In automotive, it helps run real-time object detection in self-driving cars. Even in consumer electronics, quantization enables smart home devices to process voice commands efficiently."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "Quantization offers significant benefits like reduced model size and faster inference times, crucial for edge AI. However, it can introduce accuracy loss, especially in models sensitive to precision. It's not always suitable for all applications, particularly those requiring high precision, like financial forecasting."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent papers from major AI conferences highlight innovations in quantization techniques, such as adaptive quantization and post-training quantization, which improve model accuracy. Companies like NVIDIA and Qualcomm are integrating these advancements into their AI hardware, signaling a trend towards more efficient edge AI solutions."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[32-bit Model]-->B[Quantization]\nB-->C[8-bit Model]\nC-->D[Edge Device Efficiency]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Quantization: Reducing the precision of model weights to improve efficiency.",
-        "Edge AI: AI processing done on local devices rather than centralized servers.",
-        "Inference: The process of running a trained model to make predictions.",
-        "Latency: The delay before a transfer of data begins following an instruction.",
-        "TensorFlow Lite: A lightweight version of TensorFlow for mobile and edge devices.",
-        "Adaptive Quantization: A technique that adjusts quantization levels based on model needs.",
-        "Post-Training Quantization: Applying quantization to a model after it's been trained."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://www.tensorflow.org/lite/performance/post_training_quantization",
-        "https://developer.nvidia.com/blog/accelerating-ai-inference-with-quantization/",
-        "https://arxiv.org/abs/2004.09602",
-        "https://openai.com/index/prompt-injections",
-        "https://www.qualcomm.com/news/onq/2021/03/23/advancing-edge-ai-qualcomm-snapdragon"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Axel Richter",
-    authorUrl: "https://unsplash.com/@trisolarian",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/a-close-up-of-an-electronic-device-with-a-red-light-LUWAM-jgN04"
-  }
-}
-,
-{
-  id: 60,
-  slug: "how-ai-works-id-60",
-  img: aiImage_60,
-  date: "2025-11-15",
-  tag: "AI Education | AI in Healthcare",
-  title: "Graph Neural Networks: Revolutionizing Diagnostics in Healthcare",
-  author: "Issam Alzouby",
-  content: "Imagine your doctor diagnosing complex diseases with the precision of a seasoned detective. That's the promise of Graph Neural Networks (GNNs) in healthcare. But what exactly are these networks, and why are they making waves now? As healthcare data becomes increasingly interconnected, GNNs offer a way to analyze relationships and patterns that traditional methods might miss. Let's explore how this cutting-edge technology is transforming diagnostics and treatment planning.",
-  sections: [
-    {
-      heading: "What is Graph Neural Networks?",
-      text: "Graph Neural Networks are a type of AI model designed to process data structured as graphs. Unlike traditional neural networks, GNNs can capture relationships and dependencies between data points. Recently, advances in computational power and algorithm efficiency have made GNNs more accessible for real-world applications."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of GNNs as a spider web, where each node represents a data point and each thread represents a relationship. For example, in a medical context, nodes could be symptoms, and threads could be the connections between them. GNNs analyze these webs to predict outcomes, much like how a doctor might consider how symptoms relate to diagnose a condition."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In healthcare, GNNs are used to predict patient outcomes by analyzing complex networks of symptoms and treatments. They're also employed in drug discovery to identify potential interactions between compounds. Additionally, GNNs help in genomics by mapping genetic interactions to understand diseases better."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "GNNs excel at capturing complex relationships, making them ideal for interconnected data like healthcare records. However, they require significant computational resources and large datasets, which can be a barrier. They may also struggle with interpretability, a crucial factor in medical decision-making."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent studies have shown GNNs outperforming traditional models in predicting disease progression. Companies like DeepMind are exploring GNNs for protein folding, while academic papers highlight their potential in personalized medicine. These developments suggest a bright future for GNNs in healthcare."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Patient Data]-->B[Graph Construction]\nB-->C[Graph Neural Network]\nC-->D[Diagnosis Prediction]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph Neural Networks: AI models that process data structured as graphs.",
-        "Node: A data point in a graph.",
-        "Edge: A connection between nodes in a graph.",
-        "Diagnosis Prediction: Using AI to forecast medical conditions.",
-        "Drug Discovery: The process of identifying new medications.",
-        "Genomics: The study of genomes, the complete set of DNA in an organism."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/index/openai-for-ireland",
-        "https://arxiv.org/abs/2003.00982",
-        "https://deepmind.com/research/case-studies/alphafold",
-        "https://www.nature.com/articles/s41586-020-2012-7",
-        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7010836/"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "SJ Objio",
-    authorUrl: "https://unsplash.com/@sjobjio",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/man-in-white-and-blue-robe-standing-near-white-wooden-door-K2Eb0BV4Jgk"
-  }
-}
-,
-{
-  id: 61,
-  slug: "how-ai-works-id-61",
-  img: aiImage_61,
-  date: "2025-11-22",
-  tag: "AI Education | Robotics",
-  title: "E2GraphRAG: Transforming Robotics with Enhanced Data Retrieval",
-  author: "Issam Alzouby",
-  content: "Ever wondered how robots are getting smarter by the day? Meet E2GraphRAG, a cutting-edge approach that's revolutionizing how robots retrieve and use information. In a world where robots need to make split-second decisions, having access to the right data at the right time is crucial. E2GraphRAG combines the power of graph neural networks with retrieval-augmented generation, making robots not just faster but also more insightful. Let's dive into how this tech is reshaping the robotics landscape.",
-  sections: [
-    {
-      heading: "What is E2GraphRAG?",
-      text: "E2GraphRAG stands for Enhanced Edge Graph Retrieval-Augmented Generation. It's a novel approach that integrates graph neural networks with retrieval-augmented generation to improve data handling in robotics. Historically, robots relied on static data, but recent advances in AI allow them to dynamically access and process information, making them more adaptable and intelligent."
-    },
-    {
-      heading: "How It Works",
-      text: "Imagine a librarian who not only knows every book in the library but can also predict which book you'll need next. E2GraphRAG works similarly by using graph neural networks to map relationships between data points and retrieval-augmented generation to fetch relevant information on the fly. For example, a delivery robot can use this system to navigate complex environments by retrieving real-time traffic data and adjusting its route accordingly."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In manufacturing, E2GraphRAG helps robots adapt to changing assembly line configurations. In healthcare, robotic assistants use it to access patient data and provide timely support. In logistics, autonomous vehicles leverage this technology to optimize delivery routes based on current conditions."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "E2GraphRAG offers enhanced adaptability and decision-making capabilities, reducing latency in data retrieval. However, it requires significant computational resources and robust data management systems. It's not ideal for environments with limited connectivity or where real-time data isn't critical."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent papers highlight improvements in graph neural network efficiency and retrieval accuracy. Companies like OpenAI and Foxconn are exploring these technologies to enhance AI infrastructure, suggesting a promising future for E2GraphRAG in robotics."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Data Input]-->B[Graph Neural Network]\nB-->C[Retrieve Relevant Info]\nC-->D[Decision Making]\nD-->E[Action]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph Neural Network: A type of neural network that processes data structured as graphs.",
-        "Retrieval-Augmented Generation: A technique that combines data retrieval with generative models to enhance information processing.",
-        "Latency: The delay before a transfer of data begins following an instruction.",
-        "Autonomous Vehicles: Vehicles capable of sensing their environment and operating without human involvement.",
-        "Computational Resources: The hardware and software capabilities required to perform complex calculations."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/index/openai-and-foxconn-collaborate",
-        "https://arxiv.org/abs/2106.04554",
-        "https://www.nature.com/articles/s41586-020-03171-4",
-        "https://www.roboticsbusinessreview.com/ai/graph-neural-networks-robotics/",
-        "https://www.forbes.com/sites/bernardmarr/2021/09/27/how-graph-neural-networks-are-transforming-industries/"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Brett Jordan",
-    authorUrl: "https://unsplash.com/@brett_jordan",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/man-in-gray-suit-action-figure-HeOrM_1RlcY"
-  }
-}
+
 ,
 {
   id: 62,
   slug: "how-ai-works-id-62",
   img: aiImage_62,
-  date: "2025-11-29",
+  date: "2025-11-01",
   tag: "AI Education | AI Ethics & Policy",
   title: "Quantization in AI: Boosting Efficiency Without Sacrificing Accuracy",
   author: "Issam Alzouby",
@@ -1835,140 +1644,14 @@ export const blogs = [
     photoUrl: "https://unsplash.com/photos/a-man-standing-in-a-tunnel-with-a-glowing-orb-in-the-center-umKvb36ZAPM"
   }
 }
-,
-{
-  id: 63,
-  slug: "how-ai-works-id-63",
-  img: aiImage_63,
-  date: "2025-12-06",
-  tag: "AI Education | Creative AI",
-  title: "GraphRAG: Revolutionizing Data Retrieval with AI-Powered Graphs",
-  author: "Issam Alzouby",
-  content: "Imagine a world where finding the right information is as easy as asking a friend. That's the promise of GraphRAG, a cutting-edge approach combining graph databases with retrieval-augmented generation (RAG) to supercharge data retrieval. As data grows exponentially, traditional search methods struggle to keep up. GraphRAG offers a fresh perspective, making data connections more intuitive and accessible. But how exactly does it work, and why should you care?",
-  sections: [
-    {
-      heading: "What is GraphRAG?",
-      text: "GraphRAG stands for Graph-based Retrieval-Augmented Generation. It merges graph databases with AI to enhance data retrieval. While RAG has been around, the integration with graph structures is recent, providing a more nuanced understanding of data relationships."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of GraphRAG as a librarian who not only knows every book but also understands how they're related. It uses graph databases to map data points and AI to generate responses based on these connections. For instance, if you're researching climate change, GraphRAG can link scientific papers, news articles, and expert opinions, offering a comprehensive view."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In healthcare, GraphRAG can connect patient records with medical research, improving diagnostics. In finance, it links market data with economic reports for better investment insights. In education, it personalizes learning by connecting course materials with students' progress."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "GraphRAG excels in providing context-rich information, reducing search time, and enhancing decision-making. However, it requires significant data structuring and may struggle with real-time updates. It's not ideal for small datasets or where data privacy is a concern."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent studies highlight GraphRAG's potential in enhancing AI models' interpretability. Companies like OpenAI are exploring its use to improve AI's contextual understanding. These advancements suggest a future where AI systems are not just reactive but proactive in data retrieval."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Data Input]-->B[Graph Database]\nB-->C[AI Processing]\nC-->D[Enhanced Output]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph Database: A database that uses graph structures for semantic queries.",
-        "Retrieval-Augmented Generation (RAG): A method combining retrieval of data with AI-generated responses.",
-        "Data Retrieval: The process of obtaining data from databases.",
-        "AI Processing: The use of artificial intelligence to analyze and interpret data.",
-        "Semantic Queries: Queries that consider the meaning and relationships of data."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/global-affairs/openai-for-australia",
-        "https://arxiv.org/abs/2103.14744",
-        "https://www.microsoft.com/en-us/research/blog/graph-based-ai/",
-        "https://www.ibm.com/cloud/learn/graph-databases",
-        "https://www.nature.com/articles/s41586-020-03163-2"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Bernard Hermant",
-    authorUrl: "https://unsplash.com/@bernardhermant",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/a-close-up-view-of-a-wall-with-a-lot-of-dots-on-it-pdTWuF8TG0c"
-  }
-}
-,
-{
-  id: 64,
-  slug: "how-ai-works-id-64",
-  img: aiImage_64,
-  date: "2025-12-13",
-  tag: "AI Education | Data Engineering & Retrieval (RAG)",
-  title: "E2GraphRAG: Elevating Data Retrieval with Enhanced Graph Techniques",
-  author: "Issam Alzouby",
-  content: "Imagine you're trying to find a needle in a haystack, but the haystack is the entire internet. Enter E2GraphRAG, a cutting-edge approach that combines enhanced graph techniques with retrieval-augmented generation (RAG) to make data retrieval smarter and faster. As data continues to explode, traditional methods are like using a magnifying glass in a library. So, what makes E2GraphRAG the new superhero in data retrieval?",
-  sections: [
-    {
-      heading: "What is E2GraphRAG?",
-      text: "E2GraphRAG stands for Enhanced Graph Retrieval-Augmented Generation. It's an evolution of the GraphRAG concept, integrating advanced graph algorithms to improve data retrieval. Recently, the focus has shifted to optimizing these algorithms to handle larger datasets with greater efficiency."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of E2GraphRAG as a highly efficient librarian who knows exactly where every book is. It uses graph structures to map relationships between data points, making retrieval intuitive and fast. For example, in a medical database, it can quickly connect symptoms to potential diagnoses, saving time and improving accuracy."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In healthcare, E2GraphRAG can streamline patient data analysis. In finance, it enhances fraud detection by mapping transaction patterns. In e-commerce, it improves product recommendations by understanding customer preferences through data connections."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "E2GraphRAG offers speed and accuracy, but it requires significant computational resources. It's not ideal for small datasets due to its complexity. Ethical considerations, like data privacy, also need attention."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent papers highlight improvements in graph algorithms, making E2GraphRAG more efficient. Companies are exploring its integration with AI models to enhance data-driven decision-making."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Data Input]-->B[Graph Construction]\nB-->C[Enhanced Retrieval]\nC-->D[Output Results]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph: A structure of nodes and edges representing relationships.",
-        "RAG: Retrieval-Augmented Generation, a method to enhance data retrieval.",
-        "Algorithm: A set of rules for solving a problem.",
-        "Dataset: A collection of data points.",
-        "Computational Resources: Hardware and software used for processing data.",
-        "Data Privacy: Protecting personal information from unauthorized access.",
-        "Fraud Detection: Identifying fraudulent activities in financial transactions."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/index/bbva-collaboration-expansion",
-        "https://arxiv.org/abs/2106.04554",
-        "https://www.ibm.com/cloud/learn/graph-databases",
-        "https://www.microsoft.com/en-us/research/blog/advanced-graph-algorithms/",
-        "https://www.dataversity.net/graph-databases-and-their-role-in-ai/"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Linus Belanger",
-    authorUrl: "https://unsplash.com/@linusbelanger",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/wire-and-object-create-a-spooky-spider-w-OuqIjnWaU"
-  }
-}
+
+
 ,
 {
   id: 65,
   slug: "how-ai-works-id-65",
   img: aiImage_65,
-  date: "2025-12-20",
+  date: "2025-11-08",
   tag: "AI Education | Edge AI & Hardware",
   title: "Quantization in Edge AI: Boosting Efficiency Without Breaking the Bank",
   author: "Issam Alzouby",
@@ -2029,136 +1712,10 @@ export const blogs = [
 }
 ,
 {
-  id: 66,
-  slug: "how-ai-works-id-66",
-  img: aiImage_66,
-  date: "2025-12-27",
-  tag: "AI Education | AI in Healthcare",
-  title: "GraphRAG in Healthcare: Revolutionizing Patient Data Analysis",
-  author: "Issam Alzouby",
-  content: "Imagine a world where doctors can predict patient outcomes with the precision of a master chess player. That's the promise of GraphRAG in healthcare. This cutting-edge AI technique combines graph neural networks with retrieval-augmented generation to analyze complex patient data. Why does this matter now? As healthcare data grows exponentially, traditional methods struggle to keep up. GraphRAG offers a smarter, faster way to make sense of it all, potentially saving lives and cutting costs.",
-  sections: [
-    {
-      heading: "What is GraphRAG?",
-      text: "GraphRAG is a hybrid AI model that merges graph neural networks with retrieval-augmented generation. It allows for the analysis of interconnected data points, like patient records, in a way that's both comprehensive and nuanced. Recently, advancements in computational power and data availability have made GraphRAG more feasible for real-world applications."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of GraphRAG as a detective piecing together a mystery. It uses graph neural networks to map relationships between data points, then employs retrieval-augmented generation to fill in the gaps with relevant information. For example, it can analyze a patient's medical history and predict potential complications by considering similar cases."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In oncology, GraphRAG can predict cancer progression by analyzing patient histories and treatment outcomes. In cardiology, it helps identify at-risk patients by examining patterns in heart rate data. Pharmaceutical companies use it to streamline drug discovery by connecting molecular data with clinical trials."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "GraphRAG excels at handling complex, interconnected data, offering insights that traditional models might miss. However, it requires significant computational resources and high-quality data. It's not ideal for scenarios with limited data or where real-time analysis is crucial due to latency issues."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent papers highlight GraphRAG's potential in personalized medicine, with companies like DeepMind exploring its use in genomics. New benchmarks show improved accuracy in predicting patient outcomes, hinting at broader adoption in healthcare."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Patient Data]-->B[Graph Neural Network]\nB-->C[Data Relationships]\nC-->D[Retrieval-Augmented Generation]\nD-->E[Predictions & Insights]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph Neural Network: A type of neural network that processes data structured as graphs.",
-        "Retrieval-Augmented Generation: AI technique combining data retrieval with generative models.",
-        "Oncology: The study and treatment of cancer.",
-        "Cardiology: The branch of medicine dealing with heart disorders.",
-        "Genomics: The study of genomes, the complete set of DNA in an organism."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/index/one-in-a-million-customers",
-        "https://arxiv.org/abs/2003.04884",
-        "https://deepmind.com/research/publications",
-        "https://www.nature.com/articles/s41586-020-03167-3",
-        "https://www.healthit.gov/topic/health-it-and-health-information-exchange-basics"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Judy Beth Morris",
-    authorUrl: "https://unsplash.com/@judy_beth_morris_idaho",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/a-medical-device-displays-standby-on-its-screen-uBM__Syyiew"
-  }
-}
-,
-{
-  id: 67,
-  slug: "how-ai-works-id-67",
-  img: aiImage_67,
-  date: "2026-01-03",
-  tag: "AI Education | Robotics",
-  title: "E2GraphRAG: Transforming Robotics with Intelligent Data Retrieval",
-  author: "Issam Alzouby",
-  content: "Imagine a robot that can not only navigate a cluttered room but also fetch you a book from a shelf without knocking over your prized vase. Enter E2GraphRAG, a cutting-edge AI technique that's redefining robotics. Why does this matter now? As robots become more integral to our daily lives, they need to understand and interact with the world more intelligently. E2GraphRAG combines the power of graph neural networks with enhanced data retrieval, making robots smarter and more efficient. It's like giving your robot a pair of glasses and a library card all at once.",
-  sections: [
-    {
-      heading: "What is E2GraphRAG?",
-      text: "E2GraphRAG stands for End-to-End Graph Retrieval-Augmented Generation. It's an advanced AI model that integrates graph neural networks with retrieval-augmented generation. Recently, advancements in neural network architectures and data retrieval techniques have made E2GraphRAG more efficient and applicable to robotics."
-    },
-    {
-      heading: "How It Works",
-      text: "Think of E2GraphRAG as a librarian for robots. It uses graph neural networks to understand relationships between objects and retrieval techniques to access relevant data quickly. For example, if a robot needs to find a book, E2GraphRAG helps it identify the book's location and navigate around obstacles, much like a librarian guiding you through a maze of bookshelves."
-    },
-    {
-      heading: "Real-World Applications",
-      text: "In manufacturing, E2GraphRAG can optimize assembly line robots to adapt to new tasks. In logistics, it enhances warehouse robots' ability to sort and retrieve items efficiently. In healthcare, robots equipped with E2GraphRAG can assist in patient care by fetching supplies or medications without human intervention."
-    },
-    {
-      heading: "Benefits & Limitations",
-      text: "E2GraphRAG offers improved decision-making and adaptability in robots, reducing errors and increasing efficiency. However, it requires significant computational resources and high-quality data. It's not ideal for environments with limited data or where real-time processing is critical due to potential latency."
-    },
-    {
-      heading: "Latest Research & Trends",
-      text: "Recent papers from leading AI labs have shown E2GraphRAG's potential in robotics, with benchmarks indicating significant improvements in task completion times. Companies like Boston Dynamics are exploring its integration into their robotic systems, hinting at a future where robots are more autonomous and capable."
-    },
-    {
-      heading: "Visual",
-      text: "mermaid\nflowchart TD\nA[Robot]-->B[Graph Neural Network]\nB-->C[Data Retrieval]\nC-->D[Task Execution]"
-    },
-    {
-      heading: "Glossary",
-      bullets: [
-        "Graph Neural Network: A type of neural network that processes data structured as graphs.",
-        "Retrieval-Augmented Generation: A technique that combines data retrieval with generative models to improve accuracy.",
-        "Latency: The delay before a transfer of data begins following an instruction.",
-        "Computational Resources: The processing power and memory required to run complex algorithms.",
-        "Autonomous: The ability to operate independently without human intervention."
-      ]
-    },
-    {
-      heading: "Citations",
-      bullets: [
-        "https://openai.com/index/openai-grove",
-        "https://arxiv.org/abs/2106.04550",
-        "https://www.bostondynamics.com/blog",
-        "https://www.nature.com/articles/s41586-020-2649-2",
-        "https://www.roboticsbusinessreview.com"
-      ]
-    }
-  ],
-  imageCredit: {
-    authorName: "Katie Smith",
-    authorUrl: "https://unsplash.com/@katiesmith654",
-    source: "Unsplash",
-    photoUrl: "https://unsplash.com/photos/gray-skull-figurine-on-book-Dke45Q-POtM"
-  }
-}
-,
-{
   id: 68,
   slug: "amd-mi455-vs-mi440x-ryzen-ai-400",
   img: aiImage_68,
-  date: "2026-01-07",
+  date: "2025-11-15",
   tag: "AI Education | Models",
   title: "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
   author: "Issam Alzouby",
@@ -2225,7 +1782,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "AMD MI455 vs MI440X: Data Center and Ryzen AI 400 Guide",
-      datePublished: "2026-01-07",
+      datePublished: "2025-11-15",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2238,7 +1795,7 @@ export const blogs = [
   id: 69,
   slug: "nvidia-vera-rubin-vs-blackwell",
   img: aiImage_69,
-  date: "2026-01-07",
+  date: "2025-11-22",
   tag: "AI Education | Data/Infra",
   title: "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
   author: "Issam Alzouby",
@@ -2321,7 +1878,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Nvidia Vera Rubin vs Blackwell: Next‑Gen AI Platform Explained",
-      datePublished: "2026-01-07",
+      datePublished: "2025-11-22",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2334,7 +1891,7 @@ export const blogs = [
   id: 70,
   slug: "amd-ai-chips-explained",
   img: aiImage_70,
-  date: "2026-01-07",
+  date: "2025-11-29",
   tag: "AI Education | Models",
   title: "AMD AI Chips Explained: Accelerators and Ryzen AI PCs",
   author: "Issam Alzouby",
@@ -2415,7 +1972,7 @@ export const blogs = [
   id: 71,
   slug: "edge-ai-pc-vs-cloud-inference",
   img: aiImage_71,
-  date: "2026-01-07",
+  date: "2025-12-06",
   tag: "AI Education | Edge AI",
   title: "Edge AI PC vs Cloud Inference: How Local AI Changes Compute",
   author: "Issam Alzouby",
@@ -2496,7 +2053,7 @@ export const blogs = [
   id: 72,
   slug: "automotive-ai-assistants-and-autonomy",
   img: aiImage_72,
-  date: "2026-01-07",
+  date: "2025-12-13",
   tag: "AI Education | Edge AI",
   title: "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars",
   author: "Issam Alzouby",
@@ -2577,7 +2134,7 @@ export const blogs = [
   id: 73,
   slug: "nvidia-rubin-architecture-explained",
   img: aiImage_73,
-  date: "2026-01-07",
+  date: "2025-12-20",
   tag: "AI Education | Data/Infra",
   title: "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute",
   author: "Issam Alzouby",
@@ -2677,7 +2234,7 @@ export const blogs = [
   id: 74,
   slug: "nvidia-nemotron-gr00t-cosmos-explained",
   img: aiImage_74,
-  date: "2026-01-07",
+  date: "2025-12-27",
   tag: "AI Education | Models",
   title: "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
   author: "Issam Alzouby",
@@ -2776,7 +2333,7 @@ export const blogs = [
   id: 75,
   slug: "robot-foundation-models-generalist-robotics",
   img: aiImage_75,
-  date: "2026-01-07",
+  date: "2026-01-03",
   tag: "AI Education | Robotics",
   title: "Robot Foundation Models Explained for Generalist Robotics",
   author: "Issam Alzouby",
