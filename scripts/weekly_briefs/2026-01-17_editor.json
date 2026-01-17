@@ -1,0 +1,78 @@
+{
+  "winner_index": 1,
+  "winner_reason": "Nvidia’s full-stack generalist robotics platform has very high strategic impact (potentially an Android-like layer for robots), strong mid/long-term SEO around ‘robot foundation models’ and generalist robotics, and only a moderate diversity penalty despite Robotics being used recently, yielding the highest final score.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Major infra expansion and notable for wafer-scale inference, but more B2B and incremental in broader narrative. Data/Infra has appeared 3+ times in last 6 posts, so max penalty 6 applies (no override: impact <22). Strong but edged out by more broadly resonant robotics news."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "Positions Nvidia as a potential default layer for generalist robotics, akin to Android moment for robots. High impact across hardware, dev tools, and foundation models. Excellent SEO around ‘robot foundation models’, ‘generalist robotics platform’, and ecosystem explainers. Robotics used once in last 6 and not in last post, so minimal penalty 2; override cap applies since impact ≥22 (but base penalty is already 2). Highest overall score."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Notable for AV safety, open 10B VLA model, and explainability. Strong recurring SEO around autonomous driving AI and edge-case handling. However, Models has appeared multiple times recently, so full diversity penalty 6. Impact slightly lower and category more saturated than robotics-platform story."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 12,
+      "diversity_penalty": 2,
+      "final_score": 28,
+      "notes": "Large acquisition and interesting AV–humanoid convergence, but more business/market-structure than technical inflection. Decent SEO for ‘humanoid robotics market’ and ‘AV companies buying robot startups’, yet narrower than platform/foundation-model angles."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 14,
+      "diversity_penalty": 2,
+      "final_score": 31,
+      "notes": "Strong narrative (Boston Dynamics + DeepMind foundation models) with good public interest. Solid SEO around ‘robot foundation models’ and ‘humanoid robot AI’, but platform breadth and ecosystem implications are less sweeping than Nvidia’s generalist robotics stack."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 27,
+      "notes": "High consumer visibility (BMW + Alexa+), good for in-car LLM assistant explainers. Edge AI has appeared twice in last 4 posts, so 4-point penalty. Impact and SEO both solid but less transformational than a foundational robotics platform."
+    },
+    {
+      "index": 6,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "Rivian’s custom AI stack is interesting for differentiated automotive UX and multi-LLM orchestration, but it’s a single-OEM story with moderate impact. Similar SEO space to BMW/Alexa+ and subject to same Edge AI diversity penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Open-sourcing robot foundation models on Hugging Face is impactful for developers and fits ‘open models’ and ‘embodied agents’ SEO nicely. Bucket labeled as Creative AI here; that’s not in recent history, so no penalty. Strong contender, but slightly less news gravity and ecosystem shift than Nvidia’s broader full-stack robotics platform announcement."
+    }
+  ]
+}

@@ -10,7 +10,8 @@
     "Nvidia Rubin architecture explained",
     "Nvidia Nemotron Gr00t Cosmos explained",
     "robot foundation models explained",
-    "data center gpus for ai training"
+    "data center gpus for ai training",
+    "generalist robotics platforms"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -23,7 +24,8 @@
     "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute",
     "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
     "Robot Foundation Models Explained for Generalist Robotics",
-    "Data Center GPUs for AI Training: Architectures and Tradeoffs"
+    "Data Center GPUs for AI Training: Architectures and Tradeoffs",
+    "Generalist Robotics Platforms: Full-Stack Foundations Explained"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -36,7 +38,8 @@
     "nvidia-rubin-architecture-explained",
     "nvidia-nemotron-gr00t-cosmos-explained",
     "robot-foundation-models-generalist-robotics",
-    "data-center-gpus-for-ai-training"
+    "data-center-gpus-for-ai-training",
+    "generalist-robotics-platforms"
   ],
   "buckets": [
     "Robotics",
@@ -49,6 +52,7 @@
     "Data/Infra",
     "Models",
     "Robotics",
-    "Data/Infra"
+    "Data/Infra",
+    "Robotics"
   ]
 }
