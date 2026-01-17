@@ -1959,7 +1959,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "AMD AI chips explained: accelerators and Ryzen AI PCs",
-      datePublished: "2026-01-07",
+      datePublished: "2025-11-29",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2040,7 +2040,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Edge AI PC vs Cloud Inference: How Local AI Changes Compute",
-      datePublished: "2026-01-07",
+      datePublished: "2025-12-06",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2121,7 +2121,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Automotive AI Assistants and Autonomy: How Software Is Redefining Cars",
-      datePublished: "2026-01-07",
+      datePublished: "2025-12-13",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2221,7 +2221,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Nvidia Rubin Architecture Explained: Next‑Gen AI Compute",
-      datePublished: "2026-01-07",
+      datePublished: "2025-12-20",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2320,7 +2320,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
-      datePublished: "2026-01-07",
+      datePublished: "2025-12-27",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
@@ -2400,7 +2400,7 @@ export const blogs = [
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       headline: "Robot Foundation Models Explained for Generalist Robotics",
-      datePublished: "2026-01-07",
+      datePublished: "2026-01-03",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"
