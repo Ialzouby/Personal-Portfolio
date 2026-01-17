@@ -1,0 +1,28 @@
+{
+  "primary_query": "generalist robotics platforms",
+  "secondary_queries": [
+    "what is a generalist robot",
+    "robot foundation models and platforms",
+    "full stack platform for robotics explained",
+    "how to choose a robotics software platform",
+    "simulation tools for training robots",
+    "edge hardware for autonomous robots",
+    "robot operating environment vs full stack platform",
+    "standardizing software for robot developers"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Generalist Robotics Platforms: Full-Stack Foundations Explained",
+  "recommended_slug": "generalist-robotics-platforms",
+  "outline_h2s": [
+    "What Generalist Robotics Actually Means",
+    "From Single-Purpose Bots to Generalist Robotics Platforms",
+    "Key Building Blocks of a Full-Stack Robotics Platform",
+    "Robot Foundation Models and How Developers Use Them",
+    "Role of Simulation in Training and Testing Robots",
+    "Edge Hardware Requirements for Generalist Robots",
+    "How Standardized Platforms Change Robotics Development",
+    "Choosing a Robotics Platform for New Projects",
+    "Risks, Limitations and Vendor Lock-In Concerns",
+    "What Generalist Robotics Platforms Mean for the Future of Work"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "week": "2026-01-17",
+  "events": [
+    {
+      "event": "OpenAI partners with Cerebras to add 750MW of ultra–low‑latency AI compute to its platform",
+      "category": "Data/Infra",
+      "why_it_matters": "This adds a large amount of specialized inference capacity based on Cerebras’ wafer‑scale chips to OpenAI’s infrastructure, aimed specifically at reducing latency for complex, long‑running AI workloads. It signals continued scaling of dedicated inference hardware beyond GPUs and could meaningfully improve responsiveness for code generation, agents, and other interactive applications by matching different model workloads to more specialized compute.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/cerebras-partnership/",
+          "title": "OpenAI partners with Cerebras",
+          "date": "2026-01-14"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/2025/12/16/nvidia-ai-inference-hardware-trends/",
+          "title": "(Context) How AI inference hardware is evolving",
+          "date": "2025-12-16"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia unveils full‑stack platform and open robot foundation models to become a default layer for generalist robotics",
+      "category": "Robotics",
+      "why_it_matters": "Nvidia introduced a stack of robot foundation models, simulation tools, and edge hardware at CES 2026, positioning its platform as a common layer for robots that can reason and generalize across many tasks. This could accelerate development of ‘generalist’ robots by standardizing core models and tooling, similar to how Android standardized smartphone software, and reduce the barrier for hardware makers to add advanced autonomy.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
+          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia launches Alpamayo, an open family of AI models to improve autonomous vehicle reasoning",
+      "category": "Models",
+      "why_it_matters": "The Alpamayo family includes an open 10‑billion‑parameter vision‑language‑action model designed to help autonomous vehicles reason through rare and complex driving situations and explain their decisions. Making these models and associated tools available could lower the cost and time for AV developers to handle edge cases, while increasing transparency around decision‑making in safety‑critical systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-launches-alpamayo-open-ai-models-that-allow-autonomous-vehicles-to-think-like-a-human/",
+          "title": "Nvidia launches Alpamayo, open AI models that allow autonomous vehicles to ‘think like a human’",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/2026/01/05/alpamayo-autonomous-vehicle-ai-models/",
+          "title": "(Context) Nvidia details Alpamayo models for autonomous vehicles",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Mobileye acquires humanoid robot startup Mentee Robotics for about $900 million",
+      "category": "Robotics",
+      "why_it_matters": "Mobileye is extending its automotive computer‑vision and autonomy expertise into humanoid robots by acquiring Mentee Robotics, which will continue as an independent unit. The deal indicates growing consolidation and cross‑over between autonomous driving and humanoid robotics, and suggests that large automotive AI suppliers see humanoids as a near‑term commercial opportunity rather than a distant research effort.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/",
+          "title": "Mobileye acquires humanoid robot startup Mentee Robotics for $900M",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://reuters.com/technology/mobileye-buy-humanoid-robot-startup-mentee-robotics-900-million-2026-01-06/",
+          "title": "Mobileye to buy humanoid robot startup Mentee Robotics for $900 million",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Boston Dynamics and Google DeepMind partner to use foundation models in next‑generation Atlas humanoid robot",
+      "category": "Robotics",
+      "why_it_matters": "Boston Dynamics plans to integrate Google DeepMind’s foundation models into its upcoming Atlas platform to improve how the robot moves and interacts around people. Using large, pretrained models for planning and control could make humanoid robots more adaptable to unstructured environments and enable reuse of AI capabilities across different physical platforms, moving from hand‑tuned behaviors toward more general ‘robot foundation models’.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://deepmind.google/discover/blog/ai-foundation-models-for-robots/",
+          "title": "(Context) Google DeepMind on foundation models for robotics",
+          "date": "2025-11-19"
+        }
+      ]
+    },
+    {
+      "event": "BMW’s 2026 iX3 will integrate Alexa+ with generative AI as its primary in‑car assistant",
+      "category": "Edge AI",
+      "why_it_matters": "BMW is adopting Amazon’s next‑generation Alexa+—powered by generative AI—as the voice assistant in its 2026 iX3. This puts a cloud‑backed LLM into a production vehicle interface, aiming to handle more complex, conversational commands for car functions. It illustrates how large language models are moving from smart speakers into embedded automotive systems, and will be a test case for reliability and driver trust in LLM‑based assistants on the road.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/the-2026-bmw-ix3-voice-assistant-will-be-powered-by-alexa/",
+          "title": "The 2026 BMW iX3 voice assistant will be powered by Alexa+",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://theverge.com/2025/09/20/amazon-alexa-plus-generative-ai-update-rollout",
+          "title": "(Context) Amazon begins rolling out generative AI-powered Alexa+",
+          "date": "2025-09-20"
+        }
+      ]
+    },
+    {
+      "event": "Rivian details rollout of its in‑vehicle AI assistant and custom ‘Rivian Unified Intelligence’ stack for early 2026",
+      "category": "Edge AI",
+      "why_it_matters": "Rivian plans to deploy an AI assistant across its existing EV lineup, backed by a hybrid stack that combines custom models with external LLMs such as Google’s Gemini. The assistant will control vehicle functions, integrate third‑party apps, and support diagnostics. This shows automakers increasingly building their own AI orchestration layers on top of general‑purpose models, aiming to differentiate user experience and reduce dependence on single cloud vendors.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        },
+        {
+          "url": "https://theverge.com/2025/12/11/rivian-ai-assistant-rui-gemini-autonomy",
+          "title": "(Context) Rivian shows off its new AI assistant and autonomy stack",
+          "date": "2025-12-11"
+        }
+      ]
+    },
+    {
+      "event": "Open‑source robot foundation models from Nvidia become available on Hugging Face for broader developer access",
+      "category": "Creative AI",
+      "why_it_matters": "As part of its robotics push, Nvidia is publishing open robot foundation models on Hugging Face, covering perception, planning, and control for physical agents. While focused on robotics, these models also expand the creative toolkit for developers experimenting with embodied agents and simulation, and illustrate a trend toward open distribution of large multimodal models that can be fine‑tuned for many niche physical and interactive tasks.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://huggingface.co/nvidia-robotics",
+          "title": "Nvidia Robotics organization on Hugging Face",
+          "date": "2026-01-05"
+        }
+      ]
+    }
+  ]
+}
