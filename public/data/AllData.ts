@@ -53,8 +53,8 @@ import speaking11 from "@/../public/images/speaking/speaker7.png";
 import speaking12 from "@/../public/images/speaking/speaker8.JPG";
 import speaking13 from "@/../public/images/speaking/speaker12.PNG";
 import speaking14 from "@/../public/images/speaking/speaker13.JPG";
-import speaking15 from "@/../public/images/speaking/ectss-2025.JPG";
-import speaking16 from "@/../public/images/speaking/msa-uncc2025.JPG";
+import speaking15 from "@/../public/images/speaking/ectss-2025.jpg";
+import speaking16 from "@/../public/images/speaking/msa-uncc2025.jpg";
 
 export const services = [
   {
