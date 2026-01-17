@@ -27,7 +27,7 @@ const Banner = () => {
   const projects: ProjectData[] = [
     {
       title: "MMM-272: Text-to-Motion",
-      description: "State-of-the-art text-to-motion generation with 272-dimensional representation achieving FID 0.093. Features direct SMPL rotation recovery, eliminating IK artifacts for production-ready BVH output in Unity, Unreal, and Blender.",
+      description: "State-of-the-art text-to-motion generation with 272-dimensional representation achieving FID 10.4567. Features direct SMPL rotation recovery, eliminating IK artifacts for production-ready BVH output in Unity, Unreal, and Blender.",
       image: mmm272,
       category: ["Text-to-Motion", "AI/ML"],
       portfolioLink: "/portfolio-details/21",

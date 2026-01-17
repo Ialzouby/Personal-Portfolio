@@ -53,6 +53,8 @@ import speaking11 from "@/../public/images/speaking/speaker7.png";
 import speaking12 from "@/../public/images/speaking/speaker8.JPG";
 import speaking13 from "@/../public/images/speaking/speaker12.PNG";
 import speaking14 from "@/../public/images/speaking/speaker13.JPG";
+import speaking15 from "@/../public/images/speaking/ectss-2025.JPG";
+import speaking16 from "@/../public/images/speaking/msa-uncc2025.JPG";
 
 export const services = [
   {
@@ -107,6 +109,24 @@ export const services = [
 
 export const featureds2 = [
   {
+    id: 12,
+    category: "Public Speaking",
+    tag1: "Panelist",
+    tag2: "AI",
+    tag3: "Public Speaking",
+    title: "UNCC - MSA",
+    img: speaking16,
+  },
+  {
+    id: 11,
+    category: "Public Speaking",
+    tag1: "Medical AI",
+    tag2: "Research",
+    tag3: "Poster Presentation",
+    title: "2025 ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
+    img: speaking15,
+  },
+  {
     id: 10,
     category: "Public Speaking",
     tag1: "Panelist",
@@ -121,7 +141,7 @@ export const featureds2 = [
     tag1: "Research",
     tag2: "AI",
     tag3: "Public Speaking",
-    title: "ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
+    title: "2024 ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
     img: speaking6,
   },
 
