@@ -123,7 +123,7 @@ export const featureds2 = [
     tag1: "Medical AI",
     tag2: "Research",
     tag3: "Poster Presentation",
-    title: "2025 ECTSS - ORAL Presentation Cardiac Surgery (Award-Winning)",
+    title: "2025 ECTSS - ORAL Presentation Cardiac Surgery",
     img: speaking15,
   },
   {
