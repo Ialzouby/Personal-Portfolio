@@ -17,7 +17,7 @@ const Counter = () => {
         <h2 className="display-two fw-semibold p1-color">
           <CountUp
             start={0}
-            end={6}
+            end={8}
             duration={2}
             enableScrollSpy
             scrollSpyOnce

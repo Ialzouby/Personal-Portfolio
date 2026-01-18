@@ -7,7 +7,6 @@ import { PiArrowRight, PiStarFill } from "react-icons/pi";
 import Link from "next/link";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import project21 from "@/../public/images/projects/robot.png";
-import product3 from "@/../public/images/projects/avatar.png";
 import mmm272 from "@/../public/images/projects/avatar.png";
 import FeaturedProjectModal from "./FeaturedProjectModal";
 
@@ -24,20 +23,110 @@ const Banner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
 
+  // ✅ Featured projects
   const projects: ProjectData[] = [
     {
       title: "MMM-272: Text-to-Motion",
-      description: "State-of-the-art text-to-motion generation with 272-dimensional representation achieving FID 10.4567. Features direct SMPL rotation recovery, eliminating IK artifacts for production-ready BVH output in Unity, Unreal, and Blender.",
+      description:
+        "State-of-the-art text-to-motion generation with 272-dimensional representation achieving FID 10.4567. Features direct SMPL rotation recovery, eliminating IK artifacts for production-ready BVH output in Unity, Unreal, and Blender.",
       image: mmm272,
       category: ["Text-to-Motion", "AI/ML"],
       portfolioLink: "/portfolio-details/21",
     },
     {
       title: "Humanoid Robot",
-      description: "Advanced humanoid robotics system integrating AI-powered motion control, computer vision, and real-time sensor fusion. Features autonomous navigation, human interaction capabilities, and adaptive learning algorithms for dynamic environments.",
+      description:
+        "Advanced humanoid robotics system integrating AI-powered motion control, computer vision, and real-time sensor fusion. Features autonomous navigation, human interaction capabilities, and adaptive learning algorithms for dynamic environments.",
       image: project21,
       category: ["AI/ML", "Robotics"],
       portfolioLink: "/portfolio-details/20",
+    },
+  ];
+
+  // ✅ Hard-coded SVG paths (no imports, no Simple Icons)
+  const techStack = [
+    {
+      name: "PyTorch",
+      color: "#EE4C2C",
+      url: "https://pytorch.org",
+      viewBox: "0 0 24 24",
+      path: "M12.005.04l-7.03 7.03a9.832 9.832 0 0 0 0 13.975 9.833 9.833 0 0 0 13.976 0c3.97-3.887 3.972-10.171.084-13.976l-1.738 1.737c2.895 2.895 2.895 7.608 0 10.503-2.894 2.894-7.608 2.894-10.503 0C3.9 16.414 3.9 11.7 6.794 8.806l4.632-4.631.58-.663zm3.556 3.886a1.323 1.323 0 1 0 0 2.646 1.323 1.323 0 0 0 0-2.646z",
+    }
+    ,
+    {
+      name: "AWS",
+      url: "https://aws.amazon.com",
+      viewBox: "0 0 128 128",
+      paths: [
+        {
+          fill: "#252f3e",
+          d: "M36.379 53.64c0 1.56.168 2.825.465 3.75.336.926.758 1.938 1.347 3.032.207.336.293.672.293.969 0 .418-.254.84-.8 1.261l-2.653 1.77c-.379.25-.758.379-1.093.379-.422 0-.844-.211-1.266-.59a13.28 13.28 0 0 1-1.516-1.98 34.153 34.153 0 0 1-1.304-2.485c-3.282 3.875-7.41 5.813-12.38 5.813-3.535 0-6.355-1.012-8.421-3.032-2.063-2.023-3.114-4.718-3.114-8.086 0-3.578 1.262-6.484 3.833-8.671 2.566-2.192 5.976-3.286 10.316-3.286 1.43 0 2.902.125 4.46.336 1.56.211 3.161.547 4.845.926v-3.074c0-3.2-.676-5.43-1.98-6.734C26.061 32.633 23.788 32 20.546 32c-1.473 0-2.988.168-4.547.547a33.416 33.416 0 0 0-4.547 1.433c-.676.293-1.18.461-1.473.547-.296.082-.507.125-.675.125-.59 0-.883-.422-.883-1.304v-2.063c0-.676.082-1.18.293-1.476.21-.293.59-.586 1.18-.883 1.472-.758 3.242-1.39 5.304-1.895 2.063-.547 4.254-.8 6.57-.8 5.008 0 8.672 1.136 11.032 3.41 2.316 2.273 3.492 5.726 3.492 10.359v13.64Zm-17.094 6.403c1.387 0 2.82-.254 4.336-.758 1.516-.508 2.863-1.433 4-2.695.672-.8 1.18-1.684 1.43-2.695.254-1.012.422-2.23.422-3.665v-1.765a34.401 34.401 0 0 0-3.871-.719 31.816 31.816 0 0 0-3.961-.25c-2.82 0-4.883.547-6.274 1.684-1.387 1.136-2.062 2.734-2.062 4.84 0 1.98.504 3.453 1.558 4.464 1.012 1.051 2.485 1.559 4.422 1.559Zm33.809 4.547c-.758 0-1.262-.125-1.598-.422-.34-.254-.633-.84-.887-1.64L40.715 29.98c-.25-.843-.38-1.39-.38-1.687 0-.672.337-1.05 1.013-1.05h4.125c.8 0 1.347.124 1.644.421.336.25.59.84.84 1.64l7.074 27.876 6.57-27.875c.208-.84.462-1.39.797-1.64.34-.255.93-.423 1.688-.423h3.367c.8 0 1.348.125 1.684.422.336.25.633.84.8 1.64l6.653 28.212 7.285-28.211c.25-.84.547-1.39.84-1.64.336-.255.887-.423 1.644-.423h3.914c.676 0 1.055.336 1.055 1.051 0 .21-.043.422-.086.676-.043.254-.125.59-.293 1.05L80.801 62.57c-.254.84-.547 1.387-.887 1.64-.336.255-.883.423-1.598.423h-3.62c-.801 0-1.348-.13-1.684-.422-.34-.297-.633-.844-.801-1.684l-6.527-27.16-6.485 27.117c-.21.844-.46 1.391-.8 1.684-.337.297-.926.422-1.684.422Zm54.105 1.137c-2.187 0-4.379-.254-6.484-.758-2.106-.504-3.746-1.055-4.84-1.684-.676-.379-1.137-.8-1.305-1.18a2.919 2.919 0 0 1-.254-1.18v-2.148c0-.882.336-1.304.97-1.304.25 0 .503.043.757.129.25.082.629.25 1.05.418a23.102 23.102 0 0 0 4.634 1.476c1.683.336 3.324.504 5.011.504 2.653 0 4.715-.465 6.145-1.39 1.433-.926 2.191-2.274 2.191-4 0-1.18-.379-2.145-1.136-2.946-.758-.8-2.192-1.516-4.254-2.191l-6.106-1.895c-3.074-.969-5.348-2.398-6.734-4.293-1.39-1.855-2.106-3.918-2.106-6.105 0-1.77.38-3.328 1.137-4.676a10.829 10.829 0 0 1 3.031-3.453c1.262-.965 2.696-1.684 4.38-2.188 1.683-.504 3.452-.715 5.304-.715.926 0 1.894.043 2.82.168.969.125 1.852.293 2.738.461.84.211 1.641.422 2.399.676.758.254 1.348.504 1.77.758.59.336 1.011.672 1.261 1.05.254.34.379.802.379 1.391v1.98c0 .884-.336 1.348-.969 1.348-.336 0-.883-.171-1.597-.507-2.403-1.094-5.098-1.641-8.086-1.641-2.399 0-4.293.379-5.598 1.18-1.309.797-1.98 2.02-1.98 3.746 0 1.18.421 2.191 1.261 2.988.844.8 2.403 1.602 4.633 2.316l5.98 1.895c3.032.969 5.22 2.316 6.524 4.043 1.305 1.727 1.938 3.707 1.938 5.895 0 1.812-.38 3.453-1.094 4.882-.758 1.434-1.77 2.696-3.074 3.707-1.305 1.051-2.864 1.809-4.672 2.36-1.895.586-3.875.883-6.024.883Zm0 0"
+        },
+        {
+          fill: "#f90",
+          d: "M118 73.348c-4.432.063-9.664 1.052-13.621 3.832-1.223.883-1.012 2.062.336 1.894 4.508-.547 14.44-1.726 16.21.547 1.77 2.23-1.976 11.62-3.663 15.79-.504 1.26.59 1.769 1.726.8 7.41-6.231 9.348-19.242 7.832-21.137-.757-.925-4.388-1.79-8.82-1.726zM1.63 75.859c-.927.116-1.347 1.236-.368 2.121 16.508 14.902 38.359 23.872 62.613 23.872 17.305 0 37.43-5.43 51.281-15.66 2.273-1.688.297-4.254-2.02-3.204-15.534 6.57-32.421 9.77-47.788 9.77-22.778 0-44.8-6.273-62.653-16.633-.39-.231-.755-.304-1.064-.266z"
+        }
+      ],
+    }    
+    ,
+  
+    
+    {
+      name: "SQL",
+      color: "#4479A1",
+      url: "https://www.mysql.com",
+      viewBox: "0 0 24 24",
+      path:
+        "M12 0C5.373 0 0 2.462 0 5.5v13C0 21.538 5.373 24 12 24s12-2.462 12-5.5v-13C24 2.462 18.627 0 12 0zm0 2c5.523 0 10 1.792 10 4s-4.477 4-10 4S2 8.208 2 5.5 6.477 2 12 2zm0 18c-5.523 0-10-1.792-10-4v-2.197c2.168 1.414 5.644 2.197 10 2.197s7.832-.783 10-2.197V16c0 2.208-4.477 4-10 4zm0-6c-5.523 0-10-1.792-10-4V7.803c2.168 1.414 5.644 2.197 10 2.197s7.832-.783 10-2.197V10c0 2.208-4.477 4-10 4z",
+    },
+    {
+      name: "Python",
+      url: "https://www.python.org",
+      viewBox: "0 0 24 24",
+      paths: [
+        {
+          fill: "#3776AB",
+          d: "M12.002 0c-.983.004-1.922.09-2.76.245C6.74.82 6.294 1.68 6.294 3.078v2.09h5.84v.696H4.11C2.65 5.864 1.42 6.78 1.02 8.63c-.46 2.115-.48 3.435 0 5.644.356 1.643 1.203 2.766 2.664 2.766h1.723v-2.292c0-1.656.956-3.108 2.633-3.108h5.835c1.625 0 2.633-1.345 2.633-2.98V3.078c0-1.586-1.34-2.778-2.633-3.01C13.23.063 12.62-.003 12.002 0zm-3.157 1.69a1.058 1.058 0 110 2.116 1.058 1.058 0 010-2.116z"
+        },
+        {
+          fill: "#FFD43B",
+          d: "M12.002 24c.983-.004 1.922-.09 2.76-.245 2.503-.575 2.948-1.435 2.948-2.833v-2.09h-5.84v-.696h8.022c1.46 0 2.69-.916 3.09-2.766.46-2.115.48-3.435 0-5.644-.356-1.643-1.203-2.766-2.664-2.766h-1.723v2.292c0 1.656-.956 3.108-2.633 3.108H8.127c-1.625 0-2.633 1.345-2.633 2.98v5.582c0 1.586 1.34 2.778 2.633 3.01.645.12 1.256.186 1.875.186zm3.157-1.69a1.058 1.058 0 110-2.116 1.058 1.058 0 010 2.116z"
+        }
+      ]
+    },
+    
+    
+    {
+      name: "TensorFlow",
+      color: "#FF6F00",
+      url: "https://www.tensorflow.org",
+      viewBox: "0 0 24 24",
+      path:
+        "M1.292 5.856L11.54 0v24l-4.095-2.378V7.603l-6.168 3.564.015-5.31zm21.43 5.311l-.014-5.31L12.46 0v24l4.095-2.378V14.87l3.092 1.788-.018-4.618-3.074-1.756V7.603l6.168 3.564z",
+    },
+    {
+      name: "Docker",
+      color: "#2496ED",
+      url: "https://www.docker.com",
+      viewBox: "0 0 24 24",
+      path:
+        "M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.186.185.186m-2.93 0h2.12a.186.186 0 00.184-.186V6.29a.185.185 0 00-.185-.185H8.1a.185.185 0 00-.185.185v1.887c0 .102.083.186.185.186m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.185-.185H5.136a.186.186 0 00-.186.185v1.887c0 .102.084.186.186.186m5.893 2.715h2.118a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.185m-2.93 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.185.185 0 00.185-.185V9.006a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V9.006a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338 0-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983.003 1.963-.086 2.93-.266a12.248 12.248 0 003.823-1.389c.98-.567 1.86-1.288 2.61-2.136 1.252-1.418 1.998-2.997 2.553-4.4h.221c1.372 0 2.215-.549 2.68-1.009.309-.293.55-.65.707-1.046l.098-.288z",
+    },
+    {
+      name: "React",
+      color: "#61DAFB",
+      url: "https://react.dev",
+      viewBox: "0 0 24 24",
+      path:
+        "M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.408-.135.662-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z",
+    },
+    {
+      name: "Kubernetes",
+      color: "#326CE5",
+      url: "https://kubernetes.io",
+      viewBox: "0 0 24 24",
+      path:
+        "M10.204 14.35l.007.01-.999 2.413a5.171 5.171 0 0 1-2.075-2.597l2.578-.437.004.005a.44.44 0 0 1 .484.606zm-.833-2.129a.44.44 0 0 0 .173-.756l.002-.011-1.433-2.011a5.185 5.185 0 0 0-.91 2.223l2.168.555zm.932-2.772a.44.44 0 0 0 .756-.173l.01-.005-.558-2.168a5.19 5.19 0 0 0-2.221.912l2.01 1.433.003.001zM13.615 9.28l.002-.01-.695-2.312a5.194 5.194 0 0 0-2.207.355l1.582 1.926.006-.001a.44.44 0 0 1 .312.042zm6.269 3.155a5.189 5.189 0 0 0-.598-1.595l-2.077.973.005.003a.44.44 0 0 1 .004.833l-.003.005 2.061.956a5.195 5.195 0 0 0 .608-1.175zm-3.334-3.135l-2.423-.948-.008.01a.44.44 0 0 0-.577.337l-.002.006 1.043 2.379.005-.002a.44 0 0 0 .788-.089l.003-.004-1.02-2.392.002-.002a.44.44 0 0 0 .189.113zm.163 2.666l.003.006-.896 2.366a5.188 5.188 0 0 0 1.878-1.372l-1.992-1.009.007.009zm-2.071-3.205a.44.44 0 0 0-.07-.423l.002-.009-1.949-1.495a5.204 5.5 0 0 0-1.548 1.832l1.885 1.245.005-.001a.44.44 0 0 0 .675-.149zm-5.156 5.65a.44.44 0 0 0-.172.756l-.003.011 1.433 2.011a5.19 5.19 0 0 0 2.221-.912l-2.01-1.432-.003-.002a.44.44 0 0 0-.466-.432zm6.138-3.205a.44.44 0 0 0 .07.423l-.002.009 1.949 1.495a5.193 5.193 0 0 0 1.548-1.832l-1.885-1.245-.005.001a.44.44 0 0 0-.675.149zm2.158-1.276l-.017.03 2.078.973a5.195 5.195 0 0 0-1.455-2.232l-1.557 1.721.002.004a.44.44 0 0 1 .949.504zm-4.611-2.055a.44.44 0 0 0 .578-.337l.002-.007-1.026-2.343a5.175 5.175 0 0 0-1.886 1.361l2.332.926zm-2.157 3.31l-.002.009.896-2.366a5.195 5.195 0 0 1-1.878 1.372l1.992 1.009-.008-.024zm-3.344.7l-.007-.01.996-2.413a5.198 5.198 0 0 1 2.077 2.597l-2.578.436-.004-.005a.44.44 0 0 1-.484-.605zm.833 2.129a.44.44 0 0 0-.173.756l-.002.011 1.433 2.011a5.191 5.191 0 0 0 .91-2.221l-2.168-.557zm4.778 3.026a.44.44 0 0 0-.756.173l-.01.005.558 2.168a5.191 5.191 0 0 0 2.221-.912l-2.01-1.433-.003-.001zM12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z",
     },
   ];
 
@@ -52,112 +141,208 @@ const Banner = () => {
   };
 
   return (
-<div className="banner-wrapper position-relative overflow-hidden rounded">
-<div className="floating-dots"></div>
+    <>
+      <style jsx>{`
+        @keyframes float3d {
+          0%,
+          100% {
+            transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) translateY(0px);
+          }
+          50% {
+            transform: perspective(1000px) rotateY(5deg) rotateX(-2deg) translateY(-8px);
+          }
+        }
 
-    <div className="banner-layout d-flex gap-9 gap-md-12 align-items-start justify-content-between">
-      <div className="banner-content">
-        <span className="n5-color fs-five">HI, I&apos;M An AI Engineer</span>
-        <h2 className="typing-text display-one p1-color mt-2 mb-3">
-          <TypingEffect texts={texts} speed={200} pause={2000} />
-        </h2>
-        <p className="fs-seven n5-color">
-          My focus is on developing AI4Health solutions that can help improve the lives of people around the world
-          {/* <Link href="/blog" className="p1-color">
-            {" "}
-            blog
-          </Link>
-          ,
-          <Link href="/portfolio" className="p1-color">
-            {" "}
-            project portfolio{" "}
-          </Link>
-          and{" "}
-          <Link href="/resume" className="p1-color">
-            online resume
-          </Link> */}
-          .
-        </p>
-        <div className="d-flex flex-wrap align-itmes-center gap-3 gap-md-6 mt-4 mt-md-8">
-          <Link
-            href="/portfolio"
-            className="p-btn n11-color bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
-          >
-            <PiArrowRight />
-            View Portfolio
-          </Link>
-          <Link
-            href="/"
-            className="p-btn n11-color bgn51-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
-          >
-            <Image src={resumeIcon} width={20} height={20} alt="icon" />
-            View Resume
-          </Link>
-        </div>
-      </div>
+        .tech-stack-row {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          margin: 2rem 0;
+          padding: 0.5rem 0;
+          overflow-x: auto;
+          scrollbar-width: none;
+        }
 
-      <div className="featured-projects-banner">
-        <div className="d-flex align-items-center gap-2 mb-4">
-          <PiStarFill className="p1-color" size={18} />
-          <h3 className="fs-six fw-semibold mb-0" style={{ color: '#1a1a1a' }}>Featured Work</h3>
-        </div>
-        <div className="featured-projects-grid">
-          <div 
-            className="featured-project-card" 
-            onClick={() => handleProjectClick(projects[0])}
-            style={{ cursor: 'pointer' }}
-          >
-            <div className="featured-project-img">
-              <Image 
-                src={projects[0].image} 
-                alt={projects[0].title} 
-                width={210} 
-                height={290}
-                className="rounded"
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-              />
-            </div>
-            <div className="featured-project-info mt-3">
-              {projects[0].category.map((cat, idx) => (
-                <span key={idx}>{cat}</span>
+        .tech-stack-row::-webkit-scrollbar {
+          display: none;
+        }
+
+        .tech-icon-item {
+          flex-shrink: 0;
+          animation: float3d 4s ease-in-out infinite;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          cursor: pointer;
+        }
+
+        .tech-icon-item:nth-child(1) {
+          animation-delay: 0s;
+        }
+        .tech-icon-item:nth-child(2) {
+          animation-delay: 0.3s;
+        }
+        .tech-icon-item:nth-child(3) {
+          animation-delay: 0.6s;
+        }
+        .tech-icon-item:nth-child(4) {
+          animation-delay: 0.9s;
+        }
+        .tech-icon-item:nth-child(5) {
+          animation-delay: 1.2s;
+        }
+        .tech-icon-item:nth-child(6) {
+          animation-delay: 1.5s;
+        }
+        .tech-icon-item:nth-child(7) {
+          animation-delay: 1.8s;
+        }
+        .tech-icon-item:nth-child(8) {
+          animation-delay: 2.1s;
+        }
+
+        .tech-icon-item:hover {
+          transform: perspective(1000px) rotateY(0deg) rotateX(0deg) translateY(-12px) scale(1.15);
+          animation-play-state: paused;
+        }
+
+        .tech-icon-svg {
+          filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        @media (max-width: 768px) {
+          .tech-stack-row {
+            gap: 1.5rem;
+          }
+        }
+      `}</style>
+
+      <div className="banner-wrapper position-relative overflow-hidden rounded">
+        <div className="floating-dots"></div>
+
+        <div className="banner-layout d-flex gap-9 gap-md-12 align-items-start justify-content-between">
+          <div className="banner-content">
+            <span className="n5-color fs-five">HI, I&apos;M An AI Engineer</span>
+            <h2 className="typing-text display-one p1-color mt-2 mb-3">
+              <TypingEffect texts={texts} speed={200} pause={2000} />
+            </h2>
+            <p className="fs-seven n5-color">
+              My focus is on developing AI4Health solutions that can help improve the lives of people around the world.
+            </p>
+
+            {/* Tech Stack Icons Row */}
+            <div className="tech-stack-row">
+              {techStack.map((tech, index) => (
+                <a
+                  key={index}
+                  href={tech.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="tech-icon-item"
+                  title={tech.name}
+                  aria-label={`Visit ${tech.name} official website`}
+                >
+                  <svg
+                    className="tech-icon-svg"
+                    width="40"
+                    height="40"
+                    viewBox={tech.viewBox}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {"paths" in tech ? (
+                      tech.paths.map((p, i) => (
+                        <path key={i} d={p.d} fill={p.fill} />
+                      ))
+                    ) : (
+                      <path d={tech.path} fill={tech.color} />
+                    )}
+                  </svg>
+
+                </a>
               ))}
-              <h4 className="fs-seven fw-medium mt-2">{projects[0].title}</h4>
+            </div>
+
+            <div className="d-flex flex-wrap align-itmes-center gap-3 gap-md-6 mt-4 mt-md-8">
+              <Link
+                href="/portfolio"
+                className="p-btn n11-color bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
+              >
+                <PiArrowRight />
+                View Portfolio
+              </Link>
+
+              <Link
+                href="/"
+                className="p-btn n11-color bgn51-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
+              >
+                <Image src={resumeIcon} width={20} height={20} alt="icon" />
+                View Resume
+              </Link>
             </div>
           </div>
-          <div 
-            className="featured-project-card"
-            onClick={() => handleProjectClick(projects[1])}
-            style={{ cursor: 'pointer' }}
-          >
-            <div className="featured-project-img">
-              <Image 
-                src={projects[1].image} 
-                alt={projects[1].title} 
-                width={210} 
-                height={290}
-                className="rounded"
-                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-              />
+
+          <div className="featured-projects-banner">
+            <div className="d-flex align-items-center gap-2 mb-4">
+              <PiStarFill className="p1-color" size={18} />
+              <h3 className="fs-six fw-semibold mb-0" style={{ color: "#1a1a1a" }}>
+                Featured Work
+              </h3>
             </div>
-            <div className="featured-project-info mt-3">
-              {projects[1].category.map((cat, idx) => (
-                <span key={idx}>{cat}</span>
-              ))}
-              <h4 className="fs-seven fw-medium mt-2">{projects[1].title}</h4>
+
+            <div className="featured-projects-grid">
+              <div
+                className="featured-project-card"
+                onClick={() => handleProjectClick(projects[0])}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="featured-project-img">
+                  <Image
+                    src={projects[0].image}
+                    alt={projects[0].title}
+                    width={210}
+                    height={290}
+                    className="rounded"
+                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  />
+                </div>
+
+                <div className="featured-project-info mt-3">
+                  {projects[0].category.map((cat, idx) => (
+                    <span key={idx}>{cat}</span>
+                  ))}
+                  <h4 className="fs-seven fw-medium mt-2">{projects[0].title}</h4>
+                </div>
+              </div>
+
+              <div
+                className="featured-project-card"
+                onClick={() => handleProjectClick(projects[1])}
+                style={{ cursor: "pointer" }}
+              >
+                <div className="featured-project-img">
+                  <Image
+                    src={projects[1].image}
+                    alt={projects[1].title}
+                    width={210}
+                    height={290}
+                    className="rounded"
+                    style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  />
+                </div>
+
+                <div className="featured-project-info mt-3">
+                  {projects[1].category.map((cat, idx) => (
+                    <span key={idx}>{cat}</span>
+                  ))}
+                  <h4 className="fs-seven fw-medium mt-2">{projects[1].title}</h4>
+                </div>
+              </div>
             </div>
           </div>
+
+          <FeaturedProjectModal isOpen={isModalOpen} onClose={closeModal} project={selectedProject} />
         </div>
       </div>
-
-      <FeaturedProjectModal 
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        project={selectedProject}
-      />
-      </div>
-      </div>
+    </>
   );
 };
 
 export default Banner;
-
