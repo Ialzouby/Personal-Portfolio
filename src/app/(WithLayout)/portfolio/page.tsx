@@ -15,7 +15,9 @@ const Portfolio = () => {
 
   return (
     <div>
-<section className="pt-60 pb-120 mt-0">
+<section className="banner-section-top pt-60 pb-60 mt-0">
+<div className="banner-tint-overlay"></div>
+<div className="container">
 <FadeDown>
   <div className="pb-60 br-bottom-n3 position-relative text-center banner-wrapper2">
     <div className="heading-wrapper d-inline-block mx-auto position-relative">
@@ -29,7 +31,7 @@ const Portfolio = () => {
       {/* Content */}
       <div className="content px-4 py-3 rounded-3">
         <h3 className="page-title fs-one fw-semibold mb-2 mb-md-3">
-          A collection of my best projects
+          A collection of my best projects
         </h3>
         <p className="fs-seven mb-4 mb-md-8">
           With many years in web development, I acquired extensive
@@ -41,6 +43,8 @@ const Portfolio = () => {
     </div>
   </div>
 </FadeDown>
+</div>
+</section>
 
 
 
@@ -55,6 +59,7 @@ const Portfolio = () => {
 
 
 
+      <section className="pb-120">
         <div className="container mt-8 mt-md-15">
           <FadeDown>
             <TabGroup>

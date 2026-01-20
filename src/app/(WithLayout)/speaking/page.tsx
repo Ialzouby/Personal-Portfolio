@@ -15,9 +15,31 @@ const Portfolio = () => {
 
   return (
     <div>
-      <section className="pt-10 pb-10 mt-10 mt-lg-0">
+      <section className="banner-section-top pt-120 pb-60 mt-10 mt-lg-0">
+        <div className="banner-tint-overlay"></div>
+        <div className="container">
+          <FadeDown>
+            <div className="pb-60 br-bottom-n3">
+              <div className="page-heading">
+                <h3 className="page-title fs-one fw-semibold n5-color mb-2 mb-md-3 text-center">
+                  Public Speaking & Teaching
+                </h3>
+                <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
+                  Sharing knowledge through talks, workshops, and educational content on AI, robotics, and software engineering.
+                </p>
+                <Link
+                  href="/contact"
+                  className="w-max p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
+                >
+                  <PiPaperPlaneTilt /> Let's Talk
+                </Link>
+              </div>
+            </div>
+          </FadeDown>
+        </div>
+      </section>
 
-
+      <section className="pt-10 pb-10">
         <div className="container mt-8 mt-md-5">
           <FadeDown>
             <TabGroup>

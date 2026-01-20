@@ -389,6 +389,121 @@
   transform: rotateX(15deg) rotateY(-15deg);
 }
 
+/* Full viewport height banner section */
+.banner-section-fullheight {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden;
+}
 
+/* Background image layer */
+.banner-section-fullheight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/gallery/Background.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
 
+/* Blue tinted overlay that covers the full banner section */
+.banner-tint-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 130, 246, 0.15);
+  z-index: 1;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  pointer-events: none;
+}
 
+.banner-section-fullheight .container {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 0 !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .banner-section-fullheight {
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
+  }
+  
+  .banner-content-wrapper {
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Top banner section for other pages (not full height) */
+.banner-section-top {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+/* Background image layer for top banner */
+.banner-section-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/gallery/Background.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* Ensure container content is above the overlay */
+.banner-section-top .container,
+.banner-section-top > div:not(.banner-tint-overlay) {
+  position: relative;
+  z-index: 10;
+}
+
+/* Mobile adjustments for top banner */
+@media (max-width: 768px) {
+  .banner-section-top {
+    min-height: 250px;
+  }
+}

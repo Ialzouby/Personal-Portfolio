@@ -53,14 +53,13 @@ export const metadata = {
 
 const About = () => {
   return (
-    <div className="overflow-hidden">
-      <section className="pt-60 pb-110 br-bottom-n3  mt-0 mt-lg-0">
-        <div className="container">
-          <Banner />
-          <div className="d-none d-sm-block">
-  <Counter />
-</div>
-
+    <div>
+      <section className="banner-section-fullheight br-bottom-n3">
+        <div className="banner-tint-overlay"></div>
+        <div className="container h-100">
+          <div className="banner-content-wrapper h-100 d-flex flex-column justify-content-center">
+            <Banner />
+          </div>
         </div>
       </section>
       <section className="pt-0 pb-0 mt-0 br-bottom-n3">

@@ -60,7 +60,7 @@
     gap: clamp(0.75rem, 1.2vw, 1rem);
     align-items: start;
   }
-
+  
   h3 {
     position: relative;
     display: inline-block;
@@ -203,7 +203,9 @@
 }
 
 .banner-counter {
-  width: 636px;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 // what i do section style

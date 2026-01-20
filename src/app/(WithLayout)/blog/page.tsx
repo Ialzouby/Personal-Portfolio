@@ -11,7 +11,8 @@ import FadeDown from "@/components/motionEffect/FadeDown";
 const Blog = () => {
   return (
     <div>
-      <section className="pt-120 pb-120 mt-10 mt-lg-0">
+      <section className="banner-section-top pt-120 pb-60 mt-10 mt-lg-0">
+        <div className="banner-tint-overlay"></div>
         <FadeDown>
           <div className="pb-60 br-bottom-n3">
             <div className="container">
@@ -37,8 +38,10 @@ const Blog = () => {
             </div>
           </div>
         </FadeDown>
+      </section>
 
-        {/* <!-- blog card  --> */}
+      {/* <!-- blog card  --> */}
+      <section className="pb-120">
         <div className="container">
           <div className="row g-5 g-md-10 mt-5">
           {[...blogs]
