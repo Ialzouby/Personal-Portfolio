@@ -55,6 +55,7 @@ import speaking13 from "@/../public/images/speaking/speaker12.PNG";
 import speaking14 from "@/../public/images/speaking/speaker13.JPG";
 import speaking15 from "@/../public/images/speaking/ectss-2025.jpg";
 import speaking16 from "@/../public/images/speaking/msa-uncc2025.jpg";
+import speaking17 from "@/../public/images/speaking/ai@work.png";
 
 export const services = [
   {
@@ -109,6 +110,24 @@ export const services = [
 
 export const featureds2 = [
   {
+    id: 13,
+    category: "Education",
+    tag1: "Panelist",
+    tag2: "Medical AI",
+    tag3: "Public Speaking",
+    title: "AI @ Work l FALD-sponsored Professional Development Session",
+    img: speaking17,
+  },
+  {
+    id: 10,
+    category: "Public Speaking",
+    tag1: "Panelist",
+    tag2: "Medical AI",
+    tag3: "Public Speaking",
+    title: "Medical AI Panelist @ HabibiTech 2025 NYC",
+    img: speaking14,
+  },
+  {
     id: 12,
     category: "Public Speaking",
     tag1: "Panelist",
@@ -125,15 +144,6 @@ export const featureds2 = [
     tag3: "Poster Presentation",
     title: "2025 ECTSS - ORAL Presentation Cardiac Surgery",
     img: speaking15,
-  },
-  {
-    id: 10,
-    category: "Public Speaking",
-    tag1: "Panelist",
-    tag2: "Medical AI",
-    tag3: "Public Speaking",
-    title: "Medical AI Panelist @ HabibiTech 2025 NYC",
-    img: speaking14,
   },
   {
     id: 7,
@@ -174,8 +184,8 @@ export const featureds2 = [
   },
   {
     id: 5,
-  category: "Teaching",
-  tag1: "Teaching",
+  category: "Education",
+  tag1: "Education",
   tag2: "AI",
   tag3: "Instructional",
   title: "AI-Powered Development",
@@ -201,8 +211,8 @@ export const featureds2 = [
   },
   {
     id: 9,
-    category: "Teaching",
-    tag1: "Teaching",
+    category: "Education",
+    tag1: "Education",
     tag2: "AI",
     tag3: "Instructional",
     title: "Azure AI Solutions | AI Chat",
@@ -392,34 +402,34 @@ export const productsData = [
   {
     id: 1,
     category: "Duke & UNC",
-    img: project18,
-    title: "FDA-Authorized AI Devices: Clinical Validation Analysis",
-    des: "First-author study analyzing validation methods and clinical applications of all FDA-authorized medical AI tools. Submission to Nature Medicine in progress.",
-    price: "Submission to Nature Medicine in Progress",
+    img: product2,
+    title: "Is Artificial Intelligence Saving Lives? A Meta-Analysis of Real-World Clinical Impact",
+    des: "Chouffani El Fassi, S., Ngan, Z., Alzouby, I., et al. Meta-analysis examining the real-world clinical impact of AI interventions across healthcare settings.",
+    price: "In Revision After Peer Review at Nature Communications",
   },
   {
     id: 2,
     category: "Duke & UNC",
-    img: product2,
-    title: "Is AI Saving Lives? Meta-Analysis of Clinical Impact",
-    des: "Meta-analysis of real-world clinical outcomes across AI-enabled interventions. Under Peer Review at Nature Communications.",
-    price: "Under Peer Review at Nature Communications",
+    img: project18,
+    title: "Gaps and Opportunities in the Medical AI Market",
+    des: "Alzouby, I., Chouffani El Fassi, S., Shahrour, L., et al. Comprehensive analysis of current gaps and future opportunities in the medical AI industry.",
+    price: "Under Review by Nature Medicine",
   },
   {
     id: 3,
     category: "Duke & UNC",
     img: product3,
-    title: "Optimizing Organ Donation After DCD",
-    des: "Co-authored study presenting algorithms to enhance organ donation outcomes after circulatory death. Submission to Nature Medicine in progress.",
-    price: "In Progress",
+    title: "Computer Algorithms to Optimize Organ Donation After Circulatory Death (DCD)",
+    des: "Chouffani El Fassi, S., Alzouby, I., Yüksel, I., Khan, T. et al. Novel algorithms designed to improve organ donation outcomes after circulatory death.",
+    price: "Under Review by Nature Medicine",
   },
   {
     id: 4,
     category: "Duke & UNC",
     img: product4,
-    title: "AI Tool for ECMO Timing in SVC Syndrome",
-    des: "Case study on using AI to optimize ECMO timing for SVC syndrome relief post tumor resection. Submission to Nature Medicine in progress.",
-    price: "In Progress",
+    title: "AI Tool to Time ECMO for SVC Syndrome Relief: A Use Case in Nonseminomatous Germ Cell Tumor Resection",
+    des: "Chouffani El Fassi, S., Khoury, L., Alzouby, I., Haithcock, B. AI-based tool for optimizing ECMO timing in Nonseminomatous Germ Cell Tumor Resection cases.",
+    price: "Under Review by Nature Medicine",
   },
 
 ];

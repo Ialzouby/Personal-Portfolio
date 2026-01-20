@@ -22,7 +22,7 @@ const Portfolio = () => {
             <div className="pb-60 br-bottom-n3">
               <div className="page-heading">
                 <h3 className="page-title fs-one fw-semibold n5-color mb-2 mb-md-3 text-center">
-                  Public Speaking & Teaching
+                  Public Speaking & Education
                 </h3>
                 <p className="fs-seven n5-color mb-4 mb-md-8 text-center">
                   Sharing knowledge through talks, workshops, and educational content on AI, robotics, and software engineering.
@@ -44,7 +44,7 @@ const Portfolio = () => {
           <FadeDown>
             <TabGroup>
               <TabList className="d-flex flex-wrap gap-4 gap-sm-5 gap-md-7 align-items-center justify-content-center">
-                {["All", "Public Speaking", "Teaching"].map(
+                {["All", "Public Speaking", "Education"].map(
                   (label) => (
                     <Tab key={label} as={Fragment}>
                       {({ hover, selected }) => (
@@ -98,10 +98,10 @@ const Portfolio = () => {
                   </div>
                 </TabPanel>
 
-                {/* Hackathons */}
+                {/* Education */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {getByCategory("Teaching").map(({ id, img, tag1, tag2, tag3, title, award }) => (
+                    {getByCategory("Education").map(({ id, img, tag1, tag2, tag3, title, award }) => (
                       <FeaturedCard
                         key={id}
                         img={img}
