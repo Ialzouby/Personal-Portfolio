@@ -106,6 +106,7 @@ const FeaturedCard = ({
               <Link
                 href={`/portfolio_details/${id}`}
                 className="fw-semibold text-dark text-decoration-none"
+                style={{ whiteSpace: "pre-line" }}
               >
                 {title}
               </Link>

@@ -115,7 +115,7 @@ export const featureds2 = [
     tag1: "Panelist",
     tag2: "Medical AI",
     tag3: "Public Speaking",
-    title: "AI @ Work l FALD-sponsored Professional Development Session",
+    title: "AI @ Work l FALD-sponsored Professional Development Session\nUNC Chapel Hill School of Medicine",
     img: speaking17,
   },
   {
