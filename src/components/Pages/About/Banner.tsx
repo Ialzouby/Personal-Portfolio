@@ -273,16 +273,16 @@ const Banner = () => {
         .category-toggle {
           display: flex;
           justify-content: center;
-          gap: 0.75rem;
-          margin-top: 0.25rem;
+          gap: 0.5rem;
+          margin-top: -0.5rem;
         }
 
         .category-btn {
-          padding: 0.5rem 1.25rem;
+          padding: 0.35rem 0.9rem;
           border-radius: 999px;
           background: rgba(15, 23, 42, 0.05);
           border: 2px solid transparent;
-          font-size: 0.75rem;
+          font-size: 0.65rem;
           font-weight: 600;
           letter-spacing: 0.05em;
           text-transform: uppercase;
@@ -328,12 +328,12 @@ const Banner = () => {
           .category-toggle {
             flex-wrap: wrap;
             gap: 0.5rem;
-            margin-top: 0.25rem;
+            margin-top: -0.5rem;
           }
 
           .category-btn {
-            padding: 0.4rem 1rem;
-            font-size: 0.7rem;
+            padding: 0.3rem 0.75rem;
+            font-size: 0.6rem;
           }
         }
 
@@ -564,14 +564,23 @@ const Banner = () => {
       <div className="banner-centered-layout" ref={bannerRef}>
         {/* Main Text Section */}
         <div className="banner-text-section">
-          <span className="n5-color fs-five fw-medium">HI, I&apos;M ISSAM AN</span>
-          <h2 className="typing-text display-one p1-color mt-3 mb-3">
+          <span className="n5-color fs-three fw-medium">HI, I&apos;M ISSAM A</span>
+          <h2 className="typing-text display-one p1-color mt-3 mb-3" style={{ fontSize: "clamp(3rem, 7vw, 5rem)" }}>
             <TypingEffect texts={texts} speed={200} pause={2000} />
           </h2>
-          <p className="fs-seven n5-color">
+          <p className="fs-five n5-color">
             My focus is on developing AI4Health solutions that can help improve the lives of people around the world.
           </p>
         </div>
+
+        {/* Divider Line */}
+        <div style={{
+          width: "100%",
+          maxWidth: "600px",
+          height: "1px",
+          backgroundColor: "rgba(0, 0, 0, 0.2)",
+          margin: "1rem auto"
+        }}></div>
 
         {/* Counter Stats */}
         <div className="d-none d-sm-block">
