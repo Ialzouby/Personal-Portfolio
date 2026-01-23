@@ -12,53 +12,65 @@
 
 .custom-scrollbar {
   position: relative;
-  height: 4px;
-  background: rgba(59, 130, 246, 0.2);
-  border-radius: 2px;
-  margin-top: 20px;
+  height: 6px;
+  background: rgba(var(--n5), 0.1);
+  border-radius: 10px;
+  margin-top: 24px;
   cursor: pointer;
-  backdrop-filter: blur(10px);
-  border: none;
   transition: all 0.3s ease;
+  overflow: visible;
+}
+
+/* Light mode scrollbar track */
+[data-theme="light"] .custom-scrollbar {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode scrollbar track */
+[data-theme="dark"] .custom-scrollbar {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .custom-scrollbar:hover {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(var(--p1), 0.15);
+}
+
+[data-theme="light"] .custom-scrollbar:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .custom-scrollbar:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .custom-thumb {
   position: absolute;
-  top: -6px;
-  min-width: 20px;
-  height: 16px;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
-  border-radius: 8px;
+  top: -4px;
+  min-width: 40px;
+  height: 14px;
+  background: rgb(82, 113, 255);
+  border-radius: 7px;
   cursor: grab;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
-  border: none;
+  transition: none;
+  box-shadow: 0 2px 8px rgba(82, 113, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   z-index: 10;
-  /* Natural fade that transitions to match the horizontal line exactly */
-  mask: 
-    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 10%, black 25%, black 75%, rgba(0,0,0,0.3) 90%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.2) 20%, black 40%, black 60%, rgba(0,0,0,0.2) 80%, transparent 100%);
-  -webkit-mask: 
-    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 10%, black 25%, black 75%, rgba(0,0,0,0.3) 90%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.2) 20%, black 40%, black 60%, rgba(0,0,0,0.2) 80%, transparent 100%);
-  mask-composite: intersect;
-  -webkit-mask-composite: source-in;
 }
 
 .custom-thumb:hover {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  background: rgb(100, 130, 255);
+  transform: scaleY(1.2);
+  box-shadow: 0 4px 12px rgba(82, 113, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
 .custom-thumb:active {
   cursor: grabbing;
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+  transform: scaleY(1.3);
+  box-shadow: 0 6px 16px rgba(82, 113, 255, 0.6);
+  background: rgb(70, 100, 240);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 
 .thumb-ripple {
@@ -66,11 +78,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background: rgba(59, 130, 246, 0.8);
+  width: 50px;
+  height: 50px;
+  background: rgba(82, 113, 255, 0.4);
   border-radius: 50%;
-  animation: ripple 0.6s ease-out;
+  animation: ripple 0.5s ease-out;
   pointer-events: none;
 }
 
@@ -88,25 +100,27 @@
 /* Responsive improvements for the custom scrollbar */
 @media (max-width: 768px) {
   .custom-scrollbar {
-    height: 6px;
-    margin-top: 15px;
+    height: 8px;
+    margin-top: 20px;
   }
   
   .custom-thumb {
-    height: 18px;
-    top: -6px;
+    height: 16px;
+    top: -4px;
+    min-width: 50px;
   }
 }
 
 @media (max-width: 480px) {
   .custom-scrollbar {
-    height: 8px;
-    margin-top: 12px;
+    height: 10px;
+    margin-top: 18px;
   }
   
   .custom-thumb {
-    height: 20px;
-    top: -6px;
+    height: 18px;
+    top: -4px;
+    min-width: 60px;
   }
 }
 
@@ -431,6 +445,16 @@
   pointer-events: none;
 }
 
+/* Dark mode - darker gray tint */
+[data-theme="dark"] .banner-tint-overlay {
+  background: rgba(31, 41, 55, 0.7);
+}
+
+/* Light mode - keep blue tint */
+[data-theme="light"] .banner-tint-overlay {
+  background: rgba(59, 130, 246, 0.15);
+}
+
 .banner-section-fullheight .container {
   position: relative;
   z-index: 1;
@@ -505,5 +529,151 @@
 @media (max-width: 768px) {
   .banner-section-top {
     min-height: 250px;
+  }
+}
+
+/* Remove sidebar spacing for header layout */
+.main-content {
+  margin-left: 0 !important;
+  width: 100% !important;
+  padding-top: 0;
+}
+
+/* Hide sidebar when using header */
+.side-menu {
+  display: none !important;
+}
+
+/* Smooth page transitions */
+body {
+  transition: background-color 0.3s ease;
+}
+
+/* Enhanced Header Hover Effects */
+.header-nav .nav-link:hover {
+  color: rgba(var(--p1), 1) !important;
+  background: transparent !important;
+  transform: translateY(-2px) !important;
+  animation: none !important;
+}
+
+.header-nav .nav-link {
+  position: relative;
+}
+
+.header-nav .nav-link::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  background: radial-gradient(circle at center, rgba(var(--p1), 0.12), transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: -1;
+  transform: scale(0.8);
+}
+
+.header-nav .nav-link:hover::before {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.header-nav .nav-link:hover .nav-text {
+  transform: scale(1.03) !important;
+  text-shadow: 0 0 20px rgba(var(--p1), 0.4), 0 0 40px rgba(var(--p1), 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.header-nav .social-icon-header:hover {
+  color: #fff !important;
+  background: linear-gradient(135deg, rgba(var(--p1), 0.9), rgba(var(--p1), 1)) !important;
+  border-color: rgba(var(--p1), 1) !important;
+  transform: translateY(-6px) scale(1.15) rotate(8deg) !important;
+  box-shadow: 0 12px 30px rgba(var(--p1), 0.5) !important;
+  animation: socialIconBounce 0.6s ease !important;
+}
+
+@keyframes socialIconBounce {
+  0% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
+  25% { transform: translateY(-8px) scale(1.2) rotate(5deg); }
+  50% { transform: translateY(-6px) scale(1.15) rotate(10deg); }
+  75% { transform: translateY(-8px) scale(1.2) rotate(6deg); }
+  100% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
+}
+
+.header-nav .contact-btn {
+  padding: 0.5rem 1.2rem !important;
+  font-size: 0.875rem !important;
+  background: rgb(82, 113, 255) !important;
+  border-radius: 9999px !important;
+  border: none !important;
+  gap: 0.4rem !important;
+}
+
+.header-nav .contact-btn:hover {
+  background: rgb(100, 130, 255) !important;
+  transform: translateY(-2px) scale(1.02) !important;
+  box-shadow: 0 4px 16px rgba(82, 113, 255, 0.4) !important;
+  border-radius: 9999px !important;
+}
+
+.header-nav .contact-btn:active {
+  transform: translateY(0px) scale(1) !important;
+  box-shadow: 0 1px 4px rgba(82, 113, 255, 0.3) !important;
+  border-radius: 9999px !important;
+}
+
+.header-nav .contact-btn svg {
+  transition: transform 0.25s ease !important;
+}
+
+.header-nav .contact-btn:hover svg {
+  transform: translateX(3px) !important;
+}
+
+.header-nav .mobile-menu-toggle:hover {
+  background: linear-gradient(135deg, rgba(var(--p1), 0.2), rgba(var(--p1), 0.3)) !important;
+  border-color: rgba(var(--p1), 0.6) !important;
+  transform: rotate(90deg) scale(1.1) !important;
+  box-shadow: 0 0 30px rgba(var(--p1), 0.3) !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Enhanced scrollbar for modern look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--n2), 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(var(--p1), 0.6), rgba(var(--p1), 0.8));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(var(--p1), 0.8), rgba(var(--p1), 1));
+}
+
+/* Prevent horizontal scroll from mobile menu */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Add subtle page animations */
+.main-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -13,6 +13,7 @@ const FeaturedCard = ({
   tag3,
   title,
   award,
+  description,
 }: {
   id: number;
   img: StaticImageData;
@@ -21,6 +22,7 @@ const FeaturedCard = ({
   tag3: string;
   title: string;
   award?: "1st" | "2nd" | "3rd";
+  description?: string;
 }) => {
   // Map award to badge image path
   const badgeSrc =
@@ -33,7 +35,7 @@ const FeaturedCard = ({
       : null;
 
   return (
-    <div className="col-12 col-md-6 mb-4">
+    <div className="col-12 col-md-4 mb-4">
       <div className="position-relative">
         {badgeSrc && (
           <div
@@ -60,10 +62,12 @@ const FeaturedCard = ({
 
         <FadeDown>
           <div
-            className="rounded shadow-sm p-3 h-100 d-flex flex-column justify-content-between featured-card"
+            className="rounded shadow-sm p-3 d-flex flex-column featured-card"
             style={{
               background: "rgb(245, 245, 255)",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",
+              height: "100%",
+              minHeight: "450px",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.15)";
@@ -75,26 +79,26 @@ const FeaturedCard = ({
               e.currentTarget.style.transform = "translateY(0)";
             }}
           >
-            <Link href={`/portfolio_details/${id}`} className="d-block mb-3">
+            <Link href={`/portfolio_details/${id}`} className="d-block mb-3" style={{ flex: "0 0 auto" }}>
               <div
                 className="w-100 rounded overflow-hidden"
                 style={{
-                  maxHeight: "400px",
+                  height: "280px",
                 }}
               >
                 <Image
                   src={img}
                   alt={title}
-                  className="w-100 h-auto d-block"
+                  className="w-100 h-100 d-block"
                   style={{
                     borderRadius: "10px",
-                    objectFit: "contain",
+                    objectFit: "cover",
                   }}
                 />
               </div>
             </Link>
 
-            <div className="mb-2">
+            <div className="mb-2" style={{ flex: "0 0 auto" }}>
               {[tag1, tag2, tag3].map((tag, i) => (
                 <span key={i} className="badge bg-light text-dark me-2 mb-1">
                   {tag}
@@ -102,7 +106,7 @@ const FeaturedCard = ({
               ))}
             </div>
 
-            <div className="d-flex justify-content-between align-items-start">
+            <div className="d-flex justify-content-between align-items-start mb-2" style={{ flex: "0 0 auto" }}>
               <Link
                 href={`/portfolio_details/${id}`}
                 className="fw-semibold text-dark text-decoration-none"
@@ -114,10 +118,24 @@ const FeaturedCard = ({
                 href={`/portfolio_details/${id}`}
                 className="text-dark"
                 aria-label="Open"
+                style={{ flex: "0 0 auto" }}
               >
                 <PiArrowUpRightBold size={20} />
               </Link>
             </div>
+
+            {description && (
+              <p 
+                className="text-muted mb-0 mt-auto" 
+                style={{ 
+                  fontSize: "0.875rem", 
+                  lineHeight: "1.5",
+                  flex: "0 0 auto"
+                }}
+              >
+                {description}
+              </p>
+            )}
           </div>
         </FadeDown>
       </div>

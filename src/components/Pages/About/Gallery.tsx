@@ -88,12 +88,19 @@ const Gallery = () => {
   
   const handleScroll = useCallback(() => {
     const el = galleryRef.current;
-    if (!el) return;
-  
-    const scrollRatio = el.scrollLeft / (el.scrollWidth - el.clientWidth);
+    if (!el || isDragging) return;
+    
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    if (maxScroll <= 0) {
+      setThumbLeft(0);
+      return;
+    }
+    
+    const scrollRatio = el.scrollLeft / maxScroll;
     const maxThumbMove = el.clientWidth - thumbWidth;
-    setThumbLeft(scrollRatio * maxThumbMove);
-  }, [thumbWidth]);
+    const newThumbLeft = scrollRatio * maxThumbMove;
+    setThumbLeft(Math.max(0, Math.min(newThumbLeft, maxThumbMove)));
+  }, [thumbWidth, isDragging]);
 
   const updateThumbSize = useCallback(() => {
     const el = galleryRef.current;
@@ -142,21 +149,28 @@ const Gallery = () => {
     const el = galleryRef.current;
     if (!el) return;
     
-    // Calculate the delta from the start position
-    const deltaX = e.clientX - dragRef.current.startX;
-    const newThumbLeft = Math.max(0, Math.min(dragRef.current.startLeft + deltaX, el.clientWidth - thumbWidth));
+    // Get scrollbar element position
+    const scrollbar = el.parentElement?.querySelector('.custom-scrollbar') as HTMLElement;
+    if (!scrollbar) return;
     
-    // Update thumb position immediately
-    setThumbLeft(newThumbLeft);
+    const scrollbarRect = scrollbar.getBoundingClientRect();
+    const deltaX = e.clientX - dragRef.current.startX;
+    const newThumbLeft = Math.max(0, Math.min(dragRef.current.startLeft + deltaX, scrollbarRect.width - thumbWidth));
     
     // Calculate and update scroll position based on thumb position
-    const scrollbarWidth = el.clientWidth - thumbWidth;
-    const scrollRatio = newThumbLeft / scrollbarWidth;
+    const availableScrollbarWidth = scrollbarRect.width - thumbWidth;
     const maxScroll = el.scrollWidth - el.clientWidth;
+    
+    if (maxScroll <= 0) return;
+    
+    const scrollRatio = newThumbLeft / availableScrollbarWidth;
     const targetScrollLeft = scrollRatio * maxScroll;
     
-    // Update scroll position immediately
+    // Update scroll position - this will trigger handleScroll which updates thumb
     el.scrollLeft = targetScrollLeft;
+    
+    // Also update thumb position directly for immediate feedback
+    setThumbLeft(newThumbLeft);
   }, [isDragging, thumbWidth]);
 
   const handleMouseUp = useCallback(() => {
@@ -170,30 +184,40 @@ const Gallery = () => {
     const clickX = e.clientX - rect.left;
     const scrollbarWidth = rect.width;
     
-    // Calculate new thumb position
-    const newThumbLeft = Math.max(0, Math.min(clickX - thumbWidth / 2, scrollbarWidth - thumbWidth));
-    
-    // Update scroll position first
     const el = galleryRef.current;
-    if (el) {
-      const availableScrollbarWidth = el.clientWidth - thumbWidth;
-      const scrollRatio = newThumbLeft / availableScrollbarWidth;
-      const maxScroll = el.scrollWidth - el.clientWidth;
-      const targetScrollLeft = scrollRatio * maxScroll;
-      
-      el.scrollLeft = targetScrollLeft;
-      
-      // Update thumb position to match the actual scroll position
-      const actualScrollRatio = el.scrollLeft / maxScroll;
-      const actualThumbLeft = actualScrollRatio * availableScrollbarWidth;
-      setThumbLeft(actualThumbLeft);
-    }
+    if (!el) return;
+    
+    const availableScrollbarWidth = el.clientWidth - thumbWidth;
+    const maxScroll = el.scrollWidth - el.clientWidth;
+    
+    if (maxScroll <= 0) return;
+    
+    // Calculate scroll position based on click position
+    const scrollRatio = Math.max(0, Math.min(1, (clickX - thumbWidth / 2) / availableScrollbarWidth));
+    const targetScrollLeft = scrollRatio * maxScroll;
+    
+    // Instant scroll (not smooth) for scrollbar clicks - feels more responsive
+    el.scrollLeft = targetScrollLeft;
+    
+    // Thumb position will update via handleScroll
   }, [isDragging, thumbWidth]);
   
   useEffect(() => {
     updateThumbSize();
     handleScroll(); // set initial position
     
+    const el = galleryRef.current;
+    if (!el) return;
+    
+    // Add scroll event listener - passive for better performance
+    el.addEventListener('scroll', handleScroll, { passive: true });
+    
+    return () => {
+      el.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll, updateThumbSize]);
+
+  useEffect(() => {
     if (isDragging) {
       document.addEventListener('mousemove', handleMouseMove, { passive: false });
       document.addEventListener('mouseup', handleMouseUp, { passive: false });
@@ -203,7 +227,7 @@ const Gallery = () => {
         document.removeEventListener('mouseup', handleMouseUp);
       };
     }
-  }, [isDragging, handleMouseMove, handleMouseUp, handleScroll, updateThumbSize]);
+  }, [isDragging, handleMouseMove, handleMouseUp]);
 
   // Update thumb size on window resize
   useEffect(() => {
@@ -265,6 +289,17 @@ const Gallery = () => {
           ))}
         </div>
 
+  <div className="custom-scrollbar" onClick={handleScrollbarClick}>
+<div
+  className={`custom-thumb ${isDragging ? 'dragging' : ''}`}
+  onMouseDown={handleThumbMouseDown}
+  style={{ left: `${thumbLeft}px`, width: `${thumbWidth}px` }}
+>
+      {rippleVisible && <span className="thumb-ripple" style={{ left: rippleX + "px" }} />}
+    </div>
+  </div>
+</div>
+
         <Lightbox
   open={lightboxOpen}
   close={() => setLightboxOpen(false)}
@@ -289,16 +324,6 @@ const Gallery = () => {
 />
 
       </div>
-  <div className="custom-scrollbar" onClick={handleScrollbarClick}>
-<div
-  className="custom-thumb"
-  onMouseDown={handleThumbMouseDown}
-  style={{ left: `${thumbLeft}px`, width: `${thumbWidth}px` }}
->
-      {rippleVisible && <span className="thumb-ripple" style={{ left: rippleX + "px" }} />}
-    </div>
-  </div>
-</div>
 
     </section>
   );

@@ -4,7 +4,7 @@ import FeaturedCard from "./FeaturedCard";
 import Link from "next/link";
 import FadeDown from "@/components/motionEffect/FadeDown";
 
-const idsToShow = [1, 2];
+const idsToShow = [1, 2, 21];
 
 
 const Featured = () => {
@@ -39,7 +39,7 @@ View more projects!
   {featureds
     .filter(Boolean)
     .filter(({ id }) => idsToShow.includes(id))
-    .map(({ id, img, tag1, tag2, tag3, title, award }) => (
+    .map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
       <FeaturedCard
         key={id}
         id={id}
@@ -49,6 +49,7 @@ View more projects!
         tag3={tag3}
         title={title}
         award={award}
+        description={description}
       />
     ))}
 </div>

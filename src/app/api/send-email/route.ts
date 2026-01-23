@@ -3,6 +3,92 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// ========================================
+// 🛡️ SECURITY: Rate Limiting
+// ========================================
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+const RATE_LIMIT_WINDOW = 60 * 60 * 1000; // 1 hour in milliseconds
+const MAX_REQUESTS_PER_WINDOW = 3; // Max 3 submissions per hour per IP
+
+function checkRateLimit(ip: string): { allowed: boolean; remainingTime?: number } {
+  const now = Date.now();
+  const record = rateLimitMap.get(ip);
+
+  if (!record || now > record.resetTime) {
+    // Create new record or reset expired one
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW });
+    return { allowed: true };
+  }
+
+  if (record.count >= MAX_REQUESTS_PER_WINDOW) {
+    const remainingTime = Math.ceil((record.resetTime - now) / 1000 / 60); // minutes
+    return { allowed: false, remainingTime };
+  }
+
+  // Increment count
+  record.count++;
+  return { allowed: true };
+}
+
+// ========================================
+// 🛡️ SECURITY: Spam Detection
+// ========================================
+function detectSpam(name: string, email: string, message: string): { isSpam: boolean; reason?: string } {
+  // 1. Check for excessive URLs
+  const urlPattern = /(https?:\/\/[^\s]+)/gi;
+  const urlMatches = message.match(urlPattern) || [];
+  if (urlMatches.length > 2) {
+    return { isSpam: true, reason: 'Too many URLs detected' };
+  }
+
+  // 2. Check for common spam keywords
+  const spamKeywords = [
+    'viagra', 'cialis', 'casino', 'lottery', 'prize', 'winner',
+    'click here', 'buy now', 'limited time', 'act now',
+    'cryptocurrency', 'crypto investment', 'forex', 'binary option',
+    'weight loss', 'diet pill', 'supplement',
+  ];
+  const lowerMessage = message.toLowerCase();
+  const lowerName = name.toLowerCase();
+  
+  for (const keyword of spamKeywords) {
+    if (lowerMessage.includes(keyword) || lowerName.includes(keyword)) {
+      return { isSpam: true, reason: 'Spam keywords detected' };
+    }
+  }
+
+  // 3. Check for excessive repetition (same character repeated)
+  if (/(.)\1{10,}/.test(message)) {
+    return { isSpam: true, reason: 'Excessive character repetition' };
+  }
+
+  // 4. Check for all caps (more than 70% uppercase)
+  const uppercaseCount = (message.match(/[A-Z]/g) || []).length;
+  const totalLetters = (message.match(/[A-Za-z]/g) || []).length;
+  if (totalLetters > 20 && (uppercaseCount / totalLetters) > 0.7) {
+    return { isSpam: true, reason: 'Excessive uppercase text' };
+  }
+
+  // 5. Check for very short messages (likely spam)
+  if (message.trim().length < 10) {
+    return { isSpam: true, reason: 'Message too short' };
+  }
+
+  // 6. Check for suspicious email patterns (temporary/disposable emails)
+  const suspiciousEmailPatterns = [
+    'tempmail', 'throwaway', 'guerrillamail', 'mailinator',
+    '10minutemail', 'fakeinbox', 'trashmail'
+  ];
+  const lowerEmail = email.toLowerCase();
+  for (const pattern of suspiciousEmailPatterns) {
+    if (lowerEmail.includes(pattern)) {
+      return { isSpam: true, reason: 'Suspicious email domain' };
+    }
+  }
+
+  return { isSpam: false };
+}
+
 // Email template function
 const createEmailTemplate = (name: string, email: string, phone: string, location: string, message: string) => {
   return `
@@ -69,9 +155,30 @@ const createEmailTemplate = (name: string, email: string, phone: string, locatio
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, phone, location, message } = await request.json();
+    const body = await request.json();
+    const { name, email, phone, location, message, _timestamp, _fillTime } = body;
 
-    // Validate required fields
+    // ========================================
+    // 🛡️ SECURITY CHECK 1: Rate Limiting
+    // ========================================
+    const ip = request.headers.get('x-forwarded-for') || 
+                request.headers.get('x-real-ip') || 
+                'unknown';
+    
+    const rateLimitCheck = checkRateLimit(ip);
+    if (!rateLimitCheck.allowed) {
+      console.log(`🛡️ Rate limit exceeded for IP: ${ip}`);
+      return NextResponse.json(
+        { 
+          error: `Too many requests. Please try again in ${rateLimitCheck.remainingTime} minutes.` 
+        },
+        { status: 429 }
+      );
+    }
+
+    // ========================================
+    // 🛡️ SECURITY CHECK 2: Required Fields
+    // ========================================
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Name, email, and message are required' },
@@ -79,7 +186,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate email format
+    // ========================================
+    // 🛡️ SECURITY CHECK 3: Email Format
+    // ========================================
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json(
@@ -88,7 +197,42 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check if Resend API key is configured
+    // ========================================
+    // 🛡️ SECURITY CHECK 4: Form Fill Time
+    // ========================================
+    if (_fillTime && _fillTime < 3000) {
+      console.log(`🛡️ Suspicious form fill time: ${_fillTime}ms from IP: ${ip}`);
+      return NextResponse.json(
+        { error: 'Please take your time filling out the form' },
+        { status: 400 }
+      );
+    }
+
+    // ========================================
+    // 🛡️ SECURITY CHECK 5: Spam Detection
+    // ========================================
+    const spamCheck = detectSpam(name, email, message);
+    if (spamCheck.isSpam) {
+      console.log(`🛡️ Spam detected from IP: ${ip}. Reason: ${spamCheck.reason}`);
+      return NextResponse.json(
+        { error: 'Your message appears to be spam. Please revise and try again.' },
+        { status: 400 }
+      );
+    }
+
+    // ========================================
+    // 🛡️ SECURITY CHECK 6: Length Validation
+    // ========================================
+    if (name.length > 100 || email.length > 100 || message.length > 5000) {
+      return NextResponse.json(
+        { error: 'Input exceeds maximum length' },
+        { status: 400 }
+      );
+    }
+
+    // ========================================
+    // ✅ ALL CHECKS PASSED - Send Email
+    // ========================================
     if (!process.env.RESEND_API_KEY) {
       console.error('RESEND_API_KEY is not configured');
       return NextResponse.json(
@@ -97,13 +241,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-          // Send email using Resend
-      const { data, error } = await resend.emails.send({
-        from: 'Portfolio Contact <onboarding@resend.dev>',
-        to: ['ialzouby@charlotte.edu'],
-        subject: `New Contact Form Submission from ${name}`,
-        html: createEmailTemplate(name, email, phone, location, message),
-      });
+    const { data, error } = await resend.emails.send({
+      from: 'Portfolio Contact <onboarding@resend.dev>',
+      to: ['ialzouby@charlotte.edu'],
+      subject: `New Contact Form Submission from ${name}`,
+      html: createEmailTemplate(name, email, phone, location, message),
+    });
 
     if (error) {
       console.error('Resend error:', error);
@@ -113,6 +256,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    console.log(`✅ Email sent successfully from ${email} (IP: ${ip})`);
     return NextResponse.json(
       { 
         message: 'Email sent successfully! I\'ll get back to you soon.',

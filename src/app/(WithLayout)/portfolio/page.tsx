@@ -87,7 +87,7 @@ const Portfolio = () => {
                 {/* All Projects */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {featureds.map(({ id, img, tag1, tag2, tag3, title, award }) => (
+                    {featureds.map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
                       <FeaturedCard
                         key={id}
                         id={id}
@@ -96,7 +96,8 @@ const Portfolio = () => {
                         tag2={tag2}
                         tag3={tag3}
                         title={title}
-                        award={award}
+                        award={award as "1st" | "2nd" | "3rd" | undefined}
+                        description={description}
                       />
                     ))}
                   </div>
@@ -105,7 +106,7 @@ const Portfolio = () => {
                 {/* AI/ML */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {getByCategory("AI/ML").map(({ id, img, tag1, tag2, tag3, title }) => (
+                    {getByCategory("AI/ML").map(({ id, img, tag1, tag2, tag3, title, description }) => (
                       <FeaturedCard
                         key={id}
                         id={id}
@@ -114,6 +115,7 @@ const Portfolio = () => {
                         tag2={tag2}
                         tag3={tag3}
                         title={title}
+                        description={description}
                       />
                     ))}
                   </div>
@@ -122,7 +124,7 @@ const Portfolio = () => {
                 {/* Hackathons */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {getByCategory("Hackathons").map(({ id, img, tag1, tag2, tag3, title, award }) => (
+                    {getByCategory("Hackathons").map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
                       <FeaturedCard
                         key={id}
                         id={id}
@@ -131,7 +133,8 @@ const Portfolio = () => {
                         tag2={tag2}
                         tag3={tag3}
                         title={title}
-                        award={award}
+                        award={award as "1st" | "2nd" | "3rd" | undefined}
+                        description={description}
                       />
                     ))}
                   </div>
@@ -140,7 +143,7 @@ const Portfolio = () => {
                 {/* AI Infrastructure */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {getByCategory("AI Infrastructure").map(({ id, img, tag1, tag2, tag3, title, award }) => (
+                    {getByCategory("AI Infrastructure").map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
                       <FeaturedCard
                         key={id}
                         id={id}
@@ -149,7 +152,8 @@ const Portfolio = () => {
                         tag2={tag2}
                         tag3={tag3}
                         title={title}
-                        award={award}
+                        award={award as "1st" | "2nd" | "3rd" | undefined}
+                        description={description}
                       />
                     ))}
                   </div>
@@ -159,7 +163,7 @@ const Portfolio = () => {
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
                     {getByCategory("Personal Explorations").map(
-                      ({ id, img, tag1, tag2, tag3, title, award }) => (
+                      ({ id, img, tag1, tag2, tag3, title, award, description }) => (
                         <FeaturedCard
                           key={id}
                           id={id}
@@ -168,7 +172,8 @@ const Portfolio = () => {
                           tag2={tag2}
                           tag3={tag3}
                           title={title}
-                          award={award}
+                          award={award as "1st" | "2nd" | "3rd" | undefined}
+                          description={description}
                         />
                       )
                     )}

@@ -24,6 +24,10 @@ const nextConfig = {
   experimental: {
     optimizePackageImports: ['react-icons'],
   },
+  // Suppress Bootstrap Sass deprecation warnings
+  sassOptions: {
+    silenceDeprecations: ['legacy-js-api', 'import', 'global-builtin'],
+  },
 };
 
 export default nextConfig;

@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function GetInTouch() {
   const [formData, setFormData] = useState({
@@ -7,13 +7,40 @@ export default function GetInTouch() {
     email: "",
     message: "",
   })
+  const [honeypot, setHoneypot] = useState("") // Anti-spam honeypot
+  const [formStartTime, setFormStartTime] = useState<number>(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle")
+  const [errorMessage, setErrorMessage] = useState("")
+
+  // Track when form is loaded (anti-bot measure)
+  useEffect(() => {
+    setFormStartTime(Date.now())
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitStatus("idle")
+    setErrorMessage("")
+
+    // Security checks
+    // 1. Honeypot check - if filled, it's a bot
+    if (honeypot) {
+      console.log("🛡️ Honeypot triggered - spam blocked")
+      setIsSubmitting(false)
+      return // Silently fail for bots
+    }
+
+    // 2. Time check - form should take at least 3 seconds to fill
+    const formFillTime = Date.now() - formStartTime
+    if (formFillTime < 3000) {
+      console.log("🛡️ Too fast submission - spam blocked")
+      setSubmitStatus("error")
+      setErrorMessage("Please take your time filling out the form.")
+      setIsSubmitting(false)
+      return
+    }
 
     try {
       const response = await fetch("/api/send-email", {
@@ -21,17 +48,26 @@ export default function GetInTouch() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          _timestamp: formStartTime, // Send timestamp for server validation
+          _fillTime: formFillTime,
+        }),
       })
+
+      const data = await response.json()
 
       if (response.ok) {
         setSubmitStatus("success")
         setFormData({ name: "", email: "", message: "" })
+        setFormStartTime(Date.now()) // Reset timer
       } else {
         setSubmitStatus("error")
+        setErrorMessage(data.error || "Failed to send message. Please try again.")
       }
     } catch (error) {
       setSubmitStatus("error")
+      setErrorMessage("Network error. Please check your connection and try again.")
     } finally {
       setIsSubmitting(false)
     }
@@ -69,7 +105,7 @@ export default function GetInTouch() {
               </svg>
             </div>
             <p className="text-red-700 font-medium">
-              Something went wrong. Please try again.
+              {errorMessage || "Something went wrong. Please try again."}
             </p>
           </div>
         </div>
@@ -137,6 +173,24 @@ export default function GetInTouch() {
             placeholder="Tell me about your project, goals, or any questions you have..."
           />
         </div>
+
+        {/* Honeypot field - hidden from humans, visible to bots */}
+        <input
+          type="text"
+          name="website"
+          value={honeypot}
+          onChange={(e) => setHoneypot(e.target.value)}
+          style={{
+            position: 'absolute',
+            left: '-9999px',
+            width: '1px',
+            height: '1px',
+            opacity: 0,
+          }}
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+        />
 
         <div className="pt-4 text-center">
           <button

@@ -1,16 +1,25 @@
+// ====================================================================
+// SIDEBAR CODE - COMMENTED OUT BUT SAVED FOR POTENTIAL REVERSION
+// To revert back to sidebar:
+// 1. Uncomment all code below (remove /* and */)
+// 2. Update layout.tsx to use Sidebar instead of Header
+// 3. Remove "desktop-collapsed" CSS handling if not needed
+// ====================================================================
+
+// Placeholder to prevent import errors - DELETE THIS when uncommenting
+const Sidebar = () => null;
+export default Sidebar;
+
+/*
 "use client";
 import Image from "next/image";
 import Link from "next/link";
 import profile from "@/../public/images/profile.png";
-import { useTheme } from "next-themes";
 import { usePathname } from "next/navigation";
 import {
-  PiFacebookLogo,
-  PiInstagramLogo,
   PiLinkedinLogo,
   PiGithubLogo,
   PiPaperPlaneTilt,
-  PiShoppingCart,
   PiX,
   PiCaretLeft,
   PiCaretRight,
@@ -25,9 +34,7 @@ type SidebarProps = {
 };
 
 const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
-  const { resolvedTheme } = useTheme();
   const path = usePathname();
-
   const [mounted, setMounted] = useState(false);
 
   const closeOnMobile = () => {
@@ -45,8 +52,7 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
   }
 
   return (
-    <div className={`side-menu ${sidebarOpen ? "active" : ""}`}>
-      {/* Desktop right-edge center toggle anchored to sidebar */}
+    <div className={\`side-menu \${sidebarOpen ? "active" : ""}\`}>
       <button
         aria-label={sidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
         onClick={() => setSidebarOpen && setSidebarOpen(!sidebarOpen)}
@@ -68,10 +74,9 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
       >
         {sidebarOpen ? <PiCaretLeft size={16} /> : <PiCaretRight size={16} />}
       </button>
-      {/* Close button only on mobile; desktop uses right-edge toggle */}
       <div
         onClick={() => setSidebarOpen && setSidebarOpen(false)}
-        className={`sidebar-btn close-btn cursor-pointer d-block d-lg-none`}
+        className={\`sidebar-btn close-btn cursor-pointer d-block d-lg-none\`}
       >
         <i className="fs-two p1-color">
           <PiX />
@@ -79,9 +84,6 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
       </div>
 
       <div className="d-flex">
-
-
-
         <div className="side-menu-right overflow-y-auto">
           <div className="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100">
             <div className="">
@@ -109,8 +111,6 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
                       <PiGithubLogo />
                     </i>
                   </Link>
-
-
                 </div>
               </div>
               <div className="line-divider my-4 my-md-8"></div>
@@ -134,12 +134,12 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
                         <Link
                           href={url}
                           onClick={closeOnMobile}
-                          className={`d-flex justify-content-between align-items-center rounded-3 ${
+                          className={\`d-flex justify-content-between align-items-center rounded-3 \${
                             path === url && "active"
-                          }`}
+                          }\`}
                         >
                           <div
-                            className={`menu-item d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2 `}
+                            className={\`menu-item d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2 \`}
                           >
                             {icon}
                             {name}
@@ -160,24 +160,21 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
               </div>
             </div>
             <div className="d-flex justify-content-center gap-3">
-  <Link
-    href="/contact"
-    //href="https://the-ai-bridge.vercel.app/"
-    className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
-    onClick={closeOnMobile}
-  >
-    <i className="ph ph-paper-plane-tilt">
-      <PiPaperPlaneTilt />
-    </i>
-    Contact Me
-  </Link>
+              <Link
+                href="/contact"
+                className="p-btn bg1-color fw-medium n11-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2"
+                onClick={closeOnMobile}
+              >
+                <i className="ph ph-paper-plane-tilt">
+                  <PiPaperPlaneTilt />
+                </i>
+                Contact Me
+              </Link>
 
-  <div className="side-icon bg1-color d-flex align-items-center justify-content-center">
-    <ThemeButton />
-  </div>
-</div>
-
-
+              <div className="side-icon bg1-color d-flex align-items-center justify-content-center">
+                <ThemeButton />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -186,3 +183,4 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
 };
 
 export default Sidebar;
+*/
