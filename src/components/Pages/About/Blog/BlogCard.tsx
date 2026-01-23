@@ -53,15 +53,36 @@ const BlogCard = ({
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div className="p-3 d-flex flex-column" style={{ flex: "1 1 auto" }}>
-            <div className="d-flex align-items-center gap-3 mb-2 mb-md-3" style={{ flex: "0 0 auto" }}>
+          <div className="p-4 d-flex flex-column" style={{ flex: "1 1 auto" }}>
+            <div className="d-flex align-items-center gap-3 mb-3" style={{ flex: "0 0 auto" }}>
               <span className="n4-color fs-eight">{date}</span>
               <span className="p1-color fs-eight">/</span>
               <span className="n4-color fs-eight">{tag}</span>
             </div>
+            
+            {/* Blue line below date */}
+            <div 
+              style={{
+                width: "100%",
+                height: "2px",
+                background: "rgba(var(--p1), 0.3)",
+                marginBottom: "1rem",
+              }}
+            ></div>
+            
             <h4 
-              className="blog-title fs-five n5-color fw-semibold mt-auto" 
-              style={{ flex: "0 0 auto" }}
+              className="blog-title fs-six n5-color fw-semibold mt-auto" 
+              style={{ 
+                flex: "0 0 auto",
+                display: "-webkit-box",
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                lineHeight: "1.4",
+                paddingTop: "0.5rem",
+                borderTop: "2px solid rgba(var(--p1), 0.3)",
+              }}
             >
               {title}
             </h4>
