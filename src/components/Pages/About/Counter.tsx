@@ -12,7 +12,7 @@ const Counter = () => {
         </h2>
         <div className="line" style={{ height: "28px" }}></div>
         <span className="n5-color text-start fs-nine" style={{ lineHeight: "1.2" }}>
-          Years<br />of<br />Experience
+          Years of<br />Experience
         </span>
       </div>
       <div className="d-flex align-items-center gap-2 gap-xl-3">

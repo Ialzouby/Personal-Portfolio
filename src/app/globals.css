@@ -443,16 +443,62 @@
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   pointer-events: none;
+  transition: background 0.3s ease;
 }
 
-/* Dark mode - darker gray tint */
-[data-theme="dark"] .banner-tint-overlay {
-  background: rgba(31, 41, 55, 0.7);
+/* Light mode - keep blue tint (default) */
+[data-theme="light"] .banner-tint-overlay,
+html[data-theme="light"] .banner-tint-overlay,
+.light .banner-tint-overlay {
+  background: rgba(59, 130, 246, 0.15) !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
-/* Light mode - keep blue tint */
-[data-theme="light"] .banner-tint-overlay {
-  background: rgba(59, 130, 246, 0.15);
+/* Dark mode - darker gray tint using data-theme */
+[data-theme="dark"] .banner-tint-overlay,
+html[data-theme="dark"] .banner-tint-overlay,
+.dark .banner-tint-overlay {
+  background: rgba(15, 23, 42, 0.85) !important;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+/* Dark mode banner text colors */
+[data-theme="dark"] .banner-section-fullheight .n5-color,
+[data-theme="dark"] .banner-section-top .n5-color {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .banner-section-fullheight .fs-seven,
+[data-theme="dark"] .banner-section-top .fs-seven {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .banner-section-fullheight .page-title,
+[data-theme="dark"] .banner-section-top .page-title {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .banner-section-fullheight .content,
+[data-theme="dark"] .banner-section-top .content {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .banner-section-fullheight .content h3,
+[data-theme="dark"] .banner-section-top .content h3,
+[data-theme="dark"] .banner-section-fullheight .content p,
+[data-theme="dark"] .banner-section-top .content p {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .banner-featured-text {
+  color: #ffffff !important;
+}
+
+/* Divider in dark mode */
+[data-theme="dark"] .banner-divider {
+  background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 .banner-section-fullheight .container {

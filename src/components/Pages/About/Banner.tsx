@@ -407,9 +407,9 @@ const Banner = () => {
           background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(10px);
           border-radius: 12px;
-          padding: 0.75rem;
+          padding: 1rem;
           box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-          max-width: 250px;
+          max-width: 320px;
           z-index: 1000;
           animation: slideIn 0.5s ease-out;
           border: 1px solid rgba(0, 0, 0, 0.1);
@@ -452,16 +452,16 @@ const Banner = () => {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.6rem;
         }
 
         .featured-popup-header h3 {
-          font-size: 0.7rem !important;
+          font-size: 0.85rem !important;
         }
 
         .featured-popup-header svg {
-          width: 12px;
-          height: 12px;
+          width: 14px;
+          height: 14px;
         }
 
         .featured-popup-close {
@@ -482,7 +482,7 @@ const Banner = () => {
         .featured-popup-projects {
           display: flex;
           flex-direction: row;
-          gap: 0.5rem;
+          gap: 0.6rem;
         }
 
         .featured-popup-card {
@@ -500,9 +500,9 @@ const Banner = () => {
         .featured-popup-img {
           width: 100%;
           aspect-ratio: 210 / 290;
-          border-radius: 6px;
+          border-radius: 8px;
           overflow: hidden;
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.3rem;
         }
 
         .featured-popup-info {
@@ -510,40 +510,73 @@ const Banner = () => {
         }
 
         .featured-popup-info h4 {
-          font-size: 0.55rem;
+          font-size: 0.65rem;
           font-weight: 600;
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.25rem;
           color: #1a1a1a;
-          line-height: 1.1;
+          line-height: 1.2;
         }
 
         .featured-popup-info span {
-          font-size: 0.45rem;
-          padding: 1px 4px;
+          font-size: 0.5rem;
+          padding: 2px 6px;
           background: rgba(var(--p1), 0.1);
           color: rgba(var(--p1), 1);
           border-radius: 6px;
           display: inline-block;
-          margin-right: 2px;
-          margin-bottom: 2px;
+          margin-right: 3px;
+          margin-bottom: 3px;
         }
 
         @media (max-width: 768px) {
           .banner-centered-layout {
-            gap: 1.25rem;
-            padding: 1.5rem 1rem;
+            gap: 1.5rem;
+            padding: 2rem 1rem;
+          }
+
+          .banner-text-section {
+            text-align: center;
+          }
+
+          .banner-text-section span {
+            font-size: clamp(0.9rem, 3vw, 1rem);
+          }
+
+          .typing-text {
+            font-size: clamp(2rem, 8vw, 3rem) !important;
+          }
+
+          .banner-text-section p {
+            font-size: clamp(0.95rem, 4vw, 1.1rem);
+            line-height: 1.6;
+          }
+
+          .tech-stack-container {
+            width: 100%;
+            overflow-x: auto;
+          }
+
+          .tech-stack-row {
+            padding: 1rem 0.5rem;
+            gap: 1.2rem;
+            justify-content: flex-start;
+          }
+
+          .skill-cube {
+            width: 60px;
+            height: 60px;
           }
 
           .featured-popup {
             bottom: 0.5rem;
             right: 0.5rem;
-            max-width: 240px;
-            padding: 0.5rem;
+            max-width: 280px;
+            padding: 0.75rem;
           }
 
           .featured-popup-projects {
             flex-direction: row;
-            gap: 0.4rem;
+            gap: 0.5rem;
           }
           
           .featured-popup-img {
@@ -551,12 +584,46 @@ const Banner = () => {
           }
           
           .featured-popup-info h4 {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
           }
           
           .featured-popup-info span {
-            font-size: 0.4rem;
-            padding: 1px 3px;
+            font-size: 0.45rem;
+            padding: 1px 4px;
+          }
+
+          .scroll-indicator {
+            bottom: 1rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .banner-centered-layout {
+            gap: 1.2rem;
+            padding: 1.5rem 0.75rem;
+          }
+
+          .banner-text-section span {
+            font-size: 0.85rem;
+          }
+
+          .typing-text {
+            font-size: clamp(1.8rem, 9vw, 2.5rem) !important;
+          }
+
+          .banner-text-section p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+          }
+
+          .skill-cube {
+            width: 50px;
+            height: 50px;
+          }
+
+          .featured-popup {
+            max-width: 240px;
+            padding: 0.6rem;
           }
         }
       `}</style>
@@ -574,13 +641,16 @@ const Banner = () => {
         </div>
 
         {/* Divider Line */}
-        <div style={{
-          width: "100%",
-          maxWidth: "600px",
-          height: "1px",
-          backgroundColor: "rgba(0, 0, 0, 0.2)",
-          margin: "1rem auto"
-        }}></div>
+        <div 
+          className="banner-divider"
+          style={{
+            width: "100%",
+            maxWidth: "600px",
+            height: "1px",
+            backgroundColor: "rgba(0, 0, 0, 0.2)",
+            margin: "1rem auto"
+          }}
+        ></div>
 
         {/* Counter Stats */}
         <div className="d-none d-sm-block">
@@ -750,7 +820,7 @@ const Banner = () => {
           <div className="featured-popup-header">
             <div className="d-flex align-items-center gap-2">
               <PiStarFill className="p1-color" size={16} />
-              <h3 className="fs-seven fw-semibold mb-0" style={{ color: "#1a1a1a" }}>
+              <h3 className="fs-seven fw-semibold mb-0 banner-featured-text">
                 Featured Work
               </h3>
             </div>

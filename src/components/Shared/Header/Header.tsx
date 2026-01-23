@@ -158,7 +158,9 @@ const Header = () => {
           background: rgba(var(--n2), 1);
           border-bottom: 1px solid rgba(143, 143, 143, 0.1);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-          position: relative;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
@@ -437,17 +439,18 @@ const Header = () => {
 
         .mobile-menu-content {
           position: absolute;
-          top: 70px;
+          top: 0;
           right: 0;
-          width: min(90%, 400px);
-          max-height: calc(100vh - 90px);
+          width: min(85%, 380px);
+          height: 100vh;
           background: rgba(var(--n2), 0.98);
           backdrop-filter: blur(20px);
-          border-radius: 20px 0 0 20px;
-          box-shadow: -10px 0 40px rgba(0, 0, 0, 0.2);
+          border-radius: 0;
+          box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
           transform: translateX(100%);
           transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           overflow-y: auto;
+          padding-top: 80px;
         }
 
         .mobile-menu.open .mobile-menu-content {
@@ -457,14 +460,15 @@ const Header = () => {
         .nav-link-mobile {
           color: rgba(var(--n5), 0.9);
           text-decoration: none;
-          padding: 1rem 1.5rem;
-          border-radius: 12px;
+          padding: 1.2rem 1.5rem;
+          border-radius: 14px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           transition: all 0.3s ease;
           position: relative;
-          font-weight: 500;
+          font-weight: 600;
+          font-size: 1.05rem;
           letter-spacing: 0.3px;
           opacity: 0;
           transform: translateX(30px);
@@ -479,15 +483,17 @@ const Header = () => {
         }
 
         .nav-link-mobile:hover {
-          background: rgba(var(--p1), 0.08);
+          background: rgba(var(--p1), 0.12);
           color: rgba(var(--p1), 1);
           padding-left: 2rem;
+          transform: translateX(-4px);
         }
 
         .active-mobile {
-          background: linear-gradient(135deg, rgba(var(--p1), 0.15), rgba(var(--p1), 0.08));
+          background: linear-gradient(135deg, rgba(var(--p1), 0.2), rgba(var(--p1), 0.1));
           color: rgba(var(--p1), 1) !important;
-          border-left: 3px solid rgba(var(--p1), 1);
+          border-left: 4px solid rgba(var(--p1), 1);
+          font-weight: 700;
         }
 
         .mobile-active-indicator {
@@ -500,9 +506,9 @@ const Header = () => {
         }
 
         .mobile-divider {
-          height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(var(--n5), 0.2), transparent);
-          margin: 1rem 0;
+          height: 2px;
+          background: linear-gradient(90deg, transparent, rgba(var(--p1), 0.3), transparent);
+          margin: 1.5rem 0;
         }
 
         .social-icon-mobile {
@@ -534,35 +540,35 @@ const Header = () => {
         }
 
         .contact-btn-mobile {
-          padding: 0.7rem 1.5rem;
+          padding: 1rem 2rem;
           border-radius: 9999px !important;
           background: rgb(82, 113, 255) !important;
           color: #ffffff !important;
           text-decoration: none;
-          font-weight: 600;
-          font-size: 0.9rem;
+          font-weight: 700;
+          font-size: 1rem;
           letter-spacing: 0.3px;
-          box-shadow: 0 3px 10px rgba(82, 113, 255, 0.3);
+          box-shadow: 0 4px 15px rgba(82, 113, 255, 0.4);
           transition: all 0.25s ease;
-          margin-top: 1rem;
+          margin-top: 1.5rem;
           border: none !important;
           cursor: pointer;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          gap: 0.5rem;
+          gap: 0.6rem;
           overflow: hidden;
         }
 
         .contact-btn-mobile:hover {
           background: rgb(100, 130, 255) !important;
-          transform: translateY(-2px) scale(1.02);
-          box-shadow: 0 5px 18px rgba(82, 113, 255, 0.4);
+          transform: translateY(-3px) scale(1.03);
+          box-shadow: 0 8px 25px rgba(82, 113, 255, 0.5);
         }
         
         .contact-btn-mobile:active {
           transform: translateY(0px) scale(1);
-          box-shadow: 0 1px 6px rgba(82, 113, 255, 0.3);
+          box-shadow: 0 2px 8px rgba(82, 113, 255, 0.3);
         }
 
         @media (max-width: 991px) {
