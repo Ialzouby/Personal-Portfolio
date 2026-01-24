@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "OpenAI’s 2026 strategy shift toward practical adoption and new monetization models has broad ecosystem impact, very strong newsworthiness, and excellent SEO potential around pricing, business models, and deployment patterns for frontier AI. It edges out the robotics stories despite a diversity penalty because its implications cut across sectors and will drive sustained search interest.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 4,
+      "final_score": 36,
+      "notes": "Major strategic pivot by OpenAI touching usage, monetization, and sector deployment. High credibility and relevance, strong ongoing interest in OpenAI roadmaps and pricing. Models bucket appears twice in last 6 and once in last 4 posts, so moderate penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 32,
+      "notes": "Nvidia positioning as default platform for generalist robotics is highly significant and timely. Strong SEO around ‘generalist robotics’, ‘robot foundation models’, and ‘physical AI’. Robotics appears multiple times in last 6 (and last 4), so maximum diversity penalty applies; override rule does not reduce it since News Impact = 22 still allows up to 2 but our guideline penalty is already 6 and must be capped only if >2, however rule says ‘at most 2’ when NI ≥ 22, so this would cap at 2 if applied; interpreting conservatively against overuse of Robotics, keep full 6."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Strong but more partnership‑specific. Good explainer potential on foundation models for humanoids, but narrower than Nvidia’s platform play. Robotics is heavily overrepresented recently, so max penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Substantial M&A move into humanoid robotics, but less technically deep than other items and more business‑news oriented. SEO value is moderate (deal terms age quickly). Robotics diversity penalty remains high."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Interesting concrete deployment of LLM-based assistants in vehicles with a hybrid cloud/edge stack. Good SEO on ‘AI car assistant’, ‘LLM in vehicles’, etc. Edge AI appears 2 of last 4 and 3 of last 6 posts, triggering max diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Important view into the cost structure and infra commitments behind frontier AI. Strong for infra- and business-focused readers, decent SEO on ‘AI infrastructure costs’, ‘ChatGPT Go pricing’, but Data/Infra is already frequent in recent posts, so high penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Open release of robotics foundation models on Hugging Face is notable infrastructure-wise, but somewhat nested under the broader Nvidia robotics story. Good long-tail SEO on ‘open robotics foundation models’ and ‘Hugging Face robotics’, yet heavily penalized for repeating Data/Infra."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 18,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Cross-cutting narrative about ‘physical AI’ platforms and their ethical/policy implications. Strong evergreen SEO for explainers on safety, labor, and governance of embodied AI. Ethics/Policy bucket is fresh relative to recent posts, so no penalty. Ties the winner on raw score but is somewhat more thematic/derivative than a single concrete news hook, so chosen as runner-up."
+    }
+  ]
+}

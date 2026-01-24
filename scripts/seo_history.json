@@ -11,7 +11,8 @@
     "Nvidia Nemotron Gr00t Cosmos explained",
     "robot foundation models explained",
     "data center gpus for ai training",
-    "generalist robotics platforms"
+    "generalist robotics platforms",
+    "chatgpt monetization strategy"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -25,7 +26,8 @@
     "Nvidia Nemotron, Gr00t and Cosmos Explained for AI Builders",
     "Robot Foundation Models Explained for Generalist Robotics",
     "Data Center GPUs for AI Training: Architectures and Tradeoffs",
-    "Generalist Robotics Platforms: Full-Stack Foundations Explained"
+    "Generalist Robotics Platforms: Full-Stack Foundations Explained",
+    "ChatGPT Monetization Strategy: Pricing and Business Models Explained"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -39,7 +41,8 @@
     "nvidia-nemotron-gr00t-cosmos-explained",
     "robot-foundation-models-generalist-robotics",
     "data-center-gpus-for-ai-training",
-    "generalist-robotics-platforms"
+    "generalist-robotics-platforms",
+    "chatgpt-monetization-strategy"
   ],
   "buckets": [
     "Robotics",
@@ -53,6 +56,7 @@
     "Models",
     "Robotics",
     "Data/Infra",
-    "Robotics"
+    "Robotics",
+    "Models"
   ]
 }
