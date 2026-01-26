@@ -11,6 +11,8 @@ import {
   PiNotebookFill,
   PiShoppingBag,
   PiShoppingBagFill,
+  PiTelevision,
+  PiTelevisionFill,
   PiUser,
   PiUserFill,
 } from "react-icons/pi";
@@ -30,10 +32,10 @@ export const sidebarsData = [
     numbers: 16,
   },
   //{
-    //id: 4,
-    //name: "Resume",
-    //url: "/resume",
-    //icon: <PiNotebook />,
+  //id: 4,
+  //name: "Resume",
+  //url: "/resume",
+  //icon: <PiNotebook />,
   //},
   {
     id: 5,
@@ -48,6 +50,12 @@ export const sidebarsData = [
     icon: <PiBriefcase />,
   },
   {
+    id: 8,
+    name: "Presentations",
+    url: "/presentations",
+    icon: <PiTelevision />,
+  },
+  {
     id: 6,
     name: "Leadership",
     url: "/leadership",
@@ -59,17 +67,17 @@ export const sidebarsData = [
     url: "/blog",
     icon: <PiNewspaperClipping />,
   },
-//  {
-    //id: 6,
-    //name: "Blog",
-    //url: "/blog",
-    //icon: <PiNewspaperClipping />,
+  //  {
+  //id: 6,
+  //name: "Blog",
+  //url: "/blog",
+  //icon: <PiNewspaperClipping />,
   //},
   //{
-    //id: 7,
-    //name: "Contact",
-    //url: "/contact",
-    //icon: <PiEnvelope />,
+  //id: 7,
+  //name: "Contact",
+  //url: "/contact",
+  //icon: <PiEnvelope />,
   //},
 ];
 export const bottomNavData = [
@@ -87,10 +95,10 @@ export const bottomNavData = [
     numbers: 16,
   },
   //{
-    //id: 3,
-    //name: "Pricing",
-    //url: "/price",
-    //icon: <PiBriefcaseFill />,
+  //id: 3,
+  //name: "Pricing",
+  //url: "/price",
+  //icon: <PiBriefcaseFill />,
   //},
   {
     id: 3,
@@ -115,6 +123,12 @@ export const bottomNavData = [
     name: "Leadership",
     url: "/leadership",
     icon: <PiBriefcase />,
+  },
+  {
+    id: 9,
+    name: "Presentations",
+    url: "/presentations",
+    icon: <PiTelevisionFill />,
   },
   {
     id: 7,

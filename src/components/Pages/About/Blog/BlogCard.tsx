@@ -20,8 +20,8 @@ const BlogCard = ({
   return (
     <div className="col-12 col-md-4 mb-4">
       <FadeDown>
-        <Link 
-          href={`/blog_details/${slug}`} 
+        <Link
+          href={`/blog_details/${slug}`}
           className="blog-card d-flex flex-column h-100 text-decoration-none"
           style={{
             background: "rgb(245, 245, 255)",
@@ -39,40 +39,29 @@ const BlogCard = ({
             e.currentTarget.style.transform = "translateY(0)";
           }}
         >
-          <div 
-            className="blog-img overflow-hidden" 
+          <div
+            className="blog-img overflow-hidden"
             style={{
               height: "280px",
               flex: "0 0 auto",
             }}
           >
-            <Image 
-              src={img} 
-              alt="blog" 
+            <Image
+              src={img}
+              alt="blog"
               className="w-100 h-100"
               style={{ objectFit: "cover" }}
             />
           </div>
-          <div className="p-4 d-flex flex-column" style={{ flex: "1 1 auto" }}>
-            <div className="d-flex align-items-center gap-3 mb-3" style={{ flex: "0 0 auto" }}>
+          <div className="p-5 d-flex flex-column" style={{ flex: "1 1 auto" }}>
+            <div className="d-flex align-items-center justify-content-between mb-3" style={{ flex: "0 0 auto" }}>
+              <span className="px-3 py-1 border rounded-pill n4-color fs-nine fw-medium">{tag}</span>
               <span className="n4-color fs-eight">{date}</span>
-              <span className="p1-color fs-eight">/</span>
-              <span className="n4-color fs-eight">{tag}</span>
             </div>
-            
-            {/* Blue line below date */}
-            <div 
+
+            <h4
+              className="blog-title fs-five n5-color fw-semibold mb-2"
               style={{
-                width: "100%",
-                height: "2px",
-                background: "rgba(var(--p1), 0.3)",
-                marginBottom: "1rem",
-              }}
-            ></div>
-            
-            <h4 
-              className="blog-title fs-six n5-color fw-semibold mt-auto" 
-              style={{ 
                 flex: "0 0 auto",
                 display: "-webkit-box",
                 WebkitLineClamp: 2,
@@ -80,8 +69,6 @@ const BlogCard = ({
                 overflow: "hidden",
                 textOverflow: "ellipsis",
                 lineHeight: "1.4",
-                paddingTop: "0.5rem",
-                borderTop: "2px solid rgba(var(--p1), 0.3)",
               }}
             >
               {title}
