@@ -1,0 +1,146 @@
+{
+  "week": "2026-01-24",
+  "events": [
+    {
+      "event": "OpenAI outlines 2026 strategy focused on 'practical adoption' and new monetization models for ChatGPT",
+      "category": "Models",
+      "why_it_matters": "OpenAI is signaling a shift from purely frontier model development toward scaling real-world usage and sustainable business models. The company highlights record engagement with ChatGPT but also very large infrastructure commitments, and plans to introduce ads, a lower-cost ChatGPT Go plan, and more licensing and outcome-based pricing. This affects how AI capabilities will be packaged, priced, and deployed across sectors like health, science, and enterprise over the next year.",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/news/864229/openai-focus-practical-adoption-sarah-friar",
+          "title": "OpenAI’s 2026 ‘focus’ is ‘practical adoption’",
+          "date": "2026-01-19"
+        },
+        {
+          "url": "https://openai.com",
+          "title": "OpenAI company site (for strategy and product context)",
+          "date": "2026-01-19"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia unveils robot foundation models and edge hardware stack aimed at 'generalist robotics'",
+      "category": "Robotics",
+      "why_it_matters": "At CES 2026, Nvidia introduced a full-stack platform for 'physical AI' that includes robot-oriented foundation models, simulation tools, and edge hardware, with models hosted on Hugging Face. The goal is to let robots reason and adapt across many tasks rather than being limited to single-purpose automation. If broadly adopted by robot makers, this could centralize a large share of robotics AI workloads on Nvidia’s stack, shaping how general-purpose robots are trained and deployed.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
+          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "Nvidia official blog (robotics and physical AI posts)",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Boston Dynamics and Google DeepMind partner on next‑generation Atlas humanoid robot",
+      "category": "Robotics",
+      "why_it_matters": "Boston Dynamics announced a collaboration with Google DeepMind to use large AI foundation models to control its next‑gen Atlas humanoid robot. The aim is to make Atlas more capable and more natural around people. This is notable because it pairs a leading robotics hardware company with a leading AI lab, and it uses foundation models as a general control layer rather than bespoke task-specific code, potentially accelerating progress toward more general-purpose humanoid robots.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://deepmind.google",
+          "title": "Google DeepMind site (background on foundation models and robotics)",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Mobileye acquires humanoid robotics startup Mentee Robotics for about $900 million",
+      "category": "Robotics",
+      "why_it_matters": "Mobileye, known for automotive vision chips and driver-assistance systems, is buying humanoid robot startup Mentee Robotics in a cash-and-stock deal valued around $900 million. The acquisition moves Mobileye into what it calls 'Physical AI' and signals that established automotive and autonomy players are expanding from vehicles into general-purpose robots. This could lead to tighter integration of robotic platforms with automotive-grade sensing, compute, and safety systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/",
+          "title": "Mobileye acquires humanoid robot startup Mentee Robotics for $900M",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Reuters company and deal coverage (Mobileye, Mentee Robotics)",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Rivian details AI assistant architecture leveraging large language models for in‑vehicle control",
+      "category": "Edge AI",
+      "why_it_matters": "Rivian has built a vehicle-wide AI assistant that will run across its EV lineup starting in early 2026. The system uses a hybrid stack—custom models plus external LLMs like Google’s Gemini via Vertex AI—to let drivers control climate and other vehicle functions and connect to third‑party apps with an agentic framework. This is a concrete deployment of multimodal, model-agnostic AI at the edge (in cars), and it illustrates how auto makers are designing their own orchestration layers rather than fully outsourcing intelligence to cloud providers.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "Nvidia blog (context on edge/automotive AI platforms)",
+          "date": "2025-12-11"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI highlights growing infrastructure spending and introduces lower-cost ChatGPT Go and ads",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI’s CFO described how the company has accumulated very large long-term infrastructure commitments and is adjusting its business model. To support continued investment in compute, OpenAI is rolling out a cheaper ChatGPT Go subscription and advertising, and expanding licensing deals, while emphasizing flexible, demand-based infrastructure investment. This reflects the escalating cost structure of state-of-the-art AI and may set expectations for how widely accessible advanced models can remain as usage grows.",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/news/864229/openai-focus-practical-adoption-sarah-friar",
+          "title": "OpenAI’s 2026 ‘focus’ is ‘practical adoption’",
+          "date": "2026-01-19"
+        },
+        {
+          "url": "https://openai.com",
+          "title": "OpenAI company site (product and pricing announcements)",
+          "date": "2026-01-19"
+        }
+      ]
+    },
+    {
+      "event": "Robot foundation models from Nvidia are released openly on Hugging Face for broader developer access",
+      "category": "Data/Infra",
+      "why_it_matters": "Alongside its robotics platform, Nvidia is making robot-focused foundation models available on Hugging Face. This lowers the barrier for robotics teams to experiment with generalist control and planning models without building them from scratch or being locked into closed services. It also reinforces the role of shared model hubs as infrastructure for robotics research and product development.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://huggingface.co",
+          "title": "Hugging Face model hub (robotics and foundation models hosted with Nvidia)",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Major AI labs and chip providers continue positioning for 'physical AI' platforms spanning robots and vehicles",
+      "category": "AI Ethics",
+      "why_it_matters": "Recent announcements from Nvidia, Mobileye, Boston Dynamics/Google DeepMind, and OpenAI all emphasize 'physical AI'—deploying AI systems into embodied machines like robots and vehicles. While framed as a technical and commercial shift, this also raises ethical and governance questions around safety, accountability, and labor impacts as more general-purpose robots move from labs and demos into workplaces and public spaces. Current coverage highlights ambition and platform strategy, underscoring the need for corresponding safety and policy frameworks.",
+      "sources": [
+        {
+          "url": "https://wired.com",
+          "title": "Wired coverage of AI and robotics at CES 2026",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://theverge.com",
+          "title": "The Verge coverage of AI hardware and robotics trends",
+          "date": "2026-01-06"
+        }
+      ]
+    }
+  ]
+}
