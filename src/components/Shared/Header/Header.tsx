@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="header-nav" style={{ zIndex: 1000 }}>
+      <header className={`header-nav ${path === "/" ? "home-header" : ""}`} style={{ zIndex: 1000 }}>
         <div className="header-gradient-border"></div>
         <div className="container-fluid">
           <div className="d-flex align-items-center justify-content-between py-3 px-4">
@@ -28,11 +28,11 @@ const Header = () => {
             <Link href="/" className="profile-link d-flex align-items-center gap-3 text-decoration-none">
               <div className="header-profile-wrapper">
                 <div className="profile-ring"></div>
-                <Image 
-                  src={profile} 
-                  alt="Issam Alzouby" 
-                  width={50} 
-                  height={50} 
+                <Image
+                  src={profile}
+                  alt="Issam Alzouby"
+                  width={50}
+                  height={50}
                   className="profile-image"
                   style={{ objectFit: "cover" }}
                 />
@@ -49,9 +49,8 @@ const Header = () => {
                 <Link
                   key={id}
                   href={url}
-                  className={`nav-link px-4 py-2 fw-medium ${
-                    path === url ? "active-nav" : ""
-                  }`}
+                  className={`nav-link px-4 py-2 fw-medium ${path === url ? "active-nav" : ""
+                    }`}
                 >
                   <span className="nav-text">{name}</span>
                   <span className="nav-underline"></span>
@@ -62,16 +61,16 @@ const Header = () => {
             {/* Right Section - Desktop */}
             <div className="d-none d-lg-flex align-items-center gap-3">
               <div className="social-icons-group">
-                <Link 
-                  href="https://www.linkedin.com/in/alzouby/" 
+                <Link
+                  href="https://www.linkedin.com/in/alzouby/"
                   className="social-icon-header"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <PiLinkedinLogo size={22} />
                 </Link>
-                <Link 
-                  href="https://github.com/Ialzouby" 
+                <Link
+                  href="https://github.com/Ialzouby"
                   className="social-icon-header"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -123,16 +122,16 @@ const Header = () => {
               ))}
               <div className="mobile-divider"></div>
               <div className="d-flex gap-4 justify-content-center py-3">
-                <Link 
-                  href="https://www.linkedin.com/in/alzouby/" 
+                <Link
+                  href="https://www.linkedin.com/in/alzouby/"
                   className="social-icon-mobile"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <PiLinkedinLogo size={28} />
                 </Link>
-                <Link 
-                  href="https://github.com/Ialzouby" 
+                <Link
+                  href="https://github.com/Ialzouby"
                   className="social-icon-mobile"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -162,6 +161,16 @@ const Header = () => {
           top: 0;
           z-index: 1000;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .home-header {
+          position: fixed !important;
+          background: rgba(var(--n2), 0.7) !important;
+          backdrop-filter: blur(12px) !important;
+          -webkit-backdrop-filter: blur(12px) !important;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+          box-shadow: none !important;
+          width: 100%;
         }
 
         .header-gradient-border {
