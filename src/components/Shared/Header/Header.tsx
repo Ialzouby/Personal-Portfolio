@@ -371,13 +371,13 @@ const Header = () => {
 
         /* Contact Button */
         .contact-btn {
-          padding: 0.5rem 1.2rem;
+          padding: 0.5rem clamp(0.8rem, 2vw, 1.2rem);
           border-radius: 9999px !important;
           background: rgb(82, 113, 255) !important;
           color: #ffffff !important;
           text-decoration: none;
           font-weight: 600;
-          font-size: 0.875rem;
+          font-size: clamp(0.7rem, 1.5vw, 0.875rem);
           letter-spacing: 0.3px;
           box-shadow: 0 2px 8px rgba(82, 113, 255, 0.25);
           transition: all 0.25s ease;

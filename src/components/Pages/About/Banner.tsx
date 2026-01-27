@@ -131,13 +131,13 @@ const Banner = () => {
           flex-direction: column;
           gap: 0.75rem;
           width: 100%;
-          max-width: 400px; /* Increased to 400px */
+          max-width: clamp(280px, 40vw, 400px); /* Dynamic width scaling */
           margin-left: auto;
           margin-top: 5rem; /* Moves the cards down */
         }
 
         .card-header-sm {
-          font-size: 0.7rem;
+          font-size: clamp(0.6rem, 1vw, 0.7rem);
           text-transform: uppercase;
           letter-spacing: 0.05em;
           font-weight: 600;
@@ -161,7 +161,7 @@ const Banner = () => {
         }
 
         .presentation-iframe-wrapper {
-          width: 120px;
+          width: 35%; /* Responsive width instead of fixed 120px */
           flex-shrink: 0;
           aspect-ratio: 16/9;
           border-radius: 6px;
@@ -239,7 +239,7 @@ const Banner = () => {
         }
 
         .project-tag {
-             font-size: 0.6rem;
+             font-size: clamp(0.5rem, 0.8vw, 0.6rem);
              padding: 2px 6px;
              background: rgba(var(--p1), 0.1);
              color: rgba(var(--p1), 1);
@@ -248,7 +248,7 @@ const Banner = () => {
         }
 
         .project-title-sm {
-            font-size: 0.75rem;
+            font-size: clamp(0.65rem, 1vw, 0.75rem);
             font-weight: 600;
             color: rgba(var(--n5), 0.9);
             line-height: 1.3;
@@ -340,7 +340,7 @@ const Banner = () => {
                     </div>
                     <div className="d-flex align-items-center justify-content-between gap-3">
                       <div className="d-flex flex-column gap-1">
-                        <h4 className="fs-eight fw-semibold n5-color mb-0 line-clamp-2">{latestPresentation.title}</h4>
+                        <h4 className="fw-semibold n5-color mb-0 line-clamp-2" style={{ fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>{latestPresentation.title}</h4>
                         <Link href={`/presentations/${latestPresentation.slug}`} className="fs-nine p1-color text-decoration-none fw-medium d-flex align-items-center gap-1">
                           View <PiArrowRight size={12} />
                         </Link>
@@ -379,7 +379,7 @@ const Banner = () => {
                           <PiTrophyFill size={12} />
                         </div>
                         <div>
-                          <div className="fs-eight fw-semibold n5-color">{award.title}</div>
+                          <div className="fw-semibold n5-color" style={{ fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>{award.title}</div>
                           <div className="fs-nine n4-color opacity-75">{award.event}</div>
                         </div>
                       </div>
