@@ -15,15 +15,14 @@ const Portfolio = () => {
 
   return (
     <div>
-      <section className="banner-section-top pt-30 pb-30 mt-0">
+      <section className="banner-section-top py-0 mt-5 mt-lg-0">
         <div className="banner-tint-overlay"></div>
         <div className="container">
           <FadeDown>
-            <div className="pb-30 br-bottom-n3 position-relative text-center banner-wrapper2">
+            <div className="br-bottom-n3 position-relative text-center banner-wrapper2">
               <div className="heading-wrapper d-inline-block mx-auto position-relative">
 
-                {/* Animated Dots Behind */}
-                <div className="dot-overlay"></div>
+
 
                 {/* Frosted Glass Background */}
                 <div className="glass-blur-background"></div>

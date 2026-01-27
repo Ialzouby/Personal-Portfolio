@@ -58,14 +58,14 @@ const PresentationCard = ({
                     <div
                         className="presentation-img overflow-hidden position-relative"
                         style={{
-                            aspectRatio: "16/10",
+                            aspectRatio: "16/9",
                             width: "100%",
                         }}
                     >
                         {slidesId ? (
                             <div className="w-100 h-100 bg-secondary-subtle">
                                 <iframe
-                                    src={`https://docs.google.com/presentation/d/e/${slidesId}/embed?start=false&loop=false&delayms=3000`}
+                                    src={`https://docs.google.com/presentation/d/e/${slidesId}/embed?start=false&loop=false&delayms=3000&rm=minimal`}
                                     frameBorder="0"
                                     width="100%"
                                     height="100%"
@@ -73,7 +73,6 @@ const PresentationCard = ({
                                     style={{
                                         objectFit: "cover",
                                         pointerEvents: "none", // Prevent interaction
-                                        transform: "scale(1.05)" // Slight scale to avoid border gaps
                                     }}
                                     title="Slide Preview"
                                     loading="lazy"

@@ -10,8 +10,7 @@ const tags = [
     "Generative Models",
     "NLP & Transformers",
     "Computer Vision",
-    "Deep Learning Fundamentals",
-    "Advanced Topics"
+    "Deep Learning Fundamentals"
 ];
 
 const PresentationList = () => {
@@ -42,15 +41,21 @@ const PresentationList = () => {
                     <div className="col-12 col-lg-10">
                         <div className="p-4 p-md-5 rounded-4 bg-glass border border-white-10 shadow-sm">
                             {/* Search Bar */}
-                            <div className="position-relative mb-6">
-                                <div className="position-absolute top-50 start-0 translate-middle-y ps-4 text-muted">
+                            <div className="position-relative mb-6 rounded-3 overflow-hidden"
+                                style={{
+                                    background: "rgba(var(--p1), 0.05)",
+                                    border: "1px solid rgba(var(--p1), 0.2)",
+                                    backdropFilter: "blur(5px)"
+                                }}
+                            >
+                                <div className="position-absolute top-50 start-0 translate-middle-y ps-4 n4-color">
                                     <PiMagnifyingGlass size={20} />
                                 </div>
                                 <input
                                     type="text"
                                     placeholder="Search presentations by topic or keyword..."
-                                    className="form-control ps-5 py-3 rounded-pill border-0 shadow-none bg-light-subtle"
-                                    style={{ fontSize: "1rem" }}
+                                    className="form-control py-3 shadow-none n5-color placeholder-n4 bg-transparent border-0"
+                                    style={{ fontSize: "1rem", paddingLeft: "5rem" }}
                                     value={searchQuery}
                                     onChange={(e) => setSearchQuery(e.target.value)}
                                 />

@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { PiStarFill, PiArrowDown, PiTrophyFill, PiPresentationChart, PiArrowRight } from "react-icons/pi";
 import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import project21 from "@/../public/images/projects/robot.png";
@@ -21,6 +22,7 @@ interface ProjectData {
 }
 
 const Banner = () => {
+  const router = useRouter();
   const texts = ["Engineer", "Researcher", "Innovator"];
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -149,6 +151,13 @@ const Banner = () => {
         /* Presentation Card Specifics */
         .presentation-preview-card {
           padding: 0.75rem;
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .presentation-preview-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
 
         .presentation-iframe-wrapper {
@@ -171,6 +180,12 @@ const Banner = () => {
         /* Awards Card Specifics */
         .awards-card {
            padding: 0.75rem;
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .awards-card:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
         }
 
         .award-item {
@@ -316,7 +331,10 @@ const Banner = () => {
 
                 {/* 1. Latest Presentation Card */}
                 {latestPresentation && (
-                  <div className="glass-card presentation-preview-card">
+                  <div
+                    className="glass-card presentation-preview-card"
+                    onClick={() => router.push(`/presentations/${latestPresentation.slug}`)}
+                  >
                     <div className="card-header-sm">
                       <PiPresentationChart size={16} /> Latest Topic
                     </div>
@@ -346,7 +364,11 @@ const Banner = () => {
                 )}
 
                 {/* 2. Recent Awards Card */}
-                <div className="glass-card awards-card">
+                <div
+                  className="glass-card awards-card"
+                  onClick={() => router.push('/portfolio')}
+                  style={{ cursor: "pointer" }}
+                >
                   <div className="card-header-sm">
                     <PiTrophyFill size={16} /> Recent Awards
                   </div>

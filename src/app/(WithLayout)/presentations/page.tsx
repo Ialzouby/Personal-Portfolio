@@ -20,13 +20,13 @@ const PresentationsPage = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section className="banner-section-top pt-120 pb-60 mt-10 mt-lg-0">
+            <section className="banner-section-top pt-120 pb-60 mt-10 mt-lg-0 justify-content-center">
                 <div className="banner-tint-overlay"></div>
                 <FadeDown>
-                    <div className="pb-60 br-bottom-n3">
+                    <div className="br-bottom-n3 w-100">
                         <div className="container">
                             <div className="page-heading text-center">
-                                <h3 className="page-title fs-onefw-semibold n5-color mb-2 mb-md-3">
+                                <h3 className="page-title fs-one fw-semibold n5-color mb-2 mb-md-3">
                                     Machine Learning & AI Presentations
                                 </h3>
                                 <p className="fs-six n5-color mb-4 mb-md-6 opacity-75" style={{ maxWidth: "700px", margin: "0 auto" }}>
@@ -50,21 +50,7 @@ const PresentationsPage = () => {
                 </FadeDown>
             </section>
 
-            {/* About Section */}
-            <section className="py-10 bg-light-subtle">
-                <div className="container text-center">
-                    <div className="row justify-content-center">
-                        <div className="col-12 col-md-10 col-lg-8">
-                            <h2 className="fs-three fw-semibold n5-color mb-4">About These Presentations</h2>
-                            <p className="n4-color fs-seven">
-                                Welcome to my collection of technical presentations. These decks are created to deconstruct complex AI topics into understandable concepts.
-                                Whether you're exploring Variational Autoencoders (VAEs), diving into Transformers, or studying Neural Network fundamentals,
-                                you'll find comprehensive visual guides here to support your learning journey.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             {/* List Section (Search + Grid) */}
             <section className="pt-10">

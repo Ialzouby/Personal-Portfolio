@@ -91,6 +91,7 @@
     transform: translate(-50%, -50%) scale(0);
     opacity: 1;
   }
+
   100% {
     transform: translate(-50%, -50%) scale(2);
     opacity: 0;
@@ -103,7 +104,7 @@
     height: 8px;
     margin-top: 20px;
   }
-  
+
   .custom-thumb {
     height: 16px;
     top: -4px;
@@ -116,7 +117,7 @@
     height: 10px;
     margin-top: 18px;
   }
-  
+
   .custom-thumb {
     height: 18px;
     top: -4px;
@@ -127,7 +128,8 @@
 /* Professional Gallery: 2-row layout */
 .professional-gallery {
   display: grid;
-  grid-template-rows: repeat(2, 240px); /* Only 2 rows */
+  grid-template-rows: repeat(2, 240px);
+  /* Only 2 rows */
   grid-auto-flow: column dense;
   grid-auto-columns: minmax(180px, auto);
   gap: 16px;
@@ -136,8 +138,10 @@
   padding: 20px 0 40px 0;
   -webkit-overflow-scrolling: touch;
   align-items: stretch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
 
 /* Hide default scrollbar for webkit browsers */
@@ -180,11 +184,13 @@
   grid-column: span 2;
   aspect-ratio: 3 / 2;
 }
+
 .gallery-item--large {
   grid-row: span 2;
   grid-column: span 2;
   aspect-ratio: 4 / 3;
 }
+
 .gallery-item--standard {
   grid-row: span 1;
   aspect-ratio: 1 / 1;
@@ -204,6 +210,7 @@
   transition: transform 0.6s ease;
   border-radius: 8px;
 }
+
 .gallery-item:hover .gallery-item__image {
   transform: scale(1.1);
 }
@@ -215,12 +222,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.1) 50%,
-    rgba(0, 0, 0, 0.3) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0.3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,6 +233,7 @@
   transition: opacity 0.3s ease;
   border-radius: 8px;
 }
+
 .gallery-item:hover .gallery-item__overlay {
   opacity: 1;
 }
@@ -247,6 +253,7 @@
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
+
 .gallery-item:hover .gallery-item__icon {
   transform: scale(1);
 }
@@ -256,11 +263,13 @@
   .professional-gallery {
     grid-template-rows: repeat(2, 200px);
   }
+
   .gallery-item__icon {
     width: 40px;
     height: 40px;
   }
 }
+
 @media (max-width: 480px) {
   .professional-gallery {
     grid-template-rows: repeat(2, 160px);
@@ -292,24 +301,20 @@
 
 /* Transparent space-gradient background */
 .space-gradient {
-  background: linear-gradient(
-    135deg,
-    rgba(25, 25, 35, 0.6) 0%,
-    rgba(80, 40, 120, 0.4) 45%,
-    rgba(140, 100, 180, 0.2) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(25, 25, 35, 0.6) 0%,
+      rgba(80, 40, 120, 0.4) 45%,
+      rgba(140, 100, 180, 0.2) 100%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 /* Hover with depth */
 .clean-gradient {
   border-radius: 16px;
-  background: linear-gradient(
-    145deg,
-    rgba(30, 30, 40, 0.75) 0%,
-    rgba(80, 70, 110, 0.65) 45%,
-    rgba(160, 120, 255, 0.4) 100%
-  );
+  background: linear-gradient(145deg,
+      rgba(30, 30, 40, 0.75) 0%,
+      rgba(80, 70, 110, 0.65) 45%,
+      rgba(160, 120, 255, 0.4) 100%);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -350,12 +355,10 @@
 /* Dark mode gradient glass */
 @media (prefers-color-scheme: dark) {
   .modern-card {
-    background: linear-gradient(
-      145deg,
-      rgba(30, 30, 40, 0.75) 0%,
-      rgba(166, 156, 196, 0.65) 45%,
-      rgba(161, 152, 204, 0.35) 100%
-    );
+    background: linear-gradient(145deg,
+        rgba(30, 30, 40, 0.75) 0%,
+        rgba(166, 156, 196, 0.65) 45%,
+        rgba(161, 152, 204, 0.35) 100%);
     border-color: rgba(255, 255, 255, 0.08);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
   }
@@ -369,11 +372,9 @@
 /* Light mode frosted white */
 @media (prefers-color-scheme: light) {
   .modern-card {
-    background: linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.85),
-      rgba(245, 245, 255, 0.9)
-    );
+    background: linear-gradient(145deg,
+        rgba(255, 255, 255, 0.85),
+        rgba(245, 245, 255, 0.9));
     border-color: rgba(0, 0, 0, 0.06);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   }
@@ -532,7 +533,7 @@ html[data-theme="dark"] .banner-tint-overlay,
     min-height: 100vh;
     max-height: none;
   }
-  
+
   .banner-content-wrapper {
     justify-content: flex-start;
     gap: 2rem;
@@ -546,7 +547,9 @@ html[data-theme="dark"] .banner-tint-overlay,
   width: 100%;
   position: relative;
   overflow: hidden;
-  min-height: 200px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 /* Background image layer for top banner */
@@ -566,7 +569,7 @@ html[data-theme="dark"] .banner-tint-overlay,
 
 /* Ensure container content is above the overlay */
 .banner-section-top .container,
-.banner-section-top > div:not(.banner-tint-overlay) {
+.banner-section-top>div:not(.banner-tint-overlay) {
   position: relative;
   z-index: 10;
 }
@@ -574,7 +577,7 @@ html[data-theme="dark"] .banner-tint-overlay,
 /* Mobile adjustments for top banner */
 @media (max-width: 768px) {
   .banner-section-top {
-    min-height: 180px;
+    min-height: 100px;
   }
 }
 
@@ -640,11 +643,25 @@ body {
 }
 
 @keyframes socialIconBounce {
-  0% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
-  25% { transform: translateY(-8px) scale(1.2) rotate(5deg); }
-  50% { transform: translateY(-6px) scale(1.15) rotate(10deg); }
-  75% { transform: translateY(-8px) scale(1.2) rotate(6deg); }
-  100% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
+  0% {
+    transform: translateY(-6px) scale(1.15) rotate(8deg);
+  }
+
+  25% {
+    transform: translateY(-8px) scale(1.2) rotate(5deg);
+  }
+
+  50% {
+    transform: translateY(-6px) scale(1.15) rotate(10deg);
+  }
+
+  75% {
+    transform: translateY(-8px) scale(1.2) rotate(6deg);
+  }
+
+  100% {
+    transform: translateY(-6px) scale(1.15) rotate(8deg);
+  }
 }
 
 .header-nav .contact-btn {
@@ -704,7 +721,8 @@ body {
 }
 
 /* Prevent horizontal scroll from mobile menu */
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -718,6 +736,7 @@ html, body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
