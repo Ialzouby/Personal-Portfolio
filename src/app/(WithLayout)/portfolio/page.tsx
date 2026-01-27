@@ -15,36 +15,36 @@ const Portfolio = () => {
 
   return (
     <div>
-<section className="banner-section-top pt-60 pb-60 mt-0">
-<div className="banner-tint-overlay"></div>
-<div className="container">
-<FadeDown>
-  <div className="pb-60 br-bottom-n3 position-relative text-center banner-wrapper2">
-    <div className="heading-wrapper d-inline-block mx-auto position-relative">
-      
-      {/* Animated Dots Behind */}
-      <div className="dot-overlay"></div>
+      <section className="banner-section-top pt-30 pb-30 mt-0">
+        <div className="banner-tint-overlay"></div>
+        <div className="container">
+          <FadeDown>
+            <div className="pb-30 br-bottom-n3 position-relative text-center banner-wrapper2">
+              <div className="heading-wrapper d-inline-block mx-auto position-relative">
 
-      {/* Frosted Glass Background */}
-      <div className="glass-blur-background"></div>
+                {/* Animated Dots Behind */}
+                <div className="dot-overlay"></div>
 
-      {/* Content */}
-      <div className="content px-4 py-3 rounded-3">
-        <h3 className="page-title fs-one fw-semibold mb-2 mb-md-3">
-          A collection of my best projects
-        </h3>
-        <p className="fs-seven mb-4 mb-md-8">
-          With many years in web development, I acquired extensive
-          experience working on projects across multiple industries and
-          technologies. Let me show you my best creations.
-        </p>
+                {/* Frosted Glass Background */}
+                <div className="glass-blur-background"></div>
 
-      </div>
-    </div>
-  </div>
-</FadeDown>
-</div>
-</section>
+                {/* Content */}
+                <div className="content px-4 py-3 rounded-3">
+                  <h3 className="page-title fs-one fw-semibold mb-2 mb-md-3">
+                    A collection of my best projects
+                  </h3>
+                  <p className="fs-seven mb-4 mb-md-8">
+                    With many years in web development, I acquired extensive
+                    experience working on projects across multiple industries and
+                    technologies. Let me show you my best creations.
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </FadeDown>
+        </div>
+      </section>
 
 
 
@@ -64,7 +64,7 @@ const Portfolio = () => {
           <FadeDown>
             <TabGroup>
               <TabList className="d-flex flex-wrap gap-4 gap-sm-5 gap-md-7 align-items-center justify-content-center">
-                {["All", "AI/ML", "Hackathons", "AI Infrastructure", "Personal Explorations"].map(
+                {["All", "AI/ML", "Hackathons", "Robotics", "Personal Explorations"].map(
                   (label) => (
                     <Tab key={label} as={Fragment}>
                       {({ hover, selected }) => (
@@ -140,10 +140,10 @@ const Portfolio = () => {
                   </div>
                 </TabPanel>
 
-                {/* AI Infrastructure */}
+                {/* Robotics */}
                 <TabPanel>
                   <div className="row g-5 g-md-10 mt-8 mt-md-15">
-                    {getByCategory("AI Infrastructure").map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
+                    {getByCategory("Robotics").map(({ id, img, tag1, tag2, tag3, title, award, description }) => (
                       <FeaturedCard
                         key={id}
                         id={id}

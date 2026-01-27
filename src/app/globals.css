@@ -546,7 +546,7 @@ html[data-theme="dark"] .banner-tint-overlay,
   width: 100%;
   position: relative;
   overflow: hidden;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 /* Background image layer for top banner */
@@ -574,7 +574,7 @@ html[data-theme="dark"] .banner-tint-overlay,
 /* Mobile adjustments for top banner */
 @media (max-width: 768px) {
   .banner-section-top {
-    min-height: 250px;
+    min-height: 180px;
   }
 }
 
