@@ -26,6 +26,8 @@ import project21 from "@/../public/images/projects/MotionAE.png";
 import mmm272 from "@/../public/images/projects/mmm272.png"; // MMM-272 diagram
 import robotImg from "@/../public/images/projects/robot.png";
 import expressiveHeadGif from "@/../public/images/projects/expressivehead.gif";
+import waterproofGif from "@/../public/images/projects/waterproof.gif";
+import raceDroneImg from "@/../public/images/projects/RaceDrone.jpg";
 
 
 export const featureds = [
@@ -439,6 +441,54 @@ export const featureds = [
       { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
       { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
       { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
+    ]
+  },
+  {
+    id: 24,
+    category: "Robotics",
+    tag1: "Hardware",
+    tag2: "FPV Drone",
+    tag3: "Electronics",
+    title: "Waterproof FPV Drone – Underwater Capable",
+    description: "A custom-built FPV drone designed for extreme conditions, capable of signal transmission through water. Components are sealed with conformal coating for collision and water resistance, powered by high-discharge LiPo batteries.",
+    img: waterproofGif,
+    client: "Personal Project",
+    services: "Hardware Engineering",
+    technologies: "Betaflight, SpeedyBee FC, Crossfire RX/TX, Conformal Coating",
+    website: "#",
+    intro: "Engineering a robust, waterproof FPV drone for all-weather and underwater flight capability.",
+    overview: "This project involves the complete build and configuration of a waterproof FPV drone. The goal was to overcome the challenges of RF transmission through water and protect sensitive electronics from moisture damage, enabling flight in rain or submersion.",
+    challenge: "Ensuring 100% water resistance for sensitive flight controllers and ESCs while maintaining cooling performance. Overcoming signal loss when transitting through water.",
+    solution: "Applied multiple layers of silicone modified conformal coating to all PCBs. Selected specific low-frequency antennas for better penetration. Configured Betaflight for specific motor protocols suited for resistance.",
+    gallery: [waterproofGif],
+    results: [
+      { title: "Waterproof", value: "IP68", trend: "up", desc: "Fully submersible electronics" },
+      { title: "Range", value: "1km+", trend: "up", desc: "Reliable Crossfire link" },
+      { title: "Durability", value: "High", trend: "up", desc: "Impact and water resistant" }
+    ]
+  },
+  {
+    id: 25,
+    category: "Robotics",
+    tag1: "High-Speed",
+    tag2: "Digital FPV",
+    tag3: "Racing",
+    title: "5\" FPV Digital Race Drone",
+    description: "High-performance 5-inch FPV racing drone featuring a DJI Digital Video System for HD low-latency feeds. Built for speed and precision, utilizing a SpeedyBee flight controller and Crossfire long-range link, finely tuned in Betaflight for locked-in handling.",
+    img: raceDroneImg,
+    client: "Personal Project",
+    services: "Drone Racing & Engineering",
+    technologies: "Betaflight, DJI O3/Vista, Crossfire, SpeedyBee F7",
+    website: "#",
+    intro: "A high-speed digital FPV racer designed for precision and low-latency performance.",
+    overview: "This project showcases a custom-built 5-inch racing drone optimized for high-speed maneuvers and HD clarity. Integrating the DJI digital ecosystem provides crystal clear video feeds, while the Crossfire link ensures rock-solid control at near-zero latency.",
+    challenge: "Optimizing PID loops and filter settings in Betaflight to eliminate prop wash and vibration at high throttle, while managing heat dissipation for the digital video transmitter.",
+    solution: "Custom Betaflight tuning for locked-in rates and PID response. Strategic placement of components for center-of-gravity balance and maximum airflow cooling.",
+    gallery: [raceDroneImg],
+    results: [
+      { title: "Speed", value: "120km/h+", trend: "up", desc: "Top speed performance" },
+      { title: "Latency", value: "28ms", trend: "down", desc: "Low-latency HD video feed" },
+      { title: "Video", value: "1080p", trend: "up", desc: "Digital HD FPV feed" }
     ]
   },
   {

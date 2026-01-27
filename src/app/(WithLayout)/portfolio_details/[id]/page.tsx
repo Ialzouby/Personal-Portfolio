@@ -7,13 +7,14 @@ import FadeDown from "@/components/motionEffect/FadeDown";
 import NextProject from "@/components/Pages/About/NextProject";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
-const PortfolioDetails = ({ params }: Props) => {
+const PortfolioDetails = async ({ params }: Props) => {
+  const { id } = await params;
   const project = featureds
     .filter(Boolean)
-    .find((item) => item && item.id === parseInt(params.id));
+    .find((item) => item && item.id === parseInt(id));
 
   if (!project) {
     return (
