@@ -17,8 +17,11 @@ interface TechStackItem {
   img?: string;
 }
 
+import ContactModal from "@/components/Shared/ContactModal";
+
 const NextProject = () => {
   const [activeSkillCategory, setActiveSkillCategory] = useState<"Software" | "Hardware" | "Platforms">("Software");
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   // All tech stack items with categories
   const allTechStack: TechStackItem[] = [
@@ -29,7 +32,7 @@ const NextProject = () => {
     { name: 'MATLAB', category: 'Software', url: 'https://www.mathworks.com/products/matlab.html', img: '/images/matlab.png' },
     { name: 'JavaScript', category: 'Software', url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', img: '/images/javascript.png' },
     { name: 'FastAPI', category: 'Software', url: 'https://fastapi.tiangolo.com/', img: '/images/fastapi_logo.png' },
-    
+
     // Hardware
     { name: 'Arduino', category: 'Hardware', url: 'https://www.arduino.cc/', img: '/images/arduino.png' },
     { name: 'Raspberry Pi', category: 'Hardware', url: 'https://www.raspberrypi.org/', img: '/images/raspi_logo.png' },
@@ -37,7 +40,7 @@ const NextProject = () => {
     { name: 'ROS', category: 'Hardware', url: 'https://www.ros.org/', img: '/images/ros1_logo.png' },
     { name: 'ROS2', category: 'Hardware', url: 'https://www.ros.org/', img: '/images/ros_logo.png' },
     { name: 'Intel', category: 'Hardware', url: 'https://www.intelrealsense.com/sdk-2/', img: '/images/intel_logo.png' },
-    
+
     // Platforms
     { name: 'GitHub', category: 'Platforms', url: 'https://github.com/nhathout', img: '/images/github_logo.png' },
     { name: 'Git', category: 'Platforms', url: 'https://git-scm.com/', img: '/images/git_logo.png' },
@@ -341,139 +344,139 @@ const NextProject = () => {
               <div className="col-12 col-lg-7">
                 <div className="d-flex flex-column align-items-end">
                   {/* Button at top */}
-                  <Link
-                    href="/contact"
-                    className="p-btn bg1-color fw-medium n11-color px-4 px-md-7 py-2 py-md-4 rounded-pill d-inline-flex align-items-center gap-2 mb-3"
+                  <button
+                    onClick={() => setIsContactOpen(true)}
+                    className="p-btn bg1-color fw-medium n11-color px-4 px-md-7 py-2 py-md-4 rounded-pill d-inline-flex align-items-center gap-2 mb-3 border-0"
                     style={{ fontSize: "1rem", fontWeight: "600" }}
                   >
                     <PiArrowRight size={20} />
                     Reach out
-                  </Link>
+                  </button>
 
                   {/* Skills section */}
                   <div className="tech-stack-section w-100">
                     {/* Tech Stack */}
                     <div className="tech-stack-container">
-                <div className="tech-stack-row">
-                  {filteredTechStack.map((tech, index) => (
-                    <a
-                      key={index}
-                      href={tech.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="skill-link"
-                      title={tech.name}
-                      aria-label={`Visit ${tech.name} official website`}
-                    >
-                      <div className="skill-cube">
-                        {/* Front Face */}
-                        <div className="skill-face front">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                      <div className="tech-stack-row">
+                        {filteredTechStack.map((tech, index) => (
+                          <a
+                            key={index}
+                            href={tech.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="skill-link"
+                            title={tech.name}
+                            aria-label={`Visit ${tech.name} official website`}
+                          >
+                            <div className="skill-cube">
+                              {/* Front Face */}
+                              <div className="skill-face front">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
 
-                        {/* Back Face */}
-                        <div className="skill-face back">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                              {/* Back Face */}
+                              <div className="skill-face back">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
 
-                        {/* Right Face */}
-                        <div className="skill-face right">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                              {/* Right Face */}
+                              <div className="skill-face right">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
 
-                        {/* Left Face */}
-                        <div className="skill-face left">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                              {/* Left Face */}
+                              <div className="skill-face left">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
 
-                        {/* Top Face */}
-                        <div className="skill-face top">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                              {/* Top Face */}
+                              <div className="skill-face top">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
 
-                        {/* Bottom Face */}
-                        <div className="skill-face bottom">
-                          {tech.img ? (
-                            <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
-                          ) : (
-                            <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
-                              {tech.paths ? (
-                                tech.paths.map((p, i) => (
-                                  <path key={i} d={p.d} fill={p.fill} />
-                                ))
-                              ) : (
-                                <path d={tech.path} fill={tech.color} />
-                              )}
-                            </svg>
-                          )}
-                        </div>
+                              {/* Bottom Face */}
+                              <div className="skill-face bottom">
+                                {tech.img ? (
+                                  <Image src={tech.img} alt={tech.name} width={100} height={100} style={{ objectFit: "contain" }} />
+                                ) : (
+                                  <svg viewBox={tech.viewBox} xmlns="http://www.w3.org/2000/svg">
+                                    {tech.paths ? (
+                                      tech.paths.map((p, i) => (
+                                        <path key={i} d={p.d} fill={p.fill} />
+                                      ))
+                                    ) : (
+                                      <path d={tech.path} fill={tech.color} />
+                                    )}
+                                  </svg>
+                                )}
+                              </div>
+                            </div>
+
+                            <span className="skill-label">{tech.name}</span>
+                          </a>
+                        ))}
                       </div>
-
-                      <span className="skill-label">{tech.name}</span>
-                    </a>
-                      ))}
                     </div>
-                  </div>
 
                     {/* Category Toggle Buttons - Now below skills */}
                     <div className="category-toggle">
@@ -503,6 +506,7 @@ const NextProject = () => {
           </FadeDown>
         </div>
       </section>
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   );
 };

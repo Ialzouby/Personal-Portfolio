@@ -131,6 +131,7 @@ const Banner = () => {
           width: 100%;
           max-width: 400px; /* Increased to 400px */
           margin-left: auto;
+          margin-top: 5rem; /* Moves the cards down */
         }
 
         .card-header-sm {
@@ -240,7 +241,7 @@ const Banner = () => {
 
         .scroll-indicator {
           position: absolute;
-          bottom: 2rem;
+          bottom: 1rem;
           left: 50%;
           transform: translateX(-50%);
           display: flex;
