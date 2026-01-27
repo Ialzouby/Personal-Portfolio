@@ -137,4 +137,68 @@ export const presentations: Presentation[] = [
             { text: "Project Code", url: "https://github.com/ericguo5513/momask-codes" },
         ],
     },
+    {
+        id: 7,
+        slug: "bamm-architecture",
+        title: "BAMM: Human Motion Modeling & Architecture",
+        description: "Deep dive into BAMM's architecture versus current T2M challenges. Details the Motion Tokenizer, Masked Self-Attention Transformer, Hybrid Attention Masking, and Cascaded Motion Decoding.",
+        date: "January 2026",
+        time: "25 min read",
+        tags: ["Generative Models", "Motion Models", "Transformers", "BAMM"],
+        img: blog2, // Placeholder
+        slidesId: "2PACX-1vTmVm0qar5UkrG9XU2bb9gSEjtY2573WotSyoG4p2hlYq-F5NP7AfHqvIwlrq8Qog",
+        overview: [
+            "The Challenge of Current Text-to-Motion Models",
+            "BAMM Architecture: Motion Tokenizer & Masked SA Transformer",
+            "Training with Hybrid Attention Masking",
+            "Inference using Cascaded Motion Decoding",
+            "Classifier-Free Guidance (CFG)",
+        ],
+        keyConcepts: [
+            { term: "Hybrid Attention Masking", definition: "Strategy combining masking patterns for robust training." },
+            { term: "Cascaded Motion Decoding", definition: "Iterative decoding process for finer motion control." },
+            { term: "Motion Tokenizer", definition: "Discretizing continuous motion data." },
+        ],
+        toc: [
+            "Challenges & Architecture (Slides 1-10)",
+            "Training Methodologies (Slides 11-20)",
+            "Inference & Guidance (Slides 21-28)",
+            "Evaluation & Results (Slides 29-end)",
+        ],
+        additionalResources: [
+            { text: "BAMM Project Page", url: "https://github.com/Mathux/BAMM" },
+        ],
+    },
+    {
+        id: 8,
+        slug: "diffusion-transformers-rae",
+        title: "Diffusion Transformers with Representation Autoencoders",
+        description: "Exploring the replacement of standard VAEs with pretrained representation encoders (DINO, SigLIP, MAE) to form Representation Autoencoders (RAEs). Analyzes challenges in high-dimensional latent spaces and achieves state-of-the-art ImageNet results.",
+        date: "January 2026",
+        time: "25 min read",
+        tags: ["Generative Models", "Diffusion Models", "Transformers", "Representation Learning"],
+        img: blog1, // Placeholder
+        slidesId: "2PACX-1vQDdN9GwVvAjQ_wAqW39tLETGjZqKOKsjcAdOON9AAWXBLE2vrUQL4J4RreMVsxO-VU67-eZxW5orWK",
+        overview: [
+            "Limitations of standard VAE encoders (outdated backbones, low-dim latents)",
+            "Introduction to Representation Autoencoders (RAEs)",
+            "Challenges of operating in high-dimensional latent spaces",
+            "Theoretical solutions for faster convergence",
+            "ImageNet generation results (1.51 FID)",
+        ],
+        keyConcepts: [
+            { term: "Representation Autoencoder (RAE)", definition: "Pairing pretrained encoders (DINO, SigLIP) with trained decoders." },
+            { term: "High-Dimensional Latents", definition: "Semantically rich representations that challenge standard diffusion." },
+            { term: "Diffusion Transformer (DiT)", definition: "The backbone architecture scaled for these experiments." },
+        ],
+        toc: [
+            "Motivation & VAE Limitations (Slides 1-5)",
+            "RAE Architecture Definition (Slides 6-12)",
+            "Latent Space Analysis (Slides 13-20)",
+            "Experimental Results (Slides 21-end)",
+        ],
+        additionalResources: [
+            { text: "Paper: Diffusion Transformers with Representation Autoencoders", url: "#" },
+        ],
+    },
 ];
