@@ -30,6 +30,28 @@ function checkRateLimit(ip: string): { allowed: boolean; remainingTime?: number 
   return { allowed: true };
 }
 
+async function verifyTurnstile(token: string, ip?: string) {
+  try {
+    const r = await fetch(
+      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      {
+        method: "POST",
+        headers: { "content-type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          secret: process.env.TURNSTILE_SECRET || "",
+          response: token,
+          remoteip: ip ?? "",
+        }),
+        cache: "no-store",
+      }
+    );
+    const data = await r.json();
+    return !!(data && data.success);
+  } catch {
+    return false;
+  }
+}
+
 // ========================================
 // 🛡️ SECURITY: Spam Detection
 // ========================================
@@ -50,7 +72,7 @@ function detectSpam(name: string, email: string, message: string): { isSpam: boo
   ];
   const lowerMessage = message.toLowerCase();
   const lowerName = name.toLowerCase();
-  
+
   for (const keyword of spamKeywords) {
     if (lowerMessage.includes(keyword) || lowerName.includes(keyword)) {
       return { isSpam: true, reason: 'Spam keywords detected' };
@@ -156,24 +178,36 @@ const createEmailTemplate = (name: string, email: string, phone: string, locatio
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, phone, location, message, _timestamp, _fillTime } = body;
+    const { name, email, phone, location, message, _timestamp, _fillTime, turnstileToken } = body;
 
     // ========================================
     // 🛡️ SECURITY CHECK 1: Rate Limiting
     // ========================================
-    const ip = request.headers.get('x-forwarded-for') || 
-                request.headers.get('x-real-ip') || 
-                'unknown';
-    
+    const ip = request.headers.get('x-forwarded-for') ||
+      request.headers.get('x-real-ip') ||
+      'unknown';
+
     const rateLimitCheck = checkRateLimit(ip);
     if (!rateLimitCheck.allowed) {
       console.log(`🛡️ Rate limit exceeded for IP: ${ip}`);
       return NextResponse.json(
-        { 
-          error: `Too many requests. Please try again in ${rateLimitCheck.remainingTime} minutes.` 
+        {
+          error: `Too many requests. Please try again in ${rateLimitCheck.remainingTime} minutes.`
         },
         { status: 429 }
       );
+    }
+
+    // ========================================
+    // 🛡️ SECURITY CHECK 1.5: Turnstile Verification
+    // ========================================
+    if (!turnstileToken) {
+      return NextResponse.json({ error: "Captcha validation missing" }, { status: 400 });
+    }
+    const captchaOk = await verifyTurnstile(turnstileToken, ip);
+    if (!captchaOk) {
+      console.log(`🛡️ Captcha failed for IP: ${ip}`);
+      return NextResponse.json({ error: "Captcha validation failed" }, { status: 400 });
     }
 
     // ========================================
@@ -258,9 +292,9 @@ export async function POST(request: NextRequest) {
 
     console.log(`✅ Email sent successfully from ${email} (IP: ${ip})`);
     return NextResponse.json(
-      { 
+      {
         message: 'Email sent successfully! I\'ll get back to you soon.',
-        data 
+        data
       },
       { status: 200 }
     );

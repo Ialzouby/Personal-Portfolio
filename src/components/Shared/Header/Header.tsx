@@ -13,10 +13,12 @@ import {
 import ThemeButton from "@/components/DarkMode/ThemeButton/ThemeButton";
 import { sidebarsData } from "../../../../public/data/Sidebar";
 import { useState } from "react";
+import ContactModal from "@/components/Shared/ContactModal";
 
 const Header = () => {
   const path = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
     <>
@@ -80,13 +82,13 @@ const Header = () => {
               </div>
               <div className="theme-divider"></div>
               <ThemeButton />
-              <Link
-                href="/contact"
+              <button
+                onClick={() => setIsContactOpen(true)}
                 className="contact-btn d-flex align-items-center gap-2"
               >
                 <PiPaperPlaneTilt />
                 <span>Let's Talk</span>
-              </Link>
+              </button>
             </div>
 
             {/* Mobile Menu Toggle */}
@@ -139,14 +141,16 @@ const Header = () => {
                   <PiGithubLogo size={28} />
                 </Link>
               </div>
-              <Link
-                href="/contact"
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setIsContactOpen(true);
+                }}
                 className="contact-btn-mobile d-flex align-items-center justify-content-center gap-2"
-                onClick={() => setMobileMenuOpen(false)}
               >
                 <PiPaperPlaneTilt size={20} />
                 <span>Let's Talk</span>
-              </Link>
+              </button>
             </nav>
           </div>
         </div>
@@ -592,6 +596,7 @@ const Header = () => {
           }
         }
       `}</style>
+      <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
     </>
   );
 };

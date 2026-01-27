@@ -8,6 +8,7 @@ import TypingEffect from "@/components/TypingEffect/TypingEffect";
 import project21 from "@/../public/images/projects/robot.png";
 import mmm272 from "@/../public/images/projects/avatar.png";
 import FeaturedProjectModal from "./FeaturedProjectModal";
+import ContactModal from "@/components/Shared/ContactModal";
 import Counter from "./Counter";
 import { presentations } from "../../../../public/data/PresentationData";
 
@@ -22,6 +23,7 @@ interface ProjectData {
 const Banner = () => {
   const texts = ["Engineer", "Researcher", "Innovator"];
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
   const bannerRef = useRef<HTMLDivElement>(null);
 
@@ -296,9 +298,9 @@ const Banner = () => {
                   <Link href="/portfolio" className="btn btn-primary rounded-pill px-5 py-3 fw-semibold d-flex align-items-center gap-2">
                     View Portfolio <PiArrowRight />
                   </Link>
-                  <Link href="/contact" className="btn btn-outline-primary rounded-pill px-5 py-3 fw-semibold border-2 d-flex align-items-center gap-2 n5-color">
+                  <button onClick={() => setIsContactOpen(true)} className="btn btn-outline-primary rounded-pill px-5 py-3 fw-semibold border-2 d-flex align-items-center gap-2 n5-color">
                     Contact Me
-                  </Link>
+                  </button>
                 </div>
 
                 <div className="mt-8 pt-6 border-top border-light-subtle w-100">
@@ -410,6 +412,7 @@ const Banner = () => {
         </div>
 
         <FeaturedProjectModal isOpen={isModalOpen} onClose={closeModal} project={selectedProject} />
+        <ContactModal isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       </div>
     </>
   );
