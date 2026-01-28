@@ -18,14 +18,14 @@ const ProductCard = ({
   price: string;
 }) => {
   return (
-    <div className="w-100 mb-1">
+    <div className="w-100 mx-auto mb-1" style={{ maxWidth: "850px" }}>
       <Link
         href={`/products_details/${id}`}
         className="text-decoration-none"
         style={{ color: "inherit" }}
       >
         <div
-          className="d-flex flex-column flex-md-row align-items-start gap-4 p-3 rounded-4 transition-all"
+          className="d-flex flex-column flex-md-row align-items-stretch gap-4 p-4 rounded-4 transition-all"
           style={{
             background: "rgb(245, 245, 255)",
             border: "1px solid rgba(0, 0, 0, 0.05)",
@@ -33,7 +33,7 @@ const ProductCard = ({
             transition: "all 0.3s ease, transform 0.2s ease",
             cursor: "pointer",
           }}
-          
+
           onMouseEnter={(e) => {
             const el = e.currentTarget as HTMLDivElement;
             el.style.boxShadow = "0 12px 36px rgba(0, 0, 0, 0.2)";
@@ -46,14 +46,14 @@ const ProductCard = ({
             el.style.background = "rgb(245, 245, 255)";
             el.style.transform = "translateY(0)";
           }}
-          
+
         >
           {/* Left: Image */}
           <div
             className="flex-shrink-0"
             style={{
-              width: "220px",
-              height: "165px",
+              width: "260px",
+              minHeight: "220px",
               position: "relative",
               overflow: "hidden",
               borderRadius: "12px",
@@ -63,13 +63,13 @@ const ProductCard = ({
               src={img}
               alt={title}
               fill
-              sizes="(max-width: 768px) 100vw, 220px"
+              sizes="(max-width: 768px) 100vw, 260px"
               style={{ objectFit: "cover" }}
             />
           </div>
 
           {/* Right: Text */}
-          <div className="flex-grow-1">
+          <div className="flex-grow-1 text-start">
             <h3 className="project-title fs-six fw-semibold n5-color mb-2">
               {title}
             </h3>
@@ -78,7 +78,7 @@ const ProductCard = ({
               {price}
             </span>
 
-            <div className="d-flex gap-3 align-items-center">
+            <div className="d-flex gap-3 align-items-center justify-content-start">
               <div className="p-btn bg1-color px-3 py-2 rounded n11-color">
                 Read More
               </div>

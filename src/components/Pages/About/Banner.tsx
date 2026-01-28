@@ -111,7 +111,9 @@ const Banner = () => {
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          height: 100%;
+          align-items: flex-start;
+          justify-content: center;
+          height: auto;
         }
 
         .hero-text-container h2 {
@@ -133,7 +135,7 @@ const Banner = () => {
           width: 100%;
           max-width: clamp(280px, 40vw, 400px); /* Dynamic width scaling */
           margin-left: auto;
-          margin-top: 5rem; /* Moves the cards down */
+          /* Removed margin-top to allow true centering via align-items-center */
         }
 
         .card-header-sm {
@@ -299,15 +301,14 @@ const Banner = () => {
         <div className="container">
           <div className="row align-items-center g-5">
             {/* LEFT COLUMN: Main Text */}
-            <div className="col-lg-7">
+            <div className="col-lg-8">
               <div className="glass-card hero-text-container">
                 <span className="n5-color fs-four fw-medium d-inline-block mb-2">HI, I&apos;M ISSAM </span>
                 <h2 className="typing-text display-one p1-color mb-4 fw-bold">
                   <TypingEffect texts={texts} speed={200} pause={2000} />
                 </h2>
                 <p className="fs-five n5-color opacity-75 mb-6">
-                  My focus is on developing AI4Health solutions that can help improve the lives of people around the world.
-                  Building the future of digital twins and motion modeling.
+                  I am a PhD student at UNC Charlotte. My research focuses on generative models for human motion synthesis and perception. I develop AI systems for controllable, physically plausible motion generation. Currently exploring how language-guided learning can enable natural movement in humanoid robotics, and real-time digital twins across physical and virtual environments.
                 </p>
 
                 <div className="d-flex gap-4 mt-2">
@@ -326,7 +327,7 @@ const Banner = () => {
             </div>
 
             {/* RIGHT COLUMN: Cards Stack */}
-            <div className="col-lg-5">
+            <div className="col-lg-4">
               <div className="right-column-stack">
 
                 {/* 1. Latest Presentation Card */}

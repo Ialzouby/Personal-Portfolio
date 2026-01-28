@@ -63,13 +63,13 @@ const About = () => {
         </div>
       </section>
       <section className="pt-0 pb-0 mt-0 br-bottom-n3">
-      <Gallery />
-      <Websites />
+        <Gallery />
+        <Featured />
+        <Websites />
 
       </section>
-     {/* <WhatDo /> */}
+      {/* <WhatDo /> */}
       <NextProject />
-      <Featured />
       <LatestBlog />
       <Footer />
     </div>
