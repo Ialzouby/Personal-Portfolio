@@ -19,8 +19,8 @@ const Featured = () => {
           background: rgba(var(--n2), 0.75);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+          border-top: 1px solid rgba(var(--p1), 0.8);
+          border-bottom: 1px solid rgba(var(--p1), 0.8);
           z-index: -1;
         }
         /* Optional: Add a very faint blue gradient overlay to match the "blue tint" perception if p1 is blue */

@@ -29,21 +29,21 @@ const FeaturedCard = ({
     award === "1st"
       ? "/images/2.png"
       : award === "2nd"
-      ? "/images/3.png"
-      : award === "3rd"
-      ? "/images/4.png"
-      : null;
+        ? "/images/3.png"
+        : award === "3rd"
+          ? "/images/4.png"
+          : null;
 
   return (
     <div className="col-12 col-md-4 mb-4">
-      <div className="position-relative">
+      <div className="position-relative h-100">
         {badgeSrc && (
           <div
             className="position-absolute"
             style={{
-              top: "-20px",
-              right: "-20px",
-              transform: "rotateX(20deg) rotateY(-20deg) scale(1.2)",
+              top: "-15px",
+              right: "-15px",
+              transform: "rotate(15deg)",
               zIndex: 10,
               pointerEvents: "none",
             }}
@@ -51,37 +51,45 @@ const FeaturedCard = ({
             <Image
               src={badgeSrc}
               alt={`${award} place badge`}
-              width={100}
-              height={100}
+              width={80}
+              height={80}
               style={{
-                filter: "drop-shadow(0px 4px 10px rgba(0,0,0,0.3))",
+                filter: "drop-shadow(0px 4px 8px rgba(0,0,0,0.2))",
               }}
             />
           </div>
         )}
 
         <FadeDown>
-          <div
-            className="rounded shadow-sm p-3 d-flex flex-column featured-card"
+          <Link
+            href={`/portfolio_details/${id}`}
+            className="p-4 d-flex flex-column h-100 text-decoration-none"
             style={{
-              background: "rgb(245, 245, 255)",
-              transition: "transform 0.3s ease, box-shadow 0.3s ease",
-              height: "100%",
-              minHeight: "450px",
+              background: "linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(240, 245, 255, 0.3) 100%)",
+              backdropFilter: "blur(24px) saturate(200%)",
+              WebkitBackdropFilter: "blur(24px) saturate(200%)",
+              borderRadius: "20px",
+              border: "1px solid rgba(255, 255, 255, 0.9)",
+              boxShadow: "0 15px 40px rgba(0, 50, 100, 0.1)",
+              transition: "all 0.3s ease",
+              position: "relative",
+              zIndex: 2,
+              overflow: "hidden"
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = "0 8px 20px rgba(0,0,0,0.15)";
               e.currentTarget.style.transform = "translateY(-5px)";
+              e.currentTarget.style.borderColor = "rgba(var(--p1), 0.5)";
+              e.currentTarget.style.boxShadow = "0 20px 50px rgba(0, 50, 100, 0.15)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow =
-                "0 .125rem .25rem rgba(0,0,0,.075)";
               e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.9)";
+              e.currentTarget.style.boxShadow = "0 15px 40px rgba(0, 50, 100, 0.1)";
             }}
           >
-            <Link href={`/portfolio_details/${id}`} className="d-block mb-3" style={{ flex: "0 0 auto" }}>
+            <div className="d-block mb-4" style={{ flex: "0 0 auto" }}>
               <div
-                className="w-100 rounded overflow-hidden"
+                className="w-100 rounded-3 overflow-hidden"
                 style={{
                   height: "280px",
                 }}
@@ -91,55 +99,53 @@ const FeaturedCard = ({
                   alt={title}
                   className="w-100 h-100 d-block"
                   style={{
-                    borderRadius: "10px",
                     objectFit: "cover",
+                    transition: "transform 0.5s ease",
                   }}
                 />
               </div>
-            </Link>
+            </div>
 
-            <div className="mb-2" style={{ flex: "0 0 auto" }}>
-              {[tag1, tag2, tag3].map((tag, i) => (
-                <span key={i} className="badge bg-light text-dark me-2 mb-1">
-                  {tag}
-                </span>
-              ))}
+            <div className="mb-3" style={{ flex: "0 0 auto" }}>
+              <div className="d-flex flex-wrap gap-2">
+                {[tag1, tag2, tag3].map((tag, i) => (
+                  <span key={i} className="project-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <div className="d-flex justify-content-between align-items-start mb-2" style={{ flex: "0 0 auto" }}>
-              <Link
-                href={`/portfolio_details/${id}`}
-                className="fw-semibold text-dark text-decoration-none"
+              <h5
+                className="fs-five fw-bold n5-color mb-0"
                 style={{ whiteSpace: "pre-line" }}
               >
                 {title}
-              </Link>
-              <Link
-                href={`/portfolio_details/${id}`}
-                className="text-dark"
-                aria-label="Open"
-                style={{ flex: "0 0 auto" }}
+              </h5>
+              <div
+                className="p1-color"
               >
-                <PiArrowUpRightBold size={20} />
-              </Link>
+                <PiArrowUpRightBold size={24} />
+              </div>
             </div>
 
             {description && (
-              <p 
-                className="text-muted mb-0 mt-auto" 
-                style={{ 
-                  fontSize: "0.875rem", 
-                  lineHeight: "1.5",
+              <p
+                className="n4-color opacity-75 mb-0 mt-auto"
+                style={{
+                  fontSize: "0.95rem",
+                  lineHeight: "1.6",
                   flex: "0 0 auto"
                 }}
               >
                 {description}
               </p>
             )}
-          </div>
+          </Link>
         </FadeDown>
       </div>
-    </div>
+    </div >
   );
 };
 
