@@ -201,4 +201,65 @@ export const presentations: Presentation[] = [
             { text: "Paper: Diffusion Transformers with Representation Autoencoders", url: "#" },
         ],
     },
+    {
+        id: 9,
+        slug: "human-motion-generation-models",
+        title: "Introduction to Human Motion Generation Models",
+        description: "A foundational overview of human motion modeling, covering 3D parametric body models (SMPL), motion datasets (AMASS, HumanML3D), and current approaches including absolute vs. global data representations.",
+        date: "January 2026",
+        time: "30 min read",
+        tags: ["Human Motion", "Generative Models", "SMPL", "AI/ML"],
+        img: blog3,
+        slidesId: "2PACX-1vRAwtR-cMICmfXC2TFq_G0MPqhKzEYpFaNKQ9vvXW18O19fqvOP1fhUKAXEfd3Thw",
+        overview: [
+            "What is Human Motion Modeling?",
+            "Understanding SMPL Skeletons",
+            "Datasets & Motion Representations",
+            "Current Models & Approaches",
+            "AMASS vs HumanML3D Datasets",
+            "Data Representations: 263 vs 277 dimensions"
+        ],
+        keyConcepts: [
+            { term: "SMPL", definition: "Skinned Multi-Person Linear model - a realistic 3D human body model." },
+            { term: "HumanML3D", definition: "A large-scale 3D human motion-language dataset." },
+            { term: "AMASS", definition: "Archive of Motion Capture as Surface Shapes." },
+        ],
+        toc: [
+            "Introduction to Motion Modeling",
+            "Parametric Body Models (SMPL)",
+            "Datasets & Representations",
+            "Current Approaches",
+        ],
+        additionalResources: [],
+    },
+    {
+        id: 10,
+        slug: "index-backpropagation-quantization",
+        title: "Index Backpropagation Quantization",
+        description: "An analysis of resolving traditional codebook learning limitations using Index Backpropagation Quantization (IBQ). Covers the backpropagation trick and specific loss function differentiations compared to standard VQ.",
+        date: "January 2026",
+        time: "20 min read",
+        tags: ["Quantization", "Deep Learning", "VQ-VAE", "Optimization"],
+        img: blog2, // Placeholder
+        slidesId: "2PACX-1vRzX-vKGW5V_7sdLU-GT8C8vI9_xcssUHR1vb2ELBkzZ5CbZ9Q3z0yCGK5W4JRD6A",
+        overview: [
+            "Limitations of traditional Codebook Learning",
+            "Introduction to Index Backpropagation Quantization",
+            "The Backpropagation Trick explained",
+            "Loss Function comparison: Standard vs IBQ",
+            "Gradient flow improvements"
+        ],
+        keyConcepts: [
+            { term: "Codebook Collapse", definition: "A common failure mode in VQ-VAEs addressed by improved quantization methods." },
+            { term: "Straight-Through Estimator", definition: "Traditional method for bypassing non-differentiable quantization steps." },
+            { term: "Index Backpropagation", definition: "Optimizing indices directly via relaxed constraints or specific tricks." },
+        ],
+        toc: [
+            "Problem: Codebook Learning Issues",
+            "Solution: Index Backpropagation",
+            "Mathematical Formulation",
+            "Loss Functions & Results"
+        ],
+        additionalResources: [],
+    },
 ];
