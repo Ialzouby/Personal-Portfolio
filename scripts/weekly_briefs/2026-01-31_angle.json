@@ -1,0 +1,26 @@
+{
+  "primary_query": "google ai overviews and ai mode",
+  "secondary_queries": [
+    "how do google ai overviews work",
+    "what is google search ai mode",
+    "gemini 3 in google search explained",
+    "impact of ai overviews on seo",
+    "optimize content for google ai overviews",
+    "ai overviews vs traditional search results",
+    "conversational search vs keyword search",
+    "how google uses large models in search"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Google AI Overviews and AI Mode: How Gemini Powers Search",
+  "recommended_slug": "google-ai-overviews-ai-mode-gemini",
+  "outline_h2s": [
+    "What Are Google AI Overviews in Search?",
+    "How AI Mode Turns Search Into a Conversation",
+    "How Gemini Models Power AI Overviews and AI Mode",
+    "How AI Overviews Change User Search Behavior",
+    "Impact of AI Overviews and AI Mode on SEO and Traffic",
+    "How to Optimize Content for AI Overviews",
+    "When Users Still Rely on Classic Search Results",
+    "Future of Conversational Search and Large Models in Google"
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "week": "2026-01-31",
+  "events": [
+    {
+      "event": "Google makes Gemini 3 the default model behind AI Overviews in Search and lets users jump from summaries into conversational ‘AI Mode’.",
+      "category": "Models",
+      "why_it_matters": "This shifts billions of daily search interactions onto a newer large model by default and blurs the line between traditional search and conversational assistants. It will likely change how users discover information and how websites receive traffic, and it provides a large-scale real‑world testbed for multi‑step, reasoning‑heavy queries handled directly in results.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/27/google-now-lets-users-jump-from-ai-overviews-into-ai-mode-conversations/",
+          "title": "Google now lets users jump from AI Overviews into AI Mode conversations",
+          "date": "2026-01-27"
+        }
+      ]
+    },
+    {
+      "event": "Tiiny demonstrates ‘Pocket Lab’, a small open‑source box that runs a 120B‑parameter language model fully offline on local hardware.",
+      "category": "Edge AI",
+      "why_it_matters": "Running frontier‑scale models locally without any cloud connection illustrates how quickly on‑device AI is advancing. It points toward more private, offline‑capable assistants and tools, and raises competitive pressure on cloud‑centric AI services as hardware and software stacks for local inference mature.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/snippet/3080323/this-tiiny-device-offers-an-offline-totally-private-ai-ecosystem/",
+          "title": "This Tiiny device offers an offline, totally private AI ecosystem",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia outlines a full ‘physical AI’ stack at CES 2026 to become the default platform for generalist robotics, with robot foundation models, simulators, and edge hardware.",
+      "category": "Robotics",
+      "why_it_matters": "By combining large robot foundation models, simulation, and standardized hardware, Nvidia is trying to play for robotics the role Android played for smartphones. If successful, it could lower the barrier for building general‑purpose robots, centralize key tooling around Nvidia’s ecosystem, and accelerate deployment of multi‑task robots across industries.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
+          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Boston Dynamics partners with Google DeepMind to use large foundation models in the next‑generation Atlas humanoid robot.",
+      "category": "Robotics",
+      "why_it_matters": "A leading robotics manufacturer pairing with a major AI lab signals a push to embed general‑purpose reasoning and perception into humanoid platforms. This could move robots beyond scripted motion toward more flexible, human‑aware behavior, but also concentrates key capabilities in a small set of corporate partnerships.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+          "title": "Boston Dynamics’ next-gen humanoid robot will have Google DeepMind DNA",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Mobileye moves into humanoid robotics by agreeing to acquire Mentee Robotics for about $900 million.",
+      "category": "Robotics",
+      "why_it_matters": "A major automotive vision and autonomy supplier is extending its AI stack from vehicles into legged robots. This highlights convergence between autonomous driving and robotics, and suggests future products where a single perception and planning stack spans cars, delivery robots, and other physical AI systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/06/mobileye-acquires-humanoid-robot-startup-mentee-robotics-for-900m/",
+          "title": "Mobileye acquires humanoid robot startup Mentee Robotics for $900M",
+          "date": "2026-01-06"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080525/mobileye-is-in-the-humanoid-robots-business-now/",
+          "title": "Mobileye is in the humanoid robots business now",
+          "date": "2026-01-06"
+        }
+      ]
+    },
+    {
+      "event": "Google removes AI Overviews from certain medical queries after reports of misleading health information in its generated summaries.",
+      "category": "AI Ethics",
+      "why_it_matters": "This shows the practical limits of deploying general‑purpose models in high‑stakes health contexts. Pulling back AI Overviews for specific medical queries underscores the need for domain‑specific validation, clearer risk thresholds, and accountability when generative systems surface information that people might treat as clinical guidance.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/11/google-removes-ai-overviews-for-certain-medical-queries/",
+          "title": "Google removes AI Overviews for certain medical queries",
+          "date": "2026-01-11"
+        }
+      ]
+    },
+    {
+      "event": "Flora, an AI‑first, node‑based creative design tool, raises $42M to expand its generative workflow platform.",
+      "category": "Creative AI",
+      "why_it_matters": "Flora exemplifies a new generation of design software built around generative models from the ground up rather than adding AI as a plug‑in. Its funding round suggests sustained investor confidence in tools that let professionals orchestrate complex AI pipelines for images and video, potentially reshaping creative workflows and expectations for design tools.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/27/node-based-design-tool-flora-raises-42m-from-redpoint-ventures/",
+          "title": "Node-based design tool Flora raises $42M from Redpoint Ventures",
+          "date": "2026-01-27"
+        }
+      ]
+    },
+    {
+      "event": "Google Photos adds ‘Me Meme’, a generative feature that lets users turn their own photos into meme‑style images.",
+      "category": "Creative AI",
+      "why_it_matters": "Embedding generative image capabilities into a mainstream consumer photo app normalizes everyday use of AI for personal media creation. It will increase the volume of synthetic imagery in casual communication and raises questions about attribution, consent, and expectations around what counts as an ‘unaltered’ personal photo.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/23/google-photos-latest-feature-lets-you-meme-yourself/",
+          "title": "Google Photos’ latest feature lets you meme yourself",
+          "date": "2026-01-23"
+        }
+      ]
+    }
+  ]
+}

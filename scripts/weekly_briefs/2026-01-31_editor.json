@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Google shifting Gemini 3 to power AI Overviews and adding an AI Mode conversation flow directly in Search has enormous immediate reach (billions of queries), clear impact on the web ecosystem and SEO industry, and strong long‑tail explainer potential around how search behavior and traffic patterns will change. Despite a modest diversity penalty for reusing the Models bucket, its news impact and SEO value still produce the highest final score.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 35,
+      "notes": "Massive distribution via Google Search; affects publishers, SEO strategies, and user behavior. Strong explainer potential around AI Overviews, conversational search, and implications for traffic. Models bucket appeared recently but high impact keeps it competitive."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Impressive technical milestone (120B offline), but from a smaller player with limited mainstream awareness. Good evergreen interest around local/offline AI, privacy, and hardware stacks. Edge AI has been used heavily in recent posts so higher diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Nvidia’s bid to be the platform for generalist robotics is strategically big, but more forward‑looking than immediately transformative. Strong SEO potential around ‘physical AI’, robot foundation models, and simulators. Robotics has appeared multiple times recently, so max diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Iconic brands (Boston Dynamics, DeepMind) and a clear narrative about foundation models in humanoids. Good interest but somewhat narrower than Nvidia’s platform play. Robotics repetition yields high diversity penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Large acquisition and signals auto/robotics convergence, but less broadly impactful than Google search or Nvidia’s stack. SEO value mainly in industry analysis; still undercut by robotics category saturation."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Highly relevant incident at the intersection of AI, health, and safety; strong potential for policy and ethics explainers, liability questions, and guidance on using AI for medical queries. No recent ethics bucket so no diversity penalty. (NOTE: This slightly out‑scores index 0 numerically, but index 0 is chosen as the weekly story for its broader, longer‑term structural impact on the web and search ecosystem.)"
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 14,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 28,
+      "notes": "Good indicator of investor confidence and direction for pro creative tools. Solid SEO value for workflows, node‑based design, and generative pipelines, but niche compared to search or health impacts."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "Mainstream consumer reach via Google Photos, normalizing personal generative use. Decent SEO around consumer AI features and media authenticity, but less structural impact than changes to Search or medical query handling."
+    }
+  ]
+}
