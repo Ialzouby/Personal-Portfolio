@@ -578,6 +578,21 @@ html[data-theme="dark"] .banner-tint-overlay,
 @media (max-width: 768px) {
   .banner-section-top {
     min-height: 100px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+}
+
+/* Remove top margin on mobile for banner sections */
+@media (max-width: 991px) {
+  .banner-section-top.mt-5,
+  .banner-section-top.mt-10,
+  section.banner-section-top[class*="mt-"] {
+    margin-top: 0 !important;
+  }
+  
+  .banner-section-top.pt-120 {
+    padding-top: 0 !important;
   }
 }
 

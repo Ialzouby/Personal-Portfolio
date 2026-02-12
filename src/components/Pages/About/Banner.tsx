@@ -112,6 +112,7 @@ const Banner = () => {
           align-items: flex-start;
           justify-content: center;
           height: auto;
+          margin: 0 1rem;
         }
 
         .hero-text-container h2 {
@@ -133,6 +134,7 @@ const Banner = () => {
           width: 100%;
           max-width: clamp(280px, 40vw, 400px); /* Dynamic width scaling */
           margin-left: auto;
+          padding: 0 1rem;
           /* Removed margin-top to allow true centering via align-items-center */
         }
 
@@ -288,12 +290,14 @@ const Banner = () => {
             margin-right: auto;
             margin-top: 2rem;
             max-width: 100%;
+            padding: 0 1rem;
           }
 
           .hero-text-container {
             padding: 2rem 1.5rem;
             text-align: center;
             align-items: center;
+            margin: 0 1rem;
           }
 
           .hero-text-container p {
@@ -310,6 +314,7 @@ const Banner = () => {
 
           .hero-text-container {
             padding: 1.5rem 1rem;
+            margin: 0 0.75rem;
           }
 
           .hero-text-container h2 {
@@ -350,6 +355,7 @@ const Banner = () => {
           .right-column-stack {
             gap: 1rem;
             margin-top: 2rem;
+            padding: 0 0.75rem;
           }
 
           .card-header-sm {
@@ -438,6 +444,7 @@ const Banner = () => {
           .hero-text-container {
             padding: 1rem;
             border-radius: 16px;
+            margin: 0 0.5rem;
           }
 
           .hero-text-container h2 {
@@ -474,6 +481,7 @@ const Banner = () => {
           .right-column-stack {
             gap: 0.75rem;
             margin-top: 1.5rem;
+            padding: 0 0.5rem;
           }
 
           .presentation-preview-card,
