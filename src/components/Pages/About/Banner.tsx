@@ -135,6 +135,7 @@ const Banner = () => {
           max-width: clamp(280px, 40vw, 400px); /* Dynamic width scaling */
           margin-left: auto;
           padding: 0 1rem;
+          padding-top: 0;
           /* Removed margin-top to allow true centering via align-items-center */
         }
 
@@ -285,12 +286,30 @@ const Banner = () => {
             padding-top: 7rem;
             padding-bottom: 3rem;
           }
+
+          /* Uniform spacing between all cards */
+          .banner-section .container .row.g-5 {
+            --bs-gutter-y: 1.5rem !important;
+            row-gap: 1.5rem !important;
+          }
           
           .right-column-stack {
             margin-right: auto;
-            margin-top: 2rem;
+            margin-top: 0 !important;
             max-width: 100%;
             padding: 0 1rem;
+            padding-top: 0 !important;
+            gap: 1.5rem !important;
+          }
+
+          /* Pull hero text up on tablet */
+          .banner-section .col-lg-8 {
+            margin-top: -1.5rem !important;
+            padding-top: 0 !important;
+          }
+
+          .banner-section .col-lg-4 {
+            padding-top: 0 !important;
           }
 
           .hero-text-container {
@@ -312,6 +331,12 @@ const Banner = () => {
             padding-bottom: 2rem;
           }
 
+          /* Pull hero text card (HI I'M ISSAM) up */
+          .banner-section .col-lg-8 {
+            margin-top: -2rem !important;
+            padding-top: 0 !important;
+          }
+
           .hero-text-container {
             padding: 1.5rem 1rem;
             margin: 0 0.75rem;
@@ -328,7 +353,7 @@ const Banner = () => {
           }
 
           .hero-text-container .fs-four {
-            font-size: 0.875rem !important;
+            font-size: 1.5rem !important;
           }
 
           /* Button adjustments for mobile */
@@ -353,11 +378,17 @@ const Banner = () => {
             display: none !important;
           }
 
-          /* Right column cards on mobile */
+          /* Right column cards on mobile - uniform spacing */
           .right-column-stack {
-            gap: 1rem;
-            margin-top: 2rem;
+            gap: 1.25rem !important;
+            margin-top: 0 !important;
             padding: 0 0.75rem;
+            padding-top: 0 !important;
+          }
+
+          .banner-section .col-lg-4 {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
           }
 
           .card-header-sm {
@@ -443,6 +474,12 @@ const Banner = () => {
             padding-bottom: 1.5rem;
           }
 
+          /* Pull hero text card even more on small screens */
+          .banner-section .col-lg-8 {
+            margin-top: -2.5rem !important;
+            padding-top: 0 !important;
+          }
+
           .hero-text-container {
             padding: 1rem;
             border-radius: 16px;
@@ -461,7 +498,7 @@ const Banner = () => {
           }
 
           .hero-text-container .fs-four {
-            font-size: 0.75rem !important;
+            font-size: 1.25rem !important;
             margin-bottom: 0.5rem !important;
           }
 
@@ -474,15 +511,27 @@ const Banner = () => {
             display: none !important;
           }
 
+          /* Uniform spacing on small screens */
+          .banner-section .container .row.g-5 {
+            --bs-gutter-y: 1.25rem !important;
+            row-gap: 1.25rem !important;
+          }
+
           /* Cards on very small screens */
           .glass-card {
             border-radius: 16px;
           }
 
           .right-column-stack {
-            gap: 0.75rem;
-            margin-top: 1.5rem;
+            gap: 1.25rem !important;
+            margin-top: 0 !important;
             padding: 0 0.5rem;
+            padding-top: 0 !important;
+          }
+
+          .banner-section .col-lg-4 {
+            padding-top: 0 !important;
+            margin-top: 0 !important;
           }
 
           .presentation-preview-card,
@@ -561,7 +610,13 @@ const Banner = () => {
           }
 
           .right-column-stack {
-            margin-top: 1.5rem;
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+          }
+
+          .banner-section .col-lg-4 {
+            padding-top: 0 !important;
+            margin-top: -1rem !important;
           }
 
           .scroll-indicator {
