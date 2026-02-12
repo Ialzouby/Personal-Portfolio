@@ -1,0 +1,28 @@
+{
+  "primary_query": "space based data centers for ai",
+  "secondary_queries": [
+    "how do space data centers work",
+    "ai data center power and cooling limits",
+    "benefits of data centers in space",
+    "space based cloud computing explained",
+    "ai infrastructure beyond earth orbit",
+    "space based vs terrestrial data centers",
+    "regulation of space data centers",
+    "future of ai compute in space"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Space Based Data Centers for AI: Architecture, Benefits and Limits",
+  "recommended_slug": "space-based-data-centers-for-ai",
+  "outline_h2s": [
+    "Why AI Is Pushing Data Centers to Their Limits",
+    "What Are Space Based Data Centers?",
+    "Core Architecture of AI Data Centers in Orbit",
+    "Power, Cooling and Latency in Space vs on Earth",
+    "Launch, Maintenance and Reliability Challenges",
+    "Regulation, Jurisdiction and Data Sovereignty in Space",
+    "Economic Tradeoffs of Moving AI Compute Off Planet",
+    "Use Cases for Space Based AI Training and Inference",
+    "Environmental and Social Impact of Off‑Earth Data Centers",
+    "What Needs to Happen Next for Space Data Centers to Be Real"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "SpaceX acquiring xAI to build space-based AI data centers is a highly novel, high-impact infrastructure story with strong long-tail SEO potential around power, cooling, and regulation of off-planet compute. Even after a diversity penalty for repeating the Data/Infra bucket, it clearly out-scores the other events.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Data/Infra",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 34,
+      "notes": "Major corporate move combining two Musk entities with a concrete, controversial vision: shifting AI compute into space. Impact: high novelty, large audiences (SpaceX/xAI/Musk), strong regulatory and geopolitical angles. SEO: strong for explainers on space-based data centers, AI energy use, orbital infra, jurisdiction; good evergreen value as a reference piece. Diversity: Data/Infra appears twice in the last 6 posts, so max 6-point penalty (no override, as news_impact < 22 threshold for special treatment)."
+    },
+    {
+      "index": 1,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Ethics/analysis piece on AI as a layoff justification. Impact: important but more interpretive than event-driven; limited to labor/employment/HR audiences. SEO: solid for terms like 'AI layoffs', 'AI-washing', but partially tied to current cycle; some evergreen angle around governance and disclosure standards. No recent Ethics bucket, so no diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 18,
+      "diversity_penalty": 6,
+      "final_score": 33,
+      "notes": "Apple–Google Gemini integration in Siri is a major platform shift with big user reach and competition/privacy implications. Impact: very high in consumer ecosystem terms, but still pre-announcement and based on reporting rather than a launched product. SEO: excellent for queries on 'Gemini Siri', 'Apple Google AI deal', on-device vs cloud assistants; strong explainer potential. Models bucket has been used 3 times in the last 6 posts, so full 6-point penalty. News impact stays below override threshold, so penalty stands."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Nvidia pitching an Android-for-robots stack at CES is important for robotics ecosystems and chip/platform lock-in. Impact: solid but more directional/roadmap than disruptive event; limited beyond robotics/industrial readers. SEO: good for 'generalist robotics', 'Nvidia robot foundation models'; some ongoing value. Robotics appears twice in last 6 posts, plus twice in last 4, so 6-point penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 14,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 22,
+      "notes": "Startup profile of Physical Intelligence. Impact: interesting signal about generalist robot 'brains' but narrower audience; more VC/startup interest than broad news. SEO: decent for 'robot brain startup', 'generalist robot control models', but less evergreen and more company-specific. Same Robotics bucket and same penalty reasoning as index 3."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Carbon Robotics’ crop-vs-weed model is a concrete, applied edge AI story in agriculture. Impact: strong for ag-tech and automation but not a global platform shift; more sectoral. SEO: good around 'AI weeding', 'laser weeder', 'edge AI agriculture', with case-study style evergreen value. Edge AI bucket appears once in last 6 but not in the last 4 and not consecutively, so no penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 14,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "General analysis of workforce shifts from AI in creative and knowledge work. Impact: thematic and diffuse, no single anchor event; important but less newsy. SEO: decent for 'AI and creative jobs', 'AI impact on knowledge workers', but highly competitive space and somewhat generic. No recent Creative AI bucket, so no penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Models",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Talent consolidation around big labs like OpenAI. Impact: meaningful for industry structure and competition, but gradual trend rather than a single inflection point. SEO: moderate; fits into 'AI talent war', 'OpenAI hiring' narratives, but many similar pieces exist. Models bucket is already heavily used, so full 6-point penalty applies."
+    }
+  ]
+}

@@ -13,7 +13,8 @@
     "data center gpus for ai training",
     "generalist robotics platforms",
     "chatgpt monetization strategy",
-    "google ai overviews and ai mode"
+    "google ai overviews and ai mode",
+    "space based data centers for ai"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -29,7 +30,8 @@
     "Data Center GPUs for AI Training: Architectures and Tradeoffs",
     "Generalist Robotics Platforms: Full-Stack Foundations Explained",
     "ChatGPT Monetization Strategy: Pricing and Business Models Explained",
-    "Google AI Overviews and AI Mode: How Gemini Powers Search"
+    "Google AI Overviews and AI Mode: How Gemini Powers Search",
+    "Space Based Data Centers for AI: Architecture, Benefits and Limits"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -45,7 +47,8 @@
     "data-center-gpus-for-ai-training",
     "generalist-robotics-platforms",
     "chatgpt-monetization-strategy",
-    "google-ai-overviews-ai-mode-gemini"
+    "google-ai-overviews-ai-mode-gemini",
+    "space-based-data-centers-for-ai"
   ],
   "buckets": [
     "Robotics",
@@ -61,6 +64,7 @@
     "Data/Infra",
     "Robotics",
     "Models",
-    "Models"
+    "Models",
+    "Data/Infra"
   ]
 }

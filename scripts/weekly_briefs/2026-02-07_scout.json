@@ -1,0 +1,101 @@
+{
+  "week": "2026-02-07",
+  "events": [
+    {
+      "event": "SpaceX acquires xAI to pursue space-based AI data centers",
+      "category": "Data/Infra",
+      "why_it_matters": "Combining SpaceX and xAI under one company aims to push AI compute infrastructure off Earth into space-based data centers, explicitly framed as a response to the projected power and cooling demands of large AI models. If executed, this could alter the geography, economics, and regulatory context of large-scale AI training and inference by shifting part of the data center footprint away from terrestrial grids and communities.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/02/elon-musk-spacex-acquires-xai-data-centers-space-merger/",
+          "title": "Elon Musk’s SpaceX officially acquires Elon Musk’s xAI, with plan to build data centers in space",
+          "date": "2026-02-02"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch highlights growing use of AI as justification in layoff narratives",
+      "category": "AI Ethics",
+      "why_it_matters": "An analysis of recent corporate layoffs raises the question of whether companies are accurately attributing job cuts to AI-driven efficiency or invoking AI as a pretext for broader cost-cutting. This reflects an emerging ethical and governance issue: how organizations communicate AI’s role in workforce changes and whether claims about automation align with actual technology deployment.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing/",
+          "title": "AI layoffs or ‘AI-washing’?",
+          "date": "2026-02-01"
+        }
+      ]
+    },
+    {
+      "event": "Apple expected to unveil a Gemini-powered upgrade to Siri in February 2026",
+      "category": "Models",
+      "why_it_matters": "Reporting indicates Apple plans to announce a new version of Siri in the second half of February 2026 that uses Google’s Gemini models, enabling task completion via access to personal data and on-screen content, with a more conversational version planned for June. This suggests a deepening integration between a major device ecosystem and third-party frontier models, with implications for competition, privacy controls, and how assistant capabilities are split between on-device and cloud execution.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/25/apple-will-reportedly-unveil-its-gemini-powered-siri-assistant-in-february/",
+          "title": "Apple will reportedly unveil its Gemini-powered Siri assistant in February",
+          "date": "2026-01-25"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia outlines full-stack platform ambitions for generalist robotics at CES 2026",
+      "category": "Robotics",
+      "why_it_matters": "Nvidia described a stack of robot foundation models, simulation tools, and edge hardware aimed at making its ecosystem the default platform for general-purpose robots, analogous to Android in smartphones. This bundling of models, tools, and chips for “physical AI” could concentrate influence over how robots perceive, reason, and act across many applications, and it underscores the role of large AI vendors in shaping robotics standards.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch spotlights Physical Intelligence, a startup building general robot control models",
+      "category": "Robotics",
+      "why_it_matters": "A profile of Physical Intelligence describes efforts to build \"robot brains\"—generalist control systems intended to run across different robot hardware. This reflects a broader move away from single-task robots toward shared, model-centric platforms, which could accelerate deployment but also tie many physical systems to a small number of foundation model providers.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/category/artificial-intelligence/robotics/",
+          "title": "A peek inside Physical Intelligence, the startup building Silicon Valley’s buzziest robot brains",
+          "date": "2026-02-02"
+        }
+      ]
+    },
+    {
+      "event": "Carbon Robotics develops an AI model to distinguish crops from weeds in the field",
+      "category": "Edge AI",
+      "why_it_matters": "Carbon Robotics has built an AI model that detects and identifies plants for its LaserWeeder agricultural machines, enabling targeted weed removal directly in the field. This is a concrete example of edge-deployed vision models performing real-time decisions in harsh outdoor environments, illustrating how on-machine AI can change labor, chemical usage, and productivity in agriculture.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/category/artificial-intelligence/robotics/",
+          "title": "Carbon Robotics built an AI model that detects and identifies plants",
+          "date": "2026-02-05"
+        }
+      ]
+    },
+    {
+      "event": "Analysis of workforce shifts as AI is integrated into consumer devices and services",
+      "category": "Creative AI",
+      "why_it_matters": "Alongside device launches and service upgrades that embed generative AI into everyday products, commentary has focused on how these models are reshaping creative and knowledge work. The same tools that automate drafting, summarization, and media generation are also prompting companies to reconsider role definitions, raising questions about long-term impacts on creative professions.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/01/ai-layoffs-or-ai-washing/",
+          "title": "AI layoffs or ‘AI-washing’?",
+          "date": "2026-02-01"
+        }
+      ]
+    },
+    {
+      "event": "Ongoing consolidation of AI talent around major foundation model labs",
+      "category": "Models",
+      "why_it_matters": "Recent reporting on senior staff moving from smaller AI startups back to large labs like OpenAI highlights continued concentration of talent around a few frontier-model organizations. This affects the pace and direction of model development, the competitive landscape for alternative architectures, and the distribution of expertise needed to build and evaluate advanced systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/14/mira-muratis-startup-thinking-machines-lab-is-losing-two-of-its-co-founders-to-openai/",
+          "title": "Mira Murati's startup, Thinking Machines Lab, is losing two of its co-founders to OpenAI",
+          "date": "2026-01-14"
+        }
+      ]
+    }
+  ]
+}
