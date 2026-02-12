@@ -111,18 +111,16 @@ const Banner = () => {
           flex-direction: column;
           align-items: flex-start;
           justify-content: center;
-          align-items: flex-start;
-          justify-content: center;
           height: auto;
         }
 
         .hero-text-container h2 {
-          font-size: clamp(2.5rem, 6vw, 4.5rem);
+          font-size: clamp(2rem, 6vw, 4.5rem);
           line-height: 1.1;
         }
 
         .hero-text-container p {
-          font-size: clamp(1rem, 1.5vw, 1.2rem);
+          font-size: clamp(0.9rem, 1.5vw, 1.2rem);
           line-height: 1.6;
           max-width: 90%;
         }
@@ -277,22 +275,289 @@ const Banner = () => {
           60% { transform: translateX(-50%) translateY(-5px); }
         }
 
+        /* Tablet/Small Desktop */
         @media (max-width: 991px) {
           .banner-section {
             height: auto;
-            padding-top: 8rem;
-            padding-bottom: 4rem;
+            min-height: auto;
+            padding-top: 7rem;
+            padding-bottom: 3rem;
           }
           
           .right-column-stack {
             margin-right: auto;
             margin-top: 2rem;
+            max-width: 100%;
           }
 
           .hero-text-container {
-            padding: 1.5rem;
+            padding: 2rem 1.5rem;
             text-align: center;
             align-items: center;
+          }
+
+          .hero-text-container p {
+            max-width: 100%;
+          }
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+          .banner-section {
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+          }
+
+          .hero-text-container {
+            padding: 1.5rem 1rem;
+          }
+
+          .hero-text-container h2 {
+            font-size: clamp(1.75rem, 8vw, 2.5rem);
+            margin-bottom: 1rem !important;
+          }
+
+          .hero-text-container p {
+            font-size: clamp(0.875rem, 3.5vw, 1rem);
+            margin-bottom: 1.5rem !important;
+          }
+
+          .hero-text-container .fs-four {
+            font-size: 0.875rem !important;
+          }
+
+          /* Button adjustments for mobile */
+          .hero-text-container .d-flex.gap-4 {
+            flex-direction: column;
+            gap: 0.75rem !important;
+            width: 100%;
+          }
+
+          .hero-text-container .btn {
+            width: 100%;
+            justify-content: center;
+            padding: 0.75rem 1.5rem !important;
+            font-size: 0.875rem !important;
+          }
+
+          /* Counter section mobile */
+          .hero-text-container .mt-8 {
+            margin-top: 2rem !important;
+            padding-top: 2rem !important;
+          }
+
+          /* Right column cards on mobile */
+          .right-column-stack {
+            gap: 1rem;
+            margin-top: 2rem;
+          }
+
+          .card-header-sm {
+            font-size: 0.65rem;
+            margin-bottom: 0.5rem;
+          }
+
+          /* Presentation card mobile */
+          .presentation-preview-card {
+            padding: 1rem;
+          }
+
+          .presentation-preview-card h4 {
+            font-size: 0.875rem !important;
+          }
+
+          .presentation-iframe-wrapper {
+            width: 30%;
+            min-width: 80px;
+          }
+
+          /* Awards card mobile */
+          .awards-card {
+            padding: 1rem;
+          }
+
+          .award-item {
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+          }
+
+          .award-item > div:first-child {
+            padding: 0.4rem !important;
+          }
+
+          .award-item .fw-semibold {
+            font-size: 0.875rem !important;
+          }
+
+          .award-item .fs-nine {
+            font-size: 0.7rem !important;
+          }
+
+          /* Featured projects mobile */
+          .featured-projects-card {
+            padding: 1rem;
+          }
+
+          .projects-row {
+            gap: 0.75rem;
+          }
+
+          .project-img-wrapper {
+            width: 100%;
+            margin-bottom: 0.75rem;
+          }
+
+          .project-tag {
+            font-size: 0.6rem;
+            padding: 3px 6px;
+          }
+
+          .project-title-sm {
+            font-size: 0.75rem;
+          }
+
+          /* Scroll indicator mobile */
+          .scroll-indicator {
+            bottom: 1.5rem;
+            font-size: 0.75rem;
+          }
+
+          .scroll-indicator svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        /* Small Mobile Devices */
+        @media (max-width: 480px) {
+          .banner-section {
+            padding-top: 5rem;
+            padding-bottom: 1.5rem;
+          }
+
+          .hero-text-container {
+            padding: 1rem;
+            border-radius: 16px;
+          }
+
+          .hero-text-container h2 {
+            font-size: clamp(1.5rem, 9vw, 2rem);
+            margin-bottom: 0.75rem !important;
+          }
+
+          .hero-text-container p {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 1.25rem !important;
+          }
+
+          .hero-text-container .fs-four {
+            font-size: 0.75rem !important;
+            margin-bottom: 0.5rem !important;
+          }
+
+          .hero-text-container .btn {
+            padding: 0.65rem 1.25rem !important;
+            font-size: 0.8rem !important;
+          }
+
+          .hero-text-container .mt-8 {
+            margin-top: 1.5rem !important;
+            padding-top: 1.5rem !important;
+          }
+
+          /* Cards on very small screens */
+          .glass-card {
+            border-radius: 16px;
+          }
+
+          .right-column-stack {
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+          }
+
+          .presentation-preview-card,
+          .awards-card,
+          .featured-projects-card {
+            padding: 0.875rem;
+          }
+
+          .card-header-sm {
+            font-size: 0.6rem;
+          }
+
+          .presentation-preview-card h4 {
+            font-size: 0.8rem !important;
+          }
+
+          .award-item .fw-semibold {
+            font-size: 0.8rem !important;
+          }
+
+          .award-item .fs-nine {
+            font-size: 0.65rem !important;
+          }
+
+          .project-img-wrapper {
+            aspect-ratio: 1 / 1;
+          }
+
+          .project-title-sm {
+            font-size: 0.7rem;
+          }
+
+          .project-tag {
+            font-size: 0.55rem;
+            padding: 2px 5px;
+          }
+
+          /* Hide scroll indicator on very small screens */
+          .scroll-indicator {
+            display: none;
+          }
+        }
+
+        /* Landscape Mobile Devices */
+        @media (max-width: 768px) and (orientation: landscape) {
+          .banner-section {
+            height: auto;
+            min-height: auto;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+          }
+
+          .hero-text-container h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem !important;
+          }
+
+          .hero-text-container p {
+            font-size: 0.875rem;
+            margin-bottom: 1rem !important;
+          }
+
+          .hero-text-container .d-flex.gap-4 {
+            flex-direction: row;
+            gap: 1rem !important;
+          }
+
+          .hero-text-container .btn {
+            width: auto;
+            padding: 0.5rem 1rem !important;
+            font-size: 0.8rem !important;
+          }
+
+          .hero-text-container .mt-8 {
+            margin-top: 1rem !important;
+            padding-top: 1rem !important;
+          }
+
+          .right-column-stack {
+            margin-top: 1.5rem;
+          }
+
+          .scroll-indicator {
+            display: none;
           }
         }
       `}</style>
