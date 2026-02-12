@@ -579,7 +579,6 @@ html[data-theme="dark"] .banner-tint-overlay,
   .banner-section-top {
     min-height: 100px;
     margin-top: 0 !important;
-    padding-top: 0 !important;
   }
 }
 
@@ -591,8 +590,16 @@ html[data-theme="dark"] .banner-tint-overlay,
     margin-top: 0 !important;
   }
   
+  /* Pages with pt-120 need some padding but not full 120 */
   .banner-section-top.pt-120 {
-    padding-top: 0 !important;
+    padding-top: 5rem !important;
+  }
+}
+
+/* Even smaller screens need less padding */
+@media (max-width: 576px) {
+  .banner-section-top.pt-120 {
+    padding-top: 4rem !important;
   }
 }
 

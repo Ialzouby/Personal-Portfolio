@@ -333,22 +333,24 @@ const Banner = () => {
 
           /* Button adjustments for mobile */
           .hero-text-container .d-flex.gap-4 {
-            flex-direction: column;
+            flex-direction: row;
             gap: 0.75rem !important;
             width: 100%;
+            justify-content: center;
           }
 
           .hero-text-container .btn {
-            width: 100%;
+            width: auto;
+            flex: 0 1 auto;
             justify-content: center;
-            padding: 0.75rem 1.5rem !important;
+            padding: 0.7rem 1.25rem !important;
             font-size: 0.875rem !important;
+            white-space: nowrap;
           }
 
-          /* Counter section mobile */
+          /* Counter section mobile - HIDDEN */
           .hero-text-container .mt-8 {
-            margin-top: 2rem !important;
-            padding-top: 2rem !important;
+            display: none !important;
           }
 
           /* Right column cards on mobile */
@@ -464,13 +466,12 @@ const Banner = () => {
           }
 
           .hero-text-container .btn {
-            padding: 0.65rem 1.25rem !important;
-            font-size: 0.8rem !important;
+            padding: 0.65rem 1rem !important;
+            font-size: 0.875rem !important;
           }
 
           .hero-text-container .mt-8 {
-            margin-top: 1.5rem !important;
-            padding-top: 1.5rem !important;
+            display: none !important;
           }
 
           /* Cards on very small screens */
@@ -552,12 +553,11 @@ const Banner = () => {
           .hero-text-container .btn {
             width: auto;
             padding: 0.5rem 1rem !important;
-            font-size: 0.8rem !important;
+            font-size: 0.875rem !important;
           }
 
           .hero-text-container .mt-8 {
-            margin-top: 1rem !important;
-            padding-top: 1rem !important;
+            display: none !important;
           }
 
           .right-column-stack {
