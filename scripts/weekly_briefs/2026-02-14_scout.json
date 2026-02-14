@@ -1,0 +1,106 @@
+{
+  "week": "2026-02-14",
+  "events": [
+    {
+      "event": "OpenAI updates GPT-5.2 Instant model with improved answer quality and style",
+      "category": "Models",
+      "why_it_matters": "Incremental changes to widely deployed frontier models can materially affect how hundreds of millions of people experience AI. The February 10 update focuses on more grounded tone and clearer, better prioritized answers to advice and how‑to questions, which could reduce misunderstanding and hallucinations in everyday use and API-based products built on this model.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/pt-pt/articles/9624314-model-release-notes",
+          "title": "Model Release Notes – GPT-5.2 Instant Update (February 10, 2026)",
+          "date": "2026-02-10"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI details GPT-5.3-Codex, a new agentic coding model",
+      "category": "Models",
+      "why_it_matters": "GPT-5.3-Codex combines OpenAI’s code-specialized Codex lineage with the GPT‑5 family into a single model meant to act as a more general coding agent. OpenAI reports ~25% faster performance and higher benchmark scores, positioning this as a step toward AI systems that can plan, write, and iteratively modify complex software with less human hand‑holding, which has implications for software productivity and how engineering work is organized.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/pt-pt/articles/9624314-model-release-notes",
+          "title": "Model Release Notes – Introducing GPT-5.3-Codex (February 5, 2026)",
+          "date": "2026-02-05"
+        }
+      ]
+    },
+    {
+      "event": "Malaysia sees first public protest over environmental impact of AI-driven data center buildout",
+      "category": "Data/Infra",
+      "why_it_matters": "On February 7, residents in Johor protested construction of a large data center, citing dust, potential health impacts, and risks to local water supply. The facility is part of a broader wave of AI-related data center expansion in Malaysia. This illustrates growing local pushback against the resource demands of AI infrastructure, signaling that environmental and community concerns could become a material constraint or regulatory focus for future AI data center projects.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-02-07/malaysia-draws-first-data-center-protest-over-pollution-water",
+          "title": "Malaysia Draws First Data Center Protest Over Pollution, Water",
+          "date": "2026-02-07"
+        }
+      ]
+    },
+    {
+      "event": "ByteDance launches Seedance 2.0, a multimodal AI model for short video generation with audio",
+      "category": "Creative AI",
+      "why_it_matters": "Seedance 2.0 can generate 15‑second video clips with synchronized audio from combinations of text, images, existing video, and sound. It supports complex camera movement, cinematic effects, and multi‑subject scenes, plus refinement via multiple reference images, clips, and audio samples. This pushes consumer‑oriented video generation closer to turnkey production tools, raising the competitive stakes with models from Google, OpenAI, and others, and intensifying questions around copyright and deepfake‑style misuse.",
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/877931/bytedance-seedance-2-video-generator-ai-launch",
+          "title": "ByteDance’s next-gen AI model can generate clips based on text, images, audio, and video",
+          "date": "2026-02-12"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI clarifies branding and timeline for its first AI hardware device amid trademark dispute",
+      "category": "Edge AI",
+      "why_it_matters": "In a court filing disclosed this week, OpenAI said it will not use the “io” or similar branding for its upcoming AI devices, following a trademark dispute, and is now targeting a February 2027 launch for its first screenless companion gadget. The update underscores OpenAI’s continued move into dedicated consumer hardware while highlighting how IP and branding issues can directly influence the rollout and positioning of edge AI products.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/openai-drops-io-branding-hardware-devices",
+          "title": "OpenAI Abandons 'io' Branding for Its AI Hardware",
+          "date": "2026-02-11"
+        }
+      ]
+    },
+    {
+      "event": "Environmental concerns around AI data centers sharpen as Malaysia protest highlights water and pollution risks",
+      "category": "AI Ethics",
+      "why_it_matters": "The Johor protest against an AI‑linked data center project explicitly focused on pollution, dust, and water usage near a residential area. As AI accelerates demand for power- and water‑intensive facilities globally, such events move environmental impact from an abstract policy debate into concrete local opposition. This increases pressure on operators and regulators to adopt stricter environmental safeguards, transparency, and community engagement for AI infrastructure.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-02-07/malaysia-draws-first-data-center-protest-over-pollution-water",
+          "title": "Malaysia Draws First Data Center Protest Over Pollution, Water",
+          "date": "2026-02-07"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI’s healthcare-focused product suite continues rolling rollout with large US health systems",
+      "category": "Healthcare AI",
+      "why_it_matters": "While announced on January 8, OpenAI for Healthcare remains a current development as products begin rolling out more broadly to major US providers. The offering includes ChatGPT for Healthcare and an API with models tuned for clinical and administrative use, designed to support HIPAA requirements. Adoption by large systems such as AdventHealth, Cedars-Sinai, Memorial Sloan Kettering, and UCSF indicates that general-purpose foundation models are being systematically integrated into clinical workflows under healthcare-specific data protection regimes.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-for-healthcare/",
+          "title": "Introducing OpenAI for Healthcare",
+          "date": "2026-01-08"
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA promotes full-stack platform for generalist robotics, including open robot foundation models and edge hardware",
+      "category": "Robotics",
+      "why_it_matters": "NVIDIA’s CES 2026 announcements, still driving coverage into February, describe a stack of robot foundation models, simulation tools, and edge hardware aimed at making NVIDIA the default platform for “physical AI.” The company is releasing open models via Hugging Face that can reason and plan across diverse tasks and robot types. This could accelerate development of general‑purpose robots by giving manufacturers a shared software and model ecosystem, similar to how Android standardized much of the smartphone stack.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://techcrunch.com/snippet/3080072/nvidia-wants-to-be-the-default-platform-for-generalist-robotics/",
+          "title": "Nvidia wants to be the default platform for generalist robotics",
+          "date": "2026-01-05"
+        }
+      ]
+    }
+  ]
+}

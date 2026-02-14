@@ -1,0 +1,78 @@
+{
+  "winner_index": 3,
+  "winner_reason": "ByteDance’s Seedance 2.0 is a fresh, high-impact advance in multimodal creative AI from a major consumer platform, with strong ongoing interest around AI video, copyright, and deepfakes. It avoids recent overused buckets (Models, Data/Infra, Robotics), faces no diversity penalty, and offers strong evergreen SEO potential for explainer and comparative content versus OpenAI/Google video models.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Incremental but widely felt tweak to a major deployed model; good for usage guidance and behavior-change explainers. However, Models has appeared 3+ times in last 6 posts and very recently, so it gets max diversity penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Substantial new coding model with agentic capabilities and productivity implications; strong SEO for dev workflows and comparisons. Still, heavily overlaps with recently covered Models content, so maximum diversity penalty applies."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 12,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Locally important protest that highlights infrastructure friction and may prefigure similar conflicts; decent SEO around ‘AI data center environmental impact.’ Data/Infra has been used frequently (3+ in last 6), hence max penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Creative AI",
+      "news_impact": 20,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 37,
+      "notes": "Major short‑video model from ByteDance, directly relevant to TikTok-scale audiences and the broader AI video arms race. Strong SEO value on AI video generation, multimodal prompt techniques, and copyright/deepfake concerns. Creative AI hasn’t appeared in recent buckets, so no diversity penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 15,
+      "seo_potential": 11,
+      "diversity_penalty": 0,
+      "final_score": 26,
+      "notes": "Clarification about branding and a far-off 2027 hardware date; meaningful for strategy watchers but relatively modest immediate impact. Some SEO interest around OpenAI devices and edge companions, and bucket is fresh, but news is more incremental/legalistic."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Reframes the Malaysia data center story as part of global environmental and governance trends; solid for policy and ESG-oriented SEO. Not as concrete or product-tied as others, but good for thought-leadership. No recent Ethics bucket, so no penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "AI in Healthcare",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Meaningful medium-term shift: general models entering regulated clinical workflows at scale. Strong SEO around ‘ChatGPT for Healthcare,’ HIPAA, and clinical use cases. Slightly older announcement, now in rollout phase, which tempers impact vs. a brand-new launch."
+    },
+    {
+      "index": 7,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Important for the robotics ecosystem and ‘physical AI,’ but the core CES announcement is somewhat aged by now. Robotics appears multiple times in the recent list, so it gets the maximum diversity penalty."
+    }
+  ]
+}

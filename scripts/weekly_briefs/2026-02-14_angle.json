@@ -1,0 +1,27 @@
+{
+  "primary_query": "AI short video generation models",
+  "secondary_queries": [
+    "text to video ai with sound explained",
+    "multimodal video generation from text and images",
+    "how ai generates short videos with audio",
+    "best ai models for short form video",
+    "ai video generation vs traditional editing",
+    "deepfake risks in ai video tools",
+    "copyright issues in ai generated video",
+    "how multimodal ai models work for video"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Short Video Generation Models: How Multimodal Tools Work",
+  "recommended_slug": "ai-short-video-generation-models",
+  "outline_h2s": [
+    "What Are AI Short Video Generation Models?",
+    "Key Capabilities: From Text, Images and Audio to Video",
+    "How Multimodal Video Generation Models Work Under the Hood",
+    "Creative Possibilities: Camera Motion, Cinematic Effects and Storytelling",
+    "Comparing Leading AI Short Video Models and Tools",
+    "Workflow Examples: Turning Prompts and References Into Clips",
+    "Copyright, Deepfakes and Ethical Risks in AI Video",
+    "Limitations, Artifacts and When Human Editing Still Matters",
+    "What to Watch Next in AI Video Generation"
+  ]
+}
