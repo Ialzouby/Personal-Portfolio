@@ -14,7 +14,8 @@
     "generalist robotics platforms",
     "chatgpt monetization strategy",
     "google ai overviews and ai mode",
-    "space based data centers for ai"
+    "space based data centers for ai",
+    "AI short video generation models"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -31,7 +32,8 @@
     "Generalist Robotics Platforms: Full-Stack Foundations Explained",
     "ChatGPT Monetization Strategy: Pricing and Business Models Explained",
     "Google AI Overviews and AI Mode: How Gemini Powers Search",
-    "Space Based Data Centers for AI: Architecture, Benefits and Limits"
+    "Space Based Data Centers for AI: Architecture, Benefits and Limits",
+    "AI Short Video Generation Models: How Multimodal Tools Work"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -48,7 +50,8 @@
     "generalist-robotics-platforms",
     "chatgpt-monetization-strategy",
     "google-ai-overviews-ai-mode-gemini",
-    "space-based-data-centers-for-ai"
+    "space-based-data-centers-for-ai",
+    "ai-short-video-generation-models"
   ],
   "buckets": [
     "Robotics",
@@ -65,6 +68,7 @@
     "Robotics",
     "Models",
     "Models",
-    "Data/Infra"
+    "Data/Infra",
+    "Creative AI"
   ]
 }
