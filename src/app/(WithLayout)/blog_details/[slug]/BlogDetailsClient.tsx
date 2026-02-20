@@ -38,7 +38,7 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                   style={{ height: "420px", objectFit: "cover" }}
                 />
               </div>
-              <p className="n5-color fs-eight lh-lg mb-5">{blog.content}</p>
+              <p className="n5-color blog-text-enhanced mb-5">{blog.content}</p>
             </div>
           </FadeDown>
 
@@ -50,7 +50,7 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                 )}
 
                 {section.text && (
-                  <p className="n5-color fs-eight lh-lg mb-5">{section.text}</p>
+                  <p className="n5-color blog-text-enhanced mb-5">{section.text}</p>
                 )}
 
                 {section.image && (

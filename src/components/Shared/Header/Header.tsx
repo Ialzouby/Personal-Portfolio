@@ -474,17 +474,17 @@ const Header = () => {
         .nav-link-mobile {
           color: rgba(var(--n5), 0.95) !important;
           text-decoration: none !important;
-          padding: 1.4rem 2.5rem !important;
-          margin-bottom: 1.5rem !important;
-          border-radius: 20px !important;
+          padding: 0.75rem 1.5rem !important;
+          margin-bottom: 0.75rem !important;
+          border-radius: 16px !important;
           display: flex !important;
           align-items: center !important;
           justify-content: center !important;
           text-align: center !important;
           transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
           position: relative;
-          font-weight: 700 !important;
-          font-size: 1.2rem !important;
+          font-weight: 600 !important;
+          font-size: 1rem !important;
           letter-spacing: 1px !important;
           text-transform: uppercase !important;
           opacity: 0;
@@ -730,22 +730,22 @@ const Header = () => {
 
         /* Enhanced Contact Button for Mobile */
         .contact-btn-mobile {
-          padding: 1.1rem 2rem;
-          border-radius: 16px !important;
+          padding: 0.75rem 1.5rem;
+          border-radius: 99px !important;
           background: linear-gradient(135deg, 
             rgb(82, 113, 255), 
             rgb(65, 95, 235)
           ) !important;
           color: #ffffff !important;
           text-decoration: none;
-          font-weight: 700;
-          font-size: 1.05rem;
+          font-weight: 600;
+          font-size: 1rem;
           letter-spacing: 0.5px;
           box-shadow: 
             0 6px 20px rgba(82, 113, 255, 0.4),
             inset 0 1px 0 rgba(255, 255, 255, 0.2);
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-          margin-top: 1.5rem;
+          margin-top: 1rem;
           border: none !important;
           cursor: pointer;
           display: inline-flex;
