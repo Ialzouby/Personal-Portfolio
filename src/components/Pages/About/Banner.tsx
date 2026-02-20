@@ -278,82 +278,61 @@ const Banner = () => {
           60% { transform: translateX(-50%) translateY(-5px); }
         }
 
-        /* Tablet/Small Desktop */
+        /* Tablet/Small Desktop & Mobile Optimization */
+        /* Tablet & Mobile Optimization (Up to 991px) */
         @media (max-width: 991px) {
           .banner-section {
             height: auto;
             min-height: auto;
-            padding-top: 7rem;
-            padding-bottom: 3rem;
+            padding-top: 6.5rem;
+            padding-bottom: 2.5rem;
           }
 
-          /* Uniform spacing between all cards */
+          .mobile-contents {
+            display: contents !important;
+          }
+
+          .order-1-mobile { order: 1 !important; }
+          .order-2-mobile { order: 2 !important; }
+          .order-3-mobile { order: 3 !important; }
+
           .banner-section .container .row.g-5 {
-            --bs-gutter-y: 1.5rem !important;
-            row-gap: 1.5rem !important;
+            row-gap: 1.25rem !important;
+            display: flex;
+            flex-direction: column;
           }
-          
-          .right-column-stack {
-            margin-right: auto;
+
+          /* Left column (Issam) and Right column adjustments */
+          .banner-section .col-lg-8, .banner-section .col-lg-4 {
+            padding-top: 0 !important;
             margin-top: 0 !important;
-            max-width: 100%;
-            padding: 0 1rem;
-            padding-top: 0 !important;
-            gap: 1.5rem !important;
-          }
-
-          .featured-projects-card {
-            order: -1;
-          }
-
-          /* Pull hero text up on tablet */
-          .banner-section .col-lg-8 {
-            margin-top: -1.5rem !important;
-            padding-top: 0 !important;
-          }
-
-          .banner-section .col-lg-4 {
-            padding-top: 0 !important;
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
           }
 
           .hero-text-container {
-            padding: 2rem 1.5rem;
+            padding: 1rem !important;
             text-align: center;
             align-items: center;
-            margin: 0 1rem;
+            margin: 0 !important;
+            width: 100% !important;
           }
 
-          .hero-text-container p {
-            max-width: 100%;
-          }
-        }
-
-        /* Mobile Optimization */
-        @media (max-width: 768px) {
-          .banner-section {
-            padding-top: 6rem;
-            padding-bottom: 2rem;
-          }
-
-          /* Pull hero text card (HI I'M ISSAM) up */
-          .banner-section .col-lg-8 {
-            margin-top: -2rem !important;
-            padding-top: 0 !important;
-          }
-
-          .hero-text-container {
-            padding: 1.5rem 1rem;
-            margin: 0 0.75rem;
+          .glass-card {
+            width: 100% !important;
+            border-radius: 18px; /* Slightly softer for mobile */
           }
 
           .hero-text-container h2 {
-            font-size: clamp(1.75rem, 8vw, 2.5rem);
+            font-size: clamp(1.75rem, 8vw, 2.75rem);
             margin-bottom: 1rem !important;
+            line-height: 1.2;
           }
 
           .hero-text-container p {
             font-size: clamp(0.875rem, 3.5vw, 1rem);
             margin-bottom: 1.5rem !important;
+            max-width: 100%;
           }
 
           .hero-text-container .fs-four {
@@ -371,28 +350,26 @@ const Banner = () => {
           .hero-text-container .btn {
             width: auto;
             flex: 0 1 auto;
-            justify-content: center;
             padding: 0.7rem 1.25rem !important;
             font-size: 0.875rem !important;
             white-space: nowrap;
           }
 
-          /* Counter section mobile - HIDDEN */
+          /* Counter section - hidden on mobile for better flow */
           .hero-text-container .mt-8 {
             display: none !important;
           }
 
-          /* Right column cards on mobile - uniform spacing */
+          /* Cards Stack adjustments */
           .right-column-stack {
             gap: 1.25rem !important;
-            margin-top: 0 !important;
-            padding: 0 0.75rem;
-            padding-top: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
           }
 
-          .banner-section .col-lg-4 {
-            padding-top: 0 !important;
-            margin-top: 0 !important;
+          .featured-projects-card, .presentation-preview-card, .awards-card {
+            padding: 1rem !important;
+            margin: 0 !important;
           }
 
           .card-header-sm {
@@ -400,75 +377,22 @@ const Banner = () => {
             margin-bottom: 0.5rem;
           }
 
-          /* Presentation card mobile */
-          .presentation-preview-card {
-            padding: 1rem;
-          }
+          /* Components adjustments */
+          .presentation-preview-card h4 { font-size: 0.875rem !important; }
+          .presentation-iframe-wrapper { width: 30%; min-width: 80px; }
+          .award-item { gap: 0.5rem; padding: 0.5rem 0; }
+          .award-item .fw-semibold { font-size: 0.875rem !important; }
+          .award-item .fs-nine { font-size: 0.7rem !important; }
+          .project-img-wrapper { width: 100%; margin-bottom: 0.75rem; }
+          .project-tag { font-size: 0.6rem; padding: 3px 6px; }
+          .project-title-sm { font-size: 0.75rem; }
 
-          .presentation-preview-card h4 {
-            font-size: 0.875rem !important;
-          }
-
-          .presentation-iframe-wrapper {
-            width: 30%;
-            min-width: 80px;
-          }
-
-          /* Awards card mobile */
-          .awards-card {
-            padding: 1rem;
-          }
-
-          .award-item {
-            gap: 0.5rem;
-            padding: 0.5rem 0;
-          }
-
-          .award-item > div:first-child {
-            padding: 0.4rem !important;
-          }
-
-          .award-item .fw-semibold {
-            font-size: 0.875rem !important;
-          }
-
-          .award-item .fs-nine {
-            font-size: 0.7rem !important;
-          }
-
-          /* Featured projects mobile */
-          .featured-projects-card {
-            padding: 1rem;
-          }
-
-          .projects-row {
-            gap: 0.75rem;
-          }
-
-          .project-img-wrapper {
-            width: 100%;
-            margin-bottom: 0.75rem;
-          }
-
-          .project-tag {
-            font-size: 0.6rem;
-            padding: 3px 6px;
-          }
-
-          .project-title-sm {
-            font-size: 0.75rem;
-          }
-
-          /* Scroll indicator mobile */
+          /* Scroll indicator */
           .scroll-indicator {
             bottom: 1.5rem;
             font-size: 0.75rem;
           }
-
-          .scroll-indicator svg {
-            width: 20px;
-            height: 20px;
-          }
+          .scroll-indicator svg { width: 22px; height: 22px; }
         }
 
         /* Small Mobile Devices */
@@ -478,16 +402,9 @@ const Banner = () => {
             padding-bottom: 1.5rem;
           }
 
-          /* Pull hero text card even more on small screens */
-          .banner-section .col-lg-8 {
-            margin-top: -2.5rem !important;
-            padding-top: 0 !important;
-          }
-
           .hero-text-container {
-            padding: 1rem;
+            padding: 1rem !important;
             border-radius: 16px;
-            margin: 0 0.5rem;
           }
 
           .hero-text-container h2 {
@@ -511,31 +428,18 @@ const Banner = () => {
             font-size: 0.875rem !important;
           }
 
-          .hero-text-container .mt-8 {
-            display: none !important;
-          }
-
           /* Uniform spacing on small screens */
           .banner-section .container .row.g-5 {
             --bs-gutter-y: 1.25rem !important;
             row-gap: 1.25rem !important;
           }
 
-          /* Cards on very small screens */
           .glass-card {
             border-radius: 16px;
           }
 
           .right-column-stack {
             gap: 1.25rem !important;
-            margin-top: 0 !important;
-            padding: 0 0.5rem;
-            padding-top: 0 !important;
-          }
-
-          .banner-section .col-lg-4 {
-            padding-top: 0 !important;
-            margin-top: 0 !important;
           }
 
           .presentation-preview-card,
@@ -572,10 +476,46 @@ const Banner = () => {
             font-size: 0.55rem;
             padding: 2px 5px;
           }
+        }
 
-          /* Hide scroll indicator on very small screens */
-          .scroll-indicator {
-            display: none;
+        /* Landscape Mobile Devices */
+        @media (max-width: 768px) and (orientation: landscape) {
+          .banner-section {
+            height: auto;
+            min-height: auto;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+          }
+
+          .hero-text-container h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem !important;
+          }
+
+          .hero-text-container p {
+            font-size: 0.875rem;
+            margin-bottom: 1rem !important;
+          }
+
+          .hero-text-container .d-flex.gap-4 {
+            flex-direction: row;
+            gap: 1rem !important;
+          }
+
+          .hero-text-container .btn {
+            width: auto;
+            padding: 0.5rem 1rem !important;
+            font-size: 0.875rem !important;
+          }
+
+          .right-column-stack {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+          }
+
+          .banner-section .col-lg-4 {
+            padding-top: 0 !important;
+            margin-top: -1rem !important;
           }
         }
 
@@ -633,8 +573,8 @@ const Banner = () => {
         <div className="container">
           <div className="row align-items-center g-5">
             {/* LEFT COLUMN: Main Text */}
-            <div className="col-lg-8 order-2 order-lg-1">
-              <div className="glass-card hero-text-container">
+            <div className="col-lg-8 order-2 order-lg-1 mobile-contents">
+              <div className="glass-card hero-text-container order-2-mobile">
                 <span className="n5-color fs-four fw-medium d-inline-block mb-2">HI, I&apos;M ISSAM </span>
                 <h2 className="typing-text display-one p1-color mb-4 fw-bold">
                   <TypingEffect texts={texts} speed={200} pause={2000} />
@@ -659,13 +599,46 @@ const Banner = () => {
             </div>
 
             {/* RIGHT COLUMN: Cards Stack */}
-            <div className="col-lg-4 order-1 order-lg-2">
-              <div className="right-column-stack">
+            <div className="col-lg-4 order-1 order-lg-2 mobile-contents">
+              <div className="right-column-stack mobile-contents">
 
-                {/* 1. Latest Presentation Card */}
+                {/* 1. Featured Work Card - PLACED AT TOP ON MOBILE */}
+                <div className="glass-card featured-projects-card order-1-mobile">
+                  <div className="card-header-sm">
+                    <PiStarFill size={16} /> Featured Work
+                  </div>
+                  <div className="projects-row">
+                    {projects.map((project, idx) => (
+                      <div
+                        key={idx}
+                        className="project-vertical"
+                        onClick={() => handleProjectClick(project)}
+                      >
+                        <div className="project-img-wrapper">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill={true}
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="d-flex flex-column gap-1">
+                          <div className="project-tags">
+                            {project.category.map((cat, i) => (
+                              <span key={i} className="project-tag">{cat}</span>
+                            ))}
+                          </div>
+                          <h5 className="project-title-sm">{project.title}</h5>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 2. Latest Presentation Card */}
                 {latestPresentation && (
                   <div
-                    className="glass-card presentation-preview-card"
+                    className="glass-card presentation-preview-card order-3-mobile"
                     onClick={() => router.push(`/presentations/${latestPresentation.slug}`)}
                   >
                     <div className="card-header-sm">
@@ -696,9 +669,9 @@ const Banner = () => {
                   </div>
                 )}
 
-                {/* 2. Recent Awards Card */}
+                {/* 3. Recent Awards Card */}
                 <div
-                  className="glass-card awards-card"
+                  className="glass-card awards-card order-3-mobile"
                   onClick={() => router.push('/portfolio')}
                   style={{ cursor: "pointer" }}
                 >
@@ -714,39 +687,6 @@ const Banner = () => {
                         <div>
                           <div className="fw-semibold n5-color" style={{ fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}>{award.title}</div>
                           <div className="fs-nine n4-color opacity-75">{award.event}</div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* 3. Featured Work Card */}
-                <div className="glass-card featured-projects-card">
-                  <div className="card-header-sm">
-                    <PiStarFill size={16} /> Featured Work
-                  </div>
-                  <div className="projects-row">
-                    {projects.map((project, idx) => (
-                      <div
-                        key={idx}
-                        className="project-vertical"
-                        onClick={() => handleProjectClick(project)}
-                      >
-                        <div className="project-img-wrapper">
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill={true}
-                            style={{ objectFit: "cover" }}
-                          />
-                        </div>
-                        <div className="d-flex flex-column gap-1">
-                          <div className="project-tags">
-                            {project.category.map((cat, i) => (
-                              <span key={i} className="project-tag">{cat}</span>
-                            ))}
-                          </div>
-                          <h5 className="project-title-sm">{project.title}</h5>
                         </div>
                       </div>
                     ))}
