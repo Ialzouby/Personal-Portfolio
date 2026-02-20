@@ -101,27 +101,21 @@
 /* Responsive improvements for the custom scrollbar */
 @media (max-width: 768px) {
   .custom-scrollbar {
-    height: 8px;
-    margin-top: 20px;
+    display: none !important;
   }
 
   .custom-thumb {
-    height: 16px;
-    top: -4px;
-    min-width: 50px;
+    display: none !important;
   }
 }
 
 @media (max-width: 480px) {
   .custom-scrollbar {
-    height: 10px;
-    margin-top: 18px;
+    display: none !important;
   }
 
   .custom-thumb {
-    height: 18px;
-    top: -4px;
-    min-width: 60px;
+    display: none !important;
   }
 }
 
@@ -584,12 +578,13 @@ html[data-theme="dark"] .banner-tint-overlay,
 
 /* Remove top margin on mobile for banner sections */
 @media (max-width: 991px) {
+
   .banner-section-top.mt-5,
   .banner-section-top.mt-10,
   section.banner-section-top[class*="mt-"] {
     margin-top: 0 !important;
   }
-  
+
   /* Pages with pt-120 need some padding but not full 120 */
   .banner-section-top.pt-120 {
     padding-top: 5rem !important;

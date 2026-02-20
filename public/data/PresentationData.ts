@@ -262,4 +262,35 @@ export const presentations: Presentation[] = [
         ],
         additionalResources: [],
     },
+    {
+        id: 11,
+        slug: "taming-teacher-forcing-video-generation",
+        title: "Taming Teacher Forcing for Masked Autoregressive Video Generation",
+        description: "An exploration of Masked Autoregressive Video Generation, focusing on the MAGI framework. Covers the shift from Masked Teacher Forcing (MTF) to Complete Teacher Forcing (CTF) to resolve training-inference mismatch, along with dynamic training strategies.",
+        date: "February 2026",
+        time: "20 min read",
+        tags: ["Video Generation", "Masked Modeling", "Transformer", "Teacher Forcing"],
+        img: blog2, // Placeholder
+        slidesId: "2PACX-1vTlsnwlsr47r3Nk1s22GTl8T0cmZf2_bCPTT7qMd2HIYlNvK2godi47MoyYeaZthQnSpqJ5pGfKzMa6",
+        overview: [
+            "Video Generation Categories: Masked vs Fully Autoregressive",
+            "The 'Training-Inference Mismatch' problem with Teacher Forcing",
+            "MAGI's solution: Complete Teacher Forcing (CTF)",
+            "Hybrid Transformer Backbone (Spatial + Temporal attention)",
+            "Stabilization tricks: Dynamic Interval Training & Noise Injection",
+        ],
+        keyConcepts: [
+            { term: "Masked Teacher Forcing (MTF)", definition: "Conditioning on ground-truth past frames during training, causing mismatch at inference." },
+            { term: "Complete Teacher Forcing (CTF)", definition: "Conditioning on unmasked observed frames to mimic inference conditions." },
+            { term: "Dynamic Interval Training", definition: "Randomly sampling frame intervals to handle varying motion speeds." },
+            { term: "Dynamic Noise Injection", definition: "Adding noise to observation frames to improve robustness against prediction errors." },
+        ],
+        toc: [
+            "Video Generation Landscape",
+            "The Core Issue: Autoregression & Teacher Forcing",
+            "MAGI & CTF Approach",
+            "Architecture & Stabilization Tricks",
+        ],
+        additionalResources: [],
+    },
 ];

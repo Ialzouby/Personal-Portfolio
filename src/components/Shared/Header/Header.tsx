@@ -80,8 +80,8 @@ const Header = () => {
                   <PiGithubLogo size={22} />
                 </Link>
               </div>
-              <div className="theme-divider"></div>
-              <ThemeButton />
+              {/* <div className="theme-divider"></div> */}
+              {/* <ThemeButton /> */}
               <button
                 onClick={() => setIsContactOpen(true)}
                 className="contact-btn d-flex align-items-center gap-2"
@@ -93,7 +93,7 @@ const Header = () => {
 
             {/* Mobile Menu Toggle */}
             <div className="d-flex d-lg-none align-items-center gap-3">
-              <ThemeButton />
+              {/* <ThemeButton /> */}
               <button
                 className="mobile-menu-toggle"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
