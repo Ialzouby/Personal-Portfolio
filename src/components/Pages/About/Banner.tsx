@@ -302,6 +302,10 @@ const Banner = () => {
             gap: 1.5rem !important;
           }
 
+          .featured-projects-card {
+            order: -1;
+          }
+
           /* Pull hero text up on tablet */
           .banner-section .col-lg-8 {
             margin-top: -1.5rem !important;
@@ -629,7 +633,7 @@ const Banner = () => {
         <div className="container">
           <div className="row align-items-center g-5">
             {/* LEFT COLUMN: Main Text */}
-            <div className="col-lg-8">
+            <div className="col-lg-8 order-2 order-lg-1">
               <div className="glass-card hero-text-container">
                 <span className="n5-color fs-four fw-medium d-inline-block mb-2">HI, I&apos;M ISSAM </span>
                 <h2 className="typing-text display-one p1-color mb-4 fw-bold">
@@ -655,7 +659,7 @@ const Banner = () => {
             </div>
 
             {/* RIGHT COLUMN: Cards Stack */}
-            <div className="col-lg-4">
+            <div className="col-lg-4 order-1 order-lg-2">
               <div className="right-column-stack">
 
                 {/* 1. Latest Presentation Card */}
