@@ -1,0 +1,27 @@
+{
+  "primary_query": "ai agents for smart contract auditing",
+  "secondary_queries": [
+    "smart contract security audit with ai",
+    "evm smart contract vulnerability detection ai",
+    "ai vs manual smart contract audit",
+    "benchmarks for ai smart contract auditors",
+    "how ai finds and fixes solidity bugs",
+    "ai tools to detect smart contract exploits",
+    "limitations of ai in blockchain security",
+    "best practices for using ai in smart contract audits"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Agents for Smart Contract Auditing: Benchmarks and Limits",
+  "recommended_slug": "ai-agents-smart-contract-auditing",
+  "outline_h2s": [
+    "Why Smart Contract Auditing Needs AI Assistance",
+    "How AI Agents Analyze EVM Smart Contracts",
+    "From Detection to Patching: What AI Can Do Today",
+    "Benchmarks for AI Smart Contract Auditors Explained",
+    "Strengths and Limitations of AI in Vulnerability Detection",
+    "Dual‑Use Risks: Exploits, Misuse and Safety Guardrails",
+    "Integrating AI Agents Into Traditional Audit Workflows",
+    "Best Practices for Using AI in Smart Contract Security",
+    "Future Directions for AI‑Driven Blockchain Security"
+  ]
+}

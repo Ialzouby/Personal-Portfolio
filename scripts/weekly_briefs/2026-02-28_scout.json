@@ -1,0 +1,121 @@
+{
+  "week": "2026-02-28",
+  "events": [
+    {
+      "event": "OpenAI and Figma launch a new Codex–Figma integration to link code and product design workflows",
+      "category": "Creative AI",
+      "why_it_matters": "This integration lets teams move directly between source code and design artifacts using OpenAI Codex and Figma’s tools, reducing friction between engineering and design and illustrating how AI can act as a bridge across creative and implementation workflows in software product development.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/figma-partnership/",
+          "title": "OpenAI Codex and Figma launch seamless code-to-design experience",
+          "date": "2026-02-26"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI announces Frontier Alliances with major consulting firms to help enterprises deploy AI coworkers",
+      "category": "Data/Infra",
+      "why_it_matters": "By partnering with large consultancies to implement its Frontier platform, OpenAI is formalizing an ecosystem to handle integration, workflow redesign, and change management, which is critical for scaling AI agent deployments beyond pilots into core enterprise operations.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/frontier-alliance-partners",
+          "title": "Introducing Frontier Alliances",
+          "date": "2026-02-23"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI clarifies legacy model access as GPT‑5.2 becomes the default for Enterprise and Education ChatGPT workspaces",
+      "category": "Models",
+      "why_it_matters": "Enterprise and education customers are being nudged to standardize on GPT‑5.2 for faster, more reliable ChatGPT use, while temporary legacy access enables a managed transition for workflows that still depend on older model behavior.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/id-id/articles/11954883-akses-model-legacy-untuk-pengguna-enterprise-dan-edu",
+          "title": "Akses Model Legacy untuk Pengguna Enterprise dan Edu",
+          "date": "2026-02-24"
+        },
+        {
+          "url": "https://help.openai.com/id-id/articles/11165333-chatgpt-enterprise-and-edu-models-limits",
+          "title": "ChatGPT Enterprise dan Edu - Model & Batasan",
+          "date": "2026-02-27"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes model release notes highlighting a recent GPT‑5.2 Instant update",
+      "category": "Models",
+      "why_it_matters": "The documented GPT‑5.2 Instant update emphasizes more grounded tone and clearer, more relevant answers for advice and how‑to queries, signaling ongoing incremental tuning of large models for reliability and user‑appropriate behavior rather than just benchmark scores.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "title": "Model Release Notes",
+          "date": "2026-02-16"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI introduces EVMbench, a benchmark for AI agents auditing smart contracts on EVM-compatible blockchains",
+      "category": "AI Ethics",
+      "why_it_matters": "EVMbench measures how well AI agents can detect, patch, and potentially exploit high‑severity smart‑contract vulnerabilities, providing a structured way to evaluate AI for defensive security use while highlighting the dual‑use nature of such capabilities.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-evmbench/",
+          "title": "EVMbench 登場",
+          "date": "2026-02-18"
+        },
+        {
+          "url": "https://arxiv.org/abs/2502.XXXXX",
+          "title": "EVMbench: Evaluating AI Agents on Smart Contract Vulnerability Detection and Repair",
+          "date": "2026-02-18"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI updates documentation to reflect retirement of several earlier GPT‑4 and GPT‑5 ChatGPT models",
+      "category": "Data/Infra",
+      "why_it_matters": "Retiring GPT‑4o, GPT‑4.1 variants, o4‑mini, and older GPT‑5 configurations from ChatGPT while keeping API access underscores a consolidation toward newer stacks in the product environment, affecting how organizations manage compatibility and long‑term support for AI‑driven workflows.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/id-id/articles/11954883-akses-model-legacy-untuk-pengguna-enterprise-dan-edu",
+          "title": "Akses Model Legacy untuk Pengguna Enterprise dan Edu",
+          "date": "2026-02-24"
+        },
+        {
+          "url": "https://help.openai.com/id-id/articles/11165333-chatgpt-enterprise-and-edu-models-limits",
+          "title": "ChatGPT Enterprise dan Edu - Model & Batasan",
+          "date": "2026-02-27"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI continues roll‑out of GPT‑5.2‑Codex as its primary agentic coding model",
+      "category": "Models",
+      "why_it_matters": "GPT‑5.2‑Codex is positioned as OpenAI’s main model for complex software engineering and defensive cybersecurity tasks, indicating that practical coding agents—rather than general chat models alone—are becoming a core product line for professional development workflows.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-2-codex/",
+          "title": "Introducing GPT‑5.2‑Codex",
+          "date": "2025-12-18"
+        },
+        {
+          "url": "https://openai.com/en/articles/9624314-model-release-notes",
+          "title": "Model Release Notes",
+          "date": "2026-02-16"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI strengthens leadership team with appointment of a new Chief People Officer",
+      "category": "Data/Infra",
+      "why_it_matters": "Adding a Chief People Officer with prior experience scaling large technical organizations suggests OpenAI is focusing on organizational capacity, governance, and internal processes needed to support rapid AI product expansion and large‑scale deployment.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/arvind-kc-chief-people-officer/",
+          "title": "Arvind KC appointed Chief People Officer",
+          "date": "2026-02-24"
+        }
+      ]
+    }
+  ]
+}

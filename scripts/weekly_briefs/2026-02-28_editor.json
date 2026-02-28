@@ -1,0 +1,78 @@
+{
+  "winner_index": 4,
+  "winner_reason": "EVMbench is a novel, high‑impact benchmark at the intersection of AI, security, and crypto with strong long‑tail SEO potential (agents, smart‑contract auditing, benchmarks). Its category (AI Ethics) is fresh relative to recent coverage, so it avoids diversity penalties while offering both timely news value and evergreen explainer angles.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Solid creative‑workflow story with practical implications for product teams. Impact is meaningful but mostly within design/engineering audiences. SEO around Figma + AI + code‑to‑design workflows is decent but niche. Creative AI was the most recent bucket, so it triggers the maximum diversity penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 20,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Frontier Alliances formalize enterprise deployment via consultants—important for enterprise adoption but more ecosystem/GTM than core tech. Good SEO for queries on AI coworkers, enterprise rollouts, and operating models, but not strongly evergreen. Data/Infra has appeared twice in last 7 posts and once in the last 4, so it gets the maximum diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Model default/legacy access is operationally important for enterprise users but less broadly newsworthy. SEO is moderate for migration/compatibility questions, but it’s somewhat transient as policies change. Models is heavily used in recent history (3× in last 7, 2× in last 4), so it gets the maximum penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Models",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 23,
+      "notes": "Incremental GPT‑5.2 Instant tuning is useful but modest in impact. SEO for model release notes and behavior changes is decent but not highly evergreen beyond this release cycle. Same Models penalty as above."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 18,
+      "diversity_penalty": 0,
+      "final_score": 39,
+      "notes": "EVMbench is a new, clearly defined benchmark at a hot intersection: AI agents + smart‑contract security + dual‑use/ethics. Strong news value across AI safety, security, and crypto communities; likely to be referenced in research and tooling over time. Excellent SEO potential: benchmarks, AI auditors, smart‑contract vulnerability detection, red‑teaming, etc., are all durable topics. Ethics/Policy hasn’t appeared recently, so no diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 23,
+      "notes": "Model retirement in ChatGPT is important for compatibility and ops teams, but it’s more housekeeping than major news. SEO is moderate for migration and support timelines, but details will age quickly. Data/Infra again hits the maximum diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Positioning GPT‑5.2‑Codex as the primary coding/defensive‑security model is significant for developer and security workflows, and has good evergreen SEO around ‘best OpenAI coding model’, ‘agentic coding’, and ‘AI for cybersecurity’. However, the announcement itself is a bit older and Models is already over‑represented, so it takes the full diversity penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 13,
+      "seo_potential": 10,
+      "diversity_penalty": 6,
+      "final_score": 17,
+      "notes": "Executive appointment has some strategic importance but low technical/news impact for most readers. Limited SEO value beyond short‑term interest in leadership changes. Data/Infra again incurs the maximum diversity penalty."
+    }
+  ]
+}

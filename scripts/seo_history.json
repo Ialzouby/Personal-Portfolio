@@ -15,7 +15,8 @@
     "chatgpt monetization strategy",
     "google ai overviews and ai mode",
     "space based data centers for ai",
-    "AI short video generation models"
+    "AI short video generation models",
+    "ai agents for smart contract auditing"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -33,7 +34,8 @@
     "ChatGPT Monetization Strategy: Pricing and Business Models Explained",
     "Google AI Overviews and AI Mode: How Gemini Powers Search",
     "Space Based Data Centers for AI: Architecture, Benefits and Limits",
-    "AI Short Video Generation Models: How Multimodal Tools Work"
+    "AI Short Video Generation Models: How Multimodal Tools Work",
+    "AI Agents for Smart Contract Auditing: Benchmarks and Limits"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -51,7 +53,8 @@
     "chatgpt-monetization-strategy",
     "google-ai-overviews-ai-mode-gemini",
     "space-based-data-centers-for-ai",
-    "ai-short-video-generation-models"
+    "ai-short-video-generation-models",
+    "ai-agents-smart-contract-auditing"
   ],
   "buckets": [
     "Robotics",
@@ -69,6 +72,7 @@
     "Models",
     "Models",
     "Data/Infra",
-    "Creative AI"
+    "Creative AI",
+    "AI Ethics"
   ]
 }
