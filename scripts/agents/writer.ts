@@ -14,7 +14,7 @@ async function writeWeeklyPostJson(opts: {
   outlineH2s: string[];
   sources: { url: string; title?: string; date?: string }[];
 }) {
-You will output STRICT JSON only(no code fences).
+  const prompt = `You will output STRICT JSON only(no code fences).
 
 Write an evergreen AI explainer optimized for Google search.
 
@@ -23,22 +23,22 @@ Write an evergreen AI explainer optimized for Google search.
   - ** Simple & Clear:** Avoid overly complex jargon("fancy words").Explain things simply so a general enthusiast can understand.
 - ** Engaging:** Use short paragraphs, varying sentence structure, and active voice.
 
-  TARGET_CATEGORY: ${ opts.bucket }
+  TARGET_CATEGORY: ${opts.bucket}
 SERIES: "How AI Works – From Basics to Cutting Edge"
-WEEK: ${ opts.weekNum }
+WEEK: ${opts.weekNum}
 
 SEO focus:
-  PRIMARY_QUERY: ${ opts.primaryQuery }
+  PRIMARY_QUERY: ${opts.primaryQuery}
 SECONDARY_QUERIES: ${(opts.secondaryQueries || []).join(" | ")}
 
 Use ONLY these sources for factual claims and include them in "Citations"(full URLs):
-${ (opts.sources || []).map((s) => `- ${s.url}`).join("\n") }
+${(opts.sources || []).map((s) => `- ${s.url}`).join("\n")}
 
 Use this title(do not change it):
-TITLE: ${ opts.title }
+TITLE: ${opts.title}
 
 Suggested H2 outline(use as headings, you may slightly refine):
-${ (opts.outlineH2s || []).map((h) => `- ${h}`).join("\n") }
+${(opts.outlineH2s || []).map((h) => `- ${h}`).join("\n")}
 
 Return STRICT JSON in this exact format:
 {
@@ -80,4 +80,4 @@ Rules:
 
 module.exports = { writeWeeklyPostJson };
 
-export {};
+export { };
