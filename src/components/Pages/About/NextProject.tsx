@@ -269,6 +269,11 @@ const NextProject = () => {
         }
 
         @media (max-width: 991px) {
+          .shoutout-note {
+            text-align: center !important;
+            margin-top: 2rem !important;
+          }
+
           .tech-stack-row {
             justify-content: center;
             gap: 0.75rem;
@@ -498,6 +503,13 @@ const NextProject = () => {
                       >
                         Platforms
                       </button>
+                    </div>
+
+                    {/* Shoutout Note */}
+                    <div className="shoutout-note mt-4 text-end">
+                      <p className="fs-nine n11-color opacity-50 mb-0">
+                        shoutout to <Link href="https://noahhathout.com/" target="_blank" className="p1-color text-decoration-none fw-medium">Noah Hattout</Link> for designing the skills animation cube.
+                      </p>
                     </div>
                   </div>
                 </div>

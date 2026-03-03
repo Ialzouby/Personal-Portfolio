@@ -281,6 +281,11 @@ const Banner = () => {
         /* Tablet/Small Desktop & Mobile Optimization */
         /* Tablet & Mobile Optimization (Up to 991px) */
         @media (max-width: 991px) {
+          .banner-section .container {
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+          }
+          
           .banner-section {
             height: auto;
             min-height: auto;
@@ -297,6 +302,8 @@ const Banner = () => {
           .order-3-mobile { order: 3 !important; }
 
           .banner-section .container .row.g-5 {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
             row-gap: 1.25rem !important;
             display: flex;
             flex-direction: column;
@@ -306,12 +313,12 @@ const Banner = () => {
           .banner-section .col-lg-8, .banner-section .col-lg-4 {
             padding-top: 0 !important;
             margin-top: 0 !important;
-            padding-left: 0.75rem !important;
-            padding-right: 0.75rem !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
           }
 
           .hero-text-container {
-            padding: 1rem !important;
+            padding: 1.25rem !important;
             text-align: center;
             align-items: center;
             margin: 0 !important;
@@ -368,7 +375,7 @@ const Banner = () => {
           }
 
           .featured-projects-card, .presentation-preview-card, .awards-card {
-            padding: 1rem !important;
+            padding: 1.25rem !important;
             margin: 0 !important;
           }
 
@@ -403,7 +410,7 @@ const Banner = () => {
           }
 
           .hero-text-container {
-            padding: 1rem !important;
+            padding: 1.25rem !important;
             border-radius: 16px;
           }
 
@@ -445,7 +452,7 @@ const Banner = () => {
           .presentation-preview-card,
           .awards-card,
           .featured-projects-card {
-            padding: 0.875rem;
+            padding: 1.25rem;
           }
 
           .card-header-sm {
