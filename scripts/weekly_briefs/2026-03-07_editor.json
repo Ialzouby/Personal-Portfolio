@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "The GPT-5.3 Instant system card is a high-impact, well-documented frontier model release with strong public interest (training data, safety, health use), plus enduring SEO value for explainers on system cards, safety mitigations, and health performance. Despite a modest diversity penalty for repeating the Models bucket, its overall score remains the highest.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 35,
+      "notes": "Frontier model from OpenAI with rich, primary documentation on training data, safety, and health performance. High audience interest (developers, policymakers, enterprises). Strong SEO for safety, system cards, and health/eval explainers. Models bucket has appeared frequently (3 of last 6, 2 of last 4, and last post was Models), which would normally be a 6 penalty, but override rule caps it at 2 because news_impact ≥ 22."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Important but more incremental tiering within Gemini family; narrower audience than a major OpenAI system card. Good SEO for cost/performance and latency-focused deployments. Heavily penalized on diversity: Models has shown up multiple times recently, including last post and 3+ in last 6."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 20,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Embedding GPT-5.4 into Excel with financial data is highly relevant for knowledge workers; strong practical and tutorial SEO around workflows, formulas, and data-analysis patterns. However, Data/Infra appears twice in the recent list (including fairly recently), so it hits the 3+ in last 6 rule for a 6-point penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "M5 MacBook line with strong on-device AI is big for developer and consumer ecosystems; impacts inference strategies. Very solid SEO around benchmarks, on-device vs cloud, app optimization guides. Edge AI bucket has not been used recently, so no penalty. Ties with index 0 on score, but GPT-5.3 Instant is closer to core AI-model coverage and offers richer safety/system-card analysis, making 0 the better weekly anchor."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "iPad Air M4 is meaningful for edge AI but secondary compared with M5 MacBooks; more consumer-gadget focused. SEO is decent for on-device workloads and app development but overlaps with broader Apple silicon coverage."
+    },
+    {
+      "index": 5,
+      "bucket": "AI in Healthcare",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Dedicated OpenAI for Healthcare line is structurally significant and has strong evergreen SEO around HIPAA, clinical workflows, and compliant deployments. However, it’s older (January) and framed here as a structural explanation rather than a fresh launch this week."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 13,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 20,
+      "notes": "Voice for coding assistants is interesting but niche relative to system-level news. SEO moderate around multimodal coding workflows. Creative AI appears in the recent list, and with 3+ repetitions across last 8 buckets overall, we assign the higher 6 penalty to stay conservative on repetition."
+    },
+    {
+      "index": 7,
+      "bucket": "Models",
+      "news_impact": 16,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Incremental GPT-5.2/5.3-Codex improvements matter to many apps (speed, coding agents), with good SEO for developers and migration guides. Still, it’s an older February update and penalized under Models bucket repetition."
+    }
+  ]
+}

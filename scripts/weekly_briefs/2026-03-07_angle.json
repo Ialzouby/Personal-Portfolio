@@ -1,0 +1,28 @@
+{
+  "primary_query": "AI system cards explained",
+  "secondary_queries": [
+    "what is an AI system card",
+    "how to read AI model system cards",
+    "AI transparency reports vs system cards",
+    "OpenAI system cards training data and safety",
+    "health performance evaluation in AI models",
+    "AI safety guardrails documentation",
+    "regulation and disclosure for AI models",
+    "model cards vs system cards in machine learning"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI System Cards Explained: Training Data, Safety and Use",
+  "recommended_slug": "ai-system-cards-explained",
+  "outline_h2s": [
+    "What Is an AI System Card?",
+    "System Cards vs Model Cards and Other AI Disclosures",
+    "Core Sections in an AI System Card",
+    "How System Cards Describe Training Data and Sources",
+    "Safety Guardrails and Mitigations in System Cards",
+    "Health and High‑Risk Use Performance in System Cards",
+    "How Regulators and Organizations Use System Cards",
+    "How to Read a System Card as a Developer or Buyer",
+    "Limitations and Gaps in Current System Card Practices",
+    "The Future of AI System Cards and Model Transparency"
+  ]
+}
