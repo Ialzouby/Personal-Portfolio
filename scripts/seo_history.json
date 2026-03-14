@@ -17,7 +17,8 @@
     "space based data centers for ai",
     "AI short video generation models",
     "ai agents for smart contract auditing",
-    "AI system cards explained"
+    "AI system cards explained",
+    "open weight ai models explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -37,7 +38,8 @@
     "Space Based Data Centers for AI: Architecture, Benefits and Limits",
     "AI Short Video Generation Models: How Multimodal Tools Work",
     "AI Agents for Smart Contract Auditing: Benchmarks and Limits",
-    "AI System Cards Explained: Training Data, Safety and Use"
+    "AI System Cards Explained: Training Data, Safety and Use",
+    "Open Weight AI Models Explained: Architecture, Use and Tradeoffs"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -57,7 +59,8 @@
     "space-based-data-centers-for-ai",
     "ai-short-video-generation-models",
     "ai-agents-smart-contract-auditing",
-    "ai-system-cards-explained"
+    "ai-system-cards-explained",
+    "open-weight-ai-models-explained"
   ],
   "buckets": [
     "Robotics",
@@ -77,6 +80,7 @@
     "Data/Infra",
     "Creative AI",
     "AI Ethics",
-    "Models"
+    "Models",
+    "Data/Infra"
   ]
 }
