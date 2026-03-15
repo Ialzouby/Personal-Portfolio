@@ -1,0 +1,78 @@
+{
+  "winner_index": 1,
+  "winner_reason": "Nvidia’s $26B bet on open‑weight models is a rare, ecosystem‑shaping move with long‑term implications for infrastructure, competition, and open vs. closed AI. It scores very high on news impact, has strong evergreen SEO around open vs proprietary models and GPU ecosystems, and only takes a modest diversity penalty despite being in a recently used bucket.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "High relevance and novelty for practitioners who live in spreadsheets; strong tie-in to enterprise workflows. However, it is another Models story right after multiple model-focused pieces in the recent list, so gets the maximum 6-step diversity penalty of 4 under the rules (Models shows up 3+ times in last 6 posts). SEO solid for tutorials and explainer content around Excel + AI, but less broad than ecosystem-level shifts."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "A $26B, multi‑year investment by Nvidia in open‑weight models is a major strategic and ecosystem story—top‑tier impact, with regulatory, open‑source, and competitive implications. Very strong evergreen SEO around open‑weight models, Nvidia strategy, and infra lock‑in analyses. Data/Infra has appeared several times recently, but because news_impact ≥ 22, the override rule caps diversity_penalty at 2, keeping this as the clear winner."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "Important for robotics insiders—standardizing compute and AI stack for humanoids—but more incremental than a multi‑billion‑dollar ecosystem bet. SEO decent for robotics platforms and Qualcomm’s robotics chips, but less broad and evergreen than open‑weight model or Excel‑AI verticalization explainers. Robotics last appeared 7+ posts ago, so no diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "A strong, concrete Edge AI story with real-world impact (agriculture, herbicide reduction). Good SEO for terms around AI in agriculture, weed detection models, edge deployment. Still narrower in audience and impact than Nvidia’s platform move; diversity is strong (no recent Edge AI bucket), but overall score remains lower due to more niche scope."
+    },
+    {
+      "index": 4,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 31,
+      "notes": "Compelling for creative and multimodal AI: agents orchestrating cross‑modal workflows is an important direction. SEO potential is solid for queries on creative AI agents, multimodal pipelines, and Luma vs. other creative tools. Creative AI appeared within the last 6 posts but not the very last one, so a moderate diversity penalty of 2 applies."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Synthesizes a structural trend (rise of open‑weight models) with governance, auditability, and power-concentration concerns. Strong SEO for open vs. closed AI, auditability, and regulatory interest. However, AI Ethics was used as the most recent bucket, and appears again within the last 4 posts, so diversity_penalty is 4 despite good impact."
+    },
+    {
+      "index": 6,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 16,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Shows frontier LLMs moving into vehicles and constrained environments, with safety and latency implications. Good SEO potential around in‑vehicle assistants and automotive AI stacks. Similar impact profile to the agriculture Edge AI story; no diversity penalty because Edge AI hasn’t appeared recently, but still below Nvidia’s systemic significance."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 4,
+      "final_score": 31,
+      "notes": "Strong thematic piece on verticalization and domain-specific AI stacks (finance/spreadsheets). Evergreen SEO for explanations of vertical AI, internal data pipelines, and governed integrations. Data/Infra has been used multiple times in the last 6 posts, so it incurs the maximum diversity penalty of 6-step rule (4), keeping it behind the Nvidia story despite high SEO potential."
+    }
+  ]
+}

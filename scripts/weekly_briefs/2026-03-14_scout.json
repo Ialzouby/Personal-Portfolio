@@ -1,0 +1,141 @@
+{
+  "week": "2026-03-14",
+  "events": [
+    {
+      "event": "OpenAI launches ChatGPT for Excel and new finance-focused data integrations",
+      "category": "Models",
+      "why_it_matters": "Bringing GPT‑5.4 directly into Excel formalizes AI as a core component of financial modeling and analysis workflows. Instead of copy‑pasting between a chat window and spreadsheets, analysts can invoke the model on live cell ranges, run scenarios, and standardize common tasks inside governed enterprise environments. This deep productivity integration signals how frontier models are moving from standalone tools to embedded, domain-optimized assistants in ubiquitous business software.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/chatgpt-for-excel/",
+          "title": "Introducing ChatGPT for Excel and new financial data integrations",
+          "date": "2026-03-05"
+        },
+        {
+          "url": "https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/",
+          "title": "Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show",
+          "date": "2026-03-11"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia plans $26 billion investment to build open‑weight AI models over five years",
+      "category": "Data/Infra",
+      "why_it_matters": "A $26 billion commitment to open‑weight models by the dominant AI hardware supplier could reshape the model ecosystem. By funding large, openly available models tuned for its GPUs, Nvidia strengthens developer lock‑in to its stack, pressures proprietary labs with more capable open alternatives, and accelerates experimentation in enterprises that prefer or require running models in their own environments.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/",
+          "title": "Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show",
+          "date": "2026-03-11"
+        },
+        {
+          "url": "https://techcrunch.com/2025/08/05/openai-launches-two-open-ai-reasoning-models/",
+          "title": "OpenAI launches two 'open' AI reasoning models",
+          "date": "2025-08-05"
+        }
+      ]
+    },
+    {
+      "event": "Qualcomm and Neura Robotics partner to build next‑generation humanoid and mobile robots",
+      "category": "Robotics",
+      "why_it_matters": "Pairing Neura’s general‑purpose robotics platform with Qualcomm’s Dragonwing Robotics IQ10 processors aims to standardize the compute and AI stack for humanoids and autonomous mobile robots. This kind of silicon‑startup alliance can shorten time to market for physical AI systems and make it easier for industrial and domestic robots to share a common, upgradable brain and sensing platform.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/09/qualcomms-partnership-with-neura-robotics-is-just-the-beginning/",
+          "title": "Qualcomm’s partnership with Neura Robotics is just the beginning",
+          "date": "2026-03-09"
+        },
+        {
+          "url": "https://techcrunch.com/2026/02/02/carbon-robotics-built-an-ai-model-that-detects-and-identifies-plants/",
+          "title": "Carbon Robotics built an AI model that detects and identifies plants",
+          "date": "2026-02-02"
+        }
+      ]
+    },
+    {
+      "event": "Carbon Robotics debuts Large Plant Model to identify crops and weeds in real time",
+      "category": "Edge AI",
+      "why_it_matters": "The Large Plant Model, trained on more than 150 million field images, runs on autonomous LaserWeeder robots to distinguish crops from weeds instantly. This is a concrete example of specialized edge AI deployed at scale in agriculture, reducing herbicide use and manual labor while showing how domain‑specific models can be embedded into fleets of machines operating in variable real‑world conditions.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/02/carbon-robotics-built-an-ai-model-that-detects-and-identifies-plants/",
+          "title": "Carbon Robotics built an AI model that detects and identifies plants",
+          "date": "2026-02-02"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/09/qualcomms-partnership-with-neura-robotics-is-just-the-beginning/",
+          "title": "Qualcomm’s partnership with Neura Robotics is just the beginning",
+          "date": "2026-03-09"
+        }
+      ]
+    },
+    {
+      "event": "Luma launches multimodal ‘Unified Intelligence’ models and Luma Agents for end‑to‑end creative work",
+      "category": "Creative AI",
+      "why_it_matters": "Luma’s Uni‑1 model and Luma Agents are designed to handle planning and generation across text, images, video, audio, and 3D in a single multimodal reasoning system. By coordinating multiple tools and models while maintaining persistent project context, these agents push creative AI from point‑solution generators toward systems that can manage entire production pipelines for brands and studios.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/05/exclusive-luma-launches-creative-ai-agents-powered-by-its-new-unified-intelligence-models/",
+          "title": "Luma launches creative AI agents powered by its new ‘Unified Intelligence’ models",
+          "date": "2026-03-05"
+        },
+        {
+          "url": "https://techcrunch.com/2025/04/03/midjourney-releases-its-first-new-ai-image-model-in-nearly-a-year/",
+          "title": "Midjourney releases V7, its first new AI image model in nearly a year",
+          "date": "2025-04-03"
+        }
+      ]
+    },
+    {
+      "event": "Open‑weight and open‑source‑style models gain momentum alongside proprietary frontier systems",
+      "category": "AI Ethics",
+      "why_it_matters": "Nvidia’s large planned spend on open‑weight models, combined with existing open‑weight releases from labs like OpenAI, underscores a strategic shift toward more transparent and inspectable systems. This trend has governance implications: regulators, researchers, and enterprises gain more options to audit behavior, adapt models locally, and balance concentration of power in a few closed labs with a more diverse ecosystem of capable models.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/",
+          "title": "Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show",
+          "date": "2026-03-11"
+        },
+        {
+          "url": "https://techcrunch.com/2025/08/05/openai-launches-two-open-ai-reasoning-models/",
+          "title": "OpenAI launches two 'open' AI reasoning models",
+          "date": "2025-08-05"
+        }
+      ]
+    },
+    {
+      "event": "Rivian prepares to roll out in‑vehicle AI assistant powered by frontier language models",
+      "category": "Edge AI",
+      "why_it_matters": "Rivian’s upcoming AI assistant, integrated into its EV infotainment and backed by a hybrid stack using its own models plus services like Google’s Gemini via Vertex AI, illustrates how advanced language models are moving into constrained edge environments. Running conversational control of vehicle functions and diagnostics at scale raises new benchmarks for latency, reliability, and safety in embedded AI deployments.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/12/11/rivians-ai-assistant-is-coming-to-its-evs-in-early-2026/",
+          "title": "Rivian’s AI assistant is coming to its EVs in early 2026",
+          "date": "2025-12-11"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/09/qualcomms-partnership-with-neura-robotics-is-just-the-beginning/",
+          "title": "Qualcomm’s partnership with Neura Robotics is just the beginning",
+          "date": "2026-03-09"
+        }
+      ]
+    },
+    {
+      "event": "Specialized financial and spreadsheet‑centric models highlight verticalization of AI tooling",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI’s Excel‑focused offering, powered by a finance‑tuned GPT‑5.4 model and data integrations, is part of a broader pattern of domain‑specific AI stacks. Rather than generic chat interfaces, vendors are delivering tightly integrated tools aligned with existing data infrastructure and governance. This verticalization changes how enterprises plan AI adoption, budget for compute, and design internal data pipelines around repeatable, model‑assisted workflows.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/chatgpt-for-excel/",
+          "title": "Introducing ChatGPT for Excel and new financial data integrations",
+          "date": "2026-03-05"
+        },
+        {
+          "url": "https://www.wired.com/story/nvidia-investing-26-billion-open-source-models/",
+          "title": "Nvidia Will Spend $26 Billion to Build Open-Weight AI Models, Filings Show",
+          "date": "2026-03-11"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "primary_query": "open weight ai models explained",
+  "secondary_queries": [
+    "what are open weight ai models",
+    "open weight vs open source ai models",
+    "benefits of open weight llms for enterprises",
+    "running open weight models on nvidia gpus",
+    "open weight foundation models for private deployment",
+    "open weight model licensing and compliance",
+    "how to choose open weight models for your stack",
+    "open weight ai models vs closed models"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Open Weight AI Models Explained: Architecture, Use and Tradeoffs",
+  "recommended_slug": "open-weight-ai-models-explained",
+  "outline_h2s": [
+    "What Are Open Weight AI Models?",
+    "Open Weight vs Open Source Models",
+    "How Open Weight Models Are Trained and Released",
+    "Key Benefits for Enterprises and Developers",
+    "Where Nvidia and Other Vendors Fit in the Ecosystem",
+    "Open Weight Models vs Closed APIs and Hosted SaaS",
+    "Deploying Open Weight Models on Your Own Infrastructure",
+    "Licensing, Governance and Compliance Considerations",
+    "How to Evaluate and Choose Open Weight Models",
+    "Future Outlook for Open Weight AI in the Model Landscape"
+  ]
+}

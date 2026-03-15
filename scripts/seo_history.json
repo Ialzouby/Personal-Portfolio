@@ -16,7 +16,9 @@
     "google ai overviews and ai mode",
     "space based data centers for ai",
     "AI short video generation models",
-    "ai agents for smart contract auditing"
+    "ai agents for smart contract auditing",
+    "AI system cards explained",
+    "open weight ai models explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -35,7 +37,9 @@
     "Google AI Overviews and AI Mode: How Gemini Powers Search",
     "Space Based Data Centers for AI: Architecture, Benefits and Limits",
     "AI Short Video Generation Models: How Multimodal Tools Work",
-    "AI Agents for Smart Contract Auditing: Benchmarks and Limits"
+    "AI Agents for Smart Contract Auditing: Benchmarks and Limits",
+    "AI System Cards Explained: Training Data, Safety and Use",
+    "Open Weight AI Models Explained: Architecture, Use and Tradeoffs"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -54,7 +58,9 @@
     "google-ai-overviews-ai-mode-gemini",
     "space-based-data-centers-for-ai",
     "ai-short-video-generation-models",
-    "ai-agents-smart-contract-auditing"
+    "ai-agents-smart-contract-auditing",
+    "ai-system-cards-explained",
+    "open-weight-ai-models-explained"
   ],
   "buckets": [
     "Robotics",
@@ -73,6 +79,8 @@
     "Models",
     "Data/Infra",
     "Creative AI",
-    "AI Ethics"
+    "AI Ethics",
+    "Models",
+    "Data/Infra"
   ]
 }
