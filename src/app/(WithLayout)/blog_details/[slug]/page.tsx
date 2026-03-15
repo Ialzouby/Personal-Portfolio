@@ -16,11 +16,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   return {
     title: meta?.metaTitle ?? blog.title,
-    description: meta?.metaDescription ?? (blog.content ? blog.content.slice(0, 155) : ""),
+    description: meta?.metaDescription ?? (blog.content ? blog.content.replace(/\*\*/g, "").slice(0, 155) : ""),
     alternates: meta?.canonicalPath ? { canonical: meta.canonicalPath } : undefined,
     openGraph: {
       title: meta?.ogTitle ?? blog.title,
-      description: meta?.ogDescription ?? (blog.content ? blog.content.slice(0, 155) : ""),
+      description: meta?.ogDescription ?? (blog.content ? blog.content.replace(/\*\*/g, "").slice(0, 155) : ""),
       type: "article",
     },
   };

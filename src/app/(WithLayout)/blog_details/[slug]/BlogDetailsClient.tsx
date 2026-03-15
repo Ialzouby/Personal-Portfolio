@@ -17,6 +17,17 @@ import {
   PiXLogo,
 } from "react-icons/pi";
 
+const renderBoldText = (text: string) => {
+  if (!text) return text;
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={index}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+};
+
 const BlogDetailsClient = ({ blog }: { blog: any }) => {
   const [isOpen, setOpen] = useState(false);
 
@@ -38,7 +49,7 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                   style={{ height: "420px", objectFit: "cover" }}
                 />
               </div>
-              <p className="n5-color blog-text-enhanced mb-5">{blog.content}</p>
+              <p className="n5-color blog-text-enhanced mb-5">{renderBoldText(blog.content)}</p>
             </div>
           </FadeDown>
 
@@ -50,7 +61,7 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                 )}
 
                 {section.text && (
-                  <p className="n5-color blog-text-enhanced mb-5">{section.text}</p>
+                  <p className="n5-color blog-text-enhanced mb-5">{renderBoldText(section.text)}</p>
                 )}
 
                 {section.image && (
@@ -69,7 +80,7 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                     <ul className="mb-0 ps-3">
                       {section.bullets.map((bullet: string, i: number) => (
                         <li key={i} className="n4-color fs-seven mb-2">
-                          {bullet}
+                          {renderBoldText(bullet)}
                         </li>
                       ))}
                     </ul>
