@@ -9,6 +9,12 @@ import "react-modal-video/scss/modal-video.scss";
 import CommentsClient from "@/components/Pages/BlogDetails/CommentsClient";
 import FadeDown from "@/components/motionEffect/FadeDown";
 import Footer from "@/components/Shared/Footer/Footer";
+import dynamic from "next/dynamic";
+
+const MermaidVisual = dynamic(
+  () => import("@/components/Pages/BlogDetails/MermaidVisual"),
+  { ssr: false }
+);
 import {
   PiFacebookLogo,
   PiInstagramLogo,
@@ -60,9 +66,11 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
                   <h3 className="n5-color fs-two fw-semibold mb-4">{section.heading}</h3>
                 )}
 
-                {section.text && (
+                {section.text && section.text.trim().startsWith("mermaid") ? (
+                  <MermaidVisual chart={section.text.trim().replace(/^mermaid\s*/i, "").replace(/```mermaid\n?|```/g, "")} />
+                ) : section.text ? (
                   <p className="n5-color blog-text-enhanced mb-5">{renderBoldText(section.text)}</p>
-                )}
+                ) : null}
 
                 {section.image && (
                   <div className="card rounded-4 shadow-sm overflow-hidden mb-5">
