@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "The Pentagon’s designation of Anthropic as a ‘supply chain risk’ directly tests how much control AI labs can retain over lethal and surveillance use-cases. It has substantial policy ramifications, involves major institutions, and is likely to generate sustained coverage and analysis. It also offers strong SEO potential around military AI governance, vendor safeguards, and precedent-setting conflicts between governments and safety-conscious AI providers. Even after applying a diversity penalty for the AI Ethics bucket, it out-scores the other events.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "High-impact clash between US defense establishment and a leading safety-focused lab over constraints on autonomous weapons and surveillance applications. Strong ongoing news cycle, major outlets, and court filings; likely to shape norms for military AI contracts. SEO value around terms like 'military AI safeguards', 'AI supply chain risk', and 'Anthropic Pentagon dispute' with room for authoritative explainers. Ethics bucket used recently, but high impact triggers override rule, capping penalty at 2."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Important forward-looking agenda for GPT-5 as a scientific collaborator with test-time compute scaling and hard-math capabilities. Good evergreen SEO around 'AI for scientific discovery' and 'LLMs for research assistance'. However, the Models bucket has appeared multiple times in recent weeks, incurring the maximum diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Policy-focused framing of AI-driven science infrastructure and workflows. Solid SEO for 'AI in scientific workflows', 'research infrastructure', and 'policy for AI in science'. Impact is moderate compared with more acute governance or geopolitical stories. Data/Infra has been used heavily in recent posts, so strong diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Data/Infra",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Electricity as a binding constraint for AI, with a concrete national build-out target, ties AI scale directly to energy policy and data-center planning. Good SEO around 'AI energy demand', 'data center power needs', and 'AI and electricity grid'. Still, repeated Data/Infra coverage reduces its suitability this week."
+    },
+    {
+      "index": 4,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "India’s push for inclusive, low-cost AI and domestic infrastructure is strategically important but more incremental than a sharp policy clash. SEO potential is solid (e.g., 'India AI infrastructure', 'GPU investments in India') yet still within a heavily used bucket."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "MiFID II/MiFIR transparency reforms create demand for AI-driven compliance and data solutions—relevant but niche to financial markets. SEO is moderate and quite specialized (MiFID transparency, AI compliance tooling). Suffers from the strong Data/Infra diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "OpenAI’s blueprint on compressing AI progress timelines connects benchmarks to governance urgency and economic planning. Good SEO around 'AI timelines', 'AI benchmark saturation', and 'AI action plan'. High relevance, but slightly less acute and newsy than the Anthropic–Pentagon confrontation."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "Regulators’ concerns about AI-driven job losses and market concentration are important macro themes with continuing coverage. SEO value around 'AI job displacement', 'central banks and AI', and 'AI market power'. Impact is notable but more diffuse compared with a concrete, precedent-setting Pentagon decision."
+    }
+  ]
+}

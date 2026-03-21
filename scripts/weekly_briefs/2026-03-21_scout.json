@@ -1,0 +1,146 @@
+{
+  "week": "2026-03-21",
+  "events": [
+    {
+      "event": "US Pentagon labels Anthropic a 'supply chain risk', prompting AI industry backlash over safeguards for lethal targeting and mass surveillance use-cases.",
+      "category": "AI Ethics",
+      "why_it_matters": "Major AI firms are warning that government retaliation against safety constraints could discourage companies from limiting high‑risk uses such as autonomous weapons and mass domestic surveillance. The outcome of this dispute will influence how much autonomy AI vendors have to impose ethical safeguards on military and security contracts.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/wp-content/uploads/2026/03/anthropic-amicus-brief.pdf",
+          "title": "Brief of Amici Curiae Employees of OpenAI and Google in Support of Anthropic (court filing PDF)",
+          "date": "2026-03-09"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Reuters coverage of Pentagon's supply-chain risk designation for Anthropic (landing page, see US/tech policy section around March 2026)",
+          "date": "2026-03-2026"
+        },
+        {
+          "url": "https://bloomberg.com",
+          "title": "Bloomberg reporting on US defense AI contracts and Anthropic designation (technology/policy section, March 2026)",
+          "date": "2026-03-2026"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI outlines 2026 agenda for using GPT‑5 series as a scientific collaborator, highlighting frontier math and science capabilities and test‑time compute scaling.",
+      "category": "Models",
+      "why_it_matters": "This document shows how frontier language models are being positioned as tools for genuine scientific work, not just coding or chat. It details progress on hard math benchmarks, scientific problem‑solving, and the use of extensive test‑time compute, indicating where future gains in reasoning and research assistance may come from.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/f4b4a5da-b2de-418d-9fcd-6b293e9dc157/oai_ai-as-a-scientific-collaborator_jan-2026.pdf",
+          "title": "AI as a Scientific Collaborator (OpenAI white paper)",
+          "date": "2026-01-2026"
+        },
+        {
+          "url": "https://cdn.openai.com/pdf/openai-ostp-accelerating-science-rfi.pdf",
+          "title": "Strengthening American Scientific Innovation with AI (OpenAI response to OSTP RFI)",
+          "date": "2025-12-18"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI frames 2026 as the 'Year of AI and Science' in a policy submission, emphasizing accelerated scientific discovery and faster translation of research into applications.",
+      "category": "Data/Infra",
+      "why_it_matters": "The filing provides a policy‑focused view of how large models will be integrated into scientific workflows across disciplines. It is important because it signals to governments and funders that infrastructure, data sharing, and regulatory frameworks are being shaped around AI‑driven science, influencing future public investment and standards.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/openai-ostp-accelerating-science-rfi.pdf",
+          "title": "Strengthening American Scientific Innovation with AI (OpenAI response to OSTP RFI)",
+          "date": "2025-12-18"
+        },
+        {
+          "url": "https://arxiv.org",
+          "title": "Recent arXiv survey papers (early 2026) on AI for scientific discovery and experiment design",
+          "date": "2026-02-2026"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI warns US policymakers that electricity capacity is becoming a central constraint for AI, recommending an ambitious national target of 100 GW per year of new energy build‑out.",
+      "category": "Data/Infra",
+      "why_it_matters": "The document links AI competitiveness directly to power infrastructure, arguing that chips, data, talent and energy are now co‑equal national assets. This is significant for AI infrastructure planning: model scaling, data center locations, and national AI strategies may increasingly be constrained or enabled by energy policy.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/21b88bb5-10a3-4566-919d-f9a6b9c3e632/openai-ostp-rfi-oct-27-2025.pdf",
+          "title": "OpenAI response to OSTP AI Action Plan (electricity and AI competitiveness)",
+          "date": "2025-10-27"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "NVIDIA blog posts (early 2026) on power‑efficient GPU data centers and AI energy demand",
+          "date": "2026-02-2026"
+        }
+      ]
+    },
+    {
+      "event": "Bloomberg’s India AI Summit 2026 coverage highlights India’s push for 'inclusive' and affordable AI, and large‑scale domestic AI infrastructure investments.",
+      "category": "Data/Infra",
+      "why_it_matters": "The reports describe India’s strategy to build data centers, secure advanced GPUs, and promote low‑cost AI services as a counterweight to US–China dominance. This matters for global AI infrastructure geography, potential new model training hubs, and market dynamics around cloud and chip supply.",
+      "sources": [
+        {
+          "url": "https://bloomberg.com/latest/india-ai-summit-2026",
+          "title": "India AI Summit 2026 coverage (Bloomberg Latest page)",
+          "date": "2026-02-24"
+        },
+        {
+          "url": "https://bloomberg.com",
+          "title": "Bloomberg articles on OpenAI–Tata data center plans and Nvidia GPU deployments in India (see India AI Summit package)",
+          "date": "2026-02-19"
+        }
+      ]
+    },
+    {
+      "event": "European and UK MiFID II/MiFIR transparency reforms, effective March 2, 2026 in the EU, drive demand for sophisticated data solutions and AI‑assisted compliance tooling.",
+      "category": "Data/Infra",
+      "why_it_matters": "The regulatory changes increase the volume and complexity of required market transparency data. Vendors are responding with more automated data processing and analytics platforms, many using AI. This is an example of financial regulation indirectly accelerating AI adoption in data engineering and reporting infrastructure.",
+      "sources": [
+        {
+          "url": "https://professional.bloomberg.com/globalassets/professional/solutions/regulation/mifid-ii/data-solutions/transparency-data-and-otc--transparency.pdf",
+          "title": "Bloomberg MiFID II Data Solution overview (MiFID review and March 2, 2026 reforms)",
+          "date": "2026-02-2026"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Reuters coverage of EU MiFID review and UK Wholesale Markets Review (market structure and data transparency, early 2026)",
+          "date": "2026-02-2026"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes an economic and policy blueprint arguing that AI progress timelines are compressing, with benchmark‑level advances now happening within one to two years.",
+      "category": "AI Ethics",
+      "why_it_matters": "By documenting rapidly shrinking timelines from benchmark creation to AI systems surpassing human experts, the paper underlines why governance, safety evaluation, and international coordination need to keep pace. It also frames AI as a 'foundational technology' requiring economic and labor‑market planning.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/global-affairs/ostp-rfi/ec680b75-d539-4653-b297-8bcf6e5f7686/openai-response-ostp-nsf-rfi-notice-request-for-information-on-the-development-of-an-artificial-intelligence-ai-action-plan.pdf",
+          "title": "OpenAI response to OSTP/NSF RFI on AI Action Plan (economic blueprint excerpts)",
+          "date": "2025-03-13"
+        },
+        {
+          "url": "https://arxiv.org",
+          "title": "Recent arXiv analyses (2025–2026) on AI benchmark saturation and scaling laws",
+          "date": "2026-01-2026"
+        }
+      ]
+    },
+    {
+      "event": "Ongoing Bloomberg and Reuters coverage documents central bank and regulator concern about AI‑driven job displacement and market concentration in financial and technology sectors.",
+      "category": "AI Ethics",
+      "why_it_matters": "Statements from institutions such as the European Central Bank and G‑20 policymakers show that labor impacts and competition issues from AI are now mainstream macro‑policy topics. This increases the likelihood of future regulation on AI use in financial services, labor markets, and large‑scale automation.",
+      "sources": [
+        {
+          "url": "https://bloomberg.com/latest/ecb",
+          "title": "ECB coverage page (includes articles on Lagarde’s comments on AI‑driven job cuts)",
+          "date": "2026-02-26"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Reuters articles on global regulators’ concerns about AI, jobs and market power (Feb–Mar 2026)",
+          "date": "2026-03-2026"
+        }
+      ]
+    }
+  ]
+}

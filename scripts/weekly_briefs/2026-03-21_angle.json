@@ -1,0 +1,28 @@
+{
+  "primary_query": "military ai ethics and safety safeguards",
+  "secondary_queries": [
+    "how ai companies limit military use cases",
+    "ai ethics for autonomous weapons and targeting",
+    "government pressure on ai safety policies",
+    "ai vendors and mass surveillance safeguards",
+    "defense contracts and responsible ai principles",
+    "can ai companies refuse military applications",
+    "ai supply chain risk and ethical constraints",
+    "best practices for ethical ai in defense"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Military AI Ethics and Safety Safeguards: How Vendors Set Limits",
+  "recommended_slug": "military-ai-ethics-safety-safeguards",
+  "outline_h2s": [
+    "Why Military AI Ethics Matters Now",
+    "Key Risks: Lethal Targeting, Autonomy and Mass Surveillance",
+    "How AI Vendors Try to Limit High‑Risk Military Uses",
+    "Government, Defense Contractors and the Supply‑Chain Lens",
+    "Tension Points: Security Objectives vs Corporate Safety Policies",
+    "Case Studies of AI Firms Pushing Back on Military Use Cases",
+    "Practical Frameworks for Ethical AI in Defense Settings",
+    "Implications for AI Builders, Policymakers and the Public",
+    "How to Evaluate an AI Provider’s Military and Surveillance Policies",
+    "Future Outlook for Military AI Governance and Vendor Autonomy"
+  ]
+}

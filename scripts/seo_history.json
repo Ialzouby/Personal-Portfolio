@@ -18,7 +18,8 @@
     "AI short video generation models",
     "ai agents for smart contract auditing",
     "AI system cards explained",
-    "open weight ai models explained"
+    "open weight ai models explained",
+    "military ai ethics and safety safeguards"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -39,7 +40,8 @@
     "AI Short Video Generation Models: How Multimodal Tools Work",
     "AI Agents for Smart Contract Auditing: Benchmarks and Limits",
     "AI System Cards Explained: Training Data, Safety and Use",
-    "Open Weight AI Models Explained: Architecture, Use and Tradeoffs"
+    "Open Weight AI Models Explained: Architecture, Use and Tradeoffs",
+    "Military AI Ethics and Safety Safeguards: How Vendors Set Limits"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -60,7 +62,8 @@
     "ai-short-video-generation-models",
     "ai-agents-smart-contract-auditing",
     "ai-system-cards-explained",
-    "open-weight-ai-models-explained"
+    "open-weight-ai-models-explained",
+    "military-ai-ethics-safety-safeguards"
   ],
   "buckets": [
     "Robotics",
@@ -81,6 +84,7 @@
     "Creative AI",
     "AI Ethics",
     "Models",
-    "Data/Infra"
+    "Data/Infra",
+    "AI Ethics"
   ]
 }
