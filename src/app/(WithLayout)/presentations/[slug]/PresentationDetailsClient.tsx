@@ -146,7 +146,7 @@ const PresentationDetailsClient = ({ presentation }: { presentation: Presentatio
                                             <PiDownloadSimple size={20} /> Download PDF
                                         </button>
                                         <a
-                                            href={`https://docs.google.com/presentation/d/${presentation.slidesId}/edit`}
+                                            href={`https://docs.google.com/presentation/d/e/${presentation.slidesId}/pub?start=false&loop=false&delayms=3000`}
                                             target="_blank"
                                             rel="noreferrer"
                                             className="btn btn-outline-secondary d-flex align-items-center justify-content-center gap-2 w-100 py-3 rounded-pill fw-medium n5-color border-secondary-subtle"
