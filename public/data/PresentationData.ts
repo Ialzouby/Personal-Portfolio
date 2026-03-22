@@ -293,4 +293,68 @@ export const presentations: Presentation[] = [
         ],
         additionalResources: [],
     },
+    {
+        id: 12,
+        slug: "rectified-flow",
+        title: "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+        description: "An overview of Rectified Flow, learning a simpler, direct transport between distributions. Outperforms fast diffusion methods and conceptually simpler, achieving both high quality and fast inference.",
+        date: "March 2026",
+        time: "20 min read",
+        tags: ["Generative Models", "Rectified Flow", "Domain Transfer", "ODE"],
+        img: blog1, // Placeholder
+        slidesId: "2PACX-1vR__-cCaBCrvaidXZkhFnzDfw1cZ6bDUzqzSLssZQD0YJf25aZRVFopmAldtDOxNWDToZwDVIrNeclK",
+        overview: [
+            "Balancing sample quality vs inference speed",
+            "Limitations of Diffusion, CNFs & GANs",
+            "Rectified flow and path rewiring",
+            "PF-ODE categories: VP, sub-VP, VE",
+            "Learning ODEs with direct smooth interpolation",
+            "Unifying generative modeling and domain transfer",
+        ],
+        keyConcepts: [
+            { term: "Transfer Mapping", definition: "Learning a mapping from a simple distribution (noise) to complex data (images, motion)." },
+            { term: "Rectified Flow", definition: "Redirects paths that would intersect by rewiring, preserving both map density and causality." },
+            { term: "Reflow", definition: "Decreases transport cost and straightens path which reduces calculation steps and time-error." },
+        ],
+        toc: [
+            "The Problem: Modeling High-Dimensional Distributions",
+            "Rectified Flow Mechanism",
+            "PF-ODEs Analysis",
+            "Direct ODE Learning & Interpolation",
+            "Results & Key Advantages",
+        ],
+        additionalResources: [],
+    },
+    {
+        id: 13,
+        slug: "soft-masked-diffusion",
+        title: "Soft-Masked Diffusion Language Models",
+        description: "Continuous feedback MDLM utilizing soft masking to enrich mask tokens with weighted top-k prediction tokens, maintaining the benefits of masking while retaining more prediction information.",
+        date: "March 2026",
+        time: "20 min read",
+        tags: ["Language Models", "Diffusion", "Masked Modeling", "NLP"],
+        img: blog2, // Placeholder
+        slidesId: "2PACX-1vRSmYW2bJUCiBY7vbf7iCNcbIYTq2QQDoFgDM9PokI-tlWZkDemUF2MknN3ZU7JoouYeGfBEPE3kNI3",
+        overview: [
+            "Autoregression of LLMs struggle with high computational cost.",
+            "Diffusion provides LLMs with speed, self-correction, and bidirectional modeling.",
+            "Masked diffusion offers benefits, but binary masking sacrifices prediction information.",
+            "Continuous feedback MDLM proposes soft masking.",
+            "Soft mask consistently outperforms binary mask in MAUVE scores.",
+            "Performance gains are task and compute budget dependent."
+        ],
+        keyConcepts: [
+            { term: "Soft Masking", definition: "Enriches mask tokens with weighted top-k prediction tokens instead of a binary selection." },
+            { term: "Masked Diffusion Language Models (MDLM)", definition: "Applies diffusion models to language with masking, unlocking bidirectional modeling over autoregression." },
+            { term: "MAUVE Score", definition: "A metric for evaluating open-ended text generation quality where soft masking consistently outperformed binary masks." },
+        ],
+        toc: [
+            "Issues with Autoregression & Binary Masking",
+            "Introduction to Soft-Masked Diffusion",
+            "Optimal Hyperparameters & Tradeoffs (80% mask ratio, k=3)",
+            "Results & Compute Impact",
+            "Limitations at Scale & Future directions",
+        ],
+        additionalResources: [],
+    },
 ];
