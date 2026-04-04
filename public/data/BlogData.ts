@@ -1,3 +1,4 @@
+import aiImage_86 from "@/../public/images/multimodal-foundation-models-explained.jpg";
 import aiImage_85 from "@/../public/images/military-ai-ethics-safety-safeguards.jpg";
 import aiImage_84 from "@/../public/images/open-weight-ai-models-explained.jpg";
 import aiImage_83 from "@/../public/images/ai-system-cards-explained.jpg";
@@ -3270,6 +3271,107 @@ export const blogs = [
       "@type": "BlogPosting",
       headline: "Military AI Ethics and Safety Safeguards: How Vendors Set Limits",
       datePublished: "2026-03-21",
+      author: {
+        "@type": "Person",
+        name: "Issam Alzouby"
+      }
+    }
+  }
+}
+,
+{
+  id: 86,
+  slug: "multimodal-foundation-models-explained",
+  img: aiImage_86,
+  date: "2026-04-04",
+  tag: "AI Education | Models",
+  title: "Multimodal Foundation Models Explained for Text, Speech and Video",
+  author: "Issam Alzouby",
+  content: "If old-school AI was like reading a book with the pictures ripped out, multimodal foundation models are the full-color, sound-on, director’s-cut edition.\n\nThese models can work with several types of data—text, speech, images, and video—inside a single AI system. Instead of training one model just for text and another for images, a multimodal foundation model learns patterns that connect all of them. Ask about a chart, a screenshot, or a video clip, and it can respond with text or even audio, depending on how it’s built.\n\nWhy does this matter now? Because more of what we do online is visual and audiovisual: screen recordings, product photos, webinars, short-form video. Cloud providers are racing to ship large multimodal models that let developers build apps that can, for example, analyze a video demo, summarize a meeting recording, or walk a user through a complex interface — all with natural language prompts.\n\nThis explainer walks through what multimodal foundation models are, how they compare to unimodal models, where they shine, and where they’re still clumsy or expensive. We’ll also look at how big cloud platforms are packaging these models so you can actually build something with them, not just read the marketing slides.",
+  sections: [
+    {
+      heading: "What Are Multimodal Foundation Models?",
+      text: "Multimodal foundation models are large AI models trained to handle more than one type of input and output—usually some combination of text, speech, images, and video—inside a single, shared system.\n\nWhere a classic \"unimodal\" model might only read text or only classify images, a multimodal model can do things like: look at a screenshot and explain it in natural language, listen to audio and answer questions about it, or take a text description and generate an image or video.\n\nThey’re called \"foundation\" models because they’re trained on huge generic datasets and then reused or adapted for many tasks and industries, rather than being handcrafted for one narrow use case. In practice, that means a single model family can power chatbots, video analysis tools, screen-reading assistants, and more.\n\nFrom a user’s point of view, the key idea is simple: instead of juggling separate AI tools for text, images, and video, you talk to one brain that can understand and connect all of them. That makes experiences like “Explain this slide deck as if I’m new to the topic” or “Summarize this interface walkthrough video” feel much more natural."
+    },
+    {
+      heading: "Key Modalities: Text, Speech, Image and Video",
+      text: "Most modern multimodal foundation models center on four main modalities:\n\nText: This is the backbone. Text lets you prompt the model, get structured answers, and glue together tasks like \"summarize,\" \"compare,\" or \"explain.\" Even when you upload images or video, you usually steer the model with text prompts.\n\nSpeech (audio): Audio brings in spoken language, tone, and prosody. Models can transcribe speech, summarize long recordings, or help build voice assistants that respond conversationally. Depending on the system around the model, the output may be text only, or both text and synthesized speech.\n\nImage: Image understanding unlocks things like UI explanation, screenshot QA, document analysis, and visual search. The model encodes pixels into a representation it can reason about alongside text.\n\nVideo: Video combines many images over time, plus audio. Multimodal models can be used to power features like video summarization or content analysis by processing video frames and associated sound. Cloud providers highlight video-focused capabilities such as summarizing long-form video and analyzing software demos or tutorials as part of their new model offerings.\n\nThe magic is that all of these flow through a shared representation, so the model can connect, say, what’s on a screen recording with what you’re asking in a text prompt."
+    },
+    {
+      heading: "How Multimodal Foundation Models Work Under the Hood",
+      text: "Under the hood, most multimodal foundation models follow a similar recipe:\n\n1. Encoders for each modality: Text goes through a language encoder; images and video frames go through vision encoders; audio can be converted into text or into learned audio embeddings. Each encoder turns raw input into vectors (dense numerical representations).\n\n2. A shared representation space: Those vectors are mapped into a common space so the model can relate a caption to an image, a question to a video frame, or a spoken command to a UI screenshot. This is where \"multimodal\" actually happens—the model learns that certain visual and textual patterns mean roughly the same thing.\n\n3. A large transformer backbone: A big neural network (often similar to a large language model) sits on top, taking these multimodal tokens as context. It then predicts the next token (for text), selects relevant regions (for images), or reasons across time (for video).\n\n4. Training on massive mixed data: The model is trained on combinations like image–caption pairs or video with transcripts. Over time, it learns cross-modal links: what a \"button\" looks like, how \"click\" appears in a screen recording, or how spoken explanations align with visuals.\n\nDevelopers rarely see this architecture directly; they just get an API where they can send text plus media and receive model-generated text (and sometimes audio) in return."
+    },
+    {
+      heading: "Multimodal Models vs Separate Single‑Modality Models",
+      text: "Using a multimodal foundation model isn’t your only option. You could also stitch together several single-modality models—one for text, one for images, one for audio—and orchestrate them in your app.\n\nMultimodal models shine when you need tight coordination across modalities. For example, answering a question that depends on both what’s said in a video and what appears on the screen is much easier if one model sees everything at once, rather than you manually passing partial results between separate systems.\n\nThey can also simplify development: one API, one set of capabilities, and a consistent way to prompt across text, images, and video.\n\nHowever, unimodal models can still win in some cases:\n- Specialization: A dedicated speech model or image model tuned for a narrow task may be more accurate or efficient.\n- Cost and latency: Running a single compact text or audio model can be cheaper and faster than invoking a big multimodal giant for simple use cases.\n\nIn many real-world systems, teams actually mix the two approaches: a multimodal foundation model for rich, cross-modal tasks, plus cheaper unimodal models for high-volume, simpler jobs."
+    },
+    {
+      heading: "Common Use Cases Across Text, Audio, Image and Video",
+      text: "Multimodal foundation models open up some very practical, not-just-a-demo scenarios:\n\nProductivity and knowledge work: Summarize long screen recordings, explain complex dashboards, or answer questions about a slide deck or product walkthrough video. You upload media; the model returns concise, text-based explanations or summaries that teams can search or integrate into docs.\n\nSupport and onboarding: Analyze screenshots or recorded user sessions to generate help articles, onboarding checklists, or step-by-step instructions. Instead of manually documenting every workflow, you let the model watch and explain.\n\nContent understanding: For teams dealing with lots of visual or video content, multimodal models can help tag, cluster, and describe assets. That makes retrieval and compliance checks more manageable.\n\nAccessibility aids: Combine image and text understanding to describe interfaces or documents for users who rely on assistive tech. While the model typically returns text, that text can then be turned into speech by a separate TTS component.\n\nDeveloper tooling: Cloud providers are positioning multimodal models as foundations for apps that understand code plus screenshots, or video demos plus written specs, helping automate parts of QA, documentation, and UX analysis."
+    },
+    {
+      heading: "Latency, Cost and Performance Considerations",
+      text: "Multimodal models are powerful, but they’re not magic-free—they cost real money and time to run.\n\nLatency: Feeding in large images or long videos means more data to encode and more tokens for the model to process. That increases response time. If your app is interactive (for example, a support assistant that analyzes uploaded screenshots), you’ll need to design around that: progressive responses, smaller inputs, or pre-processing where possible.\n\nCost: Cloud APIs generally charge per token (for text) and often account for images or video segments in token-like units. Bigger, more capable models are more expensive per call. Running a large multimodal foundation model on every request—when you only need text—can be overkill from a cost perspective.\n\nPerformance trade-offs: To keep latency and cost reasonable, providers may offer model size tiers (smaller vs larger variants) or specialized endpoints for certain workloads. For tasks that don’t need cross-modal reasoning, you might route to cheaper unimodal models.\n\nThe practical approach is to benchmark: measure how often you really need multimodal analysis, what latencies your users can tolerate, and where you can downshift to smaller or unimodal models without losing critical quality."
+    },
+    {
+      heading: "How Cloud Providers Expose Multimodal Models to Developers",
+      text: "Cloud platforms are packaging multimodal foundation models as services you can call over an API, rather than something you have to train from scratch.\n\nMicrosoft, for example, has announced new foundation models available through its cloud, including models that support multiple modalities and are intended as building blocks for applications that work with text, images, and video. These models are exposed as managed services, so developers can integrate them into apps without handling GPU infrastructure or training pipelines themselves. The focus is on enterprise use cases, such as analyzing product demos, software tutorials, and business documents, all through a unified model interface. (https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/)\n\nIn practice, the workflow looks like this:\n- You send a request containing text and optional media (like images or video references) to a model endpoint.\n- The cloud service handles encoding, inference, and scaling.\n- You receive structured outputs—usually text, sometimes with additional metadata you can feed into other services.\n\nDevelopers then chain these calls with other cloud tools (storage, databases, search, TTS, etc.) to build higher-level applications without ever touching the underlying model weights."
+    },
+    {
+      heading: "Choosing and Evaluating a Multimodal Model for Your Project",
+      text: "Choosing a multimodal foundation model is less about chasing the biggest parameter count and more about matching model behavior to your actual workload.\n\nDefine what \"multimodal\" really means for you: Is it mainly screenshots plus text? Long-form video? Audio-heavy content? Different models and configurations may handle these with varying strengths.\n\nKey evaluation dimensions include:\n- Input types: Confirm the model supports the combo you need, like images plus text prompts, or long video plus question answering.\n- Quality on your data: Test with your real documents, UI screens, or recordings. Generic benchmarks rarely capture your edge cases.\n- Latency and throughput: Prototype realistic request patterns and measure tail latencies. This is crucial for interactive tools.\n- Cost per useful action: Don’t just look at per-token pricing; estimate how many calls and how much context you’ll need per user task.\n\nAlso consider fallback paths: for simple, text-only queries, routing to smaller unimodal models can save money and reduce latency while still keeping the multimodal model available for heavier tasks.\n\nFinally, make evaluation ongoing. As cloud providers roll out new model versions, retest—quality, cost, and behavior can change in ways that meaningfully affect your app."
+    },
+    {
+      heading: "Limits, Risks and Responsible Use of Multimodal AI",
+      text: "Multimodal foundation models are impressive, but they’re still pattern machines, not truth engines.\n\nHallucinations: They can misread images, misunderstand video context, or confidently invent details that weren’t in the input at all. Never use them as the sole authority for safety-critical or legal decisions.\n\nBias and uneven performance: Training data can skew toward certain languages, interfaces, or content types. A model tuned on common enterprise software demos might struggle with niche tools or non-standard UIs.\n\nPrivacy and governance: Uploading screenshots, recordings, or documents to a cloud model raises obvious data-protection questions. You’ll need policies for what content is allowed, how long it’s stored, and who can access logs.\n\nExplainability: Multimodal reasoning can be even harder to interpret than text-only decisions. If your use case needs strong audit trails, you may need additional logging, rule-based checks, or human review.\n\nResponsible use means putting guardrails around the model: content filters, clear user disclosures, human-in-the-loop review for sensitive workflows, and conservative use in domains like compliance, healthcare, and finance. Think of the model as a very capable junior analyst who sometimes makes things up—useful, but not unsupervised."
+    },
+    {
+      heading: "Future Directions for Multimodal Foundation Models",
+      text: "Multimodal foundation models are evolving along a few clear lines.\n\nTighter integration across modalities: Expect models to become better at deeply linking what happens in video, what’s spoken, and what’s on screen, rather than treating each channel as a loose add-on. That means richer video understanding, more accurate explanations of complex workflows, and better grounding in visual evidence.\n\nEnterprise-focused capabilities: Cloud providers are emphasizing models tailored for business tasks—analyzing product demos, understanding documentation, and assisting with software workflows—rather than just generic image captioning. Microsoft’s latest foundation models, for instance, are positioned explicitly as building blocks for enterprise-grade applications in its cloud ecosystem. (https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/)\n\nPlatform-level tooling: You’ll see more orchestration features: automatic routing between model sizes, tools for evaluating outputs on your own datasets, and integrations with storage, search, and monitoring. The model becomes one piece of a broader “AI platform” rather than a standalone black box.\n\nFor builders, the direction of travel is clear: multimodal understanding will increasingly feel like a default capability—something you can assume your AI stack has—while the real differentiation moves to how well you harness it for specific, real-world workflows."
+    },
+    {
+      heading: "Visual",
+      text: "mermaid\nflowchart LR\n  U[User] -->|Text Prompt| G\n  U -->|Upload Image / Video / Audio| G\n  subgraph Cloud Multimodal Model\n    G[Gateway API]\n    G --> Tenc[Text Encoder]\n    G --> Ienc[Image / Video Encoder]\n    G --> Aenc[Audio Encoder]\n    Tenc --> R[Shared Representation]\n    Ienc --> R\n    Aenc --> R\n    R --> LLM[Multimodal Transformer]\n    LLM --> Out[Text Response]\n  end\n  Out --> App[Your Application]\n  App -->|Optional TTS, Storage, Search| Services[Other Cloud Services]"
+    },
+    {
+      heading: "Glossary",
+      bullets: [
+        "Multimodal: An AI system that can process more than one type of data, such as text, images, audio, or video, in a single model.",
+        "Unimodal Model: A model trained for a single modality, like only text or only images, often used when tasks are narrow and performance or cost needs are strict.",
+        "Foundation Model: A large, general-purpose model trained on broad data that can be adapted to many tasks instead of being built for one specific job.",
+        "Encoder: A neural network component that turns raw inputs (words, pixels, audio waveforms) into dense numeric vectors the model can reason about.",
+        "Shared Representation: A common vector space where different modalities are mapped so the model can link, for example, an image with its textual description.",
+        "Inference: The process of running an already-trained model on new inputs to generate outputs, such as answers, summaries, or descriptions.",
+        "Latency: The time it takes from sending a request to an AI model until receiving the response; crucial for interactive applications.",
+        "API (Application Programming Interface): A standardized way for your app to send data to the cloud model and get results back without managing the model infrastructure yourself."
+      ]
+    },
+    {
+      heading: "Citations",
+      bullets: [
+        "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+        "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+        "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/"
+      ]
+    }
+  ],
+  imageCredit: {
+    authorName: "Michael Dziedzic",
+    authorUrl: "https://unsplash.com/@lazycreekimages",
+    source: "Unsplash",
+    photoUrl: "https://unsplash.com/photos/a-close-up-of-a-computer-circuit-board-HpSkqmwIUPY"
+  },
+  meta: {
+    metaTitle: "Multimodal foundation models explained for builders",
+    metaDescription: "Multimodal foundation models explained in plain language, with examples for text, speech, images, and video so you can start building real apps.",
+    ogTitle: "Multimodal foundation models explained for builders",
+    ogDescription: "Multimodal foundation models explained in plain language, with examples for text, speech, images, and video so you can start building real apps.",
+    canonicalPath: "/blog/multimodal-foundation-models-explained",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: "Multimodal foundation models explained for builders",
+      datePublished: "2026-04-04",
       author: {
         "@type": "Person",
         name: "Issam Alzouby"

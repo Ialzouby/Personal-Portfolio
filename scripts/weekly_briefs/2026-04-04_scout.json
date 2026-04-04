@@ -1,0 +1,106 @@
+{
+  "week": "2026-04-04",
+  "events": [
+    {
+      "event": "Microsoft AI releases three new multimodal foundation models (MAI-Transcribe-1, MAI-Voice-1, MAI-Image-2) for text, speech and video generation.",
+      "category": "Models",
+      "why_it_matters": "This expands Microsoft’s in‑house frontier model stack beyond its OpenAI partnership, with faster transcription, high-speed audio generation and a video model now exposed through Foundry and MAI Playground. It signals that major cloud providers are racing to own full multimodal model pipelines rather than relying solely on external labs.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+          "title": "Microsoft takes on AI rivals with three new foundational models",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "event": "NomadicML raises $8.4M to automate organizing and mining video data from autonomous vehicles and robots.",
+      "category": "Robotics",
+      "why_it_matters": "Robotics and AV systems generate huge volumes of driving and perception footage, but much of it sits unused because it is hard to search and label. Tools that automatically index and surface rare edge cases can make training and validating physical-world AI systems more efficient and may accelerate deployment of safer robots and self-driving fleets.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/31/nomadic-raises-8-4-million-to-wrangle-the-data-pouring-off-avs/",
+          "title": "Nomadic raises $8.4 million to wrangle the data pouring off autonomous vehicles",
+          "date": "2026-03-31"
+        }
+      ]
+    },
+    {
+      "event": "Mantis Biotech develops AI-generated ‘digital twins’ of human bodies using synthetic and integrated biomedical data.",
+      "category": "Healthcare AI",
+      "why_it_matters": "By combining diverse medical data sources to build physics-based, predictive digital twins, the company aims to tackle the lack of high-quality, representative data in medicine, especially for rare conditions. If effective and validated, such virtual patients could be used to simulate treatments, improve diagnostics and accelerate research without relying solely on real patient data.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/30/mantis-biotech-is-making-digital-twins-of-humans-to-help-solve-medicines-data-availability-problem/",
+          "title": "Mantis Biotech is making 'digital twins' of humans to help solve medicine's data availability problem",
+          "date": "2026-03-30"
+        }
+      ]
+    },
+    {
+      "event": "Meta introduces new Ray‑Ban smart glasses models designed specifically for prescription wearers, with integrated AI features.",
+      "category": "Edge AI",
+      "why_it_matters": "Smart glasses are a key form factor for edge AI, where models run on or stream through wearable devices instead of phones or PCs. By releasing prescription-optimized frames aimed at all‑day use, Meta is pushing AI assistants and camera-based experiences closer to mainstream everyday wear, which may drive demand for more efficient on-device and low-latency AI.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/31/meta-launches-two-new-ray-ban-glasses-designed-for-prescription-wearers/",
+          "title": "Meta launches two new Ray-Ban glasses designed for prescription wearers",
+          "date": "2026-03-31"
+        }
+      ]
+    },
+    {
+      "event": "A Quinnipiac University poll shows U.S. AI adoption is increasing while public trust in AI output remains low.",
+      "category": "AI Ethics",
+      "why_it_matters": "The survey reports that a clear majority of respondents have used AI tools, but around three‑quarters say they rarely or only sometimes trust the results. This gap between usage and trust highlights ongoing concerns about reliability, bias and transparency, and suggests that regulation and product design will need to focus not just on capability but also on accountability and user confidence.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/30/ai-trust-adoption-poll-more-americans-adopt-tools-fewer-say-they-can-trust-the-results/",
+          "title": "As more Americans adopt AI tools, fewer say they can trust the results",
+          "date": "2026-03-30"
+        }
+      ]
+    },
+    {
+      "event": "Starcloud raises $170M Series A to build GPU data centers in orbit for compute‑intensive workloads such as AI.",
+      "category": "Data/Infra",
+      "why_it_matters": "The company plans to host Nvidia H100 and Blackwell GPUs and other hardware on satellites, positioning space as an alternative location for high-density data centers. If technically viable and cost‑effective, this could reshape how and where large AI workloads are run, particularly for applications that can tolerate higher latency but need large-scale compute and cooling advantages.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/",
+          "title": "Starcloud raises $170 million Series A to build data centers in space",
+          "date": "2026-03-30"
+        }
+      ]
+    },
+    {
+      "event": "ByteDance rolls out its Dreamina Seedance 2.0 AI video and audio generation model inside CapCut in selected markets.",
+      "category": "Creative AI",
+      "why_it_matters": "Integrating the new model into a widely used consumer editing app lets creators prompt-generate and edit video and audio within their existing workflow. The limited regional rollout, following criticism over alleged copyright issues, also illustrates how IP concerns are shaping how and where advanced generative video tools are deployed.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/",
+          "title": "ByteDance’s new AI video generation model, Dreamina Seedance 2.0, comes to CapCut",
+          "date": "2026-03-26"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video/",
+          "title": "Sora’s shutdown could be a reality check moment for AI video",
+          "date": "2026-03-29"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI shuts down its Sora video app and associated models roughly six months after launch.",
+      "category": "Creative AI",
+      "why_it_matters": "Ending Sora indicates a strategic shift toward enterprise and productivity products and shows that high-end generative video remains commercially and operationally challenging. Together with other constrained rollouts in the sector, it suggests the near‑term trajectory for AI video may be more cautious than early demos implied.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video/",
+          "title": "Sora’s shutdown could be a reality check moment for AI video",
+          "date": "2026-03-29"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Microsoft’s three new multimodal foundation models are a major move by a top cloud provider to expand beyond OpenAI, with broad ecosystem impact (developers, enterprises, and platform strategy) and strong evergreen SEO potential around multimodal transcription, audio, and video generation. Despite a diversity penalty for another Models story, its impact clearly outweighs all other events.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 32,
+      "notes": "High-impact: Microsoft expanding its in-house multimodal stack (text, speech, image/video) is strategically important in the ongoing model/cloud race and relevant to a wide audience (developers, enterprises, analysts). Likely to drive substantial coverage and follow-on commentary. SEO: strong queries around ‘Microsoft multimodal model’, ‘MAI-Transcribe/MAI-Voice/MAI-Image’, comparisons vs OpenAI/Anthropic, and practical integration guides. Diversity: Models has appeared 3+ times in last 6 posts, so full 6-point penalty applies; still wins on net."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 13,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 26,
+      "notes": "Niche but meaningful for AV/robotics community; modest general-audience impact. Good explainer potential around managing robotics/AV video data, but funding size and company stage limit mainstream pull."
+    },
+    {
+      "index": 2,
+      "bucket": "AI in Healthcare",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Strong conceptual importance (digital twins in medicine, synthetic data, rare disease research), but this is an early-stage company and not yet a platform-level shift. Excellent SEO around ‘digital twin healthcare’, ‘synthetic medical data’, and explainers, but still marginally less newsweight than Microsoft’s cloud-scale move."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 16,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Consumer hardware and edge AI form factor story with decent mainstream interest. Good SEO for smart glasses, Ray-Ban + AI, and edge assistants, but technically incremental vs transformative."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Poll on trust vs adoption is socially important and fits ethics/policy theme, but primarily descriptive and not a structural policy change. SEO relatively solid for ‘AI trust poll’ and public opinion explainers. Diversity: AI Ethics used twice in last 4 posts and 3+ in last 6 overall, so full 6-point penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Space-based GPU data centers are attention-grabbing and could be disruptive long term, but still speculative (Series A, unproven economics and latency tradeoffs). Good SEO for ‘data centers in space’ and ‘space GPUs’. Diversity: Data/Infra appears multiple times in last 6 posts, so 6-point penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "CapCut + new ByteDance generative video/audio model has large user reach, but limited market rollout and IP/copyright constraints temper overall impact. SEO: strong for ‘CapCut AI video generator’ and practical how-tos, but less foundational than a major cloud model launch."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "OpenAI ending Sora is a notable corrective signal on generative video economics and policy, with good narrative interest. SEO: good for ‘Sora shutdown’ and ‘state of AI video’ explainers. However, it’s a retreat/strategy adjustment rather than a new widely available capability."
+    }
+  ]
+}

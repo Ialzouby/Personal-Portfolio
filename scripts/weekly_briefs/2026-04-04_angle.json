@@ -1,0 +1,28 @@
+{
+  "primary_query": "multimodal foundation models explained",
+  "secondary_queries": [
+    "what are multimodal foundation models",
+    "multimodal vs unimodal ai models",
+    "text speech image video foundation models",
+    "how multimodal models work in the cloud",
+    "use cases for multimodal ai models",
+    "multimodal llm architecture overview",
+    "multimodal inference latency and cost",
+    "building apps on multimodal model platforms"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Multimodal Foundation Models Explained for Text, Speech and Video",
+  "recommended_slug": "multimodal-foundation-models-explained",
+  "outline_h2s": [
+    "What Are Multimodal Foundation Models?",
+    "Key Modalities: Text, Speech, Image and Video",
+    "How Multimodal Foundation Models Work Under the Hood",
+    "Multimodal Models vs Separate Single‑Modality Models",
+    "Common Use Cases Across Text, Audio, Image and Video",
+    "Latency, Cost and Performance Considerations",
+    "How Cloud Providers Expose Multimodal Models to Developers",
+    "Choosing and Evaluating a Multimodal Model for Your Project",
+    "Limits, Risks and Responsible Use of Multimodal AI",
+    "Future Directions for Multimodal Foundation Models"
+  ]
+}
