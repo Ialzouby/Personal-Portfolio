@@ -1,0 +1,78 @@
+{
+  "winner_index": 4,
+  "winner_reason": "OpenAI’s economic policy package has broad, long-term implications for AI governance and labor, strong explainer/SEO potential around concepts like robot taxes and public wealth funds, and falls into a category (AI Ethics) that, while present recently, still scores higher overall than competing stories after penalties.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Major model launch from Meta with strategic implications, but similar to many recent foundation-model updates. Strong news value, moderate evergreen SEO (explaining Meta’s stack, Muse vs rivals). Models bucket appears 3+ times in last 6 posts → max 6 penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Security-focused frontier model preview is important but access is limited and details are sparse, reducing immediate impact and search interest. Models heavily overused recently → 6 penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Microsoft expanding its own model stack is strategically meaningful and has decent SEO around comparisons and multimodal stacks. Still another Models story, so full 6-point diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "National strategy around physical AI and robotics has strong policy and industrial significance; good SEO around \"physical AI\" and robotics + labor. Robotics not used in recent list → no penalty. Slightly narrower global interest than OpenAI’s economic agenda and less evergreen than taxation/wealth-fund debates."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "OpenAI weighing in on wealth funds, robot taxes, and workweeks directly shapes global AI-policy discourse. High evergreen SEO for explainers on AI-era taxation, redistribution, and labor. AI Ethics has appeared multiple times recently, but impact ≥22 triggers override → penalty capped at 2."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Offline AI dictation is a strong example of on-device AI with good practical search interest (\"offline transcription\", \"on-device AI\"). Edge/Hardware not used in recent posts, so no penalty, but overall impact is more incremental/feature-level."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "A $1.3B fund is notable for the ecosystem and validates \"physical AI\" as an investment theme. Decent SEO around infrastructure for physical AI, but Data/Infra has been used twice in the recent sequence → 6 penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "Consumer AI music app taps into ongoing interest in generative audio; strong SEO for tutorials and comparisons, but crowded space. Creative AI appeared once in the recent list and once in last 4 posts → 4 penalty."
+    }
+  ]
+}

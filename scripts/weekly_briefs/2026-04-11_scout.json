@@ -1,0 +1,101 @@
+{
+  "week": "2026-04-11",
+  "events": [
+    {
+      "event": "Meta launches Muse Spark, its first model from Meta Superintelligence Labs, as part of a broad overhaul of its AI stack",
+      "category": "Models",
+      "why_it_matters": "Muse Spark is the first visible output of Meta’s restructured AI organization and major investment in data labeling, signaling a push to close the performance and product gap with leading foundation models. It shows large consumer platforms continuing to develop proprietary models rather than relying solely on partners.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/",
+          "title": "Meta debuts the Muse Spark model in a 'ground-up overhaul' of its AI",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic previews Mythos, a new frontier model, for cybersecurity-focused partners under Project Glasswing",
+      "category": "Models",
+      "why_it_matters": "By deploying a powerful unreleased model specifically for defensive security tasks like large-scale vulnerability discovery, Anthropic is testing how frontier models can be integrated into critical software assurance workflows while keeping access tightly controlled.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+          "title": "Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative",
+          "date": "2026-04-07"
+        }
+      ]
+    },
+    {
+      "event": "Microsoft AI introduces three new foundational models for text, voice, and video to compete more directly with other multimodal stacks",
+      "category": "Models",
+      "why_it_matters": "The MAI-Transcribe-1, MAI-Voice-1, and MAI-Image-2 models indicate Microsoft’s strategy to own more of the model layer instead of relying only on OpenAI, aiming for lower cost and broader multimodal coverage for its cloud and product ecosystem.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+          "title": "Microsoft takes on AI rivals with three new foundational models",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "event": "Japan sets an explicit national target to build a \"physical AI\" sector, leaning on industrial robotics to address labor shortages",
+      "category": "Robotics",
+      "why_it_matters": "Japan’s plan to capture a large share of the emerging physical AI market shows how countries with strong robotics bases are repositioning for AI-native automation, framing robots less as job threats and more as a response to structural worker shortages.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+          "title": "In Japan, the robot isn't coming for your job; it's filling the one nobody wants",
+          "date": "2026-04-05"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes a package of economic policy ideas for an \"intelligence age,\" including public wealth funds and robot taxes",
+      "category": "AI Ethics",
+      "why_it_matters": "A leading AI developer publicly endorsing mechanisms like public wealth funds, expanded safety nets, and taxes tied to automation places economic distribution and labor impacts at the center of AI governance debates, and may influence how governments design AI-era fiscal policy.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/",
+          "title": "OpenAI’s vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek",
+          "date": "2026-04-06"
+        }
+      ]
+    },
+    {
+      "event": "Google rolls out an offline-capable AI dictation app, highlighting on-device inference and reduced cloud dependence",
+      "category": "Edge AI",
+      "why_it_matters": "Moving speech recognition and dictation AI to run offline on user devices reduces latency and connectivity dependence and can mitigate some privacy concerns, illustrating a broader shift toward edge deployment of everyday AI functions.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/07/google-quietly-launched-an-ai-dictation-app-that-works-offline/",
+          "title": "Google quietly launched an AI dictation app that works offline",
+          "date": "2026-04-07"
+        }
+      ]
+    },
+    {
+      "event": "Venture firm Eclipse raises a $1.3B fund focused on \"physical AI\" startups that blend hardware, robotics, and AI",
+      "category": "Data/Infra",
+      "why_it_matters": "A dedicated multi-billion-dollar-scale fund for physical AI signals growing investor conviction that AI value will increasingly depend on integrated hardware, sensors, and operational data pipelines, not only cloud models and software APIs.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-fund-to-back-and-build-physical-ai-startups/",
+          "title": "VC Eclipse has a new $1.3B fund to back — and build — ‘physical AI’ startups",
+          "date": "2026-04-07"
+        }
+      ]
+    },
+    {
+      "event": "ElevenLabs launches ElevenMusic, an iOS app for AI-generated music creation and discovery",
+      "category": "Creative AI",
+      "why_it_matters": "By extending from voice synthesis into consumer-facing music generation, ElevenLabs is positioning generative audio as a mainstream creative medium and testing business models and user behavior around AI-composed songs.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/02/elevenlabs-releases-a-new-ai-powered-music-generation-app/",
+          "title": "ElevenLabs releases a new AI-powered music-generation app",
+          "date": "2026-04-02"
+        }
+      ]
+    }
+  ]
+}
