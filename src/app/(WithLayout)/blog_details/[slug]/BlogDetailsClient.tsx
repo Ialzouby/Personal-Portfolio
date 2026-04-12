@@ -85,9 +85,9 @@ const BlogDetailsClient = ({ blog }: { blog: any }) => {
 
                 {section.bullets && (
                   <div className="card rounded-4 bgn2-color shadow-sm p-4 mb-5">
-                    <ul className="mb-0 ps-3">
+                    <ul className="mb-0 ps-3 blog-text-enhanced">
                       {section.bullets.map((bullet: string, i: number) => (
-                        <li key={i} className="n4-color fs-seven mb-2">
+                        <li key={i} className="n4-color mb-3">
                           {renderBoldText(bullet)}
                         </li>
                       ))}
