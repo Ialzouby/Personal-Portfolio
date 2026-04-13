@@ -5,7 +5,7 @@ import FeaturedCard from "./FeaturedCard";
 import Link from "next/link";
 import FadeDown from "@/components/motionEffect/FadeDown";
 
-const idsToShow = [1, 2, 21];
+const idsToShow = [26, 2, 21];
 
 
 const Featured = () => {

@@ -32,6 +32,31 @@ import raceDroneImg from "@/../public/images/projects/RaceDrone.jpg";
 
 export const featureds = [
   {
+    id: 26,
+    category: "Hackathons",
+    award: "1st",
+    tag1: "Hackathon",
+    tag2: "NASA",
+    tag3: "RAG & Space Biology",
+    title: "1st Place & Global Nominee – 2025 NASA Space Apps Challenge",
+    description: "Built Raptor RAG: an advanced retrieval-augmented generation system designed around NASA's space biology data for intelligent ingestion and retrieval.",
+    img: project6,
+    client: "NASA Space Apps Challenge 2025",
+    services: "AI Architecture & Development",
+    technologies: "Python, Next.js, Vector Search, LLMs",
+    website: "#",
+    intro: "Developed Raptor RAG, an intelligent AI ingestion and retrieval system tailored to NASA's Space Biology datasets.",
+    overview: "During the 2025 NASA Space Apps Challenge, we secured 1st Place and a Global Nomination for creating Raptor RAG. The platform addresses critical data navigation challenges within space biology, offering high precision, context-aware information retrieval.",
+    challenge: "NASA's space biology data is vast, complex, and spread across numerous formats. The central challenge was creating a reliable engine capable of accurately grounding responses in specific scientific literature without hallucinating.",
+    solution: "We engineered Raptor RAG, utilizing advanced retrieval-augmented generation (RAG) techniques to comprehensively parse, ingest, index, and semantically search NASA's structured and unstructured space biology documents.",
+    gallery: [project1, project2, project3],
+    results: [
+      { title: "Accuracy", value: "95%+", trend: "up", desc: "High precision context retrieval." },
+      { title: "Scale", value: "Enterprise", trend: "up", desc: "Robust data pipeline capabilities." },
+      { title: "Award", value: "Nominee", trend: "up", desc: "Global Nominee out of thousands of teams." }
+    ]
+  },
+  {
     id: 21,
     category: "AI/ML",
     tag1: "Text-to-Motion",
