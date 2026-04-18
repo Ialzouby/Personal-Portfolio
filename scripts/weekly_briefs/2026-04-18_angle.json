@@ -1,0 +1,28 @@
+{
+  "primary_query": "AI health assistants on ecommerce platforms",
+  "secondary_queries": [
+    "how AI health assistants work on shopping sites",
+    "risks of using AI health chatbots for medical advice",
+    "AI health assistant vs telehealth doctor visit",
+    "privacy concerns with retail health AI tools",
+    "FDA rules for consumer health AI assistants",
+    "best practices for building safe health AI chatbots",
+    "limitations of AI for symptom checking and triage",
+    "how big tech uses health data for AI models"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Health Assistants on Ecommerce Platforms: Benefits and Risks",
+  "recommended_slug": "ai-health-assistants-ecommerce-platforms",
+  "outline_h2s": [
+    "What Are AI Health Assistants on Ecommerce Platforms?",
+    "Common Use Cases: From Symptom Queries to Product Suggestions",
+    "How These Health AI Assistants Work Under the Hood",
+    "Benefits for Consumers and Retail Platforms",
+    "Accuracy Limits and the Line Between Info and Medical Advice",
+    "Privacy, Data Sharing and Regulatory Considerations",
+    "Design Principles for Safe, Trustworthy Health AI Assistants",
+    "How to Use Retail Health AI Tools Safely as a Consumer",
+    "Implications for Telehealth, Pharmacies and Clinicians",
+    "The Future of Consumer-Facing Health AI Assistants"
+  ]
+}

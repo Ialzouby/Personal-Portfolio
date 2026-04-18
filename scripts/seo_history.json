@@ -21,7 +21,8 @@
     "open weight ai models explained",
     "military ai ethics and safety safeguards",
     "multimodal foundation models explained",
-    "ai robot taxes and public wealth funds"
+    "ai robot taxes and public wealth funds",
+    "AI health assistants on ecommerce platforms"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -45,7 +46,8 @@
     "Open Weight AI Models Explained: Architecture, Use and Tradeoffs",
     "Military AI Ethics and Safety Safeguards: How Vendors Set Limits",
     "Multimodal Foundation Models Explained for Text, Speech and Video",
-    "AI Robot Taxes and Public Wealth Funds: Economic Policy Explained"
+    "AI Robot Taxes and Public Wealth Funds: Economic Policy Explained",
+    "AI Health Assistants on Ecommerce Platforms: Benefits and Risks"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -69,7 +71,8 @@
     "open-weight-ai-models-explained",
     "military-ai-ethics-safety-safeguards",
     "multimodal-foundation-models-explained",
-    "ai-robot-taxes-public-wealth-funds"
+    "ai-robot-taxes-public-wealth-funds",
+    "ai-health-assistants-ecommerce-platforms"
   ],
   "buckets": [
     "Robotics",
@@ -93,6 +96,7 @@
     "Data/Infra",
     "AI Ethics",
     "Models",
-    "AI Ethics"
+    "AI Ethics",
+    "Healthcare AI"
   ]
 }

@@ -1,0 +1,111 @@
+{
+  "week": "2026-04-18",
+  "events": [
+    {
+      "event": "Japan pushes ‘physical AI’ robots to fill labor gaps rather than replace existing workers.",
+      "category": "Robotics",
+      "why_it_matters": "Japan is treating AI-powered robots as a way to address structural labor shortages in factories, logistics, and infrastructure instead of a tool for mass layoffs. This offers a concrete, national-scale example of how ‘physical AI’ can be deployed to maintain productivity in aging societies while shaping global competition in industrial robotics.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
+          "title": "In Japan, the robot isn’t coming for your job; it’s filling the one nobody wants",
+          "date": "2026-04-05"
+        }
+      ]
+    },
+    {
+      "event": "VC firm Eclipse raises a $1.3B fund focused on ‘physical AI’ and industrial-tech startups.",
+      "category": "Data/Infra",
+      "why_it_matters": "A $1.3B capital pool directed at ‘physical AI’ companies signals investor conviction that AI applied to hardware, factories, and supply chains is entering a scale-up phase. It affects which types of AI infrastructure and platforms—especially those connecting data from the physical world—are likely to mature fastest.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/07/vc-eclipse-has-a-new-1-3b-to-back-and-build-physical-ai-startups/",
+          "title": "VC Eclipse has a new $1.3B fund to back — and build — ‘physical AI’ startups",
+          "date": "2026-04-07"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI updates its model lineup, scheduling retirement of several GPT‑4‑series and o‑series models from ChatGPT.",
+      "category": "Models",
+      "why_it_matters": "Deprecating GPT‑4o, GPT‑4.1, GPT‑4.1 mini, and o4‑mini in ChatGPT reflects how quickly frontier models are turning over and how OpenAI is consolidating its offering. Product, risk, and cost decisions now depend less on any single model name and more on tracking an evolving ‘default’ stack that can change within months.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes%252523.eot",
+          "title": "Model Release Notes",
+          "date": "2026-01-29"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes new Academy materials explaining AI fundamentals and applied use cases.",
+      "category": "AI Ethics",
+      "why_it_matters": "While educational in form, OpenAI’s official explanations of what AI is and how it should be applied help normalize particular risk, safety, and deployment narratives. These materials influence how non-expert decision makers perceive AI capabilities and limitations, indirectly shaping expectations and norms around responsible use.",
+      "sources": [
+        {
+          "url": "https://openai.com/academy/what-is-ai/",
+          "title": "AI fundamentals",
+          "date": "2026-04-10"
+        },
+        {
+          "url": "https://openai.com/academy/applications-of-ai/",
+          "title": "Applications of AI at OpenAI",
+          "date": "2026-04-10"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia continues pushing a full-stack platform for generalist robotics, aiming to be the ‘Android’ layer for robots.",
+      "category": "Edge AI",
+      "why_it_matters": "A vertically integrated stack—foundation models, simulators, and edge hardware—gives Nvidia leverage over how AI workloads move from cloud to robots deployed in warehouses, factories, and other edge environments. If this platform becomes a de facto standard, it will influence which robotics capabilities are commoditized versus differentiated.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/01/05/nvidia-wants-to-be-the-android-of-generalist-robotics/",
+          "title": "Nvidia wants to be the Android of generalist robotics",
+          "date": "2026-01-05"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/",
+          "title": "Nvidia official blog (general announcements on robotics and edge AI)",
+          "date": "2026-01-05"
+        }
+      ]
+    },
+    {
+      "event": "Rivian spin-out Mind Robotics raises $500M to develop industrial robots trained on EV factory data.",
+      "category": "Robotics",
+      "why_it_matters": "A $500M Series A round for an industrial robotics lab underscores how much capital is moving into AI-native factory automation. Using data from Rivian’s own plants to train more adaptable robots highlights how vertically integrated, domain-specific datasets are becoming a key moat in physical AI.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/11/rivian-mind-robotics-series-a-500m-fund-raise-industrial-ai-powered-robots/",
+          "title": "Rivian spin-out Mind Robotics raises $500M for industrial AI-powered robots",
+          "date": "2026-03-11"
+        }
+      ]
+    },
+    {
+      "event": "Amazon expands its Health AI assistant from One Medical into its main website and app.",
+      "category": "Healthcare AI",
+      "why_it_matters": "Moving a health-focused AI assistant into Amazon’s core consumer properties increases mainstream exposure to AI-supported health guidance. It raises practical questions about accuracy, data sharing, and where the line sits between informational support and clinical decision making within large commercial platforms.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/10/amazon-launches-its-healthcare-ai-assistant-on-its-website-and-app/",
+          "title": "Amazon launches its healthcare AI assistant on its website and app",
+          "date": "2026-03-10"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch and others continue tracking ‘hottest AI models’ as an evolving benchmark landscape for foundation models.",
+      "category": "Models",
+      "why_it_matters": "Curated overviews of leading models and their use patterns help practitioners navigate a crowded ecosystem that now spans proprietary and open-source options. These trackers influence which models developers experiment with, shaping traffic, community tooling, and ultimately which ecosystems consolidate power.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2025/03/30/the-hottest-ai-models-what-they-do-and-how-to-use-them/",
+          "title": "The hottest AI models, what they do, and how to use them",
+          "date": "2025-03-30"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 6,
+  "winner_reason": "Amazon’s Health AI assistant expansion scores highest once diversity penalties are applied: strong news impact (mainstream consumer + healthcare implications), high evergreen SEO potential around AI in healthcare and medical assistants, and zero diversity penalty because Healthcare AI hasn’t appeared in recent buckets.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "National-scale ‘physical AI’ deployment in an aging economy is important and concrete, but impact is narrower than global platform/model shifts. Strong explainer potential on robots for labor shortages, but less evergreen than core model or healthcare topics."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Large fund is notable but still a financing story. SEO value around ‘physical AI infrastructure’ and industrial AI is decent, yet Data/Infra appears multiple times in the last 6 posts, triggering max diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 32,
+      "notes": "Model deprecations directly affect many users and developers, with good evergreen SEO around ‘GPT model changes’ and migration guides. However Models have been used heavily (3+ in last 6 posts), so maximum diversity penalty applies (impact just below the override threshold of 22)."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 23,
+      "notes": "Shapes narratives about AI safety and responsible use, but indirect impact and more diffuse audience. Ethics bucket is already very frequent in recent posts, causing the top diversity penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Nvidia’s generalist robotics stack matters for the industry and has solid SEO around ‘Nvidia robotics platform’ and edge AI. But it’s somewhat older news (January) and more incremental relative to prior coverage of Nvidia’s ecosystem."
+    },
+    {
+      "index": 5,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "$500M for an industrial robotics spin-out is sizable and illustrates data moats in physical AI. Still, it’s a single-company funding story with less broad reader relevance than Amazon health or OpenAI models."
+    },
+    {
+      "index": 6,
+      "bucket": "AI in Healthcare",
+      "news_impact": 20,
+      "seo_potential": 18,
+      "diversity_penalty": 0,
+      "final_score": 38,
+      "notes": "Amazon bringing a Health AI assistant into its main app/site affects a massive consumer base and touches sensitive areas (accuracy, regulation, data privacy). SEO potential is high and evergreen around ‘AI health assistant’, ‘Amazon health AI’, and consumer medical guidance. Healthcare AI hasn’t been covered in the recent bucket list, so no diversity penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Models",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Model trackers are useful and evergreen (comparisons, benchmarks), but this is more of a meta-resource than a discrete news event. Strong Models penalty due to heavy recent usage."
+    }
+  ]
+}
