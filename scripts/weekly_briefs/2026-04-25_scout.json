@@ -1,0 +1,101 @@
+{
+  "week": "2026-04-25",
+  "events": [
+    {
+      "event": "DeepSeek previews V4 Flash and V4 Pro, massive MoE language models with 1M-token context windows",
+      "category": "Models",
+      "why_it_matters": "DeepSeek’s V4 series pushes open-weight large language models closer to the performance of top proprietary systems, while using a mixture-of-experts design to keep inference costs down. With up to 1.6 trillion parameters (49B active) and 1M-token contexts, these models make it more practical to work with very large codebases and documents, strengthening competitive pressure on frontier model providers and expanding what can be done with open models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/24/deepseek-previews-new-ai-model-that-closes-the-gap-with-frontier-models/",
+          "title": "DeepSeek previews new AI model that ‘closes the gap’ with frontier models",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI releases Privacy Filter, an open-weight model for detecting and redacting PII in text",
+      "category": "AI Ethics",
+      "why_it_matters": "The Privacy Filter model gives developers an off‑the‑shelf way to detect and mask personally identifiable information locally, without sending raw data to external services. This lowers the barrier to building privacy‑preserving AI applications, supports compliance efforts, and shows a direction where safety and privacy tools are being productized alongside core models rather than left as bespoke, ad‑hoc solutions.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+          "title": "Introducing OpenAI Privacy Filter",
+          "date": "2026-04-22"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI rolls out ImageGen 2.0 and ImageGen 2.0 Thinking in ChatGPT",
+      "category": "Creative AI",
+      "why_it_matters": "ImageGen 2.0 improves general image generation quality and is now available to all ChatGPT plans, while the ‘Thinking’ variant adds reasoning, multi‑output generation, and tool use. This tightens integration between generative imagery and agent‑like capabilities, making it easier for non‑experts to create complex visual content and workflows that combine search, planning, and image generation in a single interface.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes%60",
+          "title": "ChatGPT — Release Notes (April 21, 2026 update)",
+          "date": "2026-04-21"
+        }
+      ]
+    },
+    {
+      "event": "Google Cloud unveils TPU 8t and TPU 8i, its eighth‑generation AI accelerators",
+      "category": "Edge AI",
+      "why_it_matters": "By splitting its latest TPUs into a training‑focused 8t and an inference‑focused 8i, Google is optimizing silicon for different stages of AI workloads. Claimed 3× training speedups, large TPU clusters, and improved performance‑per‑dollar could lower the cost of deploying large models at scale and intensify competition with Nvidia, influencing how and where enterprises run their AI compute.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/",
+          "title": "Google Cloud launches two new AI chips to compete with Nvidia",
+          "date": "2026-04-22"
+        }
+      ]
+    },
+    {
+      "event": "Meta signs a large deal to run AI workloads on Amazon’s Graviton CPUs",
+      "category": "Data/Infra",
+      "why_it_matters": "Meta’s agreement to use millions of AWS Graviton ARM‑based CPUs for AI agents highlights a shift in infrastructure: once models are trained, many agent‑style applications can run cost‑effectively on CPUs instead of GPUs. This could diversify demand away from high‑end GPUs for inference, change cost structures for operating AI agents at scale, and reinforce the strategic importance of custom general‑purpose chips in cloud AI stacks.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/24/in-another-wild-turn-for-ai-chips-meta-signs-deal-for-millions-of-amazon-ai-cpus/",
+          "title": "In another wild turn for AI chips, Meta signs deal for millions of Amazon AI CPUs",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "Physical Intelligence demonstrates π0.7, a robot control model that can perform tasks it wasn’t explicitly trained on",
+      "category": "Robotics",
+      "why_it_matters": "The π0.7 model is reported to let robots carry out novel tasks based on language coaching rather than exhaustive task‑specific training. If the results generalize, this suggests robotics is beginning to see the same kind of emergent generality that large language models brought to text, potentially reducing the cost and time needed to deploy robots into new environments and workflows.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/",
+          "title": "Physical Intelligence, a hot robotics startup, says its new robot brain can figure out tasks it was never taught",
+          "date": "2026-04-16"
+        }
+      ]
+    },
+    {
+      "event": "Deezer reports that 44% of new tracks uploaded daily are AI‑generated",
+      "category": "Creative AI",
+      "why_it_matters": "Deezer’s data shows that nearly half of all newly uploaded tracks are now AI‑generated, even though these account for only a small fraction of total listening and many are flagged as fraudulent. This quantifies how quickly generative tools are flooding distribution platforms, raising operational questions about detection, curation, and monetization, and underscoring the need for clearer norms around AI‑made media.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/20/deezer-says-44-of-songs-uploaded-to-its-platform-daily-are-ai-generated/",
+          "title": "Deezer says 44% of songs uploaded to its platform daily are AI-generated",
+          "date": "2026-04-20"
+        }
+      ]
+    },
+    {
+      "event": "Latitude launches Voyage, a platform for building AI‑driven role‑playing game worlds",
+      "category": "Creative AI",
+      "why_it_matters": "Voyage lets players and creators specify worlds, mechanics, and story elements while AI generates unscripted NPC interactions and narrative content. This illustrates how generative models are being packaged into domain‑specific tools that blend user control with open‑ended generation, reshaping how interactive content and games are authored without requiring users to work directly with raw models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/21/voyage-is-an-ai-rpg-platform-for-creating-custom-gaming-worlds-with-ai-generated-npc-interactions/",
+          "title": "AI Dungeon maker Latitude unveils Voyage, a platform for creating AI-powered RPGs",
+          "date": "2026-04-21"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 4,
+  "winner_reason": "Meta’s large-scale shift of AI agent workloads onto AWS Graviton CPUs is a structurally important infrastructure story with strong ongoing SEO value around AI inference costs, CPU vs GPU, and cloud chip strategy. It also fits a less recently used bucket (Data/Infra) with minimal diversity penalty while still delivering high news impact.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Major open-weight MoE model with 1M context and frontier-level aspirations; strong for technical/benchmark SEO. However, 'Models' has appeared twice in the last 6 posts and once in the last 4, triggering the max diversity penalty (6), and the impact is notable but not quite at frontier-model blockbuster level."
+    },
+    {
+      "index": 1,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Open-weight PII redaction tool from OpenAI ties directly into privacy, governance, and compliance workflows. Strong evergreen SEO around PII detection/redaction and privacy tooling. But AI Ethics/Policy has been used three times in the last six posts and twice in the last four, so it gets the full diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 32,
+      "notes": "ImageGen 2.0 and the reasoning-enabled 'Thinking' variant deepen integration of images and agentic behavior in ChatGPT. Good SEO for prompts, workflows, and feature explainers. Creative AI was the oldest in the recent list (only once, more than 4 posts back), so only a small diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "New TPU 8t/8i chips are important for cloud AI economics and Nvidia competition. Solid but not epochal upgrade; SEO value around AI chips and TPUs is good but narrower vs broader infra trends. No recent 'Edge AI & Hardware' stories, so no diversity penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Data/Infra",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "Meta’s deal to run AI agents on AWS Graviton CPUs signals a strategic shift in inference economics and cloud chip mix. High news impact due to scale (millions of CPUs), the Meta–AWS pairing, and implications for GPU demand. Strong SEO around CPU vs GPU for AI, inference cost optimization, and cloud infra strategy. Data/Infra appeared once in the last 6 posts but not in the last 4; baseline penalty would be 2, and since news_impact ≥ 22 the override caps any diversity penalty at 2 anyway."
+    },
+    {
+      "index": 5,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Generalist robot control with language coaching is conceptually big for robotics and embodied AI, with solid SEO around foundation models for robots and emergent abilities. Novel bucket with no recent overlap, so no penalty. Impact is strong but evidence is still early-stage and less systemically important than hyperscaler infra moves."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 31,
+      "notes": "Deezer’s 44% AI-generated upload stat is a compelling metric for AI content flooding platforms; good SEO around AI music, content moderation, and fraud detection. Slight diversity penalty as Creative AI is in the 6-post window but not the last 4."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 28,
+      "notes": "Voyage is an interesting domain-specific platform for AI RPGs, illustrating verticalization of generative tools. Moderate news impact and decent SEO around AI games and NPCs, but narrower audience; Creative AI incurs the same small diversity penalty as other items in that bucket."
+    }
+  ]
+}

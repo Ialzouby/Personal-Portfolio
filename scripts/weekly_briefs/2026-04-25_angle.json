@@ -1,0 +1,27 @@
+{
+  "primary_query": "cpu vs gpu for ai inference",
+  "secondary_queries": [
+    "can ai inference run on cpus",
+    "cpu based ai inference vs gpu cost",
+    "arm graviton for ai workloads",
+    "best hardware for running ai agents",
+    "cpu gpu tradeoffs for large language models",
+    "cloud custom cpus for ai inference",
+    "optimize ai inference infrastructure costs",
+    "ai inference on aws graviton explained"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases",
+  "recommended_slug": "cpu-vs-gpu-for-ai-inference",
+  "outline_h2s": [
+    "Why AI Inference Hardware Is Different From Training",
+    "How GPUs and CPUs Handle AI Inference Workloads",
+    "When CPUs Are Enough for Running AI Models",
+    "When You Still Need GPUs for Inference",
+    "Arm and Cloud Custom CPUs for AI (e.g., AWS Graviton)",
+    "Cost and Energy Tradeoffs: CPUs vs GPUs at Scale",
+    "Architecting Infrastructure for AI Agents and LLM Apps",
+    "How to Choose CPU vs GPU for Your AI Use Case",
+    "Future Trends in AI Inference Hardware"
+  ]
+}

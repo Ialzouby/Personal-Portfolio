@@ -22,7 +22,8 @@
     "military ai ethics and safety safeguards",
     "multimodal foundation models explained",
     "ai robot taxes and public wealth funds",
-    "AI health assistants on ecommerce platforms"
+    "AI health assistants on ecommerce platforms",
+    "cpu vs gpu for ai inference"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -47,7 +48,8 @@
     "Military AI Ethics and Safety Safeguards: How Vendors Set Limits",
     "Multimodal Foundation Models Explained for Text, Speech and Video",
     "AI Robot Taxes and Public Wealth Funds: Economic Policy Explained",
-    "AI Health Assistants on Ecommerce Platforms: Benefits and Risks"
+    "AI Health Assistants on Ecommerce Platforms: Benefits and Risks",
+    "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -72,7 +74,8 @@
     "military-ai-ethics-safety-safeguards",
     "multimodal-foundation-models-explained",
     "ai-robot-taxes-public-wealth-funds",
-    "ai-health-assistants-ecommerce-platforms"
+    "ai-health-assistants-ecommerce-platforms",
+    "cpu-vs-gpu-for-ai-inference"
   ],
   "buckets": [
     "Robotics",
@@ -97,6 +100,7 @@
     "AI Ethics",
     "Models",
     "AI Ethics",
-    "Healthcare AI"
+    "Healthcare AI",
+    "Data/Infra"
   ]
 }
