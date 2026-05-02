@@ -1,0 +1,111 @@
+{
+  "week": "2026-05-02",
+  "events": [
+    {
+      "event": "OpenAI launches GPT-5.5, a more agentic general-purpose model, and rolls it out across ChatGPT and the API.",
+      "category": "Models",
+      "why_it_matters": "GPT-5.5 emphasizes tool use, multi-step planning, and autonomous task completion, pushing frontier models further toward agent-like behavior for coding, knowledge work, and software control. It raises the competitive bar for model capability and could shift expectations for how much work a single model can reliably handle end-to-end.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "title": "Introducing GPT‑5.5",
+          "date": "2026-04-23"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-what-languages-does-chatgpt-support",
+          "title": "ChatGPT — Release Notes (GPT‑5.5 in ChatGPT)",
+          "date": "2026-04-23"
+        },
+        {
+          "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/",
+          "title": "OpenAI releases GPT‑5.5, bringing company one step closer to an AI ‘super app’",
+          "date": "2026-04-23"
+        }
+      ]
+    },
+    {
+      "event": "Google begins rolling out its Gemini AI assistant to millions of vehicles with Google built‑in.",
+      "category": "Edge AI",
+      "why_it_matters": "Embedding a large-scale conversational assistant directly into in-car systems moves advanced AI from phones and the cloud into the vehicle environment, changing how drivers interact with navigation, media, and car controls. It illustrates how ‘edge’ deployments are becoming mainstream in automotive platforms and sets expectations that future cars will ship with powerful multimodal assistants by default.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+          "title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "event": "US hyperscale cloud and consumer tech firms raise 2026 capital expenditure plans, pushing AI-related capex toward $725 billion.",
+      "category": "Data/Infra",
+      "why_it_matters": "Meta, Alphabet, Microsoft, and Amazon collectively plan to spend hundreds of billions of dollars this year, largely on AI data centers and related infrastructure. That level of investment will accelerate deployment of GPUs, networking, and power-hungry facilities, entrenching a small set of companies as gatekeepers of large-scale AI compute and influencing energy, supply chains, and the economics of training and serving frontier models.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-04-30/us-big-tech-ratchets-up-ai-spending-past-700-billion-this-year",
+          "title": "US Big Tech Ratchets Up AI Spending Past $700 Billion This Year",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI and Microsoft renegotiate their partnership, replacing quasi‑exclusive model access with a time‑bounded IP license through 2032.",
+      "category": "Data/Infra",
+      "why_it_matters": "The revised agreement clarifies that Microsoft’s access to OpenAI models and IP is nonexclusive and time-limited, while Microsoft remains OpenAI’s primary cloud provider. This reduces legal uncertainty around OpenAI’s separate $50 billion deal with Amazon and signals a more multi-cloud, multi-partner infrastructure strategy for training and deployment of OpenAI models over the next several years.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/27/openai-ends-microsoft-legal-peril-over-its-50b-amazon-deal/",
+          "title": "OpenAI ends Microsoft legal peril over its $50B Amazon deal",
+          "date": "2026-04-27"
+        }
+      ]
+    },
+    {
+      "event": "Elon Musk testifies that xAI used distillation techniques on OpenAI models to help train its Grok model.",
+      "category": "AI Ethics",
+      "why_it_matters": "A major AI lab CEO publicly acknowledging that his company distilled another firm’s proprietary models into its own system underscores growing disputes over data and model use. It raises legal and ethical questions about whether prompting a competitor’s API to replicate capabilities is acceptable practice, and may influence future policy, licensing terms, and norms around model-to-model training.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/",
+          "title": "Elon Musk testifies that xAI trained Grok on OpenAI models",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "event": "Former DeepMind researcher David Silver’s new lab, Ineffable Intelligence, raises about $1.1 billion to pursue reinforcement‑learning‑based ‘superlearner’ AI systems.",
+      "category": "Models",
+      "why_it_matters": "The financing for a very new lab focused on reinforcement learning without heavy reliance on human data shows investors are backing alternatives to large language models trained mainly on internet text. If successful, such systems could change the balance between data‑hungry pretraining and more autonomous learning approaches, with implications for data governance and model generalization.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/27/deepminds-david-silver-just-raised-1-1b-to-build-an-ai-that-learns-without-human-data/",
+          "title": "DeepMind’s David Silver just raised $1.1B to build an AI that learns without human data",
+          "date": "2026-04-27"
+        }
+      ]
+    },
+    {
+      "event": "China’s DeepSeek unveils preview versions of its new flagship model V4, emphasizing lower cost but limited gains versus top US systems.",
+      "category": "Models",
+      "why_it_matters": "DeepSeek V4 aims to offer competitive capabilities at lower inference cost, adding pressure on model pricing and access, especially in China. Early assessments suggesting it does not significantly close the capability gap with leading US models highlight the persistent performance divide and the strategic importance of compute, data, and talent concentration in frontier AI development.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-04-24/deepseek-s-long-awaited-new-model-fails-to-narrow-us-lead-in-ai",
+          "title": "DeepSeek’s Long-Awaited New Model Fails to Narrow US Lead in AI",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "Tencent debuts a major upgrade to its Hunyuan family of foundation models, branded Hy3, for use across its consumer and developer products.",
+      "category": "Creative AI",
+      "why_it_matters": "Hy3 is pitched as Tencent’s most powerful foundation model so far, with improvements in reasoning and coding and integration into products like its chatbot, coding assistant, and messaging platforms. This expands access to domestic, general-purpose generative AI within China’s ecosystem and intensifies competition among large consumer platforms to control vertically integrated model stacks.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-04-23/tencent-unveils-ai-model-in-high-stakes-test-for-openai-hire",
+          "title": "Tencent Unveils AI Model in High-Stakes Test for OpenAI Hire",
+          "date": "2026-04-23"
+        }
+      ]
+    }
+  ]
+}

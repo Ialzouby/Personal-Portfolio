@@ -1,0 +1,28 @@
+{
+  "primary_query": "agentic gpt models explained",
+  "secondary_queries": [
+    "what are agentic ai models",
+    "how gpt agents work for coding",
+    "gpt tools vs ai agents",
+    "multi step planning in llms",
+    "autonomous task completion with chatgpt",
+    "best practices for using ai agents",
+    "risks of highly agentic language models",
+    "ai agents for knowledge work and software control"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Agentic GPT Models Explained: From Tool Use to AI Agents",
+  "recommended_slug": "agentic-gpt-models-explained",
+  "outline_h2s": [
+    "What People Mean by Agentic AI Models",
+    "How GPT‑Style Models Use Tools and APIs",
+    "Multi‑Step Planning: From Single Prompts to Full Workflows",
+    "Autonomous Task Completion for Coding and Knowledge Work",
+    "Design Patterns for Building GPT‑Powered Agents",
+    "Evaluation: Reliability, Failure Modes and Guardrails",
+    "Comparing Agentic GPT Models to Traditional Chatbots",
+    "Practical Use Cases in Software Control and Automation",
+    "Risks, Misuse Scenarios and Safety Considerations",
+    "How to Get Started Experimenting with Agentic GPT Systems"
+  ]
+}

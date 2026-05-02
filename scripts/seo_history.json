@@ -23,7 +23,8 @@
     "multimodal foundation models explained",
     "ai robot taxes and public wealth funds",
     "AI health assistants on ecommerce platforms",
-    "cpu vs gpu for ai inference"
+    "cpu vs gpu for ai inference",
+    "agentic gpt models explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -49,7 +50,8 @@
     "Multimodal Foundation Models Explained for Text, Speech and Video",
     "AI Robot Taxes and Public Wealth Funds: Economic Policy Explained",
     "AI Health Assistants on Ecommerce Platforms: Benefits and Risks",
-    "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases"
+    "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases",
+    "Agentic GPT Models Explained: From Tool Use to AI Agents"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -75,7 +77,8 @@
     "multimodal-foundation-models-explained",
     "ai-robot-taxes-public-wealth-funds",
     "ai-health-assistants-ecommerce-platforms",
-    "cpu-vs-gpu-for-ai-inference"
+    "cpu-vs-gpu-for-ai-inference",
+    "agentic-gpt-models-explained"
   ],
   "buckets": [
     "Robotics",
@@ -101,6 +104,7 @@
     "Models",
     "AI Ethics",
     "Healthcare AI",
-    "Data/Infra"
+    "Data/Infra",
+    "Models"
   ]
 }

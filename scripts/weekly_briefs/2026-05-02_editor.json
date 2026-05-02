@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "OpenAI’s GPT-5.5 launch is a frontier model release with massive user reach via ChatGPT and the API, introduces a clear directional shift toward agentic behavior, and will drive sustained search interest in capabilities, safety, and integration guides. Even after applying a diversity penalty for repeating the Models bucket, it still comfortably out-scores the other events.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 18,
+      "diversity_penalty": 6,
+      "final_score": 35,
+      "notes": "Major new frontier model from OpenAI with direct impact on millions of users and developers; strong ongoing SEO around ‘GPT-5.5’, benchmarks, use cases, and migration from older GPT versions. Models bucket has appeared 2 of last 8 and 2 of last 4 posts, triggering max penalty 6, but impact still dominates."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Gemini in millions of cars is a big step for embedded/edge assistants and automotive UX. Solid SEO for queries on in-car AI assistants, privacy, and OEM integrations, but narrower audience than frontier model releases."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 20,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Huge capex figures reshape compute, energy, and supply chains, but story is more macro/finance. Good explainer potential on AI infrastructure economics. Data/Infra appears twice in the last 8 and once in last 4, but three appearances in last 6 overall, so max 6 penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Microsoft–OpenAI renegotiation affects cloud exclusivity, multi-cloud training, and legal clarity. Strong policy/infra angle but narrower general readership appeal than capex story; same Data/Infra penalty profile as event #2."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Public admission of model distillation from a competitor highlights contentious legal/ethical terrain around model-to-model training. Strong evergreen SEO for questions about ‘is training on other models legal?’. However, AI Ethics has been used very frequently in the recent list (3+ times in last 6), incurring max penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "New lab with $1.1B focused on RL-based ‘superlearners’ is noteworthy, but currently more speculative. Good SEO on ‘RL vs LLM’ explainers and alternative architectures; impact is forward-looking and niche compared with a major production model launch."
+    },
+    {
+      "index": 6,
+      "bucket": "Models",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 23,
+      "notes": "DeepSeek V4 matters for China’s AI competition and pricing pressure, but the story is partly that it underwhelms relative to US frontier models. Moderate SEO appeal for regional AI competitiveness and cost comparisons."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Tencent’s Hy3 expands a domestic general-purpose model across massive consumer platforms in China. Strong regional impact and decent SEO around Chinese models and ecosystem comparisons, but global impact is somewhat less than a new GPT flagship release."
+    }
+  ]
+}
