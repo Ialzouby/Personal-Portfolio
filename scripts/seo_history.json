@@ -24,7 +24,8 @@
     "ai robot taxes and public wealth funds",
     "AI health assistants on ecommerce platforms",
     "cpu vs gpu for ai inference",
-    "agentic gpt models explained"
+    "agentic gpt models explained",
+    "ai data center infrastructure strategy"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -51,7 +52,8 @@
     "AI Robot Taxes and Public Wealth Funds: Economic Policy Explained",
     "AI Health Assistants on Ecommerce Platforms: Benefits and Risks",
     "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases",
-    "Agentic GPT Models Explained: From Tool Use to AI Agents"
+    "Agentic GPT Models Explained: From Tool Use to AI Agents",
+    "AI Data Center Infrastructure Strategy: How Compute Gets Built"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -78,7 +80,8 @@
     "ai-robot-taxes-public-wealth-funds",
     "ai-health-assistants-ecommerce-platforms",
     "cpu-vs-gpu-for-ai-inference",
-    "agentic-gpt-models-explained"
+    "agentic-gpt-models-explained",
+    "ai-data-center-infrastructure-strategy"
   ],
   "buckets": [
     "Robotics",
@@ -105,6 +108,7 @@
     "AI Ethics",
     "Healthcare AI",
     "Data/Infra",
-    "Models"
+    "Models",
+    "Data/Infra"
   ]
 }

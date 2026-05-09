@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai data center infrastructure strategy",
+  "secondary_queries": [
+    "how gpu makers invest in data centers",
+    "ai compute infrastructure build out explained",
+    "nvidia data center ecosystem strategy",
+    "ai infrastructure partnerships with colocation providers",
+    "role of power and cooling in ai data centers",
+    "how hyperscalers secure ai compute capacity",
+    "ai data center investment models",
+    "planning capacity for large scale ai training"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Data Center Infrastructure Strategy: How Compute Gets Built",
+  "recommended_slug": "ai-data-center-infrastructure-strategy",
+  "outline_h2s": [
+    "What Makes an AI Data Center Different From Traditional Cloud",
+    "Key Building Blocks of AI Compute Infrastructure",
+    "Why GPU Vendors Are Moving Upstream Into Data Centers",
+    "How Partnerships Between Chip Makers and Developers Work",
+    "Power, Cooling and Location Constraints for AI Capacity",
+    "Financing Models and Investment Structures for AI Build‑Out",
+    "How Hyperscalers and Enterprises Secure Long‑Term AI Compute",
+    "Risks, Bottlenecks and Tradeoffs in Scaling AI Infrastructure",
+    "How to Think About AI Data Center Strategy for Your Organization",
+    "Future Trends in Global AI Compute Infrastructure"
+  ]
+}

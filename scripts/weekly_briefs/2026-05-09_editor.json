@@ -1,0 +1,78 @@
+{
+  "winner_index": 4,
+  "winner_reason": "Nvidia’s $2.1B IREN investment is a high-impact, well-sourced inflection point in AI infrastructure build-out with strong ongoing SEO value around AI data centers and compute capacity. Among the Data/Infra items, it’s the most substantial strategic move, and despite a diversity penalty it still scores highest overall.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Major strategic shift by top model labs toward enterprise services; strong industry signal, but models bucket is heavily used in recent posts, so large diversity penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Interesting full-stack robotics play with hardware+foundation model; good for explainers on robotics FMs but still niche compared to infra and Pentagon/DoD stories."
+    },
+    {
+      "index": 2,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Gemini in cars touches millions of users and raises safety/UX/edge-AI questions; solid evergreen SEO around ‘AI in cars’ and ‘in-car assistants,’ but impact still a step below Nvidia’s infra moves."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "DoD expansion of classified AI use is geopolitically important and raises governance issues; strong ethics/policy angle but category is heavily used recently, so max penalty applies."
+    },
+    {
+      "index": 4,
+      "bucket": "Data/Infra",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 34,
+      "notes": "Large, concrete capital commitment that reinforces Nvidia as central orchestrator of AI data-center build-out. Strong SEO around ‘AI data centers,’ ‘Nvidia investment,’ ‘compute capacity’ and long tail infra questions; high enough impact that even with heavy repetition in recent posts, it nearly tops the list and edges out others on strategic significance."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 20,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Strategic fiber partnership is important for networking bottlenecks but is more technical/secondary than the IREN data-center deal; similar SEO surface to #4 but slightly less impactful."
+    },
+    {
+      "index": 6,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Good security/abuse-mitigation story with practical SEO around account security and hardware keys for AI tools; less macro-impactful than Pentagon or Nvidia infra moves, and ethics bucket is overused."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Big AI-chip IPO with strong public-market and alternative-architecture angle; good for SEO on ‘AI IPO,’ ‘Cerebras vs Nvidia,’ etc. Still somewhat less strategic than Nvidia directly funding infra build-out."
+    }
+  ]
+}

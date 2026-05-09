@@ -1,0 +1,121 @@
+{
+  "week": "2026-05-09",
+  "events": [
+    {
+      "event": "Anthropic and OpenAI each pursue joint ventures to sell enterprise AI services",
+      "category": "Models",
+      "why_it_matters": "Two of the largest frontier-model developers are moving beyond pure model/API sales into dedicated vehicles focused on enterprise AI deployment and commercialization. This signals continued consolidation of the high‑end model market around a few well-capitalized players and could shape how large organizations buy and integrate general-purpose AI systems over the next few years.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/04/anthropic-and-openai-are-both-launching-joint-ventures-for-enterprise-ai-services/",
+          "title": "Anthropic and OpenAI are both launching joint ventures for enterprise AI services",
+          "date": "2026-05-04"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-06/nvidia-is-facing-more-competition-and-it-s-spooking-investors",
+          "title": "Nvidia Stock Falls Behind as Big Tech Rivals Enter Its Territory",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "event": "Genesis AI debuts GENE-26.5, a 'full‑stack' robotics foundation model paired with custom robotic hands",
+      "category": "Robotics",
+      "why_it_matters": "The startup is combining a generalist robotics model with in‑house hardware, rather than treating the model and robot as separate products. This mirrors trends in other domains where tight integration of AI models and custom hardware has driven performance gains, and it underscores investor interest in large‑scale foundation models for physical manipulation tasks.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/06/khosla-backed-robotics-startup-genesis-ai-has-gone-full-stack-demo-shows/",
+          "title": "Khosla-backed robotics startup Genesis AI has gone full stack, demo shows",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "event": "Google starts rolling out Gemini AI assistant in cars with Google built‑in",
+      "category": "Edge AI",
+      "why_it_matters": "By integrating its Gemini assistant directly into in‑car systems across millions of vehicles, Google is pushing large‑scale conversational AI closer to the edge, in a latency‑ and safety‑sensitive environment. This deployment is a notable step in bringing generative models into embedded contexts where connectivity, UI constraints, and driver distraction all have to be tightly managed.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
+          "title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "event": "Pentagon expands classified-network use of advanced AI systems from major cloud and chip providers",
+      "category": "AI Ethics",
+      "why_it_matters": "The U.S. Department of Defense has signed new agreements with Nvidia, Microsoft, Amazon and others to deploy their AI tools on classified networks for \"lawful operational use.\" This deepens the link between frontier AI capabilities and military applications, raising ongoing governance questions around oversight, dual‑use risks, and how far commercial providers should go in tailoring systems for defense contexts.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-01/nvidia-microsoft-aws-expanding-classified-military-ai-use",
+          "title": "Microsoft, Amazon Hand Pentagon More Control Over AI Systems",
+          "date": "2026-05-01"
+        },
+        {
+          "url": "https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/",
+          "title": "The biggest AI stories of the year (so far)",
+          "date": "2026-03-13"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia agrees to invest up to $2.1 billion in data center developer IREN to accelerate AI infrastructure build‑out",
+      "category": "Data/Infra",
+      "why_it_matters": "The deal gives Nvidia rights to purchase up to 30 million IREN shares and underpins a broader partnership to deploy \"billions of dollars\" of AI computing capacity. It shows Nvidia continuing to move upstream into data‑center build‑out and power access, reinforcing its role not just as a chip supplier but as a central orchestrator of global AI compute infrastructure.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-07/nvidia-to-invest-up-to-2-1-billion-in-data-center-firm-iren",
+          "title": "Nvidia to Invest Up to $2.1 Billion in Data Center Firm IREN",
+          "date": "2026-05-07"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia acquires $500M in rights for Corning stock as part of a strategic AI data‑center fiber partnership",
+      "category": "Data/Infra",
+      "why_it_matters": "By securing equity-linked rights in Corning and committing to a partnership around optical fiber, Nvidia is trying to de‑risk a key supply‑chain bottleneck for AI data centers—high‑bandwidth connectivity between accelerators. The move highlights how scaling AI increasingly depends on investments not only in chips but also in supporting components like networking and fiber.",
+      "sources": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-05-06/nvidia-buys-500-million-of-rights-for-stock-in-corning",
+          "title": "Nvidia Buys $500 Million of Rights for Stock in Corning",
+          "date": "2026-05-06"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI launches Advanced Account Security program for ChatGPT users in partnership with Yubico",
+      "category": "AI Ethics",
+      "why_it_matters": "OpenAI is introducing optional high‑assurance security features, including support for co‑branded YubiKey hardware tokens, aimed initially at high‑risk users such as journalists and political actors. This reflects growing recognition that large‑scale AI services need stronger account protections to mitigate phishing, account takeover, and abuse risks, especially when systems may be used for sensitive or politically exposed work.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/",
+          "title": "OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico",
+          "date": "2026-04-30"
+        },
+        {
+          "url": "https://openai.com",
+          "title": "OpenAI (company site, security and product announcements)",
+          "date": "2026-04-30"
+        }
+      ]
+    },
+    {
+      "event": "Cerebras moves toward one of 2026’s largest tech IPOs on the back of AI chip demand and OpenAI ties",
+      "category": "Data/Infra",
+      "why_it_matters": "Cerebras, a maker of wafer‑scale AI accelerators closely partnered with OpenAI, filed plans to raise up to $3.5 billion at a valuation around $26.6 billion. The IPO would be a major test of public‑market appetite for specialized AI hardware beyond Nvidia and underscores investor belief that alternative compute architectures will be needed to sustain model training and inference at frontier scales.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/",
+          "title": "OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO",
+          "date": "2026-05-04"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "NVIDIA Blog (context on AI compute ecosystem and partners)",
+          "date": "2026-05-06"
+        }
+      ]
+    }
+  ]
+}
