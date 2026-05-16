@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai data center power requirements",
+  "secondary_queries": [
+    "how much power do ai data centers use",
+    "ai compute energy consumption explained",
+    "hyperscale ai data center design basics",
+    "power and cooling for ai training clusters",
+    "ai data center capacity planning",
+    "gpu clusters electricity and infrastructure",
+    "renewable energy for ai data centers",
+    "ai model training energy cost"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Data Center Power Requirements: Energy and Scale Explained",
+  "recommended_slug": "ai-data-center-power-requirements",
+  "outline_h2s": [
+    "What Makes AI Data Centers Different From Traditional Cloud",
+    "How AI Compute Translates Into Power Requirements",
+    "Key Components Driving Energy Use in AI Workloads",
+    "Planning Power, Cooling and Space for AI Training Clusters",
+    "Energy Mix, Grid Constraints and Renewable Integration",
+    "Cost Structure: Capex, Opex and Electricity for AI Compute",
+    "Design Patterns for Hyperscale AI Data Centers",
+    "Efficiency Strategies: Hardware, Software and Scheduling",
+    "Risks, Bottlenecks and Supply Chain Considerations",
+    "How AI Power Requirements Will Evolve With New Models"
+  ]
+}

@@ -25,7 +25,8 @@
     "AI health assistants on ecommerce platforms",
     "cpu vs gpu for ai inference",
     "agentic gpt models explained",
-    "ai data center infrastructure strategy"
+    "ai data center infrastructure strategy",
+    "ai data center power requirements"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -53,7 +54,8 @@
     "AI Health Assistants on Ecommerce Platforms: Benefits and Risks",
     "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases",
     "Agentic GPT Models Explained: From Tool Use to AI Agents",
-    "AI Data Center Infrastructure Strategy: How Compute Gets Built"
+    "AI Data Center Infrastructure Strategy: How Compute Gets Built",
+    "AI Data Center Power Requirements: Energy and Scale Explained"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -81,7 +83,8 @@
     "ai-health-assistants-ecommerce-platforms",
     "cpu-vs-gpu-for-ai-inference",
     "agentic-gpt-models-explained",
-    "ai-data-center-infrastructure-strategy"
+    "ai-data-center-infrastructure-strategy",
+    "ai-data-center-power-requirements"
   ],
   "buckets": [
     "Robotics",
@@ -109,6 +112,7 @@
     "Healthcare AI",
     "Data/Infra",
     "Models",
+    "Data/Infra",
     "Data/Infra"
   ]
 }

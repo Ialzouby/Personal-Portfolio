@@ -1,0 +1,116 @@
+{
+  "week": "2026-05-16",
+  "events": [
+    {
+      "event": "OpenAI launches new GPT‑Realtime voice models for live reasoning, translation, and transcription",
+      "category": "Models",
+      "why_it_matters": "These models move AI closer to real-time, conversational assistants that can listen, reason, and act as people speak. They lower latency for speech interfaces and expand high-quality translation and transcription to many languages, which is important for accessibility and for integrating AI into call centers, productivity tools, and consumer devices.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+          "title": "Advancing voice intelligence with new models in the API",
+          "date": "2026-05-07"
+        }
+      ]
+    },
+    {
+      "event": "GPT‑5.5 Instant becomes the default ChatGPT model",
+      "category": "Models",
+      "why_it_matters": "Making GPT‑5.5 Instant the default model means hundreds of millions of users get faster, stronger baseline capabilities without having to manually select a newer model. This shifts typical performance for everyday tasks—writing, coding, and analysis—and raises the floor for what users globally can expect from free or entry‑tier AI tools.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-release-notes",
+          "title": "ChatGPT — Release Notes",
+          "date": "2026-05-12"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "title": "Introducing GPT‑5.5",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "Medicare’s ACCESS pilot explicitly tests AI‑driven care models at federal scale",
+      "category": "Healthcare AI",
+      "why_it_matters": "The ACCESS program allows CMS to test care models that assume AI will be used for coordination and monitoring of high‑risk patients, rather than treating AI as an add‑on. This could accelerate mainstream reimbursement for AI‑supported clinical workflows and remote care, which is often a gating factor for real-world adoption in U.S. healthcare.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
+          "title": "Medicare's new payment model is built for AI, and most of the tech world has no idea",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI details large‑scale compute build‑out for the 'Intelligence Age'",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI outlines how it is securing around 10 GW of AI compute capacity in the U.S. by 2029 and describes new financing and partnership structures for hyperscale data centers. This signals how quickly frontier‑model training and deployment are scaling, and it sets expectations for energy use, supply‑chain planning, and the economics of future AI models.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+          "title": "Building the compute infrastructure for the Intelligence Age",
+          "date": "2026-04-29"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "title": "Introducing GPT‑5.5",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "New OpenAI safety and release‑notes updates tighten guardrails and deprecate older models",
+      "category": "AI Ethics",
+      "why_it_matters": "OpenAI’s May and March release notes show ongoing changes to what models are available, how teen safety is handled, and how cyber‑risk safeguards are applied. This reflects a trend toward more conservative deployment of powerful models, especially for younger users and sensitive use cases, and shows how governance is being implemented at the product level.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "title": "ChatGPT — Release Notes",
+          "date": "2026-05-15"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+          "title": "Model Release Notes",
+          "date": "2026-03-16"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes guidance on AI’s role in healthcare and patient safety",
+      "category": "Healthcare AI",
+      "why_it_matters": "OpenAI’s \"Keeping Patients First\" document summarizes observed healthcare use patterns for ChatGPT and stresses that AI should augment, not replace, clinical care. It highlights governance expectations, transparency requirements, and risk mitigation strategies for using general‑purpose models in health contexts, influencing how health systems and regulators think about AI assistance.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/keeping-patients-first.pdf",
+          "title": "Keeping Patients First: Responsible AI Use in Healthcare",
+          "date": "2026-04-24"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI explores international security and military implications of advanced AI",
+      "category": "AI Ethics",
+      "why_it_matters": "A recent OpenAI paper analyzes how general‑purpose AI systems could affect deterrence, escalation risks, and conflict dynamics, and discusses policy options for managing those risks. This type of work feeds into emerging norms around military and dual‑use applications of frontier models and may shape future export controls and alliance‑level agreements.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/international-security.pdf",
+          "title": "AI and International Security",
+          "date": "2026-02-06"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI positions GPT‑Rosalind as a specialized model for life‑science workflows",
+      "category": "Healthcare AI",
+      "why_it_matters": "GPT‑Rosalind is tuned for tasks like protocol design, sequence analysis, and literature triage and is reported to outperform a general frontier model on many lab benchmarks. While still in a research‑preview context, this points toward domain‑specific models becoming central tools for biology and drug discovery teams.",
+      "sources": [
+        {
+          "url": "https://openai.com/jv-ID/index/introducing-gpt-rosalind/",
+          "title": "Introducing GPT‑Rosalind for life sciences research",
+          "date": "2026-04-16"
+        }
+      ]
+    }
+  ]
+}

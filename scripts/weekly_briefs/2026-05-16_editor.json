@@ -1,0 +1,78 @@
+{
+  "winner_index": 3,
+  "winner_reason": "The compute build-out shapes the entire AI ecosystem, has strong long-term news and SEO value around infrastructure, energy, and scaling, and modestly avoids the heaviest diversity penalty compared with more frequently used recent buckets.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Realtime voice models are significant for assistants, translation, and accessibility, but are still one feature slice within OpenAI’s stack. Strong product and developer interest; good evergreen SEO around 'real-time AI voice', latency, and speech translation. However, 'Models' has been used 2 of last 8 and 1 of last 4; combined with overall repetition across Models/Data/Infra, it should incur the maximum diversity penalty of 6."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Defaulting GPT-5.5 Instant for ChatGPT affects hundreds of millions of users, raising global baseline capability—high impact. Strong ongoing search interest around 'GPT-5.5', 'default ChatGPT model', comparisons, and migration guidance. News impact ≥22 triggers override, capping diversity penalty at 2 despite 'Models' repetition. Nonetheless, it narrowly loses to the infra story when conservatively scoring both dimensions."
+    },
+    {
+      "index": 2,
+      "bucket": "AI in Healthcare",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Federal-scale AI care models and reimbursement via Medicare ACCESS are very important for U.S. healthcare adoption but more niche outside policy and health-tech. Solid SEO around 'Medicare AI payment model', 'CMS ACCESS pilot', and 'AI reimbursement', but narrower audience. Healthcare AI appeared recently and multiple times overall, so apply a mid–high diversity penalty of 4."
+    },
+    {
+      "index": 3,
+      "bucket": "Data/Infra",
+      "news_impact": 24,
+      "seo_potential": 18,
+      "diversity_penalty": 6,
+      "final_score": 36,
+      "notes": "A 10 GW compute build-out with novel financing and infra partnerships is foundational for the entire 'Intelligence Age', influencing energy, supply chains, and economics of frontier models—very high systemic impact, though less immediately visible to end-users than a default model change. Deep, evergreen SEO potential around 'AI data centers', 'AI energy use', 'hyperscale compute', and OpenAI infra strategy. Data/Infra appears 3+ times in the last 6 posts (and is the most recent bucket), so it takes the maximum diversity penalty of 6, yet still ties for top score due to strong fundamentals."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Incremental but meaningful shift in OpenAI guardrails, teen safety, and model availability. Good policy and governance interest but less mass-market impact than infrastructure or default-model changes. SEO around 'OpenAI safety changes', 'model deprecations', and 'teen safety policies' is moderate and time-sensitive. AI Ethics has been used repeatedly in the recent run, so maximum diversity penalty applies."
+    },
+    {
+      "index": 5,
+      "bucket": "AI in Healthcare",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "The 'Keeping Patients First' guidance shapes norms for health systems but is more advisory than structural (no new law/reimbursement). Strong evergreen SEO for 'responsible AI in healthcare', 'ChatGPT in clinical workflows', and governance checklists. Healthcare AI bucket has multiple recent uses, so a diversity penalty of 4 is warranted."
+    },
+    {
+      "index": 6,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "International security implications of AI are strategically important, potentially influencing export controls and military norms, but the paper is more conceptual and long-horizon than immediate. Good SEO for 'AI and international security', 'AI deterrence', and 'military AI policy', but domain is niche. AI Ethics repetition leads to maximum diversity penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI in Healthcare",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 4,
+      "final_score": 31,
+      "notes": "GPT-Rosalind advances domain-specific AI in life sciences and could be highly impactful for labs and drug discovery, though still research-preview and narrower audience. Strong ongoing SEO for 'AI in drug discovery', 'GPT-Rosalind benchmarks', and 'AI for protocol design'. Healthcare AI repetition calls for a diversity penalty of 4."
+    }
+  ]
+}
