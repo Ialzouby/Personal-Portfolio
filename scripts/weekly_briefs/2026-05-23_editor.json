@@ -1,0 +1,78 @@
+{
+  "winner_index": 1,
+  "winner_reason": "Gemini Spark embodies a major platform shift toward persistent personal AI agents embedded in everyday cloud services (Gmail, calendar, tasks). It has strong mainstream impact potential, excellent evergreen SEO value around \"AI agents\" and \"persistent assistants,\" and sits in a relatively unused bucket (Edge AI) compared with our recent focus on models/data/ethics.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 14,
+      "diversity_penalty": 2,
+      "final_score": 34,
+      "notes": "High-impact Google frontier/agentic model with strong developer interest. Good SEO around benchmarks, agents, and low-latency coding. But the Models bucket has appeared twice in the last 8 posts and is adjacent to our recent emphasis on core model news; modest penalty applied despite the override cap."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 39,
+      "notes": "Persistent, cloud‑resident personal agent integrated with Gmail and broader Google ecosystem is a step-change in how agents touch consumer life. Strong narrative around 24/7 agents, privacy, autonomy, and productivity. Excellent SEO for explainer content on persistent agents, account‑level automation, and future of personal AI. Edge/agentic assistant bucket not recently used, so no diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Turning Gemini into a central AI hub with a Daily Brief and video model is notable for assistant UX and multimodality, but more incremental than a brand‑new agent paradigm. Solid SEO around AI productivity workflows and multimodal assistants. Data/Infra has been heavily used (3+ in last 6), so maximum diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Stable Audio 3.0 pushes generative music length/quality and offers open-weight models. Strong for niche but active music/creator communities and technical readership. Good SEO for \"AI music generators\" and \"6‑minute song\" explainer/tuts. Creative AI is underused recently, so no penalty, but overall impact is narrower than persistent personal agents."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 15,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 22,
+      "notes": "Compelling culture/ethics story on AI authorship norms and verification in literature. Decent SEO around \"AI in writing contests\" and \"authorship rules,\" but more think‑piece than broad technical or product impact. AI Ethics has been used repeatedly (3+ in last 6), triggering maximum diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 34,
+      "notes": "OpenAI’s new default ChatGPT model has huge reach; improvements in hallucinations and technical benchmarks are meaningful. Strong SEO around \"GPT‑5.5,\" default model changes, and reliability. However, model‑release coverage is becoming crowded and we’ve hit adjacent buckets recently, so a modest diversity penalty applies."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Antigravity 2.0 is important for developers building agentic workflows and ties directly to the Gemini 3.5 Flash story. Strong technical SEO around \"agent orchestration,\" \"CLI tools,\" and workflow automation. But it’s infra‑heavy and more narrow in audience; Data/Infra is also overrepresented, so it takes the max penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Unionization at DeepMind around military AI is a notable labor and ethics milestone. Solid for policy/ethics readers and medium‑term SEO around \"AI worker organizing\" and \"military AI ethics.\" However, it’s less directly practical/technical for the broader AI audience and falls into our already overused AI Ethics bucket, incurring the max penalty."
+    }
+  ]
+}

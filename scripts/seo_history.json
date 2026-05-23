@@ -26,7 +26,8 @@
     "cpu vs gpu for ai inference",
     "agentic gpt models explained",
     "ai data center infrastructure strategy",
-    "ai data center power requirements"
+    "ai data center power requirements",
+    "persistent ai agents for gmail"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -55,7 +56,8 @@
     "CPU vs GPU for AI Inference: Costs, Tradeoffs and Use Cases",
     "Agentic GPT Models Explained: From Tool Use to AI Agents",
     "AI Data Center Infrastructure Strategy: How Compute Gets Built",
-    "AI Data Center Power Requirements: Energy and Scale Explained"
+    "AI Data Center Power Requirements: Energy and Scale Explained",
+    "Persistent AI Agents for Gmail: How Always‑On Assistants Work"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -84,7 +86,8 @@
     "cpu-vs-gpu-for-ai-inference",
     "agentic-gpt-models-explained",
     "ai-data-center-infrastructure-strategy",
-    "ai-data-center-power-requirements"
+    "ai-data-center-power-requirements",
+    "persistent-ai-agents-for-gmail"
   ],
   "buckets": [
     "Robotics",
@@ -113,6 +116,7 @@
     "Data/Infra",
     "Models",
     "Data/Infra",
-    "Data/Infra"
+    "Data/Infra",
+    "Edge AI"
   ]
 }

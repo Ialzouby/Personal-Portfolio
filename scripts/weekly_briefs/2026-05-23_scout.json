@@ -1,0 +1,121 @@
+{
+  "week": "2026-05-23",
+  "events": [
+    {
+      "event": "Google launches Gemini 3.5 Flash, a new agent-focused AI model",
+      "category": "Models",
+      "why_it_matters": "Gemini 3.5 Flash is optimized for low-latency coding and autonomous agent workflows and reportedly outperforms Google’s prior frontier model on many benchmarks, signaling a strategic shift from simple chatbots toward AI systems that can plan and execute multi-step tasks with limited supervision.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+          "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+          "date": "2026-05-19"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/",
+          "title": "Google launches Antigravity 2.0 with an updated desktop app and CLI tool at IO 2026",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "Google introduces Gemini Spark, a persistent personal AI agent tied to Gmail and the cloud",
+      "category": "Edge AI",
+      "why_it_matters": "Gemini Spark runs as a long-lived cloud agent that can access Gmail and other Google services to perform multi-hour or multi-day tasks without needing the user’s device to stay on, illustrating how major platforms are operationalizing persistent AI agents that act on users’ behalf across their digital lives.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/",
+          "title": "Google introduces Gemini Spark, a 24/7 agentic assistant with Gmail integration",
+          "date": "2026-05-19"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/",
+          "title": "Google updates its Gemini app to take on ChatGPT and Claude at IO 2026",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "Google overhauls its Gemini app with Daily Brief and integrated video model Gemini Omni",
+      "category": "Data/Infra",
+      "why_it_matters": "The Gemini app is being turned into a central AI hub that can pull from a user’s inbox, calendar, and tasks to produce a prioritized Daily Brief and can invoke a new Gemini Omni video model, showing how consumer assistants are increasingly orchestrating data across services with built-in multimodal generation.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/19/google-updates-its-gemini-app-to-take-on-chatgpt-and-claude-at-io-2026/",
+          "title": "Google updates its Gemini app to take on ChatGPT and Claude at IO 2026",
+          "date": "2026-05-19"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+          "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "Stability AI releases Stable Audio 3.0, an audio model family capable of 6+ minute music tracks",
+      "category": "Creative AI",
+      "why_it_matters": "Stable Audio 3.0 introduces four audio models, with the larger ones generating structured musical compositions over six minutes long and the smaller ones targeting on-device sound and music generation, advancing generative music quality and length while also making smaller open-weight models available for broader experimentation.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/20/stability-ai-release-a-new-audio-model-that-can-create-six-minute-songs/",
+          "title": "Stability AI releases a new audio model that can create six-minute songs",
+          "date": "2026-05-20"
+        }
+      ]
+    },
+    {
+      "event": "Literary prize faces multiple allegations of AI-assisted submissions among regional winners",
+      "category": "AI Ethics",
+      "why_it_matters": "Several regional winners of the 2026 Commonwealth Short Story Prize have been accused by readers and writers of relying on generative AI, while organizers note that the current rules only require entries to be original and do not mention AI, highlighting how cultural institutions are struggling to define authorship norms and verification practices in the era of accessible text generators.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/commonwealth-short-story-prize-ai-allegations/",
+          "title": "Literary Prizewinners Are Facing AI Allegations. It Feels Like the New Normal",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI makes GPT-5.5 Instant the default ChatGPT model with improved accuracy on technical benchmarks",
+      "category": "Models",
+      "why_it_matters": "GPT-5.5 Instant replaces GPT-5.3 Instant as ChatGPT’s default model, with OpenAI reporting lower hallucination rates in sensitive domains and higher scores on math and multimodal benchmarks while maintaining low latency, indicating a focus on reliability and everyday usability versus purely scaling raw model size.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/05/openai-releases-gpt-5-5-instant-a-new-default-model-for-chatgpt/",
+          "title": "OpenAI releases GPT-5.5 Instant, a new default model for ChatGPT",
+          "date": "2026-05-05"
+        }
+      ]
+    },
+    {
+      "event": "Google ships Antigravity 2.0 for building and deploying agentic workflows on Gemini models",
+      "category": "Data/Infra",
+      "why_it_matters": "Antigravity 2.0 adds an updated desktop app and CLI for orchestrating AI agents built on Gemini, and Google notes that Gemini 3.5 Flash itself was co-developed using this stack, underscoring how tooling for agent development and deployment is becoming a core part of major AI providers’ platforms.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/",
+          "title": "Google launches Antigravity 2.0 with an updated desktop app and CLI tool at IO 2026",
+          "date": "2026-05-19"
+        },
+        {
+          "url": "https://techcrunch.com/2026/05/19/with-gemini-3-5-flash-google-bets-its-next-ai-wave-on-agents-not-chatbots/",
+          "title": "With Gemini 3.5 Flash, Google bets its next AI wave on agents, not chatbots",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "Workers at Google DeepMind vote to unionize in response to concerns over military AI contracts",
+      "category": "AI Ethics",
+      "why_it_matters": "UK-based employees at Google DeepMind have voted to unionize, citing worries about the lab providing AI systems to the US and Israeli militaries and arguing this conflicts with Google’s stated AI ethics commitments, indicating growing internal labor pressure on how frontier AI models are used in defense contexts.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/google-deepmind-workers-vote-to-unionize-over-military-ai-deals",
+          "title": "Google DeepMind Workers Vote to Unionize Over Military AI Deals",
+          "date": "2026-05-05"
+        }
+      ]
+    }
+  ]
+}
