@@ -1,0 +1,106 @@
+{
+  "week": "2026-06-06",
+  "events": [
+    {
+      "event": "OpenAI ships major new capabilities for GPT‑Rosalind, a frontier model specialized for life sciences R&D",
+      "category": "Models",
+      "why_it_matters": "The June 3 update to GPT‑Rosalind combines frontier general-purpose capabilities (from GPT‑5.5) with stronger domain expertise in medicinal chemistry, genomics, and experimental design. This tight coupling of powerful general models with specialized scientific reasoning is an important step toward using foundation models as core tools in drug discovery workflows at enterprise scale, potentially shortening early-stage R&D cycles and changing how biopharma teams design and interpret experiments.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "title": "Introducing new capabilities to GPT‑Rosalind",
+          "date": "2026-06-03"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-rosalind-for-life-sciences-research/",
+          "title": "Introducing GPT‑Rosalind for life sciences research",
+          "date": "2026-04-16"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI frontier models, including GPT‑5.5 and specialized Codex, become natively available on AWS",
+      "category": "Data/Infra",
+      "why_it_matters": "On June 1, OpenAI and AWS announced that OpenAI’s frontier models and Codex are now accessible through AWS services, including Amazon Bedrock. This moves powerful proprietary models closer to existing enterprise data and governance controls, lowering integration friction. It also signals tighter coupling between leading foundation models and large-scale cloud platforms, which will likely shape where and how enterprises deploy AI workloads.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/",
+          "title": "OpenAI frontier models and Codex are now available on AWS",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI updates GPT‑5.5 Instant in ChatGPT and sets retirement dates for older models GPT‑4.5 and o3",
+      "category": "Models",
+      "why_it_matters": "OpenAI’s May 28 ChatGPT release notes, updated within the past week, describe improvements to GPT‑5.5 Instant’s response quality and changes to how coding and writing features are surfaced. The same notes set specific retirement dates for GPT‑4.5 and OpenAI o3 in ChatGPT. This illustrates how quickly model lineups are evolving and how providers are consolidating around a smaller set of high-capability models, which affects application maintenance, evaluation baselines, and long-term model dependency planning.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-network-recommendations-for-chatgpt-errors",
+          "title": "ChatGPT — Release Notes",
+          "date": "2026-05-28"
+        }
+      ]
+    },
+    {
+      "event": "Hello Robot’s latest Stretch home robot highlights a pragmatic direction for assistive robotics",
+      "category": "Robotics",
+      "why_it_matters": "A June 4 TechCrunch feature on Hello Robot’s Stretch platform emphasizes a design focused on practical home assistance tasks rather than general humanoid autonomy. This adds to evidence that near‑term domestic robotics may succeed first through constrained, task-oriented systems integrated with modern perception and language models, rather than full humanoid replacements. It could influence how capital and talent flow between flashy humanoid projects and more targeted assistive platforms.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/04/is-silicon-valley-ready-to-put-robots-in-peoples-homes-hello-robot-is/",
+          "title": "Is Silicon Valley ready to put robots in people’s homes? Hello Robot is.",
+          "date": "2026-06-04"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia unveils RTX Spark, a PC 'superchip' aimed at running local AI agents on upcoming Windows laptops and desktops",
+      "category": "Edge AI",
+      "why_it_matters": "At Computex on June 1, Nvidia announced RTX Spark, a CPU designed to deliver around 1 petaflop of AI performance in consumer and enterprise PCs. The chip is built to run AI agents locally with sandboxing co‑designed with Microsoft. This indicates an acceleration of AI capabilities at the device level, where laptops and desktops are expected to host persistent agents on local hardware rather than relying solely on cloud inference.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/",
+          "title": "Nvidia chases $200B CPU market with AI agent PCs from Microsoft, Dell, and HP",
+          "date": "2026-06-01"
+        }
+      ]
+    },
+    {
+      "event": "Meta reportedly works on an AI pendant as a new form factor for always‑on assistants",
+      "category": "Edge AI",
+      "why_it_matters": "A May 30 report, still in active discussion this week, describes Meta’s exploration of a wearable AI pendant building on its acquisition of Limitless. Moving assistant functionality into body‑worn hardware points to a broader trend in edge AI: shifting from phone‑centric assistants to ambient, multimodal devices that can continuously capture and process context. This raises new questions about energy‑efficient on‑device models, privacy, and acceptable levels of passive sensing in public spaces.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/",
+          "title": "Meta is reportedly developing an AI pendant",
+          "date": "2026-05-30"
+        }
+      ]
+    },
+    {
+      "event": "Dell and Hugging Face expand Dell Enterprise Hub with dozens of new optimized open and proprietary models for servers and AI PCs",
+      "category": "Data/Infra",
+      "why_it_matters": "A recent Hugging Face post tied to Dell Tech World 2026, updated within the last week, outlines roughly twenty new model configurations, including DeepSeek V4, Nemotron 3 variants, Gemma 4, and Qwen 3.5, pre‑optimized for Dell AI servers and AI PCs. This shows hardware vendors and model hubs collaborating to shorten the path from new model releases to production‑ready, containerized deployments, which can significantly reduce infrastructure and MLOps overhead for enterprises.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/balaatdell/dell-enterprise-hub-at-dell-tech-world-2026",
+          "title": "Dell Enterprise Hub at Dell Tech World 2026: new models, new platforms, faster to production",
+          "date": "2026-05-30"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic publishes a 2026 State of AI Agents report, capturing early adoption patterns and risks of agentic systems",
+      "category": "AI Ethics",
+      "why_it_matters": "Anthropic’s 2026 State of AI Agents report, released in recent weeks and still being cited across the industry, surveys how organizations are deploying AI agents, what tasks they are trusted with, and what governance challenges they pose. While not a policy document, it contributes empirical data on how agents are used in practice, including concerns around autonomy, oversight, and failure modes. This helps frame upcoming debates on safety standards and operational controls for increasingly capable AI agents.",
+      "sources": [
+        {
+          "url": "https://resources.anthropic.com/hubfs/The%202026%20State%20of%20AI%20Agents%20Report.pdf",
+          "title": "The 2026 State of AI Agents Report",
+          "date": "2026-05-01"
+        }
+      ]
+    }
+  ]
+}

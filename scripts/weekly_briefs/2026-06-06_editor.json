@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Rosalind’s upgrade ties a frontier general model (GPT‑5.5) directly into high‑stakes scientific R&D, giving it very high industry impact and strong long‑tail SEO around AI for drug discovery and experimental design. Despite a modest diversity penalty for reusing the Models bucket, it still clearly out-scores the other events.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "AI in Healthcare",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Major OpenAI upgrade for a domain-specialized frontier model in life sciences R&D. High impact for pharma/biotech workflows and strong ongoing search interest around AI in drug discovery, medicinal chemistry, and experimental design. Models bucket used recently, but override rule keeps penalty low."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Strategic cloud distribution move (OpenAI models on AWS) with strong enterprise implications and solid infra/architectural SEO. However, Data/Infra has appeared 3+ times in last 6 posts, triggering max diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Incremental but notable change to OpenAI’s lineup and deprecations; good for SEO on model lifecycle and migration, but less transformative and heavily penalized on diversity due to repeated Models coverage."
+    },
+    {
+      "index": 3,
+      "bucket": "Robotics",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 29,
+      "notes": "Hello Robot’s Stretch reflects a pragmatic direction for home/assistive robotics. Solid but niche impact; good explainer/evergreen value on domestic robots and task-constrained systems. Robotics hasn’t appeared recently, so no penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 33,
+      "notes": "Nvidia RTX Spark is an important signal for local AI agent compute on PCs, with strong hardware and agent SEO potential. Edge AI used in last post, so a small diversity penalty applies."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 2,
+      "final_score": 27,
+      "notes": "Meta’s AI pendant is interesting for form-factor and privacy debates but is still speculative. Good SEO around wearables, ambient assistants, and privacy, but less concrete than the Nvidia announcement; minor diversity penalty for Edge AI reuse."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Dell + Hugging Face enterprise hub expansion is meaningful for infra/MLOps and model deployment workflows, but more incremental than transformative; strong how-to and infra SEO. Heavy diversity penalty due to frequent recent Data/Infra posts."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Anthropic’s State of AI Agents report offers rich material on governance, risks, and adoption of agents, with excellent long-tail SEO for agent safety, governance, and best practices. High but not frontier-level impact and no diversity penalty since AI Ethics last appeared several posts back."
+    }
+  ]
+}

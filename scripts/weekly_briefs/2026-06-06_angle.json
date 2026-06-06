@@ -1,0 +1,27 @@
+{
+  "primary_query": "ai for drug discovery workflows",
+  "secondary_queries": [
+    "how to use ai in drug discovery",
+    "foundation models for medicinal chemistry",
+    "ai tools for experimental design in biology",
+    "large language models for life sciences r&d",
+    "genomics research with ai foundation models",
+    "pharma r&d workflow automation with ai",
+    "best practices for ai in biopharma research"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI for Drug Discovery Workflows: Foundation Models Explained",
+  "recommended_slug": "ai-for-drug-discovery-workflows",
+  "outline_h2s": [
+    "What Does AI for Drug Discovery Workflows Actually Mean?",
+    "From General LLMs to Foundation Models for Life Sciences",
+    "Key Use Cases: Medicinal Chemistry, Genomics and Assay Design",
+    "How AI Fits Into the End‑to‑End Drug Discovery Workflow",
+    "Strengths and Limits of Foundation Models in Biopharma R&D",
+    "Data, Privacy and Compliance Considerations for Pharma Teams",
+    "Evaluating and Selecting AI Tools for Life Sciences Research",
+    "Workflow Patterns and Prompting Tactics for Scientists",
+    "Case‑Style Scenarios: Hit Discovery, Optimization and Biomarkers",
+    "Future Outlook: AI‑Native Design of Experiments and Lab Automation"
+  ]
+}
