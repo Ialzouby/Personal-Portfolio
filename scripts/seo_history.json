@@ -28,7 +28,8 @@
     "ai data center infrastructure strategy",
     "ai data center power requirements",
     "persistent ai agents for gmail",
-    "ai for drug discovery workflows"
+    "ai for drug discovery workflows",
+    "on device ai assistants explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -59,7 +60,8 @@
     "AI Data Center Infrastructure Strategy: How Compute Gets Built",
     "AI Data Center Power Requirements: Energy and Scale Explained",
     "Persistent AI Agents for Gmail: How Always‑On Assistants Work",
-    "AI for Drug Discovery Workflows: Foundation Models Explained"
+    "AI for Drug Discovery Workflows: Foundation Models Explained",
+    "On‑Device AI Assistants Explained: How Local Intelligence Works"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -90,7 +92,8 @@
     "ai-data-center-infrastructure-strategy",
     "ai-data-center-power-requirements",
     "persistent-ai-agents-for-gmail",
-    "ai-for-drug-discovery-workflows"
+    "ai-for-drug-discovery-workflows",
+    "on-device-ai-assistants-explained"
   ],
   "buckets": [
     "Robotics",
@@ -121,6 +124,7 @@
     "Data/Infra",
     "Data/Infra",
     "Edge AI",
+    "Models",
     "Models"
   ]
 }

@@ -1,0 +1,101 @@
+{
+  "week": "2026-06-13",
+  "events": [
+    {
+      "event": "Apple details first wave of on-device \"Apple Intelligence\" features at WWDC 2026, positioning upgraded Siri and new generative tools across iOS, iPadOS, and macOS.",
+      "category": "Models",
+      "why_it_matters": "Apple is integrating its own and partner foundation models deeply into the operating system, emphasizing on-device processing for privacy and latency. This indicates that general-purpose assistants and creative features powered by large models are becoming standard platform capabilities rather than separate apps, which will shape how developers and users access AI across hundreds of millions of devices.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+          "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence and more",
+          "date": "2026-06-08"
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA and Google highlight Gemma 4’s optimization for NVIDIA RTX GPUs and Jetson edge modules, enabling local multimodal and agent-style AI on PCs and embedded systems.",
+      "category": "Edge AI",
+      "why_it_matters": "By tuning small, multimodal Gemma 4 models for efficient execution on consumer GPUs and Jetson Orin Nano edge modules, NVIDIA and Google are pushing more capable AI from the cloud into local devices. This reduces reliance on remote datacenters, can lower operating cost and latency, and enables privacy-preserving applications where data stays on-device in industrial, robotics, and consumer edge deployments.",
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-open-models-google-gemma-4/",
+          "title": "From RTX to Spark: NVIDIA Accelerates Gemma 4 for Local Agentic AI",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic previews its Mythos frontier model within Project Glasswing, using it with partners to scan software for security vulnerabilities.",
+      "category": "Models",
+      "why_it_matters": "Mythos is described as more capable than Anthropic’s previous flagship models and is being applied to automated code analysis through Project Glasswing. Using a high-end general-purpose model to detect large numbers of zero-day vulnerabilities across open source and first-party code suggests increasing reliance on advanced LLMs as tools in software assurance, potentially changing how organizations approach vulnerability discovery and remediation.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/",
+          "title": "Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative",
+          "date": "2026-04-07"
+        }
+      ]
+    },
+    {
+      "event": "Meta outlines its Muse Spark model as the first release from Meta Superintelligence Labs, signaling a reset of the company’s core AI assistant stack.",
+      "category": "Models",
+      "why_it_matters": "Muse Spark is the first model produced under Meta’s reorganized AI lab, launched after significant investment and leadership changes. Its release as a general-purpose assistant model across Meta properties shows the company is attempting to close capability gaps with leading labs and unify its user-facing AI experiences on a single, continuously updated model family.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/",
+          "title": "Meta debuts the Muse Spark model in a ‘ground-up overhaul’ of its AI",
+          "date": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "event": "Microsoft AI releases three foundation models—MAI-Transcribe-1, MAI-Voice-1, and MAI-Image-2—covering transcription, voice generation, and video generation.",
+      "category": "Creative AI",
+      "why_it_matters": "By offering multimodal models for speech-to-text, text-to-speech, and video generation under its own Microsoft AI branding, Microsoft is expanding its in-house model portfolio beyond text-only LLMs. This diversifies the ecosystem for creative and media applications and indicates that large tech providers want parallel stacks to partner models, with pricing and performance tuned for broad enterprise and developer adoption.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/04/02/microsoft-takes-on-ai-rivals-with-three-new-foundational-models/",
+          "title": "Microsoft takes on AI rivals with three new foundational models",
+          "date": "2026-04-02"
+        }
+      ]
+    },
+    {
+      "event": "Arm moves beyond licensing by introducing the Arm AGI CPU, a production-ready chip designed for AI inference in data centers, developed with partners including Meta.",
+      "category": "Data/Infra",
+      "why_it_matters": "Arm’s first in-house CPU for AI inference represents a strategic shift from its IP-only model toward finished silicon aimed at AI workloads. With launch partners such as Meta and other AI infrastructure providers, this could increase competition in data center processors for inference, influence energy efficiency and cost profiles for running models at scale, and diversify the hardware base beyond traditional GPU-centric designs.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/",
+          "title": "Arm is releasing the first in-house chip in its 35-year history",
+          "date": "2026-03-24"
+        }
+      ]
+    },
+    {
+      "event": "Zoom expands its platform into an AI-powered office suite, adding AI-generated avatars and built-in deepfake detection for meetings.",
+      "category": "Creative AI",
+      "why_it_matters": "AI-generated avatars integrated into a mainstream communications product illustrate how generative media tools are being normalized in everyday work software, while the addition of deepfake detection acknowledges growing risks of synthetic impersonation. Together, these features show collaboration platforms adopting both generative and authenticity-checking capabilities as standard components of their product strategy.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/03/10/zoom-launches-an-ai-powered-office-suite-says-ai-avatars-for-meetings-are-coming-soon/",
+          "title": "Zoom introduces an AI-powered office suite, says AI avatars for meetings arrive this month",
+          "date": "2026-03-10"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI formalizes an agreement with the U.S. Department of Defense to deploy its models on classified networks, with contractual limits and a dedicated safety stack.",
+      "category": "AI Ethics",
+      "why_it_matters": "The agreement to provide AI models for classified military use, while including technical safeguards and stated constraints on use cases, highlights the increasing role of general-purpose AI in defense. It raises governance questions around how model behavior is controlled in sensitive contexts and shows how large AI providers are negotiating boundaries for military and intelligence applications.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/02/28/openais-sam-altman-announces-pentagon-deal-with-technical-safeguards/",
+          "title": "OpenAI’s Sam Altman announces Pentagon deal with ‘technical safeguards’",
+          "date": "2026-02-28"
+        }
+      ]
+    }
+  ]
+}

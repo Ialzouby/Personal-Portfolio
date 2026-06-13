@@ -1,0 +1,28 @@
+{
+  "primary_query": "on device ai assistants explained",
+  "secondary_queries": [
+    "what is on device ai",
+    "on device ai vs cloud ai",
+    "how on device ai assistants work",
+    "privacy benefits of on device ai",
+    "on device generative ai on phones",
+    "siri on device intelligence vs cloud",
+    "edge ai on smartphones and laptops",
+    "latency advantages of on device ai"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "On‑Device AI Assistants Explained: How Local Intelligence Works",
+  "recommended_slug": "on-device-ai-assistants-explained",
+  "outline_h2s": [
+    "What Is On‑Device AI and Why It Matters",
+    "How On‑Device AI Assistants Work Under the Hood",
+    "On‑Device AI vs Cloud AI: Key Differences",
+    "Privacy and Security Benefits of Local AI Processing",
+    "Latency, Reliability and Performance Tradeoffs",
+    "Generative AI Features That Run Directly on Devices",
+    "How Platforms Integrate On‑Device AI Into Operating Systems",
+    "What Developers Need to Know About On‑Device AI APIs",
+    "Limitations of On‑Device AI and Hybrid Approaches",
+    "Future of On‑Device AI Assistants Across Phones and PCs"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Apple’s first major wave of on-device “Apple Intelligence” across iOS, iPadOS, and macOS will ship to hundreds of millions of users, making general-purpose assistants and generative tools a default OS layer. It has the broadest real-world impact, strong long-tail SEO value for explainers and how-tos on Apple’s AI stack, and despite being in the repeat 'Models' bucket, still edges out other stories on final score.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 38,
+      "notes": "Huge distribution (Apple platforms), strong signal that on-device LLMs and assistants are now core OS features. Evergreen queries around Siri upgrades, privacy/on-device vs cloud, and developer integration. Category repeats but high impact keeps penalty capped."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Important for local/edge AI, but more incremental and developer/infra focused. Good SEO around Gemma 4 on RTX/Jetson how-tos, but narrower audience than Apple OS changes."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 33,
+      "notes": "Frontier model plus clear application to security (zero-day discovery) is notable, but still a preview and less mainstream than Apple’s OS-wide rollout. Strong explainer potential on LLMs for security."
+    },
+    {
+      "index": 3,
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 31,
+      "notes": "Meta stack reset is strategically meaningful, but details and user-visible impact are less concrete. Good context/strategy SEO, but less immediate than Apple’s announcement."
+    },
+    {
+      "index": 4,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Microsoft expanding into speech and video models under its own brand is solid news. Good explainer/QA potential on model capabilities and comparisons, but lacks the consumer ubiquity of Apple’s OS integration."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Arm’s first in-house AI inference CPU is strategically big for infra, but we’ve heavily covered data/infra recently. Strong infra/benchmark SEO, smaller general audience. High diversity penalty due to repeated bucket."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Zoom normalizing AI avatars and deepfake detection in meetings is culturally interesting. Good SEO around deepfake detection in collaboration tools, but impact is narrower and more feature-level than platform-defining shifts."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 37,
+      "notes": "Very significant ethically and politically—the Pentagon using general-purpose AI models with safeguards. Strong governance and policy SEO. Just slightly edged out by Apple on overall mainstream impact and practical developer relevance."
+    }
+  ]
+}
