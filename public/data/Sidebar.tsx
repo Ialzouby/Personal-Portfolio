@@ -61,18 +61,13 @@ export const sidebarsData = [
     url: "/leadership",
     icon: <PiBriefcase />,
   },
-  {
-    id: 7,
-    name: "Blog",
-    url: "/blog",
-    icon: <PiNewspaperClipping />,
-  },
-  //  {
-  //id: 6,
-  //name: "Blog",
-  //url: "/blog",
-  //icon: <PiNewspaperClipping />,
-  //},
+  // Blog disabled
+  // {
+  //   id: 7,
+  //   name: "Blog",
+  //   url: "/blog",
+  //   icon: <PiNewspaperClipping />,
+  // },
   //{
   //id: 7,
   //name: "Contact",
@@ -130,12 +125,13 @@ export const bottomNavData = [
     url: "/presentations",
     icon: <PiTelevisionFill />,
   },
-  {
-    id: 7,
-    name: "Blog",
-    url: "/blog",
-    icon: <PiNewspaperClippingFill />,
-  },
+  // Blog disabled
+  // {
+  //   id: 7,
+  //   name: "Blog",
+  //   url: "/blog",
+  //   icon: <PiNewspaperClippingFill />,
+  // },
   {
     id: 8,
     name: "Contact",

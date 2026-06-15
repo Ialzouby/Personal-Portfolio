@@ -1,5 +1,4 @@
 import { MetadataRoute } from 'next'
-import { blogs } from '@/../public/data/BlogData'
 import { presentations } from '@/../public/data/PresentationData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,7 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/research',
         '/speaking',
         '/leadership',
-        '/blog',
         '/presentations',
         '/contact',
     ].map((route) => ({
@@ -20,14 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 1,
-    }))
-
-    // Blog posts
-    const blogRoutes = blogs.map((blog) => ({
-        url: `${baseUrl}/blog_details/${blog.slug}`,
-        lastModified: new Date(), // Could parse blog.date if needed
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
     }))
 
     // Presentations
@@ -38,5 +28,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }))
 
-    return [...routes, ...blogRoutes, ...presentationRoutes]
+    return [...routes, ...presentationRoutes]
 }

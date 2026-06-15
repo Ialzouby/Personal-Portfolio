@@ -15,6 +15,20 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/blog_details/:slug*',
+        destination: '/',
+        permanent: false,
+      },
+    ];
+  },
   // Image configuration
   images: {
     unoptimized: true,
