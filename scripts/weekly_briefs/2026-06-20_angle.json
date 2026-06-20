@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai export controls on frontier models",
+  "secondary_queries": [
+    "how us export controls affect ai model access",
+    "frontier ai models national security regulations explained",
+    "ai model access restrictions for foreign nationals",
+    "cloud ai export control compliance checklist",
+    "ai safety vs national security export rules",
+    "what is considered a frontier ai model under export laws",
+    "how governments regulate access to powerful ai models",
+    "risks of relying on foreign ai model providers"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Export Controls on Frontier Models: Access and Risk",
+  "recommended_slug": "ai-export-controls-frontier-models",
+  "outline_h2s": [
+    "What Are Frontier AI Models and Why They Matter",
+    "How Traditional Export Controls Apply to AI Systems",
+    "Why Governments Restrict Access to Advanced AI Models",
+    "Key Mechanisms for Controlling Cloud and API Model Access",
+    "Impact on Foreign Nationals, Developers and Enterprises",
+    "Risks of Relying on Foreign AI Model Providers",
+    "Compliance Considerations for Companies Using Frontier Models",
+    "Strategies for Governments and Firms to Reduce AI Dependence",
+    "Future Scenarios for AI Export Controls and Global Access",
+    "How to Plan Your AI Roadmap Under Increasing Regulation"
+  ]
+}
