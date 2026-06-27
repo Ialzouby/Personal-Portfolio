@@ -30,7 +30,8 @@
     "persistent ai agents for gmail",
     "ai for drug discovery workflows",
     "on device ai assistants explained",
-    "ai export controls on frontier models"
+    "ai export controls on frontier models",
+    "government regulation of frontier ai models"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -63,7 +64,8 @@
     "Persistent AI Agents for Gmail: How Always‑On Assistants Work",
     "AI for Drug Discovery Workflows: Foundation Models Explained",
     "On‑Device AI Assistants Explained: How Local Intelligence Works",
-    "AI Export Controls on Frontier Models: Access and Risk"
+    "AI Export Controls on Frontier Models: Access and Risk",
+    "Government Regulation of Frontier AI Models: Access and Safety"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -96,7 +98,8 @@
     "persistent-ai-agents-for-gmail",
     "ai-for-drug-discovery-workflows",
     "on-device-ai-assistants-explained",
-    "ai-export-controls-frontier-models"
+    "ai-export-controls-frontier-models",
+    "government-regulation-frontier-ai-models"
   ],
   "buckets": [
     "Robotics",
@@ -129,6 +132,7 @@
     "Edge AI",
     "Models",
     "Models",
-    "Models"
+    "Models",
+    "AI Ethics"
   ]
 }
