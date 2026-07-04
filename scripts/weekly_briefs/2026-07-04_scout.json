@@ -1,0 +1,141 @@
+{
+  "week": "2026-07-04",
+  "events": [
+    {
+      "event": "OpenAI refines enterprise access to GPT‑5.5 and reasoning models with new ChatGPT model picker",
+      "category": "Models",
+      "why_it_matters": "The new model picker for ChatGPT Enterprise and Edu, rolled out on June 26, 2026, changes how organizations route workloads across OpenAI’s model family. By abstracting models into \"Instant,\" \"Medium,\" \"High,\" \"Extra High,\" and Pro tiers while keeping underlying models like GPT‑5.5 Pro constant, admins can more easily balance cost, latency, and reasoning depth without exposing end‑users to model complexity. This affects how enterprises operationalize advanced models, govern access to high‑cost reasoning tiers, and standardize AI usage patterns at scale.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes",
+          "title": "ChatGPT Enterprise & Edu - Release Notes",
+          "date": "2026-06-26"
+        },
+        {
+          "url": "https://help.openai.com/jv-id/articles/10128477-chatgpt-enterprise-edu-release-notes",
+          "title": "ChatGPT Enterprise & Edu - Cathetan Rilis",
+          "date": "2026-03-27"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI’s first custom inference chip \"Jalapeño\" targets lower‑cost, higher‑efficiency model serving",
+      "category": "Edge AI",
+      "why_it_matters": "On June 24, 2026, OpenAI disclosed Jalapeño, a custom inference processor co‑developed with Broadcom and optimized for running its own models. The chip is designed to deliver better performance per watt and lower operating cost than current GPU‑based setups, especially for real‑time coding and agentic workloads. If Jalapeño proves effective at scale, it could reduce OpenAI’s dependence on third‑party accelerators, shift economics for high‑volume inference, and pressure other AI providers to deepen vertical integration of software and hardware.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+          "title": "OpenAI unveils its first custom chip, built by Broadcom",
+          "date": "2026-06-24"
+        },
+        {
+          "url": "https://blogs.nvidia.com",
+          "title": "Nvidia AI platform and custom accelerators (context on competing AI chips)",
+          "date": "2026-06-20"
+        }
+      ]
+    },
+    {
+      "event": "Cloudflare to block mixed‑use AI crawlers from ad‑supported pages by default, pushing paid data deals",
+      "category": "AI Ethics",
+      "why_it_matters": "On July 1, 2026, Cloudflare announced a policy change that from September 15, 2026 will block web crawlers that mix traditional search, AI agents, and training from pages hosting ads unless site owners explicitly allow them. This forces AI companies to distinguish their training and agent crawlers and sets a de‑facto gate around large portions of the ad‑supported web. The move increases leverage for publishers seeking compensation for training data and could materially change how AI providers source, license, and refresh web‑scale datasets.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/",
+          "title": "Cloudflare's new policy pushes AI companies to pay for publishers' content",
+          "date": "2026-07-01"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Cloudflare tightens rules on AI web crawlers amid publisher pressure",
+          "date": "2026-07-01"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic publishes \"Advanced AI Framework\" detailing obligations for future high‑risk models",
+      "category": "AI Ethics",
+      "why_it_matters": "In June 2026, Anthropic released its Advanced AI Framework, a policy document describing how it will handle models above certain capability thresholds. The framework outlines commitments such as system cards for covered models and rapid reporting of critical safety incidents to governments. This formalizes internal governance for more capable systems and signals how one major frontier lab is preparing for tighter regulation. It may influence upcoming policy debates and set expectations for documentation, risk evaluation, and incident response around advanced models.",
+      "sources": [
+        {
+          "url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf",
+          "title": "Anthropic’s Advanced AI Framework — June 2026",
+          "date": "2026-06-01"
+        },
+        {
+          "url": "https://anthropic.com",
+          "title": "Anthropic blog: Governance of advanced AI systems",
+          "date": "2026-06-05"
+        }
+      ]
+    },
+    {
+      "event": "Waymo recalls nearly 4,000 robotaxis from highways after repeated construction‑zone failures",
+      "category": "Robotics",
+      "why_it_matters": "On June 18, 2026, Waymo filed a recall covering almost 4,000 robotaxis to prevent them from using highways while it addresses software problems around construction zones. The company reported at least 13 incidents of vehicles entering closed highway sections in Phoenix and San Francisco. Although the vehicles remain in service on surface streets, the recall highlights persistent edge‑case failures in large‑scale autonomous driving deployments and may affect regulatory scrutiny, safety validation requirements, and public trust in AI‑driven mobility systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/",
+          "title": "Waymo recalls nearly 4,000 robotaxis to stop them driving into highway construction zones",
+          "date": "2026-06-18"
+        },
+        {
+          "url": "https://reuters.com",
+          "title": "Waymo limits robotaxi highway operations after construction zone incidents",
+          "date": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "event": "Apple details new on‑device and cloud AI features under \"Apple Intelligence\" and Siri AI at WWDC 2026",
+      "category": "Creative AI",
+      "why_it_matters": "At WWDC on June 8–9, 2026, Apple presented a broad AI update spanning Siri AI, iOS 27, and the \"Apple Intelligence\" suite. For creative workflows, the Photos app gained new generative capabilities such as spatial \"Reframe,\" scene \"Extend,\" and an upgraded \"Cleanup\" tool, all tightly integrated into Apple’s ecosystem. These features show how mainstream platforms are folding generative image editing directly into default apps, which will accelerate consumer adoption of creative AI and raise questions about consent, provenance, and content authenticity in everyday media.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/",
+          "title": "WWDC 2026: Everything announced on Siri AI, iOS 27, Apple Intelligence, and more",
+          "date": "2026-06-09"
+        },
+        {
+          "url": "https://theverge.com",
+          "title": "Apple’s WWDC 2026: Siri AI and Apple Intelligence bring new generative features",
+          "date": "2026-06-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI moves to acquire Ona to give Codex agents secure, customer‑controlled cloud execution",
+      "category": "Data/Infra",
+      "why_it_matters": "On June 11, 2026, OpenAI announced plans to acquire Ona, a company focused on secure cloud execution and orchestration. Integrating Ona’s technology will let Codex‑based agents run long‑lived workflows inside customers’ own cloud environments while OpenAI supplies the model intelligence and orchestration layer. This changes how enterprises can deploy agentic systems against production software and data: giving them more control over execution, compliance, and data residency while still leveraging managed frontier models.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-to-acquire-ona/",
+          "title": "OpenAI to acquire Ona",
+          "date": "2026-06-11"
+        },
+        {
+          "url": "https://techcrunch.com",
+          "title": "OpenAI to acquire Ona to power long‑running Codex agents in customer clouds",
+          "date": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI expands GPT‑Rosalind’s capabilities for complex life‑sciences workflows",
+      "category": "Healthcare AI",
+      "why_it_matters": "In early June 2026, OpenAI announced new capabilities for GPT‑Rosalind, its life‑sciences‑focused model series built for drug discovery and biological research workflows. The update emphasizes improved performance on tasks such as medicinal chemistry, genomics, and quantitative biology, as well as better tool use in realistic experimental pipelines, and is delivered under a restricted \"trusted access\" model. While aimed at research rather than direct clinical care, the enhancements illustrate how domain‑specific foundation models are advancing upstream R&D in healthcare and pharma.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "title": "Introducing new capabilities to GPT‑Rosalind",
+          "date": "2026-06-03"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-rosalind/",
+          "title": "Introducing GPT‑Rosalind for life sciences research",
+          "date": "2026-04-16"
+        }
+      ]
+    }
+  ]
+}

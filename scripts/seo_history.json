@@ -31,7 +31,8 @@
     "ai for drug discovery workflows",
     "on device ai assistants explained",
     "ai export controls on frontier models",
-    "government regulation of frontier ai models"
+    "government regulation of frontier ai models",
+    "ai web crawler blocking for publishers"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -65,7 +66,8 @@
     "AI for Drug Discovery Workflows: Foundation Models Explained",
     "On‑Device AI Assistants Explained: How Local Intelligence Works",
     "AI Export Controls on Frontier Models: Access and Risk",
-    "Government Regulation of Frontier AI Models: Access and Safety"
+    "Government Regulation of Frontier AI Models: Access and Safety",
+    "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -99,7 +101,8 @@
     "ai-for-drug-discovery-workflows",
     "on-device-ai-assistants-explained",
     "ai-export-controls-frontier-models",
-    "government-regulation-frontier-ai-models"
+    "government-regulation-frontier-ai-models",
+    "ai-web-crawler-blocking-publishers"
   ],
   "buckets": [
     "Robotics",
@@ -133,6 +136,7 @@
     "Models",
     "Models",
     "Models",
+    "AI Ethics",
     "AI Ethics"
   ]
 }
