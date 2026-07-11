@@ -1,0 +1,28 @@
+{
+  "primary_query": "frontier gpt models explained",
+  "secondary_queries": [
+    "what is a frontier ai model",
+    "gpt 5.6 frontier model use cases",
+    "how frontier gpt models differ from earlier versions",
+    "choosing frontier models for complex workflows",
+    "enterprise applications of frontier gpt models",
+    "limits and risks of frontier ai models",
+    "how to evaluate frontier model capabilities",
+    "frontier ai models vs general purpose models"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Frontier GPT Models Explained: How They Power Complex Work",
+  "recommended_slug": "frontier-gpt-models-explained",
+  "outline_h2s": [
+    "What Are Frontier GPT Models?",
+    "How Frontier Models Differ From Earlier GPT Generations",
+    "Core Capabilities: Reasoning, Tools and Long Workflows",
+    "When to Use a Frontier Model vs a Smaller Model",
+    "Enterprise and Developer Use Cases for Frontier GPT Models",
+    "Limits, Risks and Safety Considerations",
+    "How to Evaluate and Benchmark a Frontier GPT Model",
+    "Practical Tips for Integrating Frontier Models Into Products",
+    "Cost, Performance and Latency Tradeoffs to Consider",
+    "Future Directions for Frontier-Scale GPT Systems"
+  ]
+}

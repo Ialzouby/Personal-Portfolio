@@ -1,0 +1,121 @@
+{
+  "week": "2026-07-11",
+  "events": [
+    {
+      "event": "OpenAI launches GPT‑5.6, a new frontier model for complex work",
+      "category": "Models",
+      "why_it_matters": "GPT‑5.6 is positioned as OpenAI’s new flagship \"frontier\" model, meant to handle more complex reasoning and large, multi-step workflows than earlier 5.x models. It is likely to become a default backbone for many apps and services, so its behavior and capabilities will shape how enterprises and consumers interact with advanced AI over the next year.",
+      "sources": [
+        {
+          "url": "https://openai.com/news/company-announcements/",
+          "title": "GPT‑5.6: Frontier intelligence that scales with your ambition",
+          "date": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI introduces GPT‑Live, a full‑duplex voice model for natural conversations",
+      "category": "Models",
+      "why_it_matters": "GPT‑Live moves AI voice interaction closer to real human conversation by allowing the model to listen and speak simultaneously, support interruptions, and keep talking while delegating harder problems to a separate frontier model. This architecture change is an important step toward using AI as a real‑time assistant in work, customer support, and accessibility tools.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-live/",
+          "title": "Introducing GPT‑Live",
+          "date": "2026-07-08"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "title": "ChatGPT — Release Notes (July 8, 2026: Introducing GPT-Live-1 in ChatGPT Voice)",
+          "date": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "event": "ChatGPT Voice is upgraded to GPT‑Live‑1 and GPT‑Live‑1 mini across consumer plans",
+      "category": "Creative AI",
+      "why_it_matters": "By rolling GPT‑Live‑1 into ChatGPT Voice for free and paid consumer users, OpenAI is normalizing real‑time, conversational AI for everyday creative and productivity tasks. Users can now speak, interrupt, and explore ideas with a system that combines voice, web search, and multimodal context, which is likely to accelerate creative workflows (writing, design, brainstorming) and shift user expectations for all voice interfaces.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "title": "ChatGPT — Release Notes (July 8, 2026: Introducing GPT-Live-1 in ChatGPT Voice)",
+          "date": "2026-07-08"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-live/",
+          "title": "Introducing GPT‑Live",
+          "date": "2026-07-08"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic publishes a detailed case study of Claude Code’s evolution into a coding agent",
+      "category": "Models",
+      "why_it_matters": "Anthropic’s feature on Claude Code documents how an internal CLI tool evolved into a production coding agent, including how teams integrated it into development workflows. While not a model release, it shows how frontier LLMs are being operationalized as persistent agents for software engineering, which is indicative of where enterprise model usage is heading.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "The making of Claude Code (Features)",
+          "date": "2026-07-06"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch reports that a humanoid robotics company plans to go public amid growing investor interest",
+      "category": "Robotics",
+      "why_it_matters": "A humanoid robotics firm preparing to list publicly, while explicitly cautioning against near‑term home‑robot expectations, signals both confidence and realism in the robotics market. It suggests that capital markets see humanoid and industrial robots, often driven by AI perception and control, as mature enough for large‑scale deployment, even if general‑purpose home robots remain distant.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/category/artificial-intelligence/robotics/",
+          "title": "This humanoid robotics company is going public, but its CEO isn’t promising a robot in your home anytime soon",
+          "date": "2026-07-08"
+        },
+        {
+          "url": "https://techcrunch.com/category/artificial-intelligence/robotics/",
+          "title": "This startup thinks robotics is about to have its ChatGPT moment",
+          "date": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch highlights US autonomous ground vehicles with AI entering active combat in Ukraine",
+      "category": "Robotics",
+      "why_it_matters": "The deployment of American autonomous ground vehicles in active conflict zones shows that AI‑driven robotics is moving from trials to operational military use. This raises practical questions about reliability, command-and-control, and accountability, and will likely influence both defense R&D and future regulation of autonomous weapons systems.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/category/artificial-intelligence/robotics/",
+          "title": "The first American autonomous ground vehicles are fighting in Ukraine",
+          "date": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI’s newsroom frames GPT‑5.6 and GPT‑Live as part of a broader shift to AI that can manage complex work and real‑time interaction",
+      "category": "Data/Infra",
+      "why_it_matters": "The way OpenAI groups GPT‑5.6, GPT‑Live, and new ChatGPT capabilities in its July 2026 updates clarifies its strategy: frontier models for heavy reasoning, specialized models for interaction, and orchestration layers to tie them together. This indicates that infrastructure and product design are converging on multi‑model, agent‑like systems rather than single‑model deployments.",
+      "sources": [
+        {
+          "url": "https://openai.com/news/company-announcements/",
+          "title": "OpenAI Newsroom – Recent news (GPT‑5.6, Introducing GPT‑Live, ChatGPT is now a partner for your most ambitious work)",
+          "date": "2026-07-09"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic proposes an industry‑wide framework for scoring jailbreak severity with partners including Amazon, Microsoft, and Google",
+      "category": "AI Ethics",
+      "why_it_matters": "As Anthropic redeploys its Fable 5 model, it is working with major industry partners on a standardized way to rate the severity of model jailbreaks. A shared scoring framework could make it easier for companies and regulators to compare safety incidents, triage vulnerabilities, and coordinate mitigations across different frontier models.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Redeploying Fable 5 (includes proposal for an industry-wide jailbreak severity framework)",
+          "date": "2026-06-30"
+        },
+        {
+          "url": "https://techcrunch.com/2026/06/30/trump-drops-restrictions-on-anthropics-mythos-and-fable-models/",
+          "title": "Trump drops restrictions on Anthropic’s Mythos and Fable models",
+          "date": "2026-06-30"
+        }
+      ]
+    }
+  ]
+}

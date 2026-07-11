@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "GPT‑5.6 is a flagship frontier model with broad ecosystem impact, high long‑term search interest around capabilities, benchmarks, and enterprise use, and it benefits from the diversity override (penalty capped at 2) due to very high news impact.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 38,
+      "notes": "New frontier/flagship model that will underpin many apps and workflows. Strong enterprise and developer relevance, and ongoing SEO value for explainers, benchmarks, migration guides, and capability comparisons. Models bucket has been heavily used, but override rule caps penalty at 2."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "GPT‑Live’s full‑duplex voice and architectural shift toward real‑time assistants is impactful but slightly narrower than a new frontier model. Good SEO for voice AI, latency, and assistant design, but Models bucket is already heavily represented, so full 6‑point diversity penalty applies."
+    },
+    {
+      "index": 2,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Mass consumer rollout of GPT‑Live‑1 in ChatGPT Voice. High behavioral impact on everyday users and strong SEO around prompts, workflows, and comparisons, but less strategic/technical depth than the core GPT‑Live announcement. Creative AI bucket avoids any diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Models",
+      "news_impact": 15,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Interesting operational case study on coding agents and developer workflows. Solid SEO for agentic coding, but it’s a feature/case‑study piece rather than a flagship release, and suffers from heavy recent use of the Models bucket."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "IPO plans signal maturing humanoid/industrial robotics market. Good for investment, labor, and automation angles, but indirect for AI and with moderate SEO opportunity. Robotics hasn’t appeared recently, so no penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Autonomous ground vehicles in combat are a major milestone for AI in military robotics with strong ethical and policy implications. Good SEO potential for autonomous weapons, command‑and‑control, and reliability topics. Robotics bucket is fresh, so no diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Strategic piece tying together frontier reasoning models, interaction models, and orchestration. Strong conceptual value and evergreen SEO around multi‑model and agentic architectures, but Data/Infra has been used recently and gets the full 6‑point penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 29,
+      "notes": "Cross‑industry jailbreak severity framework has real potential to standardize incident response and inform regulation. Solid SEO around model safety, red‑teaming, and compliance. However, AI Ethics has appeared multiple times recently, triggering a mid‑level diversity penalty."
+    }
+  ]
+}
