@@ -218,7 +218,7 @@ const WebsiteGallery = () => {
             <h2 className="display-four n5-color fw-semibold">Website Showcase</h2>
           </div>
           <p className="fs-seven n4-color mt-2 mt-md-4">
-            A few web experiences I've built, live and responsive.
+            A few web experiences I've built.
           </p>
         </div>
 
