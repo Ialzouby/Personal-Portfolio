@@ -129,53 +129,7 @@ export const featureds = [
       { title: "Fabrication", value: "100%", trend: "up", desc: "3D printed structural components" }
     ]
   },
-  {
-    id: 20,
-    category: "AI/ML",
-    tag1: "Motion Autoencoder",
-    tag2: "HumanML3D Dataset",
-    tag3: "Model Training",
-    title: "Motion Autoencoder Training & Evaluation",
-    img: project21, // main image for the project
-    client: "Internal Research",
-    services: "AI Development",
-    technologies: "Python, PyTorch, NumPy, Matplotlib",
-    website: "https://ialzouby.github.io/Motion-AutoEncoder/#bibtex",
-    intro: "Developed a Motion Autoencoder to compress and reconstruct human motion data.",
-    overview: "The MotionAE project aimed to learn compact latent representations of HumanML3D motion sequences, enabling efficient storage and high-quality reconstructions.",
-    challenge: "Capturing fine-grained joint movement details while keeping the model lightweight for faster inference.",
-    solution: "Designed and trained a custom PyTorch autoencoder, applied normalization strategies, and implemented a smooth visualization pipeline to compare original and reconstructed motions side-by-side.",
-    gallery: [project20], // additional screenshots or visuals
-    results: [
-      { title: "Reconstruction Accuracy", value: "92%", trend: "up", desc: "High fidelity compared to original motion data." },
-      { title: "Compression Ratio", value: "8x", trend: "up", desc: "Reduced storage requirements without major quality loss." },
-      { title: "Training Time", value: "4h", trend: "down", desc: "Efficient convergence using GPU acceleration." }
-    ]
-  },
 
-  {
-    id: 19,
-    category: "AI/ML",
-    tag1: "Motion Modeling",
-    tag2: "HumanML3D Dataset",
-    tag3: "AI Training",
-    title: "MoMask Model Training & Evaluation",
-    img: project19,
-    client: "Client 15",
-    services: "AI Development",
-    technologies: "Python, PyTorch",
-    website: "https://example.com",
-    intro: "This project involved building the hospital infection map visualization.",
-    overview: "We started with the goal of creating a usable and reliable system.",
-    challenge: "The main challenge was balancing performance with deployment constraints.",
-    solution: "We used a modular design and optimized data flow to solve the problems.",
-    gallery: [project19_1, project19_2],
-    results: [
-      { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
-      { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
-      { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-    ]
-  },
   {
     id: 1,
     category: "Hackathons",
@@ -353,29 +307,6 @@ export const featureds = [
     ]
   },
   {
-    id: 9,
-    category: "AI/ML",
-    tag1: "AI/ML",
-    tag2: "BAMM",
-    tag3: "CUDA",
-    title: "Text-To-Motion Model Deployment",
-    img: project2,
-    client: "Client 2",
-    services: "Full-Stack Development",
-    technologies: "React, Node.js, MongoDB",
-    website: "https://example.com",
-    intro: "This project involved building the text-to-motion model deployment.",
-    overview: "We started with the goal of creating a usable and reliable system.",
-    challenge: "The main challenge was balancing performance with deployment constraints.",
-    solution: "We used a modular design and optimized data flow to solve the problems.",
-    gallery: [project1, project2, project3],
-    results: [
-      { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
-      { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
-      { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-    ]
-  },
-  {
     id: 3,
     category: "AI/ML",
     tag1: "AI/ML",
@@ -529,75 +460,6 @@ export const featureds = [
     technologies: "React, Node.js, MongoDB",
     website: "https://example.com",
     intro: "This project involved building the vintage apple device restoration.",
-    overview: "We started with the goal of creating a usable and reliable system.",
-    challenge: "The main challenge was balancing performance with deployment constraints.",
-    solution: "We used a modular design and optimized data flow to solve the problems.",
-    gallery: [project1, project2, project3],
-    results: [
-      { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
-      { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
-      { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-    ]
-  },
-  {
-    id: 12,
-    category: "Personal Explorations",
-    tag1: "iOS",
-    tag2: "AWS Amplify",
-    tag3: "Notes App",
-    title: "Cross-Platform Notes App with SwiftUI & AWS Amplify",
-    img: project5,
-    client: "Client 12",
-    services: "Full-Stack Development",
-    technologies: "React, Node.js, MongoDB",
-    website: "https://example.com",
-    intro: "This project involved building the cross-platform notes app with swiftui & aws amplify.",
-    overview: "We started with the goal of creating a usable and reliable system.",
-    challenge: "The main challenge was balancing performance with deployment constraints.",
-    solution: "We used a modular design and optimized data flow to solve the problems.",
-    gallery: [project1, project2, project3],
-    results: [
-      { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
-      { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
-      { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-    ]
-  },
-  {
-    id: 13,
-    category: "Personal Explorations",
-    tag1: "Django",
-    tag2: "PWA",
-    tag3: "Student Platform",
-    title: "DevLink: UNCC Collaboration Platform (Django + PWA)",
-    img: project14,
-    client: "Client 13",
-    services: "Full-Stack Development",
-    technologies: "Swift, Python, TensorFlow",
-    website: "https://example.com",
-    intro: "This project involved building the devlink: uncc collaboration platform (django + pwa).",
-    overview: "We started with the goal of creating a usable and reliable system.",
-    challenge: "The main challenge was balancing performance with deployment constraints.",
-    solution: "We used a modular design and optimized data flow to solve the problems.",
-    gallery: [project1, project2, project3],
-    results: [
-      { title: "Efficiency", value: "25%", trend: "up", desc: "Improved processing speed." },
-      { title: "User Growth", value: "15%", trend: "up", desc: "Increased engagement." },
-      { title: "Cost Reduction", value: "10%", trend: "down", desc: "Lowered infrastructure cost." }
-    ]
-  },
-  {
-    id: 14,
-    category: "Personal Explorations",
-    tag1: "Node.js",
-    tag2: "MongoDB",
-    tag3: "E-Commerce",
-    title: "TechnoLab Market: Node.js + Atlas Web App",
-    img: project13,
-    client: "Client 14",
-    services: "Full-Stack Development",
-    technologies: "React, Node.js, MongoDB",
-    website: "https://example.com",
-    intro: "This project involved building the technolab market: node.js + atlas web app.",
     overview: "We started with the goal of creating a usable and reliable system.",
     challenge: "The main challenge was balancing performance with deployment constraints.",
     solution: "We used a modular design and optimized data flow to solve the problems.",

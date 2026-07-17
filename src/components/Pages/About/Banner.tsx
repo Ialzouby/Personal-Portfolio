@@ -44,7 +44,7 @@ const Banner = () => {
         "Advanced humanoid robotics system integrating AI-powered motion control, computer vision, and real-time sensor fusion. Features autonomous navigation, human interaction capabilities, and adaptive learning algorithms for dynamic environments.",
       image: project21,
       category: ["AI/ML", "Robotics"],
-      portfolioLink: "/portfolio-details/20",
+      portfolioLink: "/portfolio-details/22",
     },
   ];
 

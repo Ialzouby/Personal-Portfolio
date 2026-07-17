@@ -6,7 +6,8 @@ import Testimonials from "@/components/Pages/About/Testimonials";
 import WhatDo from "@/components/Pages/About/WhatDo";
 import Footer from "@/components/Shared/Footer/Footer";
 import Gallery from "@/components/Pages/About/Gallery";
-import Websites from "@/components/Pages/About/Websites";
+import FeaturedResearch from "@/components/Pages/About/Research/FeaturedResearch";
+import ResearchDeployed from "@/components/Pages/About/ResearchDeployed/ResearchDeployed";
 
 export const metadata = {
   title: "Issam Alzouby | AI Engineer & Medical AI Researcher",
@@ -63,8 +64,9 @@ const About = () => {
       </section>
       <section className="pt-0 pb-0 mt-0 br-bottom-n3">
         <Gallery />
+        <ResearchDeployed />
+        <FeaturedResearch />
         <Featured />
-        <Websites />
 
       </section>
       {/* <WhatDo /> */}

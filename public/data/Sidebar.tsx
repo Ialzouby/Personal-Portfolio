@@ -29,7 +29,7 @@ export const sidebarsData = [
     name: "Portfolio",
     url: "/portfolio",
     icon: <PiCodeBlock />,
-    numbers: 16,
+    numbers: 10,
   },
   //{
   //id: 4,
@@ -87,7 +87,7 @@ export const bottomNavData = [
     name: "Portfolio",
     url: "/portfolio",
     icon: <PiCodeBlockFill />,
-    numbers: 16,
+    numbers: 10,
   },
   //{
   //id: 3,
