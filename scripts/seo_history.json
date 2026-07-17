@@ -29,7 +29,11 @@
     "ai data center power requirements",
     "persistent ai agents for gmail",
     "ai for drug discovery workflows",
-    "on device ai assistants explained"
+    "on device ai assistants explained",
+    "ai export controls on frontier models",
+    "government regulation of frontier ai models",
+    "ai web crawler blocking for publishers",
+    "frontier gpt models explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -61,7 +65,11 @@
     "AI Data Center Power Requirements: Energy and Scale Explained",
     "Persistent AI Agents for Gmail: How Always‑On Assistants Work",
     "AI for Drug Discovery Workflows: Foundation Models Explained",
-    "On‑Device AI Assistants Explained: How Local Intelligence Works"
+    "On‑Device AI Assistants Explained: How Local Intelligence Works",
+    "AI Export Controls on Frontier Models: Access and Risk",
+    "Government Regulation of Frontier AI Models: Access and Safety",
+    "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs",
+    "Frontier GPT Models Explained: How They Power Complex Work"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -93,7 +101,11 @@
     "ai-data-center-power-requirements",
     "persistent-ai-agents-for-gmail",
     "ai-for-drug-discovery-workflows",
-    "on-device-ai-assistants-explained"
+    "on-device-ai-assistants-explained",
+    "ai-export-controls-frontier-models",
+    "government-regulation-frontier-ai-models",
+    "ai-web-crawler-blocking-publishers",
+    "frontier-gpt-models-explained"
   ],
   "buckets": [
     "Robotics",
@@ -125,6 +137,10 @@
     "Data/Infra",
     "Edge AI",
     "Models",
+    "Models",
+    "Models",
+    "AI Ethics",
+    "AI Ethics",
     "Models"
   ]
 }

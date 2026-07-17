@@ -1,0 +1,26 @@
+{
+  "primary_query": "government regulation of frontier ai models",
+  "secondary_queries": [
+    "how governments regulate frontier ai systems",
+    "ai model release controls and safety rules",
+    "national security and frontier ai regulation",
+    "gov oversight of large language model deployment",
+    "how frontier ai model access is restricted",
+    "ai safety policy for cutting edge models",
+    "government intervention in ai model launches",
+    "frameworks for responsible frontier ai release"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Government Regulation of Frontier AI Models: Access and Safety",
+  "recommended_slug": "government-regulation-frontier-ai-models",
+  "outline_h2s": [
+    "What Counts as a Frontier AI Model?",
+    "Why Governments Care About Frontier AI Deployment",
+    "Key Tools Governments Use to Regulate AI Models",
+    "How Frontier Model Release and Access Can Be Restricted",
+    "National Security, Misuse Risks and Safety Reviews",
+    "Industry–Government Collaboration on AI Oversight",
+    "Impacts of Frontier AI Regulation on Developers and Users",
+    "Future Directions for Frontier AI Policy and Governance"
+  ]
+}

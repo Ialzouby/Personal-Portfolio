@@ -1,0 +1,101 @@
+{
+  "week": "2026-06-27",
+  "events": [
+    {
+      "event": "OpenAI limits rollout of its new GPT-5.6 model family after a request from the U.S. government.",
+      "category": "AI Ethics",
+      "why_it_matters": "This is a concrete example of direct government intervention in frontier model deployment. Access to the new Sol, Terra, and Luna models is temporarily restricted to a small set of vetted partners while OpenAI and the administration work out a more formal process for future releases. It illustrates how safety, national security and regulatory oversight are now shaping when and how state-of-the-art models reach the wider market.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/",
+          "title": "OpenAI limits GPT-5.6 rollout after government request, says restrictions shouldn’t be the norm",
+          "date": "2026-06-26"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI unveils “Jalapeño,” its first custom AI inference chip built with Broadcom.",
+      "category": "Edge AI",
+      "why_it_matters": "By designing its own inference processor, OpenAI is moving to reduce dependence on general-purpose GPUs and improve performance-per-watt for running large models. A proprietary accelerator tailored to its workloads could lower serving costs, support more on-device or near-edge deployment, and influence how other AI providers and cloud vendors think about vertical integration in AI hardware.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+          "title": "OpenAI unveils its first custom chip, built by Broadcom",
+          "date": "2026-06-24"
+        }
+      ]
+    },
+    {
+      "event": "Waymo issues a recall of nearly 4,000 robotaxis after incidents involving highway construction zones.",
+      "category": "Robotics",
+      "why_it_matters": "The recall underscores that scaling autonomous driving still depends on reliably handling complex, changing road environments such as construction sites. Pulling back thousands of vehicles to address a specific failure mode shows how safety governance and post-deployment monitoring are critical for embodied AI systems operating in public spaces.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/18/waymo-recalls-nearly-4000-robotaxis-to-stop-them-driving-into-highway-construction-zones/",
+          "title": "Waymo recalls nearly 4,000 robotaxis to stop them driving into highway construction zones",
+          "date": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "event": "Qualcomm announces new platforms aimed at AI-powered wearables and mixed-reality devices.",
+      "category": "Edge AI",
+      "why_it_matters": "The new Snapdragon Reality Elite platform for mixed-reality glasses and the START toolkit for AI devices signal a push to run more powerful models directly on small, battery-constrained hardware. This could widen the market for AI-based wearables—such as smart glasses, pins and camera-enabled earbuds—by providing common silicon and software foundations for on-device inference.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/",
+          "title": "Qualcomm wants to be the chip inside whatever replaces your smartphone, and it just announced two products toward that end",
+          "date": "2026-06-16"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI highlights GPT‑Rosalind updates for large-scale life sciences applications.",
+      "category": "Healthcare AI",
+      "why_it_matters": "GPT‑Rosalind is tailored for biology and life sciences workloads used by enterprises. The latest update focuses on capabilities such as working with specialized biomedical data and large research pipelines, indicating how general-purpose foundation models are being adapted into domain-specific tools for drug discovery, genomics and related R&D rather than direct clinical decision-making.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+          "title": "Introducing new capabilities to GPT‑Rosalind",
+          "date": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI agrees to acquire enterprise agent platform Ona to support customer-controlled AI execution.",
+      "category": "Data/Infra",
+      "why_it_matters": "Ona’s architecture lets organizations run agent workflows inside their own cloud environment while connecting to OpenAI’s models. Folding this into OpenAI’s stack points to a hybrid pattern where sensitive data and control remain in the customer’s infrastructure, while model inference and orchestration are provided as a managed service—important for regulated and data-sensitive sectors.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-to-acquire-ona/",
+          "title": "OpenAI to acquire Ona",
+          "date": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI details a multi-year strategic partnership with Amazon to scale access to its models.",
+      "category": "Data/Infra",
+      "why_it_matters": "The agreement makes OpenAI models broadly available through Amazon’s ecosystem for enterprises and startups. It reflects consolidation around a few large providers for both compute and models, and shapes how AI capabilities are distributed via major cloud platforms, affecting cost, integration patterns and vendor concentration in the AI stack.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/scaling-ai-for-everyone/",
+          "title": "Scaling AI for everyone",
+          "date": "2026-02-27"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes survey findings on how Americans view AI as a tool in managing their healthcare.",
+      "category": "AI Ethics",
+      "why_it_matters": "The report analyzes attitudes toward using AI for information, coordination and support in healthcare contexts, including perceived benefits and concerns. Understanding public expectations and trust levels is a prerequisite for designing governance, consent mechanisms and product features that align AI health tools with patient values and regulatory requirements.",
+      "sources": [
+        {
+          "url": "https://cdn.openai.com/pdf/2cb29276-68cd-4ec6-a5f4-c01c5e7a36e9/OpenAI-AI-as-a-Healthcare-Ally-Jan-2026.pdf",
+          "title": "AI as a Healthcare Ally: How Americans are navigating AI’s role in their health",
+          "date": "2026-01-01"
+        }
+      ]
+    }
+  ]
+}

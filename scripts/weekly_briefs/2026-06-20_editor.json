@@ -1,0 +1,78 @@
+{
+  "winner_index": 2,
+  "winner_reason": "Anthropic’s suspension of access to its newest models under a U.S. government directive is a major, novel escalation in AI export-style controls, with global operational and policy ramifications. It has strong news impact, high ongoing SEO value for governance/export-control queries, and falls into a bucket that, while recently used, is not as overrepresented as Data/Infra; its final score edges out infrastructure stories even after diversity penalties.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Data/Infra",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Major U.S. regulatory move prioritizing AI data centers for grid connections. High policy and infra impact, affects utilities, hyperscalers, and regions. Strong explainer/analysis SEO around power, AI, grid, but Data/Infra has been used heavily (3+ in last 6, appears in last post), so max penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 2,
+      "final_score": 29,
+      "notes": "Notable consumer hardware launch tying Gemini and smart home, but incremental vs past smart speaker cycles. Good SEO for smart home AI, on-device assistants, but less policy/industry depth. Edge AI used once in last 8, not overrepresented."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Frontier model access curbed by U.S. directive is a high-impact governance and geopolitical event, affecting enterprises, researchers, and foreign markets. Strong ongoing SEO around AI export controls, access restrictions, compliance, and sovereignty. Models bucket is common recently, but override rule caps penalty at 2 because news_impact ≥ 22."
+    },
+    {
+      "index": 3,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Insightful trend piece on model routing and interchangeable providers; important but more evolutionary than regulatory shock. Good evergreen SEO for multi-model routing, vendor lock-in, infra design. Penalized as another Data/Infra story in an already saturated run."
+    },
+    {
+      "index": 4,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Gemini Omni multimodal/video generation is significant for synthetic media and content creators. Strong how-to and explainer SEO on multimodal video, text-to-video, and creative workflows. Creative AI not recently covered, so no diversity penalty, but impact is slightly lower than the Anthropic policy event."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Agentic Gemini across Android is meaningful for UX and app ecosystems. Solid SEO for AI agents, automation, and mobile workflows. However, Models bucket is heavily used recently and does not meet the override threshold (news_impact < 22), so it gets the full diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Robotics",
+      "news_impact": 16,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Humanoid ‘physical AI’ with U.S.–China collaboration highlights export-control constraints and AI+robotics convergence. Good SEO for humanoid robots and physical AI, and Robotics is a fresh bucket. Impact is moderate compared to governance/export-control shocks."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Ethical and distributional analysis of AI-prioritized power rules connects infra policy with fairness and environmental concerns. Strong SEO for AI governance, energy policy, and ethics explainers. Distinct bucket from recent posts, but impact is still slightly below the direct access-restriction directive on frontier models."
+    }
+  ]
+}

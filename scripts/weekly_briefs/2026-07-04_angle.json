@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai web crawler blocking for publishers",
+  "secondary_queries": [
+    "how to block ai crawlers on my website",
+    "cloudflare ai crawler controls explained",
+    "robots txt vs vendor tools for ai training",
+    "how publishers can charge for ai training data",
+    "mixed use ai crawlers search vs training",
+    "how to allow or deny ai bots on ad pages",
+    "ai data licensing strategies for online publishers",
+    "ethical guidelines for ai web scraping"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs",
+  "recommended_slug": "ai-web-crawler-blocking-publishers",
+  "outline_h2s": [
+    "What Are AI Web Crawlers and How Do They Work?",
+    "Why Publishers Are Blocking AI Crawlers and Training Bots",
+    "Key Methods to Control AI Crawlers: Robots.txt, Headers and Vendor Tools",
+    "Mixed‑Use AI Crawlers: Search, Agents and Training Explained",
+    "How Ad‑Supported Sites Should Think About Blocking or Allowing AI Bots",
+    "Implementing AI Crawler Controls with CDNs and Security Providers",
+    "Designing a Data Licensing and Compensation Strategy for AI Training",
+    "Legal and Ethical Considerations Around AI Web Scraping",
+    "Measuring the Impact of AI Crawler Blocking on Traffic and Revenue",
+    "Future Trends in AI Data Access, Web Standards and Publisher Power"
+  ]
+}

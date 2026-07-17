@@ -1,0 +1,101 @@
+{
+  "week": "2026-06-20",
+  "events": [
+    {
+      "event": "U.S. regulator creates fast‑track grid connection process for AI data centers",
+      "category": "Data/Infra",
+      "why_it_matters": "The Federal Energy Regulatory Commission approved a rule giving large AI and cloud data centers a prioritized path to connect to the power grid, aiming to reduce long interconnection delays that have slowed new AI capacity. This policy change could accelerate deployment of GPU-heavy facilities but also concentrates grid planning and investment around AI loads, with implications for regional power prices and infrastructure build‑out.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+          "title": "AI data centers just got a government-mandated fast lane to the grid",
+          "date": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "event": "Google launches Gemini‑powered smart home speaker with more capable on‑device assistant",
+      "category": "Edge AI",
+      "why_it_matters": "Google introduced a new smart home speaker that relies on its Gemini models for more complex, conversational control of home devices. By handling multi‑step commands and integrating with a paid AI tier, it illustrates how advanced models are being productized at the edge in consumer hardware, and how subscription AI services may become standard for home devices.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/17/google-bets-on-gemini-to-reinvent-the-smart-home-speaker/",
+          "title": "Google bets on Gemini to reinvent the smart home speaker",
+          "date": "2026-06-17"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic suspends access to newest models for foreign nationals after U.S. government directive",
+      "category": "Models",
+      "why_it_matters": "Anthropic temporarily halted access to its latest frontier models for all foreign nationals, including some employees, in response to a U.S. government order. This highlights growing export‑control style oversight of state‑of‑the‑art AI models and raises operational risks for companies and countries relying on external model providers for critical applications.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/",
+          "title": "As Anthropic suspends access to new models, India debates its AI future",
+          "date": "2026-06-13"
+        }
+      ]
+    },
+    {
+      "event": "New analysis underscores AI model providers’ growing role as interchangeable infrastructure",
+      "category": "Data/Infra",
+      "why_it_matters": "Coverage of OpenRouter’s recent funding emphasizes that many customers now treat AI models as swap‑in components behind unified APIs, rather than committing to a single provider. This trend strengthens the role of routing layers and has implications for competitive dynamics among model vendors and for how enterprises architect AI workloads.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/",
+          "title": "OpenRouter more than doubles valuation to $1.3B in a year",
+          "date": "2026-05-26"
+        }
+      ]
+    },
+    {
+      "event": "Google details Gemini Omni multimodal family capable of generating video from mixed inputs",
+      "category": "Creative AI",
+      "why_it_matters": "Google’s Gemini Omni models, starting with Omni Flash, are designed to accept text, images, audio and video as inputs and generate coherent video outputs while also supporting image editing via text prompts. This represents continued progress toward unified multimodal systems and expands commercially available tools for high‑quality synthetic media creation.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/19/googles-gemini-omni-turns-images-audio-and-text-into-video-and-thats-just-the-start/",
+          "title": "Google's Gemini Omni turns images, audio, and text into video — and that's just the start",
+          "date": "2026-05-19"
+        }
+      ]
+    },
+    {
+      "event": "Google expands agentic Gemini features across Android for cross‑app task automation",
+      "category": "Models",
+      "why_it_matters": "Google is rolling out more ‘agentic’ behaviors in Android, allowing Gemini to perform multi‑step tasks across apps such as filling forms, browsing and coordinating actions. This shows large models being embedded as general‑purpose agents in the mobile OS layer, which could alter app interaction patterns and increase dependence on model‑mediated workflows.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/05/12/google-brings-agentic-ai-and-vibe-coded-widgets-to-android/",
+          "title": "Google brings agentic AI and vibe-coded widgets to Android",
+          "date": "2026-05-12"
+        }
+      ]
+    },
+    {
+      "event": "Wired highlights emerging U.S.–China collaboration and constraints in humanoid ‘physical AI’ robots",
+      "category": "Robotics",
+      "why_it_matters": "Reporting on a new humanoid robot developed with Chinese hardware and U.S. AI chips and software illustrates how humanoid platforms are becoming testbeds for ‘physical AI’ while operating under export controls. It underlines the dependence of advanced robotics on high‑end AI accelerators and the geopolitical limits on where those systems can be deployed.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/nvidia-unitree-humanoid-robot-h2-plus/",
+          "title": "The Humanoid Robot of the Future Is a 6-Foot-Tall Beefcake With a Chinese Body and an American Brain",
+          "date": "2026-06-03"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch examines how AI data‑center power rules reshape competitive landscape",
+      "category": "AI Ethics",
+      "why_it_matters": "Analysis of the new fast‑lane grid rules for AI data centers raises distributional questions about who benefits from preferential access to electricity and how that affects other grid users. It brings AI governance and ethics into infrastructure policy, focusing on fairness, regional impacts, and the environmental and economic consequences of prioritizing AI workloads.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+          "title": "AI data centers just got a government-mandated fast lane to the grid",
+          "date": "2026-06-18"
+        }
+      ]
+    }
+  ]
+}

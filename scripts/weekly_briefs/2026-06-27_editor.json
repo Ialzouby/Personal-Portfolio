@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Direct U.S. government intervention in the rollout of a frontier OpenAI model is a high‑impact, highly novel governance story with strong ongoing news and explainer value. It scores very high on news impact and good on SEO for topics like AI regulation, model deployment controls, and safety oversight, while incurring only a modest diversity penalty.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 39,
+      "notes": "Major example of direct government influence on a frontier model launch (GPT‑5.6 family). Strong implications for AI governance, national security, and how/when advanced models reach the public. High authority sources and sustained policy relevance make it a strong explainer topic (e.g., what triggers government review, comparison to previous export controls, etc.). No recent AI Ethics/Policy bucket in last posts, so no penalty; override rule caps any penalty at 2 anyway."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 21,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "OpenAI’s first custom inference chip with Broadcom is big for AI hardware, vertical integration, and GPU alternatives. Strong news value but slightly narrower audience than regulatory showdown stories. Good evergreen SEO around AI accelerators, inference vs training chips, cost/performance. Edge AI bucket appeared very recently (within last 4 posts), so 2‑point penalty for same bucket as a recent post."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Waymo recalling ~4,000 robotaxis over construction‑zone failures is a clear, concrete robotics safety and governance story. Strong impact within autonomous driving/embodied AI, but slightly less broad than OpenAI/government news. Solid SEO for AV safety, recalls, and post‑deployment monitoring explainers. Robotics hasn’t appeared in recent buckets, so no diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 32,
+      "notes": "Qualcomm’s new platforms for AI wearables and XR have clear hardware and developer implications. Good SEO potential (on‑device AI, smart glasses, AI pins, mixed reality stacks), but somewhat incremental vs first‑ever or regulatory stories. Edge AI bucket used very recently, so 2‑point penalty for category repetition."
+    },
+    {
+      "index": 4,
+      "bucket": "AI in Healthcare",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "GPT‑Rosalind updates reflect meaningful specialization of frontier models for life sciences R&D (drug discovery, genomics). Good technical and enterprise relevance, but narrower audience than broad policy or chip announcements. Reasonable evergreen SEO on domain‑specific models and bio/AI workflows. Healthcare AI bucket not recently used, so no diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Acquisition of Ona deepens OpenAI’s enterprise agent and hybrid‑infra story. Strong for infra‑focused readers and agent orchestration patterns, but more incremental. Good SEO around enterprise AI agents and customer‑controlled execution. Data/Infra bucket is heavily overused in the recent list (3+ times in last 6), so maximum 6‑point diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "The OpenAI–Amazon partnership is important for cloud distribution and consolidation of AI services, but somewhat older (February) and more ecosystem/business than frontier‑tech breaking news. Good SEO for cloud AI integration and vendor lock‑in discussions. Suffers maximum diversity penalty due to repeated Data/Infra coverage in recent posts."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 14,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 27,
+      "notes": "Public‑opinion survey on AI in healthcare is useful for context and governance discussions but less urgent and news‑driving than a direct government intervention in model rollout. Moderate SEO: survey findings age quickly, though attitudes toward AI in health are relevant for explainers. AI Ethics & Policy bucket is not recently overused, so no penalty."
+    }
+  ]
+}

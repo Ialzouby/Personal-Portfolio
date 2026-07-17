@@ -1,0 +1,78 @@
+{
+  "winner_index": 2,
+  "winner_reason": "Cloudflare’s default blocking of mixed‑use AI crawlers on ad‑supported pages directly affects how much of the commercial web is available for training, forces crawler separation, and strengthens publishers’ leverage for paid data deals. It has broad ecosystem and policy impact, strong long‑tail SEO potential around AI data access, robots rules, and licensing, and benefits from diversity since AI Ethics was used only once in the last eight posts.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 4,
+      "final_score": 26,
+      "notes": "Enterprise‑only UX/ops refinement for model selection; important for existing OpenAI customers but less transformative for the broader AI ecosystem. Good explainer potential around model tiers and routing. Models bucket appears 3+ times in last 6 posts, so higher penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 2,
+      "final_score": 34,
+      "notes": "Custom inference chip is strategically significant for cost, supply, and vertical integration; strong hardware‑economics angle and long‑tail SEO on AI chips vs GPUs. Edge AI used recently but not in last post; moderate penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "Policy change from a major CDN effectively walls off much of the ad‑supported web from mixed AI crawlers by default; materially shifts bargaining power toward publishers and pushes paid data licensing. High, durable SEO around AI training data access, robots rules, and compliance. Override rule caps penalty at 2 despite AI Ethics as most recent bucket."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "Anthropic’s framework is influential for governance norms and future regulation discussions but is self‑imposed and narrower in immediate impact. Good SEO for advanced AI governance and risk thresholds. Ethics bucket already used last post, and no override (impact < 22), so higher penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "Waymo recall underscores ongoing safety and edge‑case issues in robotaxis; notable for mobility regulation and public trust. Solid SEO on autonomous vehicle safety, recalls, and construction‑zone failures. Robotics is a fresh bucket here, so no penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Apple bringing generative image editing to default Photos app is major for mainstream adoption; very strong, evergreen SEO on Apple Intelligence, Siri AI, and on‑device generative features. Creative AI not recently used, so no diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Acquisition of Ona matters for secure agent execution in customer clouds; impactful mainly for enterprise and infra‑savvy readers. Strong explainer potential on agent orchestration and data residency. Data/Infra appears twice in last 4 and 3+ times in last 6, giving max penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI in Healthcare",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Rosalind update advances domain‑specific life‑sciences models, important for R&D but niche compared to broader ecosystem shifts. Good SEO around AI for drug discovery and biology workflows. Healthcare bucket not recently used, so no penalty."
+    }
+  ]
+}
