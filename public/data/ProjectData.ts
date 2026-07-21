@@ -38,7 +38,7 @@ export const featureds = [
     tag1: "Hackathon",
     tag2: "NASA",
     tag3: "RAG & Space Biology",
-    title: "1st Place & Global Nominee – 2025 NASA Space Apps Challenge",
+    title: "1st Place & Global Nominee 2026 :) – 2025 NASA Space Apps Challenge",
     description: "Built Raptor RAG: an advanced retrieval-augmented generation system designed around NASA's space biology data for intelligent ingestion and retrieval.",
     img: project6,
     client: "NASA Space Apps Challenge 2025",
