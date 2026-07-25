@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Nvidia’s Japan agreements reshape national‑scale AI infrastructure, robotics, and supply chain strategy in a G7 economy, giving it the highest combination of news impact and long‑tail SEO value among the options, even after a diversity penalty for repeating the Data/Infra bucket.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Data/Infra",
+      "news_impact": 22,
+      "seo_potential": 14,
+      "diversity_penalty": 2,
+      "final_score": 34,
+      "notes": "National‑level AI ‘factory’ plus robotics and chip‑materials deals in Japan; ties into Nvidia’s global dominance, geopolitics, and continued AI infra build‑out. Strong explainer potential on national AI factories, sovereign AI, and supply chains. Data/Infra was used 8 posts ago, so only the ‘same as last post’ rule applies; override rule caps penalty at 2 anyway because news_impact ≥ 22."
+    },
+    {
+      "index": 1,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Humanoid robotics commercialization near Tesla’s Optimus plant is notable but more niche. Good SEO for ‘humanoid robots logistics’, but less broad than national AI infra. Robotics is a fresh bucket relative to the recent model/ethics streak, so no diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 17,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "Zoox software recall is important for AV safety/regulation, but it’s a single‑incident story with limited evergreen depth compared with structural infra or tooling trends."
+    },
+    {
+      "index": 3,
+      "bucket": "AI in Healthcare",
+      "news_impact": 16,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "AI + quantum for peptide discovery is scientifically interesting and has strong explainer SEO (drug discovery, quantum limitations), but impact is early‑stage and framed as proof‑of‑concept, not deployment."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 29,
+      "notes": "NASA–IBM climate‑risk AI using Earth‑observation data is strong and socially impactful. However, Edge AI appeared in the last 4 posts, triggering a 4‑point diversity penalty. Good SEO around ‘AI climate prediction’ and ‘Earth observation AI’ but not as globally structural as Nvidia’s national AI factory move."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "‘Do Not Train’ metadata could become a key mechanism in AI data governance with excellent long‑tail SEO for consent, copyright, and training data policy. But AI Ethics has appeared 3+ times in the last 6 posts, so it takes the maximum 6‑point diversity penalty. High‑quality story, slightly constrained by repetition."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "Adobe Firefly as a model‑agnostic creative hub is strategically important for tooling and orchestration, with strong SEO on ‘creative workflows’, ‘multi‑model studios’, etc. Creative AI is a fresh bucket, so no penalty, but the structural, geopolitical significance is still slightly below a national Nvidia–Japan AI infra deal."
+    },
+    {
+      "index": 7,
+      "bucket": "Models",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "New Firefly generative audio/voice features deepen model‑to‑workflow integration, but the Models bucket has been used heavily (3+ times in last 6 posts), incurring the max diversity penalty. Good SEO for ‘AI soundtracks’ and ‘multilingual voiceovers’, but less differentiating as a weekly anchor."
+    }
+  ]
+}

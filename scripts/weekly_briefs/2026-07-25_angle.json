@@ -1,0 +1,28 @@
+{
+  "primary_query": "national ai compute infrastructure",
+  "secondary_queries": [
+    "what is a national ai factory",
+    "ai supercomputing infrastructure for countries",
+    "how governments build national ai platforms",
+    "public private partnerships for ai infrastructure",
+    "national ai strategy compute and data centers",
+    "ai chip supply chain for national infrastructure",
+    "robotics ecosystems around national ai compute",
+    "planning a national ai supercomputer project"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "National AI Compute Infrastructure: How Countries Build It",
+  "recommended_slug": "national-ai-compute-infrastructure",
+  "outline_h2s": [
+    "What Is National AI Compute Infrastructure?",
+    "Why Countries Are Investing in National AI Factories",
+    "Core Building Blocks: Compute, Storage and Networking",
+    "AI Chip Supply Chains and Strategic Vendor Partnerships",
+    "Integrating Robotics and Industrial Automation with National AI",
+    "Public–Private Models for Funding and Operating AI Infrastructure",
+    "Key Design Considerations: Scale, Security, Governance and Access",
+    "How National AI Platforms Shape Research, Industry and GDP",
+    "Risks, Dependencies and Geopolitical Tradeoffs",
+    "Practical Lessons from Early National AI Infrastructure Efforts"
+  ]
+}

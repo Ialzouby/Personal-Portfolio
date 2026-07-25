@@ -33,7 +33,8 @@
     "ai export controls on frontier models",
     "government regulation of frontier ai models",
     "ai web crawler blocking for publishers",
-    "frontier gpt models explained"
+    "frontier gpt models explained",
+    "national ai compute infrastructure"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -69,7 +70,8 @@
     "AI Export Controls on Frontier Models: Access and Risk",
     "Government Regulation of Frontier AI Models: Access and Safety",
     "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs",
-    "Frontier GPT Models Explained: How They Power Complex Work"
+    "Frontier GPT Models Explained: How They Power Complex Work",
+    "National AI Compute Infrastructure: How Countries Build It"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -105,7 +107,8 @@
     "ai-export-controls-frontier-models",
     "government-regulation-frontier-ai-models",
     "ai-web-crawler-blocking-publishers",
-    "frontier-gpt-models-explained"
+    "frontier-gpt-models-explained",
+    "national-ai-compute-infrastructure"
   ],
   "buckets": [
     "Robotics",
@@ -141,6 +144,7 @@
     "Models",
     "AI Ethics",
     "AI Ethics",
-    "Models"
+    "Models",
+    "Data/Infra"
   ]
 }

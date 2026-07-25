@@ -1,0 +1,106 @@
+{
+  "week": "2026-07-25",
+  "events": [
+    {
+      "event": "Nvidia signs broad Japan deals, including a national AI ‘factory’ and robotics partnerships, during CEO Jensen Huang’s visit",
+      "category": "Data/Infra",
+      "why_it_matters": "The agreements extend Nvidia’s AI footprint across Japan’s computing infrastructure, robotics sector, and chip-materials supply chain. Building a national AI ‘factory’ and tightening links with local robotics companies and component suppliers strengthens Nvidia’s position at the core of global AI compute and manufacturing capacity, and signals continued large‑scale public and private investment into AI infrastructure.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/",
+          "title": "What to watch for after Jensen Huang’s Japan visit",
+          "date": "2026-07-19"
+        }
+      ]
+    },
+    {
+      "event": "Nvidia-backed Agility Robotics opens a new humanoid robot training facility near Tesla’s planned Optimus plant",
+      "category": "Robotics",
+      "why_it_matters": "Agility Robotics is expanding commercial deployment of its Digit humanoid robots with a 60,000‑square‑foot facility in Fremont, California. Locating next to Tesla’s planned Optimus production highlights growing competitive pressure and investment in humanoid robots for logistics and manufacturing, and indicates that humanoid systems are moving from R&D into revenue‑generating operations with major customers.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+          "title": "Agility Robotics plants its flag in Tesla’s backyard",
+          "date": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "event": "Amazon-backed Zoox issues software recall after robotaxi misbehaves in heavy smoke",
+      "category": "Robotics",
+      "why_it_matters": "Zoox is updating software on its autonomous vehicles after an incident where a robotaxi reacted incorrectly to heavy smoke. The move underscores that safety‑critical edge cases continue to challenge AV perception and planning systems, and that field incidents are still pushing regulatory dialogue, validation processes, and design choices for AI‑driven mobility.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/07/17/zoox-issues-software-recall-after-a-robotaxi-got-confused-by-heavy-smoke/",
+          "title": "Zoox issues software recall after a robotaxi got confused by heavy smoke",
+          "date": "2026-07-17"
+        }
+      ]
+    },
+    {
+      "event": "Researchers combine AI models with early quantum hardware to generate candidate therapeutic peptides",
+      "category": "Healthcare AI",
+      "why_it_matters": "A research team reports using quantum computing alongside AI to propose new peptide structures, framing the work as a proof‑of‑concept rather than a near‑term clinical tool. The study illustrates a possible path toward AI‑assisted drug discovery that leverages quantum methods, while emphasizing that current quantum devices remain too limited for large‑scale biomedical AI workloads and that classical approaches are still more practical.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/scientists-using-ai-and-quantum-computing-to-generate-new-peptides/",
+          "title": "Scientists’ Side Hustle? Using AI and Quantum Computing to Generate New Peptides",
+          "date": "2026-07-12"
+        }
+      ]
+    },
+    {
+      "event": "NASA and IBM highlight AI use on Earth‑observation data to improve climate‑risk prediction and access",
+      "category": "Edge AI",
+      "why_it_matters": "A collaboration between NASA and IBM is using AI to analyze large volumes of Earth‑observation data and expose the results through open platforms. This work is positioned as a way to make climate and disaster‑risk signals more accessible to policymakers and insurers, and illustrates how AI models running on large public data sets can support forecasting, planning, and risk management across sectors.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/sponsored/story/ai-is-making-our-volatile-planet-more-predictable/",
+          "title": "AI is Making Our Volatile Planet More Predictable",
+          "date": "2026-07-23"
+        }
+      ]
+    },
+    {
+      "event": "Industry groups promote ‘Do Not Train’ metadata to signal AI training restrictions for digital content",
+      "category": "AI Ethics",
+      "why_it_matters": "A coalition of technology, media, and policy organizations is pushing an approach where creators can label content with ‘Do Not Train’ credentials to indicate it should not be used in AI training datasets. If widely adopted and respected by crawlers and model developers, such metadata could become a practical mechanism for consent and control over training data, influencing how future generative models are built and governed.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/sponsored/story/responsible-innovation-in-the-age-of-generative-ai/",
+          "title": "Responsible Innovation in the Age of Generative AI",
+          "date": "2026-07-24"
+        }
+      ]
+    },
+    {
+      "event": "Adobe promotes Firefly as an all‑in‑one generative AI studio integrated with major third‑party models",
+      "category": "Creative AI",
+      "why_it_matters": "Recent coverage describes Adobe Firefly as a central workspace where users can invoke Adobe’s own generative model or call models such as Google Gemini, ChatGPT, Runway, and Imagen from within creative workflows. This reflects a trend toward model‑agnostic creative environments and indicates that major creative‑software vendors are positioning themselves as orchestration layers over multiple foundation models rather than relying on a single in‑house system.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/sponsored/story/ai-creative-boom/",
+          "title": "How AI Is Poised To Unleash a Creative Boom",
+          "date": "2026-07-23"
+        },
+        {
+          "url": "https://www.wired.com/sponsored/story/the-making-of-a-generative-ai-powerhouse/",
+          "title": "The Making of a Generative AI Powerhouse",
+          "date": "2026-07-18"
+        }
+      ]
+    },
+    {
+      "event": "Adobe outlines expanded generative features in Firefly, including AI‑generated soundtracks and multilingual speech",
+      "category": "Models",
+      "why_it_matters": "Adobe details new generative capabilities such as creating licensed instrumental soundtracks and producing synthetic voiceovers in multiple languages, as part of a broader update to its Firefly models and tools. The additions show how foundation‑model capabilities are being packaged into domain‑specific functions for audio and video production, tightening the link between general‑purpose models and concrete creative workflows.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/sponsored/story/adobe-just-supercharged-generative-ai-for-creators/",
+          "title": "Adobe Just Supercharged Generative AI for Creators",
+          "date": "2026-07-22"
+        }
+      ]
+    }
+  ]
+}
