@@ -36,13 +36,13 @@ const FeaturedCard = ({
 
   return (
     <div className="col-12 col-md-4 mb-4">
-      <div className="position-relative h-100">
+      <div className="position-relative h-100" style={{ overflow: "visible" }}>
         {badgeSrc && (
           <div
             className="position-absolute"
             style={{
-              top: "-15px",
-              right: "-15px",
+              top: "-10px",
+              right: "-10px",
               transform: "rotate(15deg)",
               zIndex: 10,
               pointerEvents: "none",
@@ -91,7 +91,7 @@ const FeaturedCard = ({
               <div
                 className="w-100 rounded-3 overflow-hidden"
                 style={{
-                  height: "280px",
+                  height: "clamp(180px, 35vw, 280px)",
                 }}
               >
                 <Image

@@ -61,19 +61,17 @@ const Footer = () => {
         </div>
 
         {/* Affiliations Logos (Grayscale) */}
-        <div className="d-flex justify-content-center flex-wrap gap-4 py-3 border-top border-secondary-subtle">
+        <div className="d-flex justify-content-center flex-wrap gap-3 gap-md-4 py-3 border-top border-secondary-subtle">
           {affiliations.map((name, i) => (
             <Image
-  key={i}
-  src={`/images/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
-  alt={name}
-  width={100}
-  height={100}
-  style={{
-    objectFit: "contain",
-  }}
-/>
-
+              key={i}
+              src={`/images/${name.toLowerCase().replace(/\s+/g, "-")}.png`}
+              alt={name}
+              width={70}
+              height={70}
+              className="footer-affiliation-logo"
+              style={{ objectFit: "contain" }}
+            />
           ))}
         </div>
 

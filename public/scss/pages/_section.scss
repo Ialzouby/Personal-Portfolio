@@ -706,7 +706,7 @@
     transform: translateX(-50%);
   }
   .featured-projects-banner {
-    max-width: 480px;  // keep it from expanding on its own row
+    max-width: 480px;
     width: 100%;
     margin-top: 2rem;
   }
@@ -720,6 +720,10 @@
   .details-description {
     width: 80%;
     margin: 0 auto;
+  }
+
+  .next-project-content {
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -783,10 +787,18 @@
   .profile-img {
     display: none !important;
   }
+
+  .next-project-content {
+    width: 100% !important;
+  }
 }
-@media (max-width: 767px) {
-  .profile-img {
-    display: none !important;
+
+// ── ProductCard image wrapper ──────────────────────────────
+.product-card-img-wrap {
+  width: 260px;
+
+  @media (max-width: 767px) {
+    width: 100%;
   }
 }
 

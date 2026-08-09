@@ -50,10 +50,9 @@ const ProductCard = ({
         >
           {/* Left: Image */}
           <div
-            className="flex-shrink-0"
+            className="flex-shrink-0 product-card-img-wrap"
             style={{
-              width: "260px",
-              minHeight: "220px",
+              minHeight: "200px",
               position: "relative",
               overflow: "hidden",
               borderRadius: "12px",

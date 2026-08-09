@@ -267,6 +267,8 @@
 @media (max-width: 480px) {
   .professional-gallery {
     grid-template-rows: repeat(2, 160px);
+    grid-auto-columns: minmax(140px, auto);
+    padding-bottom: 24px;
   }
 }
 

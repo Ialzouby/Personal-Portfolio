@@ -369,6 +369,8 @@ const Banner = () => {
 
           /* Cards Stack adjustments */
           .right-column-stack {
+            max-width: 100% !important;
+            width: 100% !important;
             gap: 1.25rem !important;
             margin: 0 !important;
             padding: 0 !important;
@@ -526,54 +528,6 @@ const Banner = () => {
           }
         }
 
-        /* Landscape Mobile Devices */
-        @media (max-width: 768px) and (orientation: landscape) {
-          .banner-section {
-            height: auto;
-            min-height: auto;
-            padding-top: 4rem;
-            padding-bottom: 2rem;
-          }
-
-          .hero-text-container h2 {
-            font-size: 1.75rem;
-            margin-bottom: 0.5rem !important;
-          }
-
-          .hero-text-container p {
-            font-size: 0.875rem;
-            margin-bottom: 1rem !important;
-          }
-
-          .hero-text-container .d-flex.gap-4 {
-            flex-direction: row;
-            gap: 1rem !important;
-          }
-
-          .hero-text-container .btn {
-            width: auto;
-            padding: 0.5rem 1rem !important;
-            font-size: 0.875rem !important;
-          }
-
-          .hero-text-container .mt-8 {
-            display: none !important;
-          }
-
-          .right-column-stack {
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-          }
-
-          .banner-section .col-lg-4 {
-            padding-top: 0 !important;
-            margin-top: -1rem !important;
-          }
-
-          .scroll-indicator {
-            display: none;
-          }
-        }
       `}</style>
 
       <div className="banner-section" ref={bannerRef}>

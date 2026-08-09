@@ -1290,6 +1290,16 @@ input:-webkit-autofill:active {
   padding: 2rem 0;
 }
 
+.footer-affiliation-logo {
+  width: 70px;
+  height: 70px;
+
+  @media (max-width: 576px) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
 .text-footer {
   color: rgba(var(--d1), 1);
 }
