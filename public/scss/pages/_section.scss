@@ -234,6 +234,11 @@
   .next-project-content {
     width: 636px;
   }
+
+  // background-attachment: fixed is broken on iOS Safari — fall back to scroll
+  @media (max-width: 991px) {
+    background-attachment: scroll;
+  }
 }
 
 // featured projects style
@@ -791,6 +796,12 @@
   .next-project-content {
     width: 100% !important;
   }
+
+  // Gallery section: tighten unresponsive Bootstrap utility padding
+  .gallery-section {
+    padding-top: 1.25rem !important;
+    padding-bottom: 2rem !important;
+  }
 }
 
 // ── ProductCard image wrapper ──────────────────────────────
@@ -830,13 +841,17 @@
   }
 
   @media (max-width: 767px) {
-    padding: 4.5rem 0 5.5rem;
+    padding: 3rem 0 3.5rem;
   }
 }
 
 // ── Header ────────────────────────────────────────────────
 .deploy-header {
   margin-bottom: 3rem;
+
+  @media (max-width: 767px) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .deploy-badge {
@@ -1159,7 +1174,7 @@
   }
 
   @media (max-width: 767px) {
-    height: min(62vh, 520px);
+    height: min(50vh, 380px);
   }
 }
 

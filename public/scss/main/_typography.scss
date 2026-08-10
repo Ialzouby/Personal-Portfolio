@@ -262,6 +262,64 @@ li {
   }
 }
 
+@media (max-width: 768px) {
+  .display-four {
+    font-size: 36px;
+    line-height: 120%;
+  }
+
+  .display-three {
+    font-size: 44px;
+    line-height: 120%;
+  }
+
+  .display-two {
+    font-size: 52px;
+    line-height: 120%;
+  }
+
+  .display-one {
+    font-size: 64px;
+    line-height: 120%;
+  }
+
+  .fs-one,
+  h1,
+  h1 > a {
+    font-size: 34px;
+    line-height: 120%;
+  }
+
+  .fs-two,
+  h2,
+  h2 > a {
+    font-size: 27px;
+    line-height: 120%;
+  }
+
+  .fs-three,
+  h3,
+  h3 > a {
+    font-size: 24px;
+    line-height: 130%;
+  }
+
+  .pt-120 {
+    padding-top: 48px;
+  }
+  .pb-120 {
+    padding-bottom: 48px;
+  }
+
+  .pt-60 {
+    padding-top: 28px;
+  }
+
+  .pb-60 {
+    padding-bottom: 28px;
+  }
+}
+
 @media (max-width: 575px) {
   .display-nine {
     font-size: 80px;
@@ -362,10 +420,10 @@ li {
   }
 
   .pt-60 {
-    padding-top: 40px;
+    padding-top: 24px;
   }
 
   .pb-60 {
-    padding-bottom: 40px;
+    padding-bottom: 24px;
   }
 }
