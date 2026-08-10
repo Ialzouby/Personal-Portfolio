@@ -546,7 +546,7 @@ const Banner = () => {
 
                 <div className="d-flex gap-4 mt-2">
                   <Link href="/portfolio" className="btn btn-primary rounded-pill px-5 py-3 fw-semibold d-flex align-items-center gap-2">
-                    View Portfolio <PiArrowRight />
+                    Portfolio <PiArrowRight />
                   </Link>
                   <button onClick={() => setIsContactOpen(true)} className="btn btn-outline-primary rounded-pill px-5 py-3 fw-semibold border-2 d-flex align-items-center gap-2 n5-color">
                     Contact Me
