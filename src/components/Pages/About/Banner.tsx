@@ -290,7 +290,7 @@ const Banner = () => {
             height: auto;
             min-height: auto;
             padding-top: 6.5rem;
-            padding-bottom: 2.5rem;
+            padding-bottom: 5rem;
           }
 
           .mobile-contents {
@@ -408,7 +408,7 @@ const Banner = () => {
         @media (max-width: 480px) {
           .banner-section {
             padding-top: 5rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 4rem;
           }
 
           .hero-text-container {
@@ -535,7 +535,7 @@ const Banner = () => {
           <div className="row align-items-center g-5">
             {/* LEFT COLUMN: Main Text */}
             <div className="col-lg-8 order-2 order-lg-1 mobile-contents">
-              <div className="glass-card hero-text-container order-2-mobile">
+              <div className="glass-card hero-text-container order-1-mobile">
                 <span className="n5-color fs-four fw-medium d-inline-block mb-2">HI, I&apos;M ISSAM </span>
                 <h2 className="typing-text display-one p1-color mb-4 fw-bold">
                   <TypingEffect texts={texts} speed={200} pause={2000} />
@@ -564,7 +564,7 @@ const Banner = () => {
               <div className="right-column-stack mobile-contents">
 
                 {/* 1. Featured Work Card - PLACED AT TOP ON MOBILE */}
-                <div className="glass-card featured-projects-card order-1-mobile">
+                <div className="glass-card featured-projects-card order-2-mobile">
                   <div className="card-header-sm">
                     <PiStarFill size={16} /> Featured Work
                   </div>
