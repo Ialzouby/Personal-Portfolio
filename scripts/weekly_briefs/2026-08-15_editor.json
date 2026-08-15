@@ -1,0 +1,51 @@
+{
+  "winner_index": 0,
+  "winner_reason": "GPT-5.2’s impact on scientific and medical research is a high-salience, frontier-model story with broad implications for R&D productivity, drug discovery, and national science policy. It has strong news value (frontier capability shift plus concrete lab outcomes) and excellent evergreen SEO potential around 'AI for science', 'AI drug discovery', and 'AI in research', while still only incurring a moderate diversity penalty for being another Models piece.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 34,
+      "notes": "Major frontier-model advance explicitly framed as a turning point for AI in science/medicine, with concrete examples of helping solve research problems. High policy and industry relevance. Strong explainer angles (AI for science, drug discovery, research copilot), likely many sustained queries. Diversity penalty is max (Models has appeared 3+ times in last 6), but override rule does not apply because news_impact < 22 threshold is *met*? The rule says if News Impact ≥ 22, max penalty 2 — here NI=23, so penalty should be reduced to 2. Recompute: 23 + 17 - 2 = 38 final. Becomes clear winner even under conservative scoring."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Strong, detailed look at privacy-aware training pipelines from a major provider; valuable for policy, compliance, and MLOps audiences. Good evergreen value around 'how OpenAI uses data', 'LLM training privacy'. But similar Data/Infra bucket used very recently, so max diversity penalty. Still solid but less globally newsworthy than GPT-5.2 reshaping science."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "System card for o1 reasoning models is important for transparency, evals, and regulators. Good SEO around 'o1 system card', 'model cards', 'AI reasoning benchmarks'. However, it’s more of a documentation/evals story than a pivotal capability or policy shift. Models bucket is already heavily used, incurring max diversity penalty; override does not apply because NI < 22."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 20,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Adversarial distillation risks for frontier models is a significant policy and security topic, touching model theft, safety circumvention, and national-security style concerns. Good SEO around 'model distillation risks', 'frontier model leakage'. But AI Ethics/Policy bucket has been used repeatedly in recent posts, so full diversity penalty applies; news impact high but still shy of 22, so no override."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Influential for copyright and provenance policy debates, especially around text labelling limits and international fragmentation. Good explainer/SEO angles on 'AI content labelling', 'C2PA', 'AI and copyright UK'. However, comparatively narrower mainstream impact than frontier science acceleration or security testimony, and heavily penalized for repeating AI Ethics bucket."
+    }
+  ]
+}

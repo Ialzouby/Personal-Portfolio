@@ -34,7 +34,8 @@
     "government regulation of frontier ai models",
     "ai web crawler blocking for publishers",
     "frontier gpt models explained",
-    "national ai compute infrastructure"
+    "national ai compute infrastructure",
+    "AI for scientific research explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -71,7 +72,8 @@
     "Government Regulation of Frontier AI Models: Access and Safety",
     "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs",
     "Frontier GPT Models Explained: How They Power Complex Work",
-    "National AI Compute Infrastructure: How Countries Build It"
+    "National AI Compute Infrastructure: How Countries Build It",
+    "AI for Scientific Research Explained: From Hypotheses to Lab Work"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -108,7 +110,8 @@
     "government-regulation-frontier-ai-models",
     "ai-web-crawler-blocking-publishers",
     "frontier-gpt-models-explained",
-    "national-ai-compute-infrastructure"
+    "national-ai-compute-infrastructure",
+    "ai-for-scientific-research-explained"
   ],
   "buckets": [
     "Robotics",
@@ -145,6 +148,7 @@
     "AI Ethics",
     "AI Ethics",
     "Models",
-    "Data/Infra"
+    "Data/Infra",
+    "Models"
   ]
 }

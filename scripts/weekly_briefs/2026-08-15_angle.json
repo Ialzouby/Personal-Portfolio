@@ -1,0 +1,28 @@
+{
+  "primary_query": "AI for scientific research explained",
+  "secondary_queries": [
+    "how ai accelerates scientific discovery",
+    "using gpt for scientific research",
+    "ai tools for scientists and researchers",
+    "large language models in science and medicine",
+    "ai for experiment design and simulation",
+    "ai for mathematics and theorem proving",
+    "benefits and risks of ai in research",
+    "best practices for ai-assisted science"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI for Scientific Research Explained: From Hypotheses to Lab Work",
+  "recommended_slug": "ai-for-scientific-research-explained",
+  "outline_h2s": [
+    "What Does AI for Scientific Research Actually Mean?",
+    "Key Ways AI Accelerates the Scientific Workflow",
+    "How Large Language Models Support Scientists and PhD-Level Work",
+    "AI in Experimental Design, Simulation and Data Analysis",
+    "Applications in Medicine, Biology, Physics and Energy Research",
+    "Strengths, Limits and Failure Modes of AI in Science",
+    "Practical Workflows for Using AI Safely in Research",
+    "Ethical, Safety and Reproducibility Considerations",
+    "How to Evaluate and Choose AI Tools for Your Lab",
+    "Future Directions for AI-Assisted Scientific Discovery"
+  ]
+}
