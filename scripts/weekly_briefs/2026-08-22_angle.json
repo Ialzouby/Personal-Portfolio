@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai data center megaprojects explained",
+  "secondary_queries": [
+    "how much power do ai data centers use",
+    "what is an ai compute campus",
+    "nvidia openai data center partnership",
+    "ai data center land and power requirements",
+    "gigawatt scale ai compute infrastructure",
+    "how regions attract ai data center investment",
+    "energy impact of large ai training clusters",
+    "long term planning for ai compute capacity"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Data Center Megaprojects Explained: Land, Power and Scale",
+  "recommended_slug": "ai-data-center-megaprojects-explained",
+  "outline_h2s": [
+    "What Makes an AI Data Center a Megaproject?",
+    "Why AI Compute Now Requires Gigawatt‑Scale Power",
+    "Land, Power and Shell: The New Stack for AI Factories",
+    "How Long‑Term AI Compute Partnerships Are Structured",
+    "Energy, Grid and Sustainability Impacts of AI Campuses",
+    "Economic Effects on Regions Hosting AI Infrastructure",
+    "Implications for AI Model Roadmaps and Capabilities",
+    "How Governments and Developers Plan for AI Megaprojects",
+    "Risks, Bottlenecks and Tradeoffs in Scaling AI Compute",
+    "How This Shapes the Future Map of Global AI Infrastructure"
+  ]
+}
