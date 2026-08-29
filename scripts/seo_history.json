@@ -36,7 +36,8 @@
     "frontier gpt models explained",
     "national ai compute infrastructure",
     "AI for scientific research explained",
-    "ai data center megaprojects explained"
+    "ai data center megaprojects explained",
+    "ai model jailbreak infrastructure attack"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -75,7 +76,8 @@
     "Frontier GPT Models Explained: How They Power Complex Work",
     "National AI Compute Infrastructure: How Countries Build It",
     "AI for Scientific Research Explained: From Hypotheses to Lab Work",
-    "AI Data Center Megaprojects Explained: Land, Power and Scale"
+    "AI Data Center Megaprojects Explained: Land, Power and Scale",
+    "AI Model Jailbreaks and Infrastructure Attacks Explained"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -114,7 +116,8 @@
     "frontier-gpt-models-explained",
     "national-ai-compute-infrastructure",
     "ai-for-scientific-research-explained",
-    "ai-data-center-megaprojects-explained"
+    "ai-data-center-megaprojects-explained",
+    "ai-model-jailbreak-infrastructure-attacks"
   ],
   "buckets": [
     "Robotics",
@@ -153,6 +156,7 @@
     "Models",
     "Data/Infra",
     "Models",
-    "Data/Infra"
+    "Data/Infra",
+    "AI Ethics"
   ]
 }
