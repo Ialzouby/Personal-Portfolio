@@ -37,7 +37,8 @@
     "national ai compute infrastructure",
     "AI for scientific research explained",
     "ai data center megaprojects explained",
-    "ai model jailbreak infrastructure attack"
+    "ai model jailbreak infrastructure attack",
+    "ai cyber agents explained"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -77,7 +78,8 @@
     "National AI Compute Infrastructure: How Countries Build It",
     "AI for Scientific Research Explained: From Hypotheses to Lab Work",
     "AI Data Center Megaprojects Explained: Land, Power and Scale",
-    "AI Model Jailbreaks and Infrastructure Attacks Explained"
+    "AI Model Jailbreaks and Infrastructure Attacks Explained",
+    "AI Cyber Agents Explained: Autonomous Security Models and Risks"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -117,7 +119,8 @@
     "national-ai-compute-infrastructure",
     "ai-for-scientific-research-explained",
     "ai-data-center-megaprojects-explained",
-    "ai-model-jailbreak-infrastructure-attacks"
+    "ai-model-jailbreak-infrastructure-attacks",
+    "ai-cyber-agents-explained"
   ],
   "buckets": [
     "Robotics",
@@ -157,6 +160,7 @@
     "Data/Infra",
     "Models",
     "Data/Infra",
-    "AI Ethics"
+    "AI Ethics",
+    "Models"
   ]
 }

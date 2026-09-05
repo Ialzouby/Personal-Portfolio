@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai cyber agents explained",
+  "secondary_queries": [
+    "what are ai cyber agents",
+    "ai agents for cybersecurity use cases",
+    "agentic ai models for security operations",
+    "autonomous ai agents and cyber risk",
+    "how ai agents use tools in cybersecurity",
+    "ai red teaming with autonomous agents",
+    "enterprise security risks of ai agents",
+    "governance for autonomous ai security tools"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Cyber Agents Explained: Autonomous Security Models and Risks",
+  "recommended_slug": "ai-cyber-agents-explained",
+  "outline_h2s": [
+    "What Are AI Cyber Agents?",
+    "How Agentic AI Works in Cybersecurity",
+    "Core Capabilities of AI Cyber Agents",
+    "Key Enterprise and Government Use Cases",
+    "Security Benefits and New Attack Surfaces",
+    "Risks of Highly Autonomous AI in Cyber Operations",
+    "Design Principles for Safer AI Cyber Agents",
+    "Governance, Compliance and Auditability",
+    "How to Evaluate AI Cyber Agents as a Buyer",
+    "Future Directions for Autonomous AI in Security"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "OpenAI Astra is a flagship frontier-model launch with major cyber and agentic implications, high media coverage, and strong ongoing explainer/SEO potential around autonomous agents and security; despite a diversity penalty from recent model-focused coverage, its news impact and search value clearly exceed the alternatives.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 34,
+      "notes": "Frontier model from OpenAI with critical cyber and agentic capabilities; high global interest, strong enterprise/government relevance, and deep explainer surface (agents, cyber risks, evaluations, safety tradeoffs). Models bucket used 3+ times in last 6 posts → 6-point penalty, but impact still dominates."
+    },
+    {
+      "index": 1,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Important as a concrete early case of agentic cyber risk and OpenAI internal testing; good for explainers on evals, red-teaming, and safety processes. Ethics bucket appears heavily in recent history, so maximum diversity penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Anthropic’s alignment/security update is notable but is more incremental policy/process than a single watershed incident; strong explainer angle but similar to other recent ethics stories, hence full diversity penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "Model Hardware Standard is strategically important for regulators/clouds and has durable SEO around model governance and deployment controls; however Data/Infra has been covered repeatedly recently, triggering maximum penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Gemini 3.8 Flash and Flash Cyber are meaningful for performance/cost and domain-tuned security workloads; solid news and explainer angles but slightly less groundbreaking than Astra in terms of autonomy/safety debate."
+    },
+    {
+      "index": 5,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "WeatherNext 3 affects weather, energy, agriculture, and disaster prep with a clear applied-AI story; strong use-case SEO on AI weather forecasting. Edge AI bucket is fresh, so no penalty, but overall impact is still a bit lower than Astra’s frontier/agentic implications."
+    },
+    {
+      "index": 6,
+      "bucket": "Robotics",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 32,
+      "notes": "US restrictions on foreign AI drones/robots tie AI to geopolitics and supply chains; good policy/industry analysis potential. Robotics is undercovered (no penalty), but this is more a trade/national-security story than a core AI capability inflection."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Model Spec update on teen safety and content norms is an incremental governance tweak. Useful for safety-policy explainers but relatively narrow; heavily penalized due to repeated AI Ethics coverage."
+    }
+  ]
+}
