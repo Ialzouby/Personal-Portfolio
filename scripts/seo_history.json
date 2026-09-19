@@ -39,7 +39,8 @@
     "ai data center megaprojects explained",
     "ai model jailbreak infrastructure attack",
     "ai cyber agents explained",
-    "AI weather forecasting models explained"
+    "AI weather forecasting models explained",
+    "ai alignment in frontier models"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -81,7 +82,8 @@
     "AI Data Center Megaprojects Explained: Land, Power and Scale",
     "AI Model Jailbreaks and Infrastructure Attacks Explained",
     "AI Cyber Agents Explained: Autonomous Security Models and Risks",
-    "AI Weather Forecasting Models Explained: How They Work"
+    "AI Weather Forecasting Models Explained: How They Work",
+    "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -123,7 +125,8 @@
     "ai-data-center-megaprojects-explained",
     "ai-model-jailbreak-infrastructure-attacks",
     "ai-cyber-agents-explained",
-    "ai-weather-forecasting-models-explained"
+    "ai-weather-forecasting-models-explained",
+    "ai-alignment-frontier-models"
   ],
   "buckets": [
     "Robotics",
@@ -165,6 +168,7 @@
     "Data/Infra",
     "AI Ethics",
     "Models",
-    "Edge AI"
+    "Edge AI",
+    "Models"
   ]
 }

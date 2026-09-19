@@ -1,0 +1,78 @@
+{
+  "winner_index": 5,
+  "winner_reason": "OpenAI’s Astra rollout is a major frontier-model launch with broad user reach, strong newsworthiness, and high ongoing search interest for explainers on capabilities, alignment, and agentic behavior. Despite the Models bucket being used recently, its overall impact and SEO depth outweigh competitors.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Edge AI",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Strong edge-LLM milestone (27B → ~6 GB) with real implications for local inference on PCs/phones. Good for technical explainers and benchmarks, but narrower audience than big-tech model or safety moves. Edge AI appeared once in last 6 posts (most recent), so apply 4-point penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 29,
+      "notes": "Meta’s consumer agent touches billions of users and the agentic-shift narrative. Good SEO around ‘AI agents’ and ‘persistent assistants’, but overlaps heavily with recent Models coverage, so full 6-point penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "Large, novel attempt to institutionalize embedded external safety evaluators with big money attached; strong governance narrative. High evergreen SEO around AI oversight, independence, and safety frameworks. AI Ethics appears 2+ times in last 4 and 3+ in last 6, so max penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "Important trend piece on observability and control for agents; good for technical-governance SEO. Less singular and news-breaking than an Anthropic/OpenAI governance move. Same heavy penalty for repeated AI Ethics bucket."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "Strategic positioning by Apple on iPhone-as-AI-device. Broad but somewhat incremental, more reiteration than product launch. Solid SEO on ‘on-device AI’ and ‘AI hardware vs phones’. Edge AI already used recently → 4-point penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 23,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 38,
+      "notes": "Frontier model rollout from OpenAI with claims of being most capable and ‘most aligned’, plus early deployment in security and agents. Very high impact and controversy potential; ongoing demand for capability, safety, and agentic-explainer content. Models bucket is heavily used, but override rule caps penalty at 2 because news_impact ≥ 22."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Advances AI weather modeling and infrastructure; important scientifically and commercially, but narrower audience than frontier models. Strong SEO around ‘AI weather forecasting’ and infra explainers. Data/Infra appears in recent history → 4-point penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 18,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Valuable meta-topic on AI defensibility, moats, and infra layers; very strong evergreen SEO for founders and investors. Less of a single concrete news event and more of a thematic discussion. Data/Infra repetition leads to 4-point penalty."
+    }
+  ]
+}
