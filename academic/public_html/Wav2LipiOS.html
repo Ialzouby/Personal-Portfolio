@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wav2Lip Setup</title>
+    <meta property="og:title" content="Wav2Lip SetUp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webpages.charlotte.edu/ialzouby/" />
+    <meta property="og:image" content="https://webpages.charlotte.edu/ialzouby/images/display.png" /> <!-- Absolute URL -->
+    <meta property="og:image:whatsapp" content="https://webpages.charlotte.edu/ialzouby/images/display.png" />
+
+    <meta property="og:description" content="Wav2Lip Inference SetUp" />
+    <meta property="og:site_name" content="Issam Alzouby" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+   
+     <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+
+
+
+
+            
+        </style>
+    </noscript>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <div class="content-flex-container">
+
+        <div class="content-container">
+
+
+
+            <div data-include="components/navbar.html"></div>
+
+
+    
+  
+     
+    
+        <!-- Main content here -->
+    
+        <!-- Rest of the body content -->
+
+
+    <div class="main-content" id="mainContent">
+        <!-- Introductory Section -->
+      
+        <div class="button-bar">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="button-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Right-aligned icon buttons -->
+            <div class="icon-buttons">
+                <a href="https://github.com/ialzouby" target="_blank" class="image-button">
+                    <img src="images/hub.png" alt="GitHub Icon">
+                </a>
+                <div class="image-button">
+                    <img src="images/search.png" alt="Search Icon" id="searchButton">
+                </div>
+                <div id="searchBarContainer" style="display: none;">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                
+                <div id="modeToggle">
+                    <img src="images/light.png" alt="Toggle Dark/Light Mode" id="toggleIcon" style="cursor: pointer;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <section id="video-picker">
+
+<!-- ContentView.swift Documentation Section -->
+
+    <h2>ContentView.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>ContentView.swift</code> integrates the user interface components and the functionality for selecting videos, processing audio and video data, and preparing it for the CoreML model within the Wav2Lip app. This file uses SwiftUI for creating a user-friendly interface that guides the user through the process of synchronizing lip movements with audio.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>SwiftUI</code>, <code>AVFoundation</code>, <code>Accelerate</code>: These frameworks support the creation of the app's user interface, handling of audio and video data, and potential image processing optimizations.</li>
+            </ul>
+        </li>
+        <li><strong>Structs and Enums:</strong>
+            <p><code>ContentView</code>: A struct that defines the app's main view, incorporating state variables for video URL selections, processing statuses, and view presentation flags.</p>
+            <p><code>ProcessingStatus</code>: An enum representing the processing status of audio and video data with cases for success, failure, and processing.</p>
+        </li>
+    </ul>
+
+    <h3>Functionality Flow</h3>
+    <ol>
+        <li><strong>Video Selection for Audio and Video:</strong> The app presents buttons to select videos from the user's gallery for extracting audio and for content video. Tapping these buttons activates VideoPicker views.</li>
+        <li><strong>Processing Status Display:</strong> After a video is selected, the app displays the video file name and provides options to process the selected videos for audio extraction and video preparation.</li>
+        <li><strong>Audio and Video Processing:</strong> Triggered by user interaction, the app calls methods to preprocess and extract audio from one video and to convert and preprocess the other video for the CoreML model. This likely involves the use of AudioExtractor and VideoPreprocessor utilities.</li>
+    </ol>
+
+    <h3>User Interface Components</h3>
+    <p>Utilizes SwiftUI views, buttons, and text labels to interact with the user, displaying informative messages regarding the selection and processing status of the videos.</p>
+
+    <h3>Integration and Workflow</h3>
+    <p>The <code>ContentView</code> acts as the central hub for the app's functionality, orchestrating the selection of videos, initiation of processing tasks, and displaying the status of these operations. It is here where the integration with VideoPicker, AudioExtractor, and VideoPreprocessor is managed and coordinated.</p>
+    <p>This integrated workflow enables the Wav2Lip app to offer a user-friendly platform for synchronizing lip movements in videos with audio, leveraging Swift's capabilities and CoreML for advanced media processing and machine learning tasks.</p>
+
+
+
+
+            <h2>VideoPicker.swift Documentation</h2>
+            <div class="text-container">
+            <p><strong>File Overview:</strong> <code>VideoPicker.swift</code> is part of the Wav2Lip app, designed to synchronize video with audio through a user-friendly interface. This file implements functionality to allow users to pick a video from their iPhone gallery, leveraging SwiftUI and UIKit frameworks.</p>
+        </div>
+            <h3>Key Components</h3>
+            <ul>
+                <li><strong>Imports:</strong>
+                    <ul>
+                        <li><code>AVFoundation</code>: Utilized for handling media playback and operations.</li>
+                        <li><code>Foundation</code>: Provides basic functionality for all Swift apps.</li>
+                        <li><code>SwiftUI</code>: Used for creating the app's user interface.</li>
+                        <li><code>UIKit</code>: Supports the construction and management of a graphical, event-driven user interface for iOS apps.</li>
+                    </ul>
+                </li>
+                <li><strong>Structs and Classes:</strong>
+                    <p><code>VideoPicker</code>: A struct that conforms to <code>UIViewControllerRepresentable</code>. This enables the integration of a <code>UIImagePickerController</code> into SwiftUI, allowing users to select videos from their photo library.</p>
+                    <ul>
+                        <li><code>@Binding var selectedVideoURL: URL?</code>: A binding to a URL variable that stores the selected video's URL.</li>
+                        <li><code>@Environment(\\.presentationMode)</code>: Used to manage the presentation mode of the view, allowing dismissal of the picker.</li>
+                        <li><code>makeUIViewController(context: Context) -> UIImagePickerController</code>: Configures and returns an instance of <code>UIImagePickerController</code> set to pick movies from the photo library.</li>
+                        <li><code>updateUIViewController(_ uiViewController: UIImagePickerController, context: Context)</code>: Required by <code>UIViewControllerRepresentable</code> but not used in this context.</li>
+                        <li><code>makeCoordinator() -> Coordinator</code>: Creates and returns an instance of the nested <code>Coordinator</code> class to manage interactions with the <code>UIImagePickerController</code>.</li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <h3>Functionality Flow</h3>
+            <ol>
+                <li><strong>Video Selection:</strong> The user triggers the video picker, which presents the photo library focused on movies.</li>
+                <li><strong>Video Picking:</strong> Upon selection, the <code>imagePickerController(_:didFinishPickingMediaWithInfo:)</code> method within <code>Coordinator</code> is called, extracting the video URL and assigning it to <code>parent.selectedVideoURL</code>.</li>
+                <li><strong>Dismissal:</strong> The picker is dismissed, and the selected video URL is now available for further processing.</li>
+            </ol>
+        
+            <p><strong>Integration with SwiftUI:</strong> <code>VideoPicker</code> struct seamlessly integrates with SwiftUI views, allowing developers to embed video picking functionality in a declarative UI structure.</p>
+      
+       
+        <!-- AudioExtractor.swift Documentation Section -->
+
+    <h2>AudioExtractor.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>AudioExtractor.swift</code> is a utility class within the Wav2Lip app designed to extract audio from a video file and save it as a WAV file. This file utilizes the AVFoundation framework to perform audio extraction and handling.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>AVFoundation</code>: Used for working with audio and video data, enabling the extraction of audio tracks from video files.</li>
+                <li><code>Foundation</code>: Provides essential data types, collections, and utilities.</li>
+            </ul>
+        </li>
+        <li><strong>Class Definition:</strong>
+            <p><code>AudioExtractor</code>: A class containing a static method to extract audio from a video file.</p>
+            <ul>
+                <li><code>extractAudioAsWAV(from:outputURL:completion:)</code>: A static method that takes a video URL, an output URL for the extracted audio file, and a completion handler as arguments. The method asynchronously extracts the audio track from the given video file and saves it as a WAV file at the specified output location.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Process Flow</h3>
+    <ol>
+        <li><strong>Initialization:</strong> The method initializes an AVURLAsset with the video URL and asynchronously loads its audio tracks.</li>
+        <li><strong>Error Handling:</strong> If no audio track is found or an error occurs during track loading, the method calls the completion handler with an error.</li>
+        <li><strong>Audio Extraction Setup:</strong> Upon successful track loading, the method sets up an AVAssetReader and AVAssetWriter with appropriate audio output settings (e.g., format, sample rate, channels).</li>
+        <li><strong>Reading and Writing:</strong> The method starts reading from the AVAssetReader and writing to the AVAssetWriter in a designated dispatch queue. It copies audio samples from the reader to the writer until no more samples are available.</li>
+        <li><strong>Completion Handling:</strong> Upon successful extraction and writing, the method calls the completion handler with the output URL. In case of failure during reading or writing, it cancels operations and reports the error through the completion handler.</li>
+    </ol>
+
+    <h3>Technical Details</h3>
+    <ul>
+        <li><strong>Output Settings:</strong> The audio output settings specify Linear PCM format, 16-bit depth, mono channel, and a sample rate of 44100 Hz, suitable for high-quality audio applications.</li>
+        <li><strong>Concurrency:</strong> Uses a dispatch queue (<code>audioExtractorQueue</code>) for asynchronous reading and writing, ensuring the UI remains responsive during processing.</li>
+    </ul>
+
+    <p><strong>Integration with Core Workflow:</strong> AudioExtractor plays a critical role in preparing audio data for synchronization with video in the Wav2Lip app. After selecting a video, this utility extracts the audio needed for the CoreML model to process and synchronize lip movements. The completion handler's result can be used to further manipulate the audio or directly feed it into the model alongside video data.</p>
+
+
+
+
+    <h2>VideoPreprocessor.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>VideoPreprocessor.swift</code> is a crucial component of the Wav2Lip app, responsible for preparing video files for further processing. This includes converting video files from MOV to MP4 format and preprocessing video frames to fit the input requirements of a CoreML model.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>Foundation</code>, <code>AVFoundation</code>, <code>CoreImage</code>, <code>UIKit</code>, <code>CoreML</code>, <code>Vision</code>: These frameworks provide functionalities for video processing, image manipulation, and machine learning model interactions.</li>
+            </ul>
+        </li>
+        <li><strong>Class Definition:</strong>
+            <p><code>VideoPreprocessor</code>: Contains methods for video file conversion and frame processing.</p>
+            <ul>
+                <li><code>convertMOVToMP4(sourceURL:outputURL:completion:)</code>: Converts a video file from MOV to MP4 format using AVAssetExportSession with a preset for high quality. The completion handler reports the outcome.</li>
+                <li><code>processVideoFrames(from:completion:)</code>: Processes video frames to match the CoreML model's input requirements. The function is asynchronous and uses a global dispatch queue for improved performance.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Functionality Flow</h3>
+    <ol>
+        <li><strong>MOV to MP4 Conversion:</strong> Initializes an AVURLAsset with the source URL. Creates an AVAssetExportSession for the asset, setting the output file type to MP4 and optimizing for network use. Exports the session asynchronously and calls the completion handler with the result.</li>
+        <li><strong>Video Frame Processing:</strong> Likely extracts frames from the given video URL, processes them (e.g., resizing, format conversion), and arranges them into an MLMultiArray suitable for the CoreML model. This involves intensive image and video processing tasks.</li>
+    </ol>
+
+    <h3>Technical Details</h3>
+    <ul>
+        <li><strong>The frame processing</strong> involves converting images to a pixel buffer, resizing images, and potentially converting them to grayscale to match the model's input format.</li>
+    </ul>
+
+    <p><strong>Integration with Core Workflow:</strong> VideoPreprocessor prepares the visual component for the Wav2Lip app's core functionality. By converting videos to a compatible format and processing frames to fit the model's requirements, it ensures the app can accurately synchronize lip movements with audio. This preprocessing is essential for the app's performance and user experience, as it directly impacts the model's input quality and, consequently, the output accuracy.</p>
+</section>
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div data-include="components/updates-bar.html"></div>
+
+    </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

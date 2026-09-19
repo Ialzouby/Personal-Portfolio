@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wav2Lip Setup</title>
+    <meta property="og:title" content="Wav2Lip SetUp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webpages.charlotte.edu/ialzouby/" />
+    <meta property="og:image" content="https://webpages.charlotte.edu/ialzouby/images/display.png" /> <!-- Absolute URL -->
+    <meta property="og:image:whatsapp" content="https://webpages.charlotte.edu/ialzouby/images/display.png" />
+
+    <meta property="og:description" content="Wav2Lip Inference SetUp" />
+    <meta property="og:site_name" content="Issam Alzouby" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+   
+     <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+
+
+
+
+            
+        </style>
+    </noscript>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <div class="content-flex-container">
+
+        <div class="content-container">
+
+
+
+            <div data-include="components/navbar.html"></div>
+
+
+    
+  
+     
+    
+        <!-- Main content here -->
+    
+        <!-- Rest of the body content -->
+
+
+    <div class="main-content" id="mainContent">
+        <!-- Introductory Section -->
+      
+        <div class="button-bar">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="button-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Right-aligned icon buttons -->
+            <div class="icon-buttons">
+                <a href="https://github.com/ialzouby" target="_blank" class="image-button">
+                    <img src="images/hub.png" alt="GitHub Icon">
+                </a>
+                <div class="image-button">
+                    <img src="images/search.png" alt="Search Icon" id="searchButton">
+                </div>
+                <div id="searchBarContainer" style="display: none;">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                
+                <div id="modeToggle">
+                    <img src="images/light.png" alt="Toggle Dark/Light Mode" id="toggleIcon" style="cursor: pointer;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <section id="video-picker">
+
+<!-- ContentView.swift Documentation Section -->
+
+
+    <h2>AudioExtractor.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>AudioExtractor.swift</code> is a utility class within the Wav2Lip app designed to extract audio from a video file and save it as a WAV file. This file utilizes the AVFoundation framework to perform audio extraction and handling.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>AVFoundation</code>: Used for working with audio and video data, enabling the extraction of audio tracks from video files.</li>
+                <li><code>Foundation</code>: Provides essential data types, collections, and utilities.</li>
+            </ul>
+        </li>
+        <li><strong>Class Definition:</strong>
+            <p><code>AudioExtractor</code>: A class containing a static method to extract audio from a video file.</p>
+            <ul>
+                <li><code>extractAudioAsWAV<br>(from:outputURL:<br>completion:)</code>: A static method that takes a video URL, an output URL for the extracted audio file, and a completion handler as arguments. The method asynchronously extracts the audio track from the given video file and saves it as a WAV file at the specified output location.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Process Flow</h3>
+    <ol>
+        <li><strong>Initialization:</strong> The method initializes an AVURLAsset with the video URL and asynchronously loads its audio tracks.</li>
+        <li><strong>Error Handling:</strong> If no audio track is found or an error occurs during track loading, the method calls the completion handler with an error.</li>
+        <li><strong>Audio Extraction Setup:</strong> Upon successful track loading, the method sets up an AVAssetReader and AVAssetWriter with appropriate audio output settings (e.g., format, sample rate, channels).</li>
+        <li><strong>Reading and Writing:</strong> The method starts reading from the AVAssetReader and writing to the AVAssetWriter in a designated dispatch queue. It copies audio samples from the reader to the writer until no more samples are available.</li>
+        <li><strong>Completion Handling:</strong> Upon successful extraction and writing, the method calls the completion handler with the output URL. In case of failure during reading or writing, it cancels operations and reports the error through the completion handler.</li>
+    </ol>
+
+    <h3>Technical Details</h3>
+    <ul>
+        <li><strong>Output Settings:</strong> The audio output settings specify Linear PCM format, 16-bit depth, mono channel, and a sample rate of 44100 Hz, suitable for high-quality audio applications.</li>
+        <li><strong>Concurrency:</strong> Uses a dispatch queue (<code>audioExtractorQueue</code>) for asynchronous reading and writing, ensuring the UI remains responsive during processing.</li>
+    </ul>
+
+    <p><strong>Integration with Core Workflow:</strong> AudioExtractor plays a critical role in preparing audio data for synchronization with video in the Wav2Lip app. After selecting a video, this utility extracts the audio needed for the CoreML model to process and synchronize lip movements. The completion handler's result can be used to further manipulate the audio or directly feed it into the model alongside video data.</p>
+
+
+
+
+  
+</section>
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div data-include="components/updates-bar.html"></div>
+
+    </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

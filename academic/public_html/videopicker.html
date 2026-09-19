@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wav2Lip Setup</title>
+    <meta property="og:title" content="Wav2Lip SetUp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webpages.charlotte.edu/ialzouby/" />
+    <meta property="og:image" content="https://webpages.charlotte.edu/ialzouby/images/display.png" /> <!-- Absolute URL -->
+    <meta property="og:image:whatsapp" content="https://webpages.charlotte.edu/ialzouby/images/display.png" />
+
+    <meta property="og:description" content="Wav2Lip Inference SetUp" />
+    <meta property="og:site_name" content="Issam Alzouby" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+   
+     <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+
+
+
+
+            
+        </style>
+    </noscript>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <div class="content-flex-container">
+
+        <div class="content-container">
+
+
+
+            <div data-include="components/navbar.html"></div>
+
+
+    
+  
+     
+    
+        <!-- Main content here -->
+    
+        <!-- Rest of the body content -->
+
+
+    <div class="main-content" id="mainContent">
+        <!-- Introductory Section -->
+      
+        <div class="button-bar">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="button-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Right-aligned icon buttons -->
+            <div class="icon-buttons">
+                <a href="https://github.com/ialzouby" target="_blank" class="image-button">
+                    <img src="images/hub.png" alt="GitHub Icon">
+                </a>
+                <div class="image-button">
+                    <img src="images/search.png" alt="Search Icon" id="searchButton">
+                </div>
+                <div id="searchBarContainer" style="display: none;">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                
+                <div id="modeToggle">
+                    <img src="images/light.png" alt="Toggle Dark/Light Mode" id="toggleIcon" style="cursor: pointer;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <section id="video-picker">
+
+<!-- ContentView.swift Documentation Section -->
+
+    
+
+
+            <h2>VideoPicker.swift Documentation</h2>
+            <div class="text-container">
+            <p><strong>File Overview:</strong> <code>VideoPicker.swift</code> is part of the Wav2Lip app, designed to synchronize video with audio through a user-friendly interface. This file implements functionality to allow users to pick a video from their iPhone gallery, leveraging SwiftUI and UIKit frameworks.</p>
+        </div>
+            <h3>Key Components</h3>
+            <ul>
+                <li><strong>Imports:</strong>
+                    <ul>
+                        <li><code>AVFoundation</code>: Utilized for handling media playback and operations.</li>
+                        <li><code>Foundation</code>: Provides basic functionality for all Swift apps.</li>
+                        <li><code>SwiftUI</code>: Used for creating the app's user interface.</li>
+                        <li><code>UIKit</code>: Supports the construction and management of a graphical, event-driven user interface for iOS apps.</li>
+                    </ul>
+                </li>
+
+  
+                <li><strong>Structs and Classes:</strong>
+                    <p><code>VideoPicker</code>: A struct that conforms to <code>UIViewControllerRepresentable</code>. This enables the integration of a <code>UIImagePickerController</code> into SwiftUI, allowing users to select videos from their photo library.</p>
+                    <ul>
+                        <li>
+                            <code>@Binding var selectedVideoURL: URL?</code>: 
+                            A binding to a URL variable that stores the selected video's URL.
+                          </li>
+                          <li>
+                            <code>@Environment(\\.<br>presentationMode)</code>: 
+                            Used to manage the presentation mode of the view, allowing dismissal of the picker.
+                          </li>
+                          <li>
+                            <code>makeUIViewController(<br>context: Context) -&gt; UIImagePickerController</code>: 
+                            Configures and returns an instance of <code>UIImagePickerController</code> set to pick movies from the photo library.
+                          </li>
+                          <li>
+                            <code>updateUIViewController(<br>_ uiViewController: <br> UIImagePickerController, <br>context: Context)</code>: 
+                            Required by <code>UIViewControllerRepresentable</code> but not used in this context.
+                          </li>
+                          <li>
+                            <code>makeCoordinator() -&gt; Coordinator</code>: 
+                            Creates and returns an instance of the nested <code>Coordinator</code> class to manage interactions with the <code>UIImagePickerController</code>.
+                          </li>
+                          
+                
+                </li>
+            </ul>
+        
+            <h3>Functionality Flow</h3>
+            <ol>
+                <li>
+                    <strong>Video Selection:</strong> The user triggers the video picker, which presents the photo library focused on movies.
+                  </li>
+                  <li>
+                    <strong>Video Picking:</strong> Upon selection, the <code>imagePickerController(<br>_:didFinishPicking<br>MediaWithInfo:)</code> method within <code>Coordinator</code> is called, extracting the video URL and assigning it to <code>parent.selectedVideoURL</code>.
+                  </li>
+                  <li>
+                    <strong>Dismissal:</strong> The picker is dismissed, and the selected video URL is now available for further processing.
+                  </li>
+                        </ol>
+        
+
+
+
+
+
+
+
+
+
+            <p><strong>Integration with SwiftUI:</strong> <code>VideoPicker</code> struct seamlessly integrates with SwiftUI views, allowing developers to embed video picking functionality in a declarative UI structure.</p>
+      
+     </section>
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div data-include="components/updates-bar.html"></div>
+
+    </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

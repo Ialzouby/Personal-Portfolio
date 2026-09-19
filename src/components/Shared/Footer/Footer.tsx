@@ -8,6 +8,7 @@ import {
   PiGlobe,
   PiEnvelopeSimple,
   PiFilePdf,
+  PiGraduationCap,
 } from "react-icons/pi";
 
 import profile from "@/../public/images/profile.png";
@@ -55,9 +56,10 @@ const Footer = () => {
         <div className="d-flex justify-content-center gap-3 mb-4">
           <Link href="https://github.com/Ialzouby" className="footer-icon"><PiGithubLogo /></Link>
           <Link href="https://linkedin.com/in/alzouby" className="footer-icon"><PiLinkedinLogo /></Link>
+          <Link href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en" className="footer-icon" aria-label="Google Scholar"><PiGraduationCap /></Link>
           <Link href="https://issamalzouby.com" className="footer-icon"><PiGlobe /></Link>
-          <Link href="/resume.pdf" className="footer-icon"><PiFilePdf /></Link>
-          <Link href="mailto:your@email.com" className="footer-icon"><PiEnvelopeSimple /></Link>
+          <Link href="/IssamAlzouby-CV.pdf" className="footer-icon" aria-label="Download CV"><PiFilePdf /></Link>
+          <Link href="mailto:ialzouby@charlotte.edu" className="footer-icon"><PiEnvelopeSimple /></Link>
         </div>
 
         {/* Affiliations Logos (Grayscale) */}

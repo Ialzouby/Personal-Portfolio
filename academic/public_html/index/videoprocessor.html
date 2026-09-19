@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wav2Lip Setup</title>
+    <meta property="og:title" content="Wav2Lip SetUp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webpages.charlotte.edu/ialzouby/" />
+    <meta property="og:image" content="https://webpages.charlotte.edu/ialzouby/images/display.png" /> <!-- Absolute URL -->
+    <meta property="og:image:whatsapp" content="https://webpages.charlotte.edu/ialzouby/images/display.png" />
+
+    <meta property="og:description" content="Wav2Lip Inference SetUp" />
+    <meta property="og:site_name" content="Issam Alzouby" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+   
+     <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+
+
+
+
+            
+        </style>
+    </noscript>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <div class="content-flex-container">
+
+        <div class="content-container">
+
+
+
+            <div data-include="components/navbar.html"></div>
+
+
+    
+  
+     
+    
+        <!-- Main content here -->
+    
+        <!-- Rest of the body content -->
+
+
+    <div class="main-content" id="mainContent">
+        <!-- Introductory Section -->
+      
+        <div class="button-bar">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="button-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Right-aligned icon buttons -->
+            <div class="icon-buttons">
+                <a href="https://github.com/ialzouby" target="_blank" class="image-button">
+                    <img src="images/hub.png" alt="GitHub Icon">
+                </a>
+                <div class="image-button">
+                    <img src="images/search.png" alt="Search Icon" id="searchButton">
+                </div>
+                <div id="searchBarContainer" style="display: none;">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                
+                <div id="modeToggle">
+                    <img src="images/light.png" alt="Toggle Dark/Light Mode" id="toggleIcon" style="cursor: pointer;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <section id="video-picker">
+
+<!-- ContentView.swift Documentation Section -->
+
+    <h2>VideoPreprocessor.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>VideoPreprocessor.swift</code> is a crucial component of the Wav2Lip app, responsible for preparing video files for further processing. This includes converting video files from MOV to MP4 format and preprocessing video frames to fit the input requirements of a CoreML model.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>Foundation</code>, <code>AVFoundation</code>, <code>CoreImage</code>, <code>UIKit</code>, <code>CoreML</code>, <code>Vision</code>: These frameworks provide functionalities for video processing, image manipulation, and machine learning model interactions.</li>
+            </ul>
+        </li>
+        <li><strong>Class Definition:</strong>
+            <p><code>VideoPreprocessor</code>: Contains methods for video file conversion and frame processing.</p>
+            <ul>
+                <li><code>convertMOVToMP4(<br>sourceURL:<br>outputURL:<br>completion:)</code>: Converts a video file from MOV to MP4 format using AVAssetExportSession with a preset for high quality. The completion handler reports the outcome.</li>
+                <code>processVideoFrames(<br>from:<br>completion:)</code>: Processes video frames to match the CoreML model's input requirements. The function is asynchronous and uses a global dispatch queue for improved performance.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Functionality Flow</h3>
+    <ol>
+        <li><strong>MOV to MP4 Conversion:</strong> Initializes an AVURLAsset with the source URL. Creates an AVAssetExportSession for the asset, setting the output file type to MP4 and optimizing for network use. Exports the session asynchronously and calls the completion handler with the result.</li>
+        <li><strong>Video Frame Processing:</strong> Likely extracts frames from the given video URL, processes them (e.g., resizing, format conversion), and arranges them into an MLMultiArray suitable for the CoreML model. This involves intensive image and video processing tasks.</li>
+    </ol>
+
+    <h3>Technical Details</h3>
+    <ul>
+        <li><strong>The frame processing</strong> involves converting images to a pixel buffer, resizing images, and potentially converting them to grayscale to match the model's input format.</li>
+    </ul>
+    <div class="text-container">
+    <p><strong>Integration with Core Workflow:</strong> VideoPreprocessor prepares the visual component for the Wav2Lip app's core functionality. By converting videos to a compatible format and processing frames to fit the model's requirements, it ensures the app can accurately synchronize lip movements with audio. This preprocessing is essential for the app's performance and user experience, as it directly impacts the model's input quality and, consequently, the output accuracy.</p>
+
+</div>
+
+        <!-- AudioExtractor.swift Documentation Section -->
+
+
+</section>
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div data-include="components/updates-bar.html"></div>
+
+    </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

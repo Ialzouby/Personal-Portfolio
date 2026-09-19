@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wav2Lip Setup</title>
+    <meta property="og:title" content="Wav2Lip SetUp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://webpages.charlotte.edu/ialzouby/" />
+    <meta property="og:image" content="https://webpages.charlotte.edu/ialzouby/images/display.png" /> <!-- Absolute URL -->
+    <meta property="og:image:whatsapp" content="https://webpages.charlotte.edu/ialzouby/images/display.png" />
+
+    <meta property="og:description" content="Wav2Lip Inference SetUp" />
+    <meta property="og:site_name" content="Issam Alzouby" />
+    
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+   
+     <noscript>
+        <style type="text/css">
+            [data-aos] {
+                opacity: 1 !important;
+                transform: translate(0) scale(1) !important;
+            }
+
+
+
+
+            
+        </style>
+    </noscript>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+    <div class="content-flex-container">
+
+        <div class="content-container">
+
+
+
+            <div data-include="components/navbar.html"></div>
+
+
+    
+  
+     
+    
+        <!-- Main content here -->
+    
+        <!-- Rest of the body content -->
+
+
+    <div class="main-content" id="mainContent">
+        <!-- Introductory Section -->
+      
+        <div class="button-bar">
+            <!-- Hamburger Menu -->
+            <div id="menu-toggle" class="button-container">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <!-- Right-aligned icon buttons -->
+            <div class="icon-buttons">
+                <a href="https://github.com/ialzouby" target="_blank" class="image-button">
+                    <img src="images/hub.png" alt="GitHub Icon">
+                </a>
+                <div class="image-button">
+                    <img src="images/search.png" alt="Search Icon" id="searchButton">
+                </div>
+                <div id="searchBarContainer" style="display: none;">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                </div>
+                
+                <div id="modeToggle">
+                    <img src="images/light.png" alt="Toggle Dark/Light Mode" id="toggleIcon" style="cursor: pointer;">
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <section id="video-picker">
+
+<!-- ContentView.swift Documentation Section -->
+
+    <h2>ContentView.swift Documentation</h2>
+    <div class="text-container">
+    <p><strong>File Overview:</strong> <code>ContentView.swift</code> integrates the user interface components and the functionality for selecting videos, processing audio and video data, and preparing it for the CoreML model within the Wav2Lip app. This file uses SwiftUI for creating a user-friendly interface that guides the user through the process of synchronizing lip movements with audio.</p>
+</div>
+    <h3>Key Components</h3>
+    <ul>
+        <li><strong>Imports:</strong>
+            <ul>
+                <li><code>SwiftUI</code>, <code>AVFoundation</code>, <code>Accelerate</code>: These frameworks support the creation of the app's user interface, handling of audio and video data, and potential image processing optimizations.</li>
+            </ul>
+        </li>
+        <li><strong>Structs and Enums:</strong>
+            <p><code>ContentView</code>: A struct that defines the app's main view, incorporating state variables for video URL selections, processing statuses, and view presentation flags.</p>
+            <p><code>ProcessingStatus</code>: An enum representing the processing status of audio and video data with cases for success, failure, and processing.</p>
+        </li>
+    </ul>
+
+    <h3>Functionality Flow</h3>
+    <ol>
+        <li><strong>Video Selection for Audio and Video:</strong> The app presents buttons to select videos from the user's gallery for extracting audio and for content video. Tapping these buttons activates VideoPicker views.</li>
+        <li><strong>Processing Status Display:</strong> After a video is selected, the app displays the video file name and provides options to process the selected videos for audio extraction and video preparation.</li>
+        <li><strong>Audio and Video Processing:</strong> Triggered by user interaction, the app calls methods to preprocess and extract audio from one video and to convert and preprocess the other video for the CoreML model. This likely involves the use of AudioExtractor and VideoPreprocessor utilities.</li>
+    </ol>
+
+    <h3>User Interface Components</h3>
+    <p>Utilizes SwiftUI views, buttons, and text labels to interact with the user, displaying informative messages regarding the selection and processing status of the videos.</p>
+
+    <h3>Integration and Workflow</h3>
+    <p>The <code>ContentView</code> acts as the central hub for the app's functionality, orchestrating the selection of videos, initiation of processing tasks, and displaying the status of these operations. It is here where the integration with VideoPicker, AudioExtractor, and VideoPreprocessor is managed and coordinated.</p>
+    <p>This integrated workflow enables the Wav2Lip app to offer a user-friendly platform for synchronizing lip movements in videos with audio, leveraging Swift's capabilities and CoreML for advanced media processing and machine learning tasks.</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+        </div>
+       
+        <div data-include="components/updates-bar.html"></div>
+
+    </div>
+    </div>
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

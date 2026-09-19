@@ -26,9 +26,8 @@ const Resume = () => {
                 Online Resume
               </h3>
 
-              {/* Update this href to where you host the PDF in /public, e.g. /IssamAlzouby-Resume.pdf */}
               <a
-                href="/IssamAlzouby-Resume.pdf"
+                href="/IssamAlzouby-CV.pdf"
                 className="w-max p-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
                 download
               >
@@ -57,10 +56,18 @@ const Resume = () => {
                     </li>
                     <li>
                       <Link
-                        href="mailto:ialzouby@gmail.com"
+                        href="mailto:ialzouby@charlotte.edu"
                         className="d-flex gap-2 align-items-center n4-color"
                       >
-                        <PiEnvelopeSimple /> ialzouby@gmail.com
+                        <PiEnvelopeSimple /> ialzouby@charlotte.edu
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en"
+                        className="d-flex gap-2 align-items-center n4-color"
+                      >
+                        <PiGraduationCap /> Google Scholar
                       </Link>
                     </li>
                     <li>
@@ -187,8 +194,52 @@ const Resume = () => {
                     </ul>
                   </div>
 
+                  {/* Publications */}
+                  <div className="d-flex align-items-center gap-2 mb-5 mb-md-10 mt-8 mt-md-12">
+                    <div className="title-line2"></div>
+                    <h2 className="fs-three p1-color fw-semibold">Publications</h2>
+                  </div>
+
+                  {[
+                    {
+                      title: "Is Artificial Intelligence Saving Lives? A Meta-Analysis of Real-World Clinical Impact",
+                      authors: "Chouffani El Fassi, S., Ngan, Z., Alzouby, I., et al.",
+                      venue: "Nature Communications — in revision after peer review",
+                    },
+                    {
+                      title: "Gaps and Opportunities in the Medical AI Market",
+                      authors: "Alzouby, I., Chouffani El Fassi, S., Shahrour, L., et al.",
+                      venue: "Nature Medicine — under review",
+                    },
+                    {
+                      title: "Computer Algorithms to Optimize Organ Donation After Circulatory Death (DCD)",
+                      authors: "Chouffani El Fassi, S., Alzouby, I., Yüksel, I., Khan, T., et al.",
+                      venue: "Nature Medicine — under review",
+                    },
+                    {
+                      title: "AI Tool to Time ECMO for SVC Syndrome Relief: A Use Case in Nonseminomatous Germ Cell Tumor Resection",
+                      authors: "Chouffani El Fassi, S., Khoury, L., Alzouby, I., Haithcock, B.",
+                      venue: "Nature Medicine — under review",
+                    },
+                  ].map((pub, idx) => (
+                    <div className="mb-4 mb-md-6" key={idx}>
+                      <span className="n5-color fs-six fw-medium d-block">{pub.title}</span>
+                      <span className="n42-color fs-seven d-block mt-1">{pub.authors}</span>
+                      <span className="n4-color fs-eight d-block mt-1">{pub.venue}</span>
+                    </div>
+                  ))}
+
+                  <div className="mb-4 mb-md-6">
+                    <Link
+                      href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en"
+                      className="d-flex gap-2 align-items-center p1-color fs-seven fw-medium"
+                    >
+                      <PiGraduationCap /> Full list on Google Scholar
+                    </Link>
+                  </div>
+
                   {/* Projects */}
-                  <div className="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                  <div className="d-flex align-items-center gap-2 mb-5 mb-md-10 mt-8 mt-md-12">
                     <div className="title-line2"></div>
                     <h2 className="fs-three p1-color fw-semibold">Projects</h2>
                   </div>
@@ -268,6 +319,28 @@ const Resume = () => {
                       </li>
                     </ul>
                   </div>
+
+                  {/* Mentorship & Service */}
+                  <div className="d-flex align-items-center gap-2 mb-5 mb-md-10 mt-8 mt-md-12">
+                    <div className="title-line2"></div>
+                    <h2 className="fs-three p1-color fw-semibold">Mentorship & Service</h2>
+                  </div>
+
+                  {[
+                    ["Graduate AI Mentor — Stanford HAI AI4ALL", "2025", "Mentored high-school students through the Medical AI track."],
+                    ["Graduate AI Mentor — UNC Charlotte AEOP", "2024 – 2025", "Mentored students through UNC Charlotte's STEM internship program."],
+                    ["Community Pantry Organizer", "Ongoing", "Led bi-weekly drives feeding 50+ families each time."],
+                    ["UNICEF Translator", "", "Assisted with translation and documentation in Jordanian refugee camps."],
+                    ["Free Healthcare Clinic — Web & Scheduling", "", "Built the website and scheduling system for a refugee-focused free clinic."],
+                  ].map(([role, date, desc], idx) => (
+                    <div className="mb-4 mb-md-6" key={idx}>
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className="n5-color fs-six fw-medium">{role}</span>
+                        {date && <span className="n4-color fs-eight">{date}</span>}
+                      </div>
+                      <p className="n42-color fs-seven mt-2 ms-6 ms-lg-10">{desc}</p>
+                    </div>
+                  ))}
                 </div>
 
                 {/* Sidebar */}
@@ -342,10 +415,14 @@ const Resume = () => {
                       </div>
 
                       {[
-                        ["AI Travel Grant"],
-                        ["Undergraduate Research Assistant"],
+                        ["1st Place & Global Nominee — NASA Space Apps Challenge 2025"],
+                        ["Best Oral Presentation in Cardiac Surgery — 62nd ECTSS"],
+                        ["1st Place — NC State Competitive Programming Competition 2024"],
                         ["2025 Truist Student Leader"],
                         ["AEOP Summer Leader"],
+                        ["AI Travel Grant"],
+                        ["Undergraduate Research Assistant"],
+                        ["AWS Certified Solutions Architect – Associate (SAA-C03)"],
                       ].map(([label], idx) => (
                         <div className="d-flex gap-2 mb-2" key={idx}>
                           <i className="fs-six p1-color">
@@ -403,6 +480,14 @@ const Resume = () => {
                     </i>
                   </div>
                   <span className="fs-eight n4-color">linkedin.com/in/Alzouby</span>
+                </Link>
+                <Link href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en" className="d-flex gap-1 align-items-center resume-icon">
+                  <div className="social-icon">
+                    <i className="p1-color">
+                      <PiGraduationCap />
+                    </i>
+                  </div>
+                  <span className="fs-eight n4-color">Google Scholar</span>
                 </Link>
                 <Link href="https://x.com/ialzouby" className="d-flex gap-1 align-items-center resume-icon">
                   <div className="social-icon">
