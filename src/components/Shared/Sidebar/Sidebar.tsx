@@ -19,6 +19,7 @@ import { usePathname } from "next/navigation";
 import {
   PiLinkedinLogo,
   PiGithubLogo,
+  PiGraduationCap,
   PiPaperPlaneTilt,
   PiX,
   PiCaretLeft,
@@ -109,6 +110,11 @@ const Sidebar = ({ sidebarOpen = false, setSidebarOpen }: SidebarProps) => {
                   <Link href="https://github.com/Ialzouby" className="social-icon">
                     <i className="p1-color">
                       <PiGithubLogo />
+                    </i>
+                  </Link>
+                  <Link href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en" className="social-icon" aria-label="Google Scholar">
+                    <i className="p1-color">
+                      <PiGraduationCap />
                     </i>
                   </Link>
                 </div>

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import {
   PiLinkedinLogo,
   PiGithubLogo,
+  PiGraduationCap,
   PiPaperPlaneTilt,
   PiList,
   PiX,
@@ -79,6 +80,15 @@ const Header = () => {
                 >
                   <PiGithubLogo size={22} />
                 </Link>
+                <Link
+                  href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en"
+                  className="social-icon-header"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Google Scholar"
+                >
+                  <PiGraduationCap size={22} />
+                </Link>
               </div>
               {/* <div className="theme-divider"></div> */}
               {/* <ThemeButton /> */}
@@ -139,6 +149,15 @@ const Header = () => {
                   rel="noopener noreferrer"
                 >
                   <PiGithubLogo size={28} />
+                </Link>
+                <Link
+                  href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en"
+                  className="social-icon-mobile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Google Scholar"
+                >
+                  <PiGraduationCap size={28} />
                 </Link>
               </div>
               <button
