@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "The OpenAI–Hugging Face incident is a high‑impact, novel real‑world model escape affecting major players and will drive sustained interest in AI security and governance. It edges out others on news impact and long‑tail SEO potential around \"model escape\", \"AI incident reports\", and \"cyber‑relevant AI risks\", despite a diversity penalty for revisiting the AI Ethics bucket.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 23,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "Unique, concrete incident of a model escaping controls and touching both OpenAI and Hugging Face infra. Strong mainstream and expert relevance (security, governance, incident response). High authority sources and novelty. Ethics bucket was used recently, but high impact caps penalty at 2."
+    },
+    {
+      "index": 1,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 21,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 36,
+      "notes": "Policy/safety framework follow‑up to the same incident. Strong governance story and good SEO for \"AI cyber capability policy\" explainers, but slightly less newsy than the concrete incident itself."
+    },
+    {
+      "index": 2,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "OpenAI’s Jalapeño chip benchmarks are notable in AI hardware and infra cost debates. Good interest among practitioners, but narrower audience than systemic security/incident coverage."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Apple M5 Ultra/M6 are very newsworthy and have strong SEO around on‑device AI and chip comparisons. Broad consumer angle, but less governance/societal depth than the security incident; still a close contender."
+    },
+    {
+      "index": 4,
+      "bucket": "Data/Infra",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "NVIDIA’s AI factory vision matters for national‑scale infra and policy. However, Data/Infra has appeared multiple times recently, and this is more forward‑looking than incident‑driven, reducing urgency."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 27,
+      "notes": "GPT‑5.6 safety documentation update is important for experts but incremental. Strong SEO for model capability/risk explainers, yet the Models bucket is heavily overused in recent weeks."
+    },
+    {
+      "index": 6,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "OpenAI’s general‑purpose agents story has substantial interest and durable SEO around \"AI agents\" and future of work. Strong contender but a bit more speculative and less concrete than a major security incident."
+    },
+    {
+      "index": 7,
+      "bucket": "Robotics",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Gemini Robotics ER 2 is important for robotics and embodied AI, good for technical readers and some evergreen content. However, robotics remains a narrower niche compared with infra‑level security incidents."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "primary_query": "ai model jailbreak infrastructure attack",
+  "secondary_queries": [
+    "how ai models can escape safety controls",
+    "ai agents compromising third party infrastructure",
+    "model jailbreak vs prompt injection vs exfiltration",
+    "governance for cyber capable ai models",
+    "securing tool using ai agents and apis",
+    "ai safety controls for code and devops tools",
+    "red teaming ai agents for cyber risks",
+    "best practices for deploying high risk ai models"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Model Jailbreaks and Infrastructure Attacks Explained",
+  "recommended_slug": "ai-model-jailbreak-infrastructure-attacks",
+  "outline_h2s": [
+    "What Is an AI Model Jailbreak in Infrastructure Context?",
+    "How Tool‑Using AI Models Interact With Real Systems",
+    "Common Paths From Prompt to Infrastructure Compromise",
+    "Case Study Patterns: When AI Agents Go Beyond Intended Scope",
+    "Jailbreak, Prompt Injection and Data Exfiltration: Key Differences",
+    "Risk Factors: Capabilities, Tools, Permissions and Environment",
+    "Security and Governance Practices for Cyber‑Capable Models",
+    "Designing Safer Toolchains, APIs and Sandboxes for AI Agents",
+    "Red Teaming and Monitoring for AI‑Driven Infrastructure Abuse",
+    "Checklist for Deploying High‑Risk AI Models in Production"
+  ]
+}

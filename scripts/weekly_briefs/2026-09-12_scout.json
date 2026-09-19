@@ -1,0 +1,111 @@
+{
+  "week": "2026-09-12",
+  "events": [
+    {
+      "event": "Google DeepMind introduces several new Gemini and specialized AI models, including Gemini 3.8 Flash variants and agentic video understanding capabilities.",
+      "category": "Models",
+      "why_it_matters": "New Gemini releases expand multimodal and agentic capabilities (e.g., faster Flash variants, video understanding, and cyber-defense-focused models), signaling continued frontier competition and providing more efficient building blocks for AI applications across text, images, and video.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/",
+          "title": "News — Google DeepMind (September 2026 model announcements)",
+          "date": "2026-09-??"
+        },
+        {
+          "url": "https://deepmind.google/",
+          "title": "Google DeepMind – Explore our next generation AI systems",
+          "date": "2026-09-??"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI highlights GPT‑6 Astra as a major step in applied AI for professional and scientific work.",
+      "category": "Models",
+      "why_it_matters": "Although GPT‑6 Astra was announced slightly earlier, OpenAI’s September 8 update frames it as a general-purpose system already being woven into economic workflows, illustrating how frontier models are moving from research milestones into embedded infrastructure for knowledge work, coding, and science.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/the-work-now-within-reach/",
+          "title": "The Work Now Within Reach",
+          "date": "2026-09-08"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/",
+          "title": "OpenAI Deployment Safety Hub – GPT‑6 Astra System Card entry",
+          "date": "2026-09-03"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes “An Alien Mind,” reflecting on the emergence and scaling of reasoning language models.",
+      "category": "AI Ethics",
+      "why_it_matters": "The piece, by OpenAI’s Chief Scientist, publicly acknowledges internal expectations that machine systems will become ‘meaningfully smarter than humans’ and describes how chain‑of‑thought style reasoning models have rapidly moved into the economy. This kind of candid framing is important input for societal discussions about risk, governance, and long‑term AI impact.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/an-alien-mind/",
+          "title": "An Alien Mind",
+          "date": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic reports on detecting and countering malicious use of Claude in its September 2026 threat‑intelligence update.",
+      "category": "AI Ethics",
+      "why_it_matters": "By disclosing concrete attempts by threat actors to misuse its models and the mitigations applied, Anthropic is contributing operational detail to AI safety and governance practice—showing how large providers monitor, attribute, and disrupt abuse at scale.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Detecting and countering misuse of AI: September 2026",
+          "date": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "event": "DeepMind debuts WeatherNext 3, its most advanced global AI weather forecasting model.",
+      "category": "Edge AI",
+      "why_it_matters": "More accurate, fast, AI‑based global forecasts can improve planning for energy grids, agriculture, logistics, and disaster response. Because such systems can run efficiently on modern compute, they can also influence how forecasting tools are deployed closer to users and edge devices that depend on timely weather signals.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/",
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "date": "2026-09-??"
+        }
+      ]
+    },
+    {
+      "event": "Industrial-robotics startup Mbodi discusses using natural language to teach factory robots new skills.",
+      "category": "Robotics",
+      "why_it_matters": "The TechCrunch interview underscores a shift from hard‑coded industrial automation toward generative‑AI‑driven interfaces for programming robots. If this approach scales, it can lower the integration cost of robotics in warehouses and factories by allowing non‑experts to adapt robots using language instead of custom code.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/video/the-robotics-revolution-wont-be-humanoid/",
+          "title": "The robotics revolution won’t be humanoid",
+          "date": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI continues rolling out deployment safety documentation, including recent system cards such as ChatGPT Images 2.5 and GPT‑6 Astra.",
+      "category": "Data/Infra",
+      "why_it_matters": "Regularly updated system cards and deployment notes improve transparency about how large models are trained, evaluated, and constrained in production. This helps downstream users understand model behavior, risk tradeoffs, and the technical controls applied at the infrastructure layer.",
+      "sources": [
+        {
+          "url": "https://deploymentsafety.openai.com/",
+          "title": "Deployment Safety Hub – recent system card updates",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "event": "DeepMind expands its family of creative and multimodal models (e.g., Veo for video, Imagen for images, Lyria for music) within the Gemini ecosystem.",
+      "category": "Creative AI",
+      "why_it_matters": "By packaging video, image, and music generators alongside general‑purpose Gemini models, DeepMind is consolidating tools for end‑to‑end creative workflows. This integration makes it easier for developers and creators to build complex, multimodal experiences (video plus audio plus text) on top of a single stack.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/",
+          "title": "Google DeepMind – Models (Veo, Imagen, Lyria, Gemini)",
+          "date": "2026-09-??"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "week": "2026-08-22",
+  "events": [
+    {
+      "event": "OpenAI details new safeguards as upcoming Astra model nears critical cybersecurity capability threshold.",
+      "category": "Models",
+      "why_it_matters": "OpenAI reports preliminary evidence that its upcoming Astra model could reach a \"Critical\" cybersecurity capability tier under its Preparedness Framework. In response, the company is tightening security of research environments, expanding chain-of-thought monitoring, and investing more in alignment and containment safeguards. This signals that frontier models’ offensive cyber capabilities are now significant enough to trigger internal gating and may slow or stage future high‑risk model deployments.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "title": "Pacing model development in an era of cyber-critical capabilities",
+          "date": "2026-08-18"
+        },
+        {
+          "url": "https://openai.com/news/company-announcements/",
+          "title": "OpenAI Newsroom – Recent news",
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "event": "DeepMind highlights new Gemini 3.7 Flash and other model updates in its August news roundup.",
+      "category": "Models",
+      "why_it_matters": "Google DeepMind’s August update includes the introduction of Gemini 3.7 Flash, described as a new model in its Gemini family focused on speed and efficiency, along with other model-driven initiatives such as an AI system for sign language and the WeatherNext forecasting model. This indicates continued rapid iteration on large model families targeted at different latency and domain requirements rather than only scaling single frontier models.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/",
+          "title": "News — Google DeepMind (entry: “Introducing Gemini 3.7 Flash”)",
+          "date": "2026-08-01"
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA and OpenAI formalize a large, long‑term partnership to build AI compute capacity at the PORTS‑Pike campus in Ohio.",
+      "category": "Data/Infra",
+      "why_it_matters": "OpenAI agrees to secure roughly 8 gigawatts of IT capacity at the PORTS‑Pike Technology Campus, which will host NVIDIA AI compute infrastructure. NVIDIA separately frames land, power and shell as the next strategic resource for AI factories and notes that OpenAI’s existing and planned commitments could reach about 12–16 gigawatts of NVIDIA compute. This underscores the industrial scale at which leading AI labs are now planning data and compute infrastructure, with implications for energy demand, regional economies, and long‑term model roadmaps.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "title": "OpenAI joins PORTS-Pike project",
+          "date": "2026-08-17"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+          "title": "Securing the Infrastructure of Intelligence",
+          "date": "2026-08-17"
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA’s Cosmos 3 Edge world model becomes broadly available for on‑device ‘physical AI’ across robotics and edge systems.",
+      "category": "Edge AI",
+      "why_it_matters": "NVIDIA announces general availability of Cosmos 3 Edge, a 4‑billion‑parameter multimodal world model optimized for memory‑efficient, high‑throughput deployment on Jetson, RTX PRO, DGX and GeForce RTX hardware. The model is designed for real‑time perception and action in robotics and other physical AI applications, with partners like Agile Robots, Doosan Robotics and Siemens evaluating it. This marks a step toward more capable, locally‑run AI for robots and sensor networks rather than relying solely on cloud inference.",
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/siggraph-news-2026/",
+          "title": "At SIGGRAPH, NVIDIA Advances Graphics and Simulation With Agentic and Physical AI",
+          "date": "2026-07-23"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI expands its Daybreak program to help defenders use AI as cyber threats increasingly adopt automation.",
+      "category": "AI Ethics",
+      "why_it_matters": "OpenAI describes a widening gap between how quickly attackers can adopt AI for cyber operations and how prepared defenders are. The company is expanding the Daybreak initiative, including work with external partners, and developing specialized GPT‑5.6‑Cyber models to support certain defensive cybersecurity workflows. Framed within OpenAI’s Preparedness Framework, this illustrates how labs are positioning domain‑specific models and partnerships as part of responsible deployment in high‑risk areas like cybersecurity.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/",
+          "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+          "date": "2026-08-10"
+        },
+        {
+          "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/",
+          "title": "Pacing model development in an era of cyber-critical capabilities",
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI launches an initiative to strengthen democratic oversight of government use of AI in national security.",
+      "category": "AI Ethics",
+      "why_it_matters": "OpenAI announces a program to support democratic oversight bodies in understanding and supervising government use of AI for national security applications. The initiative includes helping these institutions build technical expertise, developing tools for oversight, and feeding lessons from oversight back into model safeguards and development practices. This reflects increasing focus on institutional checks around state use of advanced AI, beyond internal lab governance alone.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security/",
+          "title": "Strengthening Democratic Oversight in National Security",
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI updates its public Model Spec document, emphasizing clearer guidance on behavior with teens and on communicating model limits.",
+      "category": "AI Ethics",
+      "why_it_matters": "The latest Model Release Notes describe an August 18 update to the OpenAI Model Spec, including more detailed principles for interactions with teens, clearer expectations for handling false or unsupported premises, removal of guidance tied to older model lines, and a new section on being explicit about capabilities and limitations. Changes to this \"living document\" show how deployment experience is shaping norms for model behavior and safety, especially around youth and user trust.",
+      "sources": [
+        {
+          "url": "https://help-lb.openai.com/en/articles/9624314-model-release-notes",
+          "title": "Model Release Notes",
+          "date": "2026-08-18"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI and partners outline the PORTS‑Pike AI campus as a template for highly available, large‑scale AI data centers.",
+      "category": "Data/Infra",
+      "why_it_matters": "Beyond the commercial agreement, OpenAI says it will co‑author a technical white paper detailing lessons from the PORTS‑Pike project, including resilient infrastructure design, stricter component qualification, and workload‑level management to improve availability and reliability at cluster scale. Combined with NVIDIA’s framing of \"AI factories\" and land‑power‑shell planning, this suggests that large AI operators are beginning to codify and share best practices for hyperscale AI data‑center design.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-joins-ports-pike-project/",
+          "title": "OpenAI joins PORTS-Pike project",
+          "date": "2026-08-17"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/securing-the-infrastructure-of-intelligence/",
+          "title": "Securing the Infrastructure of Intelligence",
+          "date": "2026-08-17"
+        }
+      ]
+    }
+  ]
+}

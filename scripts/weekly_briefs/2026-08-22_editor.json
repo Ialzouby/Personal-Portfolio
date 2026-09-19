@@ -1,0 +1,78 @@
+{
+  "winner_index": 2,
+  "winner_reason": "The NVIDIA–OpenAI PORTS‑Pike deal is a major, multi‑gigawatt infrastructure commitment that reshapes the AI compute landscape, has broad implications for energy, economics, and model roadmaps, and offers strong evergreen SEO potential around AI data centers and \"AI factories\". It also avoids further overusing the heavily repeated Models bucket.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Important signal about frontier cyber capabilities and safety gates; strong governance angle and OpenAI branding help SEO. However, Models has been heavily covered recently (appears 3+ times in last 6 posts), so full diversity penalty applies."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 16,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 24,
+      "notes": "Useful for tracking model iteration (Gemini 3.7 Flash, sign language, WeatherNext), but more incremental. Good explainer potential around model families and latency tradeoffs; still penalized heavily for bucket repetition."
+    },
+    {
+      "index": 2,
+      "bucket": "Data/Infra",
+      "news_impact": 23,
+      "seo_potential": 18,
+      "diversity_penalty": 4,
+      "final_score": 37,
+      "notes": "Large, long‑term NVIDIA–OpenAI infrastructure partnership with ~8 GW commitment (and 12–16 GW overall framing) is structurally important news: affects future model scaling, energy use, regional development. Strong evergreen SEO around AI data centers, AI factories, land/power/shell constraints, and hyperscale planning. Data/Infra appears only once in the last 6, but once very recently, so moderate diversity penalty. Override rule caps penalty at 2 if impact ≥22, but base penalty here is 4, so no change needed."
+    },
+    {
+      "index": 3,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Cosmos 3 Edge GA is a meaningful step for on‑device, real‑time robotics / physical AI. Solid SEO around world models, Jetson/RTX deployment, and edge robotics. Edge AI bucket is fresh vs. recent history, so no penalty; still slightly less transformative than the PORTS‑Pike infra deal."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 30,
+      "notes": "Daybreak expansion addresses the offense–defense gap in cyber, with specialized defensive models and partnerships. Good SEO for AI in cybersecurity and preparedness frameworks. However, AI Ethics has appeared twice in the last 6 posts (2+ times in last 4), so higher penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 27,
+      "notes": "Democratic oversight of national‑security AI is civically important but narrower in immediate audience. Decent SEO around AI in government and oversight, but still in the already‑used AI Ethics bucket, so higher penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 14,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "Model Spec update on teens and transparency is notable for deployment norms and safety practice, but less headline‑driving. Evergreen SEO on AI safety policies and teen interactions, yet shares the overused Ethics bucket, so penalized."
+    },
+    {
+      "index": 7,
+      "bucket": "Data/Infra",
+      "news_impact": 20,
+      "seo_potential": 17,
+      "diversity_penalty": 4,
+      "final_score": 33,
+      "notes": "PORTS‑Pike as an AI campus template and technical white paper offers strong infra‑design and availability explainer potential. High SEO value on hyperscale best practices, but slightly less immediately impactful than the binding giga‑watt commercial deal itself (event 2) and shares its bucket and timing, so same penalty."
+    }
+  ]
+}

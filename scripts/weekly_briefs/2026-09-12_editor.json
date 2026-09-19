@@ -1,0 +1,78 @@
+{
+  "winner_index": 4,
+  "winner_reason": "WeatherNext 3 combines high real-world impact (climate, energy, disaster response) with strong evergreen SEO potential around AI weather forecasting, and benefits from a zero diversity penalty as an unused bucket, giving it the highest final score.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Major frontier-model update from a top lab with broad developer impact, but the Models bucket has been used in 3+ of the last 6 posts, triggering the maximum diversity penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Important framing of GPT-6 Astra as embedded infrastructure, strong for workflow and tools SEO, but again heavily penalized due to repeated Models coverage."
+    },
+    {
+      "index": 2,
+      "bucket": "AI Ethics",
+      "news_impact": 19,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 28,
+      "notes": "High-signal thought piece on long-term AI risk and reasoning models; good for explainer and policy SEO. However, AI Ethics appears 3+ times in last 6 posts, so maximum penalty applies."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Operational detail on real-world misuse and mitigations; valuable for governance and safety practitioners, but ethics bucket is saturated in recent coverage."
+    },
+    {
+      "index": 4,
+      "bucket": "Edge AI",
+      "news_impact": 21,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 38,
+      "notes": "WeatherNext 3 has substantial global impact potential (climate adaptation, energy, agriculture, disaster preparedness) and sits at the intersection of AI, weather, and edge deployment. Strong evergreen SEO around 'AI weather forecasting,' 'AI for climate,' and applied case studies. Edge AI has not appeared in the last 8 posts, so no diversity penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Robotics",
+      "news_impact": 15,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 31,
+      "notes": "Compelling story about language-programmed robots and the future of factory automation. Good SEO around 'natural language programming for robots' and 'LLMs in robotics.' Robotics not used recently, so no penalty, but overall news impact is more niche than large-lab model or climate-scale stories."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 16,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Steady, important transparency work (system cards, deployment notes) with solid SEO for compliance, risk, and infra-focused readers. However, Data/Infra appears multiple times in the recent list, so maximum penalty applies."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Integration of Veo, Imagen, and Lyria into Gemini is strong news for creators and multimodal workflows, and rich for SEO around 'AI video generator,' 'AI music,' and unified creative stacks. No recent Creative AI coverage, but its real-world stakes are slightly narrower than global weather/climate impacts, keeping it just below WeatherNext 3."
+    }
+  ]
+}

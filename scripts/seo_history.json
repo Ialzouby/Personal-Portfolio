@@ -35,7 +35,12 @@
     "ai web crawler blocking for publishers",
     "frontier gpt models explained",
     "national ai compute infrastructure",
-    "AI for scientific research explained"
+    "AI for scientific research explained",
+    "ai data center megaprojects explained",
+    "ai model jailbreak infrastructure attack",
+    "ai cyber agents explained",
+    "AI weather forecasting models explained",
+    "ai alignment in frontier models"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -73,7 +78,12 @@
     "AI Web Crawler Blocking for Publishers: Controls and Tradeoffs",
     "Frontier GPT Models Explained: How They Power Complex Work",
     "National AI Compute Infrastructure: How Countries Build It",
-    "AI for Scientific Research Explained: From Hypotheses to Lab Work"
+    "AI for Scientific Research Explained: From Hypotheses to Lab Work",
+    "AI Data Center Megaprojects Explained: Land, Power and Scale",
+    "AI Model Jailbreaks and Infrastructure Attacks Explained",
+    "AI Cyber Agents Explained: Autonomous Security Models and Risks",
+    "AI Weather Forecasting Models Explained: How They Work",
+    "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -111,7 +121,12 @@
     "ai-web-crawler-blocking-publishers",
     "frontier-gpt-models-explained",
     "national-ai-compute-infrastructure",
-    "ai-for-scientific-research-explained"
+    "ai-for-scientific-research-explained",
+    "ai-data-center-megaprojects-explained",
+    "ai-model-jailbreak-infrastructure-attacks",
+    "ai-cyber-agents-explained",
+    "ai-weather-forecasting-models-explained",
+    "ai-alignment-frontier-models"
   ],
   "buckets": [
     "Robotics",
@@ -149,6 +164,11 @@
     "AI Ethics",
     "Models",
     "Data/Infra",
+    "Models",
+    "Data/Infra",
+    "AI Ethics",
+    "Models",
+    "Edge AI",
     "Models"
   ]
 }

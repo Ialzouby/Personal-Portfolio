@@ -1,0 +1,28 @@
+{
+  "primary_query": "AI weather forecasting models explained",
+  "secondary_queries": [
+    "how ai is used in weather forecasting",
+    "ai weather model vs numerical weather prediction",
+    "machine learning for global weather forecasts",
+    "ai for energy grid weather forecasting",
+    "edge ai weather prediction use cases",
+    "deep learning models for meteorology",
+    "ai weather forecasts for agriculture and logistics",
+    "benefits and limits of ai weather prediction"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Weather Forecasting Models Explained: How They Work",
+  "recommended_slug": "ai-weather-forecasting-models-explained",
+  "outline_h2s": [
+    "What Are AI Weather Forecasting Models?",
+    "How Traditional Numerical Weather Prediction Works",
+    "How AI Weather Models Work Under the Hood",
+    "AI Weather Models vs Traditional Forecasting",
+    "Key Use Cases in Energy, Agriculture and Logistics",
+    "Edge AI Weather Forecasting: Running Models Close to Users",
+    "Accuracy, Limitations and Reliability Considerations",
+    "How AI Weather Models Are Evaluated and Benchmarked",
+    "Future Trends in AI‑Driven Weather Prediction",
+    "How Developers and Businesses Can Start Using AI Weather Data"
+  ]
+}

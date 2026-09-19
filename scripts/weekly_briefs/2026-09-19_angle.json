@@ -1,0 +1,26 @@
+{
+  "primary_query": "ai alignment in frontier models",
+  "secondary_queries": [
+    "how frontier ai models are evaluated for safety",
+    "alignment benchmarks for large language models",
+    "ai model alignment vs capability tradeoffs",
+    "independent safety evaluators for ai labs",
+    "what makes an ai model more aligned",
+    "agentic ai systems and alignment risks",
+    "ai alignment for computer and browser agents",
+    "enterprise guidelines for choosing aligned ai models"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs",
+  "recommended_slug": "ai-alignment-frontier-models",
+  "outline_h2s": [
+    "What AI Alignment Means for Frontier-Scale Models",
+    "How Labs Define and Measure ‘More Aligned’ Models",
+    "Key Alignment Risks in High-Capability Frontier Models",
+    "Evaluation Frameworks and Benchmarks for Alignment",
+    "Independent Safety Evaluators: Roles and Limitations",
+    "Alignment Challenges for Agentic and Tool-Using AI",
+    "Choosing and Deploying Aligned Models in Organizations",
+    "Future Directions for Alignment in Frontier AI Systems"
+  ]
+}
