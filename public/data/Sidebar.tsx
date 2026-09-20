@@ -55,12 +55,6 @@ export const sidebarsData = [
     url: "/presentations",
     icon: <PiTelevision />,
   },
-  {
-    id: 6,
-    name: "Leadership",
-    url: "/leadership",
-    icon: <PiBriefcase />,
-  },
   // Blog disabled
   // {
   //   id: 7,
@@ -111,12 +105,6 @@ export const bottomNavData = [
     id: 5,
     name: "Speaking",
     url: "/speaking",
-    icon: <PiBriefcase />,
-  },
-  {
-    id: 6,
-    name: "Leadership",
-    url: "/leadership",
     icon: <PiBriefcase />,
   },
   {

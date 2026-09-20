@@ -8,9 +8,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const routes = [
         '',
         '/portfolio',
+        '/resume',
         '/research',
         '/speaking',
-        '/leadership',
         '/presentations',
         '/contact',
     ].map((route) => ({
