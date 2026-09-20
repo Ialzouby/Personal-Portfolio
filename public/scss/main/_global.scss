@@ -1,7 +1,8 @@
 html {
   scroll-behavior: initial;
-  // match body so nothing white can show beyond the page on ultra-wide screens
-  background-color: rgba(var(--n1), 1);
+  // NOTE: no background here on purpose — body's color must propagate to the root
+  // canvas so section backgrounds drawn with z-index: -1 (e.g. .banner-section-top::before)
+  // stay visible.
 }
 
 body {

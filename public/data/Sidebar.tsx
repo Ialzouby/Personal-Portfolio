@@ -31,12 +31,13 @@ export const sidebarsData = [
     icon: <PiCodeBlock />,
     numbers: 10,
   },
-  {
-    id: 4,
-    name: "Resume",
-    url: "/resume",
-    icon: <PiNotebook />,
-  },
+  // Resume intentionally left out of the header nav — reachable from the footer and /resume
+  //{
+  //id: 4,
+  //name: "Resume",
+  //url: "/resume",
+  //icon: <PiNotebook />,
+  //},
   {
     id: 5,
     name: "Research",

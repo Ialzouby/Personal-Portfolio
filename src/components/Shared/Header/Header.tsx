@@ -13,46 +13,54 @@ import {
 } from "react-icons/pi";
 import ThemeButton from "@/components/DarkMode/ThemeButton/ThemeButton";
 import { sidebarsData } from "../../../../public/data/Sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactModal from "@/components/Shared/ContactModal";
 
 const Header = () => {
   const path = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Pill gets a stronger backdrop + shadow once the page is scrolled
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
-      <header className={`header-nav ${path === "/" ? "home-header" : ""}`} style={{ zIndex: 1000 }}>
-        <div className="header-gradient-border"></div>
-        <div className="container-fluid">
-          <div className="d-flex align-items-center justify-content-between py-3 px-4">
+      <header className={`header-nav ${scrolled ? "is-scrolled" : ""}`}>
+        <div className="header-pill">
+          <div className="d-flex align-items-center justify-content-between gap-3">
             {/* Logo/Profile Section */}
-            <Link href="/" className="profile-link d-flex align-items-center gap-3 text-decoration-none">
+            <Link href="/" className="profile-link d-flex align-items-center gap-2 text-decoration-none">
               <div className="header-profile-wrapper">
                 <div className="profile-ring"></div>
                 <Image
                   src={profile}
                   alt="Issam Alzouby"
-                  width={50}
-                  height={50}
+                  width={40}
+                  height={40}
                   className="profile-image"
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="d-none d-md-block profile-text">
                 <h5 className="mb-0 fw-bold gradient-text">Issam Alzouby</h5>
-                <span className="fs-nine subtitle-text">PhD Student · AI Researcher</span>
+                <span className="fs-nine subtitle-text d-none d-xl-block">PhD Student · AI Researcher</span>
               </div>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="d-none d-lg-flex align-items-center gap-2">
+            <nav className="d-none d-lg-flex align-items-center gap-1">
               {sidebarsData.map(({ id, name, url }) => (
                 <Link
                   key={id}
                   href={url}
-                  className={`nav-link px-4 py-2 fw-medium ${path === url ? "active-nav" : ""
+                  className={`nav-link px-3 py-2 fw-medium ${path === url ? "active-nav" : ""
                     }`}
                 >
                   <span className="nav-text">{name}</span>
@@ -62,7 +70,7 @@ const Header = () => {
             </nav>
 
             {/* Right Section - Desktop */}
-            <div className="d-none d-lg-flex align-items-center gap-3">
+            <div className="d-none d-lg-flex align-items-center gap-2">
               <div className="social-icons-group">
                 <Link
                   href="https://www.linkedin.com/in/alzouby/"
@@ -70,7 +78,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <PiLinkedinLogo size={22} />
+                  <PiLinkedinLogo size={18} />
                 </Link>
                 <Link
                   href="https://github.com/Ialzouby"
@@ -78,7 +86,7 @@ const Header = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <PiGithubLogo size={22} />
+                  <PiGithubLogo size={18} />
                 </Link>
                 <Link
                   href="https://scholar.google.com/citations?user=G51wdWQAAAAJ&hl=en"
@@ -87,7 +95,7 @@ const Header = () => {
                   rel="noopener noreferrer"
                   aria-label="Google Scholar"
                 >
-                  <PiGraduationCap size={22} />
+                  <PiGraduationCap size={18} />
                 </Link>
               </div>
               {/* <div className="theme-divider"></div> */}
@@ -109,7 +117,7 @@ const Header = () => {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 aria-label="Toggle menu"
               >
-                {mobileMenuOpen ? <PiX size={28} /> : <PiList size={28} />}
+                {mobileMenuOpen ? <PiX size={24} /> : <PiList size={24} />}
               </button>
             </div>
           </div>
@@ -176,39 +184,69 @@ const Header = () => {
       </header>
 
       <style jsx global>{`
+        /* Floating pill header: fixed strip that lets clicks through, pill centered inside */
         .header-nav {
-          background: rgba(var(--n2), 1);
-          border-bottom: 1px solid rgba(143, 143, 143, 0.1);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-          position: sticky;
-          top: 0;
-          z-index: 1000;
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .home-header {
-          position: fixed !important;
-          background: rgba(var(--n2), 0.7) !important;
-          backdrop-filter: blur(12px) !important;
-          -webkit-backdrop-filter: blur(12px) !important;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
-          box-shadow: none !important;
-          width: 100%;
-        }
-
-        .header-gradient-border {
-          position: absolute;
-          bottom: 0;
+          position: fixed;
+          top: 14px;
           left: 0;
           right: 0;
-          height: 2px;
-          background: linear-gradient(90deg, 
-            transparent 0%, 
-            rgba(var(--p1), 0.8) 25%, 
-            rgba(var(--p1), 1) 50%, 
-            rgba(var(--p1), 0.8) 75%, 
-            transparent 100%);
-          opacity: 0.6;
+          z-index: 1000;
+          padding: 0 16px;
+          pointer-events: none;
+        }
+
+        .header-pill {
+          pointer-events: auto;
+          width: 100%;
+          max-width: 1140px;
+          margin: 0 auto;
+          padding: 8px 10px 8px 8px;
+          border-radius: 9999px;
+          background: rgba(var(--n2), 0.72);
+          backdrop-filter: blur(18px) saturate(160%);
+          -webkit-backdrop-filter: blur(18px) saturate(160%);
+          border: 1px solid rgba(var(--n5), 0.08);
+          box-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.04),
+            0 8px 30px rgba(0, 0, 0, 0.08),
+            inset 0 1px 0 rgba(255, 255, 255, 0.35);
+          transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        [data-theme="dark"] .header-pill {
+          background: rgba(var(--n2), 0.6);
+          border-color: rgba(255, 255, 255, 0.08);
+          box-shadow:
+            0 1px 2px rgba(0, 0, 0, 0.3),
+            0 8px 30px rgba(0, 0, 0, 0.35),
+            inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        .header-nav.is-scrolled .header-pill {
+          background: rgba(var(--n2), 0.88);
+          border-color: rgba(var(--p1), 0.18);
+          box-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.06),
+            0 14px 40px rgba(0, 0, 0, 0.14),
+            0 0 0 1px rgba(var(--p1), 0.06),
+            inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        [data-theme="dark"] .header-nav.is-scrolled .header-pill {
+          background: rgba(var(--n2), 0.85);
+          box-shadow:
+            0 2px 4px rgba(0, 0, 0, 0.4),
+            0 14px 40px rgba(0, 0, 0, 0.5),
+            0 0 0 1px rgba(var(--p1), 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.06);
+        }
+
+        /* Mobile menu lives inside the fixed header; re-enable clicks there */
+        .mobile-menu {
+          pointer-events: none;
+        }
+        .mobile-menu.open {
+          pointer-events: auto;
         }
 
         /* Profile Section */
@@ -222,13 +260,13 @@ const Header = () => {
 
         .header-profile-wrapper {
           position: relative;
-          width: 50px;
-          height: 50px;
+          width: 40px;
+          height: 40px;
         }
 
         .profile-image {
           border-radius: 50%;
-          border: 3px solid rgba(var(--p1), 0.3);
+          border: 2px solid rgba(var(--p1), 0.3);
           transition: all 0.4s ease;
           position: relative;
           z-index: 2;
@@ -264,13 +302,17 @@ const Header = () => {
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          font-size: 1.1rem;
+          font-size: 1rem;
+          line-height: 1.2;
+          white-space: nowrap;
         }
 
         .subtitle-text {
           color: rgba(var(--n5), 0.7);
           font-weight: 500;
           letter-spacing: 0.3px;
+          line-height: 1.2;
+          white-space: nowrap;
         }
 
         /* Navigation Links */
@@ -278,10 +320,12 @@ const Header = () => {
           color: rgba(var(--n5), 0.85);
           text-decoration: none;
           position: relative;
-          border-radius: 12px;
+          border-radius: 9999px;
+          font-size: 0.9rem;
           transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           letter-spacing: 0.3px;
           cursor: pointer;
+          white-space: nowrap;
         }
 
         .nav-text {
@@ -304,38 +348,23 @@ const Header = () => {
 
         .nav-link:hover {
           color: rgba(var(--p1), 1) !important;
-          background: linear-gradient(135deg, rgba(var(--p1), 0.15), rgba(var(--p1), 0.08)) !important;
-          transform: translateY(-4px) scale(1.05) !important;
-          box-shadow: 0 8px 20px rgba(var(--p1), 0.25) !important;
-          animation: navLinkFloat 0.6s ease !important;
-        }
-
-        @keyframes navLinkFloat {
-          0%, 100% { transform: translateY(-4px) scale(1.05); }
-          50% { transform: translateY(-6px) scale(1.06); }
-        }
-
-        .nav-link:hover .nav-text {
-          transform: scale(1.05) !important;
-          text-shadow: 0 2px 8px rgba(var(--p1), 0.3) !important;
+          background: rgba(var(--p1), 0.1) !important;
+          transform: translateY(-1px);
         }
 
         .nav-link:hover .nav-underline {
           transform: translateX(-50%) scaleX(1);
-          animation: underlineGlow 1s ease infinite;
-          box-shadow: 0 0 10px rgba(var(--p1), 0.6);
-        }
-
-        @keyframes underlineGlow {
-          0%, 100% { opacity: 1; }
-          50% { opacity: 0.7; }
         }
 
         .active-nav {
           background: linear-gradient(135deg, rgba(var(--p1), 1), rgba(var(--p1), 0.85));
           color: #fff !important;
-          box-shadow: 0 4px 15px rgba(var(--p1), 0.3);
-          transform: translateY(-1px);
+          box-shadow: 0 4px 14px rgba(var(--p1), 0.3);
+        }
+
+        .active-nav:hover {
+          background: linear-gradient(135deg, rgba(var(--p1), 1), rgba(var(--p1), 0.85)) !important;
+          color: #fff !important;
         }
 
         .active-nav .nav-underline {
@@ -345,41 +374,33 @@ const Header = () => {
         /* Social Icons Group */
         .social-icons-group {
           display: flex;
-          gap: 0.75rem;
-          padding: 0.5rem;
-          background: rgba(var(--p1), 0.05);
-          border-radius: 12px;
+          gap: 0.35rem;
+          padding: 0.25rem;
+          background: rgba(var(--p1), 0.06);
+          border-radius: 9999px;
         }
 
         .social-icon-header {
           color: rgba(var(--p1), 1);
-          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
           display: flex;
           align-items: center;
           justify-content: center;
-          padding: 0.4rem;
-          border-radius: 8px;
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
           background: transparent;
-          border: 2px solid rgba(var(--p1), 0.4);
+          border: 1px solid rgba(var(--p1), 0.25);
           position: relative;
           cursor: pointer;
         }
 
         .social-icon-header:hover {
           color: #fff !important;
-          background: linear-gradient(135deg, rgba(var(--p1), 0.9), rgba(var(--p1), 1)) !important;
+          background: rgba(var(--p1), 1) !important;
           border-color: rgba(var(--p1), 1) !important;
-          transform: translateY(-6px) scale(1.15) rotate(8deg) !important;
-          box-shadow: 0 12px 30px rgba(var(--p1), 0.5) !important;
-          animation: socialIconBounce 0.6s ease !important;
-        }
-
-        @keyframes socialIconBounce {
-          0% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
-          25% { transform: translateY(-8px) scale(1.2) rotate(5deg); }
-          50% { transform: translateY(-6px) scale(1.15) rotate(10deg); }
-          75% { transform: translateY(-8px) scale(1.2) rotate(6deg); }
-          100% { transform: translateY(-6px) scale(1.15) rotate(8deg); }
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(var(--p1), 0.35);
         }
 
         .theme-divider {
@@ -390,7 +411,8 @@ const Header = () => {
 
         /* Contact Button */
         .contact-btn {
-          padding: 0.5rem clamp(0.8rem, 2vw, 1.2rem);
+          padding: 0.55rem clamp(0.8rem, 2vw, 1.1rem);
+          margin-left: 0.25rem;
           border-radius: 9999px !important;
           background: rgb(82, 113, 255) !important;
           color: #ffffff !important;
@@ -416,26 +438,18 @@ const Header = () => {
           border: 1px solid rgba(var(--p1), 0.15);
           color: rgba(var(--p1), 1);
           cursor: pointer;
-          padding: 0.6rem;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 12px;
-          transition: all 0.3s ease;
+          border-radius: 50%;
+          transition: all 0.25s ease;
         }
 
         .mobile-menu-toggle:hover {
-          background: linear-gradient(135deg, rgba(var(--p1), 0.3), rgba(var(--p1), 0.4)) !important;
-          border-color: rgba(var(--p1), 0.8) !important;
-          transform: rotate(180deg) scale(1.15) !important;
-          box-shadow: 0 6px 20px rgba(var(--p1), 0.4) !important;
-          animation: menuToggleSpin 0.8s ease !important;
-        }
-
-        @keyframes menuToggleSpin {
-          0% { transform: rotate(0deg) scale(1); }
-          50% { transform: rotate(180deg) scale(1.2); }
-          100% { transform: rotate(180deg) scale(1.15); }
+          background: rgba(var(--p1), 0.18) !important;
+          border-color: rgba(var(--p1), 0.5) !important;
         }
 
         /* Mobile Menu */
@@ -821,7 +835,12 @@ const Header = () => {
 
         @media (max-width: 991px) {
           .header-nav {
-            padding: 0;
+            top: 10px;
+            padding: 0 12px;
+          }
+
+          .header-pill {
+            padding: 6px 8px 6px 6px;
           }
         }
 

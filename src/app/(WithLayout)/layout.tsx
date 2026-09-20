@@ -4,6 +4,7 @@
 // import Topbar from "@/components/Shared/Topbar/Topbar"; // Commented out - Header handles mobile menu
 import Header from "@/components/Shared/Header/Header";
 import BottomNav from "@/components/Shared/BottomNav/BottomNav";
+import { usePathname } from "next/navigation";
 
 export default function WithLayout({
   children,
@@ -12,12 +13,16 @@ export default function WithLayout({
 }>) {
   // Sidebar state - commented out, kept for potential reversion
   // const [sidebarOpen, setSidebarOpen] = useState(true);
-  
+  const path = usePathname();
+  // The floating pill header is fixed, so every page except the home banner
+  // (which already sits under it full-height) needs room at the top.
+  const isHome = path === "/";
+
   return (
     <div className="d-flex flex-column">
       <Header />
       {/* <BottomNav /> */}
-      <div className="main-content w-100">{children}</div>
+      <div className={`main-content w-100 ${isHome ? "" : "floating-header-offset"}`}>{children}</div>
     </div>
   );
 }

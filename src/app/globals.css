@@ -607,6 +607,17 @@ html[data-theme="dark"] .banner-tint-overlay,
   padding-top: 0;
 }
 
+/* Space reserved under the floating pill header (14px offset + ~58px pill) on non-home pages */
+.main-content.floating-header-offset {
+  padding-top: 84px;
+}
+
+@media (max-width: 991px) {
+  .main-content.floating-header-offset {
+    padding-top: 72px;
+  }
+}
+
 /* Hide sidebar when using header */
 .side-menu {
   display: none !important;
