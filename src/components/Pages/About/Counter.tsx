@@ -44,17 +44,6 @@ const Counter = () => {
             Publications
           </span>
         </div>
-        <div className="counter-item d-flex align-items-center gap-2 gap-xl-3">
-          <h2 className="counter-number fs-two fw-semibold p1-color d-flex gap-1">
-            <CountUp start={0} end={448} duration={2} enableScrollSpy scrollSpyOnce>
-              {({ countUpRef }) => <span ref={countUpRef} />}
-            </CountUp>
-          </h2>
-          <div className="counter-line line"></div>
-          <span className="counter-label n5-color text-start fs-nine">
-            2025<br />Github<br />Contributions
-          </span>
-        </div>
       </div>
 
       <style jsx>{`
