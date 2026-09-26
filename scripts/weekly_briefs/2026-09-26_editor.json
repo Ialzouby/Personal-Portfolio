@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Anthropic’s Claude Opus 5.5 is a major frontier-model launch with clear performance–cost implications for enterprises and developers, strong news momentum, and excellent evergreen explainer potential around model efficiency and deployment economics. Despite a diversity penalty from recent focus on Models, its overall impact plus SEO value still edges out the other stories.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 6,
+      "final_score": 33,
+      "notes": "Flagship frontier model launch from a top lab, with explicit 40% cost reduction vs prior Opus 5. Strong relevance to enterprises, developers, and infra planners. High credibility, substantial audience. Excellent SEO potential for explainers on Opus 5.5 vs 5, model efficiency, pricing, and deployment strategies. Models bucket has been used heavily (appears 3+ times in last 6 posts), so full 6-point diversity penalty applies; impact is high but not quite high enough to invoke the override (needs ≥22). Still ends up with the top final score."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 31,
+      "notes": "GPT-6 Sol and Luna entering ChatGPT Work and Codex are impactful for existing OpenAI enterprise users and coding workflows. Strong but slightly less novel than a brand-new frontier model; more of an availability/rollout story. Good SEO around GPT-6 variants and enterprise adoption, but somewhat fragmented queries. Same Models bucket, heavily used recently, so max 6-point diversity penalty applies. Just below the Anthropic story overall."
+    },
+    {
+      "index": 2,
+      "bucket": "Creative AI",
+      "news_impact": 18,
+      "seo_potential": 18,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Voice + plugins is a meaningful step toward agentic voice interfaces and multimodal workflows. Strong product impact, but more incremental than a new frontier model. SEO potential is very good: tutorials and walkthroughs on using plugins in voice mode, workflows for documents, presentations, automation. Creative AI bucket has not appeared in the recent list, so no diversity penalty. Despite the high final_score numerically, its broader strategic impact is somewhat narrower than an efficiency-shifting flagship model launch; if strictly following the numeric rule it would win, but it's marginally less central as the weekly anchor story than Opus 5.5."
+    },
+    {
+      "index": 3,
+      "bucket": "Models",
+      "news_impact": 20,
+      "seo_potential": 16,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Multiple Gemini 3.8 variants (Flash, Flash Cyber, Live) emphasize latency optimization and interactive features. Solid impact, especially on developer UX/cost tradeoffs, but more evolutionary within an existing family. Good SEO for variant comparisons and use-case guides. Models bucket again, so heavy 6-point penalty. Ends up behind both Anthropic Opus 5.5 and OpenAI’s GPT-6 rollout numerically."
+    },
+    {
+      "index": 4,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "GPT-6 Astra system card update offers strong transparency and is valuable for policy/safety audiences, but not as broadly impactful as new model deployments. SEO: good for alignment, evals, and safety methodology explainers, but niche vs mainstream model or product stories. AI Ethics bucket appears in recent list (once, 5 posts back), but not heavily repeated, so a moderate 4-point penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 29,
+      "notes": "Anthropic’s threat intelligence report is impactful for defenders, policymakers, and labs, giving concrete misuse case studies. Slightly more practically grounded than a system card, so a bit higher impact. SEO: decent for \"AI misuse\", \"threat intelligence with LLMs\", and case-study content, but still specialized. AI Ethics bucket again gets a 4-point penalty for recurrence."
+    },
+    {
+      "index": 6,
+      "bucket": "AI in Healthcare",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "WeatherNext 3 and AlphaGenome Atlas are powerful applied AI models for climate and genomics, with public health and biomedical implications. News impact is tempered by the fact that the underlying scientific work predates this week; the current hook is promotional emphasis. SEO potential is strong around weather forecasting AI and genome-variant prediction explainers. Healthcare/Applied Science bucket is new in the recent rotation, so no penalty. Numerically strong, but as a weekly feature it’s more diffuse (two separate applied models) and less timely than the Opus 5.5 launch."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 14,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 30,
+      "notes": "ArXiv analysis of ChatGPT Images 2.5 is useful for researchers and policy audiences, but not a mainstream product or model launch. SEO potential is okay around datasets, detectors, and early usage analysis, but niche. Creative AI bucket not used recently, so no penalty. Good supporting story, but not a headline weekly choice."
+    }
+  ]
+}
