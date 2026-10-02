@@ -1,0 +1,131 @@
+{
+  "week": "2026-09-26",
+  "events": [
+    {
+      "event": "Anthropic releases Claude Opus 5.5, a new flagship model focused on higher performance and lower cost",
+      "category": "Models",
+      "why_it_matters": "Claude Opus 5.5 is Anthropic’s first model in the new 5.5 family, claimed to match or exceed the company’s prior top-tier models on complex work while being about 40% cheaper to run than Opus 5. This indicates continued rapid efficiency gains at the frontier model level, affecting how widely high-end reasoning models can be deployed in products and enterprises.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "title": "Introducing Claude Opus 5.5",
+          "date": "2026-09-22"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Newsroom – Introducing Claude Opus 5.5",
+          "date": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI adds GPT-6 Sol and GPT-6 Luna models to ChatGPT Work and Codex",
+      "category": "Models",
+      "why_it_matters": "OpenAI is expanding availability of its newer GPT-6 family by bringing the Sol and Luna variants into ChatGPT Work and Codex. This broadens access to more capable and differentiated models for coding and productivity use cases, and signals that GPT-6-class systems are moving from limited previews into regular enterprise workflows.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "title": "ChatGPT — Release Notes (entry for September 22, 2026)",
+          "date": "2026-09-22"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/",
+          "title": "OpenAI Deployment Safety Hub (GPT-5.6 / GPT-6 family system cards index)",
+          "date": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI enables plugin use in Voice mode across web and mobile ChatGPT",
+      "category": "Creative AI",
+      "why_it_matters": "By allowing plugins and connected apps to be used within Voice conversations on web, iOS, and Android, OpenAI is turning voice interactions into a general interface for automating tasks, creating documents and presentations, and controlling external services. This shifts voice AI from a chat-only interface toward a more agent-like front end for complex workflows.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "title": "ChatGPT — Release Notes (entry for September 23, 2026)",
+          "date": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "event": "Google DeepMind announces multiple new Gemini 3.8 model variants, including Live and Flash",
+      "category": "Models",
+      "why_it_matters": "DeepMind has introduced several Gemini 3.8 variants—including Flash, Flash Cyber, and Live with avatar features—highlighting an emphasis on faster, lightweight inference, interactive modalities, and specialized capabilities. The updates show large labs continuing to iterate on both latency-optimized and multimodal conversational models, which can change cost and UX tradeoffs for developers and end users.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog",
+          "title": "News — Google DeepMind (entries for September 2026: Gemini 3.8 Flash / Flash Cyber)",
+          "date": "2026-09-2026"
+        },
+        {
+          "url": "https://deepmind.google/blog",
+          "title": "News — Google DeepMind (entries for September 2026: Gemini 3.8 Live and related updates)",
+          "date": "2026-09-2026"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes the GPT-6 Astra system card with additional alignment details and updates",
+      "category": "AI Ethics",
+      "why_it_matters": "Although Astra itself launched earlier in September, OpenAI has been updating its public system card, including clarifications on alignment evaluations and how the model is tested against misuse scenarios such as cyber operations. The document provides rare technical transparency around safety testing for a high-capability model and shows how evaluation methods are being refined after prior incidents.",
+      "sources": [
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-astra/protocolqa-open-ended",
+          "title": "GPT-6 Astra System Card",
+          "date": "2026-09-09"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/",
+          "title": "OpenAI Deployment Safety Hub – Updates index",
+          "date": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic releases a September 2026 threat intelligence report on real-world misuse of Claude and other frontier models",
+      "category": "AI Ethics",
+      "why_it_matters": "Anthropic’s latest threat intelligence report documents how state-linked and other actors have attempted to misuse Claude and competing models for cyber, surveillance, and other operations, and how such campaigns were disrupted. The report offers concrete case studies of evolving misuse tactics and cross-model targeting, informing policymakers, defenders, and other labs about emerging threat patterns.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+          "title": "Detecting and countering misuse of AI: September 2026",
+          "date": "2026-09-10"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Anthropic Newsroom – Threat Intelligence report listing",
+          "date": "2026-09-10"
+        }
+      ]
+    },
+    {
+      "event": "Google DeepMind highlights WeatherNext 3 and AlphaGenome Atlas as large-scale applied AI models",
+      "category": "Healthcare AI",
+      "why_it_matters": "While the underlying scientific work predates the last week, DeepMind’s current news feed is emphasizing applied models like WeatherNext 3 for global weather forecasting and AlphaGenome Atlas for predicting the impact of DNA letter changes. These systems illustrate how foundation-model techniques are being translated into operational tools for climate and genomics, areas with direct implications for public health and biomedical research.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog",
+          "title": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model",
+          "date": "2026-09-2026"
+        },
+        {
+          "url": "https://deepmind.google/blog",
+          "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+          "date": "2026-09-2026"
+        }
+      ]
+    },
+    {
+      "event": "New analysis of ChatGPT Images 2.5 launch-period content and attribution appears on arXiv",
+      "category": "Creative AI",
+      "why_it_matters": "A new arXiv paper studies early real-world use of OpenAI’s ChatGPT Images 2.5, compiling a dataset of user posts in the first ~51 hours after the model’s public announcement. The work focuses on how the model is used, how outputs are flagged or attributed, and how behavior compares with earlier image systems, offering empirical data to inform debates over generative image model deployment and monitoring.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/abs/2609.15100",
+          "title": "ChatGPT Images 2.5 in the Wild: A Launch-Period Dataset and Detector Evaluation",
+          "date": "2026-09-14"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "primary_query": "Claude Opus 5.5 vs Opus 5",
+  "secondary_queries": [
+    "Claude Opus 5.5 explained",
+    "Claude Opus 5.5 pricing vs Opus 5",
+    "Claude Opus 5.5 performance benchmarks",
+    "how to choose between Claude Opus 5 and 5.5",
+    "Claude Opus 5.5 for enterprise use",
+    "Claude Opus 5.5 context length and limits",
+    "Claude model families comparison",
+    "optimizing cost with Claude Opus 5.5"
+  ],
+  "search_intent": "Comparative",
+  "recommended_title": "Claude Opus 5.5 vs Opus 5: Performance, Cost and Use Cases",
+  "recommended_slug": "claude-opus-5-5-vs-opus-5",
+  "outline_h2s": [
+    "Overview: Where Claude Opus 5.5 Fits in the Claude Model Lineup",
+    "Key Differences Between Claude Opus 5.5 and Claude Opus 5",
+    "Performance and Reasoning: What Improves in Opus 5.5",
+    "Cost and Efficiency: When Opus 5.5 Is Cheaper to Run",
+    "Latency, Context Window and Tooling Support",
+    "Use Cases: When to Choose Opus 5.5 vs Opus 5",
+    "Migration Guide: Moving Workloads from Opus 5 to Opus 5.5",
+    "Evaluation Checklist for Teams Testing Claude Opus 5.5",
+    "Best Practices to Optimize Quality and Cost with Opus 5.5",
+    "Future-Proofing: How to Plan Around Iterative Claude Opus Releases"
+  ]
+}

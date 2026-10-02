@@ -40,7 +40,8 @@
     "ai model jailbreak infrastructure attack",
     "ai cyber agents explained",
     "AI weather forecasting models explained",
-    "ai alignment in frontier models"
+    "ai alignment in frontier models",
+    "Claude Opus 5.5 vs Opus 5"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -83,7 +84,8 @@
     "AI Model Jailbreaks and Infrastructure Attacks Explained",
     "AI Cyber Agents Explained: Autonomous Security Models and Risks",
     "AI Weather Forecasting Models Explained: How They Work",
-    "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs"
+    "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs",
+    "Claude Opus 5.5 vs Opus 5: Performance, Cost and Use Cases"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -126,7 +128,8 @@
     "ai-model-jailbreak-infrastructure-attacks",
     "ai-cyber-agents-explained",
     "ai-weather-forecasting-models-explained",
-    "ai-alignment-frontier-models"
+    "ai-alignment-frontier-models",
+    "claude-opus-5-5-vs-opus-5"
   ],
   "buckets": [
     "Robotics",
@@ -169,6 +172,7 @@
     "AI Ethics",
     "Models",
     "Edge AI",
+    "Models",
     "Models"
   ]
 }
