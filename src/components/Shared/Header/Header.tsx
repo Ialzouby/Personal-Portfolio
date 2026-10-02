@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import profile from "@/../public/images/profile.png";
+import profile from "@/../public/headshot.png";
 import { usePathname } from "next/navigation";
 import {
   PiLinkedinLogo,
@@ -21,18 +21,50 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
-  // Pill gets a stronger backdrop + shadow once the page is scrolled
+  // Pill gets a stronger backdrop once scrolled, and retracts while scrolling
+  // down so it never floats over the content. Hiding transforms .header-nav,
+  // which would become the containing block for the fixed mobile menu, so the
+  // pill stays pinned open whenever that menu is showing.
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
+    const REVEAL_ZONE = 140; // always visible near the top of the page
+    const JITTER = 6; // ignore sub-pixel and trackpad noise
+    let lastY = window.scrollY;
+    let queued = false;
+
+    const sync = () => {
+      queued = false;
+      const y = window.scrollY;
+      setScrolled(y > 24);
+
+      if (y <= REVEAL_ZONE || mobileMenuOpen) {
+        setHidden(false);
+        lastY = y;
+        return;
+      }
+      const moved = y - lastY;
+      if (Math.abs(moved) <= JITTER) return;
+      setHidden(moved > 0);
+      lastY = y;
+    };
+
+    const onScroll = () => {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(sync);
+    };
+
+    sync();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [mobileMenuOpen]);
 
   return (
     <>
-      <header className={`header-nav ${scrolled ? "is-scrolled" : ""}`}>
+      <header
+        className={`header-nav ${scrolled ? "is-scrolled" : ""} ${hidden ? "is-hidden" : ""}`}
+      >
         <div className="header-pill">
           <div className="d-flex align-items-center justify-content-between gap-3">
             {/* Logo/Profile Section */}
@@ -193,6 +225,18 @@ const Header = () => {
           z-index: 1000;
           padding: 0 16px;
           pointer-events: none;
+          transition: transform 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        /* retracted on downward scroll; the extra 30px clears the pill shadow */
+        .header-nav.is-hidden {
+          transform: translateY(calc(-100% - 30px));
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .header-nav {
+            transition: none;
+          }
         }
 
         .header-pill {

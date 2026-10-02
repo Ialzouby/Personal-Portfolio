@@ -75,8 +75,12 @@ const Banner = () => {
           width: 100%;
           position: relative;
           display: flex;
-          align-items: center;
-          padding: 0;
+          /* "safe" degrades to flex-start once the hero outgrows the viewport,
+             so tall content overflows downward instead of sliding up under the
+             fixed pill header. Plain centering spills in both directions. */
+          align-items: safe center;
+          box-sizing: border-box;
+          padding: 40px 0 0; /* combines with ancestor insets to clear the pill */
           overflow: hidden;
         }
 

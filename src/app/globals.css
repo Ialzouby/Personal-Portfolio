@@ -618,6 +618,13 @@ html[data-theme="dark"] .banner-tint-overlay,
   }
 }
 
+/* The home banner is the one page with no reserved header space, so its
+   centring must not spill upward under the fixed pill on short viewports.
+   Overrides Bootstrap's .justify-content-center, hence the !important. */
+.banner-section-fullheight .banner-content-wrapper {
+  justify-content: safe center !important;
+}
+
 /* Hide sidebar when using header */
 .side-menu {
   display: none !important;
