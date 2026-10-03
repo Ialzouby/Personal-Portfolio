@@ -1,0 +1,28 @@
+{
+  "primary_query": "AI decision APIs and computer use",
+  "secondary_queries": [
+    "what is an ai decisions api",
+    "computer use tools for ai agents",
+    "how ai agents control apps and browsers",
+    "workflow automation with ai decision apis",
+    "gpt style agents with computer use explained",
+    "building autonomous ai agents with tools",
+    "ai coding environments for autonomous agents",
+    "multi step decision making in ai agents"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "AI Decision APIs and Computer Use: How Agents Run Apps",
+  "recommended_slug": "ai-decision-apis-computer-use-agents",
+  "outline_h2s": [
+    "What Are AI Decision APIs and Computer Use Tools?",
+    "From Chatbots to Agents: Why Tool Use Changes Everything",
+    "How AI Decision APIs Work for Multi‑Step Reasoning",
+    "How Computer Use Lets AI Agents Control Apps and Browsers",
+    "Cloud Coding Environments for Autonomous AI Development",
+    "Designing Workflows Agents Can Safely Automate",
+    "Creative and Analytical Use Cases for Agentic Workflows",
+    "Risks, Limits and Guardrails for Autonomous Agents",
+    "How to Get Started Building Agents With Decision and Computer Use APIs",
+    "Future Directions for Agentic AI and Workflow Orchestration"
+  ]
+}

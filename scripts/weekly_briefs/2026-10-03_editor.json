@@ -1,0 +1,78 @@
+{
+  "winner_index": 7,
+  "winner_reason": "OpenAI’s DevDay 2026 agent announcements have very high news impact across developers and businesses, strong ongoing SEO value around agents/computer-use/decision APIs, and fall into a relatively underused bucket (Creative AI) compared with our recent model- and infra-heavy coverage, giving it the top final score.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 19,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 26,
+      "notes": "Solid but incremental model release targeted at cost/latency; strong enterprise interest but overshadowed by frontier models. Models bucket is heavily overused recently (appears 3+ in last 6 and in last post), so full 6-point penalty."
+    },
+    {
+      "index": 1,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 15,
+      "diversity_penalty": 6,
+      "final_score": 30,
+      "notes": "Flagship-class model with notable impact and explainer/benchmark SEO value, but still another models story when we’ve had many. High impact but below override threshold (22), so full diversity penalty applies."
+    },
+    {
+      "index": 2,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 15,
+      "diversity_penalty": 0,
+      "final_score": 33,
+      "notes": "State-level AI/data privacy law is meaningful, but confined to one state; SEO value around compliance explainers and templates is good but niche. Last AI Ethics item was 4 posts ago, so no diversity penalty under the given rules."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 20,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Bipartisan US Senate bill on AI liability for hacking is significant for governance and risk/compliance audiences; strong SEO for legal liability, red-teaming, and safety-by-design explainers. Ethics bucket not overused recently, so no penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "AI in Healthcare",
+      "news_impact": 17,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Important counter-narrative on cost savings from healthcare AI; strong evergreen SEO on \"does AI reduce healthcare costs\" and payer/provider strategy. Healthcare bucket has not appeared in the recent sequence, so no penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "AI in Healthcare",
+      "news_impact": 18,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Compelling labor- and safety-focused story with concrete vendor (Palantir) and big chain (HCA), likely to attract sustained interest from healthcare operations and labor audiences. Similar scoring to other healthcare story; no diversity penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Data/Infra",
+      "news_impact": 17,
+      "seo_potential": 14,
+      "diversity_penalty": 6,
+      "final_score": 25,
+      "notes": "Useful for practitioners and policymakers interested in real-world misuse patterns and safety ops, but quite specialized. Data/Infra has appeared multiple times in last 6 posts, so full 6-point penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 22,
+      "seo_potential": 18,
+      "diversity_penalty": 2,
+      "final_score": 38,
+      "notes": "Major platform shift: agents, computer use, and Decisions API meaningfully extend what models can do in products and workflows; large developer and business impact with broad coverage. Extremely strong SEO around \"AI agents\", \"computer-use\", automation patterns, and comparisons with other agent stacks. Creative AI/agent tooling has not been in our recent list; because news_impact ≥ 22, diversity penalty is capped at 2 per override rule, even though some may consider it adjacent to Models."
+    }
+  ]
+}

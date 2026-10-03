@@ -41,7 +41,8 @@
     "ai cyber agents explained",
     "AI weather forecasting models explained",
     "ai alignment in frontier models",
-    "Claude Opus 5.5 vs Opus 5"
+    "Claude Opus 5.5 vs Opus 5",
+    "AI decision APIs and computer use"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -85,7 +86,8 @@
     "AI Cyber Agents Explained: Autonomous Security Models and Risks",
     "AI Weather Forecasting Models Explained: How They Work",
     "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs",
-    "Claude Opus 5.5 vs Opus 5: Performance, Cost and Use Cases"
+    "Claude Opus 5.5 vs Opus 5: Performance, Cost and Use Cases",
+    "AI Decision APIs and Computer Use: How Agents Run Apps"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -129,7 +131,8 @@
     "ai-cyber-agents-explained",
     "ai-weather-forecasting-models-explained",
     "ai-alignment-frontier-models",
-    "claude-opus-5-5-vs-opus-5"
+    "claude-opus-5-5-vs-opus-5",
+    "ai-decision-apis-computer-use-agents"
   ],
   "buckets": [
     "Robotics",
@@ -173,6 +176,7 @@
     "Models",
     "Edge AI",
     "Models",
-    "Models"
+    "Models",
+    "Creative AI"
   ]
 }

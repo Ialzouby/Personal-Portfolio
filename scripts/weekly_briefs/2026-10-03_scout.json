@@ -1,0 +1,126 @@
+{
+  "week": "2026-10-03",
+  "events": [
+    {
+      "event": "Anthropic releases Claude Sonnet 5.5, a cheaper, faster workhorse model in the Claude 5.5 family",
+      "category": "Models",
+      "why_it_matters": "Sonnet 5.5 is positioned as a cost‑efficient, high‑throughput model for everyday work tasks, giving enterprises a lower‑latency, lower‑cost alternative to flagship frontier models while keeping similar tooling and safety guarantees. This helps shift more routine knowledge work to AI systems without requiring the highest‑end, most expensive models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5.5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+          "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
+          "date": "2026-09-28"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Anthropic Newsroom listings (Sonnet 5.5 announcement referenced in September updates)",
+          "date": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic introduces Claude Opus 5.5, its new top‑end model in the Claude 5.5 line",
+      "category": "Models",
+      "why_it_matters": "Opus 5.5 is Anthropic’s latest flagship‑class model, designed for the hardest reasoning and knowledge‑intensive tasks. Its release signals continued rapid iteration at the frontier while Anthropic publicly emphasizes pacing and safety, illustrating how labs are trying to improve capabilities and keep risk controls in step.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/claude-opus-5-5",
+          "title": "Introducing Claude Opus 5.5",
+          "date": "2026-09-22"
+        },
+        {
+          "url": "https://techcrunch.com/2026/09/28/anthropic-releases-sonnet-5.5-which-it-calls-a-significantly-cheaper-faster-work-partner/",
+          "title": "Anthropic releases Sonnet 5.5, which it calls a significantly cheaper, faster work partner",
+          "date": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "event": "Connecticut’s expanded data privacy and AI disclosure laws take effect, tightening rules on facial recognition, genetic data, and AI transparency",
+      "category": "AI Ethics",
+      "why_it_matters": "Multiple Connecticut statutes that came into force on 2026‑10‑01 add new AI‑related obligations, including disclosure requirements, whistleblower protections, limits on facial recognition and surveillance, and restrictions on selling genetic data. As one of the more detailed U.S. state regimes around AI‑linked data and biometrics, it raises compliance stakes for firms deploying AI in consumer and public‑facing contexts and may serve as a template for other states.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/datasets/presentofai/ai-timeline/viewer",
+          "title": "AI Timeline dataset entry: Connecticut AI and data privacy provisions take effect October 1, 2026",
+          "date": "2026-10-01"
+        },
+        {
+          "url": "https://arxiv.org/abs/2608.13675",
+          "title": "From BERT to Frontier Agents: Eight Years of Language-Model Progress, the Collapse of the Capability-Cost Curve, and the Rise of Task-Targeted Models (context on tightening AI governance as capabilities rise)",
+          "date": "2026-08-26"
+        }
+      ]
+    },
+    {
+      "event": "U.S. senators introduce a bipartisan bill to hold AI firms civilly and criminally liable when autonomous agents conduct hacking",
+      "category": "AI Ethics",
+      "why_it_matters": "The Hawley‑Murphy proposal would explicitly expose AI companies to liability if their systems autonomously carry out intrusions, moving legal responsibility closer to the model providers even when humans are several steps removed. This points toward a future where AI firms must design stronger abuse‑prevention, monitoring, and containment mechanisms or face direct legal and financial risk.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/datasets/presentofai/ai-timeline/viewer",
+          "title": "AI Timeline dataset entry: Bipartisan US Senate bill to hold AI firms liable for hacks (October 1, 2026)",
+          "date": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "event": "Insurers report that AI tools are already contributing to higher healthcare costs",
+      "category": "Healthcare AI",
+      "why_it_matters": "According to insurers, AI‑driven tools in healthcare are not yet delivering net cost savings and may be increasing expenses, for example through additional imaging, tests, or administrative overhead. This runs counter to some expectations that AI would rapidly lower costs, and it underscores the need for rigorous evaluation of how AI is actually used in clinical and billing workflows, not just its technical performance.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
+          "title": "Insurers claim AI is already increasing healthcare costs",
+          "date": "2026-09-26"
+        }
+      ]
+    },
+    {
+      "event": "Healthcare workers criticize Palantir‑powered AI scheduling at major U.S. hospital chain, citing errors and burnout",
+      "category": "Healthcare AI",
+      "why_it_matters": "Nurses at HCA Healthcare report that an AI‑driven scheduling tool co‑developed with Palantir has produced frequent scheduling mismatches and back‑to‑back shifts, which they link to burnout, injuries, and resignations. The episode illustrates how operational AI in hospitals can have major labor and safety consequences even when it is not directly making clinical decisions, and how poorly‑aligned optimization objectives can degrade working conditions.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/healthcare-workers-are-tired-of-cleaning-up-palantirs-mess/",
+          "title": "Health Care Workers Are Tired of Cleaning Up Palantir’s Mess",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic details how it detected and disrupted multiple attempted malicious uses of Claude over the past eight months",
+      "category": "Data/Infra",
+      "why_it_matters": "In its September 2026 misuse report, Anthropic describes operations where threat actors tried to use Claude for tasks like cybercrime and influence activity, and the interventions taken to stop them. Publishing concrete misuse patterns and mitigations from production systems gives researchers and policymakers better insight into real‑world abuse channels and the defensive value of logging, red‑teaming, and safety fine‑tuning at scale.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Detecting and countering misuse of AI: September 2026",
+          "date": "2026-09-10"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-astra/evaluating-auto-review",
+          "title": "GPT‑6 Astra System Card (for comparison on large‑scale deployment monitoring and auto‑review)",
+          "date": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI’s DevDay 2026 expands agent capabilities with computer‑use and decision APIs powered by GPT‑6‑class models",
+      "category": "Creative AI",
+      "why_it_matters": "OpenAI’s new agent stack—adding computer‑use, Decisions API, and cloud‑based coding environments—enables models to operate applications, make multi‑step choices, and orchestrate complex workflows with less human glue code. While framed around productivity and development, these capabilities also broaden the space for autonomous creative and analytical agents that can iteratively generate, test, and refine work products across tools.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/datasets/presentofai/ai-timeline/viewer",
+          "title": "AI Timeline dataset entry: OpenAI DevDay 2026 – Computer Use and Decisions API launch",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://deploymentsafety.openai.com/gpt-6-astra/evaluating-auto-review",
+          "title": "GPT‑6 Astra System Card (context on the underlying model powering new agent features)",
+          "date": "2026-09-09"
+        }
+      ]
+    }
+  ]
+}
