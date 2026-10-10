@@ -42,7 +42,8 @@
     "AI weather forecasting models explained",
     "ai alignment in frontier models",
     "Claude Opus 5.5 vs Opus 5",
-    "AI decision APIs and computer use"
+    "AI decision APIs and computer use",
+    "local ai pc hardware"
   ],
   "titles": [
     "Robot Operating System Platforms: Full-Stack Robotics Explained",
@@ -87,7 +88,8 @@
     "AI Weather Forecasting Models Explained: How They Work",
     "AI Alignment in Frontier Models: Evaluation, Risks and Tradeoffs",
     "Claude Opus 5.5 vs Opus 5: Performance, Cost and Use Cases",
-    "AI Decision APIs and Computer Use: How Agents Run Apps"
+    "AI Decision APIs and Computer Use: How Agents Run Apps",
+    "Local AI PC Hardware: How to Choose a Machine for On‑Device Models"
   ],
   "slugs": [
     "robot-operating-system-platforms",
@@ -132,7 +134,8 @@
     "ai-weather-forecasting-models-explained",
     "ai-alignment-frontier-models",
     "claude-opus-5-5-vs-opus-5",
-    "ai-decision-apis-computer-use-agents"
+    "ai-decision-apis-computer-use-agents",
+    "local-ai-pc-hardware-guide"
   ],
   "buckets": [
     "Robotics",
@@ -177,6 +180,7 @@
     "Edge AI",
     "Models",
     "Models",
-    "Creative AI"
+    "Creative AI",
+    "Edge AI"
   ]
 }

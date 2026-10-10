@@ -1,0 +1,28 @@
+{
+  "primary_query": "local ai pc hardware",
+  "secondary_queries": [
+    "what is an ai pc",
+    "local ai pc requirements",
+    "nvidia gpu for local ai",
+    "ai pc vs normal pc",
+    "run large language models locally windows",
+    "best hardware for on device ai",
+    "ai workstation vs gaming pc",
+    "edge ai desktop setup"
+  ],
+  "search_intent": "Informational",
+  "recommended_title": "Local AI PC Hardware: How to Choose a Machine for On‑Device Models",
+  "recommended_slug": "local-ai-pc-hardware-guide",
+  "outline_h2s": [
+    "What Is a Local AI PC and Why It Matters",
+    "Key Hardware Components for Local AI Workloads",
+    "How Much GPU Memory and Compute Do You Really Need",
+    "CPU, RAM and Storage Considerations for On‑Device Models",
+    "Choosing Between Laptops, Desktops and Workstations for AI",
+    "Nvidia GPU Options for Running Large Models Locally",
+    "Optimizing Windows 11 and Drivers for Local AI Performance",
+    "Typical Local AI Use Cases and Example Workflows",
+    "Cost vs Performance Tradeoffs for Building an AI PC",
+    "Future Trends in Local AI Hardware and Upgrade Paths"
+  ]
+}

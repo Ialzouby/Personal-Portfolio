@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "Microsoft’s Nvidia-powered AI PCs substantially shift mainstream computing toward local AI, carry strong user and enterprise impact, and have excellent evergreen SEO potential around ‘AI PCs’ and on-device inference, edging out the DGX Spark and other infra/robotics news.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 22,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 37,
+      "notes": "Major OEM + Nvidia partnership pushing AI PCs to the mass market; affects developers, enterprises, and consumers. High credibility and momentum. Strong SEO around queries like ‘AI PC’, ‘local AI on Windows 11’, ‘run large AI models locally’. Bucket (Edge AI) appeared once in last 8 (second-most-recent), and override rule (impact ≥ 22) caps penalty at 2."
+    },
+    {
+      "index": 1,
+      "bucket": "Data/Infra",
+      "news_impact": 19,
+      "seo_potential": 16,
+      "diversity_penalty": 0,
+      "final_score": 35,
+      "notes": "Important infra story for enterprises and advanced devs; broadens access to powerful local AI servers. Good SEO for infra buyers and ‘run 100B parameter model locally’ explainers. Data/Infra used very recently but not in last 4, so no penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Robotics",
+      "news_impact": 14,
+      "seo_potential": 13,
+      "diversity_penalty": 0,
+      "final_score": 27,
+      "notes": "Niche but meaningful signal about the robotics data layer. Moderate news impact; narrower audience. Some SEO around ‘robot data platforms’ and ‘robotics training data’ but limited broad appeal. Robotics bucket not used recently, so no penalty."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics & Policy",
+      "news_impact": 18,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "High-stakes online safety story with strong societal relevance and regulatory angles. SEO value in explainers on AI for CSAM detection and ad moderation. AI Ethics bucket appears once in the last 4 posts, triggering 4-point penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Robotics",
+      "news_impact": 20,
+      "seo_potential": 14,
+      "diversity_penalty": 0,
+      "final_score": 34,
+      "notes": "Waymo’s $5B facility is a major financing signal for robotaxis and autonomy as infrastructure. Good SEO for ‘robotaxi business model’, ‘Waymo financing’, ‘autonomous vehicles rollout’. Robotics hasn’t appeared in recent list, so no penalty."
+    },
+    {
+      "index": 5,
+      "bucket": "Models",
+      "news_impact": 13,
+      "seo_potential": 13,
+      "diversity_penalty": 6,
+      "final_score": 20,
+      "notes": "Interesting cultural/founder angle but modest ecosystem impact versus infra/edge stories. SEO mainly around startup/funding interest, not deeply evergreen. Models bucket is heavily overused (4 of last 8, 3+ in last 6), so maximum 6-point penalty."
+    },
+    {
+      "index": 6,
+      "bucket": "Edge AI & Hardware",
+      "news_impact": 17,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 31,
+      "notes": "Compelling consumer hardware angle on on-device AI agents. Strong SEO around ‘AI smart ring’, ‘wearable AI agents’, ‘on-device inference on wearables’. Edge AI seen once in last 4–6 via prior post, so 4 would normally apply, but impact < 22 so we keep at 2 for mild repetition (same bucket as last but not overused overall)."
+    },
+    {
+      "index": 7,
+      "bucket": "Creative AI",
+      "news_impact": 12,
+      "seo_potential": 12,
+      "diversity_penalty": 4,
+      "final_score": 20,
+      "notes": "Conference-participation story, more signaling than direct impact. SEO limited to event-specific and high-level ‘AI conference’ content. Creative AI bucket was the most recent post, and it also appears in the last 4, incurring a 4-point penalty."
+    }
+  ]
+}

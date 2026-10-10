@@ -1,0 +1,141 @@
+{
+  "week": "2026-10-10",
+  "events": [
+    {
+      "event": "Microsoft launches new Nvidia-powered ‘AI PCs’ and workstations designed to run large AI models locally on Windows 11",
+      "category": "Edge AI",
+      "why_it_matters": "These systems are built so users can run sizable AI models and agents fully on-device, reducing dependence on cloud inference. That can lower latency and operating cost for AI workflows, and it signals a push by major OEMs and Nvidia to make local AI compute a mainstream PC feature rather than a niche developer capability.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+          "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11",
+          "date": "2026-10-07"
+        },
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+          "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
+          "date": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "event": "NVIDIA introduces DGX Spark 64GB, a lower-capacity configuration of its local AI platform for agents and edge development",
+      "category": "Data/Infra",
+      "why_it_matters": "The new 64GB configuration keeps the same Grace Blackwell GB10 Superchip and software stack as the larger model but at a more accessible price point. It can run models up to roughly 100B parameters on-device, which broadens who can host substantial models and multi-agent applications locally, potentially reducing cloud spend and giving enterprises more control over sensitive workloads.",
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+          "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
+          "date": "2026-10-02"
+        },
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (headline roundup including AI infrastructure boom coverage)",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch highlights Mecka AI’s $60M round to scale ‘robot data’ platform for training industrial and logistics robots",
+      "category": "Robotics",
+      "why_it_matters": "Mecka AI is focused on the data layer for robotics—collecting and structuring the large, diverse datasets needed to train more capable manipulation and warehouse robots. Significant funding into this segment indicates investor confidence that better data pipelines, not only better robot hardware, are key to getting robots performing reliably in real-world industrial settings.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (includes brief: ‘Robot data startup Mecka AI nabs $60M from Sequoia’)",
+          "date": "2026-10-09"
+        },
+        {
+          "url": "https://techcrunch.com/category/robotics/",
+          "title": "Robotics News | TechCrunch",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "Meta rolls out AI tools to better detect ads that secretly redirect to child sexual abuse material",
+      "category": "AI Ethics",
+      "why_it_matters": "Using AI to identify deceptive ad patterns and landing pages linked to child sexual abuse material reflects a growing application of machine learning for online safety and content governance. It also illustrates how large platforms are deploying AI in high-stakes moderation contexts, where accuracy, bias, and oversight are critical ethical and regulatory concerns.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (includes: ‘Meta rolls out new AI tools to detect ads that secretly lead to child sexual abuse material’)",
+          "date": "2026-10-09"
+        },
+        {
+          "url": "https://techcrunch.com/tag/ai/",
+          "title": "AI | TechCrunch",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "TechCrunch reports on Waymo securing a $5B loan facility to expand its robotaxi operations",
+      "category": "Robotics",
+      "why_it_matters": "A multibillion‑dollar financing package for an autonomous driving company underlines that large-scale deployment of self-driving robotaxis is moving from pilots toward broader commercial rollouts. This level of capital commitment suggests lenders see robotaxis as an infrastructure‑like asset class and expect significant expansion of autonomous fleets in coming years.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (includes: ‘Waymo locks in $5B loan from Blackstone, PIMCO to fuel robotaxi expansion’)",
+          "date": "2026-10-09"
+        },
+        {
+          "url": "https://techcrunch.com/category/robotics/",
+          "title": "Robotics News | TechCrunch",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "Cal AI, a consumer‑facing AI startup founded by a 19‑year‑old, raises $10M to build new agentic experiences",
+      "category": "Models",
+      "why_it_matters": "This funding for a very young founder building AI-native products reflects how quickly the application layer around large models and agents is maturing. Investor willingness to back new entrants shows the ecosystem is still open for differentiated interfaces and workflows on top of increasingly commoditized base models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (includes: ‘Cal AI’s 19-year-old founder just raised $10M for his new AI startup’)",
+          "date": "2026-10-09"
+        },
+        {
+          "url": "https://techcrunch.com/tag/ai/",
+          "title": "AI | TechCrunch",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "Natura unveils a $99 AI-powered smart ring designed to host lightweight AI agents on-device",
+      "category": "Edge AI",
+      "why_it_matters": "An inexpensive consumer wearable that runs AI agents locally indicates how quickly AI inference is moving onto small, battery‑powered devices. If these products find traction, they could normalize continuous, on‑person AI assistants that operate without constant cloud connectivity, raising new questions about power efficiency, privacy, and interaction design.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/10/",
+          "title": "October 2026 | TechCrunch (includes: ‘Natura’s $99 smart ring puts AI agents on your finger’)",
+          "date": "2026-10-09"
+        },
+        {
+          "url": "https://techcrunch.com/",
+          "title": "TechCrunch | Startup and Technology News (front page including AI gadget coverage)",
+          "date": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI and Anthropic confirmed as headline participants on TechCrunch Disrupt 2026’s dedicated AI stages",
+      "category": "Creative AI",
+      "why_it_matters": "Major foundation model providers actively shaping dedicated ‘Real World AI’ and AI stages at a mainstream startup conference shows how central generative and creative AI have become to the broader tech ecosystem. Their participation suggests ongoing discussion of business models, safety practices, and new applications, including creative and agentic use cases that will influence how startups adopt frontier models.",
+      "sources": [
+        {
+          "url": "https://techcrunch.com/2026/08/27/anthropic-and-openai-are-joining-the-ai-stage-at-techcrunch-disrupt-2026/",
+          "title": "Anthropic and OpenAI are joining the AI stage at TechCrunch Disrupt 2026",
+          "date": "2026-08-27"
+        },
+        {
+          "url": "https://techcrunch.com/events/techcrunch-disrupt/agenda/",
+          "title": "Agenda – TechCrunch Disrupt 2026 (includes Real World AI Stage and AI sessions)",
+          "date": "2026-10-09"
+        }
+      ]
+    }
+  ]
+}
