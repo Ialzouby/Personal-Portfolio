@@ -1,0 +1,78 @@
+{
+  "winner_index": 0,
+  "winner_reason": "GPT‑6 in ChatGPT plus an Intelligent UI directly affects an enormous user base, reshapes interaction patterns (answers as tools/interfaces), and will drive huge search interest for explainers and how‑tos around the new capabilities. Despite a diversity penalty for being another Models story, its news impact and SEO potential clearly dominate.",
+  "scored": [
+    {
+      "index": 0,
+      "bucket": "Models",
+      "news_impact": 24,
+      "seo_potential": 18,
+      "diversity_penalty": 2,
+      "final_score": 40,
+      "notes": "Massive reach (ChatGPT’s huge user base), paradigm shift to interactive tool UIs, strong coverage and novelty. Evergreen SEO on ‘how to use GPT‑6’, ‘Intelligent UI’, workflows, prompts, etc. Models bucket appears 3+ times in last 6 posts, but override caps penalty at 2 because news_impact ≥ 22."
+    },
+    {
+      "index": 1,
+      "bucket": "AI Ethics",
+      "news_impact": 16,
+      "seo_potential": 13,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "Important for transparency and governance watchers but narrow audience vs. main product launch. Good SEO around ‘system cards’, ‘model safety update’, but less mainstream. AI Ethics appears multiple times recently → higher penalty."
+    },
+    {
+      "index": 2,
+      "bucket": "Models",
+      "news_impact": 18,
+      "seo_potential": 17,
+      "diversity_penalty": 2,
+      "final_score": 33,
+      "notes": "Cheaper, fast model is significant for builders and ops teams, strong practical SEO (cheap LLMs, cost optimization), but impact narrower vs. GPT‑6-in-ChatGPT consumer story. Models repeat → 2‑point penalty (no override since impact <22)."
+    },
+    {
+      "index": 3,
+      "bucket": "AI Ethics",
+      "news_impact": 17,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 28,
+      "notes": "Notable governance milestone (internal‑level access for evaluators) with good policy/oversight SEO angle. Still niche vs. major model/UI launches. Ethics bucket already common → higher diversity penalty."
+    },
+    {
+      "index": 4,
+      "bucket": "Models",
+      "news_impact": 21,
+      "seo_potential": 16,
+      "diversity_penalty": 2,
+      "final_score": 35,
+      "notes": "Another frontier model from a top lab; strong competitive and enterprise relevance. Good SEO around benchmarks, comparisons, and use cases. Just under override threshold for impact, so normal 2‑point Models penalty applies."
+    },
+    {
+      "index": 5,
+      "bucket": "Robotics",
+      "news_impact": 19,
+      "seo_potential": 17,
+      "diversity_penalty": 0,
+      "final_score": 36,
+      "notes": "Compelling robotics milestone—frontier LLM tied to physical robots. Strong SEO on ‘LLMs for robotics’, ‘Gemini robotics’, etc. Robotics is a fresh bucket vs. recent posts, so no penalty. Edged out by GPT‑6/Intelligent UI on overall impact and breadth."
+    },
+    {
+      "index": 6,
+      "bucket": "Edge AI",
+      "news_impact": 15,
+      "seo_potential": 14,
+      "diversity_penalty": 4,
+      "final_score": 25,
+      "notes": "Solid real‑world deployment story, government collaboration adds credibility. Good but narrower SEO around ‘AI for scam detection’ and public‑sector AI. Edge AI used twice in last 4 posts → 4‑point penalty."
+    },
+    {
+      "index": 7,
+      "bucket": "AI Ethics",
+      "news_impact": 20,
+      "seo_potential": 15,
+      "diversity_penalty": 4,
+      "final_score": 31,
+      "notes": "Public call for binding regulation by major labs is politically salient, good policy‑analysis SEO. Still somewhat transient vs. product/UI shift. Ethics bucket repetition triggers a higher diversity penalty."
+    }
+  ]
+}

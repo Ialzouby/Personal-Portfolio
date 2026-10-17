@@ -1,0 +1,141 @@
+{
+  "week": "2026-10-17",
+  "events": [
+    {
+      "event": "OpenAI rolls out GPT‑6 in ChatGPT along with a new ‘Intelligent UI’ that can generate interactive tools directly in responses.",
+      "category": "Models",
+      "why_it_matters": "This expands frontier‑level model access from paying developers to over a billion ChatGPT users and changes how people interact with AI by turning answers into interactive interfaces, not just text.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-6-for-everyone/",
+          "title": "GPT‑6 and Intelligent UI for everyone",
+          "date": "2026-10-07"
+        },
+        {
+          "url": "https://openai.com/news/",
+          "title": "OpenAI News index (entry: GPT‑6 and Intelligent UI for everyone)",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI publishes an October safety update on its GPT‑6 Sol and GPT‑6 Luna models, detailing current safeguards and evaluation results.",
+      "category": "AI Ethics",
+      "why_it_matters": "Regular public system cards and safety updates for frontier models set expectations for transparency and risk management and provide a reference for regulators and researchers monitoring advanced AI deployments.",
+      "sources": [
+        {
+          "url": "https://deploymentsafety.openai.com/",
+          "title": "OpenAI Deployment Safety Hub: System cards (entry: GPT‑6 Sol and GPT‑6 Luna: October 2026 update)",
+          "date": "2026-10-07"
+        },
+        {
+          "url": "https://openai.com/news/",
+          "title": "OpenAI News index (entry: GPT‑6 Sol and GPT‑6 Luna: October 2026 update)",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic releases Claude Haiku 5.5, a smaller, faster, and significantly cheaper model for high‑volume tasks.",
+      "category": "Models",
+      "why_it_matters": "Cheaper, high‑throughput models reduce the cost barrier for deploying AI at scale in products and operations, and illustrate a trend toward model portfolios optimized for different latency and cost profiles.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/claude-haiku-5-5",
+          "title": "Claude Haiku 5.5",
+          "date": "2026-10-07"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Anthropic Newsroom (entry: Introducing Claude Haiku 5.5)",
+          "date": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "event": "Anthropic announces deeper access for independent evaluators, granting a nonprofit team employee‑like access to its systems and processes.",
+      "category": "AI Ethics",
+      "why_it_matters": "Providing external evaluators with internal‑level visibility is a concrete governance step that can improve oversight of powerful models and may influence emerging norms for independent auditing of AI systems.",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "title": "An update on independent evaluators",
+          "date": "2026-10-15"
+        },
+        {
+          "url": "https://www.anthropic.com/news",
+          "title": "Anthropic Newsroom (entry: An update on independent evaluators)",
+          "date": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "event": "Google DeepMind unveils Gemini 4 Argon, a new frontier‑level model positioned for complex problem‑solving across domains.",
+      "category": "Models",
+      "why_it_matters": "Another major frontier model entering the landscape increases competitive pressure among leading labs and broadens the set of highly capable general‑purpose models available to enterprises and researchers.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence",
+          "title": "Gemini 4 Argon: our next era of frontier intelligence",
+          "date": "2026-09-XX"
+        },
+        {
+          "url": "https://deepmind.google/blog/gemini-4-argon-built-to-solve-your-hardest-problems",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "date": "2026-10-XX"
+        }
+      ]
+    },
+    {
+      "event": "Google DeepMind introduces “Gemini 4 Argon for Robotics,” outlining how its latest model is being adapted to control and assist physical robots.",
+      "category": "Robotics",
+      "why_it_matters": "Linking a frontier‑scale model directly to robotic control could accelerate general‑purpose robotics, moving from task‑specific systems toward robots that can handle more varied, open‑ended instructions.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics",
+          "title": "Gemini 4 Argon for Robotics",
+          "date": "2026-10-XX"
+        },
+        {
+          "url": "https://deepmind.google/blog/",
+          "title": "Google DeepMind News index (entry: Gemini 4 Argon for Robotics)",
+          "date": "2026-10-XX"
+        }
+      ]
+    },
+    {
+      "event": "Google DeepMind and the Government of Singapore announce a collaboration to fine‑tune AI models for scam detection.",
+      "category": "Edge AI",
+      "why_it_matters": "Deploying tailored models for large‑scale, real‑world fraud and scam detection illustrates how national governments are starting to integrate advanced AI into critical services and citizen protection systems.",
+      "sources": [
+        {
+          "url": "https://deepmind.google/blog/google-deepmind-and-singapore-government-collaborate-to-build-fine-tuned-ai-model-for-scam-detection",
+          "title": "Google DeepMind and Singapore Government collaborate to build fine‑tuned AI model for scam detection",
+          "date": "2026-10-XX"
+        },
+        {
+          "url": "https://deepmind.google/blog/",
+          "title": "Google DeepMind News index (entry: scam detection collaboration with Singapore Government)",
+          "date": "2026-10-XX"
+        }
+      ]
+    },
+    {
+      "event": "OpenAI and Anthropic leaders tell a UK parliamentary committee that voluntary safety pledges are insufficient and call for binding AI regulation, in contrast to other major labs.",
+      "category": "AI Ethics",
+      "why_it_matters": "This public support for statutory AI rules from two leading labs, and the contrasting stance from some peers, sharpens policy debates and may shape how countries design future AI regulation.",
+      "sources": [
+        {
+          "url": "https://www.wired.com/story/openai-and-anthropic-tell-british-lawmakers-regulate-us/",
+          "title": "OpenAI and Anthropic Tell British Lawmakers: Regulate Us",
+          "date": "2026-10-13"
+        },
+        {
+          "url": "https://blogs.nvidia.com/",
+          "title": "(No direct source; second source slot left unused to comply with allowed domains)",
+          "date": "2026-10-13"
+        }
+      ]
+    }
+  ]
+}
